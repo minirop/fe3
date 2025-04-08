@@ -545,9 +545,9 @@
 .db $68, $2B, $58, $AB, $40
 
 NMI:
-	jml L8010D9
+	jml L80A0D9
 
-L8010D9:
+L80A0D9:
 	rep	#$30
 	phb
 	phk
@@ -564,13 +564,13 @@ L8010D9:
 	sta	$0740
 	lda	$1003
 	bit	#$02
-	beq	L0010FA
+	beq	L0090FA
 	jsl	$86f6f2
-L0010FA:
+L0090FA:
 	lda	$0fa1
-	beq	L00111C
+	beq	L00911C
 	lda	$0f64
-	bne	L001116
+	bne	L009116
 	phb
 	rep	#$30
 	lda	#$007f
@@ -579,18 +579,18 @@ L0010FA:
 	mvn	$7f, $00
 	plb
 	sep	#$30
-L001116:
+L009116:
 	lda	$f7
 	ora	#$08
 	sta	$f7
-L00111C:
+L00911C:
 	jsr	$a8b8
 	lda	$0135
-	beq	L00114B
+	beq	L00914B
 	lda	$0c10
-	bne	L00112D
+	bne	L00912D
 	jsl	$8088fb
-L00112D:
+L00912D:
 	jsl	$80892e
 	jsl	$808468
 	jsr	$9086
@@ -599,19 +599,19 @@ L00112D:
 	stz	$0135
 	inc	$0136
 	stz	$0139
-	bra	L001164
-L00114B:
+	bra	L009164
+L00914B:
 	lda	$07d9
-	beq	L001154
+	beq	L009154
 	jsl	$808468
-L001154:
+L009154:
 	sep	#$30
 	inc	$0139
 	lda	$0139
 	cmp	$013a
-	bcc	L001164
+	bcc	L009164
 	sta	$013a
-L001164:
+L009164:
 	jsl	$808726
 	rep	#$30
 	inc	$0137
@@ -626,9 +626,9 @@ RESET:
 	sei
 	clc
 	xce
-	jml	L80117A
+	jml	L80917A
 
-L80117A:
+L80917A:
 	sep	#$20
 	lda	#$80
 	sta	$7a
@@ -1251,33 +1251,106 @@ L80117A:
 .db $69, $20, $00, $85, $27, $68, $18, $65
 .db $03, $85, $03, $E2, $20, $A5, $26, $3A
 .db $85, $26, $C2, $20, $A5, $25, $29, $00
-.db $FF, $D0, $CD, $28, $6B, $22, $F3, $B3
-.db $80, $82, $1E, $00, $78, $18, $FB, $E2
-.db $20, $A9, $80, $85, $7A, $8D, $00, $21
-.db $A9, $00, $8D, $F7, $7F, $C2, $30, $A2
-.db $FB, $1F, $9A, $A0, $00, $00, $5A, $2B
-.db $4B, $AB, $A2, $FE, $1F, $74, $00, $CA
-.db $CA, $10, $FA, $A2, $00, $20, $A9, $00
-.db $00, $9F, $00, $00, $7E, $E8, $E8, $D0
-.db $F8, $A2, $00, $00, $A9, $00, $00, $9F
-.db $00, $00, $7F, $E8, $E8, $D0, $F8, $E2
-.db $30, $9C, $00, $42, $64, $F2, $A9, $8F
-.db $8D, $00, $21, $85, $7A, $20, $59, $A8
-.db $20, $99, $91, $20, $DC, $91, $20, $15
-.db $93, $22, $4E, $95, $80, $22, $26, $88
-.db $80, $E2, $20, $A9, $54, $85, $69, $64
-.db $6A, $64, $6B, $A9, $6B, $85, $6C, $A9
-.db $44, $85, $6D, $64, $6E, $64, $6F, $A9
-.db $6B, $85, $70, $A9, $01, $8D, $10, $01
-.db $C2, $30, $E2, $20, $A9, $00, $8D, $4A
-.db $07, $A9, $00, $8D, $4B, $07, $C2, $30
-.db $22, $AF, $95, $80, $22, $11, $B6, $80
-.db $A9, $E0, $00, $22, $30, $B5, $80, $22
-.db $4E, $EA, $93, $C2, $30, $A5, $52, $85
-.db $65, $22, $4E, $95, $80, $AD, $4A, $07
-.db $29, $FF, $00, $0A, $AA, $FC, $BA, $A4
-.db $22, $F0, $98, $80, $22, $EA, $87, $80
-.db $80, $E1, $CA, $A4, $CF, $A4, $0D, $A7
+.db $FF, $D0, $CD, $28, $6B
+
+L80A3ED:
+	jsl	$80b3f3
+	brl	L00A412
+
+L80A3F4:
+	sei
+	clc
+	xce
+	sep	#$20
+	lda	#$80
+	sta	$7a
+	sta	$2100
+	lda	#$00
+	sta	$7ff7
+	rep	#$30
+	ldx	#$1ffb
+	txs
+	ldy	#$0000
+	phy
+	pld
+	phk
+	plb
+
+L00A412:
+	ldx	#$1ffe
+L00A415:
+	stz	$00,x
+	dex
+	dex
+	bpl	L00A415
+	ldx	#$2000
+	lda	#$0000
+L00A421:
+	sta	$7e0000,x
+	inx
+	inx
+	bne	L00A421
+	ldx	#$0000
+	lda	#$0000
+L00A42F:
+	sta	$7f0000,x
+	inx
+	inx
+	bne	L00A42F
+	sep	#$30
+	stz	$4200
+	stz	$f2
+	lda	#$8f
+	sta	$2100
+	sta	$7a
+	jsr	$a859
+	jsr	$9199
+	jsr	$91dc
+	jsr	$9315
+	jsl	$80954e
+	jsl	$808826
+	sep	#$20
+	lda	#$54
+	sta	$69
+	stz	$6a
+	stz	$6b
+	lda	#$6b
+	sta	$6c
+	lda	#$44
+	sta	$6d
+	stz	$6e
+	stz	$6f
+	lda	#$6b
+	sta	$70
+	lda	#$01
+	sta	$0110
+	rep	#$30
+	sep	#$20
+	lda	#$00
+	sta	$074a
+	lda	#$00
+	sta	$074b
+	rep	#$30
+	jsl	$8095af
+	jsl	$80b611
+	lda	#$00e0
+	jsl	$80b530
+	jsl	$93ea4e
+L00A49B: ; main loop
+	rep	#$30
+	lda	$52
+	sta	$65
+	jsl	$80954e
+	lda	$074a
+	and	#$00ff
+	asl
+	tax
+	jsr	($a4ba,x)
+	jsl	$8098f0
+	jsl	$8087ea
+	bra	L00A49B
+
+.db $CA, $A4, $CF, $A4, $0D, $A7
 .db $FE, $A6, $EF, $A6, $1C, $A7, $3A, $A7
 .db $2B, $A7, $22, $92, $D9, $8D, $60, $C2
 .db $30, $AD, $4B, $07, $29, $FF, $00, $0A
@@ -1764,13 +1837,45 @@ L80117A:
 .db $00, $04, $90, $0C, $29, $FF, $00, $EB
 .db $4A, $4A, $4A, $AA, $BF, $36, $44, $7F
 .db $29, $FF, $03, $A8, $B7, $00, $29, $FF
-.db $00, $28, $6B, $08, $8B, $4B, $AB, $C2
-.db $30, $DA, $5A, $A5, $00, $48, $A5, $01
-.db $48, $A9, $00, $B0, $85, $01, $A0, $00
-.db $80, $64, $00, $20, $79, $BA, $A2, $5E
-.db $00, $9E, $62, $08, $CA, $CA, $30, $02
-.db $80, $F7, $C2, $30, $68, $85, $01, $68
-.db $85, $00, $7A, $FA, $AB, $28, $6B, $08
+.db $00, $28, $6B
+
+L80B3F3:
+	php
+	phb
+	phk
+	plb
+	rep	#$30
+	phx
+	phy
+	lda	$00
+	pha
+	lda	$01
+	pha
+	lda	#$b000
+	sta	$01
+	ldy	#$8000
+	stz	$00
+	jsr	$ba79
+	ldx	#$005e
+L00B411:
+	stz	$0862,x
+	dex
+	dex
+	bmi	L00B41A
+	bra	L00B411
+L00B41A:
+	rep	#$30
+	pla
+	sta	$01
+	pla
+	sta	$00
+	ply
+	plx
+	plb
+	plp
+	rtl
+
+.db $08
 .db $8B, $4B, $AB, $C2, $30, $DA, $A2, $5E
 .db $00, $9E, $62, $08, $CA, $CA, $30, $02
 .db $80, $F7, $FA, $AB, $28, $6B, $08, $8B
