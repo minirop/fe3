@@ -673,42 +673,123 @@ L80917A:
 	plp
 	rts
 
-.db $08, $E2, $30, $A9
-.db $8F, $8D, $00, $21, $85, $7A, $A9, $03
-.db $8D, $01, $21, $85, $7B, $9C, $02, $21
-.db $64, $7C, $A9, $80, $8D, $03, $21, $85
-.db $7D, $9C, $04, $21, $9C, $04, $21, $A9
-.db $09, $8D, $05, $21, $85, $7E, $9C, $06
-.db $21, $64, $7F, $A9, $29, $8D, $07, $21
-.db $85, $80, $A9, $39, $8D, $08, $21, $85
-.db $81, $A9, $48, $8D, $09, $21, $85, $82
-.db $A9, $00, $9C, $0A, $21, $64, $83, $A9
-.db $00, $8D, $0B, $21, $85, $84, $A9, $05
-.db $8D, $0C, $21, $85, $85, $9C, $0D, $21
-.db $9C, $0D, $21, $9C, $0E, $21, $9C, $0E
-.db $21, $9C, $0F, $21, $9C, $0F, $21, $9C
-.db $10, $21, $9C, $10, $21, $9C, $11, $21
-.db $9C, $11, $21, $9C, $12, $21, $9C, $12
-.db $21, $9C, $13, $21, $9C, $13, $21, $9C
-.db $14, $21, $9C, $14, $21, $9C, $15, $21
-.db $9C, $1A, $21, $64, $86, $9C, $1B, $21
-.db $9C, $1C, $21, $9C, $1D, $21, $9C, $1E
-.db $21, $9C, $1F, $21, $9C, $20, $21, $A9
-.db $00, $8D, $23, $21, $85, $87, $A9, $00
-.db $8D, $24, $21, $85, $88, $9C, $25, $21
-.db $64, $99, $A9, $00, $8D, $26, $21, $85
-.db $9A, $A9, $F8, $8D, $27, $21, $85, $9B
-.db $9C, $28, $21, $64, $9C, $9C, $29, $21
-.db $64, $9D, $9C, $2A, $21, $64, $9E, $9C
-.db $2B, $21, $64, $9F, $A9, $11, $8D, $2C
-.db $21, $85, $A0, $8D, $2E, $21, $85, $A2
-.db $A9, $02, $8D, $2D, $21, $85, $A1, $8D
-.db $2F, $21, $85, $A3, $A9, $02, $8D, $30
-.db $21, $85, $A4, $A9, $A1, $8D, $31, $21
-.db $85, $A5, $A9, $20, $8D, $32, $21, $85
-.db $A8, $A9, $40, $8D, $32, $21, $85, $A7
-.db $A9, $80, $8D, $32, $21, $85, $A6, $A9
-.db $00, $8D, $33, $21, $85, $A9, $28, $60
+L0091dc:
+	php
+	sep	#$30
+	lda	#$8f
+	sta	INIDSP.w
+	sta	$7a
+	lda	#$03
+	sta	OBJSEL.w
+	sta	$7b
+	stz	OAMADDL.w
+	stz	$7c
+	lda	#$80
+	sta	OAMADDH.w
+	sta	$7d
+	stz	OAMDATA.w
+	stz	OAMDATA.w
+	lda	#$09
+	sta	BGMODE.w
+	sta	$7e
+	stz	MOSAIC.w
+	stz	$7f
+	lda	#$29
+	sta	BG1SC.w
+	sta	$80
+	lda	#$39
+	sta	BG2SC.w
+	sta	$81
+	lda	#$48
+	sta	BG3SC.w
+	sta	$82
+	lda	#$00
+	stz	BG4SC.w
+	stz	$83
+	lda	#$00
+	sta	BG12NBA.w
+	sta	$84
+	lda	#$05
+	sta	BG34NBA.w
+	sta	$85
+	stz	BG1HOFS.w
+	stz	BG1HOFS.w
+	stz	BG1VOFS.w
+	stz	BG1VOFS.w
+	stz	BG2HOFS.w
+	stz	BG2HOFS.w
+	stz	BG2VOFS.w
+	stz	BG2VOFS.w
+	stz	BG3HOFS.w
+	stz	BG3HOFS.w
+	stz	BG3VOFS.w
+	stz	BG3VOFS.w
+	stz	BG4HOFS.w
+	stz	BG4HOFS.w
+	stz	BG4VOFS.w
+	stz	BG4VOFS.w
+	stz	VMAIN.w
+	stz	M7SEL.w
+	stz	$86
+	stz	M7A.w
+	stz	M7B.w
+	stz	M7C.w
+	stz	M7D.w
+	stz	M7X.w
+	stz	M7Y.w
+	lda	#$00
+	sta	W12SEL.w
+	sta	$87
+	lda	#$00
+	sta	W34SEL.w
+	sta	$88
+	stz	WOBJSEL.w
+	stz	$99
+	lda	#$00
+	sta	W1L.w
+	sta	$9a
+	lda	#$f8
+	sta	W1R.w
+	sta	$9b
+	stz	W2L.w
+	stz	$9c
+	stz	W2R.w
+	stz	$9d
+	stz	WBGLOG.w
+	stz	$9e
+	stz	WOBJLOG.w
+	stz	$9f
+	lda	#$11
+	sta	TMAIN.w
+	sta	$a0
+	sta	TMW.w
+	sta	$a2
+	lda	#$02
+	sta	TSUB.w
+	sta	$a1
+	sta	TSW.w
+	sta	$a3
+	lda	#$02
+	sta	CGWSEL.w
+	sta	$a4
+	lda	#$a1
+	sta	CGADSUB.w
+	sta	$a5
+	lda	#$20
+	sta	COLDATA.w
+	sta	$a8
+	lda	#$40
+	sta	COLDATA.w
+	sta	$a7
+	lda	#$80
+	sta	COLDATA.w
+	sta	$a6
+	lda	#$00
+	sta	SETINI.w
+	sta	$a9
+	plp
+	rts
+
 .db $C2, $30, $A9, $00, $00, $A2, $00, $20
 .db $A0, $00, $E0, $22, $8E, $8C, $80, $A9
 .db $00, $00, $AA, $A0, $FE, $DF, $22, $A1
@@ -1305,7 +1386,7 @@ L00A42F:
 	sta	$7a
 	jsr	$a859
 	jsr	$9199
-	jsr	$91dc
+	jsr	L0091dc
 	jsr	$9315
 	jsl	$80954e
 	jsl	$808826
