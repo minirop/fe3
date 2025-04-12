@@ -3122,14 +3122,37 @@ L809FBF:
 .db $BD $0F $02 $29 $CF $05 $15 $9D
 .db $0F $02 $4C $51 $9F $F8 $F8 $F8
 .db $F0 $F0 $E0 $F0 $E0 $C0 $E0 $C0
-.db $C0 $E2 $10 $A4 $55 $B0 $0E $A6
-.db $54 $BD $10 $04 $39 $3B $A0 $9D
-.db $10 $04 $C2 $10 $60 $A5 $19 $D0
-.db $10 $A6 $54 $BD $10 $04 $39 $3B
-.db $A0 $19 $43 $A0 $9D $10 $04 $80
-.db $0F $A6 $54 $BD $10 $04 $39 $3B
+.db $C0
+
+L80A001:
+	sep #$10
+	ldy $55
+	bcs L80A015
+	ldx $54
+	lda.w $0410, X
+	and.w $A03B, Y
+	sta.w $0410, X
+	rep #$10
+	rts
+L80A015:
+	lda $19
+	bne L80A029
+	ldx $54
+	lda.w $0410, X
+	and.w $A03B, Y
+	ora.w $A043, Y
+	sta.w $0410, X
+	bra L80A038
+
+L80A029:
+.db $A6 $54 $BD $10 $04 $39 $3B
 .db $A0 $C8 $39 $3B $A0 $9D $10 $04
-.db $C2 $10 $60 $FE $FD $FB $F7 $EF
+
+L80A038:
+	rep #$10
+	rts
+
+.db $FE $FD $FB $F7 $EF
 .db $DF $BF $7F $01 $02 $04 $08 $10
 .db $20 $40 $80 $DA $E2 $20 $C9 $01
 .db $F0 $1B $BF $DB $04 $00 $3A $9F
@@ -3146,10 +3169,32 @@ L809FBF:
 .db $00 $01 $00 $01 $00 $01 $00 $01
 .db $00 $01 $01 $01 $00 $01 $01 $01
 .db $01 $01 $00 $01 $01 $01 $01 $01
-.db $01 $01 $08 $70 $07 $10 $07 $C9
-.db $F9 $FF $B0 $02 $E6 $19 $28 $60
-.db $08 $A5 $19 $F0 $06 $E2 $20 $A9
-.db $F4 $85 $15 $28 $60 $08 $8B $4B
+.db $01 $01
+
+L80A0C2:
+	php
+	bvs L80A0CC
+	bpl L80A0CE
+	cmp.w #$FFF9
+	bcs L80A0CE
+L80A0CC:
+	inc $19
+L80A0CE:
+	plp
+	rts
+
+L80A0D0:
+	php
+	lda $19
+	beq L80A0DB
+	sep #$20
+	lda #$F4
+	sta $15
+L80A0DB:
+	plp
+	rts
+
+.db $08 $8B $4B
 .db $AB $C2 $30 $A5 $50 $4A $4A $8D
 .db $04 $42 $E2 $20 $A9 $04 $8D $06
 .db $42 $C2 $20 $A5 $63 $85 $01 $85
