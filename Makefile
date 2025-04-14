@@ -7,7 +7,7 @@ COBJ=game.obj
 all: $(ROM).sfc
 
 $(COBJ): src/main.s
-	$(AS) -I src -x -v -o $@ $<
+	$(AS) -I src -I bin -x -v -o $@ $<
 
 $(ROM).sfc: $(COBJ)
 	$(LD) -d -v -S linkfile $(ROM).sfc
