@@ -4079,24 +4079,5 @@
 .db $28, $F0, $03, $4C, $B2, $FE, $4C, $A9
 .db $FE, $C2, $20, $AB, $28, $6B, $FC, $FC
 .db $F3, $F3, $CF, $CF, $3F, $3F, $01, $02
-.db $04, $08, $10, $20, $40, $80, $FF, $FF
-.db $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-.db $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-.db $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-.db $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-.db $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-.db $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-.db $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-.db $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-.db $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-.db $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-.db $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-.db $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-.db $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-.db $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-.db $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-.db $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-.db $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-.db $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-.db $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+.db $04, $08, $10, $20, $40, $80, $FF
 .ENDS

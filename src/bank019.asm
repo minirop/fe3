@@ -4096,7 +4096,5 @@
 .db $0A, $0A, $32, $0A, $0A, $0A, $0A, $0A
 .db $32, $0A, $0A, $0A, $0A, $0A, $32, $0A
 .db $0A, $0A, $0A, $0A, $32, $8C, $01, $1B
-.db $1C, $1E, $92, $2A, $2F, $75, $FF, $FF
-.db $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
-.db $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
+.db $1C, $1E, $92, $2A, $2F, $75, $FF
 .ENDS
