@@ -8,11 +8,15 @@ It builds the following ROM:
 
 ## Setting up
 
-You need to have `wla-65816` and `wlalink` from [wla-dx](https://github.com/vhelin/wla-dx), and `make` in your PATH.
+You need to have `wla-65816` and `wlalink` from [wla-dx](https://github.com/vhelin/wla-dx), and `make` in your PATH. (`sha1sum` too if you want to check the generated ROM is correct)
 
 ## Building
 
 Just type `make`.
+
+## Help needed
+
+If someone wants to tackle writing a compressor. The decompressor is the first loop of `extract_graphics` from [fe3-png](https://github.com/minirop/fe3-png/).
 
 ## See also
 
