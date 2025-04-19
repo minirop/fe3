@@ -3249,20 +3249,9 @@ L80A0DB:
 .db $A6 $54 $BD $10 $04 $39 $3B $A0
 .db $9D $10 $04 $C2 $10 $60 $A6 $54
 .db $BD $10 $04 $39 $3B $A0 $19 $43
-.db $A0 $9D $10 $04 $C2 $10 $60 $FF
-.db $FF $FF $FF $FF $FF $FF $FF $FF
-.db $FF $FF $FF $FF $FF $FF $FF $FF
-.db $FF $FF $FF $FF $FF $FF $FF $FF
-.db $FF $FF $FF $FF $FF $FF $FF $FF
-.db $FF $FF $FF $FF $FF $FF $FF $FF
-.db $FF $FF $FF $FF $FF $FF $FF $FF
-.db $FF $FF $FF $FF $FF $FF $FF $FF
-.db $FF $FF $FF $FF $FF $FF $FF $FF
-.db $FF $FF $FF $FF $FF $FF $FF $FF
-.db $FF $FF $FF $FF $FF $FF $FF $FF
-.db $FF $FF $FF $FF $FF $FF $FF $FF
-.db $FF $FF $FF $FF $FF $FF $FF $FF
-.db $FF $FF $FF $FF $FF $FF $FF $FF
+.db $A0 $9D $10 $04 $C2 $10 $60
+
+.ALIGN 256
 .db $08 $C2 $20 $29 $FF $FF $F0 $2E
 .db $8D $45 $07 $8E $48 $07 $A5 $00
 .db $8D $42 $07 $A5 $01 $8D $43 $07
