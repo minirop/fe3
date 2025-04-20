@@ -2593,33 +2593,11 @@
 .db $00 $00 $BD $77 $A3 $12 $60 $34
 .db $EF $3D $F4 $0C $DF $2B $60 $34
 .db $EF $3D $A0 $25 $F8 $4F $60 $34
+.ENDS
 
-; x_x
-.ALIGN 4096 ; a6000
-.db $FF
+.ORG $7FE0
+.SECTION "Bank20-2" FORCE
 
-.ALIGN 4096 ; a7000
-.db $FF
-
-.ALIGN 2048 ; a7800
-.db $FF
-
-.ALIGN 1024 ; a7c00
-.db $FF
-
-.ALIGN 512 ; a7e00
-.db $FF
-
-.ALIGN 256 ; a7f00
-.db $FF
-
-.ALIGN 128 ; a7f80
-.db $FF
-
-.ALIGN 64 ; a7fc0
-.db $FF
-
-.ALIGN 32 ; a7fe0
 .db $00 $38 $99 $7F $91 $72 $A9 $65
 .db $A6 $7E $00 $7D $0F $00 $84 $10
 .db $9F $1B $BD $12 $D6 $63 $2C $43

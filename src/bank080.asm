@@ -3441,13 +3441,11 @@
 .db $FE, $DE, $22, $FC, $03, $F8, $F8, $C0
 .db $C0, $E7, $BF, $00, $FF, $FF, $FF, $FF
 
-.ALIGN 4096 ; 287000
-.db $FF
+.ENDS
 
-.ALIGN 1024 ; 287400
-.db $FF
+.ORG $7600
+.SECTION "Bank80-2" FORCE
 
-.ALIGN 512 ; 287600
 .db $FF, $FF, $FF, $FF, $55, $FF, $55, $FF
 .db $55, $FF, $55, $FF, $55, $FF, $FF, $FF
 .db $FF, $FF, $FF, $FF, $57, $FF, $57, $FF

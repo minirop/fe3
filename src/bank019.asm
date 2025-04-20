@@ -3529,25 +3529,11 @@
 .db $03, $A8, $88, $98, $05, $15, $85, $7A
 .db $CE, $B2, $04, $D0, $DA, $AB, $28, $6B
 
-.ALIGN 4096 ; 9f000
-.db $FF
+.ENDS
 
-.ALIGN 2048 ; 9f800
-.db $FF
+.ORG $7D00
+.SECTION "Bank19-2" FORCE
 
-.ALIGN 256 ; 9f900
-.db $FF
-
-.ALIGN 256 ; 9fa00
-.db $FF
-
-.ALIGN 256 ; 9fb00
-.db $FF
-
-.ALIGN 256 ; 9fc00
-.db $FF
-
-.ALIGN 256 ; 9fd00
 .db $00, $00, $01, $01, $02, $02, $03, $03
 .db $04, $04, $05, $05, $06, $06, $07, $07
 .db $FF, $FF, $09, $09, $0A, $0A, $0B, $0B

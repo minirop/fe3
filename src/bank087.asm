@@ -5,20 +5,10 @@
 
 .INCBIN "2B7C1C.bin" SKIP 996
 
-; find a better way than that montrosity
-.ALIGN 4096 ; 2B9000
-.db $ff
-.ALIGN 4096 ; 2BA000
-.db $ff
-.ALIGN 4096 ; 2BB000
-.db $ff
-.ALIGN 4096 ; 2BC000
-.db $ff
-.ALIGN 4096 ; 2BD000
-.db $ff
-.ALIGN 4096 ; 2BE000
-.db $ff
-.ALIGN 2048 ; 2BE800
+.ENDS
+
+.ORG $6800
+.SECTION "Bank87-2" FORCE
 
 .db $83 $4C $9E $5F $DD $42 $3A $32
 .db $73 $1D $1F $47 $A4 $1C $0D $15

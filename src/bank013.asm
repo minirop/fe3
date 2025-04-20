@@ -453,10 +453,11 @@
 .db $BF, $FF, $BF, $E7, $FF, $FF, $E7, $FF
 .db $FF, $E7, $FF, $FF, $36, $FF, $FF, $FF
 
-.ALIGN 4096
-.db $FF
+.ENDS
 
-.ALIGN 4096
+.ORG $2000
+.SECTION "Bank13-2" FORCE
+
 .db $08, $E2, $20, $8B, $4B, $AB, $C2, $30
 .db $84, $15, $86, $17, $0A, $AA, $BD, $67
 .db $A2, $A8, $B9, $00, $00, $C8, $C8, $85

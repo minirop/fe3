@@ -956,10 +956,11 @@
 .db $77, $AB, $0F, $F3, $67, $8B, $77, $AB
 .db $67, $8B, $4F, $B7, $7F, $8F, $7F, $BF
 
-.ALIGN 4096 ; 2e2000
-.db $FF
+.ENDS
 
-.ALIGN 4096 ; 2e3000
+.ORG $3000
+.SECTION "Bank92-2" FORCE
+
 .db $5A, $00, $CB, $02, $98, $03, $E5, $04
 .db $C2, $06, $BC, $07, $D6, $08, $8D, $0A
 .db $CC, $0C, $CF, $0D, $89, $0F, $9B, $10

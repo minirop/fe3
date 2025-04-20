@@ -1670,19 +1670,11 @@
 .db $0F $0F $0F $0F $0F $0F $0F $EF
 .db $FF $FF $FF $FF $FF $FF $FF $FF
 
-.ALIGN 2048 ; 2b800
-.db $FF
+.ENDS
 
-.ALIGN 2048 ; 2c000
-.db $FF
+.ORG $5800
+.SECTION "Bank5-2" FORCE
 
-.ALIGN 2048 ; 2c800
-.db $FF
-
-.ALIGN 2048 ; 2d000
-.db $FF
-
-.ALIGN 2048 ; 2d800
 .db $14 $00 $01 $FF $28 $00 $05 $FF
 .db $46 $00 $05 $FF $70 $01 $00 $FF
 .db $70 $01 $05 $FF $16 $00 $01 $80
