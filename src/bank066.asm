@@ -1802,6 +1802,6 @@
 .db $00 $00 $00 $00 $00 $00 $00 $00
 .db $00
 
-.INCBIN "217D51.bin" READ 687
+.INCBIN "217D51.bin" READ 687 ; spritesheet (Marth attack?)
 
 .ENDS

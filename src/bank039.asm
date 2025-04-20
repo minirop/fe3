@@ -5,19 +5,19 @@
 
 .INCBIN "138000-spritesheet.bin"
 .INCBIN "1386F6.bin"
-.INCBIN "1390E5.bin"
+.INCBIN "1390E5.bin" ; spritesheet
 .INCBIN "1395B4.bin"
-.INCBIN "13A0D2.bin"
+.INCBIN "13A0D2.bin" ; spritesheet
 .INCBIN "13A5EE.bin"
-.INCBIN "13B252.bin"
+.INCBIN "13B252.bin" ; spritesheet
 .INCBIN "13B92A.bin"
-.INCBIN "13C38F.bin"
+.INCBIN "13C38F.bin" ; spritesheet
 .INCBIN "13CAA9.bin"
-.INCBIN "13D5C9.bin"
+.INCBIN "13D5C9.bin" ; spritesheet
 .INCBIN "13DA26.bin"
-.INCBIN "13E285.bin"
+.INCBIN "13E285.bin" ; spritesheet
 .INCBIN "13E78E.bin"
-.INCBIN "13EFED.bin"
+.INCBIN "13EFED.bin" ; spritesheet
 .INCBIN "13F71E.bin" READ 2274
 
 .ENDS

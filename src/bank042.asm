@@ -4,11 +4,11 @@
 .SECTION "Bank42" FORCE
 
 .INCBIN "14FB77.bin" SKIP 1161
-.INCBIN "15029B.bin"
+.INCBIN "15029B.bin" ; spritesheet
 .INCBIN "1506A6.bin"
-.INCBIN "150BA2.bin"
+.INCBIN "150BA2.bin" ; spritesheet
 .INCBIN "151044.bin"
-.INCBIN "151959.bin"
+.INCBIN "151959.bin" ; spritesheet
 .INCBIN "151D85.bin"
 .INCBIN "1520FE-spritesheet.bin"
 .INCBIN "1525CD.bin"
@@ -16,13 +16,13 @@
 .INCBIN "1534E5.bin"
 .INCBIN "axebro-spritesheet.bin"
 .INCBIN "1546CF.bin"
-.INCBIN "154EBB.bin"
+.INCBIN "154EBB.bin" ; spritesheet
 .INCBIN "155263.bin"
-.INCBIN "155F6B.bin"
+.INCBIN "155F6B.bin" ; spritesheet
 .INCBIN "1567AB.bin"
-.INCBIN "157168.bin"
+.INCBIN "157168.bin" ; spritesheet
 .INCBIN "157752.bin"
-.INCBIN "157BC8.bin"
+.INCBIN "157BC8.bin" ; spritesheet
 .INCBIN "157D9A.bin" READ 614
 
 .ENDS

@@ -6,7 +6,7 @@
 .INCBIN "intro-tileset.bin"
 .INCBIN "2EE239.bin"
 .INCBIN "2EE449.bin"
-.INCBIN "2EE5B6.bin"
+.INCBIN "2EE5B6.bin" ; intro Naga
 .INCBIN "2EF9A4.bin" READ 1628
 
 .ENDS

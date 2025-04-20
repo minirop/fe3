@@ -7,7 +7,7 @@
 .INCBIN "1482ED.bin"
 .INCBIN "14901B-spritesheet.bin"
 .INCBIN "149337.bin"
-.INCBIN "149E8F.bin"
+.INCBIN "149E8F.bin" ; spritesheet
 .INCBIN "14A21C.bin"
 .INCBIN "thief-spritesheet.bin"
 .INCBIN "14B74C.bin"

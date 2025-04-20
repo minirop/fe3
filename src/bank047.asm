@@ -4,12 +4,12 @@
 .SECTION "Bank47" FORCE
 
 .INCBIN "177B77.bin" SKIP 1161
-.INCBIN "1784AE.bin"
-.INCBIN "178CD6.bin"
-.INCBIN "1794B4.bin"
-.INCBIN "17A213.bin"
-.INCBIN "17A971.bin"
-.INCBIN "17B243.bin"
+.INCBIN "1784AE.bin" ; spritesheet
+.INCBIN "178CD6.bin" ; spritesheet
+.INCBIN "1794B4.bin" ; spritesheet
+.INCBIN "17A213.bin" ; spritesheet
+.INCBIN "17A971.bin" ; spritesheet
+.INCBIN "17B243.bin" ; spritesheet
 
 .ALIGN 4096
 
