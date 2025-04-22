@@ -1,9 +1,5 @@
 #!/usr/bin/env python
 
-import os
-
-# there are 5 extra bytes between dialogues 516 and 517 (at 0x92001)
-# that are not extracted by this script
 offsets = [
 	# 878000
 	0x8E982E, 0x8E982E, 0x8E994D, 0x8E9B41, 0x8E9B9C, 0x8E9C22, 0x8E9C60, 0x8E9CB8, 0x8E9CF5, 0x8E9D54, 0x8E9DD1, 0x8E9E86, 0x8E9FEA, 0x8EA02F, 0x8EA185, 0x8EA2A2, 0x8EA2E9, 0x8EA32D, 0x8EA375, 0x8EA520, 0x8EA5C1, 0x8EA5FB, 0x8EA750, 0x8EA796, 0x8EA84F, 0x8EA89D, 0x8EA9A6, 0x8EAA25, 0x8EAB14, 0x8EAB6C, 0x8EAF13, 0x8EAF59, 0x8EB150, 0x8EB19F, 0x8EB296, 0x8EB2F8, 0x8EB338, 0x8EB372, 0x8EB43F, 0x8EB6CA, 0x8EB7C4, 0x8EBA6B, 0x8EBB1B, 0x8EBD20, 0x8EBD7A, 0x8EBF66, 0x8EC2F0, 0x8EC3FE, 0x8EC441, 0x8EC4DF, 0x8EC53F, 0x8EC599, 0x8EC693, 0x8EC78A, 0x8EC7D6, 0x8EC826, 0x8EC859, 0x8EC89A, 0x8ECA2C, 0x8ECBEB, 0x8ECC9F, 0x8ECEAF, 0x8ECF90, 0x8ECFD6, 0x8ED07E, 0x8ED0E2, 0x8ED27E, 0x8ED356, 0x8ED65F, 0x8ED6AF, 0x8ED6E4, 0x8ED74C, 0x8ED811, 0x8ED85D, 0x8ED894, 0x8ED8D6, 0x8EDB33, 0x8EDC55, 0x8EDCB1, 0x8EDF1B, 0x8EE00D, 0x8EE18E, 0x8EE214, 0x8EE337, 0x8EE38F, 0x8EE48F, 0x8EE4F0, 0x8EE543, 0x8EE5BA, 0x8EE68B, 0x8EE898, 0x8EE8F4, 0x8EE96A, 0x8EE9A8, 0x8EEA3B, 0x8EEB82, 0x8EEC5C, 0x8EECB9, 0x8EEDB7, 0x8EEEB9, 0x8EEFBE, 0x8EF093, 0x8EF0E0, 0x8EF143, 0x8EF1AA, 0x8EF1FF, 0x8EF25A, 0x8EF355, 0x8EF454, 0x8EF508, 0x8EF55A, 0x8EF666, 0x8EF743, 0x8EF9A9, 0x8EF9EA,
@@ -17,86 +13,11 @@ offsets = [
 	0x928000, 0x928478, 0x9288D7, 0x928C8D, 0x928CB2, 0x928DF1, 0x928F2E, 0x929026, 0x9290AF, 0x929107, 0x92917F, 0x929239, 0x9293C0, 0x92954F, 0x92960B, 0x92968F, 0x92973F, 0x9299BB, 0x929B05, 0x92A006, 0x92A053, 0x92A2BE, 0x92A4CF, 0x92A6DB
 ]
 
-convert = [
-	0x878000,
-	0x880000,
-	0x888000,
-	0x890000,
-	0x898000,
-]
+tuples = [(index, value) for index, value in enumerate(offsets)]
+tuples = sorted(tuples, key=lambda x: x[1])
 
-with open("../baserom.sfc", 'rb') as file:
-	rom = bytearray(file.read())
-
-for i in range(1, len(offsets) - 1):
-	bank = (offsets[i] >> 16) - 142
-	start = offsets[i] - convert[bank]
-	size = 0
-
-	# decompile dialogue script to calculate correct size
-	while True:
-		k = rom[start + size]
-		if k == 0:
-			size += 2
-			cmd = rom[start + size - 1]
-			if cmd == 0:
-				break
-			elif cmd == 0x01:
-				pass
-			elif cmd == 0x02:
-				pass
-			elif cmd == 0x05:
-				pass
-			elif cmd == 0x07:
-				size += 2
-			elif cmd == 0x0C:
-				size += 1
-			elif cmd == 0x10:
-				pass
-			elif cmd == 0x11:
-				pass
-			elif cmd == 0x12:
-				pass
-			elif cmd == 0x13:
-				pass
-			elif cmd == 0x14:
-				pass
-			elif cmd == 0x16:
-				size += 2
-			elif cmd == 0x17:
-				size += 2
-			elif cmd == 0x84:
-				size += 2
-			elif cmd == 0x85:
-				size += 1
-			elif cmd == 0x87:
-				pass
-			elif cmd == 0x88:
-				size += 1
-			elif cmd == 0x89:
-				size += 2
-			elif cmd == 0x8A:
-				pass
-			elif cmd == 0x8F:
-				size += 1
-			elif cmd == 0x92:
-				size += 1
-			elif cmd == 0x93:
-				pass
-			elif cmd == 0x94:
-				size += 2
-			else:
-				raise ValueError("Error in dialogue{:03} {:x} at position {}".format(i, cmd, size))
-		else:
-			size += 1
-
-	if offsets[i] + size in offsets:
-		print ("OK")
-	else:
-		# those are the last dialogue of each bank, so they don't end when
-		# another one starts
-		if i != 114 and i != 175 and i != 217 and i != 497:
-			print ("{:x}".format(offsets[i] + size))
-			raise ValueError("dialogue {:03} is incomplete".format(i))
-
-	os.system("dd if=../baserom.sfc of=../text/dialogues/dialogue{:03}.bin skip={} count={} iflag=skip_bytes,count_bytes".format(i, start, size))
+last_url = 0
+for (i, v) in tuples:
+	if last_url != v:
+		print (".INCBIN \"dialogue{:03}.bin\" // {:X}".format(i, v))
+		last_url = v
