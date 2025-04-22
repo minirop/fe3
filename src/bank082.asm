@@ -8,7 +8,7 @@
 .INCBIN "290B07.bin" ; Portrait Caesar
 .INCBIN "291010.bin" ; Portrait Radd
 .INCBIN "291523.bin" ; Portrait Midia
-.INCBIN "291A10.bin" ; Portrait Caeda
+.INCBIN "291A10.bin" ; Portrait Catria
 .INCBIN "291FA8.bin" ; Portrait Maria
 .INCBIN "292583.bin" ; Portrait Minerva
 .INCBIN "292B4F.bin" ; Portrait Linde

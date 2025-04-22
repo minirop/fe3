@@ -5,19 +5,19 @@
 
 .INCBIN "29FE36.bin" SKIP 458
 .INCBIN "2A0422.bin" ; Portrait Xemcel
-.INCBIN "2A09BC.bin"
+.INCBIN "2A09BC.bin" ; Unused Portrait
 .INCBIN "2A09C3.bin" ; Portrait Camus
-.INCBIN "2A0EEF.bin" ; Portrait Abel?
-.INCBIN "2A14C3.bin" ; Portait Xemcel
+.INCBIN "2A0EEF.bin" ; Portrait Michalis
+.INCBIN "2A14C3.bin" ; Portrait Xemcel
 .INCBIN "2A1A5D.bin" ; Portrait Gharnef
 .INCBIN "2A2002.bin" ; Portrait Medeus
 .INCBIN "2A25D0.bin" ; Card armour
 .INCBIN "2A2A15.bin" ; Portrait Zharov
 .INCBIN "2A3033.bin" ; Card general
 .INCBIN "2A357F.bin" ; Card small sword
-.INCBIN "2A3922.bin"
+.INCBIN "2A3922.bin" ; Unused Portrait
 .INCBIN "2A3929.bin" ; Card sword and shield
-.INCBIN "2A3D56.bin"
+.INCBIN "2A3D56.bin" ; Unused Portrait
 .INCBIN "2A3D5D.bin" ; Card green mage
 .INCBIN "2A420B.bin" ; Card woman with staff
 .INCBIN "2A4618.bin" ; Card electric mage
