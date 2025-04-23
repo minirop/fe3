@@ -781,11 +781,11 @@ L808AF3:
 
 L808B2F:
 	lda $0110
-	and.w #$00FF
+	and #$00FF
 	beq L808B45
-	ldy.w #$0000
+	ldy #$0000
 	lda $4218,X
-	and.w #$000F
+	and #$000F
 	bne L808B45
 	ldy $4218,X
 L808B45:
@@ -1439,7 +1439,7 @@ L80906A:
 	bra L80903A
 
 L80907B:
-	ldy.w #$8000
+	ldy #$8000
 	pha
 	phb
 	pla
@@ -1590,7 +1590,7 @@ L80917A:
 	sep	#$20
 	lda	#$80
 	sta	$7a
-	sta	INIDSP.w
+	sta.w	INIDSP
 	lda	#$00
 	sta	$7ff7
 	rep	#$30
@@ -1605,28 +1605,28 @@ L80917A:
 	php
 	sep	#$30
 	lda	#$01
-	sta	NMITIMEN.w
+	sta.w NMITIMEN
 	sta	$f2
 	lda	#$80
-	sta	WRIO.w
-	stz	WRMPYA.w
-	stz	WRMPYB.w
-	stz	WRDIVL.w
-	stz	WRDIVH.w
-	stz	WRDIVB.w
-	stz	HTIMEL.w
+	sta.w WRIO
+	stz.w WRMPYA
+	stz.w WRMPYB
+	stz.w WRDIVL
+	stz.w WRDIVH
+	stz.w WRDIVB
+	stz.w HTIMEL
 	stz	$f5
-	stz	HTIMEH.w
+	stz.w HTIMEH
 	stz	$f6
-	stz	VTIMEL.w
+	stz.w VTIMEL
 	stz	$f3
-	stz	VTIMEH.w
+	stz.w VTIMEH
 	stz	$f4
-	stz	MDMAEN.w
-	stz	HDMAEN.w
+	stz.w MDMAEN
+	stz.w HDMAEN
 	stz	$f7
 	lda	#$01
-	sta	MEMSEL.w
+	sta.w MEMSEL
 	sta	$f8
 	plp
 	rts
@@ -1635,123 +1635,131 @@ L8091dc:
 	php
 	sep	#$30
 	lda	#$8f
-	sta	INIDSP.w
+	sta.w INIDSP
 	sta	$7a
 	lda	#$03
-	sta	OBJSEL.w
+	sta.w OBJSEL
 	sta	$7b
-	stz	OAMADDL.w
+	stz.w OAMADDL
 	stz	$7c
 	lda	#$80
-	sta	OAMADDH.w
+	sta.w OAMADDH
 	sta	$7d
-	stz	OAMDATA.w
-	stz	OAMDATA.w
+	stz.w OAMDATA
+	stz.w OAMDATA
 	lda	#$09
-	sta	BGMODE.w
+	sta.w BGMODE
 	sta	$7e
-	stz	MOSAIC.w
+	stz.w MOSAIC
 	stz	$7f
 	lda	#$29
-	sta	BG1SC.w
+	sta.w BG1SC
 	sta	$80
 	lda	#$39
-	sta	BG2SC.w
+	sta.w BG2SC
 	sta	$81
 	lda	#$48
-	sta	BG3SC.w
+	sta.w BG3SC
 	sta	$82
 	lda	#$00
-	stz	BG4SC.w
+	stz.w BG4SC
 	stz	$83
 	lda	#$00
-	sta	BG12NBA.w
+	sta.w BG12NBA
 	sta	$84
 	lda	#$05
-	sta	BG34NBA.w
+	sta.w BG34NBA
 	sta	$85
-	stz	BG1HOFS.w
-	stz	BG1HOFS.w
-	stz	BG1VOFS.w
-	stz	BG1VOFS.w
-	stz	BG2HOFS.w
-	stz	BG2HOFS.w
-	stz	BG2VOFS.w
-	stz	BG2VOFS.w
-	stz	BG3HOFS.w
-	stz	BG3HOFS.w
-	stz	BG3VOFS.w
-	stz	BG3VOFS.w
-	stz	BG4HOFS.w
-	stz	BG4HOFS.w
-	stz	BG4VOFS.w
-	stz	BG4VOFS.w
-	stz	VMAIN.w
-	stz	M7SEL.w
+	stz.w BG1HOFS
+	stz.w BG1HOFS
+	stz.w BG1VOFS
+	stz.w BG1VOFS
+	stz.w BG2HOFS
+	stz.w BG2HOFS
+	stz.w BG2VOFS
+	stz.w BG2VOFS
+	stz.w BG3HOFS
+	stz.w BG3HOFS
+	stz.w BG3VOFS
+	stz.w BG3VOFS
+	stz.w BG4HOFS
+	stz.w BG4HOFS
+	stz.w BG4VOFS
+	stz.w BG4VOFS
+	stz.w VMAIN
+	stz.w M7SEL
 	stz	$86
-	stz	M7A.w
-	stz	M7B.w
-	stz	M7C.w
-	stz	M7D.w
-	stz	M7X.w
-	stz	M7Y.w
+	stz.w M7A
+	stz.w M7B
+	stz.w M7C
+	stz.w M7D
+	stz.w M7X
+	stz.w M7Y
 	lda	#$00
-	sta	W12SEL.w
+	sta.w W12SEL
 	sta	$87
 	lda	#$00
-	sta	W34SEL.w
+	sta.w W34SEL
 	sta	$88
-	stz	WOBJSEL.w
+	stz.w WOBJSEL
 	stz	$99
 	lda	#$00
-	sta	W1L.w
+	sta.w W1L
 	sta	$9a
 	lda	#$f8
-	sta	W1R.w
+	sta.w W1R
 	sta	$9b
-	stz	W2L.w
+	stz.w W2L
 	stz	$9c
-	stz	W2R.w
+	stz.w W2R
 	stz	$9d
-	stz	WBGLOG.w
+	stz.w WBGLOG
 	stz	$9e
-	stz	WOBJLOG.w
+	stz.w WOBJLOG
 	stz	$9f
 	lda	#$11
-	sta	TMAIN.w
+	sta.w TMAIN
 	sta	$a0
-	sta	TMW.w
+	sta.w TMW
 	sta	$a2
 	lda	#$02
-	sta	TSUB.w
+	sta.w TSUB
 	sta	$a1
-	sta	TSW.w
+	sta.w TSW
 	sta	$a3
 	lda	#$02
-	sta	CGWSEL.w
+	sta.w CGWSEL
 	sta	$a4
 	lda	#$a1
-	sta	CGADSUB.w
+	sta.w CGADSUB
 	sta	$a5
 	lda	#$20
-	sta	COLDATA.w
+	sta.w COLDATA
 	sta	$a8
 	lda	#$40
-	sta	COLDATA.w
+	sta.w COLDATA
 	sta	$a7
 	lda	#$80
-	sta	COLDATA.w
+	sta.w COLDATA
 	sta	$a6
 	lda	#$00
-	sta	SETINI.w
+	sta.w SETINI
 	sta	$a9
 	plp
 	rts
 
-.db $C2 $30 $A9 $00 $00 $A2 $00 $20
-.db $A0 $00 $E0 $22 $8E $8C $80 $A9
-.db $00 $00 $AA $A0 $FE $DF $22 $A1
-.db $8C $80 $E2 $30 $60
+L8092F8:
+	rep #$30
+	lda #$0000
+	ldx #$2000
+	ldy #$E000
+	jsl L808C8E
+	lda #$0000
+	tax
+	ldy #$DFFE
+	jsl L808CA1
+	sep #$30
+	rts
 
 L809315:
 	rep #$30
@@ -2034,7 +2042,7 @@ L80954E:
 	sta $15
 	tay
 	ldx $52
-	lda.w #$F000
+	lda #$F000
 L809564:
 	sta $0210,X
 	inx
@@ -2051,7 +2059,7 @@ L809564:
 	and #$FFFE
 	tax
 	lda $52
-	and.w #$001C
+	and #$001C
 	lsr
 	tay
 	lda $0410,X
@@ -2065,7 +2073,7 @@ L809564:
 	pla
 L80958D:
 	sta $0410,X
-	lda.w #$0000
+	lda #$0000
 	inx
 	inx
 	dey
@@ -2090,9 +2098,9 @@ L8095AF:
 	sta.l $000706
 	lda #$95E0
 	sta.l $000705
-	lda.w #$0000
-	ldy.w #$0200
-	ldx.w #$0000
+	lda #$0000
+	ldy #$0200
+	ldx #$0000
 L8095D6:
 	sta.l $0004BE,X
 	inx
@@ -2105,7 +2113,7 @@ L8095D6:
 L8095e1:
 	php
 	rep #$20
-	lda.w #$0000
+	lda #$0000
 L8095E7:
 	pha
 	ora #$2000
@@ -2115,11 +2123,11 @@ L8095E7:
 	nop
 	lda.l RDMPYL
 	tax
-	lda.w #$0000
+	lda #$0000
 	sta $04BE,X
 	pla
 	inc A
-	cmp.w #$0010
+	cmp #$0010
 	bne L8095E7
 	plp
 	rtl
@@ -2150,9 +2158,9 @@ L809615:
 L809633:
 	phy
 	pha
-	lda.w #$0000
-	ldy.w #$0020
-	ldx.w #$0000
+	lda #$0000
+	ldy #$0020
+	ldx #$0000
 L80963E:
 	sta.l $0006DE,X
 	inx
@@ -2162,11 +2170,11 @@ L80963E:
 	bne L80963E
 	pla
 	pha
-	and.w #$00FF
+	and #$00FF
 	sta.l $0006EE
 	pla
 	xba
-	and.w #$00FF
+	and #$00FF
 	sta.l $0006F0
 	lda $00
 	sta.l $0006E6
@@ -2177,13 +2185,13 @@ L80963E:
 	lda $04
 	sta.l $0006EC
 	ply
-	ldx.w #$0000
+	ldx #$0000
 L809676:
 	lda.l $0004BE,X
 	beq L809689
 	txa
 	clc
-	adc.w #$0020
+	adc #$0020
 	tax
 	cpx #$0200
 	bne L809676
@@ -2207,7 +2215,7 @@ L809689:
 	sta.l $0004C9,X
 	lda.l $0006EA
 	sta.l $0004CA,X
-	lda.w #$0000
+	lda #$0000
 	sta.l $0004D6,X
 	lda.l $0006F8
 	sta.l $0004D8,X
@@ -2233,7 +2241,7 @@ L8096FA:
 	sta.l $0004BE,X
 	phx
 	jsr $99F0
-	lda.w #$0000
+	lda #$0000
 	sta.l $0006FE
 	plx
 	rtl
@@ -2267,15 +2275,15 @@ L80979A:
 	lda.l $0004BE,X
 	xba
 	sta $00
-	ldy.w #$0000
+	ldy #$0000
 	lda [$00],Y
-	and.w #$00FF
-	cmp.w #$0080
+	and #$00FF
+	cmp #$0080
 	bcc L8097DE
-	cmp.w #$00FD
+	cmp #$00FD
 	bcs L8097D6
 	sta $15
-	lda.w #$00FC
+	lda #$00FC
 	sec
 	sbc $15
 	asl
@@ -2304,7 +2312,7 @@ L8097F2:
 	php
 	phy
 	rep #$20
-	and.w #$00FF
+	and #$00FF
 	asl
 	tay
 	phy
@@ -2312,7 +2320,7 @@ L8097F2:
 	sta $01
 	lda.l $0004C6,X
 	sta $00
-	ldy.w #$000C
+	ldy #$000C
 	lda [$00],Y
 	clc
 	adc.l $0004C6,X
@@ -2331,7 +2339,7 @@ L809821:
 	sta $04
 	lda.l $0004C6,X
 	sta $03
-	ldy.w #$0008
+	ldy #$0008
 	lda [$03],Y
 	clc
 	adc.l $0004C6,X
@@ -2341,10 +2349,10 @@ L809821:
 	lda.l $0004BE,X
 	xba
 	sta $00
-	ldy.w #$0001
+	ldy #$0001
 	lda [$00],Y
-	and.w #$00FF
-	cmp.w #$0050
+	and #$00FF
+	cmp #$0050
 	bcc L809866
 	sep #$20
 	eor #$FF
@@ -2362,7 +2370,7 @@ L809866:
 	adc.l $0004C6,X
 	sta.l $0004C4,X
 	sta $03
-	lda.w #$0000
+	lda #$0000
 	sta.l $0004D2,X
 	tay
 	sep #$20
@@ -2384,11 +2392,11 @@ L809895:
 	and #$01FF
 	sta $56
 	lda.l $0004D0,X
-	and.w #$00FF
+	and #$00FF
 	sta $58
 	lda.l $0004D4,X
-	and.w #$00FF
-	cmp.w #$00FE
+	and #$00FF
+	cmp #$00FE
 	beq L8098EF
 	dec A
 	sep #$20
@@ -2403,7 +2411,7 @@ L809895:
 	lda.l $0004C7,X
 	sta $63
 	sta $01
-	ldy.w #$0010
+	ldy #$0010
 	lda [$00],Y
 	clc
 	adc.l $0004C6,X
@@ -2418,19 +2426,19 @@ L8098EF:
 
 L8098F0:
 	rep #$20
-	lda.w #$0000
-	sta.w $0700
-	ldx.w #$0000
+	lda #$0000
+	sta $0700
+	ldx #$0000
 L8098FB:
 	phx
 	lda.l $0004BE, X
 	beq L80993E
-	cmp.w #$0001
+	cmp #$0001
 	beq L80993A
 	lda.l $000700
 	inc A
 	sta.l $000700
-	lda.w #$0000
+	lda #$0000
 	sta.l $0006FE
 	phx
 	jsl L80995A
@@ -2445,7 +2453,7 @@ L8098FB:
 	beq L80993E
 	jsr $99DA
 	lda.l $0006FE
-	and.w #$0002
+	and #$0002
 	beq L80993E
 L80993A:
 	jsl L809895
@@ -2453,9 +2461,9 @@ L80993E:
 	plx
 	txa
 	clc
-	adc.w #$0020
+	adc #$0020
 	tax
-	cpx.w #$0200
+	cpx #$0200
 	bcc L8098FB
 	rtl
 
@@ -2471,9 +2479,9 @@ L80995A:
 	sta $01
 	lda.l $0004C0, X
 	sta $00
-	cmp.w #$9AC9
+	cmp #$9AC9
 	beq L80997B
-	cmp.w #$9ACA
+	cmp #$9ACA
 	bne L809978
 	sep #$20
 	lda #$80
@@ -2507,7 +2515,7 @@ L80997C:
 	beq L8099CC
 	cmp #$FF
 	bne L8099B4
-	ldy.w #$0000
+	ldy #$0000
 L8099B4:
 	lda [$03], Y
 	sta.l $0004D4, X
@@ -2547,17 +2555,17 @@ L8099F0:
 	lda.l $0004BE, X
 	xba
 	sta $00
-	ldy.w #$0000
+	ldy #$0000
 	lda [$00], Y
-	and.w #$00FF
+	and #$00FF
 	beq L809A38
-	cmp.w #$00FD
+	cmp #$00FD
 	beq L809A30
-	cmp.w #$00FE
+	cmp #$00FE
 	beq L809A25
-	cmp.w #$00FD
+	cmp #$00FD
 	bcs L809A1D
-	cmp.w #$00F0
+	cmp #$00F0
 	bcs L809A40
 L809A1D:
 	jsr $979A
@@ -2602,7 +2610,7 @@ L809A9A:
 	php
 	phy
 	rep #$20
-	and.w #$00FF
+	and #$00FF
 	asl
 	tay
 	phy
@@ -2610,7 +2618,7 @@ L809A9A:
 	sta $01
 	lda.l $0004C6, X
 	sta $00
-	ldy.w #$0004
+	ldy #$0004
 	lda [$00], Y
 	clc
 	adc.l $0004C6, X
@@ -2631,7 +2639,7 @@ L809ACA:
 	sta $01
 	lda.l $0004C2, X
 	sta $00
-	ldy.w #$0000
+	ldy #$0000
 	lda [$00], Y
 	sep #$20
 	cmp #$80
@@ -2676,7 +2684,7 @@ L809B22:
 	lda.l $0004C2, X
 	sta $00
 	clc
-	adc.w #$0002
+	adc #$0002
 	sta.l $0004C2, X
 	sep #$20
 	bra L809B5E
@@ -2745,7 +2753,7 @@ L809C47:
 	bne L809C56
 	sep #$20
 	lda #$02
-	sta.w $0D91
+	sta $0D91
 	rep #$20
 L809C56:
 	lda.l $0006FE
@@ -2809,18 +2817,18 @@ L809D3C:
 L809D48:
 	php
 	rep #$20
-	lda.w $04C7, X
+	lda $04C7, X
 	sta $01
-	lda.w $04BE, X
+	lda $04BE, X
 	xba
 	sta $00
-	ldy.w #$0001
+	ldy #$0001
 	lda [$00], Y
-	and.w #$00FF
-	eor.w #$FF
+	and #$00FF
+	eor #$FF
 	asl
 	sep #$20
-	sta.w $0D92
+	sta $0D92
 	plp
 	rts
 
@@ -2828,11 +2836,11 @@ L809D69:
 	php
 	rep #$20
 	tay
-	cpy.w #$000A
+	cpy #$000A
 	bcs L809D87
-	lda.w $04CE, X
-	and.w #$00FF
-	sta.w $089D
+	lda $04CE, X
+	and #$00FF
+	sta $089D
 	phx
 	tyx
 	lda.l $809DCF, X
@@ -2841,9 +2849,9 @@ L809D69:
 .db $80 $13
 
 L809D87:
-	lda.w $04CE, X
-	and.w #$00FF
-	sta.w $089F
+	lda $04CE, X
+	and #$00FF
+	sta $089F
 	phx
 	tyx
 	lda.l $809DD9, X
@@ -2854,25 +2862,25 @@ L809D87:
 
 L809D9D:
 	php
-	lda.w $0D92
+	lda $0D92
 	cmp.b #$0A
 	bcs L809DCD
-	lda.w $0D93
+	lda $0D93
 	bit.b #$02
 	bne L809DBB
 	bit.b #$01
 	bne L809DCD
 	bit.b #$10
 	bne L809DCD
-	lda.w $078F
+	lda $078F
 	bit.b #$10
 	beq L809DCD
 L809DBB:
 	rep #$20
-	lda.w $04CE, X
-	and.w #$00FF
-	sta.w $089D
-	lda.w #$0039
+	lda $04CE, X
+	and #$00FF
+	sta $089D
+	lda #$0039
 	jsl $80B44D
 L809DCD:
 	plp
@@ -2918,7 +2926,7 @@ L809E45:
 	plb
 	rep #$30
 	lda.l $0004DB, X
-	and.w #$00FF
+	and #$00FF
 	beq L809E5C
 	jsr $A04B
 
@@ -2931,10 +2939,10 @@ L809E5C:
 	lda $50
 	lsr
 	lsr
-	sta.w $4204
+	sta $4204
 	sep #$20
 	lda #$04
-	sta.w $4206
+	sta $4206
 	rep #$20
 	lda $63
 	sta $01
@@ -2949,23 +2957,23 @@ L809E5C:
 	adc $00
 	sta $03
 	lda $7B
-	and.w #$00E0
+	and #$00E0
 	asl
 	asl
 	asl
 	xba
 	tax
 	sep #$20
-	lda.w $9FF5, X
+	lda $9FF5, X
 	sta $60
-	lda.w $9FFB, X
+	lda $9FFB, X
 	sta $61
-	lda.w $4214
+	lda $4214
 	sta $54
-	lda.w $4216
+	lda $4216
 	asl
 	sta $55
-	ldy.w #$0000
+	ldy #$0000
 	lda [$03], Y
 	iny
 	sta $26
@@ -2976,14 +2984,14 @@ L809E5C:
 	sta $28
 	rep #$20
 	lda $50
-	cmp.w #$01FD
+	cmp #$01FD
 	bcc L809EC5
 	plb
 	plp
 	rtl
 
 L809EC5:
-	lda.w #$0000
+	lda #$0000
 	sta $19
 	sep #$20
 	lda $27
@@ -3038,15 +3046,15 @@ L809EFD:
 	iny
 	iny
 	ldx $50
-	sta.w $0212, X
+	sta $0212, X
 	txa
 	clc
-	adc.w #$0004
+	adc #$0004
 	sta $50
 	sep #$20
 	lda $15
 	ldx $50
-	sta.w $020D, X
+	sta $020D, X
 	lda $1E
 	cmp #$01
 	phy
@@ -3054,7 +3062,7 @@ L809EFD:
 	ply
 	lda $1D
 	ldx $50
-	sta.w $020C, X
+	sta $020C, X
 	lda $5C
 	bmi L809FA7
 	lda $5D
@@ -3100,12 +3108,12 @@ L809FA7:
 	asl
 	and #$0E
 	sta $15
-	lda.w $020F, X
+	lda $020F, X
 	bit #$0E
 	beq L809FBA
 	and #$F1
 	ora $15
-	sta.w $020F, X
+	sta $020F, X
 L809FBA:
 	jmp $9F48
 
@@ -3129,19 +3137,19 @@ L80A001:
 	ldy $55
 	bcs L80A015
 	ldx $54
-	lda.w $0410, X
-	and.w $A03B, Y
-	sta.w $0410, X
+	lda $0410, X
+	and $A03B, Y
+	sta $0410, X
 	rep #$10
 	rts
 L80A015:
 	lda $19
 	bne L80A029
 	ldx $54
-	lda.w $0410, X
-	and.w $A03B, Y
-	ora.w $A043, Y
-	sta.w $0410, X
+	lda $0410, X
+	and $A03B, Y
+	ora $A043, Y
+	sta $0410, X
 	bra L80A038
 
 L80A029:
