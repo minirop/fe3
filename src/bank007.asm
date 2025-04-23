@@ -2630,13 +2630,13 @@ COMMANDS_JUMP_TABLE:
 	.dw SCRIPT_COMMAND_81
 	.dw SCRIPT_COMMAND_82
 	.dw SCRIPT_COMMAND_83
-	.dw SCRIPT_COMMAND_84
-	.dw SCRIPT_COMMAND_85
+	.dw SHOW_PORTRAIT_CMD
+	.dw CLOSE_FRAME_CMD
 	.dw SCRIPT_COMMAND_86
 	.dw SCRIPT_COMMAND_87
-	.dw SCRIPT_COMMAND_88
-	.dw SCRIPT_COMMAND_89
-	.dw SHOW_PORTRAIT_CMD
+	.dw START_DIALOGUE_CMD
+	.dw PLAY_SONG_CMD
+	.dw WAIT_FOR_A_CMD
 	.dw SCRIPT_COMMAND_8B
 	.dw SCRIPT_COMMAND_8C
 	.dw SCRIPT_COMMAND_8D
@@ -2824,7 +2824,7 @@ SCRIPT_COMMAND_94:
 	inc $0F02
 	bra L87CFC5
 
-SHOW_PORTRAIT_CMD:
+WAIT_FOR_A_CMD:
 	lda.w #$FFFF
 	sta $0F8F
 	inc $0F02
@@ -2899,7 +2899,7 @@ L87CFD2:
 	clc
 	rts
 
-SCRIPT_COMMAND_89:
+PLAY_SONG_CMD:
 	sep #$20
 	lda $1002
 	and #$02
@@ -2920,7 +2920,7 @@ L87D082:
 	clc
 	rts
 
-SCRIPT_COMMAND_88:
+START_DIALOGUE_CMD:
 	sep #$20
 	lda.w $1002
 	and #$02
@@ -2985,7 +2985,7 @@ SCRIPT_COMMAND_87:
 	pha
 	bra L87D0D8
 
-SCRIPT_COMMAND_84:
+SHOW_PORTRAIT_CMD:
 	sep #$20
 	lda $1002
 	and #$02
@@ -3139,11 +3139,13 @@ L87D233:
 
 .db $02 $02 $01
 .db $18 $02 $00 $02 $12 $01 $18 $12
-.db $00 $81 $00 $00 $0C $00 $01 $10
-.db $10 $81 $00 $00 $03 $01 $01 $C0
-.db $10 $82 $40 $00 $0C $00 $11 $10
-.db $90 $82 $40 $00 $03 $01 $11 $C0
-.db $90
+.db $00
+
+L87D281:
+.db $81 $00 $00 $0C $00 $01 $10 $10
+.db $81 $00 $00 $03 $01 $01 $C0 $10
+.db $82 $40 $00 $0C $00 $11 $10 $90
+.db $82 $40 $00 $03 $01 $11 $C0 $90
 
 L87D2A1:
 	php
@@ -3156,21 +3158,21 @@ L87D2A1:
 	asl
 	tax
 	sep #$20
-	lda $87D281,X
+	lda.l L87D281,X
 	sta $0F75
-	lda $87D282,X
+	lda.l L87D281+1,X
 	sta $0F76
-	lda $87D283,X
+	lda.l L87D281+2,X
 	sta $0F77
-	lda $87D284,X
+	lda.l L87D281+3,X
 	sta $0F78
-	lda $87D285,X
+	lda.l L87D281+4,X
 	sta $0F79
-	lda $87D286,X
+	lda.l L87D281+5,X
 	sta $0C1C
-	lda $87D287,X
+	lda.l L87D281+6,X
 	sta $0AAE
-	lda $87D288,X
+	lda.l L87D281+7,X
 	sta $0AAF
 	ldy #$0002
 	lda [$00],Y
@@ -3273,7 +3275,7 @@ L87D3A5:
 	plp
 	rts
 
-SCRIPT_COMMAND_85:
+CLOSE_FRAME_CMD:
 	sep #$20
 	lda $1002
 	and #$02
