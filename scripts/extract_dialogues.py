@@ -93,9 +93,9 @@ for i in range(1, len(offsets) - 1):
 	if offsets[i] + size in offsets:
 		print ("OK")
 	else:
-		# those are the last dialogue of each bank, so they don't end when
-		# another one starts
-		if i != 114 and i != 175 and i != 217 and i != 497:
+		# those are the last dialogue of each bank (+516), so they don't
+		# end when the next one starts
+		if i != 114 and i != 175 and i != 217 and i != 516 and i != 497:
 			print ("{:x}".format(offsets[i] + size))
 			raise ValueError("dialogue {:03} is incomplete".format(i))
 
