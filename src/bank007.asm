@@ -2452,74 +2452,287 @@ L8781C9:
 .db $16 $AA $80 $60 $EE $02 $0F $C9
 .db $80 $00 $90 $06 $29 $7F $00 $4C
 .db $29 $CE $C9 $18 $00 $B0 $FE $0A
-.db $AA $FC $E6 $C9 $18 $60 $16 $CA
-.db $26 $CA $45 $CA $7F $CA $A4 $CA
-.db $B6 $CA $C5 $CA $D4 $CA $E3 $CA
-.db $F2 $CA $0D $CB $28 $CB $3A $CB
-.db $58 $CB $64 $CA $6A $CB $9C $CB
-.db $AD $CB $B2 $CB $B7 $CB $BC $CB
-.db $CA $CB $D9 $CB $EB $CB $E2 $20
-.db $9C $A1 $0F $C2 $20 $9C $05 $0F
-.db $9C $09 $0F $68 $38 $60 $AD $00
-.db $0F $AA $20 $70 $C8 $AD $09 $0F
-.db $C9 $FF $00 $F0 $06 $AD $07 $0F
-.db $8D $09 $0F $AD $02 $0F $1A $8D
-.db $02 $0F $68 $38 $60 $AE $00 $0F
-.db $20 $0E $C9 $A9 $00 $00 $9D $27
-.db $0F $9D $29 $0F $9D $2B $0F $A9
-.db $00 $00 $8D $0E $0F $8D $0B $0F
-.db $EE $02 $0F $60 $AE $00 $0F $B7
-.db $00 $9D $20 $0F $C8 $B7 $00 $9D
-.db $21 $0F $EE $02 $0F $EE $02 $0F
-.db $EE $02 $0F $EE $02 $0F $60 $B7
-.db $00 $8D $1B $0C $22 $A8 $D5 $81
-.db $AE $00 $0F $A9 $00 $7E $9D $21
-.db $0F $A9 $00 $30 $18 $65 $15 $9D
-.db $20 $0F $EE $02 $0F $EE $02 $0F
-.db $EE $02 $0F $60 $AE $00 $0F $B7
-.db $00 $9D $25 $0F $EE $02 $0F $EE
-.db $02 $0F $EE $02 $0F $60 $B7 $00
-.db $29 $FF $00 $8D $07 $0F $EE $02
-.db $0F $EE $02 $0F $60 $B7 $00 $29
-.db $FF $00 $8D $10 $0F $EE $02 $0F
-.db $EE $02 $0F $60 $B7 $00 $8D $14
-.db $0F $EE $02 $0F $EE $02 $0F $EE
-.db $02 $0F $60 $B7 $00 $8D $12 $0F
-.db $EE $02 $0F $EE $02 $0F $EE $02
-.db $0F $60 $AE $00 $0F $20 $0E $C9
-.db $A9 $00 $00 $9D $27 $0F $9D $29
-.db $0F $9D $2B $0F $A9 $00 $00 $8D
-.db $0E $0F $8D $0B $0F $A9 $02 $00
-.db $1C $05 $0F $A9 $04 $00 $0C $05
-.db $0F $A9 $FE $00 $8D $09 $0F $9C
-.db $42 $0F $EE $02 $0F $68 $38 $60
-.db $AE $00 $0F $B7 $00 $9D $27 $0F
-.db $EE $02 $0F $EE $02 $0F $EE $02
-.db $0F $60 $B7 $00 $29 $FF $00 $09
-.db $00 $11 $8F $02 $42 $00 $EA $EA
-.db $EA $AF $16 $42 $00 $8D $00 $0F
-.db $AA $EE $02 $0F $EE $02 $0F $60
-.db $AE $00 $0F $B7 $00 $9D $23 $0F
-.db $EE $02 $0F $EE $02 $0F $EE $02
-.db $0F $60 $B7 $00 $29 $FF $00 $85
-.db $15 $AD $0E $0F $4A $4A $4A $1A
-.db $18 $65 $15 $48 $AD $00 $0F $AA
-.db $20 $1C $BA $20 $41 $BA $68 $3A
-.db $D0 $F1 $9C $0E $0F $EE $02 $0F
-.db $EE $02 $0F $AD $07 $0F $8D $09
-.db $0F $68 $38 $60 $B7 $00 $29 $FF
-.db $00 $8D $09 $0F $EE $02 $0F $EE
-.db $02 $0F $68 $38 $60 $A9 $00 $00
-.db $80 $0D $A9 $01 $00 $80 $08 $A9
-.db $02 $00 $80 $03 $A9 $03 $00 $E2
-.db $20 $8D $0D $0F $C2 $20 $EE $02
-.db $0F $60 $B7 $00 $8D $05 $0F $EE
-.db $02 $0F $EE $02 $0F $EE $02 $0F
-.db $60 $B7 $00 $0D $05 $0F $8D $05
-.db $0F $EE $02 $0F $EE $02 $0F $EE
-.db $02 $0F $60 $B7 $00 $2D $05 $0F
-.db $8D $05 $0F $EE $02 $0F $EE $02
-.db $0F $EE $02 $0F $60 $E2 $20 $A5
+.db $AA $FC $E6 $C9 $18 $60
+
+COMMANDS_00_JUMP_TABLE:
+	.dw SCRIPT_COMMAND_00
+	.dw SCRIPT_COMMAND_01
+	.dw SCRIPT_COMMAND_02
+	.dw SCRIPT_COMMAND_03
+	.dw SCRIPT_COMMAND_04
+	.dw SCRIPT_COMMAND_05
+	.dw SCRIPT_COMMAND_06
+	.dw SCRIPT_COMMAND_07
+	.dw SCRIPT_COMMAND_08
+	.dw SCRIPT_COMMAND_09
+	.dw SCRIPT_COMMAND_0A
+	.dw SCRIPT_COMMAND_0B
+	.dw SCRIPT_COMMAND_0C
+	.dw SCRIPT_COMMAND_0D
+	.dw SCRIPT_COMMAND_0E
+	.dw SCRIPT_COMMAND_0F
+	.dw SCRIPT_COMMAND_10
+	.dw SCRIPT_COMMAND_11
+	.dw SCRIPT_COMMAND_12
+	.dw SCRIPT_COMMAND_13
+	.dw SCRIPT_COMMAND_14
+	.dw SCRIPT_COMMAND_15
+	.dw SCRIPT_COMMAND_16
+	.dw SCRIPT_COMMAND_17
+
+SCRIPT_COMMAND_00:
+	sep #$20
+	stz $0FA1
+	rep #$20
+	stz $0F05
+	stz $0F09
+	pla
+	sec
+	rts
+
+SCRIPT_COMMAND_01:
+	lda $0F00
+	tax
+	jsr $C870
+	lda $0F09
+	cmp.w #$00FF
+	beq L87CA3B
+	lda $0F07
+	sta $0F09
+L87CA3B:
+	lda $0F02
+	inc A
+	sta $0F02
+	pla
+	sec
+	rts
+
+SCRIPT_COMMAND_02:
+	ldx $0F00
+	jsr $C90E
+	lda #$0000
+	sta $0F27,X
+	sta $0F29,X
+	sta $0F2B,X
+	lda #$0000
+	sta $0F0E
+	sta $0F0B
+	inc $0F02
+	rts
+
+SCRIPT_COMMAND_0E:
+	ldx $0F00
+	lda [$00],Y
+	sta $0F20,X
+	iny
+	lda [$00],Y
+	sta $0F21,X
+	inc $0F02
+	inc $0F02
+	inc $0F02
+	inc $0F02
+	rts
+
+SCRIPT_COMMAND_03:
+	lda [$00],Y
+	sta $0C1B
+	jsl $81D5A8
+	ldx $0F00
+	lda #$7E00
+	sta $0F21,X
+	lda #$3000
+	clc
+	adc $15
+	sta $0F20,X
+	inc $0F02
+	inc $0F02
+	inc $0F02
+	rts
+
+SCRIPT_COMMAND_04:
+	ldx $0F00
+	lda [$00],Y
+	sta $0F25,X
+	inc $0F02
+	inc $0F02
+	inc $0F02
+	rts
+
+SCRIPT_COMMAND_05:
+	lda [$00],Y
+	and #$00FF
+	sta $0F07
+	inc $0F02
+	inc $0F02
+	rts
+
+SCRIPT_COMMAND_06:
+	lda [$00],Y
+	and #$00FF
+	sta $0F10
+	inc $0F02
+	inc $0F02
+	rts
+
+SCRIPT_COMMAND_07:
+	lda [$00],Y
+	sta $0F14
+	inc $0F02
+	inc $0F02
+	inc $0F02
+	rts
+
+SCRIPT_COMMAND_08:
+	lda [$00],Y
+	sta $0F12
+	inc $0F02
+	inc $0F02
+	inc $0F02
+	rts
+
+SCRIPT_COMMAND_09:
+	ldx $0F00
+	jsr $C90E
+	lda #$0000
+	sta $0F27,X
+	sta $0F29,X
+	sta $0F2B,X
+	lda #$0000
+	sta $0F0E
+	sta $0F0B
+SCRIPT_COMMAND_0A:
+	lda #$0002
+	trb $0F05
+	lda #$0004
+	tsb $0F05
+	lda #$00FE
+	sta $0F09
+	stz $0F42
+	inc $0F02
+	pla
+	sec
+	rts
+
+SCRIPT_COMMAND_0B:
+	ldx $0F00
+	lda [$00],Y
+	sta $0F27,X
+	inc $0F02
+	inc $0F02
+	inc $0F02
+	rts
+
+SCRIPT_COMMAND_0C:
+	lda [$00],Y
+	and #$00FF
+	ora #$1100
+	sta.l WRMPYA
+	nop
+	nop
+	nop
+	lda.l RDMPYL
+	sta $0F00
+	tax
+	inc $0F02
+	inc $0F02
+	rts
+
+SCRIPT_COMMAND_0D:
+	ldx $0F00
+	lda [$00],Y
+	sta $0F23,X
+	inc $0F02
+	inc $0F02
+	inc $0F02
+	rts
+
+SCRIPT_COMMAND_0F:
+	lda [$00],Y
+	and #$00FF
+	sta $15
+	lda $0F0E
+	lsr
+	lsr
+	lsr
+	inc A
+	clc
+	adc $15
+L87CB7B:
+	pha
+	lda $0F00
+	tax
+	jsr $BA1C
+	jsr $BA41
+	pla
+	dec A
+	bne L87CB7B
+	stz $0F0E
+	inc $0F02
+	inc $0F02
+	lda $0F07
+	sta $0F09
+	pla
+	sec
+	rts
+
+SCRIPT_COMMAND_10:
+	lda [$00],Y
+	and #$00FF
+	sta $0F09
+	inc $0F02
+	inc $0F02
+	pla
+	sec
+	rts
+
+SCRIPT_COMMAND_11
+	LDA #$0000
+	BRA L87CBBF
+
+SCRIPT_COMMAND_12
+	LDA #$0001
+	BRA L87CBBF
+
+SCRIPT_COMMAND_13
+	LDA #$0002
+	BRA L87CBBF
+
+SCRIPT_COMMAND_14
+	LDA #$0003
+L87CBBF:
+	SEP #$20
+	STA $0F0D
+	REP #$20
+	INC $0F02
+	RTS
+
+SCRIPT_COMMAND_15
+	LDA [$00],Y
+	STA $0F05
+	INC $0F02
+	INC $0F02
+	INC $0F02
+	RTS
+
+SCRIPT_COMMAND_16
+	LDA [$00],Y
+	ORA $0F05
+	STA $0F05
+	INC $0F02
+	INC $0F02
+	INC $0F02
+	RTS
+
+SCRIPT_COMMAND_17
+	LDA [$00],Y
+	AND $0F05
+	STA $0F05
+	INC $0F02
+	INC $0F02
+	INC $0F02
+	RTS
+
+.db $E2 $20 $A5
 .db $F7 $09 $08 $85 $F7 $C2 $20 $60
 .db $08 $AD $05 $0F $89 $08 $00 $F0
 .db $03 $4C $CA $CD $E2 $20 $A9 $01
