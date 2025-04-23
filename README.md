@@ -16,7 +16,8 @@ Just type `make`.
 
 ## Help needed
 
-If someone wants to tackle writing a compressor. The decompressor is the first loop of `extract_graphics` from [fe3-png](https://github.com/minirop/fe3-png/).
+- Writing a compressor. See [documentation](docs/compression.md), the decompressor can be found inside [fe3-png](https://github.com/minirop/fe3-png/).
+- Understand the map format. `115F9F.bin` is Chapter 1, the map tilemap is also encoded/compressed (differently than above).
 
 ## See also
 
