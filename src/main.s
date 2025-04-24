@@ -38,6 +38,8 @@
   IRQBRK $FFFF
 .ENDEMUVECTOR
 
+.include "defines.asm"
+
 .include "bank000.asm"
 .include "bank001.asm"
 .include "bank002.asm"
