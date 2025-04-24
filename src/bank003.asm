@@ -2979,7 +2979,7 @@ L83DCBE:
 	rep #$10
 	ldy #$0000
 	lda [$00],Y
-	sta $7F4400
+	sta.l ActiveUnit.UnitId
 	iny
 	lda [$00],Y
 	sta $7F4401
