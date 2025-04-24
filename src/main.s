@@ -1,23 +1,68 @@
 .MEMORYMAP
-  SLOTSIZE $8000
-  DEFAULTSLOT 0
-  SLOT 0 $8000
-  SLOTSIZE $10000
-  SLOT 1 $0000
-  SLOT 2 $0000
+    SLOTSIZE $8000
+    DEFAULTSLOT 0
+    SLOT 0 $8000
+    SLOTSIZE $10000
+    SLOT 1 $0000
+    SLOT 2 $0000
 .ENDME
 
 .RAMSECTION "RAM1" BASE $7E SLOT 1
 .ENDS
 
 .STRUCT Active_Unit
-UnitId db
-ClassId db
+/* 00 */ UnitID db
+/* 01 */ ClassID db
+/* 02 */ Level db
+/* 03 */ HP db
+/* 04 */ MaxHP db
+/* 05 */ EXP db
+/* 06 */ Terrain dw
+/* 08 */ Movement db
+/* 09 */ Strength db
+/* 0A */ Skill db
+/* 0B */ Speed db
+/* 0C */ Defense db
+/* 0D */ Resistance db
+/* 0E */ Luck db
+/* 0F */ WeaponLevel db
+/* 10 */ XPosition db
+/* 11 */ YPosition db
+/* 12 */ HasMoved db ; also IsDead?
+/* 13 */ ResBoostTimer db
+/* 14 */ MountedClassID db
+/* 15 */ TransformTimer db ; UnitWasSelected on prep screen?
+/* 16 */ NameID db
+/* 17 */ PortraitID db
+/* 18 */ AI1 dw
+/* 1A */ AI2 dw
+/* 1C */ AI3 dw
+/* 1E */ Money dw
+/* 20 */ Weapons .dsb 4
+/* 20 */ Weapon1 db
+/* 21 */ Weapon2 db
+/* 22 */ Weapon3 db
+/* 23 */ Weapon4 db
+/* 24 */ WeaponsUses .dsb 4
+/* 24 */ Weapon1Uses db
+/* 25 */ Weapon2Uses db
+/* 26 */ Weapon3Uses db
+/* 27 */ Weapon4Uses db
+/* 28 */ Items .dsb 4
+/* 28 */ Item1 db
+/* 29 */ Item2 db
+/* 2A */ Item3 db
+/* 2B */ Item4 db
+/* 2C */ ItemsUses .dsb 4
+/* 2C */ Item1Uses db
+/* 2D */ Item2Uses db
+/* 2E */ Item3Uses db
+/* 2F */ Item4Uses db
 .ENDST
 
 .RAMSECTION "RAM2" BASE $7F SLOT 2
-. dsb $4400
-ActiveUnit INSTANCEOF Active_Unit
+    . dsb $4400
+    ActiveUnit INSTANCEOF Active_Unit
 .ENDS
 
 .ROMBANKSIZE $8000
@@ -25,33 +70,33 @@ ActiveUnit INSTANCEOF Active_Unit
 .EMPTYFILL $FF
 
 .SNESHEADER
-  NAME "SHVC FIREEMBLEM      "
-  FASTROM
-  LOROM
-  CARTRIDGETYPE $02
-  ROMSIZE $0C
-  SRAMSIZE $03
-  COUNTRY $00
-  LICENSEECODE $01
-  VERSION $00
+    NAME "SHVC FIREEMBLEM      "
+    FASTROM
+    LOROM
+    CARTRIDGETYPE $02
+    ROMSIZE $0C
+    SRAMSIZE $03
+    COUNTRY $00
+    LICENSEECODE $01
+    VERSION $00
 .ENDSNES
 
 .SNESNATIVEVECTOR
-  COP $90B2
-  BRK $FFFF
-  ABORT $FFFF
-  NMI NMI
-  UNUSED $FFFF
-  IRQ $90B5
+    COP $90B2
+    BRK $FFFF
+    ABORT $FFFF
+    NMI NMI
+    UNUSED $FFFF
+    IRQ $90B5
 .ENDNATIVEVECTOR
 
 .SNESEMUVECTOR
-  COP $FFFF
-  UNUSED $FFFF
-  ABORT $FFFF
-  NMI $FFFF
-  RESET RESET
-  IRQBRK $FFFF
+    COP $FFFF
+    UNUSED $FFFF
+    ABORT $FFFF
+    NMI $FFFF
+    RESET RESET
+    IRQBRK $FFFF
 .ENDEMUVECTOR
 
 .include "defines.asm"

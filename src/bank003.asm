@@ -2979,77 +2979,77 @@ L83DCBE:
 	rep #$10
 	ldy #$0000
 	lda [$00],Y
-	sta.l ActiveUnit.UnitId
+	sta.l ActiveUnit.UnitID
 	iny
 	lda [$00],Y
-	sta $7F4401
+	sta.l ActiveUnit.ClassID
 	iny
 	lda [$00],Y
-	sta $7F4402
+	sta.l ActiveUnit.Level
 	iny
 	lda [$00],Y
-	sta $7F4416
+	sta.l ActiveUnit.NameID
 	iny
 	lda [$00],Y
-	sta $7F4410
+	sta.l ActiveUnit.XPosition
 	iny
 	lda [$00],Y
-	sta $7F4411
+	sta.l ActiveUnit.YPosition
 	iny
 	lda [$00],Y
-	sta $7F4414
+	sta.l ActiveUnit.MountedClassID
 	iny
 	lda [$00],Y
-	sta $7F4417
+	sta.l ActiveUnit.PortraitID
 	iny
 	lda [$00],Y
-	sta $7F4420
+	sta.l ActiveUnit.Weapon1
 	iny
 	lda [$00],Y
-	sta $7F4421
+	sta.l ActiveUnit.Weapon2
 	iny
 	lda [$00],Y
-	sta $7F4422
+	sta.l ActiveUnit.Weapon3
 	iny
 	lda [$00],Y
-	sta $7F4423
+	sta.l ActiveUnit.Weapon4
 	iny
 	lda [$00],Y
-	sta $7F4428
+	sta.l ActiveUnit.Item1
 	iny
 	lda [$00],Y
-	sta $7F4429
+	sta.l ActiveUnit.Item2
 	lda #$FF
-	sta $7F442A
-	sta $7F442B
+	sta.l ActiveUnit.Item3
+	sta.l ActiveUnit.Item4
 	rep #$20
 	iny
 	lda [$00],Y
 	cmp #$FFFF
 	beq L83DD45
-	sta $7F441E
+	sta.l ActiveUnit.Money
 	bra L83DD4C
 L83DD45:
 	lda #$0000
-	sta $7F441E
+	sta.l ActiveUnit.Money
 L83DD4C:
 	sep #$20
 	iny
 	iny
 	lda [$00],Y
-	sta $7F4418
+	sta.l ActiveUnit.AI1
 	iny
 	lda [$00],Y
-	sta $7F441A
+	sta.l ActiveUnit.AI2
 	iny
 	lda [$00],Y
-	sta $7F441C
+	sta.l ActiveUnit.AI3
 	bra L83DD6B
 
 .db $08 $E2 $20 $C2 $10
 
 L83DD6B:
-	lda $7F4401
+	lda.l ActiveUnit.ClassID
 	xba
 	lda #$09
 	rep #$20
@@ -3060,7 +3060,7 @@ L83DD6B:
 	lda.l RDMPYL
 	tax
 	sep #$20
-	lda $7F4400
+	lda.l ActiveUnit.UnitID
 	xba
 	lda #$11
 	rep #$20
@@ -3077,61 +3077,61 @@ L83DD6B:
 	clc
 	adc $889201,X
 	plx
-	sta $7F4409
+	sta.l ActiveUnit.Strength
 	lda $88906D,X
 	phx
 	tyx
 	clc
 	adc $889202,X
 	plx
-	sta $7F440A
+	sta.l ActiveUnit.Skill
 	lda $88906E,X
 	phx
 	tyx
 	clc
 	adc $889203,X
 	plx
-	sta $7F440B
+	sta.l ActiveUnit.Speed
 	lda $889070,X
 	phx
 	tyx
 	clc
 	adc $889205,X
 	plx
-	sta $7F440C
+	sta.l ActiveUnit.Defense
 	lda $889071,X
 	phx
 	tyx
 	clc
 	adc $889206,X
 	plx
-	sta $7F440D
+	sta.l ActiveUnit.Resistance
 	lda $88906F,X
-	sta $7F4408
+	sta.l ActiveUnit.Movement
 	lda $889072,X
-	sta $7F4405
+	sta.l ActiveUnit.EXP
 	lda $889073,X
-	sta $7F440F
+	sta.l ActiveUnit.WeaponLevel
 	lda $889074,X
-	sta $7F4404
-	sta $7F4403
+	sta.l ActiveUnit.MaxHP
+	sta.l ActiveUnit.HP
 	tyx
 	lda $889204,X
-	sta $7F440E
+	sta.l ActiveUnit.Luck
 	lda $889208,X
-	sta $7F440F
+	sta.l ActiveUnit.WeaponLevel
 	lda $889207,X
 	cmp #$FF
 	beq L83DE2E
-	sta $7F4404
-	sta $7F4403
+	sta.l ActiveUnit.MaxHP
+	sta.l ActiveUnit.HP
 L83DE2E:
 	rep #$10
 	ldx #$0003
 L83DE33:
 	lda #$FF
-	sta $7F4424,X
-	lda $7F4420,X
+	sta.l ActiveUnit.WeaponsUses,X
+	lda.l ActiveUnit.Weapons,X
 	cmp #$FF
 	beq L83DE5E
 	phx
@@ -3147,15 +3147,15 @@ L83DE33:
 	tax
 	lda $88A6F1,X
 	plx
-	sta $7F4424,X
+	sta.l ActiveUnit.WeaponsUses,X
 L83DE5E:
 	dex
 	bpl L83DE33
 	ldx #$0003
 L83DE64:
 	lda #$FF
-	sta $7F442C,X
-	lda $7F4428,X
+	sta.l ActiveUnit.ItemsUses,X
+	lda.l ActiveUnit.Items,X
 	cmp #$FF
 	beq L83DE8F
 	phx
@@ -3171,14 +3171,14 @@ L83DE64:
 	tax
 	lda $88A6F1,X
 	plx
-	sta $7F442C,X
+	sta.l ActiveUnit.ItemsUses,X
 L83DE8F:
 	dex
 	bpl L83DE64
 	lda $07DA
 	asl
 	ora #$10
-	sta $7F4412
+	sta.l ActiveUnit.HasMoved
 	ldx #$0000
 L83DE9F:
 	lda $93FE95,X
@@ -3186,31 +3186,31 @@ L83DE9F:
 	bne L83DEAA
 	brl L83DF77
 L83DEAA:
-	cmp $7F4400
+	cmp.l ActiveUnit.UnitID
 	beq L83DEB3
 	inx
 	bra L83DE9F
 L83DEB3:
-	lda $7F4401
-	cmp #$04
+	lda.l ActiveUnit.ClassID
+	cmp #CLASS_PALADIN
 	beq L83DEE3
-	cmp #$08
+	cmp #CLASS_GENERAL
 	beq L83DEE3
-	cmp #$0A
+	cmp #CLASS_DRACOKNIGHT
 	beq L83DEE3
-	cmp #$0E
+	cmp #CLASS_HORSEMAN
 	beq L83DEE3
-	cmp #$0C
+	cmp #CLASS_SNIPER
 	beq L83DEE3
-	cmp #$1A
+	cmp #CLASS_BISHOP_MALE
 	beq L83DEE3
-	cmp #$1B
+	cmp #CLASS_SAGE
 	beq L83DEE3
-	cmp #$18
+	cmp #CLASS_BISHOP_FEMALE
 	beq L83DEE3
-	cmp #$12
+	cmp #CLASS_HERO
 	beq L83DEE3
-	cmp #$20
+	cmp #CLASS_BERSERKER
 	beq L83DEE3
 	lda #$00
 	bra L83DEE5
@@ -3218,88 +3218,88 @@ L83DEE3:
 	lda #$0A
 L83DEE5:
 	clc
-	adc $7F4402
+	adc.l ActiveUnit.Level
 	dec A
 	ldy #$0000
 	pha
 	clc
 	jsr $DF98
-	adc $7F4409
+	adc.l ActiveUnit.Strength
 	cmp #$14
 	bmi L83DEFD
 	lda #$14
 L83DEFD:
-	sta $7F4409
+	sta.l ActiveUnit.Strength
 	pla
 	ldy #$0001
 	pha
 	clc
 	jsr $DF98
-	adc $7F440A
+	adc.l ActiveUnit.Skill
 	cmp #$14
 	bmi L83DF14
 	lda #$14
 L83DF14:
-	sta $7F440A
+	sta.l ActiveUnit.Skill
 	pla
 	ldy #$0002
 	pha
 	clc
 	jsr $DF98
-	adc $7F440B
+	adc.l ActiveUnit.Speed
 	cmp #$14
 	bmi L83DF2B
 	lda #$14
 L83DF2B:
-	sta $7F440B
+	sta.l ActiveUnit.Speed
 	pla
 	ldy #$0003
 	pha
 	clc
 	jsr $DF98
-	adc $7F440C
+	adc.l ActiveUnit.Defense
 	cmp #$14
 	bmi L83DF42
 	lda #$14
 L83DF42:
-	sta $7F440C
+	sta.l ActiveUnit.Defense
 	pla
 	ldy #$0004
 	pha
 	clc
 	jsr $DF98
-	adc $7F440D
+	adc.l ActiveUnit.Resistance
 	cmp #$14
 	bmi L83DF59
 	lda #$14
 L83DF59:
-	sta $7F440D
+	sta.l ActiveUnit.Resistance
 	pla
 	ldy #$0005
 	clc
 	jsr $DF98
-	adc $7F4403
+	adc.l ActiveUnit.HP
 	cmp #$34
 	bmi L83DF6F
 	lda #$34
 L83DF6F:
-	sta $7F4403
-	sta $7F4404
+	sta.l ActiveUnit.HP
+	sta.l ActiveUnit.MaxHP
 L83DF77:
 	ldx #$0000
 L83DF7A:
 	lda $93FEB5,X
 	cmp #$FF
 	beq L83DF96
-	cmp $7F4416
+	cmp.l ActiveUnit.NameID
 	beq L83DF8B
 	inx
 	bra L83DF7A
 L83DF8B:
 	lda #$1E
 	clc
-	adc $7F4405
-	sta $7F4405
+	adc.l ActiveUnit.EXP
+	sta.l ActiveUnit.EXP
 L83DF96:
 	plp
 	rtl
