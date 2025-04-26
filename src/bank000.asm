@@ -1296,7 +1296,7 @@ L808F80:
 L808F8C:
 	sty $71
 	ply
-	sta $7E40FE,X
+	sta.l DecompressionLocation,X
 	inx
 	dey
 	bne L808F80
@@ -1312,7 +1312,7 @@ L808FA5:
 	sty $71
 	ply
 L808FA8:
-	sta $7E40FE,X
+	sta.l DecompressionLocation,X
 	inx
 	dey
 	bne L808FA8
@@ -1340,12 +1340,12 @@ L808FD0:
 	sta $75
 L808FD5:
 	lda $74
-	sta $7E40FE,X
+	sta.l DecompressionLocation,X
 	inx
 	dey
 	beq L808FE9
 	lda $75
-	sta $7E40FE,X
+	sta.l DecompressionLocation,X
 	inx
 	dey
 	bne L808FD5
@@ -1362,7 +1362,7 @@ L808FF8:
 	sty $71
 	ply
 L808FFB:
-	sta $7E40FE,X
+	sta.l DecompressionLocation,X
 	inc A
 	inx
 	dey
@@ -1403,7 +1403,7 @@ L80903C:
 	phy
 	phx
 	ldx $74
-	lda $7E40FE,X
+	lda.l DecompressionLocation,X
 	inx
 	stx $74
 	plx
@@ -1411,7 +1411,7 @@ L80903C:
 	beq L80904E
 	eor #$FF
 L80904E:
-	sta $7E40FE,X
+	sta.l DecompressionLocation,X
 	inx
 	ply
 	dey

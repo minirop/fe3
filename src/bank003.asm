@@ -310,34 +310,96 @@
 .db $00 $01 $E0 $FF $94 $20 $00 $F0
 .db $01 $60 $D0 $94 $20 $00 $F0 $01
 .db $40 $F8 $95 $20 $00 $70 $01 $60
-.db $F8 $95 $20 $00 $70 $A9 $C7 $C9
-.db $85 $00 $E2 $20 $AD $CF $07 $22
-.db $9D $A8 $80 $A9 $89 $85 $02 $C2
-.db $20 $E6 $00 $A7 $00 $18 $69 $00
-.db $97 $8D $56 $07 $C6 $00 $A7 $00
-.db $18 $8D $55 $07 $A9 $6E $CB $85
-.db $00 $E2 $20 $AD $CF $07 $22 $9D
-.db $A8 $80 $A9 $89 $85 $02 $C2 $20
-.db $E6 $00 $A7 $00 $18 $69 $00 $A2
-.db $8F $72 $00 $00 $C6 $00 $A7 $00
-.db $8F $71 $00 $00 $A9 $00 $00 $8F
-.db $76 $00 $00 $22 $18 $8F $80 $A0
-.db $00 $20 $A2 $00 $00 $BF $FE $40
-.db $7E $9F $DC $6B $7F $E8 $88 $E8
-.db $88 $D0 $F2 $A9 $A3 $C9 $85 $00
-.db $E2 $20 $AD $CF $07 $22 $9D $A8
-.db $80 $A9 $89 $85 $02 $C2 $20 $E6
-.db $00 $A7 $00 $18 $69 $00 $9D $8F
-.db $72 $00 $00 $C6 $00 $A7 $00 $8F
-.db $71 $00 $00 $A9 $00 $00 $8F $76
-.db $00 $00 $22 $18 $8F $80 $A9 $00
-.db $7E $8D $43 $07 $A9 $FE $40 $8D
-.db $42 $07 $A9 $00 $40 $8D $45 $07
-.db $A9 $00 $00 $8D $48 $07 $E2 $20
-.db $A9 $02 $8D $41 $07 $A9 $80 $8D
-.db $47 $07 $C2 $20 $A9 $00 $00 $85
-.db $01 $A9 $41 $07 $85 $00 $22 $AD
-.db $8E $80 $6B $A9 $00 $83 $85 $01
+.db $F8 $95 $20 $00 $70
+
+L83899D: ; load_map?
+	lda.w #UNKNOWN_CHAPTERS_POINTER_DATA
+	sta $00
+	sep #$20
+	lda $07CF
+	jsl $80A89D
+	lda #bankbyte(UNKNOWN_CHAPTERS_POINTER_DATA)
+	sta $02
+	rep #$20
+	inc $00
+	lda [$00]
+	clc
+	adc #$9700
+	sta $0756
+	dec $00
+	lda [$00]
+	clc
+	sta $0755
+	lda.w #SOME_POINTERS_TABLE
+	sta $00
+	sep #$20
+	lda $07CF
+	jsl $80A89D
+	lda #bankbyte(SOME_POINTERS_TABLE)
+	sta $02
+	rep #$20
+	inc $00
+	lda [$00]
+	clc
+	adc #$A200
+	sta.l $72
+	dec $00
+	lda [$00]
+	sta.l $71
+	lda #$0000
+	sta.l $76
+	jsl $808F18
+	ldy #$2000
+	ldx #$0000
+L8389FD:
+	lda.l DecompressionLocation,X
+	sta $7F6BDC,X
+	inx
+	dey
+	inx
+	dey
+	bne L8389FD
+	lda #$C9A3
+	sta $00
+	sep #$20
+	lda $07CF
+	jsl $80A89D
+	lda #$89
+	sta $02
+	rep #$20
+	inc $00
+	lda [$00]
+	clc
+	adc #$9D00
+	sta.l $72
+	dec $00
+	lda [$00]
+	sta.l $71
+	lda #$0000
+	sta.l $76
+	jsl $808F18
+	lda #$7E00
+	sta $0743
+	lda #$40FE
+	sta $0742
+	lda #$4000
+	sta $0745
+	lda #$0000
+	sta $0748
+	sep #$20
+	lda #$02
+	sta $0741
+	lda #$80
+	sta $0747
+	rep #$20
+	lda #$0000
+	sta $01
+	lda #$0741
+	sta $00
+	jsl L808EAD
+	rtl
+
+.db $A9 $00 $83 $85 $01
 .db $A9 $D6 $8A $85 $00 $22 $AD $8E
 .db $80 $A9 $00 $83 $85 $01 $A9 $DF
 .db $8A $85 $00 $22 $AD $8E $80 $A9

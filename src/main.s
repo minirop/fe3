@@ -8,6 +8,8 @@
 .ENDME
 
 .RAMSECTION "RAM1" BASE $7E SLOT 1
+    . dsb $40FE
+    DecompressionLocation db
 .ENDS
 
 .STRUCT Active_Unit
