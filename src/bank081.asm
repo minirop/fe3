@@ -3,29 +3,53 @@
 
 .SECTION "Bank81" FORCE
 
-.INCBIN "288000.bin" ; Portrait Marth
-.INCBIN "2885C9.bin" ; Portrait Caeda
-.INCBIN "288AFB.bin" ; Portrait Jagen
-.INCBIN "289119.bin" ; Portrait Cain
-.INCBIN "2896E1.bin" ; Portrait Abel
-.INCBIN "289C33.bin" ; Portrait Draug
-.INCBIN "28A176.bin" ; Portrait Gordin
-.INCBIN "28A6E1.bin" ; Portrait Rickard
-.INCBIN "28AC86.bin" ; Card pirate
-.INCBIN "28B249.bin" ; Portrait Bord
-.INCBIN "28B7D0.bin" ; Portrait Barst
-.INCBIN "28BD5C.bin" ; Portrait Cord
-.INCBIN "28C376.bin" ; Portrait Castor
-.INCBIN "28C8B2.bin" ; Portrait Ogma
-.INCBIN "28CE71.bin" ; Card axebro
-.INCBIN "28D435.bin" ; Portrait Julian
-.INCBIN "28D98B.bin" ; Portrait Lena
-.INCBIN "28DFB1.bin" ; Portrait Merric
-.INCBIN "28E524.bin" ; Portrait Navarre
-.INCBIN "28EA3F.bin" ; Portrait Hardin
-.INCBIN "28EFD0.bin" ; Portrait Wolf
-.INCBIN "28F511.bin" ; Portrait Sedgar
-.INCBIN "28FA7B.bin" ; Portrait Roshea
-.INCBIN "28FFE1.bin" READ 31 ; Portrait Vyland
+PORTRAIT_MARTH:
+.INCBIN "288000.bin"
+PORTRAIT_CAEDA:
+.INCBIN "2885C9.bin"
+PORTRAIT_JAGEN:
+.INCBIN "288AFB.bin"
+PORTRAIT_CAIN:
+.INCBIN "289119.bin"
+PORTRAIT_ABEL:
+.INCBIN "2896E1.bin"
+PORTRAIT_DRAUG:
+.INCBIN "289C33.bin"
+PORTRAIT_GORDIN:
+.INCBIN "28A176.bin"
+PORTRAIT_RICKARD:
+.INCBIN "28A6E1.bin"
+CARD_PIRATE:
+.INCBIN "28AC86.bin"
+PORTRAIT_BORD:
+.INCBIN "28B249.bin"
+PORTRAIT_BARST:
+.INCBIN "28B7D0.bin"
+PORTRAIT_CORD:
+.INCBIN "28BD5C.bin"
+PORTRAIT_CASTOR:
+.INCBIN "28C376.bin"
+PORTRAIT_OGMA:
+.INCBIN "28C8B2.bin"
+CARD_AXEBRO:
+.INCBIN "28CE71.bin"
+PORTRAIT_JULIAN:
+.INCBIN "28D435.bin"
+PORTRAIT_LENA:
+.INCBIN "28D98B.bin"
+PORTRAIT_MERRIC:
+.INCBIN "28DFB1.bin"
+PORTRAIT_NAVARRE:
+.INCBIN "28E524.bin"
+PORTRAIT_HARDIN:
+.INCBIN "28EA3F.bin"
+PORTRAIT_WOLF:
+.INCBIN "28EFD0.bin"
+PORTRAIT_SEDGAR:
+.INCBIN "28F511.bin"
+PORTRAIT_ROSHEA:
+.INCBIN "28FA7B.bin"
+PORTRAIT_VYLAND:
+.INCBIN "28FFE1.bin" READ 31
 
 .ENDS

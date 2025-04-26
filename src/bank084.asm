@@ -4,33 +4,61 @@
 .SECTION "Bank84" FORCE
 
 .INCBIN "29FE36.bin" SKIP 458
-.INCBIN "2A0422.bin" ; Portrait Xemcel
-.INCBIN "2A09BC.bin" ; Unused Portrait
-.INCBIN "2A09C3.bin" ; Portrait Camus
-.INCBIN "2A0EEF.bin" ; Portrait Michalis
-.INCBIN "2A14C3.bin" ; Portrait Xemcel
-.INCBIN "2A1A5D.bin" ; Portrait Gharnef
-.INCBIN "2A2002.bin" ; Portrait Medeus
-.INCBIN "2A25D0.bin" ; Card armour
-.INCBIN "2A2A15.bin" ; Portrait Zharov
-.INCBIN "2A3033.bin" ; Card general
-.INCBIN "2A357F.bin" ; Card small sword
-.INCBIN "2A3922.bin" ; Unused Portrait
-.INCBIN "2A3929.bin" ; Card sword and shield
-.INCBIN "2A3D56.bin" ; Unused Portrait
-.INCBIN "2A3D5D.bin" ; Card green mage
-.INCBIN "2A420B.bin" ; Card woman with staff
-.INCBIN "2A4618.bin" ; Card electric mage
-.INCBIN "2A4AB2.bin" ; Card fire red mage
-.INCBIN "2A4F92.bin" ; Card winged mage
-.INCBIN "2A542A.bin" ; Card dragon
-.INCBIN "2A591A.bin" ; Card horseman javelin
-.INCBIN "2A5E39.bin" ; Card horseman javelin
-.INCBIN "2A6358.bin" ; Card horseman bow
-.INCBIN "2A6878.bin" ; Portrait Malledus
-.INCBIN "2A6E00.bin" ; Portrait Nyna
-.INCBIN "2A7377.bin" ; Portrait Mostyn, King of Talys
-.INCBIN "2A78C6.bin" ; Portrait King of Aurelis
-.INCBIN "2A7E8B.bin" READ 373 ; Portrait villager
+PORTRAIT_MORZAS: ; Morzas/Xemcel?
+.INCBIN "2A0422.bin"
+PORTRAIT_UNUSED_BLACK_2:
+.INCBIN "2A09BC.bin"
+PORTRAIT_CAMUS:
+.INCBIN "2A09C3.bin"
+PORTRAIT_MICHALIS:
+.INCBIN "2A0EEF.bin"
+PORTRAIT_XEMCEL: ; Morzas/Xemcel?
+.INCBIN "2A14C3.bin"
+PORTRAIT_GHARNEF:
+.INCBIN "2A1A5D.bin"
+PORTRAIT_MEDEUS:
+.INCBIN "2A2002.bin"
+CARD_ARMOUR:
+.INCBIN "2A25D0.bin"
+PORTRAIT_ZHAROV:
+.INCBIN "2A2A15.bin"
+CARD_GENERAL:
+.INCBIN "2A3033.bin"
+CARD_SMALL SWORD:
+.INCBIN "2A357F.bin"
+PORTRAIT_UNUSED_WHITE:
+.INCBIN "2A3922.bin"
+CARD_SWORD_AND_SHIELD:
+.INCBIN "2A3929.bin"
+PORTRAIT_UNUSED_WHITE_2:
+.INCBIN "2A3D56.bin"
+CARD_GREEN_MAGE:
+.INCBIN "2A3D5D.bin"
+CARD_WOMAN_WITH_STAFF:
+.INCBIN "2A420B.bin"
+CARD_ELECTRIC_MAGE:
+.INCBIN "2A4618.bin"
+CARD_FIRE_RED_MAGE:
+.INCBIN "2A4AB2.bin"
+CARD_WINGED_MAGE:
+.INCBIN "2A4F92.bin"
+CARD_DRAGON:
+.INCBIN "2A542A.bin"
+CARD_HORSEMAN_JAVELIN:
+.INCBIN "2A591A.bin"
+CARD_HORSEMAN_JAVELIN_2:
+.INCBIN "2A5E39.bin"
+CARD_HORSEMAN_BOW:
+.INCBIN "2A6358.bin"
+PORTRAIT_MALLEDUS:
+.INCBIN "2A6878.bin"
+PORTRAIT_NYNA:
+.INCBIN "2A6E00.bin"
+PORTRAIT_KING_OF_TALYS:
+.INCBIN "2A7377.bin"
+PORTRAIT_KING_OF_AURELIS:
+.INCBIN "2A78C6.bin"
+PORTRAIT_VILLAGER_BALD_MAN:
+.INCBIN "2A7E8B.bin" READ 373
 
 .ENDS

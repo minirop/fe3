@@ -3,6 +3,7 @@
 
 .SECTION "Bank9" FORCE
 
+CHAPTERS_THINGIES: ; 2 bytes
 .db $7E $80 $76 $81 $23 $82 $BC $82
 .db $ED $83 $7D $85 $D5 $86 $3F $88
 .db $A9 $89 $39 $8B $B6 $8C $FA $8D

@@ -3,6 +3,7 @@
 
 .SECTION "Bank10" FORCE
 
+; the first byte is an index into SOME_POINTERS_TABLE
 UNKNOWN_CHAPTERS_DATA:
 .db $05 $00 $1F $1F $1D $1F $20 $00
 .db $06 $01 $1F $0E $1E $1F $20 $00
