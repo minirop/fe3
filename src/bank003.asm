@@ -3133,56 +3133,56 @@ L83DD6B:
 	lda.l RDMPYL
 	tay
 	sep #$20
-	lda $88906C,X
+	lda.l CHARACTERS_INITIAL_STATS + STAT_STRENGTH,X
 	phx
 	tyx
 	clc
-	adc $889201,X
+	adc.l CHARACTERS_OTHER_INITIAL_STATS + STAT_OTHER_STRENGTH,X
 	plx
 	sta.l ActiveUnit.Strength
-	lda $88906D,X
+	lda.l CHARACTERS_INITIAL_STATS + STAT_SKILL,X
 	phx
 	tyx
 	clc
-	adc $889202,X
+	adc.l CHARACTERS_OTHER_INITIAL_STATS + STAT_OTHER_SKILL,X
 	plx
 	sta.l ActiveUnit.Skill
-	lda $88906E,X
+	lda.l CHARACTERS_INITIAL_STATS + STAT_SPEED,X
 	phx
 	tyx
 	clc
-	adc $889203,X
+	adc.l CHARACTERS_OTHER_INITIAL_STATS + STAT_OTHER_SPEED,X
 	plx
 	sta.l ActiveUnit.Speed
-	lda $889070,X
+	lda.l CHARACTERS_INITIAL_STATS + STAT_DEFENSE,X
 	phx
 	tyx
 	clc
-	adc $889205,X
+	adc.l CHARACTERS_OTHER_INITIAL_STATS + STAT_OTHER_DEFENSE,X
 	plx
 	sta.l ActiveUnit.Defense
-	lda $889071,X
+	lda.l CHARACTERS_INITIAL_STATS + STAT_RESISTANCE,X
 	phx
 	tyx
 	clc
-	adc $889206,X
+	adc.l CHARACTERS_OTHER_INITIAL_STATS + STAT_OTHER_RESISTANCE,X
 	plx
 	sta.l ActiveUnit.Resistance
-	lda $88906F,X
+	lda.l CHARACTERS_INITIAL_STATS + STAT_MOVEMENT,X
 	sta.l ActiveUnit.Movement
-	lda $889072,X
+	lda.l CHARACTERS_INITIAL_STATS + STAT_EXP,X
 	sta.l ActiveUnit.EXP
-	lda $889073,X
+	lda.l CHARACTERS_INITIAL_STATS + STAT_WEAPON_LEVEL,X
 	sta.l ActiveUnit.WeaponLevel
-	lda $889074,X
+	lda.l CHARACTERS_INITIAL_STATS + STAT_HP,X
 	sta.l ActiveUnit.MaxHP
 	sta.l ActiveUnit.HP
 	tyx
-	lda $889204,X
+	lda.l CHARACTERS_OTHER_INITIAL_STATS + STAT_OTHER_LUCK,X
 	sta.l ActiveUnit.Luck
-	lda $889208,X
+	lda.l CHARACTERS_OTHER_INITIAL_STATS + STAT_OTHER_WEAPON_LEVEL,X
 	sta.l ActiveUnit.WeaponLevel
-	lda $889207,X
+	lda.l CHARACTERS_OTHER_INITIAL_STATS + STAT_OTHER_EXP,X
 	cmp #$FF
 	beq L83DE2E
 	sta.l ActiveUnit.MaxHP
