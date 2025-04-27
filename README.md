@@ -8,7 +8,11 @@ It builds the following ROM:
 
 ## Setting up
 
-You need to have `wla-65816` and `wlalink` from [wla-dx](https://github.com/vhelin/wla-dx), and `make` in your PATH. (`sha1sum` too if you want to check the generated ROM is correct)
+You need to have those tools available in your `PATH`:
+- `wla-65816` and `wlalink` from [wla-dx](https://github.com/vhelin/wla-dx)
+- [fe3-text](https://github.com/minirop/fe3-text)
+- `make`
+- `sha1sum` if you want to check the generated ROM is correct
 
 ## Building
 
@@ -17,7 +21,7 @@ Just type `make`.
 ## Help needed
 
 - Writing a compressor. See [documentation](docs/compression.md), the decompressor can be found inside [fe3-png](https://github.com/minirop/fe3-png/).
-- Understand the map format. `115F9F.bin` is Chapter 1, the map tilemap is also encoded/compressed (differently than above).
+- Understanding the map format (tilemap, enemies placements, cutscenes, etc.).
 
 ## See also
 
