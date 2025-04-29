@@ -3291,7 +3291,7 @@ L93E61A:
 	sta.l $71
 	lda #$0000
 	sta.l $76
-	jsl $808F18
+	jsl DECOMPRESS_ASSET
 	ldy #$0800
 	ldx #$0000
 L93E655:

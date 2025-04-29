@@ -348,7 +348,7 @@ L83899D: ; load_map?
 	sta.l $71
 	lda #$0000
 	sta.l $76
-	jsl $808F18
+	jsl DECOMPRESS_ASSET
 	ldy #$2000
 	ldx #$0000
 L8389FD:
@@ -377,7 +377,7 @@ L8389FD:
 	sta.l $71
 	lda #$0000
 	sta.l $76
-	jsl $808F18
+	jsl DECOMPRESS_ASSET
 	lda #$7E00
 	sta $0743
 	lda #$40FE
