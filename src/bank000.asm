@@ -5856,7 +5856,7 @@ L80B7A8:
 	lda #$0001
 	sta $0896
 L80B7C3:
-	jsr $B943
+	jsr L80B943
 	lda $0872
 	sta $2140
 	lda $0862
@@ -6164,7 +6164,7 @@ L80BA26:
 	sty $0888
 	cmp #$FFF0
 	bcc L80BA44
-	jsr $BAF0
+	jsr L80BAF0
 	tay
 	beq L80BA26
 L80BA44:
