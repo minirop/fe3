@@ -3,66 +3,127 @@
 
 .SECTION "Bank15" FORCE
 
+DIALOGUE_115:
 .INCBIN "dialogue115.bin"
+DIALOGUE_116:
 .INCBIN "dialogue116.bin"
+DIALOGUE_117:
 .INCBIN "dialogue117.bin"
+DIALOGUE_118:
 .INCBIN "dialogue118.bin"
+DIALOGUE_119:
 .INCBIN "dialogue119.bin"
+DIALOGUE_120:
 .INCBIN "dialogue120.bin"
+DIALOGUE_121:
 .INCBIN "dialogue121.bin"
+DIALOGUE_122:
 .INCBIN "dialogue122.bin"
+DIALOGUE_123:
 .INCBIN "dialogue123.bin"
+DIALOGUE_124:
 .INCBIN "dialogue124.bin"
+DIALOGUE_125:
 .INCBIN "dialogue125.bin"
+DIALOGUE_126:
 .INCBIN "dialogue126.bin"
+DIALOGUE_127:
 .INCBIN "dialogue127.bin"
+DIALOGUE_128:
 .INCBIN "dialogue128.bin"
+DIALOGUE_129:
 .INCBIN "dialogue129.bin"
+DIALOGUE_130:
 .INCBIN "dialogue130.bin"
+DIALOGUE_131:
 .INCBIN "dialogue131.bin"
+DIALOGUE_132:
 .INCBIN "dialogue132.bin"
+DIALOGUE_133:
 .INCBIN "dialogue133.bin"
+DIALOGUE_134:
 .INCBIN "dialogue134.bin"
+DIALOGUE_135:
 .INCBIN "dialogue135.bin"
+DIALOGUE_136:
 .INCBIN "dialogue136.bin"
+DIALOGUE_137:
 .INCBIN "dialogue137.bin"
+DIALOGUE_138:
 .INCBIN "dialogue138.bin"
+DIALOGUE_139:
 .INCBIN "dialogue139.bin"
+DIALOGUE_140:
 .INCBIN "dialogue140.bin"
+DIALOGUE_141:
 .INCBIN "dialogue141.bin"
+DIALOGUE_142:
 .INCBIN "dialogue142.bin"
+DIALOGUE_143:
 .INCBIN "dialogue143.bin"
+DIALOGUE_144:
 .INCBIN "dialogue144.bin"
+DIALOGUE_145:
 .INCBIN "dialogue145.bin"
+DIALOGUE_146:
 .INCBIN "dialogue146.bin"
+DIALOGUE_147:
 .INCBIN "dialogue147.bin"
+DIALOGUE_148:
 .INCBIN "dialogue148.bin"
+DIALOGUE_149:
 .INCBIN "dialogue149.bin"
+DIALOGUE_150:
 .INCBIN "dialogue150.bin"
+DIALOGUE_151:
 .INCBIN "dialogue151.bin"
+DIALOGUE_152:
 .INCBIN "dialogue152.bin"
+DIALOGUE_153:
 .INCBIN "dialogue153.bin"
+DIALOGUE_154:
 .INCBIN "dialogue154.bin"
+DIALOGUE_155:
 .INCBIN "dialogue155.bin"
+DIALOGUE_156:
 .INCBIN "dialogue156.bin"
+DIALOGUE_157:
 .INCBIN "dialogue157.bin"
+DIALOGUE_158:
 .INCBIN "dialogue158.bin"
+DIALOGUE_159:
 .INCBIN "dialogue159.bin"
+DIALOGUE_160:
 .INCBIN "dialogue160.bin"
+DIALOGUE_161:
 .INCBIN "dialogue161.bin"
+DIALOGUE_162:
 .INCBIN "dialogue162.bin"
+DIALOGUE_163:
 .INCBIN "dialogue163.bin"
+DIALOGUE_164:
 .INCBIN "dialogue164.bin"
+DIALOGUE_165:
 .INCBIN "dialogue165.bin"
+DIALOGUE_166:
 .INCBIN "dialogue166.bin"
+DIALOGUE_167:
 .INCBIN "dialogue167.bin"
+DIALOGUE_168:
 .INCBIN "dialogue168.bin"
+DIALOGUE_169:
 .INCBIN "dialogue169.bin"
+DIALOGUE_170:
 .INCBIN "dialogue170.bin"
+DIALOGUE_171:
 .INCBIN "dialogue171.bin"
+DIALOGUE_172:
 .INCBIN "dialogue172.bin"
+DIALOGUE_173:
 .INCBIN "dialogue173.bin"
+DIALOGUE_174:
 .INCBIN "dialogue174.bin"
+DIALOGUE_175:
 .INCBIN "dialogue175.bin"
 
 .ENDS

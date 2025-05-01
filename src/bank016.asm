@@ -3,47 +3,89 @@
 
 .SECTION "Bank16" FORCE
 
+DIALOGUE_176:
 .INCBIN "dialogue176.bin"
+DIALOGUE_177:
 .INCBIN "dialogue177.bin"
+DIALOGUE_178:
 .INCBIN "dialogue178.bin"
+DIALOGUE_179:
 .INCBIN "dialogue179.bin"
+DIALOGUE_180:
 .INCBIN "dialogue180.bin"
+DIALOGUE_181:
 .INCBIN "dialogue181.bin"
+DIALOGUE_182:
 .INCBIN "dialogue182.bin"
+DIALOGUE_183:
 .INCBIN "dialogue183.bin"
+DIALOGUE_184:
 .INCBIN "dialogue184.bin"
+DIALOGUE_185:
 .INCBIN "dialogue185.bin"
+DIALOGUE_186:
 .INCBIN "dialogue186.bin"
+DIALOGUE_187:
 .INCBIN "dialogue187.bin"
+DIALOGUE_188:
 .INCBIN "dialogue188.bin"
+DIALOGUE_189:
 .INCBIN "dialogue189.bin"
+DIALOGUE_190:
 .INCBIN "dialogue190.bin"
+DIALOGUE_191:
 .INCBIN "dialogue191.bin"
+DIALOGUE_192:
 .INCBIN "dialogue192.bin"
+DIALOGUE_193:
 .INCBIN "dialogue193.bin"
+DIALOGUE_194:
 .INCBIN "dialogue194.bin"
+DIALOGUE_195:
 .INCBIN "dialogue195.bin"
+DIALOGUE_196:
 .INCBIN "dialogue196.bin"
+DIALOGUE_197:
 .INCBIN "dialogue197.bin"
+DIALOGUE_198:
 .INCBIN "dialogue198.bin"
+DIALOGUE_199:
 .INCBIN "dialogue199.bin"
+DIALOGUE_200:
 .INCBIN "dialogue200.bin"
+DIALOGUE_201:
 .INCBIN "dialogue201.bin"
+DIALOGUE_202:
 .INCBIN "dialogue202.bin"
+DIALOGUE_203:
 .INCBIN "dialogue203.bin"
+DIALOGUE_204:
 .INCBIN "dialogue204.bin"
+DIALOGUE_205:
 .INCBIN "dialogue205.bin"
+DIALOGUE_206:
 .INCBIN "dialogue206.bin"
+DIALOGUE_207:
 .INCBIN "dialogue207.bin"
+DIALOGUE_208:
 .INCBIN "dialogue208.bin"
+DIALOGUE_209:
 .INCBIN "dialogue209.bin"
+DIALOGUE_210:
 .INCBIN "dialogue210.bin"
+DIALOGUE_211:
 .INCBIN "dialogue211.bin"
+DIALOGUE_212:
 .INCBIN "dialogue212.bin"
+DIALOGUE_213:
 .INCBIN "dialogue213.bin"
+DIALOGUE_214:
 .INCBIN "dialogue214.bin"
+DIALOGUE_215:
 .INCBIN "dialogue215.bin"
+DIALOGUE_216:
 .INCBIN "dialogue216.bin"
+DIALOGUE_217:
 .INCBIN "dialogue217.bin"
 
 .ENDS

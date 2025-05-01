@@ -581,316 +581,757 @@
 .db $02 $00 $04 $14 $08 $00 $0D $00
 .db $5A $00 $8F $81 $00 $07 $40 $25
 .db $00 $08 $FE $20 $00 $06 $01 $00
-.db $95 $00 $83 $2E $98 $8E $2E $98
-.db $8E $4D $99 $8E $41 $9B $8E $9C
-.db $9B $8E $22 $9C $8E $60 $9C $8E
-.db $B8 $9C $8E $F5 $9C $8E $54 $9D
-.db $8E $D1 $9D $8E $86 $9E $8E $EA
-.db $9F $8E $2F $A0 $8E $85 $A1 $8E
-.db $A2 $A2 $8E $E9 $A2 $8E $2D $A3
-.db $8E $75 $A3 $8E $20 $A5 $8E $C1
-.db $A5 $8E $FB $A5 $8E $50 $A7 $8E
-.db $96 $A7 $8E $4F $A8 $8E $9D $A8
-.db $8E $A6 $A9 $8E $25 $AA $8E $14
-.db $AB $8E $6C $AB $8E $13 $AF $8E
-.db $59 $AF $8E $50 $B1 $8E $9F $B1
-.db $8E $96 $B2 $8E $F8 $B2 $8E $38
-.db $B3 $8E $72 $B3 $8E $3F $B4 $8E
-.db $CA $B6 $8E $C4 $B7 $8E $6B $BA
-.db $8E $1B $BB $8E $20 $BD $8E $7A
-.db $BD $8E $66 $BF $8E $F0 $C2 $8E
-.db $FE $C3 $8E $41 $C4 $8E $DF $C4
-.db $8E $3F $C5 $8E $99 $C5 $8E $93
-.db $C6 $8E $8A $C7 $8E $D6 $C7 $8E
-.db $26 $C8 $8E $59 $C8 $8E $9A $C8
-.db $8E $2C $CA $8E $EB $CB $8E $9F
-.db $CC $8E $AF $CE $8E $90 $CF $8E
-.db $D6 $CF $8E $7E $D0 $8E $E2 $D0
-.db $8E $7E $D2 $8E $56 $D3 $8E $5F
-.db $D6 $8E $AF $D6 $8E $E4 $D6 $8E
-.db $4C $D7 $8E $11 $D8 $8E $5D $D8
-.db $8E $94 $D8 $8E $D6 $D8 $8E $33
-.db $DB $8E $55 $DC $8E $B1 $DC $8E
-.db $1B $DF $8E $0D $E0 $8E $8E $E1
-.db $8E $14 $E2 $8E $37 $E3 $8E $8F
-.db $E3 $8E $8F $E4 $8E $F0 $E4 $8E
-.db $43 $E5 $8E $BA $E5 $8E $8B $E6
-.db $8E $98 $E8 $8E $F4 $E8 $8E $6A
-.db $E9 $8E $A8 $E9 $8E $3B $EA $8E
-.db $82 $EB $8E $5C $EC $8E $B9 $EC
-.db $8E $B7 $ED $8E $B9 $EE $8E $BE
-.db $EF $8E $93 $F0 $8E $E0 $F0 $8E
-.db $43 $F1 $8E $AA $F1 $8E $FF $F1
-.db $8E $5A $F2 $8E $55 $F3 $8E $54
-.db $F4 $8E $08 $F5 $8E $5A $F5 $8E
-.db $66 $F6 $8E $43 $F7 $8E $A9 $F9
-.db $8E $EA $F9 $8E $00 $80 $8F $72
-.db $82 $8F $C4 $83 $8F $1F $84 $8F
-.db $50 $84 $8F $A7 $84 $8F $06 $87
-.db $8F $B4 $87 $8F $91 $8A $8F $C3
-.db $8B $8F $0F $8D $8F $F6 $8D $8F
-.db $BA $8F $8F $11 $90 $8F $78 $90
-.db $8F $97 $91 $8F $0D $93 $8F $AD
-.db $93 $8F $3D $96 $8F $E7 $96 $8F
-.db $39 $97 $8F $BF $97 $8F $F6 $98
-.db $8F $E9 $99 $8F $4E $9A $8F $27
-.db $9C $8F $16 $9E $8F $BC $9E $8F
-.db $3A $9F $8F $BE $9F $8F $04 $A0
-.db $8F $19 $A1 $8F $A6 $A1 $8F $A3
-.db $A6 $8F $C9 $A7 $8F $9F $A8 $8F
-.db $8E $AA $8F $4E $AC $8F $95 $AF
-.db $8F $60 $B1 $8F $5C $B3 $8F $99
-.db $B5 $8F $55 $B7 $8F $02 $B8 $8F
-.db $ED $B8 $8F $04 $BB $8F $BA $BD
-.db $8F $03 $C0 $8F $E8 $C5 $8F $61
-.db $C7 $8F $66 $C9 $8F $EB $CC $8F
-.db $56 $CE $8F $63 $CF $8F $97 $D0
-.db $8F $19 $D2 $8F $C4 $D3 $8F $80
-.db $D6 $8F $82 $D6 $8F $4A $DD $8F
-.db $D6 $E0 $8F $00 $80 $90 $28 $82
-.db $90 $4E $84 $90 $EF $86 $90 $29
-.db $87 $90 $CD $87 $90 $1F $8A $90
-.db $BB $8E $90 $2C $91 $90 $A0 $91
-.db $90 $58 $95 $90 $7D $99 $90 $2A
-.db $A1 $90 $FB $A7 $90 $16 $AB $90
-.db $83 $AF $90 $7A $B6 $90 $8D $BB
-.db $90 $0B $C0 $90 $6E $C3 $90 $A4
-.db $C7 $90 $A6 $C9 $90 $B9 $CA $90
-.db $58 $D0 $90 $EE $D1 $90 $25 $D3
-.db $90 $00 $D4 $90 $3D $D6 $90 $E7
-.db $D6 $90 $BD $D7 $90 $A6 $DB $90
-.db $92 $DE $90 $2C $E2 $90 $0C $E4
-.db $90 $3B $E5 $90 $FC $E6 $90 $50
-.db $E7 $90 $F2 $E7 $90 $93 $E8 $90
-.db $98 $E9 $90 $FD $EC $90 $A7 $F0
-.db $90 $56 $AF $91 $1D $B1 $91 $D4
-.db $B1 $91 $D6 $B1 $91 $92 $B9 $91
-.db $DC $BB $91 $C2 $BE $91 $14 $C0
-.db $91 $01 $C1 $91 $21 $C3 $91 $4F
-.db $C6 $91 $7E $C7 $91 $84 $C9 $91
-.db $0A $CD $91 $63 $CE $91 $84 $CE
-.db $91 $24 $D0 $91 $55 $D0 $91 $21
-.db $D3 $91 $E1 $D4 $91 $7A $D7 $91
-.db $2D $D9 $91 $48 $DD $91 $DF $DD
-.db $91 $4A $DE $91 $B4 $DE $91 $2B
-.db $DF $91 $94 $DF $91 $F1 $DF $91
-.db $93 $E0 $91 $E5 $E0 $91 $50 $E1
-.db $91 $EF $E1 $91 $00 $80 $91 $56
-.db $80 $91 $A0 $80 $91 $F3 $80 $91
-.db $4D $81 $91 $7B $81 $91 $59 $82
-.db $91 $A7 $82 $91 $08 $83 $91 $56
-.db $83 $91 $C1 $83 $91 $0F $84 $91
-.db $67 $84 $91 $A5 $84 $91 $E1 $84
-.db $91 $2C $85 $91 $70 $85 $91 $C3
-.db $85 $91 $1F $86 $91 $80 $86 $91
-.db $C5 $86 $91 $14 $87 $91 $48 $87
-.db $91 $88 $87 $91 $B3 $87 $91 $DE
-.db $87 $91 $09 $88 $91 $34 $88 $91
-.db $58 $88 $91 $85 $88 $91 $B2 $88
-.db $91 $DF $88 $91 $05 $89 $91 $30
-.db $89 $91 $55 $89 $91 $82 $89 $91
-.db $A4 $89 $91 $D0 $89 $91 $20 $8A
-.db $91 $68 $8A $91 $8C $8A $91 $D4
-.db $8A $91 $F8 $8A $91 $22 $8B $91
-.db $48 $8B $91 $6F $8B $91 $96 $8B
-.db $91 $BD $8B $91 $E8 $8B $91 $21
-.db $8C $91 $45 $8C $91 $75 $8C $91
-.db $A5 $8C $91 $D5 $8C $91 $05 $8D
-.db $91 $35 $8D $91 $66 $8D $91 $8D
-.db $8D $91 $B4 $8D $91 $DE $8D $91
-.db $04 $8E $91 $2F $8E $91 $63 $8E
-.db $91 $B0 $8E $91 $D4 $8E $91 $FF
-.db $8E $91 $29 $8F $91 $4D $8F $91
-.db $70 $8F $91 $A2 $8F $91 $C6 $8F
-.db $91 $EF $8F $91 $16 $90 $91 $3A
-.db $90 $91 $60 $90 $91 $A6 $90 $91
-.db $D7 $90 $91 $01 $91 $91 $2F $91
-.db $91 $59 $91 $91 $80 $91 $91 $B4
-.db $91 $91 $D8 $91 $91 $0A $92 $91
-.db $3D $92 $91 $6F $92 $91 $A1 $92
-.db $91 $D4 $92 $91 $28 $93 $91 $78
-.db $93 $91 $AA $93 $91 $DA $93 $91
-.db $04 $94 $91 $2F $94 $91 $2F $8E
-.db $91 $31 $94 $91 $56 $94 $91 $79
-.db $94 $91 $9F $94 $91 $D3 $94 $91
-.db $09 $95 $91 $39 $95 $91 $62 $95
-.db $91 $8D $95 $91 $AF $95 $91 $D9
-.db $95 $91 $1B $96 $91 $41 $96 $91
-.db $6C $96 $91 $94 $96 $91 $B5 $96
-.db $91 $E0 $96 $91 $30 $97 $91 $56
-.db $97 $91 $80 $97 $91 $A3 $97 $91
-.db $C9 $97 $91 $CB $97 $91 $CB $97
-.db $91 $EE $97 $91 $13 $98 $91 $13
-.db $98 $91 $3A $98 $91 $5E $98 $91
-.db $04 $8E $91 $8D $95 $91 $80 $98
-.db $91 $A1 $98 $91 $C5 $98 $91 $94
-.db $96 $91 $E0 $96 $91 $FC $89 $91
-.db $44 $8A $91 $8C $8A $91 $B0 $8A
-.db $91 $02 $97 $91 $BD $8B $91 $56
-.db $97 $91 $80 $97 $91 $A3 $97 $91
-.db $29 $8F $91 $D4 $8E $91 $E7 $98
-.db $91 $81 $90 $91 $0A $99 $91 $8E
-.db $8E $91 $3D $99 $91 $68 $99 $91
-.db $AB $99 $91 $E3 $99 $91 $28 $9A
-.db $91 $65 $9A $91 $A7 $9A $91 $F0
-.db $9A $91 $F2 $9A $91 $3E $9B $91
-.db $91 $9B $91 $F3 $9B $91 $F5 $9B
-.db $91 $2E $9C $91 $67 $9C $91 $A0
-.db $9C $91 $D9 $9C $91 $0B $9D $91
-.db $3A $9D $91 $5E $9D $91 $99 $9D
-.db $91 $D2 $9D $91 $F1 $9D $91 $29
-.db $9E $91 $5A $9E $91 $88 $9E $91
-.db $AF $9E $91 $EF $9E $91 $16 $9F
-.db $91 $3F $9F $91 $79 $9F $91 $AB
-.db $9F $91 $D5 $9F $91 $FE $9F $91
-.db $3A $A0 $91 $70 $A0 $91 $C0 $A0
-.db $91 $0C $A1 $91 $3F $A1 $91 $69
-.db $A1 $91 $AB $A1 $91 $EF $A1 $91
-.db $26 $A2 $91 $2E $A3 $91 $27 $A4
-.db $91 $B6 $A5 $91 $2F $91 $91 $EF
-.db $8F $91 $E5 $A5 $91 $23 $A6 $91
-.db $53 $A6 $91 $14 $AB $8E $2F $8E
-.db $91 $2F $8E $91 $83 $A6 $91 $B3
-.db $A6 $91 $D8 $A6 $91 $4F $A7 $91
-.db $FD $A6 $91 $2E $A7 $91 $38 $E2
-.db $91 $77 $E2 $91 $BF $E2 $91 $41
-.db $E3 $91 $74 $E4 $91 $D3 $E4 $91
-.db $3C $E5 $91 $AE $E5 $91 $6F $E6
-.db $91 $F6 $E6 $91 $85 $E7 $91 $E0
-.db $E7 $91 $87 $A7 $91 $AC $A8 $91
-.db $67 $A9 $91 $4E $AA $91 $03 $AB
-.db $91 $72 $AD $91 $12 $E4 $91 $98
-.db $E8 $91 $F6 $E8 $91 $57 $E9 $91
-.db $A7 $E9 $91 $01 $EA $91 $43 $EA
-.db $91 $9A $EA $91 $FF $EA $91 $6F
-.db $EB $91 $D7 $EB $91 $38 $EC $91
-.db $C7 $EC $91 $26 $ED $91 $65 $ED
-.db $91 $D2 $ED $91 $51 $EE $91 $D2
-.db $EE $91 $2B $EF $91 $83 $EF $91
-.db $EB $EF $91 $2E $F0 $91 $71 $F0
-.db $91 $00 $80 $92 $78 $84 $92 $D7
-.db $88 $92 $8D $8C $92 $B2 $8C $92
-.db $F1 $8D $92 $2E $8F $92 $26 $90
-.db $92 $AF $90 $92 $07 $91 $92 $7F
-.db $91 $92 $39 $92 $92 $C0 $93 $92
-.db $4F $95 $92 $0B $96 $92 $8F $96
-.db $92 $3F $97 $92 $BB $99 $92 $05
-.db $9B $92 $06 $A0 $92 $53 $A0 $92
-.db $BE $A2 $92 $CF $A4 $92
+.db $95 $00 $83
 
+.dl $8E982E
+.dl $8E982E
+.dl $8E994D
+.dl $8E9B41
+.dl $8E9B9C
+.dl $8E9C22
+.dl $8E9C60
+.dl $8E9CB8
+.dl $8E9CF5
+.dl $8E9D54
+.dl $8E9DD1
+.dl $8E9E86
+.dl $8E9FEA
+.dl $8EA02F
+.dl $8EA185
+.dl $8EA2A2
+.dl $8EA2E9
+.dl $8EA32D
+.dl $8EA375
+.dl $8EA520
+.dl $8EA5C1
+.dl $8EA5FB
+.dl $8EA750
+.dl $8EA796
+.dl $8EA84F
+.dl $8EA89D
+.dl $8EA9A6
+.dl $8EAA25
+.dl $8EAB14
+.dl $8EAB6C
+.dl $8EAF13
+.dl $8EAF59
+.dl $8EB150
+.dl $8EB19F
+.dl $8EB296
+.dl $8EB2F8
+.dl $8EB338
+.dl $8EB372
+.dl $8EB43F
+.dl $8EB6CA
+.dl $8EB7C4
+.dl $8EBA6B
+.dl $8EBB1B
+.dl $8EBD20
+.dl $8EBD7A
+.dl $8EBF66
+.dl $8EC2F0
+.dl $8EC3FE
+.dl $8EC441
+.dl $8EC4DF
+.dl $8EC53F
+.dl $8EC599
+.dl $8EC693
+.dl $8EC78A
+.dl $8EC7D6
+.dl $8EC826
+.dl $8EC859
+.dl $8EC89A
+.dl $8ECA2C
+.dl $8ECBEB
+.dl $8ECC9F
+.dl $8ECEAF
+.dl $8ECF90
+.dl $8ECFD6
+.dl $8ED07E
+.dl $8ED0E2
+.dl $8ED27E
+.dl $8ED356
+.dl $8ED65F
+.dl $8ED6AF
+.dl $8ED6E4
+.dl $8ED74C
+.dl $8ED811
+.dl $8ED85D
+.dl $8ED894
+.dl $8ED8D6
+.dl $8EDB33
+.dl $8EDC55
+.dl $8EDCB1
+.dl $8EDF1B
+.dl $8EE00D
+.dl $8EE18E
+.dl $8EE214
+.dl $8EE337
+.dl $8EE38F
+.dl $8EE48F
+.dl $8EE4F0
+.dl $8EE543
+.dl $8EE5BA
+.dl $8EE68B
+.dl $8EE898
+.dl $8EE8F4
+.dl $8EE96A
+.dl $8EE9A8
+.dl $8EEA3B
+.dl $8EEB82
+.dl $8EEC5C
+.dl $8EECB9
+.dl $8EEDB7
+.dl $8EEEB9
+.dl $8EEFBE
+.dl $8EF093
+.dl $8EF0E0
+.dl $8EF143
+.dl $8EF1AA
+.dl $8EF1FF
+.dl $8EF25A
+.dl $8EF355
+.dl $8EF454
+.dl $8EF508
+.dl $8EF55A
+.dl $8EF666
+.dl $8EF743
+.dl $8EF9A9
+.dl $8EF9EA
+.dl $8F8000
+.dl $8F8272
+.dl $8F83C4
+.dl $8F841F
+.dl $8F8450
+.dl $8F84A7
+.dl $8F8706
+.dl $8F87B4
+.dl $8F8A91
+.dl $8F8BC3
+.dl $8F8D0F
+.dl $8F8DF6
+.dl $8F8FBA
+.dl $8F9011
+.dl $8F9078
+.dl $8F9197
+.dl $8F930D
+.dl $8F93AD
+.dl $8F963D
+.dl $8F96E7
+.dl $8F9739
+.dl $8F97BF
+.dl $8F98F6
+.dl $8F99E9
+.dl $8F9A4E
+.dl $8F9C27
+.dl $8F9E16
+.dl $8F9EBC
+.dl $8F9F3A
+.dl $8F9FBE
+.dl $8FA004
+.dl $8FA119
+.dl $8FA1A6
+.dl $8FA6A3
+.dl $8FA7C9
+.dl $8FA89F
+.dl $8FAA8E
+.dl $8FAC4E
+.dl $8FAF95
+.dl $8FB160
+.dl $8FB35C
+.dl $8FB599
+.dl $8FB755
+.dl $8FB802
+.dl $8FB8ED
+.dl $8FBB04
+.dl $8FBDBA
+.dl $8FC003
+.dl $8FC5E8
+.dl $8FC761
+.dl $8FC966
+.dl $8FCCEB
+.dl $8FCE56
+.dl $8FCF63
+.dl $8FD097
+.dl $8FD219
+.dl $8FD3C4
+.dl $8FD680
+.dl $8FD682
+.dl $8FDD4A
+.dl $8FE0D6
+.dl $908000
+.dl $908228
+.dl $90844E
+.dl $9086EF
+.dl $908729
+.dl $9087CD
+.dl $908A1F
+.dl $908EBB
+.dl $90912C
+.dl $9091A0
+.dl $909558
+.dl $90997D
+.dl $90A12A
+.dl $90A7FB
+.dl $90AB16
+.dl $90AF83
+.dl $90B67A
+.dl $90BB8D
+.dl $90C00B
+.dl $90C36E
+.dl $90C7A4
+.dl $90C9A6
+.dl $90CAB9
+.dl $90D058
+.dl $90D1EE
+.dl $90D325
+.dl $90D400
+.dl $90D63D
+.dl $90D6E7
+.dl $90D7BD
+.dl $90DBA6
+.dl $90DE92
+.dl $90E22C
+.dl $90E40C
+.dl $90E53B
+.dl $90E6FC
+.dl $90E750
+.dl $90E7F2
+.dl $90E893
+.dl $90E998
+.dl $90ECFD
+.dl $90F0A7
+.dl $91AF56
+.dl $91B11D
+.dl $91B1D4
+.dl $91B1D6
+.dl $91B992
+.dl $91BBDC
+.dl $91BEC2
+.dl $91C014
+.dl $91C101
+.dl $91C321
+.dl $91C64F
+.dl $91C77E
+.dl $91C984
+.dl $91CD0A
+.dl $91CE63
+.dl $91CE84
+.dl $91D024
+.dl $91D055
+.dl $91D321
+.dl $91D4E1
+.dl $91D77A
+.dl $91D92D
+.dl $91DD48
+.dl $91DDDF
+.dl $91DE4A
+.dl $91DEB4
+.dl $91DF2B
+.dl $91DF94
+.dl $91DFF1
+.dl $91E093
+.dl $91E0E5
+.dl $91E150
+.dl $91E1EF
+.dl $918000
+.dl $918056
+.dl $9180A0
+.dl $9180F3
+.dl $91814D
+.dl $91817B
+.dl $918259
+.dl $9182A7
+.dl $918308
+.dl $918356
+.dl $9183C1
+.dl $91840F
+.dl $918467
+.dl $9184A5
+.dl $9184E1
+.dl $91852C
+.dl $918570
+.dl $9185C3
+.dl $91861F
+.dl $918680
+.dl $9186C5
+.dl $918714
+.dl $918748
+.dl $918788
+.dl $9187B3
+.dl $9187DE
+.dl $918809
+.dl $918834
+.dl $918858
+.dl $918885
+.dl $9188B2
+.dl $9188DF
+.dl $918905
+.dl $918930
+.dl $918955
+.dl $918982
+.dl $9189A4
+.dl $9189D0
+.dl $918A20
+.dl $918A68
+.dl $918A8C
+.dl $918AD4
+.dl $918AF8
+.dl $918B22
+.dl $918B48
+.dl $918B6F
+.dl $918B96
+.dl $918BBD
+.dl $918BE8
+.dl $918C21
+.dl $918C45
+.dl $918C75
+.dl $918CA5
+.dl $918CD5
+.dl $918D05
+.dl $918D35
+.dl $918D66
+.dl $918D8D
+.dl $918DB4
+.dl $918DDE
+.dl $918E04
+.dl $918E2F
+.dl $918E63
+.dl $918EB0
+.dl $918ED4
+.dl $918EFF
+.dl $918F29
+.dl $918F4D
+.dl $918F70
+.dl $918FA2
+.dl $918FC6
+.dl $918FEF
+.dl $919016
+.dl $91903A
+.dl $919060
+.dl $9190A6
+.dl $9190D7
+.dl $919101
+.dl $91912F
+.dl $919159
+.dl $919180
+.dl $9191B4
+.dl $9191D8
+.dl $91920A
+.dl $91923D
+.dl $91926F
+.dl $9192A1
+.dl $9192D4
+.dl $919328
+.dl $919378
+.dl $9193AA
+.dl $9193DA
+.dl $919404
+.dl $91942F
+.dl $918E2F
+.dl $919431
+.dl $919456
+.dl $919479
+.dl $91949F
+.dl $9194D3
+.dl $919509
+.dl $919539
+.dl $919562
+.dl $91958D
+.dl $9195AF
+.dl $9195D9
+.dl $91961B
+.dl $919641
+.dl $91966C
+.dl $919694
+.dl $9196B5
+.dl $9196E0
+.dl $919730
+.dl $919756
+.dl $919780
+.dl $9197A3
+.dl $9197C9
+.dl $9197CB
+.dl $9197CB
+.dl $9197EE
+.dl $919813
+.dl $919813
+.dl $91983A
+.dl $91985E
+.dl $918E04
+.dl $91958D
+.dl $919880
+.dl $9198A1
+.dl $9198C5
+.dl $919694
+.dl $9196E0
+.dl $9189FC
+.dl $918A44
+.dl $918A8C
+.dl $918AB0
+.dl $919702
+.dl $918BBD
+.dl $919756
+.dl $919780
+.dl $9197A3
+.dl $918F29
+.dl $918ED4
+.dl $9198E7
+.dl $919081
+.dl $91990A
+.dl $918E8E
+.dl $91993D
+.dl $919968
+.dl $9199AB
+.dl $9199E3
+.dl $919A28
+.dl $919A65
+.dl $919AA7
+.dl $919AF0
+.dl $919AF2
+.dl $919B3E
+.dl $919B91
+.dl $919BF3
+.dl $919BF5
+.dl $919C2E
+.dl $919C67
+.dl $919CA0
+.dl $919CD9
+.dl $919D0B
+.dl $919D3A
+.dl $919D5E
+.dl $919D99
+.dl $919DD2
+.dl $919DF1
+.dl $919E29
+.dl $919E5A
+.dl $919E88
+.dl $919EAF
+.dl $919EEF
+.dl $919F16
+.dl $919F3F
+.dl $919F79
+.dl $919FAB
+.dl $919FD5
+.dl $919FFE
+.dl $91A03A
+.dl $91A070
+.dl $91A0C0
+.dl $91A10C
+.dl $91A13F
+.dl $91A169
+.dl $91A1AB
+.dl $91A1EF
+.dl $91A226
+.dl $91A32E
+.dl $91A427
+.dl $91A5B6
+.dl $91912F
+.dl $918FEF
+.dl $91A5E5
+.dl $91A623
+.dl $91A653
+.dl $8EAB14
+.dl $918E2F
+.dl $918E2F
+.dl $91A683
+.dl $91A6B3
+.dl $91A6D8
+.dl $91A74F
+.dl $91A6FD
+.dl $91A72E
+.dl $91E238
+.dl $91E277
+.dl $91E2BF
+.dl $91E341
+.dl $91E474
+.dl $91E4D3
+.dl $91E53C
+.dl $91E5AE
+.dl $91E66F
+.dl $91E6F6
+.dl $91E785
+.dl $91E7E0
+.dl $91A787
+.dl $91A8AC
+.dl $91A967
+.dl $91AA4E
+.dl $91AB03
+.dl $91AD72
+.dl $91E412
+.dl $91E898
+.dl $91E8F6
+.dl $91E957
+.dl $91E9A7
+.dl $91EA01
+.dl $91EA43
+.dl $91EA9A
+.dl $91EAFF
+.dl $91EB6F
+.dl $91EBD7
+.dl $91EC38
+.dl $91ECC7
+.dl $91ED26
+.dl $91ED65
+.dl $91EDD2
+.dl $91EE51
+.dl $91EED2
+.dl $91EF2B
+.dl $91EF83
+.dl $91EFEB
+.dl $91F02E
+.dl $91F071
+.dl $928000
+.dl $928478
+.dl $9288D7
+.dl $928C8D
+.dl $928CB2
+.dl $928DF1
+.dl $928F2E
+.dl $929026
+.dl $9290AF
+.dl $929107
+.dl $92917F
+.dl $929239
+.dl $9293C0
+.dl $92954F
+.dl $92960B
+.dl $92968F
+.dl $92973F
+.dl $9299BB
+.dl $929B05
+.dl $92A006
+.dl $92A053
+.dl $92A2BE
+.dl $92A4CF
+
+DIALOGUE_001:
 .INCBIN "dialogue001.bin"
+DIALOGUE_002:
 .INCBIN "dialogue002.bin"
+DIALOGUE_003:
 .INCBIN "dialogue003.bin"
+DIALOGUE_004:
 .INCBIN "dialogue004.bin"
+DIALOGUE_005:
 .INCBIN "dialogue005.bin"
+DIALOGUE_006:
 .INCBIN "dialogue006.bin"
+DIALOGUE_007:
 .INCBIN "dialogue007.bin"
+DIALOGUE_008:
 .INCBIN "dialogue008.bin"
+DIALOGUE_009:
 .INCBIN "dialogue009.bin"
+DIALOGUE_010:
 .INCBIN "dialogue010.bin"
+DIALOGUE_011:
 .INCBIN "dialogue011.bin"
+DIALOGUE_012:
 .INCBIN "dialogue012.bin"
+DIALOGUE_013:
 .INCBIN "dialogue013.bin"
+DIALOGUE_014:
 .INCBIN "dialogue014.bin"
+DIALOGUE_015:
 .INCBIN "dialogue015.bin"
+DIALOGUE_016:
 .INCBIN "dialogue016.bin"
+DIALOGUE_017:
 .INCBIN "dialogue017.bin"
+DIALOGUE_018:
 .INCBIN "dialogue018.bin"
+DIALOGUE_019:
 .INCBIN "dialogue019.bin"
+DIALOGUE_020:
 .INCBIN "dialogue020.bin"
+DIALOGUE_021:
 .INCBIN "dialogue021.bin"
+DIALOGUE_022:
 .INCBIN "dialogue022.bin"
+DIALOGUE_023:
 .INCBIN "dialogue023.bin"
+DIALOGUE_024:
 .INCBIN "dialogue024.bin"
+DIALOGUE_025:
 .INCBIN "dialogue025.bin"
+DIALOGUE_026:
 .INCBIN "dialogue026.bin"
+DIALOGUE_027:
 .INCBIN "dialogue027.bin"
+DIALOGUE_028:
 .INCBIN "dialogue028.bin"
+DIALOGUE_029:
 .INCBIN "dialogue029.bin"
+DIALOGUE_030:
 .INCBIN "dialogue030.bin"
+DIALOGUE_031:
 .INCBIN "dialogue031.bin"
+DIALOGUE_032:
 .INCBIN "dialogue032.bin"
+DIALOGUE_033:
 .INCBIN "dialogue033.bin"
+DIALOGUE_034:
 .INCBIN "dialogue034.bin"
+DIALOGUE_035:
 .INCBIN "dialogue035.bin"
+DIALOGUE_036:
 .INCBIN "dialogue036.bin"
+DIALOGUE_037:
 .INCBIN "dialogue037.bin"
+DIALOGUE_038:
 .INCBIN "dialogue038.bin"
+DIALOGUE_039:
 .INCBIN "dialogue039.bin"
+DIALOGUE_040:
 .INCBIN "dialogue040.bin"
+DIALOGUE_041:
 .INCBIN "dialogue041.bin"
+DIALOGUE_042:
 .INCBIN "dialogue042.bin"
+DIALOGUE_043:
 .INCBIN "dialogue043.bin"
+DIALOGUE_044:
 .INCBIN "dialogue044.bin"
+DIALOGUE_045:
 .INCBIN "dialogue045.bin"
+DIALOGUE_046:
 .INCBIN "dialogue046.bin"
+DIALOGUE_047:
 .INCBIN "dialogue047.bin"
+DIALOGUE_048:
 .INCBIN "dialogue048.bin"
+DIALOGUE_049:
 .INCBIN "dialogue049.bin"
+DIALOGUE_050:
 .INCBIN "dialogue050.bin"
+DIALOGUE_051:
 .INCBIN "dialogue051.bin"
+DIALOGUE_052:
 .INCBIN "dialogue052.bin"
+DIALOGUE_053:
 .INCBIN "dialogue053.bin"
+DIALOGUE_054:
 .INCBIN "dialogue054.bin"
+DIALOGUE_055:
 .INCBIN "dialogue055.bin"
+DIALOGUE_056:
 .INCBIN "dialogue056.bin"
+DIALOGUE_057:
 .INCBIN "dialogue057.bin"
+DIALOGUE_058:
 .INCBIN "dialogue058.bin"
+DIALOGUE_059:
 .INCBIN "dialogue059.bin"
+DIALOGUE_060:
 .INCBIN "dialogue060.bin"
+DIALOGUE_061:
 .INCBIN "dialogue061.bin"
+DIALOGUE_062:
 .INCBIN "dialogue062.bin"
+DIALOGUE_063:
 .INCBIN "dialogue063.bin"
+DIALOGUE_064:
 .INCBIN "dialogue064.bin"
+DIALOGUE_065:
 .INCBIN "dialogue065.bin"
+DIALOGUE_066:
 .INCBIN "dialogue066.bin"
+DIALOGUE_067:
 .INCBIN "dialogue067.bin"
+DIALOGUE_068:
 .INCBIN "dialogue068.bin"
+DIALOGUE_069:
 .INCBIN "dialogue069.bin"
+DIALOGUE_070:
 .INCBIN "dialogue070.bin"
+DIALOGUE_071:
 .INCBIN "dialogue071.bin"
+DIALOGUE_072:
 .INCBIN "dialogue072.bin"
+DIALOGUE_073:
 .INCBIN "dialogue073.bin"
+DIALOGUE_074:
 .INCBIN "dialogue074.bin"
+DIALOGUE_075:
 .INCBIN "dialogue075.bin"
+DIALOGUE_076:
 .INCBIN "dialogue076.bin"
+DIALOGUE_077:
 .INCBIN "dialogue077.bin"
+DIALOGUE_078:
 .INCBIN "dialogue078.bin"
+DIALOGUE_079:
 .INCBIN "dialogue079.bin"
+DIALOGUE_080:
 .INCBIN "dialogue080.bin"
+DIALOGUE_081:
 .INCBIN "dialogue081.bin"
+DIALOGUE_082:
 .INCBIN "dialogue082.bin"
+DIALOGUE_083:
 .INCBIN "dialogue083.bin"
+DIALOGUE_084:
 .INCBIN "dialogue084.bin"
+DIALOGUE_085:
 .INCBIN "dialogue085.bin"
+DIALOGUE_086:
 .INCBIN "dialogue086.bin"
+DIALOGUE_087:
 .INCBIN "dialogue087.bin"
+DIALOGUE_088:
 .INCBIN "dialogue088.bin"
+DIALOGUE_089:
 .INCBIN "dialogue089.bin"
+DIALOGUE_090:
 .INCBIN "dialogue090.bin"
+DIALOGUE_091:
 .INCBIN "dialogue091.bin"
+DIALOGUE_092:
 .INCBIN "dialogue092.bin"
+DIALOGUE_093:
 .INCBIN "dialogue093.bin"
+DIALOGUE_094:
 .INCBIN "dialogue094.bin"
+DIALOGUE_095:
 .INCBIN "dialogue095.bin"
+DIALOGUE_096:
 .INCBIN "dialogue096.bin"
+DIALOGUE_097:
 .INCBIN "dialogue097.bin"
+DIALOGUE_098:
 .INCBIN "dialogue098.bin"
+DIALOGUE_099:
 .INCBIN "dialogue099.bin"
+DIALOGUE_100:
 .INCBIN "dialogue100.bin"
+DIALOGUE_101:
 .INCBIN "dialogue101.bin"
+DIALOGUE_102:
 .INCBIN "dialogue102.bin"
+DIALOGUE_103:
 .INCBIN "dialogue103.bin"
+DIALOGUE_104:
 .INCBIN "dialogue104.bin"
+DIALOGUE_105:
 .INCBIN "dialogue105.bin"
+DIALOGUE_106:
 .INCBIN "dialogue106.bin"
+DIALOGUE_107:
 .INCBIN "dialogue107.bin"
+DIALOGUE_108:
 .INCBIN "dialogue108.bin"
+DIALOGUE_109:
 .INCBIN "dialogue109.bin"
+DIALOGUE_110:
 .INCBIN "dialogue110.bin"
+DIALOGUE_111:
 .INCBIN "dialogue111.bin"
+DIALOGUE_112:
 .INCBIN "dialogue112.bin"
+DIALOGUE_113:
 .INCBIN "dialogue113.bin"
+DIALOGUE_114:
 .INCBIN "dialogue114.bin"
 
 .ENDS
