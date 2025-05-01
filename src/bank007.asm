@@ -180,48 +180,142 @@ L8781C9:
 .db $EE $A2 $0F $28 $6B $E2 $20 $AD
 .db $67 $0F $F0 $0D $C2 $20 $EE $A2
 .db $0F $EE $A2 $0F $EE $A2 $0F $28
-.db $6B $E2 $20 $AD $4C $07 $8D $65
-.db $0F $22 $09 $AA $80 $22 $6B $E4
-.db $81 $9C $68 $0F $A9 $FF $8D $69
-.db $0F $8D $6A $0F $C2 $20 $64 $50
-.db $64 $52 $22 $4E $95 $80 $22 $75
-.db $E4 $81 $A2 $F0 $00 $86 $50 $86
-.db $52 $22 $74 $93 $80 $22 $6B $E4
-.db $81 $A2 $00 $00 $86 $50 $86 $52
-.db $A0 $20 $00 $A2 $00 $00 $BF $80
-.db $D0 $94 $9F $30 $51 $7F $E8 $88
-.db $E8 $88 $D0 $F2 $A0 $10 $00 $A2
-.db $00 $00 $BF $E0 $D0 $94 $9F $40
-.db $51 $7F $E8 $88 $E8 $88 $D0 $F2
-.db $A9 $00 $87 $85 $01 $A9 $24 $84
-.db $85 $00 $22 $AD $8E $80 $A9 $00
-.db $83 $85 $01 $A9 $48 $88 $85 $00
-.db $22 $AD $8E $80 $A9 $00 $8E $85
-.db $01 $A0 $01 $00 $B7 $0F $0A $18
-.db $77 $0F $18 $69 $13 $92 $85 $00
-.db $A7 $00 $48 $B7 $00 $85 $01 $68
-.db $85 $00 $22 $47 $AC $87 $22 $75
-.db $E4 $81 $22 $32 $B9 $87 $22 $5E
-.db $B4 $87 $22 $68 $B4 $87 $A2 $F0
-.db $00 $86 $50 $86 $52 $22 $74 $93
-.db $80 $AF $09 $0F $00 $29 $FF $00
-.db $D0 $E0 $E2 $20 $9C $A1 $0F $64
-.db $F7 $C2 $20 $64 $91 $64 $93 $A9
-.db $00 $87 $85 $01 $A9 $12 $84 $85
-.db $00 $22 $AD $8E $80 $22 $EA $87
-.db $80 $A9 $00 $87 $85 $01 $A9 $1B
-.db $84 $85 $00 $22 $AD $8E $80 $22
-.db $EA $87 $80 $A0 $20 $00 $A2 $00
-.db $00 $BF $80 $D0 $94 $9F $30 $51
-.db $7F $E8 $88 $E8 $88 $D0 $F2 $A9
-.db $00 $87 $85 $01 $A9 $24 $84 $85
-.db $00 $22 $AD $8E $80 $E2 $20 $AD
-.db $65 $0F $8D $4C $07 $C2 $20 $EE
-.db $A2 $0F $EE $A2 $0F $EE $A2 $0F
-.db $28 $6B $02 $00 $80 $94 $00 $10
+.db $6B
+
+L8782E1:
+	sep #$20
+	lda $074C
+	sta $0F65
+	jsl L80AA09
+	jsl $81E46B
+	stz $0F68
+	lda #$FF
+	sta $0F69
+	sta $0F6A
+	rep #$20
+	stz $50
+	stz $52
+	jsl L80954E
+	jsl $81E475
+	ldx #$00F0
+	stx $50
+	stx $52
+	jsl L809374
+	jsl $81E46B
+	ldx #$0000
+	stx $50
+	stx $52
+	ldy #$0020
+	ldx #$0000
+L878326:
+	lda $94D080,X
+	sta $7F5130,X
+	inx
+	dey
+	inx
+	dey
+	bne L878326
+	ldy #$0010
+	ldx #$0000
+L87833A:
+	lda $94D0E0,X
+	sta $7F5140,X
+	inx
+	dey
+	inx
+	dey
+	bne L87833A
+	lda #bankbyte(UNK_DATA_878412) * $100
+	sta $01
+	lda #UNK_DATA_878412
+	sta $00
+	jsl L808EAD
+	lda #$8300
+	sta $01
+	lda #$8848
+	sta $00
+	jsl L808EAD
+	lda #bankbyte(DIALOGUES_POINTER_TABLE) * $100
+	sta $01
+	ldy #$0001
+	lda [$0F],Y
+	asl
+	clc
+	adc [$0F],Y
+	clc
+	adc #DIALOGUES_POINTER_TABLE
+	sta $00
+	lda [$00]
+	pha
+	lda [$00],Y
+	sta $01
+	pla
+	sta $00
+	jsl $87AC47
+	jsl $81E475
+L87838A:
+	jsl $87B932
+	jsl $87B45E
+	jsl $87B468
+	ldx #$00F0
+	stx $50
+	stx $52
+	jsl L809374
+	lda.l $000F09
+	and #$00FF
+	bne L87838A
+	sep #$20
+	stz $0FA1
+	stz $F7
+	rep #$20
+	stz $91
+	stz $93
+	lda #$8700
+	sta $01
+	lda #$8412
+	sta $00
+	jsl L808EAD
+	jsl L8087EA
+	lda #$8700
+	sta $01
+	lda #$841B
+	sta $00
+	jsl L808EAD
+	jsl L8087EA
+	ldy #$0020
+	ldx #$0000
+L8783E1:
+	lda $94D080,X
+	sta $7F5130,X
+	inx
+	dey
+	inx
+	dey
+	bne L8783E1
+	lda #bankbyte(UNK_DATA_878412) * $100
+	sta $01
+	lda #UNK_DATA_878412
+	sta $00
+	jsl L808EAD
+	sep #$20
+	lda $0F65
+	sta $074C
+	rep #$20
+	inc $0FA2
+	inc $0FA2
+	inc $0FA2
+	plp
+	rtl
+
+.db $02 $00 $80 $94 $00 $10
 .db $80 $00 $50 $02 $00 $90 $94 $00
-.db $10 $80 $00 $58 $01 $30 $51 $7F
-.db $20 $00 $00 $C2 $20 $A0 $01 $00
+.db $10 $80 $00 $58
+
+UNK_DATA_878412:
+.db $01 $30 $51 $7F
+.db $20 $00 $00
+
+.db $C2 $20 $A0 $01 $00
 .db $B7 $0F $29 $FF $00 $85 $15 $AD
 .db $60 $08 $29 $FF $00 $85 $17 $C5
 .db $15 $F0 $32 $B0 $19 $A0 $03 $00
