@@ -399,23 +399,71 @@
 .db $EF $08 $A9 $01 $8D $F0 $08 $9C
 .db $F1 $08 $AD $86 $0C $8D $F2 $08
 .db $AD $89 $0C $8D $F3 $08 $9C $99
-.db $0C $80 $CF $AD $ED $08 $29 $FF
-.db $00 $22 $12 $D9 $83 $A9 $00 $88
-.db $85 $01 $A9 $E1 $C5 $85 $00 $AF
-.db $1A $44 $7F $29 $FF $00 $22 $9D
-.db $A8 $80 $A7 $00 $85 $00 $AF $1B
-.db $44 $7F $29 $FF $00 $A8 $B7 $00
-.db $29 $FF $00 $C9 $FF $00 $F0 $34
-.db $85 $15 $C8 $B7 $00 $29 $FF $00
-.db $8D $80 $0C $C8 $B7 $00 $29 $FF
-.db $00 $8D $83 $0C $C8 $B7 $00 $29
-.db $FF $00 $8D $86 $0C $A5 $15 $29
-.db $FF $00 $0A $AA $FC $CE $8C $B0
-.db $09 $E2 $20 $A9 $05 $8D $98 $0C
-.db $C2 $20 $18 $60 $80 $FE $13 $90
-.db $96 $90 $EE $90 $E0 $8F $AB $91
-.db $40 $90 $6D $92 $6C $8E $2F $8D
-.db $E2 $8C $AD $ED $08 $29 $FF $00
+.db $0C $80 $CF
+
+L828C63:
+	lda $08ED
+	and #$00FF
+	jsl $83D912
+	lda #$8800
+	sta $01
+	lda #$C5E1
+	sta $00
+	lda.l ActiveUnit.AI2
+	and #$00FF
+	jsl L80A89D
+	lda [$00]
+	sta $00
+	lda $7F441B
+	and #$00FF
+	tay
+	lda [$00],Y
+	and #$00FF
+	cmp #$00FF
+	beq L828CCC
+	sta $15
+	iny
+	lda [$00],Y
+	and #$00FF
+	sta $0C80
+	iny
+	lda [$00],Y
+	and #$00FF
+	sta $0C83
+	iny
+	lda [$00],Y
+	and #$00FF
+	sta $0C86
+	lda $15
+	and #$00FF
+	asl
+	tax
+	jsr ($8CCE,X)
+	bcs L828CCA
+	sep #$20
+	lda #$05
+	sta $0C98
+	rep #$20
+L828CCA:
+	clc
+	rts
+
+L828CCC:
+	bra L828CCC
+
+SOME_AI_2_TABLE_OF_DATA:
+.dw $9013
+.dw $9096
+.dw $90EE
+.dw $8FE0
+.dw $91AB
+.dw $9040
+.dw $926D
+.dw $8E6C
+.dw $8D2F
+.dw $8CE2
+
+.db $AD $ED $08 $29 $FF $00
 .db $22 $12 $D9 $83 $A9 $FF $FF $8D
 .db $89 $0C $20 $0F $97 $E2 $20 $AF
 .db $01 $44 $7F $C9 $0F $F0 $0C $C9

@@ -33,3 +33,7 @@ Just type `make`.
 * [**StanHash/fe7_us**](https://github.com/StanHash/fe7_us), a decompilation of Fire Emblem: The Blazing Blade
 * [**FireEmblemUniverse/fireemblem8u**](https://github.com/FireEmblemUniverse/fireemblem8u), a decompilation of Fire Emblem: The Sacred Stones
 * [**Eebit/fe11-us**](https://github.com/Eebit/fe11-us), a decompilation of Fire Emblem: Shadow Dragon
+
+## Thanks
+
+[RobertTheSable](https://github.com/RobertTheSable/): Their repositories confirmed informations I found, and gave me some info I hadn't found yet.
