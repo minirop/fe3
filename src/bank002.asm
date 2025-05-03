@@ -181,261 +181,834 @@
 .db $90 $08 $20 $85 $85 $B0 $03 $28
 .db $18 $60 $28 $38 $60 $AD $5F $07
 .db $EB $AD $89 $0C $22 $FE $94 $82
-.db $90 $02 $18 $60 $38 $60 $AD $ED
-.db $08 $29 $FF $00 $22 $12 $D9 $83
-.db $E2 $20 $9C $9A $0C $C2 $20 $A9
-.db $00 $88 $85 $01 $A9 $6C $C4 $85
-.db $00 $AF $18 $44 $7F $29 $FF $00
-.db $22 $9D $A8 $80 $A7 $00 $85 $00
-.db $AF $19 $44 $7F $29 $FF $00 $A8
-.db $B7 $00 $29 $FF $00 $C9 $FF $00
-.db $F0 $26 $89 $10 $00 $D0 $05 $20
-.db $A8 $8A $80 $0F $29 $0F $00 $85
-.db $15 $A5 $15 $29 $FF $00 $0A $AA
-.db $FC $FA $85 $90 $09 $E2 $20 $A9
-.db $05 $8D $98 $0C $C2 $20 $18 $60
-.db $38 $60 $7B $88 $EF $89 $04 $86
-.db $11 $87 $06 $86 $38 $60 $C8 $B7
-.db $00 $29 $FF $00 $8D $80 $0C $A9
-.db $09 $00 $8D $8F $0C $A9 $64 $00
-.db $85 $23 $22 $84 $F6 $83 $CD $80
-.db $0C $30 $02 $38 $60 $AD $ED $08
-.db $22 $12 $D9 $83 $AF $20 $44 $7F
-.db $29 $FF $00 $09 $00 $0E $8F $02
-.db $42 $00 $EA $EA $EA $AF $16 $42
-.db $00 $AA $BF $E9 $A6 $88 $89 $18
-.db $00 $F0 $0A $AD $F4 $07 $89 $01
-.db $00 $F0 $02 $38 $60 $22 $3F $AF
-.db $83 $E2 $20 $A9 $2E $8D $FF $08
-.db $AF $11 $44 $7F $8D $FA $08 $8D
-.db $EE $08 $AF $10 $44 $7F $8D $FB
-.db $08 $8D $EF $08 $A9 $00 $8D $FC
-.db $08 $C2 $20 $A9 $0A $00 $8D $FD
-.db $08 $22 $0B $B1 $80 $A0 $00 $08
-.db $A2 $00 $00 $BF $00 $38 $7F $9F
-.db $00 $30 $7F $E8 $88 $E8 $88 $D0
-.db $F2 $A2 $FE $07 $DA $BF $00 $30
-.db $7F $29 $FF $00 $C9 $FF $00 $F0
-.db $55 $C9 $03 $00 $30 $50 $BF $00
-.db $28 $7F $C9 $00 $04 $30 $47 $29
-.db $FF $00 $4A $4A $4A $4A $4A $E2
-.db $20 $CD $D3 $07 $F0 $38 $C2 $20
-.db $BF $00 $28 $7F $29 $FF $00 $8D
-.db $86 $0C $22 $12 $D9 $83 $22 $1C
-.db $AF $83 $A9 $02 $00 $8D $89 $0C
-.db $20 $B0 $92 $B0 $19 $E2 $20 $A9
-.db $01 $8D $F0 $08 $9C $F1 $08 $AD
-.db $86 $0C $8D $F2 $08 $AD $89 $0C
-.db $8D $F3 $08 $9C $99 $0C $C2 $20
-.db $FA $CA $CA $10 $97 $AD $99 $0C
-.db $29 $FF $00 $F0 $02 $38 $60 $18
-.db $60 $C8 $B7 $00 $29 $FF $00 $8D
-.db $80 $0C $C8 $B7 $00 $48 $A9 $14
-.db $00 $8D $83 $0C $AD $80 $0C $22
-.db $F4 $A8 $87 $90 $27 $AD $ED $08
-.db $29 $FF $00 $22 $12 $D9 $83 $E2
-.db $20 $AF $19 $44 $7F $1A $1A $1A
-.db $1A $8F $19 $44 $7F $C2 $20 $AD
-.db $ED $08 $29 $FF $00 $22 $69 $D9
-.db $83 $82 $10 $01 $A9 $FF $FF $8D
-.db $86 $0C $AD $ED $08 $22 $12 $D9
-.db $83 $E2 $20 $AF $01 $44 $7F $8D
-.db $FF $08 $AF $11 $44 $7F $8D $FA
-.db $08 $AF $10 $44 $7F $8D $FB $08
-.db $A9 $01 $8D $FC $08 $C2 $20 $A9
-.db $7F $00 $8D $FD $08 $22 $0B $B1
-.db $80 $AF $20 $44 $7F $29 $FF $00
-.db $09 $00 $0E $8F $02 $42 $00 $EA
-.db $EA $EA $AF $16 $42 $00 $AA $BF
-.db $F4 $A6 $88 $29 $07 $00 $EB $4A
-.db $4A $8D $89 $0C $A9 $FF $FF $8D
-.db $95 $0C $A9 $FE $07 $8D $92 $0C
-.db $AE $92 $0C $BF $00 $38 $7F $29
-.db $FF $00 $C9 $FF $00 $F0 $6E $CD
-.db $86 $0C $B0 $69 $BF $00 $20 $7F
-.db $2C $89 $0C $F0 $60 $BF $00 $28
-.db $7F $C9 $00 $04 $30 $09 $E2 $20
-.db $CD $ED $08 $C2 $20 $D0 $4E $AD
-.db $92 $0C $22 $E5 $D8 $83 $8E $8C
-.db $0C $8C $8F $0C $A2 $00 $00 $A0
-.db $04 $00 $DA $5A $20 $C2 $97 $BF
-.db $00 $28 $7F $C9 $00 $04 $30 $26
-.db $29 $FF $00 $22 $12 $D9 $83 $AF
-.db $00 $44 $7F $29 $FF $00 $CD $80
-.db $0C $D0 $13 $AD $92 $0C $8D $95
-.db $0C $AE $92 $0C $BF $00 $38 $7F
-.db $29 $FF $00 $8D $86 $0C $7A $FA
-.db $E8 $E8 $88 $D0 $C5 $CE $92 $0C
-.db $CE $92 $0C $30 $03 $82 $78 $FF
-.db $AD $95 $0C $C9 $FF $FF $F0 $28
-.db $20 $DE $97 $AD $8C $0C $29 $FF
-.db $00 $D0 $11 $E2 $20 $A9 $00 $8D
-.db $F0 $08 $C2 $20 $68 $48 $8D $F1
-.db $08 $68 $18 $60 $E2 $20 $A9 $FF
-.db $8D $99 $0C $C2 $20 $68 $38 $60
-.db $A9 $FF $FF $8D $89 $0C $20 $0F
-.db $97 $80 $E9 $C8 $B7 $00 $29 $FF
-.db $00 $8D $86 $0C $20 $5E $98 $90
-.db $24 $AD $ED $08 $29 $FF $00 $22
-.db $12 $D9 $83 $E2 $20 $AF $19 $44
-.db $7F $1A $1A $8F $19 $44 $7F $C2
-.db $20 $AD $ED $08 $29 $FF $00 $22
-.db $69 $D9 $83 $18 $60 $29 $FF $00
-.db $22 $12 $D9 $83 $AF $11 $44 $7F
-.db $29 $FF $00 $8D $80 $0C $AF $10
-.db $44 $7F $29 $FF $00 $8D $83 $0C
-.db $AD $ED $08 $29 $FF $00 $22 $12
-.db $D9 $83 $E2 $20 $A9 $0B $8D $F0
-.db $08 $9C $F1 $08 $9C $F2 $08 $AF
-.db $01 $44 $7F $8D $FF $08 $AF $11
-.db $44 $7F $8D $FA $08 $8D $EE $08
-.db $AF $10 $44 $7F $8D $FB $08 $8D
-.db $EF $08 $A9 $01 $8D $FC $08 $C2
-.db $20 $AF $08 $44 $7F $29 $FF $00
-.db $C9 $0D $00 $30 $03 $A9 $0C $00
-.db $8D $FD $08 $22 $0B $B1 $80 $A0
-.db $00 $08 $A2 $00 $00 $BF $00 $38
-.db $7F $9F $00 $30 $7F $E8 $88 $E8
-.db $88 $D0 $F2 $20 $78 $95 $9C $8C
-.db $0C $5A $DA $20 $B0 $95 $AD $80
-.db $0C $18 $65 $15 $85 $15 $AD $83
-.db $0C $18 $65 $17 $85 $17 $64 $19
-.db $22 $F7 $D8 $83 $A6 $19 $BF $00
-.db $30 $7F $29 $FF $00 $C9 $FF $00
-.db $F0 $7D $BF $00 $28 $7F $C9 $00
-.db $04 $30 $07 $E2 $20 $CD $ED $08
-.db $D0 $6D $C2 $20 $22 $3C $F6 $83
-.db $E2 $20 $EB $AD $ED $08 $EB $C2
-.db $20 $48 $48 $A9 $00 $88 $85 $01
-.db $A9 $9E $C2 $85 $00 $68 $EB $29
-.db $FF $00 $22 $9D $A8 $80 $A7 $00
-.db $85 $00 $68 $29 $FF $00 $A8 $E2
-.db $20 $B7 $00 $CD $8C $0C $90 $37
-.db $C2 $20 $29 $FF $00 $8D $8C $0C
-.db $FA $DA $8A $4A $E2 $20 $C9 $04
-.db $10 $05 $9C $F3 $08 $80 $05 $A9
-.db $01 $8D $F3 $08 $A5 $15 $8D $EE
-.db $08 $A5 $17 $8D $EF $08 $A9 $01
-.db $8D $F0 $08 $9C $F1 $08 $AD $86
-.db $0C $8D $F2 $08 $9C $99 $0C $C2
-.db $20 $FA $7A $E8 $E8 $88 $F0 $03
-.db $82 $4E $FF $AD $99 $0C $29 $FF
-.db $00 $F0 $02 $38 $60 $18 $60 $C8
-.db $B7 $00 $29 $FF $00 $8D $9A $0C
-.db $A9 $00 $00 $8D $8F $0C $AD $ED
-.db $08 $29 $FF $00 $22 $12 $D9 $83
-.db $22 $3F $AF $83 $A9 $FF $FF $A0
-.db $00 $08 $A2 $00 $00 $9F $00 $30
-.db $7F $E8 $88 $E8 $88 $D0 $F6 $E2
-.db $20 $A9 $0B $8D $F0 $08 $9C $F1
-.db $08 $9C $F2 $08 $C2 $20 $AF $20
-.db $44 $7F $29 $FF $00 $09 $00 $0E
-.db $8F $02 $42 $00 $EA $EA $EA $AF
-.db $16 $42 $00 $AA $BF $F4 $A6 $88
-.db $29 $03 $00 $EB $4A $4A $8D $80
-.db $0C $AF $11 $44 $7F $29 $FF $00
-.db $85 $15 $AF $10 $44 $7F $29 $FF
-.db $00 $85 $17 $64 $19 $22 $F7 $D8
-.db $83 $A5 $19 $8D $83 $0C $AA $BF
-.db $00 $20 $7F $2D $80 $0C $F0 $2C
-.db $BF $00 $28 $7F $C9 $00 $04 $30
-.db $07 $E2 $20 $CD $ED $08 $D0 $1C
-.db $C2 $20 $AD $ED $08 $22 $12 $D9
-.db $83 $20 $78 $95 $20 $B9 $8B $E8
-.db $E8 $88 $D0 $F8 $AD $99 $0C $29
-.db $FF $00 $F0 $02 $38 $60 $18 $60
-.db $C8 $B7 $00 $29 $FF $00 $8D $9A
-.db $0C $29 $0F $00 $8D $8F $0C $AD
-.db $ED $08 $29 $FF $00 $22 $12 $D9
-.db $83 $AF $20 $44 $7F $22 $65 $EE
-.db $83 $90 $02 $38 $60 $22 $3F $AF
-.db $83 $E2 $20 $AF $01 $44 $7F $8D
-.db $FF $08 $AF $11 $44 $7F $8D $FA
-.db $08 $8D $EE $08 $AF $10 $44 $7F
-.db $8D $FB $08 $8D $EF $08 $A9 $01
-.db $8D $FC $08 $C2 $20 $AF $08 $44
-.db $7F $29 $FF $00 $C9 $0D $00 $30
-.db $03 $A9 $0C $00 $8D $FD $08 $22
-.db $0B $B1 $80 $A0 $00 $08 $A2 $00
-.db $00 $BF $00 $38 $7F $9F $00 $30
-.db $7F $E8 $88 $E8 $88 $D0 $F2 $E2
-.db $20 $A9 $0B $8D $F0 $08 $9C $F1
-.db $08 $9C $F2 $08 $C2 $20 $AF $20
-.db $44 $7F $29 $FF $00 $09 $00 $0E
-.db $8F $02 $42 $00 $EA $EA $EA $AF
-.db $16 $42 $00 $AA $BF $F4 $A6 $88
-.db $29 $03 $00 $EB $4A $4A $8D $80
-.db $0C $A9 $FE $07 $8D $83 $0C $AE
-.db $83 $0C $BF $00 $30 $7F $29 $FF
-.db $00 $C9 $FF $00 $F0 $3D $BF $00
-.db $20 $7F $2D $80 $0C $F0 $34 $BF
-.db $00 $28 $7F $C9 $00 $04 $10 $0D
-.db $22 $3C $F6 $83 $E2 $20 $8D $62
-.db $07 $C2 $20 $80 $07 $E2 $20 $CD
-.db $ED $08 $D0 $17 $C2 $20 $AD $ED
-.db $08 $29 $FF $00 $22 $12 $D9 $83
-.db $20 $78 $95 $20 $B9 $8B $E8 $E8
-.db $88 $D0 $F8 $C2 $20 $CE $83 $0C
-.db $CE $83 $0C $10 $AA $AD $99 $0C
-.db $29 $FF $00 $F0 $02 $38 $60 $18
-.db $60 $5A $DA $20 $B0 $95 $AD $83
-.db $0C $22 $E5 $D8 $83 $8A $18 $65
-.db $15 $30 $67 $C9 $20 $00 $10 $62
-.db $85 $15 $98 $18 $65 $17 $30 $5A
-.db $C9 $20 $00 $10 $55 $85 $17 $64
-.db $19 $22 $F7 $D8 $83 $A6 $19 $BF
-.db $00 $28 $7F $C9 $00 $04 $30 $42
-.db $29 $FF $00 $4A $4A $4A $4A $4A
-.db $E2 $20 $CD $D3 $07 $F0 $33 $C2
-.db $20 $BF $00 $28 $7F $29 $FF $00
-.db $8D $86 $0C $22 $12 $D9 $83 $A5
-.db $19 $48 $22 $1C $AF $83 $68 $85
-.db $19 $FA $DA $8A $4A $E2 $20 $C9
-.db $04 $10 $05 $9C $89 $0C $80 $05
-.db $A9 $01 $8D $89 $0C $20 $B0 $92
-.db $90 $05 $C2 $20 $FA $7A $60 $C2
-.db $20 $AD $83 $0C $22 $E5 $D8 $83
-.db $E2 $20 $8A $8D $EE $08 $98 $8D
-.db $EF $08 $A9 $01 $8D $F0 $08 $9C
-.db $F1 $08 $AD $86 $0C $8D $F2 $08
-.db $AD $89 $0C $8D $F3 $08 $9C $99
-.db $0C $80 $CF
+.db $90 $02 $18 $60 $38 $60
 
-L828C63:
+L828596:
 	lda $08ED
 	and #$00FF
 	jsl $83D912
+	sep #$20
+	stz $0C9A
+	rep #$20
 	lda #$8800
 	sta $01
-	lda #$C5E1
+	lda #$C46C
 	sta $00
-	lda.l ActiveUnit.AI2
+	lda.l ActiveUnit.AI1
 	and #$00FF
 	jsl L80A89D
 	lda [$00]
 	sta $00
-	lda $7F441B
+	lda $7F4419
 	and #$00FF
 	tay
 	lda [$00],Y
 	and #$00FF
 	cmp #$00FF
-	beq L828CCC
+	beq L8285F8
+	bit #$0010
+	bne L8285DC
+	jsr $8AA8
+	bra L8285EB
+L8285DC:
+	and #$000F
 	sta $15
+	lda $15
+	and #$00FF
+	asl
+	tax
+	jsr ($85FA,X)
+L8285EB:
+	bcc L8285F6
+	sep #$20
+	lda #$05
+	sta $0C98
+	rep #$20
+L8285F6:
+	clc
+	rts
+
+L8285F8:
+	sec
+	rts
+
+.dw L82887B
+.dw L8289EF
+.dw L828604
+.dw L828711
+.dw L828606
+
+L828604:
+	sec
+	rts
+
+L828606:
+	iny
+	lda [$00],Y
+	and #$00FF
+	sta $0C80
+	lda #$0009
+	sta $0C8F
+	lda #$0064
+	sta $23
+	jsl $83F684
+	cmp $0C80
+	bmi L828625
+	sec
+	rts
+
+L828625:
+	lda $08ED
+	jsl $83D912
+	lda.l ActiveUnit.Weapon1
+	and #$00FF
+	ora #$0E00
+	sta.l WRMPYA
+	nop
+	nop
+	nop
+	lda.l RDMPYL
+	tax
+	lda $88A6E9,X
+	bit #$0018
+	beq L828655
+	lda $07F4
+	bit #$0001
+	beq L828655
+	sec
+	rts
+
+L828655:
+	jsl $83AF3F
+	sep #$20
+	lda #$2E
+	sta $08FF
+	lda.l ActiveUnit.YPosition
+	sta $08FA
+	sta $08EE
+	lda.l ActiveUnit.XPosition
+	sta $08FB
+	sta $08EF
+	lda #$00
+	sta $08FC
+	rep #$20
+	lda #$000A
+	sta $08FD
+	jsl $80B10B
+	ldy #$0800
+	ldx #$0000
+L82868B:
+	lda $7F3800,X
+	sta $7F3000,X
+	inx
+	dey
+	inx
+	dey
+	bne L82868B
+	ldx #$07FE
+L82869C:
+	phx
+	lda $7F3000,X
+	and #$00FF
+	cmp #$00FF
+	beq L8286FE
+	cmp #$0003
+	bmi L8286FE
+	lda $7F2800,X
+	cmp #$0400
+	bmi L8286FE
+	and #$00FF
+	lsr
+	lsr
+	lsr
+	lsr
+	lsr
+	sep #$20
+	cmp $07D3
+	beq L8286FE
+	rep #$20
+	lda $7F2800,X
+	and #$00FF
+	sta $0C86
+	jsl $83D912
+	jsl $83AF1C
+	lda #$0002
+	sta $0C89
+	jsr $92B0
+	bcs L8286FE
+	sep #$20
+	lda #$01
+	sta $08F0
+	stz $08F1
+	lda $0C86
+	sta $08F2
+	lda $0C89
+	sta $08F3
+	stz $0C99
+L8286FE:
+	rep #$20
+	plx
+	dex
+	dex
+	bpl L82869C
+	lda $0C99
+	and #$00FF
+	beq L82870F
+	sec
+	rts
+
+L82870F:
+	clc
+	rts
+
+L828711:
 	iny
 	lda [$00],Y
 	and #$00FF
 	sta $0C80
 	iny
 	lda [$00],Y
-	and #$00FF
+	pha
+	lda #$0014
 	sta $0C83
+	lda $0C80
+	jsl $87A8F4
+	bcc L828754
+	lda $08ED
+	and #$00FF
+	jsl $83D912
+	sep #$20
+	lda $7F4419
+	inc A
+	inc A
+	inc A
+	inc A
+	sta $7F4419
+	rep #$20
+	lda $08ED
+	and #$00FF
+	jsl $83D969
+	brl L828864
+L828754:
+	lda #$FFFF
+	sta $0C86
+	lda $08ED
+	jsl $83D912
+	sep #$20
+	lda.l ActiveUnit.ClassID
+	sta $08FF
+	lda.l ActiveUnit.YPosition
+	sta $08FA
+	lda.l ActiveUnit.XPosition
+	sta $08FB
+	lda #$01
+	sta $08FC
+	rep #$20
+	lda #$007F
+	sta $08FD
+	jsl $80B10B
+	lda.l ActiveUnit.Weapon1
+	and #$00FF
+	ora #$0E00
+	sta.l WRMPYA
+	nop
+	nop
+	nop
+	lda.l RDMPYL
+	tax
+	lda $88A6F4,X
+	and #$0007
+	xba
+	lsr
+	lsr
+	sta $0C89
+	lda #$FFFF
+	sta $0C95
+	lda #$07FE
+	sta $0C92
+L8287B8:
+	ldx $0C92
+	lda $7F3800,X
+	and #$00FF
+	cmp #$00FF
+	beq L828835
+	cmp $0C86
+	bcs L828835
+	lda $7F2000,X
+	bit $0C89
+	beq L828835
+	lda $7F2800,X
+	cmp #$0400
+	bmi L8287E7
+	sep #$20
+	cmp $08ED
+	rep #$20
+	bne L828835
+L8287E7:
+	lda $0C92
+	jsl $83D8E5
+	stx $0C8C
+	sty $0C8F
+	ldx #$0000
+	ldy #$0004
+L8287FA:
+	phx
+	phy
+	jsr $97C2
+	lda $7F2800,X
+	cmp #$0400
+	bmi L82882E
+	and #$00FF
+	jsl $83D912
+	lda.l ActiveUnit.UnitID
+	and #$00FF
+	cmp $0C80
+	bne L82882E
+	lda $0C92
+	sta $0C95
+	ldx $0C92
+	lda $7F3800,X
+	and #$00FF
+	sta $0C86
+L82882E:
+	ply
+	plx
+	inx
+	inx
+	dey
+	bne L8287FA
+L828835:
+	dec $0C92
+	dec $0C92
+	bmi L828840
+	brl L8287B8
+L828840:
+	lda $0C95
+	cmp #$FFFF
+	beq L828870
+	jsr $97DE
+	lda $0C8C
+	and #$00FF
+	bne L828864
+	sep #$20
+	lda #$00
+	sta $08F0
+	rep #$20
+	pla
+	pha
+	sta $08F1
+	pla
+	clc
+	rts
+
+L828864:
+	sep #$20
+	lda #$FF
+	sta $0C99
+	rep #$20
+	pla
+	sec
+	rts
+
+L828870:
+	lda #$FFFF
+	sta $0C89
+	jsr $970F
+	bra L828864
+
+L82887B:
 	iny
 	lda [$00],Y
 	and #$00FF
 	sta $0C86
-	lda $15
+	jsr $985E
+	bcc L8288AD
+	lda $08ED
 	and #$00FF
+	jsl $83D912
+	sep #$20
+	lda $7F4419
+	inc A
+	inc A
+	sta $7F4419
+	rep #$20
+	lda $08ED
+	and #$00FF
+	jsl $83D969
+	clc
+	rts
+
+L8288AD:
+	and #$00FF
+	jsl $83D912
+	lda.l ActiveUnit.YPosition
+	and #$00FF
+	sta $0C80
+	lda.l ActiveUnit.XPosition
+	and #$00FF
+	sta $0C83
+	lda $08ED
+	and #$00FF
+	jsl $83D912
+	sep #$20
+	lda #$0B
+	sta $08F0
+	stz $08F1
+	stz $08F2
+	lda.l ActiveUnit.ClassID
+	sta $08FF
+	lda.l ActiveUnit.YPosition
+	sta $08FA
+	sta $08EE
+	lda.l ActiveUnit.XPosition
+	sta $08FB
+	sta $08EF
+	lda #$01
+	sta $08FC
+	rep #$20
+	lda.l ActiveUnit.Movement
+	and #$00FF
+	cmp #$000D
+	bmi L828910
+	lda #$000C
+L828910:
+	sta $08FD
+	jsl $80B10B
+	ldy #$0800
+	ldx #$0000
+L82891D:
+	lda $7F3800,X
+	sta $7F3000,X
+	inx
+	dey
+	inx
+	dey
+	bne L82891D
+	jsr $9578
+	stz $0C8C
+L828931:
+	phy
+	phx
+	jsr $95B0
+	lda $0C80
+	clc
+	adc $15
+	sta $15
+	lda $0C83
+	clc
+	adc $17
+	sta $17
+	stz $19
+	jsl $83D8F7
+	ldx $19
+	lda $7F3000,X
+	and #$00FF
+	cmp #$00FF
+	beq L8289D7
+	lda $7F2800,X
+	cmp #$0400
+	bmi L82896A
+	sep #$20
+	cmp $08ED
+	bne L8289D7
+L82896A:
+	rep #$20
+	jsl $83F63C
+	sep #$20
+	xba
+	lda $08ED
+	xba
+	rep #$20
+	pha
+	pha
+	lda #$8800
+	sta $01
+	lda #$C29E
+	sta $00
+	pla
+	xba
+	and #$00FF
+	jsl L80A89D
+	lda [$00]
+	sta $00
+	pla
+	and #$00FF
+	tay
+	sep #$20
+	lda [$00],Y
+	cmp $0C8C
+	bcc L8289D7
+	rep #$20
+	and #$00FF
+	sta $0C8C
+	plx
+	phx
+	txa
+	lsr
+	sep #$20
+	cmp #$04
+	bpl L8289B7
+	stz $08F3
+	bra L8289BC
+L8289B7:
+	lda.w #$8D01
+	sbc ($08,S),Y
+L8289BC:
+	lda $15
+	sta $08EE
+	lda $17
+	sta $08EF
+	lda.w #$8D01
+	beq L8289D4 - 1 ; ???
+	stz $08F1
+	lda $0C86
+	sta $08F2
+L8289D4:
+	stz $0C99
+L8289D7:
+	rep #$20
+	plx
+	ply
+	inx
+	inx
+	dey
+	beq L8289E3
+	brl L828931
+L8289E3:
+	lda $0C99
+	and #$00FF
+	beq L8289ED
+	sec
+	rts
+
+L8289ED:
+	clc
+	rts
+
+L8289EF:
+	iny
+	lda [$00],Y
+	and #$00FF
+	sta $0C9A
+	lda #$0000
+	sta $0C8F
+	lda $08ED
+	and #$00FF
+	jsl $83D912
+	jsl $83AF3F
+	lda #$FFFF
+	ldy #$0800
+	ldx #$0000
+L828A15:
+	sta $7F3000,X
+	inx
+	dey
+	inx
+	dey
+	bne L828A15
+	sep #$20
+	lda #$0B
+	sta $08F0
+	stz $08F1
+	stz $08F2
+	rep #$20
+	lda.l ActiveUnit.Weapon1
+	and #$00FF
+	ora #$0E00
+	sta.l WRMPYA
+	nop
+	nop
+	nop
+	lda.l RDMPYL
+	tax
+	lda $88A6F4,X
+	and #$0003
+	xba
+	lsr
+	lsr
+	sta $0C80
+	lda.l ActiveUnit.YPosition
+	and #$00FF
+	sta $15
+	lda.l ActiveUnit.XPosition
+	and #$00FF
+	sta $17
+	stz $19
+	jsl $83D8F7
+	lda $19
+	sta $0C83
+	tax
+	lda $7F2000,X
+	and $0C80
+	beq L828AA4
+	lda $7F2800,X
+	cmp #$0400
+	bmi L828A88
+	sep #$20
+	cmp $08ED
+	bne L828AA4
+L828A88:
+	rep #$20
+	lda $08ED
+	jsl $83D912
+	jsr $9578
+L828A94:
+	jsr $8BB9
+	inx
+	inx
+	dey
+	bne L828A94
+	lda $0C99
+	and #$00FF
+	beq L828AA6
+L828AA4:
+	sec
+	rts
+
+L828AA6:
+	clc
+	rts
+
+L828AA8:
+	iny
+	lda [$00],Y
+	and #$00FF
+	sta $0C9A
+	and #$000F
+	sta $0C8F
+	lda $08ED
+	and #$00FF
+	jsl $83D912
+	lda.l ActiveUnit.Weapon1
+	jsl $83EE65
+	bcc L828ACD
+	sec
+	rts
+
+L828ACD:
+	jsl $83AF3F
+	sep #$20
+	lda.l ActiveUnit.ClassID
+	sta $08FF
+	lda.l ActiveUnit.YPosition
+	sta $08FA
+	sta $08EE
+	lda.l ActiveUnit.XPosition
+	sta $08FB
+	sta $08EF
+	lda #$01
+	sta $08FC
+	rep #$20
+	lda.l ActiveUnit.Movement
+	and #$00FF
+	cmp #$000D
+	bmi L828B04
+	lda #$000C
+L828B04:
+	sta $08FD
+	jsl $80B10B
+	ldy #$0800
+	ldx #$0000
+L828B11:
+	lda $7F3800,X
+	sta $7F3000,X
+	inx
+	dey
+	inx
+	dey
+	bne L828B11
+	sep #$20
+	lda #$0B
+	sta $08F0
+	stz $08F1
+	stz $08F2
+	rep #$20
+	lda.l ActiveUnit.Weapon1
+	and #$00FF
+	ora #$0E00
+	sta.l WRMPYA
+	nop
+	nop
+	nop
+	lda.l RDMPYL
+	tax
+	lda $88A6F4,X
+	and #$0003
+	xba
+	lsr
+	lsr
+	sta $0C80
+	lda #$07FE
+	sta $0C83
+L828B57:
+	ldx $0C83
+	lda $7F3000,X
+	and #$00FF
+	cmp #$00FF
+	beq L828BA3
+	lda $7F2000,X
+	and $0C80
+	beq L828BA3
+	lda $7F2800,X
+	cmp #$0400
+	bpl L828B85
+	jsl $83F63C
+	sep #$20
+	sta $0762
+	rep #$20
+	bra L828B8C
+L828B85:
+	sep #$20
+	cmp $08ED
+	bne L828BA3
+L828B8C:
+	rep #$20
+	lda $08ED
+	and #$00FF
+	jsl $83D912
+	jsr $9578
+L828B9B:
+	jsr $8BB9
+	inx
+	inx
+	dey
+	bne L828B9B
+L828BA3:
+	rep #$20
+	dec $0C83
+	dec $0C83
+	bpl L828B57
+	lda $0C99
+	and #$00FF
+	beq L828BB7
+	sec
+	rts
+
+L828BB7:
+	clc
+	rts
+
+L828BB9:
+	phy
+	phx
+	jsr $95B0
+	lda $0C83
+L828BC1:
+	jsl $83D8E5
+	txa
+	clc
+	adc $15
+	bmi L828C32
+	cmp #$0020
+	bpl L828C32
+	sta $15
+	tya
+	clc
+	adc $17
+	bmi L828C32
+	cmp #$0020
+	bpl L828C32
+	sta $17
+	stz $19
+	jsl $83D8F7
+	ldx $19
+	lda $7F2800,X
+	cmp #$0400
+	bmi L828C32
+	and #$00FF
+	lsr
+	lsr
+	lsr
+	lsr
+	lsr
+	sep #$20
+	cmp $07D3
+	beq L828C32
+	rep #$20
+	lda $7F2800,X
+	and #$00FF
+	sta $0C86
+	jsl $83D912
+	lda $19
+	pha
+	jsl $83AF1C
+	pla
+	sta $19
+	plx
+	phx
+	txa
+	lsr
+	sep #$20
+	cmp #$04
+	bpl L828C28
+	stz $0C89
+	bra L828C2E - 1 ; ???
+L828C28:
+	lda.w #$8D01
+	bit.w #$200C
+L828C2E:
+	bcs L828BC1 + 1 ; ???
+	bcc L828C37
+L828C32:
+	rep #$20
+	plx
+	ply
+	rts
+
+L828C37:
+	rep #$20
+	lda $0C83
+	jsl $83D8E5
+	sep #$20
+	txa
+	sta $08EE
+	tya
+	sta $08EF
+	lda #$01
+	sta $08F0
+	stz $08F1
+	lda $0C86
+	sta $08F2
+	lda $0C89
+	sta $08F3
+	stz $0C99
+	bra L828C32
+
+L828C63:
+	lda $08ED
+	and.w #$00FF
+	jsl $83D912
+	lda.w #$8800
+	sta $01
+	lda.w #$C5E1
+	sta $00
+	lda.l ActiveUnit.AI2
+	and.w #$00FF
+	jsl L80A89D
+	lda [$00]
+	sta $00
+	lda $7F441B
+	and.w #$00FF
+	tay
+	lda [$00],Y
+	and.w #$00FF
+	cmp.w #$00FF
+	beq L828CCC
+	sta $15
+	iny
+	lda [$00],Y
+	and.w #$00FF
+	sta $0C80
+	iny
+	lda [$00],Y
+	and.w #$00FF
+	sta $0C83
+	iny
+	lda [$00],Y
+	and.w #$00FF
+	sta $0C86
+	lda $15
+	and.w #$00FF
 	asl
 	tax
 	jsr (SOME_AI_2_TABLE_OF_DATA,X)
