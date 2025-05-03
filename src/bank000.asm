@@ -3611,14 +3611,20 @@ L80A49B: ; main loop
 	and #$00ff
 	asl
 	tax
-	jsr ($a4ba,x)
+	jsr (L80A4BA,x)
 	jsl L8098F0
 	jsl L8087EA
 	bra L80A49B
 
-.db $CA $A4 $CF $A4 $0D $A7
-.db $FE $A6 $EF $A6 $1C $A7 $3A $A7
-.db $2B $A7
+L80A4BA:
+.dw L80A4CA
+.dw L80A4CF
+.dw L80A70D
+.dw L80A6FE
+.dw L80A6EF
+.dw L80A71C
+.dw L80A73A
+.dw L80A72B
 
 L80A4CA:
 	jsl $8DD992
@@ -3880,9 +3886,16 @@ L80A70D:
 	plb
 	rts
 
-.db $8B $E2 $20 $A9
-.db $84 $48 $AB $C2 $20 $22 $BD $90
-.db $84 $AB $60
+L80A71C:
+	phb
+	sep #$20
+	lda #$84
+	pha
+	plb
+	rep #$20
+	jsl $8490BD
+	plb
+	rts
 
 L80A72B:
 	phb
@@ -3895,7 +3908,8 @@ L80A72B:
 	plb
 	rts
 
-.db $5C $02 $80 $86
+L80A73A:
+	jml $868002
 
 L80A73E:
 	lda #$FFFF
