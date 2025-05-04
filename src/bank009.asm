@@ -2360,11 +2360,21 @@ CHAPTERS_THINGIES: ; 2 bytes
 .db $11 $1A $10 $1A $0F $1A $0E $1B
 .db $11 $1B $12 $1C $10 $1C $0F $1C
 .db $0E $1B $0F $1D $11 $1E $10 $1D
-.db $0F $1E $0E $00 $80 $00 $3E $B5
-.db $00 $FF $EB $00 $51 $A1 $01 $09
-.db $D7 $01 $3A $83 $02 $1E $B9 $02
-.db $34 $EE $02 $34 $A0 $03 $61 $D4
-.db $03 $AC $83 $04 $C9 $B4 $04
+.db $0F $1E $0E
+
+CHAPTERS_TILESETS_POINTER_DATA:
+.dl $008000 ; 0E8000.bin
+.dl $00B53E ; 0EB53E.bin
+.dl $00EBFF ; 0EEBFF.bin
+.dl $01A151 ; 0F2151.bin
+.dl $01D709 ; 0F5709.bin
+.dl $02833A ; 0F833A.bin
+.dl $02B91E ; 0FB91E.bin
+.dl $02EE34 ; 0FEE34.bin
+.dl $03A034 ; 102034.bin
+.dl $03D461 ; 105461.bin
+.dl $0483AC ; 1083AC.bin
+.dl $04B4C9 ; 10B4C9.bin
 
 UNKNOWN_CHAPTERS_POINTER_DATA:
 .dl $008000
@@ -2448,83 +2458,84 @@ UNKNOWN_CHAPTERS_POINTER_DATA:
 .dl $008800
 
 UNKNOWN2_CHAPTERS_POINTER_DATA:
-.dl $008000
-.dl $00855D
-.dl $00880F
-.dl $008B87
-.dl $008F81
-.dl $0091E1
-.dl $00958E
-.dl $009A58
-.dl $009F5A
-.dl $00A398
-.dl $00A8CE
-.dl $00ACA2
-.dl $00B295
-.dl $00B693
-.dl $00B89F
-.dl $00BD4D
-.dl $00C217
-.dl $00C5E1
-.dl $00C95A
-.dl $00CC64
-.dl $00D04B
-.dl $00D53D
-.dl $00DA98
-.dl $00E039
-.dl $00E40E
-.dl $00E821
-.dl $00EBCF
-.dl $00F09B
-.dl $00F2EB
-.dl $00F73E
-.dl $00FB21
-.dl $00FF05
-.dl $0184EE
-.dl $0188C3
-.dl $018AE9
-.dl $018DD8
-.dl $0191C8
-.dl $01969A
-.dl $019A84
-.dl $019F89
-.dl $01A4E3
-.dl $01A9EA
-.dl $01AE66
-.dl $01B0CD
-.dl $01B4AB
-.dl $01B839
-.dl $01BB9E
-.dl $01C0C3
-.dl $01C544
-.dl $01C91D
-.dl $01CE2C
-.dl $01D209
-.dl $01D41A
-.dl $01D796
-.dl $01DB4E
-.dl $01DECA
-.dl $01E23E
-.dl $01E44F
-.dl $01E841
-.dl $01EC16
-.dl $01F145
-.dl $01F57D
-.dl $01F9AA
+.dl $008000 ; 120000.bin
+.dl $00855D ; 12055D.bin
+.dl $00880F ; 12080F.bin
+.dl $008B87 ; 120B87.bin
+.dl $008F81 ; 120F81.bin
+.dl $0091E1 ; 1211E1.bin
+.dl $00958E ; 12158E.bin
+.dl $009A58 ; 121A58.bin
+.dl $009F5A ; 121F5A.bin
+.dl $00A398 ; 122398.bin
+.dl $00A8CE ; 1228CE.bin
+.dl $00ACA2 ; 122CA2.bin
+.dl $00B295 ; 123295.bin
+.dl $00B693 ; 123693.bin
+.dl $00B89F ; 12389F.bin
+.dl $00BD4D ; 123D4D.bin
+.dl $00C217 ; 124217.bin
+.dl $00C5E1 ; 1245E1.bin
+.dl $00C95A ; 12495A.bin
+.dl $00CC64 ; 124C64.bin
+.dl $00D04B ; 12504B.bin
+.dl $00D53D ; 12553D.bin
+.dl $00DA98 ; 125A98.bin
+.dl $00E039 ; 126039.bin
+.dl $00E40E ; 12640E.bin
+.dl $00E821 ; 126821.bin
+.dl $00EBCF ; 126BCF.bin
+.dl $00F09B ; 12709B.bin
+.dl $00F2EB ; 1272EB.bin
+.dl $00F73E ; 12773E.bin
+.dl $00FB21 ; 127B21.bin
+.dl $00FF05 ; 127F05.bin
+.dl $0184EE ; 1284EE.bin
+.dl $0188C3 ; 1288C3.bin
+.dl $018AE9 ; 128AE9.bin
+.dl $018DD8 ; 128DD8.bin
+.dl $0191C8 ; 1291C8.bin
+.dl $01969A ; 12969A.bin
+.dl $019A84 ; 129A84.bin
+.dl $019F89 ; 129F89.bin
+.dl $01A4E3 ; 12A4E3.bin
+.dl $01A9EA ; 12A9EA.bin
+.dl $01AE66 ; 12AE66.bin
+.dl $01B0CD ; 12B0CD.bin
+.dl $01B4AB ; 12B4AB.bin
+.dl $01B839 ; 12B839.bin
+.dl $01BB9E ; 12BB9E.bin
+.dl $01C0C3 ; 12C0C3.bin
+.dl $01C544 ; 12C544.bin
+.dl $01C91D ; 12C91D.bin
+.dl $01CE2C ; 12CE2C.bin
+.dl $01D209 ; 12D209.bin
+.dl $01D41A ; 12D41A.bin
+.dl $01D796 ; 12D796.bin
+.dl $01DB4E ; 12DB4E.bin
+.dl $01DECA ; 12DECA.bin
+.dl $01E23E ; 12E23E.bin
+.dl $01E44F ; 12E44F.bin
+.dl $01E841 ; 12E841.bin
+.dl $01EC16 ; 12EC16.bin
+.dl $01F145 ; 12F145.bin
+.dl $01F57D ; 12F57D.bin
+.dl $01F9AA ; 12F9AA.bin
 
 SOME_POINTERS_TABLE:
-.dl $008000
-.dl $0090D2
-.dl $00A07E
-.dl $00B0D0
-.dl $00BFE0
-.dl $00CDE4
-.dl $00DF9F
-.dl $00F4C2
-.dl $0182D4
-.dl $019819
-.dl $01A4C6
-.dl $01B3E8
+.dl $008000 ; 110000.bin
+.dl $0090D2 ; 1110d2.bin
+.dl $00A07E ; 11207E.bin
+.dl $00B0D0 ; 1130D0.bin
+.dl $00BFE0 ; 113FE0.bin
+.dl $00CDE4 ; 114DE4.bin
+.dl $00DF9F ; 115F9F.bin
+.dl $00F4C2 ; 1174C2.bin
+.dl $0182D4 ; 1182D4.bin
+.dl $019819 ; 119819.bin
+.dl $01A4C6 ; 11A4C6.bin
+.dl $01B3E8 ; 11B3E8.bin
+
 .dl $89CB98
 .dl $89CB9C
 .dl $000115
