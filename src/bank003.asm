@@ -3780,7 +3780,7 @@ L83D9D0:
 	tay
 L83DA00:
 	lda $7F4430,X
-	sta $7F4410,X
+	sta.l ActiveUnit.XPosition,X
 	txa
 	and #$001F
 	bne L83DA3A
@@ -4506,7 +4506,7 @@ L83DF98:
 	clc
 	adc $0C
 	sta $0C
-	lda $7F4401
+	lda.l ActiveUnit.ClassID
 	and #$00FF
 	ora #$0600
 	sta.l WRMPYA

@@ -1249,30 +1249,30 @@ L81A594:
 L81A5B2:
 	php
 	sep #$20
-	lda $7F4420
+	lda.l ActiveUnit.Weapons
 	pha
-	lda $7F4409
+	lda.l ActiveUnit.Strength
 	pha
 	cmp #$15
 	bcc L81A5C5
 	lda #$14
 L81A5C5:
-	sta $7F4409
-	lda $7F440A
+	sta.l ActiveUnit.Strength
+	lda.l ActiveUnit.Skill
 	pha
 	cmp #$15
 	bcc L81A5D4
 	lda #$14
 L81A5D4:
-	sta $7F440A
-	lda $7F440B
+	sta.l ActiveUnit.Skill
+	lda.l ActiveUnit.Speed
 	pha
 	cmp #$15
 	bcc L81A5E3
 	lda #$14
 L81A5E3:
-	sta $7F440B
-	lda $7F440E
+	sta.l ActiveUnit.Speed
+	lda.l ActiveUnit.Luck
 	pha
 	cmp #$FF
 	beq L81A5F8
@@ -1283,20 +1283,20 @@ L81A5E3:
 L81A5F8:
 	lda #$00
 L81A5FA:
-	sta $7F440E
-	lda $7F4420
+	sta.l ActiveUnit.Luck
+	lda.l ActiveUnit.Weapons
 	cmp #$FF
 	beq L81A61F
 	lda #$28
 	sta $0C04
-	lda $7F4420
+	lda.l ActiveUnit.Weapons
 	jsl $819770
 	bcs L81A61F
-	lda $7F4420
+	lda.l ActiveUnit.Weapons
 	jsl $83EE65
 	bcc L81A688
 L81A61F:
-	lda $7F4401
+	lda.l ActiveUnit.ClassID
 	cmp #$10
 	beq L81A641
 	cmp #$26
@@ -1328,13 +1328,13 @@ L81A659:
 	lda $07DF
 	cmp.w #$9015
 	sbc.w #$2CA9
-	sta $7F4420
+	sta.l ActiveUnit.Weapons
 	bra L81A688
 L81A668:
-	lda $7F440B
+	lda.l ActiveUnit.Speed
 	sta $0785
 	clc
-	adc $7F440E
+	adc.l ActiveUnit.Luck
 	sta $076B
 	lda.w #$8DFF
 	adc.w #$8D07
@@ -1343,7 +1343,7 @@ L81A668:
 	sta $075D
 	brl L81A74A
 L81A688:
-	lda $7F4420
+	lda.l ActiveUnit.Weapons
 	xba
 	lda #$0E
 	rep #$20
@@ -1376,12 +1376,12 @@ L81A6CF:
 	and #$00FF
 	sta $1D
 	sep #$20
-	lda $7F4420
+	lda.l ActiveUnit.Weapons
 	cmp #$09
 	beq L81A6EB
 	cmp #$38
 	beq L81A6EF
-	lda $7F4409
+	lda.l ActiveUnit.Strength
 	clc
 	adc $19
 	bra L81A6F1
@@ -1392,25 +1392,25 @@ L81A6EF:
 	lda #$FF
 L81A6F1:
 	sta $0769
-	lda $7F440A
+	lda.l ActiveUnit.Skill
 	asl
 	clc
 	adc $15
 	sta $0767
-	lda $7F440A
+	lda.l ActiveUnit.Skill
 	clc
 	adc $17
 	sta $076D
-	lda $7F440B
+	lda.l ActiveUnit.Speed
 	sec
 	sbc $1B
 	bpl L81A714
 	lda #$00
 L81A714:
 	sta $0785
-	lda $7F440B
+	lda.l ActiveUnit.Speed
 	clc
-	adc $7F440E
+	adc.l ActiveUnit.Luck
 	sta $076B
 	lda $1D
 	cmp #$FF
@@ -1418,7 +1418,7 @@ L81A714:
 	lda $19
 	jsl $87A9E8
 	clc
-	adc $7F4409
+	adc.l ActiveUnit.Strength
 	sta $075D
 	bra L81A73E
 L81A739:
@@ -1432,15 +1432,15 @@ L81A73E:
 	sta $0767
 L81A74A:
 	pla
-	sta $7F440E
+	sta.l ActiveUnit.Luck
 	pla
-	sta $7F440B
+	sta.l ActiveUnit.Speed
 	pla
-	sta $7F440A
+	sta.l ActiveUnit.Skill
 	pla
-	sta $7F4409
+	sta.l ActiveUnit.Strength
 	pla
-	sta $7F4420
+	sta.l ActiveUnit.Weapons
 	plp
 	rtl
 
@@ -1450,10 +1450,10 @@ L81A767:
 	php
 	jsl $81A5B2
 	rep #$20
-	lda $7F4411
+	lda.l ActiveUnit.YPosition
 	and #$00FF
 	sta $15
-	lda $7F4410
+	lda.l ActiveUnit.XPosition
 	and #$00FF
 	sta $17
 	stz $19
@@ -1462,7 +1462,7 @@ L81A767:
 	jsl $83F63C
 	sep #$20
 	xba
-	lda $7F4401
+	lda.l ActiveUnit.ClassID
 	xba
 	jsl $83FCF7
 	clc

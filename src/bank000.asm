@@ -3999,7 +3999,7 @@ L80A7D9:
 	jsl $83DCBE
 	sep #$20
 	lda #$00
-	sta $7F4405
+	sta.l ActiveUnit.EXP
 	rep #$20
 	lda $15
 	ora #$2000
@@ -4013,7 +4013,7 @@ L80A7D9:
 L80A7FB:
 	phx
 	tyx
-	lda $7F4400,X
+	lda.l ActiveUnit.UnitID,X
 	plx
 	sta $7F5330,X
 	inx
@@ -4035,7 +4035,7 @@ L80A7FB:
 L80A824:
 	phx
 	tyx
-	lda $7F4420,X
+	lda.l ActiveUnit.Weapons,X
 	plx
 	sta $7F58D0,X
 	inx
@@ -4374,7 +4374,7 @@ L80AAC1:
 	bmi L80AADC
 	phy
 	jsl L80B0D8
-	lda $7F4406
+	lda.l ActiveUnit.Terrain
 	ply
 L80AADC:
 	pha
@@ -4706,7 +4706,7 @@ L80AD53:
 	cmp #$0400
 	bcc L80AD64
 	jsl L80B0D8
-	lda $7F4406
+	lda.l ActiveUnit.Terrain
 L80AD64:
 	sta $19
 	plx
@@ -5074,7 +5074,7 @@ L80B0D8:
 	rep #$20
 	pha
 	jsl $83D912
-	lda $7F4401
+	lda.l ActiveUnit.ClassID
 	and #$00FF
 	jsl $83F1AC
 	sta $23
@@ -5083,7 +5083,7 @@ L80B0D8:
 	clc
 	adc $23
 	sta $23
-	lda $7F4412
+	lda.l ActiveUnit.HasMoved
 	and #$0001
 	beq L80B109
 	lda $23

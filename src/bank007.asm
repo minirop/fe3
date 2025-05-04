@@ -3409,7 +3409,7 @@ L87D213:
 L87D216:
 	rep #$20
 	jsl $83D912
-	lda $7F4410
+	lda.l ActiveUnit.XPosition
 	xba
 	sec
 	sbc $0860
@@ -3488,7 +3488,7 @@ L87D2A1:
 	lda [$00],Y
 	and #$02
 	bne L87D319
-	lda $7F4417
+	lda.l ActiveUnit.PortraitID
 	jsl $87A95E
 	sta $0F69
 	ldx #$0028
@@ -3502,7 +3502,7 @@ L87D2A1:
 	stx $0F6D
 	bra L87D33D
 L87D319:
-	lda $7F4417
+	lda.l ActiveUnit.PortraitID
 	jsl $87A95E
 	sta $0F6A
 	ldx #$008C
