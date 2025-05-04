@@ -3152,37 +3152,41 @@ L809F6A:
 	pha
 L809F6D:
 	lda $27
-	cmp.w #$A980
-.db $00 $2A ; brk #$2A
+	cmp #$80
+	lda #00
+	rol A
 	tax
 	lda [$03],Y
 	bpl L809F7E
 	dec A
-	eor.w #$80FF
-; ???
-.db $03
+	eor #$FF
+	bra L809F81
 L809F7E:
-.db $49
-	sbc $75181A,X
-	rts
-
+	eor #$FF
+	inc A
+L809F81:
+	clc
+	adc $60, X
 L809F84:
 	jmp $9EF7
+
 L809F87:
 	lda $27
-	cmp.w #$A980
-.db $00 $2A ; brk #$2A
+	cmp #$80
+	lda #$00
+	rol A
 	tax
 	lda [$03],Y
 	bpl L809F98
 	dec A
-	eor.w #$80FF
-; ???
-.db $03
+	eor #$FF
+	bra L809F9B
 L809F98:
-.db $49
-	sbc $75181A,X
-	rts
+	eor #$FF
+	inc A
+L809F9B:
+	clc
+	adc $60,X
 
 L809F9E:
 	jmp $9EE6
@@ -5219,14 +5223,13 @@ L80B35A:
 L80B37F:
 	tya
 	sta.l WRMPYA
-	lda #$8F20
-	ora $42,S
-.db $00 $64 ; brk #$64
-	asl $86,X
-	ora $C2,X
-	bmi L80B340
-	asl $42,X
-.db $00 $18 ; brk #$18
+	lda.b #$20
+	sta.l WRMPYB
+	stz $16
+	stx $15
+	rep #$30
+	lda.l RDMPYL
+	clc
 	adc $15
 	asl
 	tax

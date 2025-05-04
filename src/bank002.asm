@@ -218,17 +218,16 @@ L828192:
 	sta $08FA
 	lda.l ActiveUnit.XPosition
 	sta $08FB
-	lda.w #$8D01
-	jsr ($C208,X)
-	jsr $7FA9
-.db $00 $8D ; brk #$8D
-	sbc $2208,X
-	phd
-	lda ($80),Y
-	lda.w #$FFFF
+	lda #$01
+	sta $08FC
+	rep #$20
+	lda #$007F
+	sta $08FD
+	jsl $80B10B
+	lda #$FFFF
 	sta $0C95
 	sta $0C8C
-	lda.w #$07FE
+	lda #$07FE
 	sta $0C92
 L8281E3:
 	ldx $0C92
@@ -603,23 +602,23 @@ L8284C7:
 	txa
 	clc
 	adc $15
-	bmi L828541 - 1 ; ???
+	bmi L828540
 	cmp #$0020
-	bpl L828541 - 1 ; ???
+	bpl L828540
 	sta $15
 	tya
 	clc
 	adc $17
-	bmi L828541 - 1 ; ???
+	bmi L828540
 	cmp #$0020
-	bpl L828541 - 1 ; ???
+	bpl L828540
 	sta $17
 	stz $19
 	jsl $83D8F7
 	ldx $19
 	lda $7F2800,X
 	cmp #$0400
-	bmi L828541 - 1 ; ???
+	bmi L828540
 	and #$00FF
 	lsr
 	lsr
@@ -628,7 +627,7 @@ L8284C7:
 	lsr
 	sep #$20
 	cmp $07D3
-	beq L828541 - 1 ; ???
+	beq L828540
 	rep #$20
 	lda $7F2800,X
 	and #$00FF
@@ -647,18 +646,17 @@ L8284C7:
 	cmp #$04
 	bpl L828536
 	stz $0C89
-	bra L82853C - 1
+	bra L82853B
 L828536:
-	lda.w #$8D01
-	bit.w #$200C
-L82853C:
-	rts
-
-L82853D:
-	sta $90
-	ora $C2
-L828541:
-	jsr $7AFA
+	lda #$01
+	sta $0C89
+L82853B:
+	jsr L828560
+	bcc L828545
+L828540:
+	rep #$20
+	plx
+	ply
 	rts
 
 L828545:
@@ -671,7 +669,8 @@ L828545:
 	lda $0C89
 	sta $08F3
 	stz $0C99
-	bra L828541 - 1 ; ???
+	bra L828540
+L828560:
 	php
 	rep #$20
 	lda $19
@@ -1185,8 +1184,8 @@ L8289BC:
 	sta $08EE
 	lda $17
 	sta $08EF
-	lda.w #$8D01
-	beq L8289D4 - 1 ; ???
+	lda #$01
+	sta $08F0
 	stz $08F1
 	lda $0C86
 	sta $08F2
@@ -1469,12 +1468,12 @@ L828BC1:
 	cmp #$04
 	bpl L828C28
 	stz $0C89
-	bra L828C2E - 1 ; ???
+	bra L828C2D
 L828C28:
-	lda.w #$8D01
-	bit.w #$200C
-L828C2E:
-	bcs L828BC1 + 1 ; ???
+	lda #$01
+	sta $0C89
+L828C2D:
+	jsr L8292B0
 	bcc L828C37
 L828C32:
 	rep #$20
@@ -1583,8 +1582,8 @@ L828D0B:
 	lda.w #$8D04
 	sbc ($08),Y
 	stz $08F2
-	lda.w #$8D0D
-	beq L828D21 - 1 ; ???
+	lda #$0D
+	sta $08F0
 L828D18:
 	lda $7F441B
 	inc A
@@ -1699,30 +1698,28 @@ L828E12:
 	sta $7F441B
 	rep #$20
 	lda $08ED
-	and #$00FF
+	and #$FF
 	jsl $83D969
 	clc
 	rts
 
 L828E39:
-	lda #$8D17
-	beq L828E47 - 1 ; ???
+	lda.b #$17
+	sta $08F0
 	bra L828E0F
 L828E40:
-	lda #$8D07
-	beq L828E4E - 1 ; ???
+	lda.b #$07
+	sta $08F0
 	bra L828E0F
 L828E47:
-	lda #$8D08
-	beq L828E53 + 1 ; ???
+	lda.b #$08
+	sta $08F0
 	bra L828E0F
 L828E4E:
-	lda #$8D09
-	beq L828E5A + 1
-L828E53:
+	lda.b #09
+	sta $08F0
 	lda $08ED
-	jsl $83D912
-L828E5A:
+	jsl L83D912
 	lda.l ActiveUnit.TransformTimer
 	inc A
 	sta.l ActiveUnit.TransformTimer
@@ -2947,13 +2944,12 @@ L82985E:
 	sta $08FA
 	lda.l ActiveUnit.XPosition
 	sta $08FB
-	lda.w #$8D00
-	jsr ($C208,X)
-	jsr $7FA9
-.db $00 $8D ; brk #$8D
-	sbc $2208,X
-	phd
-	lda ($80),Y
+	lda #$00
+	sta $08FC
+	rep #$20
+	lda #$007F
+	sta $08FD
+	jsl $80B10B
 	rep #$30
 	ldx #$07FE
 	pla
