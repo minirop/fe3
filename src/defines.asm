@@ -1,8 +1,9 @@
-.INCLUDE "names.asm"
-.INCLUDE "units.asm"
 .INCLUDE "classes.asm"
+.INCLUDE "events.asm"
 .INCLUDE "items.asm"
+.INCLUDE "names.asm"
 .INCLUDE "portraits.asm"
+.INCLUDE "units.asm"
 
 .DEFINE CHAPTER_000_DEBUG 00
 .DEFINE CHAPTER_101_MARTH_EMBARKS 01
