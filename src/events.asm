@@ -1,0 +1,7 @@
+.MACRO EV_DEL_CHAR
+.db $0B \1
+.ENDM
+
+.MACRO EV_STOP
+.db $00
+.ENDM

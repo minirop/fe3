@@ -1496,6 +1496,7 @@ CHARACTERS_INITIAL_STATS: ; 9 bytes per character
 .db $28
 
 CHARACTERS_OTHER_INITIAL_STATS:
+; classes stats?
 .db $02 $03 $03 $07 $01 $00 $12
 .db $06 $00 $32 $28 $32 $46 $14 $03
 .db $5A $28 $00 $01 $05 $09 $01 $00
@@ -2094,451 +2095,789 @@ CHARACTERS_OTHER_INITIAL_STATS:
 .db $AA $A4 $AC $A4 $AE $A4 $00 $FF
 .db $11 $FF $1F $FF $10 $6E $FF $32
 .db $69 $FF $6E $FF $69 $FF $00 $72
-.db $FF $AF $A5 $AF $A5 $AF $A5 $AF
-.db $A5 $AF $A5 $AF $A5 $AF $A5 $AF
-.db $A5 $B6 $A5 $AF $A5 $AF $A5 $B9
-.db $A5 $AF $A5 $AF $A5 $AF $A5 $BC
-.db $A5 $BC $A5 $BC $A5 $BC $A5 $BC
-.db $A5 $BC $A5 $BC $A5 $BC $A5 $BC
-.db $A5 $C6 $A5 $C6 $A5 $C6 $A5 $C6
-.db $A5 $C6 $A5 $C6 $A5 $D8 $A5 $D8
-.db $A5 $D8 $A5 $D8 $A5 $D8 $A5 $D8
-.db $A5 $DD $A5 $DD $A5 $DD $A5 $DD
-.db $A5 $DD $A5 $DF $A5 $DF $A5 $DF
-.db $A5 $DF $A5 $D1 $A5 $D1 $A5 $D1
-.db $A5 $D1 $A5 $D1 $A5 $D1 $A5 $D1
-.db $A5 $D1 $A5 $D1 $A5 $D1 $A5 $D1
-.db $A5 $D1 $A5 $E8 $A5 $D1 $A5 $D1
-.db $A5 $05 $A6 $05 $A6 $05 $A6 $05
-.db $A6 $CB $A5 $CB $A5 $CB $A5 $CB
-.db $A5 $CB $A5 $CB $A5 $CB $A5 $CB
-.db $A5 $CB $A5 $CB $A5 $CB $A5 $CB
-.db $A5 $CB $A5 $CB $A5 $CB $A5 $ED
-.db $A5 $CB $A5 $EB $A5 $EB $A5 $EB
-.db $A5 $EB $A5 $EB $A5 $EB $A5 $05
-.db $A6 $05 $A6 $05 $A6 $05 $A6 $05
-.db $A6 $05 $A6 $05 $A6 $05 $A6 $05
-.db $A6 $05 $A6 $05 $A6 $05 $A6 $05
-.db $A6 $05 $A6 $05 $A6 $F0 $A5 $F5
-.db $A5 $F7 $A5 $FB $A5 $FF $A5 $05
-.db $A6 $05 $A6 $05 $A6 $05 $A6 $05
-.db $A6 $05 $A6 $05 $A6 $05 $A6 $05
-.db $A6 $05 $A6 $05 $A6 $05 $A6 $05
-.db $A6 $05 $A6 $05 $A6 $05 $A6 $05
-.db $A6 $05 $A6 $05 $A6 $05 $A6 $05
-.db $11 $12 $13 $14 $20 $00 $15 $06
-.db $FF $15 $00 $FF $09 $0A $07 $08
-.db $03 $04 $21 $24 $02 $FF $0B $0D
-.db $0C $0E $FF $16 $1A $1B $22 $18
-.db $FF $17 $19 $1A $1B $18 $22 $FF
-.db $01 $1D $1F $1E $FF $23 $FF $10
-.db $26 $27 $28 $29 $2A $2B $2C $FF
-.db $17 $18 $FF $1C $FF $0F $1C $FF
-.db $03 $07 $05 $06 $FF $11 $FF $16
-.db $17 $19 $FF $09 $06 $05 $FF $0B
-.db $0D $FF $01 $02 $FF $00 $01 $02
-.db $03 $04 $05 $06 $07 $08 $09 $0A
-.db $0B $0C $0D $0E $0F $10 $11 $12
-.db $13 $14 $15 $16 $17 $18 $19 $1A
-.db $1B $1C $1D $1E $1F $20 $21 $22
-.db $23 $24 $25 $26 $27 $28 $29 $2A
-.db $2B $2C $FF $E7 $A6 $E7 $A6 $E7
-.db $A6 $AB $A6 $E7 $A6 $E7 $A6 $E7
-.db $A6 $E7 $A6 $B1 $A6 $E7 $A6 $E7
-.db $A6 $DC $A6 $B7 $A6 $BB $A6 $C4
-.db $A6 $E7 $A6 $E7 $A6 $E7 $A6 $C9
-.db $A6 $E7 $A6 $E7 $A6 $E7 $A6 $E7
-.db $A6 $E7 $A6 $CD $A6 $CD $A6 $CD
-.db $A6 $CD $A6 $CD $A6 $CD $A6 $E7
-.db $A6 $E7 $A6 $E7 $A6 $E7 $A6 $E7
-.db $A6 $E7 $A6 $E7 $A6 $CD $A6 $E7
-.db $A6 $CD $A6 $E7 $A6 $D2 $A6 $D5
-.db $A6 $E7 $A6 $DC $A6 $D2 $A6 $E7
-.db $A6 $D5 $A6 $CD $A6 $D2 $A6 $E7
-.db $A6 $D2 $A6 $CD $A6 $E7 $A6 $E7
-.db $A6 $E7 $A6 $E7 $A6 $E7 $A6 $E7
-.db $A6 $E7 $A6 $03 $04 $07 $08 $FF
-.db $01 $13 $1D $1E $1F $FF $06 $07
-.db $08 $FF $00 $26 $10 $2B $27 $28
-.db $2C $0A $FF $02 $11 $12 $20 $FF
-.db $05 $03 $04 $FF $04 $09 $0A $28
-.db $FF $03 $26 $FF $09 $10 $FF $08
-.db $28 $0A $FF $0A $10 $26 $27 $28
-.db $29 $2A $2B $2C $0A $FF $02 $FF
-.db $0B $01 $00 $01 $05 $5A $00 $02
-.db $FF $2A $2A $00 $09 $00 $00 $01
-.db $01 $02 $08 $50 $00 $04 $FF $26
-.db $4C $00 $09 $01 $01 $01 $02 $09
-.db $0C $5A $00 $03 $FF $14 $C8 $00
-.db $09 $02 $02 $01 $03 $87 $05 $5A
-.db $0A $01 $FF $1E $2C $01 $09 $03
-.db $03 $01 $04 $07 $08 $64 $14 $02
-.db $FF $16 $6E $00 $09 $04 $04 $01
-.db $05 $01 $12 $50 $00 $0A $FF $13
-.db $BE $00 $09 $05 $05 $01 $06 $01
-.db $00 $14 $00 $14 $FF $FF $02 $00
-.db $09 $06 $06 $01 $07 $0C $0C $64
-.db $1E $05 $FF $19 $E8 $03 $09 $07
-.db $07 $01 $10 $01 $0C $64 $0A $05
-.db $FF $19 $E8 $03 $09 $08 $08 $11
-.db $11 $08 $0A $5A $00 $05 $FF $1C
-.db $8C $00 $0B $09 $09 $01 $12 $0C
-.db $14 $64 $00 $04 $FF $18 $60 $09
-.db $09 $0A $0A $01 $13 $80 $0A $64
-.db $00 $0A $FF $FF $FF $FF $89 $0B
-.db $0B $01 $14 $03 $06 $64 $00 $04
-.db $FF $14 $64 $00 $09 $0C $0C $01
-.db $15 $07 $0A $50 $00 $04 $FF $10
-.db $A0 $00 $09 $0D $0D $01 $16 $08
-.db $08 $50 $00 $04 $FF $0C $F0 $00
-.db $09 $0E $0E $02 $17 $01 $07 $64
-.db $00 $06 $FF $26 $26 $00 $09 $0F
-.db $0F $02 $20 $02 $0A $5A $00 $08
-.db $FF $1C $38 $00 $09 $10 $10 $02
-.db $21 $07 $0E $5A $00 $07 $FF $14
-.db $A0 $00 $09 $11 $11 $02 $22 $04
-.db $05 $5A $00 $04 $FF $0E $46 $00
-.db $09 $12 $12 $02 $23 $03 $08 $46
-.db $00 $14 $FF $14 $3C $00 $0B $13
-.db $13 $02 $24 $01 $00 $14 $00 $14
-.db $FF $FF $02 $00 $09 $14 $14 $02
-.db $25 $06 $09 $64 $14 $04 $FF $18
-.db $78 $00 $09 $15 $15 $02 $26 $01
-.db $05 $64 $05 $02 $FF $1E $2D $00
-.db $09 $16 $16 $02 $27 $0C $14 $64
-.db $00 $08 $FF $11 $A4 $06 $0B $17
-.db $17 $04 $30 $01 $06 $64 $00 $04
-.db $FF $21 $21 $00 $0A $18 $18 $04
-.db $31 $01 $00 $14 $00 $14 $FF $FF
-.db $02 $00 $0A $19 $19 $04 $32 $03
-.db $09 $5A $00 $07 $FF $1C $38 $00
-.db $0A $1A $1A $04 $33 $07 $0D $64
-.db $00 $06 $FF $16 $DC $00 $0A $1B
-.db $1B $04 $34 $06 $08 $64 $14 $03
-.db $FF $14 $64 $00 $0A $1C $1C $04
-.db $35 $0C $14 $64 $00 $07 $FF $11
-.db $A4 $06 $0A $1D $1D $40 $36 $01
-.db $08 $50 $00 $07 $FF $2B $2B $00
-.db $09 $1E $1E $40 $37 $02 $0B $46
-.db $00 $09 $FF $1E $3C $00 $09 $1F
-.db $1F $40 $40 $03 $05 $3C $00 $09
-.db $FF $0F $2D $00 $0B $20 $20 $40
-.db $41 $0A $0F $5A $00 $07 $FF $14
-.db $E8 $03 $09 $21 $21 $40 $42 $01
-.db $14 $46 $00 $14 $FF $09 $5A $00
-.db $09 $22 $22 $40 $43 $01 $00 $14
-.db $00 $14 $FF $FF $02 $00 $09 $23
-.db $23 $00 $44 $06 $0A $50 $14 $14
-.db $FF $FF $FF $FF $0C $24 $24 $00
-.db $45 $01 $06 $50 $00 $14 $FF $FF
-.db $FF $FF $0C $25 $25 $00 $46 $02
-.db $0F $3C $00 $14 $FF $FF $FF $FF
-.db $0C $26 $26 $00 $47 $05 $0A $5A
-.db $00 $14 $FF $FF $FF $FF $0C $27
-.db $27 $00 $50 $08 $14 $46 $00 $14
-.db $FF $FF $FF $FF $0C $28 $28 $80
-.db $51 $01 $0C $50 $00 $14 $FF $FF
-.db $FF $FF $0B $29 $29 $80 $52 $01
-.db $0A $50 $00 $14 $FF $FF $FF $FF
-.db $0B $2A $2A $80 $53 $01 $0C $46
-.db $00 $14 $FF $FF $FF $FF $0B $2B
-.db $2B $80 $54 $01 $0A $5A $00 $14
-.db $FF $FF $FF $FF $0B $2C $2C $10
-.db $55 $01 $05 $64 $00 $00 $FF $19
-.db $32 $00 $0B $2D $2D $10 $56 $03
-.db $06 $5A $05 $01 $FF $15 $3F $00
-.db $0B $2E $2E $10 $57 $05 $06 $5A
-.db $00 $02 $FF $17 $45 $00 $0B $2F
-.db $2F $10 $60 $04 $05 $64 $14 $00
-.db $FF $1E $96 $00 $0B $30 $30 $10
-.db $61 $08 $09 $50 $00 $05 $FF $12
-.db $5A $00 $0B $31 $31 $10 $62 $0C
-.db $0C $64 $0A $03 $FF $15 $D2 $00
-.db $0B $32 $32 $10 $63 $0E $10 $46
-.db $00 $0F $FF $0D $C3 $00 $0B $33
-.db $33 $10 $64 $81 $0C $64 $1E $03
-.db $FF $19 $E8 $03 $0B $34 $34 $10
-.db $65 $82 $14 $5A $00 $06 $FF $19
-.db $E8 $03 $0B $35 $35 $10 $66 $09
-.db $0C $64 $00 $05 $FF $0C $FF $FF
-.db $8B $36 $36 $10 $67 $01 $0E $46
-.db $00 $0E $FF $FF $FF $FF $0B $37
-.db $37 $10 $70 $01 $FF $3C $00 $14
-.db $FF $2C $FF $FF $0B $38 $38 $10
-.db $71 $01 $0C $5A $00 $0A $FF $18
-.db $E0 $01 $0B $39 $39 $10 $72 $01
-.db $0C $50 $00 $14 $FF $21 $FF $FF
-.db $0C $3A $3A $10 $73 $01 $06 $32
-.db $00 $10 $FF $21 $FF $FF $0C $3B
-.db $3B $20 $74 $01 $14 $46 $00 $0E
-.db $FF $FF $FF $FF $80 $3C $3C $20
-.db $75 $01 $3D $46 $00 $0E $FF $FF
-.db $FF $FF $80 $3D $3D $20 $76 $01
-.db $3E $00 $00 $00 $FF $FF $FF $FF
-.db $80 $3E $3E $20 $77 $80 $3F $00
-.db $00 $00 $FF $FF $FF $FF $80 $3F
-.db $3F $08 $80 $01 $40 $0E $00 $00
-.db $FF $14 $64 $00 $01 $40 $40 $08
-.db $81 $03 $41 $1E $00 $00 $FF $0C
-.db $F0 $00 $01 $41 $41 $08 $82 $07
-.db $42 $1E $00 $00 $FF $0C $F0 $00
-.db $04 $42 $42 $08 $83 $02 $43 $14
-.db $00 $00 $FF $10 $A0 $00 $01 $43
-.db $43 $08 $84 $05 $44 $2A $00 $00
-.db $FF $07 $78 $05 $01 $44 $44 $08
-.db $85 $08 $45 $1E $00 $00 $FF $0C
-.db $C0 $03 $01 $45 $45 $08 $86 $83
-.db $46 $3A $00 $00 $FF $05 $88 $13
-.db $01 $46 $46 $08 $87 $08 $47 $1E
-.db $00 $00 $FF $0C $C0 $03 $00 $47
-.db $47 $08 $90 $0A $48 $3A $00 $00
-.db $FF $05 $E8 $03 $00 $48 $48 $08
-.db $91 $86 $49 $3A $00 $00 $FF $05
-.db $E8 $03 $04 $49 $49 $08 $92 $84
-.db $4A $3A $00 $00 $FF $01 $E8 $03
-.db $00 $4A $4A $08 $93 $08 $4B $3A
-.db $00 $00 $FF $05 $E8 $03 $00 $4B
-.db $4B $08 $94 $85 $4C $38 $00 $00
-.db $FF $05 $E8 $03 $00 $4C $4C $08
-.db $95 $0B $4D $38 $00 $00 $FF $05
-.db $E8 $03 $00 $4D $4D $08 $96 $14
-.db $4E $38 $00 $00 $FF $03 $E8 $03
-.db $00 $4E $4E $20 $97 $01 $4F $00
-.db $00 $00 $FF $12 $08 $07 $00 $4F
-.db $4F $08 $A0 $84 $4A $3A $00 $00
-.db $FF $05 $88 $13 $00 $50 $50 $20
-.db $A1 $01 $51 $00 $00 $00 $FF $12
-.db $08 $07 $00 $51 $51 $20 $A2 $01
-.db $52 $00 $00 $00 $FF $12 $08 $07
-.db $00 $52 $52 $20 $A3 $01 $53 $00
-.db $00 $00 $FF $12 $08 $07 $00 $53
-.db $53 $20 $A4 $01 $54 $00 $00 $00
-.db $FF $12 $FF $FF $00 $54 $54 $20
-.db $A5 $01 $55 $00 $00 $00 $FF $12
-.db $10 $0E $00 $55 $55 $20 $A6 $01
-.db $56 $00 $00 $00 $FF $12 $08 $07
-.db $00 $56 $56 $20 $A7 $01 $57 $00
-.db $00 $00 $FF $03 $1E $00 $00 $57
-.db $57 $20 $B0 $01 $58 $00 $00 $00
-.db $FF $01 $32 $00 $00 $58 $58 $20
-.db $B1 $01 $59 $00 $00 $00 $FF $01
-.db $F4 $01 $00 $59 $59 $20 $B2 $01
-.db $5A $00 $00 $00 $FF $01 $64 $00
-.db $00 $5A $5A $20 $B3 $01 $5B $00
-.db $00 $00 $FF $01 $32 $00 $00 $5B
-.db $5B $20 $B4 $01 $5C $00 $00 $00
-.db $FF $01 $E8 $03 $00 $5C $5C $20
-.db $B5 $01 $5D $00 $00 $00 $FF $01
-.db $E8 $03 $00 $5D $5D $20 $B6 $01
-.db $5E $00 $00 $00 $FF $01 $E8 $03
-.db $00 $5E $5E $20 $B7 $01 $5F $00
-.db $00 $00 $FF $01 $E8 $03 $00 $5F
-.db $5F $20 $C0 $01 $60 $00 $00 $00
-.db $FF $01 $E8 $03 $00 $60 $60 $20
-.db $C1 $01 $61 $00 $00 $00 $FF $01
-.db $E8 $03 $00 $61 $61 $20 $C2 $01
-.db $62 $00 $00 $00 $FF $01 $E8 $03
-.db $00 $62 $62 $20 $C3 $01 $63 $00
-.db $00 $00 $FF $01 $E8 $03 $00 $63
-.db $63 $20 $C4 $01 $64 $00 $00 $00
-.db $FF $01 $E8 $03 $00 $64 $64 $20
-.db $C5 $01 $65 $00 $00 $00 $FF $03
-.db $78 $00 $00 $65 $65 $20 $C6 $0A
-.db $66 $00 $00 $00 $FF $01 $E8 $03
-.db $00 $66 $66 $20 $C7 $0A $67 $00
-.db $00 $00 $FF $01 $E8 $03 $00 $67
-.db $67 $20 $D0 $0A $68 $00 $00 $00
-.db $FF $01 $E8 $03 $00 $68 $68 $20
-.db $D1 $0A $69 $00 $00 $00 $FF $01
-.db $E8 $03 $00 $69 $69 $20 $D2 $0A
-.db $6A $00 $00 $00 $FF $01 $E8 $03
-.db $00 $6A $6A $20 $D3 $01 $6B $00
-.db $00 $00 $FF $03 $FF $FF $84 $6B
-.db $6B $20 $D4 $01 $6C $00 $00 $00
-.db $FF $FF $FF $FF $80 $6C $6C $20
-.db $D5 $01 $6D $00 $00 $00 $FF $FF
-.db $FF $FF $80 $6D $6D $20 $D6 $01
-.db $6E $00 $00 $00 $FF $FF $FF $FF
-.db $80 $6E $6E $20 $D7 $01 $6F $00
-.db $00 $00 $FF $FF $FF $FF $80 $6F
-.db $6F $20 $E0 $01 $70 $00 $00 $00
-.db $FF $FF $FF $FF $80 $70 $70 $20
-.db $E1 $01 $71 $00 $00 $00 $FF $FF
-.db $FF $FF $80 $71 $71 $20 $E2 $01
-.db $72 $00 $00 $00 $FF $FF $FF $FF
-.db $80 $72 $72 $20 $E3 $01 $73 $00
-.db $00 $00 $FF $FF $FF $FF $80 $73
-.db $73 $20 $E4 $01 $74 $00 $00 $00
-.db $FF $FF $FF $FF $80 $74 $74 $20
-.db $E5 $01 $75 $00 $00 $00 $FF $FF
-.db $FF $FF $80 $75 $75 $20 $E6 $01
-.db $76 $00 $00 $00 $FF $FF $FF $FF
-.db $80 $76 $76 $20 $E7 $01 $77 $00
-.db $00 $00 $FF $FF $FF $FF $80 $77
-.db $77 $20 $F0 $01 $78 $00 $00 $00
-.db $FF $FF $FF $FF $80 $78 $78 $20
-.db $F1 $01 $79 $00 $00 $00 $FF $FF
-.db $FF $FF $80 $79 $79 $20 $F2 $01
-.db $7A $00 $00 $00 $FF $FF $FF $FF
-.db $80 $7A $7A $20 $F3 $01 $7B $00
-.db $00 $00 $FF $FF $FF $FF $80 $7B
-.db $7B $20 $F4 $01 $7C $00 $00 $00
-.db $FF $FF $FF $FF $80 $7C $7C $20
-.db $F5 $01 $7D $00 $00 $00 $FF $FF
-.db $FF $FF $80 $7D $7D $20 $F6 $01
-.db $7E $00 $00 $00 $FF $FF $FF $FF
-.db $80 $7E $7E $5B $AE $6D $AE $75
-.db $AE $7F $AE $8B $AE $A7 $AE $AB
-.db $AE $AF $AE $C5 $AE $DD $AE $F1
-.db $AE $FD $AE $09 $AF $13 $AF $1D
-.db $AF $2B $AF $41 $AF $59 $AF $65
-.db $AF $6F $AF $7D $AF $8B $AF $99
-.db $AF $A7 $AF $B5 $AF $C3 $AF $D1
-.db $AF $DF $AF $ED $AF $FD $AF $09
-.db $B0 $15 $B0 $1F $B0 $39 $B0 $3D
-.db $B0 $47 $B0 $49 $B0 $55 $B0 $6B
-.db $B0 $75 $B0 $97 $B0 $B1 $B0 $C7
-.db $B0 $D3 $B0 $E3 $B0 $FF $B0 $03
-.db $B1 $11 $B1 $25 $B1 $3F $B1 $57
-.db $B1 $6F $B1 $7D $B1 $91 $B1 $A7
-.db $B1 $BD $B1 $D3 $B1 $E5 $B1 $03
-.db $B2 $13 $B2 $27 $B2 $39 $B2 $5F
-.db $B2 $75 $B2 $CC $00 $CD $00 $18
-.db $00 $CE $00 $D3 $00 $C4 $00 $C4
-.db $00 $C4 $00 $FF $FF $18 $00 $D2
-.db $00 $D3 $00 $FF $FF $18 $00 $19
-.db $00 $2D $00 $D3 $00 $FF $FF $18
-.db $00 $0A $00 $01 $00 $D2 $00 $D3
-.db $00 $FF $FF $19 $00 $C2 $00 $0C
-.db $00 $3D $00 $23 $00 $07 $00 $1F
-.db $00 $2C $00 $05 $00 $2B $00 $0B
-.db $00 $0F $00 $C4 $00 $FF $FF $19
-.db $00 $FF $FF $18 $00 $FF $FF $18
-.db $00 $87 $00 $71 $00 $C3 $00 $83
-.db $00 $2C $00 $C2 $00 $02 $00 $08
-.db $00 $0F $00 $FF $FF $18 $00 $87
-.db $00 $71 $00 $C3 $00 $83 $00 $2C
-.db $00 $C2 $00 $00 $00 $0F $00 $03
-.db $00 $0F $00 $FF $FF $18 $00 $08
-.db $00 $01 $00 $08 $00 $2D $00 $10
-.db $00 $2C $00 $03 $00 $0F $00 $FF
-.db $FF $2C $00 $11 $00 $05 $00 $4D
-.db $00 $0F $00 $FF $FF $2C $00 $C2
-.db $00 $D1 $00 $03 $00 $0F $00 $FF
-.db $FF $19 $00 $A9 $00 $AA $00 $2E
-.db $00 $FF $FF $CF $00 $D0 $00 $0B
-.db $00 $0F $00 $FF $FF $19 $00 $C2
-.db $00 $0F $00 $04 $00 $29 $00 $0F
-.db $00 $FF $FF $19 $00 $C2 $00 $09
-.db $00 $2B $00 $29 $00 $12 $00 $0B
-.db $00 $1E $00 $4D $00 $0F $00 $FF
-.db $FF $19 $00 $C2 $00 $D2 $00 $D3
-.db $00 $2C $00 $02 $00 $08 $00 $13
-.db $00 $21 $00 $0F $00 $C4 $00 $FF
-.db $FF $2C $00 $0F $00 $04 $00 $0B
-.db $00 $0F $00 $FF $FF $CF $00 $6A
-.db $00 $9C $00 $63 $00 $FF $FF $2C
-.db $00 $22 $00 $4D $00 $12 $00 $01
-.db $00 $0F $00 $FF $FF $2C $00 $12
-.db $00 $15 $00 $01 $00 $29 $00 $0F
-.db $00 $FF $FF $10 $00 $05 $00 $26
-.db $00 $C2 $00 $C2 $00 $C2 $00 $FF
-.db $FF $2B $00 $33 $00 $C2 $00 $C2
-.db $00 $C2 $00 $C2 $00 $FF $FF $0C
-.db $00 $3D $00 $23 $00 $0A $00 $C2
-.db $00 $C2 $00 $FF $FF $09 $00 $02
-.db $00 $02 $00 $2D $00 $C2 $00 $C2
-.db $00 $FF $FF $0B $00 $4E $00 $3E
-.db $00 $27 $00 $4F $00 $07 $00 $FF
-.db $FF $3F $00 $06 $00 $79 $00 $8F
-.db $00 $78 $00 $C2 $00 $FF $FF $0A
-.db $00 $01 $00 $38 $00 $01 $00 $A9
-.db $00 $AA $00 $FF $FF $1E $00 $1D
-.db $00 $02 $00 $41 $00 $02 $00 $2F
-.db $00 $4F $00 $FF $FF $00 $00 $2E
-.db $00 $4D $00 $0F $00 $C4 $00 $FF
-.db $FF $19 $00 $79 $00 $8F $00 $78
-.db $00 $2E $00 $FF $FF $15 $00 $14
-.db $00 $4D $00 $0F $00 $FF $FF $18
-.db $00 $08 $00 $01 $00 $08 $00 $2D
-.db $00 $10 $00 $2C $00 $02 $00 $0B
-.db $00 $14 $00 $4D $00 $0F $00 $FF
-.db $FF $2E $00 $FF $FF $0A $00 $2E
-.db $00 $4D $00 $0F $00 $FF $FF $FF
-.db $FF $2E $00 $CF $00 $D0 $00 $0B
-.db $00 $0F $00 $FF $FF $19 $00 $C2
-.db $00 $1E $00 $1D $00 $02 $00 $41
-.db $00 $02 $00 $2F $00 $4F $00 $2E
-.db $00 $FF $FF $00 $00 $2E $00 $4D
-.db $00 $0F $00 $FF $FF $54 $00 $C3
-.db $00 $70 $00 $18 $00 $05 $00 $08
-.db $00 $26 $00 $2E $00 $C2 $00 $1A
-.db $00 $05 $00 $27 $00 $07 $00 $38
-.db $00 $08 $00 $28 $00 $FF $FF $19
-.db $00 $C2 $00 $01 $00 $0B $00 $06
-.db $00 $2C $00 $13 $00 $27 $00 $22
-.db $00 $3C $00 $0B $00 $0F $00 $FF
-.db $FF $14 $00 $15 $00 $22 $00 $04
-.db $00 $09 $00 $26 $00 $14 $00 $05
-.db $00 $4D $00 $0F $00 $FF $FF $C2
-.db $00 $76 $00 $52 $00 $7C $00 $8B
-.db $00 $FF $FF $C2 $00 $6B $00 $96
-.db $00 $51 $00 $63 $00 $C4 $00 $C4
-.db $00 $FF $FF $63 $00 $76 $00 $51
-.db $00 $50 $00 $7C $00 $7F $00 $78
-.db $00 $50 $00 $5F $00 $C3 $00 $9C
-.db $00 $57 $00 $C4 $00 $FF $FF $15
-.db $00 $FF $FF $1C $00 $2D $00 $0B
-.db $00 $2D $00 $0B $00 $0F $00 $FF
-.db $FF $57 $00 $76 $00 $5C $00 $60
-.db $00 $99 $00 $7C $00 $83 $00 $0B
-.db $00 $0F $00 $FF $FF $19 $00 $C2
-.db $00 $18 $00 $2A $00 $01 $00 $2C
-.db $00 $19 $00 $14 $00 $4D $00 $0F
-.db $00 $C4 $00 $C4 $00 $FF $FF $1F
-.db $00 $05 $00 $0F $00 $36 $00 $2D
-.db $00 $01 $00 $2D $00 $18 $00 $A9
-.db $00 $AA $00 $2E $00 $FF $FF $19
-.db $00 $C2 $00 $D2 $00 $D3 $00 $2C
-.db $00 $1B $00 $02 $00 $34 $00 $26
-.db $00 $29 $00 $0F $00 $FF $FF $01
-.db $00 $3C $00 $02 $00 $27 $00 $4F
-.db $00 $07 $00 $FF $FF $18 $00 $A9
-.db $00 $AA $00 $2C $00 $C2 $00 $02
-.db $00 $3D $00 $4D $00 $0F $00 $FF
-.db $FF $81 $00 $C3 $00 $78 $00 $8B
-.db $00 $2C $00 $22 $00 $4D $00 $12
-.db $00 $01 $00 $0F $00 $FF $FF $81
-.db $00 $C3 $00 $78 $00 $8B $00 $2C
-.db $00 $12 $00 $15 $00 $01 $00 $29
-.db $00 $0F $00 $FF $FF $19 $00 $C2
-.db $00 $31 $00 $2D $00 $06 $00 $15
-.db $00 $14 $00 $4D $00 $0F $00 $C4
-.db $00 $FF $FF $2C $00 $C2 $00 $01
-.db $00 $3C $00 $02 $00 $0A $00 $0D
-.db $00 $0F $00 $FF $FF $19 $00 $C2
-.db $00 $12 $00 $06 $00 $18 $00 $1E
-.db $00 $1D $00 $02 $00 $2C $00 $1B
-.db $00 $02 $00 $34 $00 $0F $00 $C4
-.db $00 $FF $FF $2C $00 $C2 $00 $25
-.db $00 $3E $00 $25 $00 $0D $00 $0F
-.db $00 $FF $FF $19 $00 $C2 $00 $13
-.db $00 $3E $00 $26 $00 $2C $00 $00
-.db $00 $08 $00 $0F $00 $FF $FF $1B
-.db $00 $0B $00 $2F $00 $14 $00 $1A
-.db $00 $05 $00 $27 $00 $2E $00 $FF
-.db $FF $13 $00 $33 $00 $0A $00 $29
-.db $00 $0F $00 $07 $00 $02 $00 $05
-.db $00 $2D $00 $2C $00 $C2 $00 $02
-.db $00 $11 $00 $0B $00 $38 $00 $0B
-.db $00 $0F $00 $C4 $00 $FF $FF $19
-.db $00 $C2 $00 $1F $00 $05 $00 $0F
-.db $00 $36 $00 $2D $00 $01 $00 $2D
-.db $00 $18 $00 $FF $FF $09 $00 $02
-.db $00 $3C $00 $02 $00 $27 $00 $4F
-.db $00 $07 $00 $2C $00 $C2 $00 $05
-.db $00 $01 $00 $1B $00 $07 $00 $0A
-.db $00 $0D $00 $0F $00 $FF $FF $A9
+.db $FF
+
+EQUIPEMENTS_PER_CLASS_TABLE:
+.dw L88A5AF
+.dw L88A5AF
+.dw L88A5AF
+.dw L88A5AF
+.dw L88A5AF
+.dw L88A5AF
+.dw L88A5AF
+.dw L88A5AF
+.dw L88A5B6
+.dw L88A5AF
+.dw L88A5AF
+.dw L88A5B9
+.dw L88A5AF
+.dw L88A5AF
+.dw L88A5AF
+.dw L88A5BC
+.dw L88A5BC
+.dw L88A5BC
+.dw L88A5BC
+.dw L88A5BC
+.dw L88A5BC
+.dw L88A5BC
+.dw L88A5BC
+.dw L88A5BC
+.dw L88A5C6
+.dw L88A5C6
+.dw L88A5C6
+.dw L88A5C6
+.dw L88A5C6
+.dw L88A5C6
+.dw L88A5D8
+.dw L88A5D8
+.dw L88A5D8
+.dw L88A5D8
+.dw L88A5D8
+.dw L88A5D8
+.dw L88A5DD
+.dw L88A5DD
+.dw L88A5DD
+.dw L88A5DD
+.dw L88A5DD
+.dw L88A5DF
+.dw L88A5DF
+.dw L88A5DF
+.dw L88A5DF
+.dw L88A5D1
+.dw L88A5D1
+.dw L88A5D1
+.dw L88A5D1
+.dw L88A5D1
+.dw L88A5D1
+.dw L88A5D1
+.dw L88A5D1
+.dw L88A5D1
+.dw L88A5D1
+.dw L88A5D1
+.dw L88A5D1
+.dw L88A5E8
+.dw L88A5D1
+.dw L88A5D1
+.dw L88A605
+.dw L88A605
+.dw L88A605
+.dw L88A605
+.dw L88A5CB
+.dw L88A5CB
+.dw L88A5CB
+.dw L88A5CB
+.dw L88A5CB
+.dw L88A5CB
+.dw L88A5CB
+.dw L88A5CB
+.dw L88A5CB
+.dw L88A5CB
+.dw L88A5CB
+.dw L88A5CB
+.dw L88A5CB
+.dw L88A5CB
+.dw L88A5CB
+.dw L88A5ED
+.dw L88A5CB
+.dw L88A5EB
+.dw L88A5EB
+.dw L88A5EB
+.dw L88A5EB
+.dw L88A5EB
+.dw L88A5EB
+.dw L88A605
+.dw L88A605
+.dw L88A605
+.dw L88A605
+.dw L88A605
+.dw L88A605
+.dw L88A605
+.dw L88A605
+.dw L88A605
+.dw L88A605
+.dw L88A605
+.dw L88A605
+.dw L88A605
+.dw L88A605
+.dw L88A605
+.dw L88A5F0
+.dw L88A5F5
+.dw L88A5F7
+.dw L88A5FB
+.dw L88A5FF
+.dw L88A605
+.dw L88A605
+.dw L88A605
+.dw L88A605
+.dw L88A605
+.dw L88A605
+.dw L88A605
+.dw L88A605
+.dw L88A605
+.dw L88A605
+.dw L88A605
+.dw L88A605
+.dw L88A605
+.dw L88A605
+.dw L88A605
+.dw L88A605
+.dw L88A605
+.dw L88A605
+.dw L88A605
+.dw L88A605
+L88A5AF:
+.db CLASS_DISMOUNTED_KNIGHT_MALE
+.db CLASS_MERCENARY
+.db CLASS_HERO
+.db CLASS_THIEF
+.db CLASS_FREELANCER
+.db CLASS_BERSERKER
+.db CLASS_LORD
+
+L88A5B6:
+.db CLASS_DANCER
+.db CLASS_DISMOUNTED_KNIGHT_FEMALE
+.db UNDEFINED
+
+L88A5B9:
+.db CLASS_DANCER
+.db CLASS_LORD
+.db UNDEFINED
+
+L88A5BC:
+.db CLASS_PEGASUS_KNIGHT
+.db CLASS_DRACOKNIGHT
+.db CLASS_ARMOR_KNIGHT
+.db CLASS_GENERAL
+.db CLASS_CAVALIER
+.db CLASS_PALADIN
+.db CLASS_DARK_KNIGHT
+.db CLASS_EMPEROR
+.db CLASS_SOLDIER
+.db UNDEFINED
+
+L88A5C6:
+.db CLASS_HUNTER
+.db CLASS_ARCHER
+.db CLASS_SNIPER
+.db CLASS_HORSEMAN
+.db UNDEFINED
+
+L88A5CB:
+.db CLASS_SISTER
+.db CLASS_BISHOP_MALE
+.db CLASS_SAGE
+.db CLASS_DARK_MAGE
+.db CLASS_BISHOP_FEMALE
+.db UNDEFINED
+
+L88A5D1:
+.db CLASS_MAGE_FEMALE
+.db CLASS_MAGE_MALE
+.db CLASS_BISHOP_MALE
+.db CLASS_SAGE
+.db CLASS_BISHOP_FEMALE
+.db CLASS_DARK_MAGE
+.db UNDEFINED
+
+L88A5D8:
+.db CLASS_FIGHTER
+.db CLASS_BANDIT
+.db CLASS_BARBARIAN
+.db CLASS_PIRATE
+.db UNDEFINED
+
+L88A5DD:
+.db CLASS_BALLISTICIAN
+.db UNDEFINED
+
+L88A5DF:
+.db CLASS_FIRE_DRAGON
+.db CLASS_ICE_DRAGON
+.db CLASS_SEA_DRAGON
+.db CLASS_FLYING_DRAGON
+.db CLASS_EARTH_DRAGON
+.db CLASS_DARK_DRAGON
+.db CLASS_DIVINE_DRAGON
+.db CLASS_DEMON_DRAGON
+.db UNDEFINED
+
+L88A5E8:
+.db CLASS_MAGE_FEMALE
+.db CLASS_BISHOP_FEMALE
+.db UNDEFINED
+
+L88A5EB:
+.db CLASS_MANAKETE_FEMALE
+.db UNDEFINED
+
+L88A5ED:
+.db CLASS_MANAKETE_MALE
+.db CLASS_MANAKETE_FEMALE
+.db UNDEFINED
+
+L88A5F0:
+.db CLASS_CAVALIER
+.db CLASS_ARMOR_KNIGHT
+.db CLASS_DISMOUNTED_KNIGHT_MALE
+.db CLASS_DISMOUNTED_KNIGHT_FEMALE
+.db UNDEFINED
+
+L88A5F5:
+.db CLASS_MERCENARY
+.db UNDEFINED
+
+L88A5F7:
+.db CLASS_SISTER
+.db CLASS_MAGE_FEMALE
+.db CLASS_MAGE_MALE
+.db UNDEFINED
+
+L88A5FB:
+.db CLASS_PEGASUS_KNIGHT
+.db CLASS_DISMOUNTED_KNIGHT_FEMALE
+.db CLASS_DISMOUNTED_KNIGHT_MALE
+.db UNDEFINED
+
+L88A5FF:
+.db CLASS_HUNTER
+.db CLASS_ARCHER
+.db UNDEFINED
+
+; ???
+.db CLASS_FIGHTER
+.db CLASS_SOLDIER
+.db UNDEFINED
+
+L88A605:
+.db CLASS_LORD
+.db CLASS_FIGHTER
+.db CLASS_SOLDIER
+.db CLASS_CAVALIER
+.db CLASS_PALADIN
+.db CLASS_DISMOUNTED_KNIGHT_MALE
+.db CLASS_DISMOUNTED_KNIGHT_FEMALE
+.db CLASS_ARMOR_KNIGHT
+.db CLASS_GENERAL
+.db CLASS_PEGASUS_KNIGHT
+.db CLASS_DRACOKNIGHT
+.db CLASS_HUNTER
+.db CLASS_SNIPER
+.db CLASS_ARCHER
+.db CLASS_HORSEMAN
+.db CLASS_MANAKETE_MALE
+.db CLASS_FIRE_DRAGON
+.db CLASS_MERCENARY
+.db CLASS_HERO
+.db CLASS_THIEF
+.db CLASS_FREELANCER
+.db CLASS_DANCER
+.db CLASS_SISTER
+.db CLASS_MAGE_FEMALE
+.db CLASS_BISHOP_FEMALE
+.db CLASS_MAGE_MALE
+.db CLASS_BISHOP_MALE
+.db CLASS_SAGE
+.db CLASS_MANAKETE_FEMALE
+.db CLASS_BANDIT
+.db CLASS_PIRATE
+.db CLASS_BARBARIAN
+.db CLASS_BERSERKER
+.db CLASS_DARK_KNIGHT
+.db CLASS_DARK_MAGE
+.db CLASS_BALLISTICIAN
+.db CLASS_EMPEROR
+.db CLASS_GUARDIAN
+.db CLASS_ICE_DRAGON
+.db CLASS_SEA_DRAGON
+.db CLASS_FLYING_DRAGON
+.db CLASS_EARTH_DRAGON
+.db CLASS_DARK_DRAGON
+.db CLASS_DIVINE_DRAGON
+.db CLASS_DEMON_DRAGON
+.db UNDEFINED
+
+.dw L88A6E7
+.dw L88A6E7
+.dw L88A6E7
+.dw L88A6AB
+.dw L88A6E7
+.dw L88A6E7
+.dw L88A6E7
+.dw L88A6E7
+.dw L88A6B1
+.dw L88A6E7
+.dw L88A6E7
+.dw L88A6DC
+.dw L88A6B7
+.dw L88A6BB
+.dw L88A6C4
+.dw L88A6E7
+.dw L88A6E7
+.dw L88A6E7
+.dw L88A6C9
+.dw L88A6E7
+.dw L88A6E7
+.dw L88A6E7
+.dw L88A6E7
+.dw L88A6E7
+.dw L88A6CD
+.dw L88A6CD
+.dw L88A6CD
+.dw L88A6CD
+.dw L88A6CD
+.dw L88A6CD
+.dw L88A6E7
+.dw L88A6E7
+.dw L88A6E7
+.dw L88A6E7
+.dw L88A6E7
+.dw L88A6E7
+.dw L88A6E7
+.dw L88A6CD
+.dw L88A6E7
+.dw L88A6CD
+.dw L88A6E7
+.dw L88A6D2
+.dw L88A6D5
+.dw L88A6E7
+.dw L88A6DC
+.dw L88A6D2
+.dw L88A6E7
+.dw L88A6D5
+.dw L88A6CD
+.dw L88A6D2
+.dw L88A6E7
+.dw L88A6D2
+.dw L88A6CD
+.dw L88A6E7
+.dw L88A6E7
+.dw L88A6E7
+.dw L88A6E7
+.dw L88A6E7
+.dw L88A6E7
+.dw L88A6E7
+
+L88A6AB:
+.db $03 $04 $07 $08 $FF $01
+
+L88A6B1:
+.db $13 $1D $1E $1F $FF $06
+
+L88A6B7:
+.db $07 $08 $FF $00
+
+L88A6BB:
+.db $26 $10 $2B $27 $28 $2C $0A $FF $02
+
+L88A6C4:
+.db $11 $12 $20 $FF $05
+
+L88A6C9:
+.db $03 $04 $FF $04
+
+L88A6CD:
+.db $09 $0A $28 $FF $03
+
+L88A6D2:
+.db $26 $FF $09
+
+L88A6D5:
+.db $10 $FF $08 $28 $0A $FF $0A
+
+L88A6DC:
+.db $10 $26 $27 $28 $29 $2A $2B $2C $0A $FF $02
+
+L88A6E7:
+.db $FF $0B
+
+ITEMS_DATA:
+.db $01 $00 $01 $05 $5A $00 $02 $FF $2A $2A $00 $09 $00 $00
+.db $01 $01 $02 $08 $50 $00 $04 $FF $26 $4C $00 $09 $01 $01
+.db $01 $02 $09 $0C $5A $00 $03 $FF $14 $C8 $00 $09 $02 $02
+.db $01 $03 $87 $05 $5A $0A $01 $FF $1E $2C $01 $09 $03 $03
+.db $01 $04 $07 $08 $64 $14 $02 $FF $16 $6E $00 $09 $04 $04
+.db $01 $05 $01 $12 $50 $00 $0A $FF $13 $BE $00 $09 $05 $05
+.db $01 $06 $01 $00 $14 $00 $14 $FF $FF $02 $00 $09 $06 $06
+.db $01 $07 $0C $0C $64 $1E $05 $FF $19 $E8 $03 $09 $07 $07
+.db $01 $10 $01 $0C $64 $0A $05 $FF $19 $E8 $03 $09 $08 $08
+.db $11 $11 $08 $0A $5A $00 $05 $FF $1C $8C $00 $0B $09 $09
+.db $01 $12 $0C $14 $64 $00 $04 $FF $18 $60 $09 $09 $0A $0A
+.db $01 $13 $80 $0A $64 $00 $0A $FF $FF $FF $FF $89 $0B $0B
+.db $01 $14 $03 $06 $64 $00 $04 $FF $14 $64 $00 $09 $0C $0C
+.db $01 $15 $07 $0A $50 $00 $04 $FF $10 $A0 $00 $09 $0D $0D
+.db $01 $16 $08 $08 $50 $00 $04 $FF $0C $F0 $00 $09 $0E $0E
+.db $02 $17 $01 $07 $64 $00 $06 $FF $26 $26 $00 $09 $0F $0F
+.db $02 $20 $02 $0A $5A $00 $08 $FF $1C $38 $00 $09 $10 $10
+.db $02 $21 $07 $0E $5A $00 $07 $FF $14 $A0 $00 $09 $11 $11
+.db $02 $22 $04 $05 $5A $00 $04 $FF $0E $46 $00 $09 $12 $12
+.db $02 $23 $03 $08 $46 $00 $14 $FF $14 $3C $00 $0B $13 $13
+.db $02 $24 $01 $00 $14 $00 $14 $FF $FF $02 $00 $09 $14 $14
+.db $02 $25 $06 $09 $64 $14 $04 $FF $18 $78 $00 $09 $15 $15
+.db $02 $26 $01 $05 $64 $05 $02 $FF $1E $2D $00 $09 $16 $16
+.db $02 $27 $0C $14 $64 $00 $08 $FF $11 $A4 $06 $0B $17 $17
+.db $04 $30 $01 $06 $64 $00 $04 $FF $21 $21 $00 $0A $18 $18
+.db $04 $31 $01 $00 $14 $00 $14 $FF $FF $02 $00 $0A $19 $19
+.db $04 $32 $03 $09 $5A $00 $07 $FF $1C $38 $00 $0A $1A $1A
+.db $04 $33 $07 $0D $64 $00 $06 $FF $16 $DC $00 $0A $1B $1B
+.db $04 $34 $06 $08 $64 $14 $03 $FF $14 $64 $00 $0A $1C $1C
+.db $04 $35 $0C $14 $64 $00 $07 $FF $11 $A4 $06 $0A $1D $1D
+.db $40 $36 $01 $08 $50 $00 $07 $FF $2B $2B $00 $09 $1E $1E
+.db $40 $37 $02 $0B $46 $00 $09 $FF $1E $3C $00 $09 $1F $1F
+.db $40 $40 $03 $05 $3C $00 $09 $FF $0F $2D $00 $0B $20 $20
+.db $40 $41 $0A $0F $5A $00 $07 $FF $14 $E8 $03 $09 $21 $21
+.db $40 $42 $01 $14 $46 $00 $14 $FF $09 $5A $00 $09 $22 $22
+.db $40 $43 $01 $00 $14 $00 $14 $FF $FF $02 $00 $09 $23 $23
+.db $00 $44 $06 $0A $50 $14 $14 $FF $FF $FF $FF $0C $24 $24
+.db $00 $45 $01 $06 $50 $00 $14 $FF $FF $FF $FF $0C $25 $25
+.db $00 $46 $02 $0F $3C $00 $14 $FF $FF $FF $FF $0C $26 $26
+.db $00 $47 $05 $0A $5A $00 $14 $FF $FF $FF $FF $0C $27 $27
+.db $00 $50 $08 $14 $46 $00 $14 $FF $FF $FF $FF $0C $28 $28
+.db $80 $51 $01 $0C $50 $00 $14 $FF $FF $FF $FF $0B $29 $29
+.db $80 $52 $01 $0A $50 $00 $14 $FF $FF $FF $FF $0B $2A $2A
+.db $80 $53 $01 $0C $46 $00 $14 $FF $FF $FF $FF $0B $2B $2B
+.db $80 $54 $01 $0A $5A $00 $14 $FF $FF $FF $FF $0B $2C $2C
+.db $10 $55 $01 $05 $64 $00 $00 $FF $19 $32 $00 $0B $2D $2D
+.db $10 $56 $03 $06 $5A $05 $01 $FF $15 $3F $00 $0B $2E $2E
+.db $10 $57 $05 $06 $5A $00 $02 $FF $17 $45 $00 $0B $2F $2F
+.db $10 $60 $04 $05 $64 $14 $00 $FF $1E $96 $00 $0B $30 $30
+.db $10 $61 $08 $09 $50 $00 $05 $FF $12 $5A $00 $0B $31 $31
+.db $10 $62 $0C $0C $64 $0A $03 $FF $15 $D2 $00 $0B $32 $32
+.db $10 $63 $0E $10 $46 $00 $0F $FF $0D $C3 $00 $0B $33 $33
+.db $10 $64 $81 $0C $64 $1E $03 $FF $19 $E8 $03 $0B $34 $34
+.db $10 $65 $82 $14 $5A $00 $06 $FF $19 $E8 $03 $0B $35 $35
+.db $10 $66 $09 $0C $64 $00 $05 $FF $0C $FF $FF $8B $36 $36
+.db $10 $67 $01 $0E $46 $00 $0E $FF $FF $FF $FF $0B $37 $37
+.db $10 $70 $01 $FF $3C $00 $14 $FF $2C $FF $FF $0B $38 $38
+.db $10 $71 $01 $0C $5A $00 $0A $FF $18 $E0 $01 $0B $39 $39
+.db $10 $72 $01 $0C $50 $00 $14 $FF $21 $FF $FF $0C $3A $3A
+.db $10 $73 $01 $06 $32 $00 $10 $FF $21 $FF $FF $0C $3B $3B
+.db $20 $74 $01 $14 $46 $00 $0E $FF $FF $FF $FF $80 $3C $3C
+.db $20 $75 $01 $3D $46 $00 $0E $FF $FF $FF $FF $80 $3D $3D
+.db $20 $76 $01 $3E $00 $00 $00 $FF $FF $FF $FF $80 $3E $3E
+.db $20 $77 $80 $3F $00 $00 $00 $FF $FF $FF $FF $80 $3F $3F
+.db $08 $80 $01 $40 $0E $00 $00 $FF $14 $64 $00 $01 $40 $40
+.db $08 $81 $03 $41 $1E $00 $00 $FF $0C $F0 $00 $01 $41 $41
+.db $08 $82 $07 $42 $1E $00 $00 $FF $0C $F0 $00 $04 $42 $42
+.db $08 $83 $02 $43 $14 $00 $00 $FF $10 $A0 $00 $01 $43 $43
+.db $08 $84 $05 $44 $2A $00 $00 $FF $07 $78 $05 $01 $44 $44
+.db $08 $85 $08 $45 $1E $00 $00 $FF $0C $C0 $03 $01 $45 $45
+.db $08 $86 $83 $46 $3A $00 $00 $FF $05 $88 $13 $01 $46 $46
+.db $08 $87 $08 $47 $1E $00 $00 $FF $0C $C0 $03 $00 $47 $47
+.db $08 $90 $0A $48 $3A $00 $00 $FF $05 $E8 $03 $00 $48 $48
+.db $08 $91 $86 $49 $3A $00 $00 $FF $05 $E8 $03 $04 $49 $49
+.db $08 $92 $84 $4A $3A $00 $00 $FF $01 $E8 $03 $00 $4A $4A
+.db $08 $93 $08 $4B $3A $00 $00 $FF $05 $E8 $03 $00 $4B $4B
+.db $08 $94 $85 $4C $38 $00 $00 $FF $05 $E8 $03 $00 $4C $4C
+.db $08 $95 $0B $4D $38 $00 $00 $FF $05 $E8 $03 $00 $4D $4D
+.db $08 $96 $14 $4E $38 $00 $00 $FF $03 $E8 $03 $00 $4E $4E
+.db $20 $97 $01 $4F $00 $00 $00 $FF $12 $08 $07 $00 $4F $4F
+.db $08 $A0 $84 $4A $3A $00 $00 $FF $05 $88 $13 $00 $50 $50
+.db $20 $A1 $01 $51 $00 $00 $00 $FF $12 $08 $07 $00 $51 $51
+.db $20 $A2 $01 $52 $00 $00 $00 $FF $12 $08 $07 $00 $52 $52
+.db $20 $A3 $01 $53 $00 $00 $00 $FF $12 $08 $07 $00 $53 $53
+.db $20 $A4 $01 $54 $00 $00 $00 $FF $12 $FF $FF $00 $54 $54
+.db $20 $A5 $01 $55 $00 $00 $00 $FF $12 $10 $0E $00 $55 $55
+.db $20 $A6 $01 $56 $00 $00 $00 $FF $12 $08 $07 $00 $56 $56
+.db $20 $A7 $01 $57 $00 $00 $00 $FF $03 $1E $00 $00 $57 $57
+.db $20 $B0 $01 $58 $00 $00 $00 $FF $01 $32 $00 $00 $58 $58
+.db $20 $B1 $01 $59 $00 $00 $00 $FF $01 $F4 $01 $00 $59 $59
+.db $20 $B2 $01 $5A $00 $00 $00 $FF $01 $64 $00 $00 $5A $5A
+.db $20 $B3 $01 $5B $00 $00 $00 $FF $01 $32 $00 $00 $5B $5B
+.db $20 $B4 $01 $5C $00 $00 $00 $FF $01 $E8 $03 $00 $5C $5C
+.db $20 $B5 $01 $5D $00 $00 $00 $FF $01 $E8 $03 $00 $5D $5D
+.db $20 $B6 $01 $5E $00 $00 $00 $FF $01 $E8 $03 $00 $5E $5E
+.db $20 $B7 $01 $5F $00 $00 $00 $FF $01 $E8 $03 $00 $5F $5F
+.db $20 $C0 $01 $60 $00 $00 $00 $FF $01 $E8 $03 $00 $60 $60
+.db $20 $C1 $01 $61 $00 $00 $00 $FF $01 $E8 $03 $00 $61 $61
+.db $20 $C2 $01 $62 $00 $00 $00 $FF $01 $E8 $03 $00 $62 $62
+.db $20 $C3 $01 $63 $00 $00 $00 $FF $01 $E8 $03 $00 $63 $63
+.db $20 $C4 $01 $64 $00 $00 $00 $FF $01 $E8 $03 $00 $64 $64
+.db $20 $C5 $01 $65 $00 $00 $00 $FF $03 $78 $00 $00 $65 $65
+.db $20 $C6 $0A $66 $00 $00 $00 $FF $01 $E8 $03 $00 $66 $66
+.db $20 $C7 $0A $67 $00 $00 $00 $FF $01 $E8 $03 $00 $67 $67
+.db $20 $D0 $0A $68 $00 $00 $00 $FF $01 $E8 $03 $00 $68 $68
+.db $20 $D1 $0A $69 $00 $00 $00 $FF $01 $E8 $03 $00 $69 $69
+.db $20 $D2 $0A $6A $00 $00 $00 $FF $01 $E8 $03 $00 $6A $6A
+.db $20 $D3 $01 $6B $00 $00 $00 $FF $03 $FF $FF $84 $6B $6B
+.db $20 $D4 $01 $6C $00 $00 $00 $FF $FF $FF $FF $80 $6C $6C
+.db $20 $D5 $01 $6D $00 $00 $00 $FF $FF $FF $FF $80 $6D $6D
+.db $20 $D6 $01 $6E $00 $00 $00 $FF $FF $FF $FF $80 $6E $6E
+.db $20 $D7 $01 $6F $00 $00 $00 $FF $FF $FF $FF $80 $6F $6F
+.db $20 $E0 $01 $70 $00 $00 $00 $FF $FF $FF $FF $80 $70 $70
+.db $20 $E1 $01 $71 $00 $00 $00 $FF $FF $FF $FF $80 $71 $71
+.db $20 $E2 $01 $72 $00 $00 $00 $FF $FF $FF $FF $80 $72 $72
+.db $20 $E3 $01 $73 $00 $00 $00 $FF $FF $FF $FF $80 $73 $73
+.db $20 $E4 $01 $74 $00 $00 $00 $FF $FF $FF $FF $80 $74 $74
+.db $20 $E5 $01 $75 $00 $00 $00 $FF $FF $FF $FF $80 $75 $75
+.db $20 $E6 $01 $76 $00 $00 $00 $FF $FF $FF $FF $80 $76 $76
+.db $20 $E7 $01 $77 $00 $00 $00 $FF $FF $FF $FF $80 $77 $77
+.db $20 $F0 $01 $78 $00 $00 $00 $FF $FF $FF $FF $80 $78 $78
+.db $20 $F1 $01 $79 $00 $00 $00 $FF $FF $FF $FF $80 $79 $79
+.db $20 $F2 $01 $7A $00 $00 $00 $FF $FF $FF $FF $80 $7A $7A
+.db $20 $F3 $01 $7B $00 $00 $00 $FF $FF $FF $FF $80 $7B $7B
+.db $20 $F4 $01 $7C $00 $00 $00 $FF $FF $FF $FF $80 $7C $7C
+.db $20 $F5 $01 $7D $00 $00 $00 $FF $FF $FF $FF $80 $7D $7D
+.db $20 $F6 $01 $7E $00 $00 $00 $FF $FF $FF $FF $80 $7E $7E
+
+.dw L88AE5B
+.dw L88AE6D
+.dw L88AE75
+.dw L88AE7F
+.dw L88AE8B
+.dw L88AEA7
+.dw L88AEAB
+.dw L88AEAF
+.dw L88AEC5
+.dw L88AEDD
+.dw L88AEF1
+.dw L88AEFD
+.dw L88AF09
+.dw L88AF13
+.dw L88AF1D
+.dw L88AF2B
+.dw L88AF41
+.dw L88AF59
+.dw L88AF65
+.dw L88AF6F
+.dw L88AF7D
+.dw L88AF8B
+.dw L88AF99
+.dw L88AFA7
+.dw L88AFB5
+.dw L88AFC3
+.dw L88AFD1
+.dw L88AFDF
+.dw L88AFED
+.dw L88AFFD
+.dw L88B009
+.dw L88B015
+.dw L88B01F
+.dw L88B039
+.dw L88B03D
+.dw L88B047
+.dw L88B049
+.dw L88B055
+.dw L88B06B
+.dw L88B075
+.dw L88B097
+.dw L88B0B1
+.dw L88B0C7
+.dw L88B0D3
+.dw L88B0E3
+.dw L88B0FF
+.dw L88B103
+.dw L88B111
+.dw L88B125
+.dw L88B13F
+.dw L88B157
+.dw L88B16F
+.dw L88B17D
+.dw L88B191
+.dw L88B1A7
+.dw L88B1BD
+.dw L88B1D3
+.dw L88B1E5
+.dw L88B203
+.dw L88B213
+.dw L88B227
+.dw L88B239
+.dw L88B25F
+.dw L88B275
+
+L88AE5B:
+.db $CC $00 $CD $00 $18 $00 $CE $00 $D3 $00 $C4 $00 $C4 $00 $C4 $00 $FF $FF
+
+L88AE6D:
+.db $18 $00 $D2 $00 $D3 $00 $FF $FF
+
+L88AE75:
+.db $18 $00 $19 $00 $2D $00 $D3 $00 $FF $FF
+
+L88AE7F:
+.db $18 $00 $0A $00 $01 $00 $D2 $00 $D3 $00 $FF $FF
+
+L88AE8B:
+.db $19 $00 $C2 $00 $0C $00 $3D $00 $23 $00 $07 $00 $1F $00 $2C $00 $05 $00 $2B $00 $0B $00 $0F $00 $C4 $00 $FF $FF
+
+L88AEA7:
+.db $19 $00 $FF $FF
+
+L88AEAB:
+.db $18 $00 $FF $FF
+
+L88AEAF:
+.db $18 $00 $87 $00 $71 $00 $C3 $00 $83 $00 $2C $00 $C2 $00 $02 $00 $08 $00 $0F $00 $FF $FF
+
+L88AEC5:
+.db $18 $00 $87 $00 $71 $00 $C3 $00 $83 $00 $2C $00 $C2 $00 $00 $00 $0F $00 $03 $00 $0F $00 $FF $FF
+
+L88AEDD:
+.db $18 $00 $08 $00 $01 $00 $08 $00 $2D $00 $10 $00 $2C $00 $03 $00 $0F $00 $FF $FF
+
+L88AEF1:
+.db $2C $00 $11 $00 $05 $00 $4D $00 $0F $00 $FF $FF
+
+L88AEFD:
+.db $2C $00 $C2 $00 $D1 $00 $03 $00 $0F $00 $FF $FF
+
+L88AF09:
+.db $19 $00 $A9 $00 $AA $00 $2E $00 $FF $FF
+
+L88AF13:
+.db $CF $00 $D0 $00 $0B $00 $0F $00 $FF $FF
+
+L88AF1D:
+.db $19 $00 $C2 $00 $0F $00 $04 $00 $29 $00 $0F $00 $FF $FF
+
+L88AF2B:
+.db $19 $00 $C2 $00 $09 $00 $2B $00 $29 $00 $12 $00 $0B $00 $1E $00 $4D $00 $0F $00 $FF $FF
+
+L88AF41:
+.db $19 $00 $C2 $00 $D2 $00 $D3 $00 $2C $00 $02 $00 $08 $00 $13 $00 $21 $00 $0F $00 $C4 $00 $FF $FF
+
+L88AF59:
+.db $2C $00 $0F $00 $04 $00 $0B $00 $0F $00 $FF $FF
+
+L88AF65:
+.db $CF $00 $6A $00 $9C $00 $63 $00 $FF $FF
+
+L88AF6F:
+.db $2C $00 $22 $00 $4D $00 $12 $00 $01 $00 $0F $00 $FF $FF
+
+L88AF7D:
+.db $2C $00 $12 $00 $15 $00 $01 $00 $29 $00 $0F $00 $FF $FF
+
+L88AF8B:
+.db $10 $00 $05 $00 $26 $00 $C2 $00 $C2 $00 $C2 $00 $FF $FF
+
+L88AF99:
+.db $2B $00 $33 $00 $C2 $00 $C2 $00 $C2 $00 $C2 $00 $FF $FF
+
+L88AFA7:
+.db $0C $00 $3D $00 $23 $00 $0A $00 $C2 $00 $C2 $00 $FF $FF
+
+L88AFB5:
+.db $09 $00 $02 $00 $02 $00 $2D $00 $C2 $00 $C2 $00 $FF $FF
+
+L88AFC3:
+.db $0B $00 $4E $00 $3E $00 $27 $00 $4F $00 $07 $00 $FF $FF
+
+L88AFD1:
+.db $3F $00 $06 $00 $79 $00 $8F $00 $78 $00 $C2 $00 $FF $FF
+
+L88AFDF:
+.db $0A $00 $01 $00 $38 $00 $01 $00 $A9 $00 $AA $00 $FF $FF
+
+L88AFED:
+.db $1E $00 $1D $00 $02 $00 $41 $00 $02 $00 $2F $00 $4F $00 $FF $FF
+
+L88AFFD:
+.db $00 $00 $2E $00 $4D $00 $0F $00 $C4 $00 $FF $FF
+
+L88B009:
+.db $19 $00 $79 $00 $8F $00 $78 $00 $2E $00 $FF $FF
+
+L88B015:
+.db $15 $00 $14 $00 $4D $00 $0F $00 $FF $FF
+
+L88B01F:
+.db $18 $00 $08 $00 $01 $00 $08 $00 $2D $00 $10 $00 $2C $00 $02 $00 $0B $00 $14 $00 $4D $00 $0F $00 $FF $FF
+
+L88B039:
+.db $2E $00 $FF $FF
+
+L88B03D:
+.db $0A $00 $2E $00 $4D $00 $0F $00 $FF $FF
+
+L88B047:
+.db $FF $FF
+
+L88B049:
+.db $2E $00 $CF $00 $D0 $00 $0B $00 $0F $00 $FF $FF
+
+L88B055:
+.db $19 $00 $C2 $00 $1E $00 $1D $00 $02 $00 $41 $00 $02 $00 $2F $00 $4F $00 $2E $00 $FF $FF
+
+L88B06B:
+.db $00 $00 $2E $00 $4D $00 $0F $00 $FF $FF
+
+L88B075:
+.db $54 $00 $C3 $00 $70 $00 $18 $00 $05 $00 $08 $00 $26 $00 $2E $00 $C2 $00 $1A $00 $05 $00 $27 $00 $07 $00 $38 $00 $08 $00 $28 $00 $FF $FF
+
+L88B097:
+.db $19 $00 $C2 $00 $01 $00 $0B $00 $06 $00 $2C $00 $13 $00 $27 $00 $22 $00 $3C $00 $0B $00 $0F $00 $FF $FF
+
+L88B0B1:
+.db $14 $00 $15 $00 $22 $00 $04 $00 $09 $00 $26 $00 $14 $00 $05 $00 $4D $00 $0F $00 $FF $FF
+
+L88B0C7:
+.db $C2 $00 $76 $00 $52 $00 $7C $00 $8B $00 $FF $FF
+
+L88B0D3:
+.db $C2 $00 $6B $00 $96 $00 $51 $00 $63 $00 $C4 $00 $C4 $00 $FF $FF
+
+L88B0E3:
+.db $63 $00 $76 $00 $51 $00 $50 $00 $7C $00 $7F $00 $78 $00 $50 $00 $5F $00 $C3 $00 $9C $00 $57 $00 $C4 $00 $FF $FF
+
+L88B0FF:
+.db $15 $00 $FF $FF
+
+L88B103:
+.db $1C $00 $2D $00 $0B $00 $2D $00 $0B $00 $0F $00 $FF $FF
+
+L88B111:
+.db $57 $00 $76 $00 $5C $00 $60 $00 $99 $00 $7C $00 $83 $00 $0B $00 $0F $00 $FF $FF
+
+L88B125:
+.db $19 $00 $C2 $00 $18 $00 $2A $00 $01 $00 $2C $00 $19 $00 $14 $00 $4D $00 $0F $00 $C4 $00 $C4 $00 $FF $FF
+
+L88B13F:
+.db $1F $00 $05 $00 $0F $00 $36 $00 $2D $00 $01 $00 $2D $00 $18 $00 $A9 $00 $AA $00 $2E $00 $FF $FF
+
+L88B157:
+.db $19 $00 $C2 $00 $D2 $00 $D3 $00 $2C $00 $1B $00 $02 $00 $34 $00 $26 $00 $29 $00 $0F $00 $FF $FF
+
+L88B16F:
+.db $01 $00 $3C $00 $02 $00 $27 $00 $4F $00 $07 $00 $FF $FF
+
+L88B17D:
+.db $18 $00 $A9 $00 $AA $00 $2C $00 $C2 $00 $02 $00 $3D $00 $4D $00 $0F $00 $FF $FF
+
+L88B191:
+.db $81 $00 $C3 $00 $78 $00 $8B $00 $2C $00 $22 $00 $4D $00 $12 $00 $01 $00 $0F $00 $FF $FF
+
+L88B1A7:
+.db $81 $00 $C3 $00 $78 $00 $8B $00 $2C $00 $12 $00 $15 $00 $01 $00 $29 $00 $0F $00 $FF $FF
+
+L88B1BD:
+.db $19 $00 $C2 $00 $31 $00 $2D $00 $06 $00 $15 $00 $14 $00 $4D $00 $0F $00 $C4 $00 $FF $FF
+
+L88B1D3:
+.db $2C $00 $C2 $00 $01 $00 $3C $00 $02 $00 $0A $00 $0D $00 $0F $00 $FF $FF
+
+L88B1E5:
+.db $19 $00 $C2 $00 $12 $00 $06 $00 $18 $00 $1E $00 $1D $00 $02 $00 $2C $00 $1B $00 $02 $00 $34 $00 $0F $00 $C4 $00 $FF $FF
+
+L88B203:
+.db $2C $00 $C2 $00 $25 $00 $3E $00 $25 $00 $0D $00 $0F $00 $FF $FF
+
+L88B213:
+.db $19 $00 $C2 $00 $13 $00 $3E $00 $26 $00 $2C $00 $00 $00 $08 $00 $0F $00 $FF $FF
+
+L88B227:
+.db $1B $00 $0B $00 $2F $00 $14 $00 $1A $00 $05 $00 $27 $00 $2E $00 $FF $FF
+
+L88B239:
+.db $13 $00 $33 $00 $0A $00 $29 $00 $0F $00 $07 $00 $02 $00 $05 $00 $2D $00 $2C $00 $C2 $00 $02 $00 $11 $00 $0B $00 $38 $00 $0B $00 $0F $00 $C4 $00 $FF $FF
+
+L88B25F:
+.db $19 $00 $C2 $00 $1F $00 $05 $00 $0F $00 $36 $00 $2D $00 $01 $00 $2D $00 $18 $00 $FF $FF
+
+L88B275:
+.db $09 $00 $02 $00 $3C $00 $02 $00 $27 $00 $4F $00 $07 $00 $2C $00 $C2 $00 $05 $00 $01 $00 $1B $00 $07 $00 $0A $00 $0D $00 $0F $00 $FF $FF
+
+.db $A9
 .db $B2 $B3 $B2 $BD $B2 $C7 $B2 $D1
 .db $B2 $DD $B2 $E9 $B2 $F5 $B2 $FF
 .db $B2 $B7 $00 $64 $00 $51 $00 $63
