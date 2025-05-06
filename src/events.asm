@@ -8,6 +8,16 @@
 .dw \1
 .ENDM
 
+.DEFINE SPEED_04 $04
+
+.MACRO EV_MOVE_CAMERA
+.db $03 \1 \2 \3
+.ENDM
+
+.MACRO EV_COMMAND_05
+.db $05 \1
+.ENDM
+
 ; unclear
 .MACRO EV_EXPLOSION
 .db $06 \1 \2 \3
@@ -27,9 +37,26 @@
 .db $0B \1
 .ENDM
 
+; called after a recruitment dialogue
+.MACRO EV_SET_UNIT_ALLY
+.db $0C $00 \1
+.ENDM
+
+.MACRO EV_SET_UNIT_ENEMY
+.db $0C $01 \1
+.ENDM
+
 ; to investigate
 .MACRO EV_SET_ALLY
 .db $0D $00 \1 \2
+.ENDM
+
+.DEFINE SHOP_WEAPON $00
+.DEFINE SHOP_ITEM $01
+.DEFINE SHOP_SECRET $02
+
+.MACRO EV_SHOP
+.db $10 \1 \2 $FF
 .ENDM
 
 ; to investigate
@@ -44,14 +71,80 @@
 .dw \1
 .ENDM
 
+.MACRO EV_BRANCH_IF
+.db $13
+.dw \1
+.dw \2
+.ENDM
+
+.DEFINE DISPLAYED 0
+.DEFINE NOT_DISPLAYED 1
+
+.MACRO EV_GET_MONEY
+.db $15
+.dw \1
+.db \2
+.ENDM
+
+.MACRO EV_GET_ITEM
+.db $16 \1 $00 $FF $00
+.ENDM
+
+.MACRO EV_GET_ITEM_2
+.db $16 \1 \2 $FF $00
+.ENDM
+
 ; to investigate
+; seems it only has 4 parameters
 .MACRO EV_COMMAND_18
 .db $18 \1 \2 \3 \4 \5
+.ENDM
+
+.MACRO EV_COMMAND_1C
+.db $1C \1 \2 \3
+.ENDM
+
+.MACRO EV_COMMAND_1D
+.db $1D \1 \2
+.ENDM
+
+.MACRO EV_COMMAND_1E
+.db $1E \1 \2
 .ENDM
 
 ; to investigate
 .MACRO EV_BRANCH_IF_UNIT_EXISTS
 .db $1F \1 $00
 .dw \2
-.db $00
+.ENDM
+
+; EV_SET_CHIPSET_DIM?
+.MACRO EV_COMMAND_21
+.db $21 \1 \2 \3 \4 \5
+.ENDM
+
+.MACRO EV_REMOVE_ITEM
+.db $22 \1
+.ENDM
+
+.MACRO EV_ITEM_NOT_OWNED
+.db $29 \1
+.dw \2
+.ENDM
+
+.MACRO EV_BOOK1_END
+.db $2B $00
+.ENDM
+
+.MACRO EV_BOOK2_END
+.db $2B $01
+.ENDM
+
+.MACRO EV_BAD_END
+.db $2B $02
+.ENDM
+
+.MACRO EV_SOUND_EFFECT_30
+.db $30
+.dw \1
 .ENDM
