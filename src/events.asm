@@ -2,7 +2,10 @@
 .db $00
 .ENDM
 
-; start dialogue?
+.MACRO EV_TURN_SCREEN_OFF_THEN_MOVE
+.db $01 \1 \2
+.ENDM
+
 .MACRO EV_DIALOGUE
 .db $02
 .dw \1
@@ -12,6 +15,10 @@
 
 .MACRO EV_MOVE_CAMERA
 .db $03 \1 \2 \3
+.ENDM
+
+.MACRO EV_COMMAND_04
+.db $04 \1 \2 \3
 .ENDM
 
 .MACRO EV_COMMAND_05
@@ -33,7 +40,17 @@
 .db $08 $FF $FF
 .ENDM
 
-.MACRO EV_DEL_CHAR
+; unknown
+.MACRO EV_COMMAND_09
+.db $09
+.dw \1 \2 \3 \4
+.ENDM
+
+.MACRO EV_COMMAND_0A
+.db $0A \1
+.ENDM
+
+.MACRO EV_DEL_UNIT
 .db $0B \1
 .ENDM
 
@@ -132,6 +149,10 @@
 .dw \2
 .ENDM
 
+.MACRO EV_COMMAND_2A
+.db $2A
+.ENDM
+
 .MACRO EV_BOOK1_END
 .db $2B $00
 .ENDM
@@ -142,6 +163,10 @@
 
 .MACRO EV_BAD_END
 .db $2B $02
+.ENDM
+
+.MACRO EV_SHAKE_SCREEN
+.db $2D
 .ENDM
 
 .MACRO EV_SOUND_EFFECT_30
