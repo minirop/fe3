@@ -22,6 +22,7 @@ Just type `make`.
 
 - Writing a compressor. See [documentation](docs/compression.md), the decompressor can be found inside [fe3-png](https://github.com/minirop/fe3-png/).
 - Understanding the map format (tilemap, enemies placements, cutscenes, etc.).
+- Understanding the format of `EV_COMMAND_09`.
 
 ## See also
 
