@@ -1495,11 +1495,12 @@ CHARACTERS_INITIAL_STATS: ; 9 bytes per character
 .db $06 $00 $00 $06 $0F $14 $32 $10
 .db $28
 
-CHARACTERS_OTHER_INITIAL_STATS:
 ; classes stats?
-.db $02 $03 $03 $07 $01 $00 $12
-.db $06 $00 $32 $28 $32 $46 $14 $03
-.db $5A $28 $00 $01 $05 $09 $01 $00
+CHARACTERS_OTHER_INITIAL_STATS: ; 8 bytes
+.db $02 $03 $03 $07 $01 $00 $12 $06
+CHARACTERS_OTHER_INITIAL_STATS_PART_2: ; 9 bytes
+.db $00 $32 $28 $32 $46 $14 $03 $5A $28
+.db $00 $01 $05 $09 $01 $00
 .db $10 $07 $01 $14 $46 $5A $46 $14
 .db $03 $32 $50 $00 $05 $01 $01 $01
 .db $00 $16 $0A $00 $0A $0A $0A $00
@@ -2225,6 +2226,7 @@ EQUIPEMENTS_PER_CLASS_TABLE:
 .dw L88A605
 .dw L88A605
 .dw L88A605
+
 L88A5AF:
 .db CLASS_DISMOUNTED_KNIGHT_MALE
 .db CLASS_MERCENARY
@@ -2492,7 +2494,10 @@ L88A6E7:
 .db $FF $0B
 
 ITEMS_DATA:
-.db $01 $00 $01 $05 $5A $00 $02 $FF $2A $2A $00 $09 $00 $00
+.db $01 $00 $01 $05 $5A $00 $02 $FF $2A $2A $00 $09
+
+ITEMS_DATA_2:
+.db $00 $00
 .db $01 $01 $02 $08 $50 $00 $04 $FF $26 $4C $00 $09 $01 $01
 .db $01 $02 $09 $0C $5A $00 $03 $FF $14 $C8 $00 $09 $02 $02
 .db $01 $03 $87 $05 $5A $0A $01 $FF $1E $2C $01 $09 $03 $03
