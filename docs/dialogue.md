@@ -33,7 +33,7 @@ EC 3C AB 06 C4 01 4E 10 19 06 -- "城で何か あったのか"
 00 92 -- SwitchFrame
 01 -- bottom frame?
 00 84 -- ShowPortrait
-01 -- Ceada
+01 -- Caeda
 07
 6F 79 5D F4 C4 AC 04 13 26 06 4E 10 -- "マルス様 会えてよかった"
 00 8A -- WaitForA
