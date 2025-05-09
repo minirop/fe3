@@ -10,10 +10,10 @@ $(COBJ): src/main.s lists
 	$(AS) -I src -I bin -I text/dialogues -I text/lists -x -v -o $@ $<
 
 lists:
-	fe3-text text/lists/chapters.txt compile list text/lists/chapters.bin
-	fe3-text text/lists/characters.txt compile list text/lists/characters.bin
-	fe3-text text/lists/classes.txt compile list text/lists/classes.bin
-	fe3-text text/lists/weapons.txt compile list text/lists/weapons.bin
+	fe3-text text/lists/chapters.txt compile list text/lists/chapters.gen.asm
+	fe3-text text/lists/characters.txt compile list text/lists/characters.gen.asm
+	fe3-text text/lists/classes.txt compile list text/lists/classes.gen.asm
+	fe3-text text/lists/items.txt compile list text/lists/items.gen.asm
 
 $(ROM).sfc: $(COBJ)
 	$(LD) -d -v -S linkfile $(ROM).sfc
