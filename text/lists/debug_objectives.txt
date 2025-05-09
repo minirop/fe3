@@ -1,4 +1,0 @@
-L_DEBUG_OBJ_REMOVE_BUGS バグをかんぜんにとる
-L_DEBUG_OBJ_ENEMY_PRESSURE てきのしろのせいあつ
-L_DEBUG_OBJ_THRONE_PRESSURE ぎょくざのせいあつ
-L_DEBUG_OBJ_DEFEAT_MEDEUS メディウスをたおして\nぎょくざのせいあつ
