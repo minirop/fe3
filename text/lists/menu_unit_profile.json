@@ -1,0 +1,18 @@
+{
+	"L_UNIT_LVL_HP" : "ＬＶ  @µ\nＨＰ   ／",
+	"L_UNIT_STATS_1" : "攻撃：\n命中：\n回ひ：\n必殺：\n攻速：\n特効：",
+	"L_UNIT_STATS_2" : "ちから：\n わざ：\n 速さ：\n 幸運：\n 武器：\n 守備：\n 魔防：",
+	"L_UNIT_MAX_HP_MOVEMENT" : "さいだいＨＰ：\nいどうりょく：",
+	"L_UNIT_ARMOUR_TYPE" : "アーマー系",
+	"L_UNIT_KNIGHT_TYPE" : " ナイト系",
+	"L_UNIT_DRAGON_TYPE" : "ドラゴン系",
+	"L_UNIT_FLYING_TYPE" : " ひこう系",
+	"L_UNIT_S_KNIGHT_TYPE" : "Ｓナイト系",
+	"L_UNIT_MERCENARY_TYPE" : "ようへい系",
+	"L_UNIT_TRIBE_TYPE" : " ぶぞく系",
+	"L_UNIT_GENERAL" : "しょうかん",
+	"L_UNIT_FIRE_DRAGON" : " かりゅう",
+	"L_UNIT_ICE_DRAGON" : " ひょう竜",
+	"L_UNIT_WYVERN" : " ひりゅう",
+	"L_UNIT_SPACES" : "     "
+}
