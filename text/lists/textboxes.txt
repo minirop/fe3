@@ -1,0 +1,15 @@
+L_TEXTBOX_X_USED ╔╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╗\r╠❏❏       をつかった！╣\n╚╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╝
+L_TEXTBOX_IS_GONE ╠❏❏       は     ╣\n╠なくなってしまった！     ╣\n╚╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╝
+L_TEXTBOX_BUT_NOTHING_HAPPENED ╠しかしなにもおこらなかった・・╣\n╚╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╝
+L_TEXTBOX_STRENGTH_INCREASED_BY ╠ちからが  あがった！    ╣\n╚╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╝
+L_TEXTBOX_DEFENSE_INCREASED_BY ╠しゅびりょくが  あがった！ ╣\n╚╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╝
+L_TEXTBOX_SKILL_INCREASED_BY ╠わざが  あがった！     ╣\n╚╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╝
+L_TEXTBOX_SPEED_INCREASED_BY ╠すばやさが  あがった！   ╣\n╚╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╝
+L_TEXTBOX_RESISTANCE_INCREASED_BY ╠まほうぼうぎょが  あがった！╣\n╚╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╝
+L_TEXTBOX_MAX_HP_INCREASED_BY ╠さいだいＨＰが  あがった！ ╣\n╚╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╝
+L_TEXTBOX_LUCK_INCREASED_BY ╠うんのよさが  あがった！  ╣\n╚╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╝
+L_TEXTBOX_WEAPON_LEVEL_INCREASED_BY ╠武器レベルが  あがった！  ╣\n╚╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╝
+L_TEXTBOX_MOVEMENT_INCREASED_BY ╠いどうりょくが  あがった！ ╣\n╚╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╝
+L_TEXTBOX_RESISTANCE_INCREASED_BY_2 ╠まほうぼうぎょが  あがった！╣\n╚╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╝
+L_TEXTBOX_WIND_TOWER_EMITTED_LIGHT ╔╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╗\r╠❏❏ふういんのたては ふしぎなひかりを はっした╣\n╚╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╝
+L_TEXTBOX_FOUND_HIDDEN_TREASURE ╔╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╗\r╠かくれたざいほうを はっけんした！╣\n╚╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╝

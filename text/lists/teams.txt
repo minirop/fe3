@@ -1,0 +1,3 @@
+L_TEAM_PLAYER ＰＬＡＹＥＲ
+L_TEAM_ENEMY ＥＮＥＭＹ
+L_TEAM_REINFORCEMENT ぞうえんぶたいが あらわれた！

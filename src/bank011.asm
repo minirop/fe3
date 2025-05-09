@@ -2775,205 +2775,77 @@ CHAPTERS_NAMES:
 
 .INCLUDE "chapters.gen.asm"
 
-.db $90 $D0
-.db $A6 $D0 $A6 $D0 $A6 $D0 $A6 $D0
-.db $BC $D0 $A6 $D0 $A6 $D0 $A6 $D0
-.db $A6 $D0 $BC $D0 $BC $D0 $A6 $D0
-.db $A6 $D0 $BC $D0 $BC $D0 $A6 $D0
-.db $A6 $D0 $BC $D0 $A6 $D0 $BC $D0
-.db $A6 $D0 $A6 $D0 $A6 $D0 $A6 $D0
-.db $A6 $D0 $BC $D0 $A6 $D0 $A6 $D0
-.db $A6 $D0 $BC $D0 $A6 $D0 $A6 $D0
-.db $A6 $D0 $BC $D0 $A6 $D0 $BC $D0
-.db $BC $D0 $A6 $D0 $A6 $D0 $BC $D0
-.db $A6 $D0 $BC $D0 $BC $D0 $D0 $D0
-.db $8C $00 $7F $00 $2C $00 $05 $00
-.db $2D $00 $36 $00 $2D $00 $15 $00
-.db $13 $00 $28 $00 $FF $FF $12 $00
-.db $06 $00 $18 $00 $0B $00 $2A $00
-.db $18 $00 $0D $00 $01 $00 $00 $00
-.db $11 $00 $FF $FF $2F $00 $4F $00
-.db $07 $00 $33 $00 $18 $00 $0D $00
-.db $01 $00 $00 $00 $11 $00 $FF $FF
-.db $71 $00 $8A $00 $97 $00 $52 $00
-.db $5C $00 $2C $00 $0F $00 $04 $00
-.db $0B $00 $12 $00 $FD $FF $2F $00
-.db $4F $00 $07 $00 $33 $00 $18 $00
-.db $0D $00 $01 $00 $00 $00 $11 $00
-.db $FF $FF $00 $D1 $0E $D1 $1A $D1
-.db $AA $00 $AB $00 $B8 $00 $B4 $00
-.db $B6 $00 $B2 $00 $FF $FF $B6 $00
-.db $B5 $00 $B6 $00 $AF $00 $B4 $00
-.db $FF $FF $37 $00 $02 $00 $03 $00
-.db $2D $00 $3F $00 $0F $00 $01 $00
-.db $2E $00 $C2 $00 $00 $00 $26 $00
-.db $2B $00 $29 $00 $0F $00 $C4 $00
-.db $FF $FF $58 $D1 $C4 $D1 $30 $D2
-.db $78 $D2 $C0 $D2 $08 $D3 $50 $D3
-.db $98 $D3 $E0 $D3 $28 $D4 $70 $D4
-.db $B8 $D4 $00 $D5 $48 $D5 $EA $D5
-.db $05 $01 $06 $01 $06 $01 $06 $01
-.db $06 $01 $06 $01 $06 $01 $06 $01
-.db $06 $01 $06 $01 $06 $01 $06 $01
-.db $06 $01 $06 $01 $06 $01 $06 $01
-.db $07 $01 $FE $FF $08 $01 $0E $01
-.db $0E $01 $C2 $00 $C2 $00 $C2 $00
-.db $C2 $00 $C2 $00 $C2 $00 $C2 $00
-.db $2C $00 $11 $00 $05 $00 $4D $00
-.db $0F $00 $C4 $00 $09 $01 $FD $FF
-.db $0A $01 $0B $01 $0B $01 $0B $01
-.db $0B $01 $0B $01 $0B $01 $0B $01
-.db $0B $01 $0B $01 $0B $01 $0B $01
-.db $0B $01 $0B $01 $0B $01 $0B $01
-.db $0C $01 $FF $FF $08 $01 $0E $01
-.db $0E $01 $C2 $00 $C2 $00 $C2 $00
-.db $C2 $00 $C2 $00 $C2 $00 $C2 $00
-.db $19 $00 $C2 $00 $C2 $00 $C2 $00
-.db $C2 $00 $C2 $00 $09 $01 $FD $FF
-.db $08 $01 $14 $00 $07 $00 $14 $00
-.db $4D $00 $12 $00 $0B $00 $1E $00
-.db $4D $00 $0F $00 $C4 $00 $C2 $00
-.db $C2 $00 $C2 $00 $C2 $00 $C2 $00
-.db $09 $01 $FD $FF $0A $01 $0B $01
-.db $0B $01 $0B $01 $0B $01 $0B $01
-.db $0B $01 $0B $01 $0B $01 $0B $01
-.db $0B $01 $0B $01 $0B $01 $0B $01
-.db $0B $01 $0B $01 $0C $01 $FF $FF
-.db $08 $01 $0B $00 $05 $00 $0B $00
-.db $14 $00 $15 $00 $22 $00 $04 $00
-.db $09 $00 $26 $00 $14 $00 $05 $00
-.db $4D $00 $0F $00 $BF $00 $BF $00
-.db $09 $01 $FD $FF $0A $01 $0B $01
-.db $0B $01 $0B $01 $0B $01 $0B $01
-.db $0B $01 $0B $01 $0B $01 $0B $01
-.db $0B $01 $0B $01 $0B $01 $0B $01
-.db $0B $01 $0B $01 $0C $01 $FF $FF
-.db $08 $01 $10 $00 $05 $00 $26 $00
-.db $2E $00 $C2 $00 $C2 $00 $00 $00
-.db $2E $00 $4D $00 $0F $00 $C4 $00
-.db $C2 $00 $C2 $00 $C2 $00 $C2 $00
-.db $09 $01 $FD $FF $0A $01 $0B $01
-.db $0B $01 $0B $01 $0B $01 $0B $01
-.db $0B $01 $0B $01 $0B $01 $0B $01
-.db $0B $01 $0B $01 $0B $01 $0B $01
-.db $0B $01 $0B $01 $0C $01 $FF $FF
-.db $08 $01 $0B $00 $4E $00 $3E $00
-.db $27 $00 $4F $00 $07 $00 $2E $00
-.db $C2 $00 $C2 $00 $00 $00 $2E $00
-.db $4D $00 $0F $00 $C4 $00 $C2 $00
-.db $09 $01 $FD $FF $0A $01 $0B $01
-.db $0B $01 $0B $01 $0B $01 $0B $01
-.db $0B $01 $0B $01 $0B $01 $0B $01
-.db $0B $01 $0B $01 $0B $01 $0B $01
-.db $0B $01 $0B $01 $0C $01 $FF $FF
-.db $08 $01 $2B $00 $33 $00 $2E $00
-.db $C2 $00 $C2 $00 $00 $00 $2E $00
-.db $4D $00 $0F $00 $C4 $00 $C2 $00
-.db $C2 $00 $C2 $00 $C2 $00 $C2 $00
-.db $09 $01 $FD $FF $0A $01 $0B $01
-.db $0B $01 $0B $01 $0B $01 $0B $01
-.db $0B $01 $0B $01 $0B $01 $0B $01
-.db $0B $01 $0B $01 $0B $01 $0B $01
-.db $0B $01 $0B $01 $0C $01 $FF $FF
-.db $08 $01 $0C $00 $3D $00 $23 $00
-.db $0A $00 $2E $00 $C2 $00 $C2 $00
-.db $00 $00 $2E $00 $4D $00 $0F $00
-.db $C4 $00 $C2 $00 $C2 $00 $C2 $00
-.db $09 $01 $FD $FF $0A $01 $0B $01
-.db $0B $01 $0B $01 $0B $01 $0B $01
-.db $0B $01 $0B $01 $0B $01 $0B $01
-.db $0B $01 $0B $01 $0B $01 $0B $01
-.db $0B $01 $0B $01 $0C $01 $FF $FF
-.db $08 $01 $1E $00 $1D $00 $02 $00
-.db $41 $00 $02 $00 $2F $00 $4F $00
-.db $2E $00 $C2 $00 $C2 $00 $00 $00
-.db $2E $00 $4D $00 $0F $00 $C4 $00
-.db $09 $01 $FD $FF $0A $01 $0B $01
-.db $0B $01 $0B $01 $0B $01 $0B $01
-.db $0B $01 $0B $01 $0B $01 $0B $01
-.db $0B $01 $0B $01 $0B $01 $0B $01
-.db $0B $01 $0B $01 $0C $01 $FF $FF
-.db $08 $01 $0A $00 $01 $00 $38 $00
-.db $01 $00 $A9 $00 $AA $00 $2E $00
-.db $C2 $00 $C2 $00 $00 $00 $2E $00
-.db $4D $00 $0F $00 $C4 $00 $C2 $00
-.db $09 $01 $FD $FF $0A $01 $0B $01
-.db $0B $01 $0B $01 $0B $01 $0B $01
-.db $0B $01 $0B $01 $0B $01 $0B $01
-.db $0B $01 $0B $01 $0B $01 $0B $01
-.db $0B $01 $0B $01 $0C $01 $FF $FF
-.db $08 $01 $02 $00 $2D $00 $18 $00
-.db $25 $00 $0A $00 $2E $00 $C2 $00
-.db $C2 $00 $00 $00 $2E $00 $4D $00
-.db $0F $00 $C4 $00 $C2 $00 $C2 $00
-.db $09 $01 $FD $FF $0A $01 $0B $01
-.db $0B $01 $0B $01 $0B $01 $0B $01
-.db $0B $01 $0B $01 $0B $01 $0B $01
-.db $0B $01 $0B $01 $0B $01 $0B $01
-.db $0B $01 $0B $01 $0C $01 $FF $FF
-.db $08 $01 $04 $01 $F8 $00 $79 $00
-.db $8F $00 $78 $00 $2E $00 $C2 $00
-.db $C2 $00 $00 $00 $2E $00 $4D $00
-.db $0F $00 $C4 $00 $C2 $00 $C2 $00
-.db $09 $01 $FD $FF $0A $01 $0B $01
-.db $0B $01 $0B $01 $0B $01 $0B $01
-.db $0B $01 $0B $01 $0B $01 $0B $01
-.db $0B $01 $0B $01 $0B $01 $0B $01
-.db $0B $01 $0B $01 $0C $01 $FF $FF
-.db $08 $01 $01 $00 $3C $00 $02 $00
-.db $27 $00 $4F $00 $07 $00 $2E $00
-.db $C2 $00 $C2 $00 $00 $00 $2E $00
-.db $4D $00 $0F $00 $C4 $00 $C2 $00
-.db $09 $01 $FD $FF $0A $01 $0B $01
-.db $0B $01 $0B $01 $0B $01 $0B $01
-.db $0B $01 $0B $01 $0B $01 $0B $01
-.db $0B $01 $0B $01 $0B $01 $0B $01
-.db $0B $01 $0B $01 $0C $01 $FF $FF
-.db $08 $01 $1E $00 $1D $00 $02 $00
-.db $41 $00 $02 $00 $2F $00 $4F $00
-.db $2E $00 $C2 $00 $C2 $00 $00 $00
-.db $2E $00 $4D $00 $0F $00 $C4 $00
-.db $09 $01 $FD $FF $0A $01 $0B $01
-.db $0B $01 $0B $01 $0B $01 $0B $01
-.db $0B $01 $0B $01 $0B $01 $0B $01
-.db $0B $01 $0B $01 $0B $01 $0B $01
-.db $0B $01 $0B $01 $0C $01 $FF $FF
-.db $05 $01 $06 $01 $06 $01 $06 $01
-.db $06 $01 $06 $01 $06 $01 $06 $01
-.db $06 $01 $06 $01 $06 $01 $06 $01
-.db $06 $01 $06 $01 $06 $01 $06 $01
-.db $06 $01 $06 $01 $06 $01 $06 $01
-.db $06 $01 $06 $01 $06 $01 $06 $01
-.db $06 $01 $07 $01 $FE $FF $08 $01
-.db $0E $01 $0E $01 $1B $00 $02 $00
-.db $01 $00 $2D $00 $18 $00 $0F $00
-.db $12 $00 $19 $00 $C2 $00 $1B $00
-.db $0B $00 $2F $00 $14 $00 $1A $00
-.db $05 $00 $27 $00 $2C $00 $C2 $00
-.db $19 $00 $4D $00 $0B $00 $0F $00
-.db $09 $01 $FD $FF $0A $01 $0B $01
-.db $0B $01 $0B $01 $0B $01 $0B $01
-.db $0B $01 $0B $01 $0B $01 $0B $01
-.db $0B $01 $0B $01 $0B $01 $0B $01
-.db $0B $01 $0B $01 $0B $01 $0B $01
-.db $0B $01 $0B $01 $0B $01 $0B $01
-.db $0B $01 $0B $01 $0B $01 $0C $01
-.db $FF $FF $05 $01 $06 $01 $06 $01
-.db $06 $01 $06 $01 $06 $01 $06 $01
-.db $06 $01 $06 $01 $06 $01 $06 $01
-.db $06 $01 $06 $01 $06 $01 $06 $01
-.db $06 $01 $06 $01 $06 $01 $07 $01
-.db $FE $FF $08 $01 $05 $00 $07 $00
-.db $29 $00 $0F $00 $33 $00 $01 $00
-.db $1D $00 $02 $00 $2C $00 $C2 $00
-.db $19 $00 $4D $00 $08 $00 $2D $00
-.db $0B $00 $0F $00 $C4 $00 $09 $01
-.db $FD $FF $0A $01 $0B $01 $0B $01
-.db $0B $01 $0B $01 $0B $01 $0B $01
-.db $0B $01 $0B $01 $0B $01 $0B $01
-.db $0B $01 $0B $01 $0B $01 $0B $01
-.db $0B $01 $0B $01 $0B $01 $0C $01
-.db $FF $FF
+.dw L_DEBUG_OBJ_REMOVE_BUGS
+.dw L_DEBUG_OBJ_ENEMY_PRESSURE
+.dw L_DEBUG_OBJ_ENEMY_PRESSURE
+.dw L_DEBUG_OBJ_ENEMY_PRESSURE
+.dw L_DEBUG_OBJ_ENEMY_PRESSURE
+.dw L_DEBUG_OBJ_THRONE_PRESSURE
+.dw L_DEBUG_OBJ_ENEMY_PRESSURE
+.dw L_DEBUG_OBJ_ENEMY_PRESSURE
+.dw L_DEBUG_OBJ_ENEMY_PRESSURE
+.dw L_DEBUG_OBJ_ENEMY_PRESSURE
+.dw L_DEBUG_OBJ_THRONE_PRESSURE
+.dw L_DEBUG_OBJ_THRONE_PRESSURE
+.dw L_DEBUG_OBJ_ENEMY_PRESSURE
+.dw L_DEBUG_OBJ_ENEMY_PRESSURE
+.dw L_DEBUG_OBJ_THRONE_PRESSURE
+.dw L_DEBUG_OBJ_THRONE_PRESSURE
+.dw L_DEBUG_OBJ_ENEMY_PRESSURE
+.dw L_DEBUG_OBJ_ENEMY_PRESSURE
+.dw L_DEBUG_OBJ_THRONE_PRESSURE
+.dw L_DEBUG_OBJ_ENEMY_PRESSURE
+.dw L_DEBUG_OBJ_THRONE_PRESSURE
+.dw L_DEBUG_OBJ_ENEMY_PRESSURE
+.dw L_DEBUG_OBJ_ENEMY_PRESSURE
+.dw L_DEBUG_OBJ_ENEMY_PRESSURE
+.dw L_DEBUG_OBJ_ENEMY_PRESSURE
+.dw L_DEBUG_OBJ_ENEMY_PRESSURE
+.dw L_DEBUG_OBJ_THRONE_PRESSURE
+.dw L_DEBUG_OBJ_ENEMY_PRESSURE
+.dw L_DEBUG_OBJ_ENEMY_PRESSURE
+.dw L_DEBUG_OBJ_ENEMY_PRESSURE
+.dw L_DEBUG_OBJ_THRONE_PRESSURE
+.dw L_DEBUG_OBJ_ENEMY_PRESSURE
+.dw L_DEBUG_OBJ_ENEMY_PRESSURE
+.dw L_DEBUG_OBJ_ENEMY_PRESSURE
+.dw L_DEBUG_OBJ_THRONE_PRESSURE
+.dw L_DEBUG_OBJ_ENEMY_PRESSURE
+.dw L_DEBUG_OBJ_THRONE_PRESSURE
+.dw L_DEBUG_OBJ_THRONE_PRESSURE
+.dw L_DEBUG_OBJ_ENEMY_PRESSURE
+.dw L_DEBUG_OBJ_ENEMY_PRESSURE
+.dw L_DEBUG_OBJ_THRONE_PRESSURE
+.dw L_DEBUG_OBJ_ENEMY_PRESSURE
+.dw L_DEBUG_OBJ_THRONE_PRESSURE
+.dw L_DEBUG_OBJ_THRONE_PRESSURE
+.dw L_DEBUG_OBJ_DEFEAT_MEDEUS
+
+.INCLUDE "debug_objectives.gen.asm"
+
+.dw L_TEAM_PLAYER
+.dw L_TEAM_ENEMY
+.dw L_TEAM_REINFORCEMENT
+
+.INCLUDE "teams.gen.asm"
+
+.dw L_TEXTBOX_X_USED
+.dw L_TEXTBOX_IS_GONE
+.dw L_TEXTBOX_BUT_NOTHING_HAPPENED
+.dw L_TEXTBOX_STRENGTH_INCREASED_BY
+.dw L_TEXTBOX_DEFENSE_INCREASED_BY
+.dw L_TEXTBOX_SKILL_INCREASED_BY
+.dw L_TEXTBOX_SPEED_INCREASED_BY
+.dw L_TEXTBOX_RESISTANCE_INCREASED_BY
+.dw L_TEXTBOX_MAX_HP_INCREASED_BY
+.dw L_TEXTBOX_LUCK_INCREASED_BY
+.dw L_TEXTBOX_WEAPON_LEVEL_INCREASED_BY
+.dw L_TEXTBOX_MOVEMENT_INCREASED_BY
+.dw L_TEXTBOX_RESISTANCE_INCREASED_BY_2
+.dw L_TEXTBOX_WIND_TOWER_EMITTED_LIGHT
+.dw L_TEXTBOX_FOUND_HIDDEN_TREASURE
+
+.INCLUDE "textboxes.gen.asm"
 
 CHARACTERS_NAMES:
 .dw L_NAME_MARTH
@@ -3301,602 +3173,305 @@ ITEMS_NAMES:
 
 .INCLUDE "items.gen.asm"
 
-.db $26 $E8 $26 $E8
-.db $26 $E8 $26 $E8 $26 $E8 $26 $E8
-.db $26 $E8 $26 $E8 $26 $E8 $26 $E8
-.db $26 $E8 $26 $E8 $26 $E8 $26 $E8
-.db $26 $E8 $26 $E8 $26 $E8 $26 $E8
-.db $26 $E8 $26 $E8 $26 $E8 $26 $E8
-.db $26 $E8 $26 $E8 $26 $E8 $26 $E8
-.db $26 $E8 $26 $E8 $26 $E8 $26 $E8
-.db $26 $E8 $26 $E8 $26 $E8 $26 $E8
-.db $26 $E8 $26 $E8 $26 $E8 $26 $E8
-.db $26 $E8 $26 $E8 $26 $E8 $26 $E8
-.db $26 $E8 $26 $E8 $26 $E8 $26 $E8
-.db $26 $E8 $26 $E8 $26 $E8 $26 $E8
-.db $26 $E8 $26 $E8 $26 $E8 $26 $E8
-.db $26 $E8 $26 $E8 $26 $E8 $26 $E8
-.db $26 $E8 $26 $E8 $94 $F3 $94 $F3
-.db $94 $F3 $6C $E8 $8A $E8 $DA $E8
-.db $24 $E9 $8A $E9 $DA $E9 $34 $EA
-.db $94 $EA $F0 $EA $50 $EB $AA $EB
-.db $04 $EC $CC $EC $10 $ED $68 $ED
-.db $C2 $ED $20 $EE $60 $EC $4E $EE
-.db $82 $EE $B0 $EE $DE $EE $14 $EF
-.db $54 $EF $84 $EF $A4 $EF $B4 $EF
-.db $CA $EF $EE $EF $0E $F0 $2E $F0
-.db $4E $F0 $6C $F0 $8C $F0 $B6 $F0
-.db $DC $F0 $00 $F1 $22 $F1 $60 $F1
-.db $8A $F1 $E0 $F1 $2C $F2 $8E $F2
-.db $E8 $F2 $94 $F3 $94 $F3 $3C $F3
-.db $A0 $F3 $A0 $F3 $A0 $F3 $A0 $F3
-.db $A0 $F3 $A0 $F3 $A0 $F3 $A0 $F3
-.db $A0 $F3 $A0 $F3 $A0 $F3 $A0 $F3
-.db $B4 $F3 $FA $F3 $3A $F4 $94 $F3
-.db $94 $F3 $94 $F3 $70 $F4 $01 $00
-.db $27 $00 $4F $00 $07 $00 $C2 $00
-.db $FE $00 $FD $FF $FF $00 $00 $01
-.db $C2 $00 $C2 $00 $C2 $00 $FE $00
-.db $FD $FF $01 $01 $0A $00 $C2 $00
-.db $C2 $00 $C2 $00 $FE $00 $FD $FF
-.db $02 $01 $03 $01 $C2 $00 $C2 $00
-.db $C2 $00 $FE $00 $FD $FF $04 $01
-.db $F8 $00 $AB $00 $AC $00 $C2 $00
-.db $FE $00 $FF $FF $50 $00 $55 $00
-.db $67 $00 $51 $00 $50 $00 $18 $00
-.db $19 $00 $0B $00 $4C $00 $18 $00
-.db $FD $FF $00 $00 $05 $00 $0B $00
-.db $FF $FF $04 $01 $F8 $00 $AB $00
-.db $AC $00 $C2 $00 $C2 $00 $C2 $00
-.db $A0 $00 $FD $FF $AD $00 $AE $00
-.db $C2 $00 $C2 $00 $C2 $00 $C2 $00
-.db $A0 $00 $A3 $00 $FD $FF $A9 $00
-.db $AA $00 $2C $00 $10 $00 $05 $00
-.db $26 $00 $F4 $00 $A0 $00 $9F $00
-.db $FD $FF $F9 $00 $FA $00 $0C $00
-.db $28 $00 $FD $FF $10 $00 $27 $00
-.db $4F $00 $02 $00 $18 $00 $C9 $00
-.db $FF $FF $04 $01 $F8 $00 $AB $00
-.db $AC $00 $C2 $00 $C2 $00 $C2 $00
-.db $A2 $00 $FD $FF $AD $00 $AE $00
-.db $C2 $00 $C2 $00 $C2 $00 $C2 $00
-.db $A2 $00 $9F $00 $FD $FF $A9 $00
-.db $AA $00 $2C $00 $0C $00 $40 $00
-.db $12 $00 $FD $FF $F9 $00 $FA $00
-.db $0C $00 $28 $00 $FD $FF $10 $00
-.db $27 $00 $4F $00 $02 $00 $18 $00
-.db $C9 $00 $FF $FF $04 $01 $F8 $00
-.db $AB $00 $AC $00 $C2 $00 $C2 $00
-.db $C2 $00 $A6 $00 $FD $FF $AD $00
-.db $AE $00 $C2 $00 $C2 $00 $C2 $00
-.db $C2 $00 $A2 $00 $9F $00 $FD $FF
-.db $13 $00 $04 $00 $07 $00 $15 $00
-.db $01 $00 $28 $00 $1F $00 $05 $00
-.db $0F $00 $18 $00 $FD $FF $A9 $00
-.db $AA $00 $2C $00 $10 $00 $05 $00
-.db $26 $00 $F4 $00 $A0 $00 $9F $00
-.db $FD $FF $F9 $00 $FA $00 $0C $00
-.db $28 $00 $C2 $00 $10 $00 $27 $00
-.db $4F $00 $02 $00 $18 $00 $C9 $00
-.db $FF $FF $04 $01 $F8 $00 $AB $00
-.db $AC $00 $C2 $00 $C2 $00 $C2 $00
-.db $A1 $00 $FD $FF $AD $00 $AE $00
-.db $C2 $00 $C2 $00 $C2 $00 $C2 $00
-.db $A1 $00 $9F $00 $FD $FF $A9 $00
-.db $AA $00 $2C $00 $10 $00 $05 $00
-.db $26 $00 $F4 $00 $A1 $00 $9F $00
-.db $FD $FF $F9 $00 $FA $00 $0C $00
-.db $28 $00 $FD $FF $10 $00 $27 $00
-.db $4F $00 $02 $00 $18 $00 $C9 $00
-.db $FF $FF $04 $01 $F8 $00 $AB $00
-.db $AC $00 $C2 $00 $C2 $00 $C2 $00
-.db $A4 $00 $FD $FF $AD $00 $AE $00
-.db $C2 $00 $C2 $00 $C2 $00 $C2 $00
-.db $A3 $00 $A1 $00 $FD $FF $1F $00
-.db $05 $00 $0F $00 $2C $00 $13 $00
-.db $04 $00 $07 $00 $15 $00 $FD $FF
-.db $13 $00 $3D $00 $0C $00 $09 $00
-.db $13 $00 $2E $00 $3B $00 $06 $00
-.db $28 $00 $FD $FF $10 $00 $4F $00
-.db $02 $00 $23 $00 $07 $00 $18 $00
-.db $C9 $00 $FF $FF $04 $01 $F8 $00
-.db $AB $00 $AC $00 $C2 $00 $C2 $00
-.db $C2 $00 $A7 $00 $FD $FF $AD $00
-.db $AE $00 $C2 $00 $C2 $00 $C2 $00
-.db $C2 $00 $A2 $00 $9F $00 $FD $FF
-.db $1E $00 $1D $00 $02 $00 $41 $00
-.db $02 $00 $2F $00 $4F $00 $2C $00
-.db $A6 $00 $FD $FF $00 $00 $31 $00
-.db $28 $00 $09 $00 $13 $00 $2E $00
-.db $3B $00 $06 $00 $28 $00 $FD $FF
-.db $1E $00 $1D $00 $02 $00 $41 $00
-.db $02 $00 $2F $00 $4F $00 $18 $00
-.db $C9 $00 $FF $FF $04 $01 $F8 $00
-.db $AB $00 $AC $00 $C2 $00 $C2 $00
-.db $C3 $00 $C3 $00 $FD $FF $AD $00
-.db $AE $00 $C2 $00 $C2 $00 $C2 $00
-.db $C2 $00 $A4 $00 $A7 $00 $FD $FF
-.db $04 $01 $F8 $00 $2C $00 $22 $00
-.db $13 $00 $15 $00 $22 $00 $3C $00
-.db $0C $00 $FD $FF $0B $00 $4E $00
-.db $02 $00 $27 $00 $18 $00 $C9 $00
-.db $FD $FF $79 $00 $64 $00 $C2 $00
-.db $6E $00 $77 $00 $C3 $00 $5B $00
-.db $50 $00 $25 $00 $02 $00 $FF $FF
-.db $04 $01 $F8 $00 $AB $00 $AC $00
-.db $C2 $00 $C2 $00 $C2 $00 $A7 $00
-.db $FD $FF $AD $00 $AE $00 $C2 $00
-.db $C2 $00 $C2 $00 $C2 $00 $A2 $00
-.db $9F $00 $FD $FF $0C $00 $40 $00
-.db $12 $00 $18 $00 $1F $00 $05 $00
-.db $0F $00 $18 $00 $A9 $00 $AA $00
-.db $2C $00 $FD $FF $10 $00 $05 $00
-.db $26 $00 $F4 $00 $A0 $00 $9F $00
-.db $F9 $00 $FA $00 $0C $00 $28 $00
-.db $FD $FF $10 $00 $27 $00 $4F $00
-.db $02 $00 $18 $00 $C9 $00 $FF $FF
-.db $04 $01 $F8 $00 $AB $00 $AC $00
-.db $C2 $00 $C2 $00 $A0 $00 $9F $00
-.db $FD $FF $AD $00 $AE $00 $C2 $00
-.db $C2 $00 $C2 $00 $C2 $00 $A4 $00
-.db $A7 $00 $FD $FF $11 $00 $2F $00
-.db $18 $00 $5F $00 $C3 $00 $7C $00
-.db $1E $00 $3B $00 $FD $FF $12 $00
-.db $06 $00 $22 $00 $1F $00 $05 $00
-.db $0F $00 $22 $00 $FD $FF $1E $00
-.db $1D $00 $02 $00 $2E $00 $11 $00
-.db $05 $00 $03 $00 $14 $00 $01 $00
-.db $FF $FF $04 $01 $F8 $00 $AB $00
-.db $AC $00 $C2 $00 $C2 $00 $C3 $00
-.db $C3 $00 $FD $FF $AD $00 $AE $00
-.db $C2 $00 $C2 $00 $C2 $00 $C2 $00
-.db $A4 $00 $A7 $00 $FD $FF $13 $00
-.db $04 $00 $07 $00 $18 $00 $1F $00
-.db $05 $00 $0F $00 $2C $00 $FD $FF
-.db $10 $00 $05 $00 $07 $00 $15 $00
-.db $25 $00 $3E $00 $25 $00 $0D $00
-.db $28 $00 $FD $FF $74 $00 $6F $00
-.db $64 $00 $0D $00 $2D $00 $25 $00
-.db $02 $00 $FF $FF $04 $01 $F8 $00
-.db $AB $00 $AC $00 $C2 $00 $C2 $00
-.db $C3 $00 $C3 $00 $FD $FF $AD $00
-.db $AE $00 $C2 $00 $C2 $00 $C2 $00
-.db $C2 $00 $A4 $00 $A7 $00 $FD $FF
-.db $0A $00 $01 $00 $38 $00 $2D $00
-.db $18 $00 $1E $00 $03 $00 $3B $00
-.db $0B $00 $25 $00 $02 $00 $FD $FF
-.db $01 $00 $06 $00 $05 $00 $03 $00
-.db $27 $00 $18 $00 $C9 $00 $FD $FF
-.db $53 $00 $77 $00 $5C $00 $0D $00
-.db $2D $00 $25 $00 $02 $00 $FF $FF
-.db $04 $01 $F8 $00 $AB $00 $AC $00
-.db $C2 $00 $C2 $00 $C3 $00 $C3 $00
-.db $FD $FF $AD $00 $AE $00 $C2 $00
-.db $C2 $00 $C2 $00 $C2 $00 $A4 $00
-.db $A7 $00 $FD $FF $0A $00 $01 $00
-.db $38 $00 $2D $00 $18 $00 $10 $00
-.db $4E $00 $02 $00 $04 $00 $02 $00
-.db $3B $00 $FD $FF $0B $00 $25 $00
-.db $02 $00 $C2 $00 $01 $00 $06 $00
-.db $05 $00 $03 $00 $27 $00 $18 $00
-.db $C9 $00 $FD $FF $53 $00 $77 $00
-.db $5C $00 $C2 $00 $74 $00 $6F $00
-.db $64 $00 $0D $00 $2D $00 $25 $00
-.db $02 $00 $FF $FF $04 $01 $F8 $00
-.db $AB $00 $AC $00 $C2 $00 $C2 $00
-.db $C2 $00 $A7 $00 $FD $FF $AD $00
-.db $AE $00 $C2 $00 $C2 $00 $C2 $00
-.db $C2 $00 $A4 $00 $A7 $00 $FD $FF
-.db $13 $00 $3E $00 $26 $00 $2C $00
-.db $00 $00 $08 $00 $28 $00 $FD $FF
-.db $05 $00 $01 $00 $34 $00 $4F $00
-.db $02 $00 $18 $00 $C9 $00 $FF $FF
-.db $04 $01 $F8 $00 $AB $00 $AC $00
-.db $C2 $00 $C2 $00 $C3 $00 $C3 $00
-.db $FD $FF $AD $00 $AE $00 $C2 $00
-.db $C2 $00 $C2 $00 $C2 $00 $A4 $00
-.db $A5 $00 $FD $FF $13 $00 $04 $00
-.db $07 $00 $18 $00 $F5 $00 $F6 $00
-.db $18 $00 $FD $FF $14 $00 $05 $00
-.db $1F $00 $2C $00 $13 $00 $28 $00
-.db $C9 $00 $FD $FF $6E $00 $77 $00
-.db $C3 $00 $5B $00 $50 $00 $0D $00
-.db $2D $00 $25 $00 $02 $00 $FF $FF
-.db $04 $01 $F8 $00 $AB $00 $AC $00
-.db $C2 $00 $C2 $00 $A0 $00 $A0 $00
-.db $FD $FF $AD $00 $AE $00 $C2 $00
-.db $C2 $00 $C2 $00 $C2 $00 $A4 $00
-.db $A5 $00 $FD $FF $23 $00 $17 $00
-.db $3B $00 $14 $00 $05 $00 $2E $00
-.db $1F $00 $03 $00 $14 $00 $01 $00
-.db $FD $FF $0B $00 $2A $00 $18 $00
-.db $14 $00 $01 $00 $3F $00 $2C $00
-.db $1F $00 $28 $00 $FD $FF $13 $00
-.db $02 $00 $0B $00 $18 $00 $C9 $00
-.db $FF $FF $04 $01 $F8 $00 $AB $00
-.db $AC $00 $C2 $00 $C2 $00 $A1 $00
-.db $9F $00 $FD $FF $AD $00 $AE $00
-.db $C2 $00 $C2 $00 $C2 $00 $C2 $00
-.db $A4 $00 $A5 $00 $FD $FF $01 $00
-.db $3C $00 $02 $00 $35 $00 $1F $00
-.db $18 $00 $74 $00 $65 $00 $9C $00
-.db $63 $00 $2C $00 $FD $FF $22 $00
-.db $13 $00 $15 $00 $22 $00 $3C $00
-.db $0C $00 $FD $FF $01 $00 $3C $00
-.db $02 $00 $05 $00 $01 $00 $34 $00
-.db $4F $00 $18 $00 $C9 $00 $FF $FF
-.db $6E $00 $70 $00 $57 $00 $C3 $00
-.db $63 $00 $2E $00 $11 $00 $05 $00
-.db $02 $00 $13 $00 $FD $FF $05 $00
-.db $27 $00 $4E $00 $02 $00 $15 $00
-.db $1C $00 $2D $00 $0B $00 $2D $00
-.db $0C $00 $28 $00 $FF $FF $6E $00
-.db $70 $00 $57 $00 $C3 $00 $63 $00
-.db $2E $00 $11 $00 $05 $00 $02 $00
-.db $13 $00 $FD $FF $1A $00 $4F $00
-.db $02 $00 $27 $00 $4E $00 $02 $00
-.db $15 $00 $1C $00 $2D $00 $0B $00
-.db $2D $00 $FD $FF $0C $00 $28 $00
-.db $FF $FF $6E $00 $70 $00 $57 $00
-.db $C3 $00 $63 $00 $2E $00 $11 $00
-.db $05 $00 $02 $00 $13 $00 $FD $FF
-.db $1A $00 $27 $00 $4E $00 $02 $00
-.db $15 $00 $1C $00 $2D $00 $0B $00
-.db $2D $00 $0C $00 $28 $00 $FF $FF
-.db $6E $00 $70 $00 $57 $00 $C3 $00
-.db $63 $00 $2E $00 $11 $00 $05 $00
-.db $02 $00 $13 $00 $FD $FF $10 $00
-.db $27 $00 $4E $00 $02 $00 $15 $00
-.db $1C $00 $2D $00 $0B $00 $2D $00
-.db $0C $00 $28 $00 $FF $FF $6E $00
-.db $70 $00 $57 $00 $C3 $00 $63 $00
-.db $2E $00 $11 $00 $05 $00 $02 $00
-.db $13 $00 $FD $FF $00 $00 $2D $00
-.db $09 $00 $07 $00 $27 $00 $4E $00
-.db $02 $00 $15 $00 $FD $FF $1C $00
-.db $2D $00 $0B $00 $2D $00 $0C $00
-.db $28 $00 $FF $FF $6E $00 $70 $00
-.db $57 $00 $C3 $00 $63 $00 $2E $00
-.db $11 $00 $05 $00 $02 $00 $13 $00
-.db $FD $FF $0B $00 $2D $00 $27 $00
-.db $4E $00 $02 $00 $15 $00 $1C $00
-.db $2D $00 $0B $00 $2D $00 $FD $FF
-.db $0C $00 $28 $00 $FD $FF $60 $00
-.db $56 $00 $0D $00 $2D $00 $25 $00
-.db $02 $00 $FF $FF $6E $00 $70 $00
-.db $57 $00 $C3 $00 $63 $00 $2E $00
-.db $11 $00 $05 $00 $02 $00 $13 $00
-.db $FD $FF $1E $00 $27 $00 $4E $00
-.db $02 $00 $15 $00 $1C $00 $2D $00
-.db $0B $00 $2D $00 $FD $FF $0C $00
-.db $28 $00 $FF $FF $A0 $00 $F9 $00
-.db $15 $00 $11 $00 $06 $00 $A9 $00
-.db $AA $00 $2C $00 $A0 $00 $9F $00
-.db $FD $FF $F9 $00 $FA $00 $0C $00
-.db $28 $00 $FF $FF $13 $00 $3E $00
-.db $26 $00 $2C $00 $00 $00 $08 $00
-.db $28 $00 $FF $FF $2F $00 $2D $00
-.db $18 $00 $13 $00 $3E $00 $26 $00
-.db $2C $00 $00 $00 $08 $00 $28 $00
-.db $FF $FF $19 $00 $17 $00 $3D $00
-.db $0B $00 $2C $00 $00 $00 $31 $00
-.db $28 $00 $0F $00 $21 $00 $15 $00
-.db $FD $FF $0B $00 $25 $00 $02 $00
-.db $0C $00 $28 $00 $FF $FF $F5 $00
-.db $F6 $00 $2C $00 $00 $00 $08 $00
-.db $12 $00 $FD $FF $14 $00 $05 $00
-.db $1F $00 $2E $00 $02 $00 $3D $00
-.db $03 $00 $28 $00 $FF $FF $0B $00
-.db $25 $00 $02 $00 $0C $00 $28 $00
-.db $13 $00 $10 $00 $05 $00 $26 $00
-.db $2E $00 $FD $FF $A3 $00 $00 $00
-.db $2E $00 $28 $00 $FF $FF $0B $00
-.db $25 $00 $02 $00 $0C $00 $28 $00
-.db $13 $00 $0B $00 $4E $00 $3E $00
-.db $2E $00 $FD $FF $A2 $00 $00 $00
-.db $2E $00 $28 $00 $FF $FF $0B $00
-.db $25 $00 $02 $00 $0C $00 $28 $00
-.db $13 $00 $2B $00 $33 $00 $2E $00
-.db $FD $FF $A4 $00 $00 $00 $2E $00
-.db $28 $00 $FF $FF $0B $00 $25 $00
-.db $02 $00 $0C $00 $28 $00 $13 $00
-.db $19 $00 $23 $00 $0A $00 $2E $00
-.db $FD $FF $A4 $00 $00 $00 $2E $00
-.db $28 $00 $FF $FF $0B $00 $25 $00
-.db $02 $00 $0C $00 $28 $00 $13 $00
-.db $FD $FF $1E $00 $1D $00 $02 $00
-.db $41 $00 $02 $00 $2F $00 $4F $00
-.db $2E $00 $FD $FF $A2 $00 $00 $00
-.db $2E $00 $28 $00 $FF $FF $0B $00
-.db $25 $00 $02 $00 $0C $00 $28 $00
-.db $13 $00 $FD $FF $0A $00 $01 $00
-.db $38 $00 $01 $00 $A9 $00 $AA $00
-.db $2E $00 $A6 $00 $00 $00 $2E $00
-.db $28 $00 $FF $FF $0B $00 $25 $00
-.db $02 $00 $0C $00 $28 $00 $13 $00
-.db $FD $FF $02 $00 $2D $00 $18 $00
-.db $25 $00 $0A $00 $2E $00 $A4 $00
-.db $00 $00 $2E $00 $28 $00 $FF $FF
-.db $0B $00 $25 $00 $02 $00 $0C $00
-.db $28 $00 $13 $00 $FD $FF $04 $01
-.db $F8 $00 $AB $00 $AC $00 $2E $00
-.db $A4 $00 $00 $00 $2E $00 $28 $00
-.db $FF $FF $0B $00 $25 $00 $02 $00
-.db $0C $00 $28 $00 $13 $00 $FD $FF
-.db $01 $00 $3C $00 $02 $00 $27 $00
-.db $4F $00 $07 $00 $2E $00 $A3 $00
-.db $00 $00 $2E $00 $28 $00 $FD $FF
-.db $0A $00 $01 $00 $38 $00 $01 $00
-.db $A0 $00 $A1 $00 $1E $00 $3B $00
-.db $00 $00 $2E $00 $28 $00 $FF $FF
-.db $0B $00 $25 $00 $02 $00 $0C $00
-.db $28 $00 $13 $00 $FD $FF $1E $00
-.db $1D $00 $02 $00 $41 $00 $02 $00
-.db $2F $00 $4F $00 $2E $00 $FD $FF
-.db $A6 $00 $00 $00 $2E $00 $28 $00
-.db $FF $FF $64 $00 $51 $00 $63 $00
-.db $FB $00 $2E $00 $AB $00 $AC $00
-.db $A0 $00 $9F $00 $3B $00 $FD $FF
-.db $34 $00 $4F $00 $02 $00 $06 $00
-.db $4E $00 $02 $00 $0B $00 $4F $00
-.db $07 $00 $15 $00 $FD $FF $57 $00
-.db $76 $00 $5C $00 $60 $00 $99 $00
-.db $7C $00 $83 $00 $3B $00 $06 $00
-.db $28 $00 $FD $FF $12 $00 $2D $00
-.db $0B $00 $4F $00 $07 $00 $50 $00
-.db $51 $00 $62 $00 $70 $00 $FF $FF
-.db $25 $00 $02 $00 $1C $00 $01 $00
-.db $2E $00 $AB $00 $AC $00 $A0 $00
-.db $9F $00 $3B $00 $FD $FF $24 $00
-.db $02 $00 $0B $00 $4C $00 $15 $00
-.db $FD $FF $57 $00 $76 $00 $5C $00
-.db $60 $00 $99 $00 $7C $00 $83 $00
-.db $3B $00 $06 $00 $28 $00 $FD $FF
-.db $12 $00 $2D $00 $0B $00 $4F $00
-.db $07 $00 $50 $00 $51 $00 $62 $00
-.db $70 $00 $FF $FF $1E $00 $3C $00
-.db $02 $00 $0B $00 $23 $00 $5B $00
-.db $5C $00 $5F $00 $C3 $00 $2E $00
-.db $FD $FF $AB $00 $AC $00 $A0 $00
-.db $9F $00 $3B $00 $FD $FF $34 $00
-.db $4F $00 $02 $00 $06 $00 $4E $00
-.db $02 $00 $0B $00 $4F $00 $07 $00
-.db $15 $00 $FD $FF $57 $00 $76 $00
-.db $5C $00 $60 $00 $99 $00 $7C $00
-.db $83 $00 $3B $00 $06 $00 $28 $00
-.db $FD $FF $12 $00 $2D $00 $0B $00
-.db $4F $00 $07 $00 $50 $00 $51 $00
-.db $62 $00 $70 $00 $FF $FF $94 $00
-.db $7D $00 $5A $00 $5C $00 $64 $00
-.db $51 $00 $63 $00 $2E $00 $FD $FF
-.db $AB $00 $AC $00 $A0 $00 $9F $00
-.db $3B $00 $FD $FF $8B $00 $76 $00
-.db $81 $00 $7C $00 $64 $00 $51 $00
-.db $63 $00 $15 $00 $FD $FF $57 $00
-.db $76 $00 $5C $00 $60 $00 $99 $00
-.db $7C $00 $83 $00 $3B $00 $06 $00
-.db $28 $00 $FD $FF $12 $00 $2D $00
-.db $0B $00 $4F $00 $07 $00 $50 $00
-.db $51 $00 $62 $00 $70 $00 $FF $FF
-.db $24 $00 $1F $00 $FB $00 $2E $00
-.db $AB $00 $AC $00 $A0 $00 $9F $00
-.db $3B $00 $FD $FF $34 $00 $4F $00
-.db $02 $00 $06 $00 $4E $00 $02 $00
-.db $0B $00 $4F $00 $07 $00 $15 $00
-.db $FD $FF $57 $00 $76 $00 $5C $00
-.db $60 $00 $99 $00 $7C $00 $83 $00
-.db $3B $00 $06 $00 $28 $00 $FD $FF
-.db $12 $00 $2D $00 $0B $00 $4F $00
-.db $07 $00 $50 $00 $51 $00 $62 $00
-.db $70 $00 $FF $FF $13 $00 $07 $00
-.db $0B $00 $4E $00 $09 $00 $02 $00
-.db $05 $00 $2C $00 $FD $FF $20 $00
-.db $09 $00 $02 $00 $15 $00 $0C $00
-.db $28 $00 $0F $00 $12 $00 $FD $FF
-.db $09 $00 $29 $00 $2C $00 $22 $00
-.db $4D $00 $12 $00 $01 $00 $28 $00
-.db $13 $00 $FD $FF $04 $01 $F8 $00
-.db $15 $00 $25 $00 $28 $00 $13 $00
-.db $4D $00 $09 $00 $02 $00 $2E $00
-.db $FD $FF $14 $00 $07 $00 $14 $00
-.db $28 $00 $FF $FF $FC $00 $FC $00
-.db $FC $00 $FC $00 $FC $00 $FF $FF
-.db $CA $00 $18 $00 $54 $00 $C3 $00
-.db $8E $00 $18 $00 $55 $00 $58 $00
-.db $76 $00 $FF $FF $0D $00 $2D $00
-.db $34 $00 $4F $00 $02 $00 $25 $00
-.db $27 $00 $C2 $00 $27 $00 $38 $00
-.db $11 $00 $FD $FF $0C $00 $28 $00
-.db $FD $FF $09 $00 $29 $00 $2C $00
-.db $22 $00 $4D $00 $12 $00 $01 $00
-.db $28 $00 $13 $00 $FD $FF $A0 $00
-.db $3C $00 $38 $00 $08 $00 $C2 $00
-.db $0B $00 $14 $00 $14 $00 $01 $00
-.db $FF $FF $09 $00 $29 $00 $2C $00
-.db $22 $00 $4D $00 $12 $00 $01 $00
-.db $28 $00 $13 $00 $FD $FF $1F $00
-.db $0D $00 $18 $00 $0B $00 $14 $00
-.db $22 $00 $18 $00 $18 $00 $FD $FF
-.db $17 $00 $38 $00 $2D $00 $2E $00
-.db $FD $FF $19 $00 $2D $00 $2E $00
-.db $07 $00 $15 $00 $14 $00 $28 $00
-.db $FF $FF $09 $00 $18 $00 $0D $00
-.db $05 $00 $01 $00 $18 $00 $3C $00
-.db $09 $00 $05 $00 $15 $00 $FD $FF
-.db $00 $00 $28 $00 $C2 $00 $1A $00
-.db $1F $00 $11 $00 $18 $00 $1F $00
-.db $0D $00 $15 $00 $FD $FF $19 $00
-.db $01 $00 $29 $00 $28 $00 $FF $FF
-.db $50 $00 $55 $00 $67 $00 $51 $00
-.db $50 $00 $18 $00 $19 $00 $0B $00
-.db $4C $00 $18 $00 $FD $FF $00 $00
-.db $05 $00 $0B $00 $FF $FF $D2 $F5
-.db $EC $F5 $02 $F6 $18 $F6 $2E $F6
-.db $44 $F6 $60 $F6 $76 $F6 $8C $F6
-.db $A4 $F6 $BC $F6 $D2 $F6 $D2 $F5
-.db $EC $F5 $02 $F6 $18 $F6 $2E $F6
-.db $44 $F6 $60 $F6 $76 $F6 $44 $F6
-.db $EA $F6 $EA $F6 $2E $F6 $02 $F7
-.db $26 $F7 $3A $F7 $3A $F7 $3A $F7
-.db $3A $F7 $3A $F7 $5C $F7 $3A $F7
-.db $3A $F7 $5C $F7 $5C $F7 $5C $F7
-.db $9A $F7 $B2 $F7 $5C $F7 $9A $F7
-.db $B2 $F7 $5C $F7 $9A $F7 $B2 $F7
-.db $5C $F7 $26 $F7 $02 $F7 $5C $F7
-.db $9A $F7 $B2 $F7 $5C $F7 $9A $F7
-.db $B2 $F7 $5C $F7 $9A $F7 $B2 $F7
-.db $5C $F7 $9A $F7 $B2 $F7 $5C $F7
-.db $9A $F7 $B2 $F7 $5C $F7 $9A $F7
-.db $B2 $F7 $5C $F7 $9A $F7 $B2 $F7
-.db $5C $F7 $9A $F7 $B2 $F7 $5C $F7
-.db $9A $F7 $B2 $F7 $5C $F7 $9A $F7
-.db $B2 $F7 $5C $F7 $9A $F7 $B2 $F7
-.db $D8 $F7 $D8 $F7 $E4 $F7 $22 $F8
-.db $FC $F7 $E4 $F7 $3E $F8 $5C $F7
-.db $56 $F8 $D8 $F7 $D8 $F7 $70 $F8
-.db $70 $F8 $88 $F8 $8C $F6 $A4 $F6
-.db $02 $F7 $A2 $F8 $E4 $F7 $26 $F7
-.db $22 $F8 $88 $F8 $22 $F8 $FC $F7
-.db $22 $F8 $FC $F7 $22 $F8 $FC $F7
-.db $22 $F8 $FC $F7 $22 $F8 $FC $F7
-.db $22 $F8 $FC $F7 $22 $F8 $FC $F7
-.db $22 $F8 $FC $F7 $22 $F8 $FC $F7
-.db $22 $F8 $FC $F7 $22 $F8 $FC $F7
-.db $22 $F8 $FC $F7 $22 $F8 $FC $F7
-.db $22 $F8 $D8 $F7 $D8 $F7 $D8 $F7
-.db $D8 $F7 $D8 $F7 $D8 $F7 $D8 $F7
-.db $D8 $F7 $D8 $F7 $D8 $F7 $D8 $F7
-.db $D8 $F7 $D8 $F7 $D8 $F7 $FC $F7
-.db $3A $F7 $5C $F7 $9A $F7 $B2 $F7
-.db $22 $F8 $FC $F7 $D8 $F7 $D8 $F7
-.db $BC $F8 $E0 $F8 $A2 $F8 $1C $F9
-.db $9A $F7 $22 $F8 $72 $F7 $9A $F7
-.db $06 $F9 $1C $00 $01 $00 $31 $00
-.db $2D $00 $FD $FF $F9 $00 $1A $00
-.db $C2 $00 $FE $00 $C2 $00 $A4 $00
-.db $BA $00 $FF $FF $1F $00 $10 $00
-.db $FD $FF $F9 $00 $1A $00 $C2 $00
-.db $FE $00 $C2 $00 $9F $00 $BA $00
-.db $FF $FF $05 $00 $2B $00 $FD $FF
-.db $F9 $00 $1A $00 $C2 $00 $FE $00
-.db $C2 $00 $9F $00 $BA $00 $FF $FF
-.db $22 $00 $27 $00 $FD $FF $F9 $00
-.db $1A $00 $C2 $00 $FE $00 $A0 $00
-.db $A4 $00 $BA $00 $FF $FF $19 $00
-.db $0B $00 $FD $FF $F9 $00 $1A $00
-.db $C2 $00 $FE $00 $C2 $00 $9F $00
-.db $BA $00 $FF $FF $0F $00 $05 $00
-.db $01 $00 $23 $00 $1E $00 $FD $FF
-.db $01 $00 $3C $00 $02 $00 $3B $00
-.db $06 $00 $14 $00 $01 $00 $FF $FF
-.db $0F $00 $06 $00 $FD $FF $F9 $00
-.db $1A $00 $C2 $00 $FE $00 $C2 $00
-.db $9F $00 $BA $00 $FF $FF $23 $00
-.db $1E $00 $FD $FF $F9 $00 $1A $00
-.db $C2 $00 $FE $00 $A1 $00 $A4 $00
-.db $BA $00 $FF $FF $20 $00 $26 $00
-.db $D4 $00 $FD $FF $F9 $00 $1A $00
-.db $C2 $00 $FE $00 $C2 $00 $9F $00
-.db $BA $00 $FF $FF $1F $00 $2D $00
-.db $05 $00 $FD $FF $F9 $00 $1A $00
-.db $C2 $00 $FE $00 $C2 $00 $9F $00
-.db $BA $00 $FF $FF $02 $00 $1F $00
-.db $FD $FF $F9 $00 $1A $00 $C2 $00
-.db $FE $00 $A2 $00 $9F $00 $BA $00
-.db $FF $FF $0A $00 $3D $00 $07 $00
-.db $FD $FF $F9 $00 $1A $00 $C2 $00
-.db $FE $00 $C2 $00 $9F $00 $BA $00
-.db $FF $FF $6E $00 $7F $00 $6E $00
-.db $FD $FF $01 $00 $3C $00 $02 $00
-.db $3B $00 $06 $00 $14 $00 $01 $00
-.db $FF $FF $13 $00 $27 $00 $3B $00
-.db $FD $FF $F9 $00 $1A $00 $C2 $00
-.db $FE $00 $A1 $00 $9F $00 $BA $00
-.db $FD $FF $F9 $00 $FA $00 $3B $00
-.db $06 $00 $28 $00 $FF $FF $E3 $00
-.db $FD $FF $F9 $00 $1A $00 $C2 $00
-.db $FE $00 $C2 $00 $9F $00 $BA $00
-.db $FF $FF $E3 $00 $D4 $00 $FD $FF
-.db $F9 $00 $1A $00 $C2 $00 $FE $00
-.db $A2 $00 $9F $00 $BA $00 $FD $FF
-.db $F9 $00 $FA $00 $3B $00 $06 $00
-.db $28 $00 $FF $FF $24 $00 $05 $00
-.db $FD $FF $F9 $00 $1A $00 $C2 $00
-.db $FE $00 $C2 $00 $9F $00 $BA $00
-.db $FF $FF $F9 $00 $2A $00 $02 $00
-.db $FD $FF $F9 $00 $1A $00 $C2 $00
-.db $FE $00 $C2 $00 $9F $00 $BA $00
-.db $FD $FF $04 $00 $27 $00 $35 $00
-.db $15 $00 $01 $00 $3C $00 $02 $00
-.db $FF $FF $19 $00 $0B $00 $26 $00
-.db $FD $FF $F9 $00 $1A $00 $C2 $00
-.db $FE $00 $A1 $00 $9F $00 $BA $00
-.db $FF $FF $2F $00 $4F $00 $07 $00
-.db $33 $00 $FD $FF $F9 $00 $1A $00
-.db $C2 $00 $FE $00 $A2 $00 $9F $00
-.db $BA $00 $FD $FF $F9 $00 $FA $00
-.db $3B $00 $06 $00 $28 $00 $FF $FF
-.db $01 $00 $3C $00 $02 $00 $1B $00
-.db $05 $00 $FF $FF $2E $00 $29 $00
-.db $06 $00 $FD $FF $F9 $00 $1A $00
-.db $C2 $00 $FE $00 $C2 $00 $9F $00
-.db $BA $00 $FF $FF $F9 $00 $FA $00
-.db $24 $00 $05 $00 $FD $FF $F9 $00
-.db $1A $00 $C2 $00 $FE $00 $A2 $00
-.db $9F $00 $BA $00 $FD $FF $F9 $00
-.db $FA $00 $3B $00 $06 $00 $28 $00
-.db $FF $FF $0F $00 $05 $00 $26 $00
-.db $3D $00 $09 $00 $FD $FF $F9 $00
-.db $1A $00 $C2 $00 $FE $00 $C2 $00
-.db $9F $00 $BA $00 $FF $FF $13 $00
-.db $3E $00 $26 $00 $FD $FF $01 $00
-.db $3C $00 $02 $00 $3B $00 $06 $00
-.db $14 $00 $01 $00 $FF $FF $19 $00
-.db $17 $00 $3D $00 $0B $00 $FD $FF
-.db $01 $00 $3C $00 $02 $00 $3B $00
-.db $06 $00 $14 $00 $01 $00 $FF $FF
-.db $01 $00 $35 $00 $1F $00 $FD $FF
-.db $F9 $00 $1A $00 $C2 $00 $FE $00
-.db $C2 $00 $9F $00 $BA $00 $FF $FF
-.db $3C $00 $02 $00 $07 $00 $11 $00
-.db $FD $FF $F9 $00 $1A $00 $C2 $00
-.db $FE $00 $A1 $00 $A4 $00 $BA $00
-.db $FF $FF $0A $00 $01 $00 $38 $00
-.db $2D $00 $FD $FF $01 $00 $3C $00
-.db $02 $00 $3B $00 $06 $00 $14 $00
-.db $01 $00 $FF $FF $B3 $00 $FD $FF
-.db $F9 $00 $1A $00 $C2 $00 $FE $00
-.db $C2 $00 $9F $00 $BA $00 $FD $FF
-.db $05 $00 $01 $00 $22 $00 $18 $00
-.db $3B $00 $06 $00 $28 $00 $FF $FF
-.db $DF $00 $E0 $00 $E1 $00 $FD $FF
-.db $F9 $00 $1A $00 $C2 $00 $FE $00
-.db $C2 $00 $9F $00 $BA $00 $FD $FF
-.db $04 $00 $05 $00 $17 $00 $22 $00
-.db $02 $00 $08 $00 $FF $FF $2E $00
-.db $08 $00 $FD $FF $F9 $00 $1A $00
-.db $C2 $00 $FE $00 $A1 $00 $A4 $00
-.db $BA $00 $FF $FF $0A $00 $01 $00
-.db $38 $00 $2D $00 $FD $FF $F9 $00
-.db $1A $00 $C2 $00 $FE $00 $C2 $00
-.db $9F $00 $BA $00 $FF $FF $38 $F9
-.db $05 $01 $06 $01 $06 $01 $06 $01
-.db $06 $01 $06 $01 $06 $01 $06 $01
-.db $06 $01 $06 $01 $06 $01 $06 $01
-.db $06 $01 $07 $01 $FE $FF $08 $01
-.db $C2 $00 $C2 $00 $C2 $00 $C2 $00
-.db $C2 $00 $C2 $00 $C2 $00 $C2 $00
-.db $C2 $00 $C2 $00 $C2 $00 $C2 $00
-.db $09 $01 $FD $FF $08 $01 $C2 $00
-.db $13 $00 $3E $00 $26 $00 $2E $00
-.db $C2 $00 $1A $00 $26 $00 $01 $00
-.db $0F $00 $C4 $00 $C2 $00 $09 $01
-.db $FD $FF $08 $01 $C2 $00 $C2 $00
-.db $C2 $00 $C2 $00 $C2 $00 $C2 $00
-.db $C2 $00 $C2 $00 $C2 $00 $C2 $00
-.db $C2 $00 $C2 $00 $09 $01 $FD $FF
-.db $0A $01 $0B $01 $0B $01 $0B $01
-.db $0B $01 $0B $01 $0B $01 $0B $01
-.db $0B $01 $0B $01 $0B $01 $0B $01
-.db $0B $01 $0C $01 $FF
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BE826
+.dw L_MESSAGE_8BF394
+.dw L_MESSAGE_8BF394
+.dw L_MESSAGE_8BF394
+.dw L_MESSAGE_8BE86C
+.dw L_MESSAGE_8BE88A
+.dw L_MESSAGE_8BE8DA
+.dw L_MESSAGE_8BE924
+.dw L_MESSAGE_8BE98A
+.dw L_MESSAGE_8BE9DA
+.dw L_MESSAGE_8BEA34
+.dw L_MESSAGE_8BEA94
+.dw L_MESSAGE_8BEAF0
+.dw L_MESSAGE_8BEB50
+.dw L_MESSAGE_8BEBAA
+.dw L_MESSAGE_8BEC04
+.dw L_MESSAGE_8BECCC
+.dw L_MESSAGE_8BED10
+.dw L_MESSAGE_8BED68
+.dw L_MESSAGE_8BEDC2
+.dw L_MESSAGE_8BEE20
+.dw L_MESSAGE_8BEC60
+.dw L_MESSAGE_8BEE4E
+.dw L_MESSAGE_8BEE82
+.dw L_MESSAGE_8BEEB0
+.dw L_MESSAGE_8BEEDE
+.dw L_MESSAGE_8BEF14
+.dw L_MESSAGE_8BEF54
+.dw L_MESSAGE_8BEF84
+.dw L_MESSAGE_8BEFA4
+.dw L_MESSAGE_8BEFB4
+.dw L_MESSAGE_8BEFCA
+.dw L_MESSAGE_8BEFEE
+.dw L_MESSAGE_8BF00E
+.dw L_MESSAGE_8BF02E
+.dw L_MESSAGE_8BF04E
+.dw L_MESSAGE_8BF06C
+.dw L_MESSAGE_8BF08C
+.dw L_MESSAGE_8BF0B6
+.dw L_MESSAGE_8BF0DC
+.dw L_MESSAGE_8BF100
+.dw L_MESSAGE_8BF122
+.dw L_MESSAGE_8BF160
+.dw L_MESSAGE_8BF18A
+.dw L_MESSAGE_8BF1E0
+.dw L_MESSAGE_8BF22C
+.dw L_MESSAGE_8BF28E
+.dw L_MESSAGE_8BF2E8
+.dw L_MESSAGE_8BF394
+.dw L_MESSAGE_8BF394
+.dw L_MESSAGE_8BF33C
+.dw L_MESSAGE_8BF3A0
+.dw L_MESSAGE_8BF3A0
+.dw L_MESSAGE_8BF3A0
+.dw L_MESSAGE_8BF3A0
+.dw L_MESSAGE_8BF3A0
+.dw L_MESSAGE_8BF3A0
+.dw L_MESSAGE_8BF3A0
+.dw L_MESSAGE_8BF3A0
+.dw L_MESSAGE_8BF3A0
+.dw L_MESSAGE_8BF3A0
+.dw L_MESSAGE_8BF3A0
+.dw L_MESSAGE_8BF3A0
+.dw L_MESSAGE_8BF3B4
+.dw L_MESSAGE_8BF3FA
+.dw L_MESSAGE_8BF43A
+.dw L_MESSAGE_8BF394
+.dw L_MESSAGE_8BF394
+.dw L_MESSAGE_8BF394
+.dw L_MESSAGE_8BF470
+
+.INCLUDE "messages.gen.asm"
+
+.dw L_TERRAIN_MESSAGE_8BF5D2
+.dw L_TERRAIN_MESSAGE_8BF5EC
+.dw L_TERRAIN_MESSAGE_8BF602
+.dw L_TERRAIN_MESSAGE_8BF618
+.dw L_TERRAIN_MESSAGE_8BF62E
+.dw L_TERRAIN_MESSAGE_8BF644
+.dw L_TERRAIN_MESSAGE_8BF660
+.dw L_TERRAIN_MESSAGE_8BF676
+.dw L_TERRAIN_MESSAGE_8BF68C
+.dw L_TERRAIN_MESSAGE_8BF6A4
+.dw L_TERRAIN_MESSAGE_8BF6BC
+.dw L_TERRAIN_MESSAGE_8BF6D2
+.dw L_TERRAIN_MESSAGE_8BF5D2
+.dw L_TERRAIN_MESSAGE_8BF5EC
+.dw L_TERRAIN_MESSAGE_8BF602
+.dw L_TERRAIN_MESSAGE_8BF618
+.dw L_TERRAIN_MESSAGE_8BF62E
+.dw L_TERRAIN_MESSAGE_8BF644
+.dw L_TERRAIN_MESSAGE_8BF660
+.dw L_TERRAIN_MESSAGE_8BF676
+.dw L_TERRAIN_MESSAGE_8BF644
+.dw L_TERRAIN_MESSAGE_8BF6EA
+.dw L_TERRAIN_MESSAGE_8BF6EA
+.dw L_TERRAIN_MESSAGE_8BF62E
+.dw L_TERRAIN_MESSAGE_8BF702
+.dw L_TERRAIN_MESSAGE_8BF726
+.dw L_TERRAIN_MESSAGE_8BF73A
+.dw L_TERRAIN_MESSAGE_8BF73A
+.dw L_TERRAIN_MESSAGE_8BF73A
+.dw L_TERRAIN_MESSAGE_8BF73A
+.dw L_TERRAIN_MESSAGE_8BF73A
+.dw L_TERRAIN_MESSAGE_8BF75C
+.dw L_TERRAIN_MESSAGE_8BF73A
+.dw L_TERRAIN_MESSAGE_8BF73A
+.dw L_TERRAIN_MESSAGE_8BF75C
+.dw L_TERRAIN_MESSAGE_8BF75C
+.dw L_TERRAIN_MESSAGE_8BF75C
+.dw L_TERRAIN_MESSAGE_8BF79A
+.dw L_TERRAIN_MESSAGE_8BF7B2
+.dw L_TERRAIN_MESSAGE_8BF75C
+.dw L_TERRAIN_MESSAGE_8BF79A
+.dw L_TERRAIN_MESSAGE_8BF7B2
+.dw L_TERRAIN_MESSAGE_8BF75C
+.dw L_TERRAIN_MESSAGE_8BF79A
+.dw L_TERRAIN_MESSAGE_8BF7B2
+.dw L_TERRAIN_MESSAGE_8BF75C
+.dw L_TERRAIN_MESSAGE_8BF726
+.dw L_TERRAIN_MESSAGE_8BF702
+.dw L_TERRAIN_MESSAGE_8BF75C
+.dw L_TERRAIN_MESSAGE_8BF79A
+.dw L_TERRAIN_MESSAGE_8BF7B2
+.dw L_TERRAIN_MESSAGE_8BF75C
+.dw L_TERRAIN_MESSAGE_8BF79A
+.dw L_TERRAIN_MESSAGE_8BF7B2
+.dw L_TERRAIN_MESSAGE_8BF75C
+.dw L_TERRAIN_MESSAGE_8BF79A
+.dw L_TERRAIN_MESSAGE_8BF7B2
+.dw L_TERRAIN_MESSAGE_8BF75C
+.dw L_TERRAIN_MESSAGE_8BF79A
+.dw L_TERRAIN_MESSAGE_8BF7B2
+.dw L_TERRAIN_MESSAGE_8BF75C
+.dw L_TERRAIN_MESSAGE_8BF79A
+.dw L_TERRAIN_MESSAGE_8BF7B2
+.dw L_TERRAIN_MESSAGE_8BF75C
+.dw L_TERRAIN_MESSAGE_8BF79A
+.dw L_TERRAIN_MESSAGE_8BF7B2
+.dw L_TERRAIN_MESSAGE_8BF75C
+.dw L_TERRAIN_MESSAGE_8BF79A
+.dw L_TERRAIN_MESSAGE_8BF7B2
+.dw L_TERRAIN_MESSAGE_8BF75C
+.dw L_TERRAIN_MESSAGE_8BF79A
+.dw L_TERRAIN_MESSAGE_8BF7B2
+.dw L_TERRAIN_MESSAGE_8BF75C
+.dw L_TERRAIN_MESSAGE_8BF79A
+.dw L_TERRAIN_MESSAGE_8BF7B2
+.dw L_TERRAIN_MESSAGE_8BF75C
+.dw L_TERRAIN_MESSAGE_8BF79A
+.dw L_TERRAIN_MESSAGE_8BF7B2
+.dw L_TERRAIN_MESSAGE_8BF75C
+.dw L_TERRAIN_MESSAGE_8BF79A
+.dw L_TERRAIN_MESSAGE_8BF7B2
+.dw L_TERRAIN_MESSAGE_8BF7D8
+.dw L_TERRAIN_MESSAGE_8BF7D8
+.dw L_TERRAIN_MESSAGE_8BF7E4
+.dw L_TERRAIN_MESSAGE_8BF822
+.dw L_TERRAIN_MESSAGE_8BF7FC
+.dw L_TERRAIN_MESSAGE_8BF7E4
+.dw L_TERRAIN_MESSAGE_8BF83E
+.dw L_TERRAIN_MESSAGE_8BF75C
+.dw L_TERRAIN_MESSAGE_8BF856
+.dw L_TERRAIN_MESSAGE_8BF7D8
+.dw L_TERRAIN_MESSAGE_8BF7D8
+.dw L_TERRAIN_MESSAGE_8BF870
+.dw L_TERRAIN_MESSAGE_8BF870
+.dw L_TERRAIN_MESSAGE_8BF888
+.dw L_TERRAIN_MESSAGE_8BF68C
+.dw L_TERRAIN_MESSAGE_8BF6A4
+.dw L_TERRAIN_MESSAGE_8BF702
+.dw L_TERRAIN_MESSAGE_8BF8A2
+.dw L_TERRAIN_MESSAGE_8BF7E4
+.dw L_TERRAIN_MESSAGE_8BF726
+.dw L_TERRAIN_MESSAGE_8BF822
+.dw L_TERRAIN_MESSAGE_8BF888
+.dw L_TERRAIN_MESSAGE_8BF822
+.dw L_TERRAIN_MESSAGE_8BF7FC
+.dw L_TERRAIN_MESSAGE_8BF822
+.dw L_TERRAIN_MESSAGE_8BF7FC
+.dw L_TERRAIN_MESSAGE_8BF822
+.dw L_TERRAIN_MESSAGE_8BF7FC
+.dw L_TERRAIN_MESSAGE_8BF822
+.dw L_TERRAIN_MESSAGE_8BF7FC
+.dw L_TERRAIN_MESSAGE_8BF822
+.dw L_TERRAIN_MESSAGE_8BF7FC
+.dw L_TERRAIN_MESSAGE_8BF822
+.dw L_TERRAIN_MESSAGE_8BF7FC
+.dw L_TERRAIN_MESSAGE_8BF822
+.dw L_TERRAIN_MESSAGE_8BF7FC
+.dw L_TERRAIN_MESSAGE_8BF822
+.dw L_TERRAIN_MESSAGE_8BF7FC
+.dw L_TERRAIN_MESSAGE_8BF822
+.dw L_TERRAIN_MESSAGE_8BF7FC
+.dw L_TERRAIN_MESSAGE_8BF822
+.dw L_TERRAIN_MESSAGE_8BF7FC
+.dw L_TERRAIN_MESSAGE_8BF822
+.dw L_TERRAIN_MESSAGE_8BF7FC
+.dw L_TERRAIN_MESSAGE_8BF822
+.dw L_TERRAIN_MESSAGE_8BF7FC
+.dw L_TERRAIN_MESSAGE_8BF822
+.dw L_TERRAIN_MESSAGE_8BF7FC
+.dw L_TERRAIN_MESSAGE_8BF822
+.dw L_TERRAIN_MESSAGE_8BF7D8
+.dw L_TERRAIN_MESSAGE_8BF7D8
+.dw L_TERRAIN_MESSAGE_8BF7D8
+.dw L_TERRAIN_MESSAGE_8BF7D8
+.dw L_TERRAIN_MESSAGE_8BF7D8
+.dw L_TERRAIN_MESSAGE_8BF7D8
+.dw L_TERRAIN_MESSAGE_8BF7D8
+.dw L_TERRAIN_MESSAGE_8BF7D8
+.dw L_TERRAIN_MESSAGE_8BF7D8
+.dw L_TERRAIN_MESSAGE_8BF7D8
+.dw L_TERRAIN_MESSAGE_8BF7D8
+.dw L_TERRAIN_MESSAGE_8BF7D8
+.dw L_TERRAIN_MESSAGE_8BF7D8
+.dw L_TERRAIN_MESSAGE_8BF7D8
+.dw L_TERRAIN_MESSAGE_8BF7FC
+.dw L_TERRAIN_MESSAGE_8BF73A
+.dw L_TERRAIN_MESSAGE_8BF75C
+.dw L_TERRAIN_MESSAGE_8BF79A
+.dw L_TERRAIN_MESSAGE_8BF7B2
+.dw L_TERRAIN_MESSAGE_8BF822
+.dw L_TERRAIN_MESSAGE_8BF7FC
+.dw L_TERRAIN_MESSAGE_8BF7D8
+.dw L_TERRAIN_MESSAGE_8BF7D8
+.dw L_TERRAIN_MESSAGE_8BF8BC
+.dw L_TERRAIN_MESSAGE_8BF8E0
+.dw L_TERRAIN_MESSAGE_8BF8A2
+.dw L_TERRAIN_MESSAGE_8BF91C
+.dw L_TERRAIN_MESSAGE_8BF79A
+.dw L_TERRAIN_MESSAGE_8BF822
+.dw L_TERRAIN_MESSAGE_8BF772
+.dw L_TERRAIN_MESSAGE_8BF79A
+.dw L_TERRAIN_MESSAGE_8BF906
+
+.INCLUDE "terrain_messages.gen.asm"
+
+.dw L_THE_DOOR_OPENED
+
+.INCLUDE "the_door_opened.gen.asm"
+
 .ENDS
