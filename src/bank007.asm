@@ -149,21 +149,61 @@ L8781C9:
 	and.w #$00FF
 	asl
 	tax
-	jmp ($81E1,X)
+	jmp (TALK_EVENT_SCRIPT_CALLBACKS,X)
 
-.db $45 $82 $6B $82 $CD $82 $2B
-.db $84 $36 $85 $76 $85 $90 $85 $D3
-.db $85 $FB $85 $30 $86 $B8 $86 $F4
-.db $86 $22 $87 $A7 $87 $3E $88 $8E
-.db $89 $A4 $89 $EB $99 $01 $9A $17
-.db $9A $3F $9A $4B $9A $F3 $9A $66
-.db $9B $BE $9B $41 $9C $F7 $9C $0D
-.db $9D $6F $9D $B0 $9D $86 $9F $12
-.db $A0 $61 $A0 $77 $A0 $EA $A0 $05
-.db $A1 $5B $A1 $8C $A1 $A0 $A1 $ED
-.db $A1 $72 $A6 $C0 $A6 $FA $A6 $65
-.db $A7 $D9 $A7 $61 $A8 $6C $A8 $B2
-.db $A8 $C8 $A8 $60 $9D $E2 $20 $AD
+TALK_EVENT_SCRIPT_CALLBACKS:
+.dw $8245
+.dw $826B
+.dw $82CD
+.dw $842B
+.dw $8536
+.dw $8576
+.dw $8590
+.dw $85D3
+.dw $85FB
+.dw $8630
+.dw $86B8
+.dw $86F4
+.dw $8722
+.dw $87A7
+.dw $883E
+.dw $898E
+.dw $89A4
+.dw $99EB
+.dw $9A01
+.dw $9A17
+.dw $9A3F
+.dw $9A4B
+.dw $9AF3
+.dw $9B66
+.dw $9BBE
+.dw $9C41
+.dw $9CF7
+.dw $9D0D
+.dw $9D6F
+.dw $9DB0
+.dw $9F86
+.dw $A012
+.dw $A061
+.dw $A077
+.dw $A0EA
+.dw $A105
+.dw $A15B
+.dw $A18C
+.dw $A1A0
+.dw $A1ED
+.dw $A672
+.dw $A6C0
+.dw $A6FA
+.dw $A765
+.dw $A7D9
+.dw $A861
+.dw $A86C
+.dw $A8B2
+.dw $A8C8
+.dw $9D60
+
+.db $E2 $20 $AD
 .db $C7 $0A $D0 $18 $64 $F7 $22 $6D
 .db $FE $83 $C2 $20 $A9 $00 $83 $85
 .db $01 $A9 $48 $88 $85 $00 $E2 $20

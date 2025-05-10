@@ -3,2195 +3,5682 @@
 
 .SECTION "Bank9" FORCE
 
-CHAPTERS_THINGIES: ; 2 bytes
-.db $7E $80 $76 $81 $23 $82 $BC $82
-.db $ED $83 $7D $85 $D5 $86 $3F $88
-.db $A9 $89 $39 $8B $B6 $8C $FA $8D
-.db $77 $8F $E1 $90 $84 $92 $3A $94
-.db $A4 $95 $FD $98 $B3 $9A $0B $B7
-.db $D4 $9D $72 $9B $90 $9C $5B $C4
-.db $D6 $9F $37 $A2 $A1 $A3 $5B $C4
-.db $7D $A5 $E7 $A6 $B0 $A8 $0E $B0
-.db $5C $B2 $79 $AA $5B $C4 $09 $AC
-.db $3A $AD $CA $AE $AA $B4 $E2 $BD
-.db $33 $B9 $81 $BB $98 $BF $D3 $C1
-.db $9C $C3 $77 $81 $AE $86 $47 $97
-.db $5B $C4 $5B $C4 $5B $C4 $5B $C4
-.db $5B $C4 $5B $C4 $5B $C4 $5B $C4
-.db $5B $C4 $5B $C4 $5B $C4 $5B $C4
-.db $5B $C4 $5B $C4 $5B $C4 $45 $17
-.db $01 $38 $05 $05 $FF $00 $39 $FF
-.db $FF $FF $FF $FF $FF $FF $00 $00
-.db $00 $45 $11 $03 $38 $06 $04 $FF
-.db $00 $01 $FF $FF $FF $FF $FF $FF
-.db $FF $00 $00 $00 $45 $08 $05 $38
-.db $0A $08 $FF $00 $11 $FF $FF $FF
-.db $FF $FF $FF $FF $00 $00 $00 $45
-.db $1D $01 $38 $0D $04 $FF $00 $1E
-.db $FF $FF $FF $FF $FF $FF $FF $00
-.db $00 $00 $45 $1D $01 $38 $0E $05
-.db $FF $00 $1E $FF $FF $FF $FF $FF
-.db $FF $FF $00 $00 $00 $45 $1D $01
-.db $38 $0F $04 $FF $00 $1E $FF $FF
-.db $FF $FF $FF $FF $FF $00 $00 $00
-.db $45 $1D $01 $38 $0F $06 $FF $00
-.db $1E $FF $FF $FF $FF $FF $FF $FF
-.db $00 $00 $00 $45 $1D $01 $38 $0E
-.db $0C $FF $00 $1E $FF $FF $FF $FF
-.db $FF $FF $FF $00 $00 $00 $45 $1D
-.db $01 $38 $0E $0D $FF $00 $1E $FF
-.db $FF $FF $FF $FF $FF $FF $00 $00
-.db $00 $45 $1D $01 $38 $0F $0D $FF
-.db $00 $1E $FF $FF $FF $FF $FF $FF
-.db $FF $00 $00 $00 $45 $1D $03 $38
-.db $0F $0B $FF $00 $20 $FF $FF $FF
-.db $FF $FF $FF $FF $00 $00 $00 $45
-.db $1D $03 $38 $10 $07 $FF $00 $20
-.db $FF $FF $FF $FF $FF $FF $FF $00
-.db $00 $00 $45 $11 $03 $38 $05 $04
-.db $FF $00 $01 $FF $FF $FF $FF $FF
-.db $FF $FF $00 $00 $00 $FF $FF $45
-.db $1E $07 $37 $05 $03 $FF $37 $20
-.db $FF $FF $FF $01 $FF $FF $FF $01
-.db $04 $01 $45 $1E $01 $38 $04 $02
-.db $FF $08 $1E $FF $FF $FF $FF $FF
-.db $FF $FF $05 $0B $03 $45 $1E $01
-.db $38 $05 $04 $FF $08 $1E $FF $FF
-.db $FF $FF $FF $FF $FF $05 $0C $03
-.db $45 $1E $01 $38 $06 $04 $FF $08
-.db $1E $FF $FF $FF $FF $FF $FF $FF
-.db $03 $08 $00 $45 $1E $01 $38 $06
-.db $05 $FF $08 $1E $FF $FF $FF $FF
-.db $FF $FF $FF $03 $08 $00 $45 $0B
-.db $01 $38 $04 $06 $FF $36 $18 $FF
-.db $FF $FF $FF $FF $FF $FF $0E $08
-.db $00 $45 $03 $01 $36 $05 $01 $FF
-.db $2D $0F $FF $FF $FF $FF $FF $FF
-.db $FF $03 $07 $03 $45 $03 $01 $36
-.db $06 $01 $FF $2D $0F $FF $FF $FF
-.db $FF $FF $FF $FF $03 $07 $03 $0C
-.db $0B $03 $0C $05 $06 $FF $0C $18
-.db $FF $FF $FF $FF $FF $FF $FF $0E
-.db $01 $03 $FF $45 $1D $08 $48 $0A
-.db $03 $FF $48 $20 $FF $FF $FF $43
-.db $FF $FF $FF $01 $04 $01 $45 $1D
-.db $01 $39 $0A $05 $FF $0E $1E $FF
-.db $FF $FF $FF $FF $FF $FF $03 $13
-.db $02 $45 $1D $01 $39 $0B $04 $FF
-.db $0E $1E $FF $FF $FF $FF $FF $FF
-.db $FF $03 $14 $01 $45 $1D $01 $39
-.db $08 $01 $FF $0E $1E $FF $FF $FF
-.db $FF $FF $FF $FF $03 $03 $00 $45
-.db $1D $03 $39 $07 $03 $FF $0E $1E
-.db $FF $FF $FF $FF $FF $FF $FF $03
-.db $03 $00 $45 $1D $03 $39 $07 $04
-.db $FF $0E $1E $FF $FF $FF $57 $FF
-.db $FF $FF $03 $03 $00 $45 $0B $01
-.db $39 $0E $04 $FF $36 $18 $FF $FF
-.db $FF $FF $FF $FF $FF $0E $03 $01
-.db $45 $0B $03 $39 $0D $05 $FF $36
-.db $18 $FF $FF $FF $FF $FF $FF $FF
-.db $0E $03 $01 $FF $47 $07 $05 $3A
-.db $07 $08 $FF $3A $12 $FF $FF $FF
-.db $12 $FF $FF $FF $01 $04 $01 $45
-.db $07 $03 $56 $07 $09 $FF $50 $0F
-.db $FF $FF $FF $0C $FF $FF $FF $01
-.db $04 $03 $45 $07 $01 $56 $04 $0B
-.db $FF $50 $0F $FF $FF $FF $FF $FF
-.db $FF $FF $03 $03 $03 $45 $1A $01
-.db $59 $04 $0A $FF $59 $40 $FF $FF
-.db $FF $40 $FF $FF $FF $02 $05 $03
-.db $45 $03 $03 $59 $07 $04 $FF $2D
-.db $0F $FF $FF $FF $FF $FF $FF $FF
-.db $05 $00 $03 $45 $09 $01 $5A $06
-.db $02 $FF $47 $13 $FF $FF $FF $FF
-.db $FF $FF $FF $05 $00 $03 $45 $0D
-.db $03 $59 $09 $08 $FF $38 $18 $FF
-.db $FF $FF $FF $FF $FF $FF $0E $00
-.db $03 $45 $0D $01 $59 $09 $09 $FF
-.db $38 $18 $FF $FF $FF $FF $FF $FF
-.db $FF $0E $02 $03 $45 $13 $03 $7B
-.db $0D $09 $FF $35 $00 $FF $FF $FF
-.db $FF $FF $64 $00 $02 $06 $03 $45
-.db $13 $01 $7B $0D $08 $FF $35 $00
-.db $FF $FF $FF $02 $FF $FF $FF $02
-.db $06 $03 $45 $03 $01 $59 $04 $1A
-.db $FF $2D $10 $FF $FF $FF $FF $FF
-.db $FF $FF $03 $01 $03 $45 $03 $01
-.db $59 $04 $1B $FF $2D $0F $FF $FF
-.db $FF $FF $FF $FF $FF $03 $01 $03
-.db $45 $03 $01 $59 $04 $1C $FF $2D
-.db $0F $FF $FF $FF $FF $FF $FF $FF
-.db $03 $01 $03 $45 $0D $03 $59 $04
-.db $1D $FF $38 $18 $FF $FF $FF $FF
-.db $FF $FF $FF $0E $01 $03 $45 $09
-.db $03 $5A $03 $1C $FF $47 $0F $FF
-.db $FF $FF $FF $FF $FF $FF $03 $01
-.db $01 $2C $03 $02 $2C $07 $05 $FF
-.db $2C $0F $FF $FF $FF $FF $FF $FF
-.db $FF $06 $02 $01 $FF $45 $08 $03
-.db $3C $0C $0C $FF $3C $10 $FF $FF
-.db $FF $10 $FF $FF $FF $01 $04 $01
-.db $45 $07 $03 $56 $02 $09 $FF $50
-.db $0F $FF $FF $FF $FF $FF $FF $FF
-.db $03 $03 $03 $45 $07 $03 $56 $07
-.db $0C $FF $50 $0F $FF $FF $FF $FF
-.db $FF $FF $FF $03 $03 $03 $45 $0D
-.db $03 $59 $06 $0E $FF $38 $1A $FF
-.db $FF $FF $FF $FF $FF $FF $0E $03
-.db $03 $45 $0D $03 $59 $06 $0A $FF
-.db $38 $18 $FF $FF $FF $FF $FF $FF
-.db $FF $0E $03 $03 $45 $1A $03 $59
-.db $04 $0C $FF $59 $40 $FF $FF $FF
-.db $FF $FF $FF $FF $02 $05 $03 $45
-.db $19 $03 $59 $04 $07 $FF $57 $2D
-.db $FF $FF $FF $FF $FF $FF $FF $1B
-.db $03 $03 $45 $02 $03 $59 $02 $18
-.db $FF $27 $10 $FF $FF $FF $FF $FF
-.db $FF $FF $03 $01 $03 $45 $02 $03
-.db $59 $03 $1B $FF $27 $0F $FF $FF
-.db $FF $58 $FF $FF $FF $03 $01 $03
-.db $45 $1A $05 $59 $0D $0E $FF $59
-.db $40 $FF $FF $FF $FF $FF $FF $FF
-.db $02 $05 $03 $45 $19 $03 $59 $0E
-.db $0D $FF $57 $2E $FF $FF $FF $FF
-.db $FF $FF $FF $1B $03 $03 $45 $0D
-.db $03 $59 $0F $0D $FF $38 $1A $FF
-.db $FF $FF $FF $FF $FF $FF $0E $03
-.db $03 $45 $0D $03 $59 $0F $0B $FF
-.db $38 $18 $FF $FF $FF $FF $FF $FF
-.db $FF $0E $03 $03 $4B $13 $01 $7B
-.db $12 $0A $FF $35 $01 $FF $FF $FF
-.db $FF $FF $FF $FF $02 $15 $03 $4E
-.db $13 $03 $7B $02 $1A $FF $35 $00
-.db $FF $FF $FF $FF $FF $64 $00 $02
-.db $16 $03 $4F $13 $03 $7B $12 $0E
-.db $FF $35 $01 $FF $FF $FF $FF $FF
-.db $FF $FF $02 $17 $03 $50 $13 $03
-.db $7B $12 $0B $FF $35 $01 $FF $FF
-.db $FF $FF $FF $FF $FF $02 $18 $03
-.db $45 $07 $01 $56 $12 $09 $FF $50
-.db $10 $FF $FF $FF $FF $FF $FF $FF
-.db $03 $02 $03 $45 $07 $01 $56 $13
-.db $09 $FF $50 $10 $FF $FF $FF $FF
-.db $FF $FF $FF $03 $02 $03 $07 $13
-.db $01 $07 $0A $19 $FF $07 $00 $FF
-.db $FF $FF $58 $FF $FF $FF $17 $07
-.db $03 $29 $1A $01 $29 $0A $1C $FF
-.db $29 $2E $FF $FF $FF $45 $FF $FF
-.db $FF $0B $07 $03 $FF $48 $08 $03
-.db $3B $1B $0A $FF $3B $11 $FF $FF
-.db $FF $11 $FF $FF $FF $01 $04 $01
-.db $45 $1A $03 $36 $1B $0E $FF $59
-.db $41 $FF $FF $FF $FF $FF $FF $FF
-.db $02 $05 $03 $45 $07 $01 $36 $1A
-.db $08 $FF $50 $0F $FF $FF $FF $FF
-.db $FF $FF $FF $03 $03 $03 $45 $07
-.db $03 $36 $1A $07 $FF $50 $0F $FF
-.db $FF $FF $FF $FF $FF $FF $03 $03
-.db $03 $45 $13 $03 $7B $15 $08 $FF
-.db $35 $00 $FF $FF $FF $58 $FF $FF
-.db $FF $02 $10 $03 $45 $11 $03 $36
-.db $0F $0E $FF $53 $00 $FF $FF $FF
-.db $FF $FF $FF $FF $03 $00 $03 $45
-.db $11 $03 $36 $0F $0C $FF $53 $01
-.db $FF $FF $FF $FF $FF $FF $FF $03
-.db $00 $03 $45 $0D $03 $36 $09 $0C
-.db $FF $38 $18 $FF $FF $FF $FF $FF
-.db $FF $FF $0E $01 $03 $45 $0D $03
-.db $36 $09 $0E $FF $38 $18 $FF $FF
-.db $FF $FF $FF $FF $FF $0E $01 $03
-.db $45 $0A $01 $57 $18 $0B $FF $2E
-.db $0F $FF $FF $FF $FF $FF $FF $FF
-.db $05 $02 $00 $45 $09 $03 $5A $18
-.db $0C $FF $47 $10 $FF $FF $FF $FF
-.db $FF $FF $FF $05 $02 $00 $45 $09
-.db $01 $5A $19 $0C $FF $47 $13 $FF
-.db $FF $FF $FF $FF $FF $FF $04 $02
-.db $00 $2A $09 $03 $2A $1C $0E $FF
-.db $2A $0F $0C $FF $FF $FF $FF $FF
-.db $FF $02 $00 $00 $1C $09 $03 $1C
-.db $1B $0D $FF $1C $0F $04 $FF $FF
-.db $FF $FF $FF $FF $02 $00 $00 $2F
-.db $09 $03 $2F $1C $0C $FF $2F $11
-.db $FF $FF $FF $FF $FF $FF $FF $02
-.db $00 $00 $3C $0A $01 $1E $19 $0B
-.db $FF $1E $13 $00 $FF $FF $FF $FF
-.db $FF $FF $02 $00 $00 $FF $5B $07
-.db $0A $3E $0C $1A $FF $3E $11 $FF
-.db $FF $FF $62 $FF $FF $FF $01 $04
-.db $01 $57 $1E $01 $52 $13 $0D $FF
-.db $08 $21 $FF $FF $FF $21 $FF $FF
-.db $FF $02 $57 $03 $FF $45 $08 $01
-.db $40 $02 $03 $FF $40 $10 $FF $FF
-.db $FF $5F $FF $FF $FF $01 $04 $01
-.db $5C $0A $01 $57 $03 $03 $FF $2E
-.db $0F $FF $FF $FF $FF $FF $FF $FF
-.db $04 $01 $00 $5D $09 $03 $5A $04
-.db $03 $FF $47 $13 $FF $FF $FF $FF
-.db $FF $FF $FF $04 $01 $00 $45 $0A
-.db $01 $57 $03 $04 $FF $2E $13 $FF
-.db $FF $FF $FF $FF $FF $FF $04 $01
-.db $00 $45 $1A $03 $36 $02 $06 $FF
-.db $59 $47 $FF $FF $FF $FF $FF $FF
-.db $FF $02 $27 $03 $45 $09 $03 $5A
-.db $01 $06 $FF $47 $10 $FF $FF $FF
-.db $FF $FF $FF $FF $04 $01 $00 $45
-.db $03 $05 $36 $03 $02 $FF $2D $10
-.db $FF $FF $FF $FF $FF $FF $FF $04
-.db $01 $00 $45 $07 $03 $36 $02 $01
-.db $FF $50 $10 $FF $FF $FF $FF $FF
-.db $FF $FF $04 $03 $00 $5E $03 $03
-.db $36 $02 $0F $FF $2D $10 $FF $FF
-.db $FF $10 $FF $FF $FF $04 $01 $03
-.db $45 $03 $03 $36 $02 $10 $FF $2D
-.db $10 $FF $FF $FF $FF $FF $FF $FF
-.db $04 $01 $00 $45 $12 $01 $36 $06
-.db $12 $FF $55 $0C $FF $FF $FF $67
-.db $FF $FF $FF $04 $03 $03 $45 $07
-.db $03 $36 $10 $15 $FF $50 $10 $FF
-.db $FF $FF $FF $FF $FF $FF $04 $03
-.db $03 $45 $07 $03 $36 $13 $10 $FF
-.db $50 $10 $FF $FF $FF $FF $FF $FF
-.db $FF $04 $03 $03 $45 $0D $03 $36
-.db $0F $0E $FF $38 $18 $FF $FF $FF
-.db $FF $FF $FF $FF $0E $03 $03 $45
-.db $0D $05 $36 $0F $0D $FF $38 $1A
-.db $FF $FF $FF $1A $FF $FF $FF $0E
-.db $03 $03 $45 $0C $01 $36 $0F $0C
-.db $FF $3D $1A $FF $FF $FF $FF $FF
-.db $FF $FF $0E $03 $00 $51 $13 $07
-.db $7B $11 $14 $FF $35 $00 $FF $FF
-.db $FF $FF $FF $FF $FF $02 $63 $03
-.db $1D $16 $03 $1D $0D $10 $FF $1D
-.db $40 $FF $FF $FF $FF $FF $FF $FF
-.db $02 $02 $00 $1E $0A $01 $1E $1E
-.db $03 $FF $1E $13 $FF $FF $FF $FF
-.db $FF $FF $FF $02 $02 $00 $FF $45
-.db $0F $01 $41 $06 $08 $FF $41 $4F
-.db $FF $FF $FF $5C $FF $FF $FF $04
-.db $0D $01 $45 $23 $03 $36 $09 $07
-.db $FF $43 $26 $FF $FF $FF $FF $FF
-.db $FF $FF $12 $03 $00 $45 $23 $03
-.db $36 $04 $0C $FF $43 $26 $FF $FF
-.db $FF $FF $FF $FF $FF $12 $03 $00
-.db $45 $13 $05 $7B $06 $0C $FF $35
-.db $01 $FF $FF $FF $FF $FF $FF $FF
-.db $02 $06 $00 $45 $0E $01 $36 $09
-.db $0B $FF $5F $18 $FF $FF $FF $FF
-.db $FF $FF $FF $0E $01 $00 $45 $23
-.db $03 $36 $0B $06 $FF $43 $25 $FF
-.db $FF $FF $FF $FF $FF $FF $12 $03
-.db $00 $45 $03 $05 $36 $0C $05 $FF
-.db $2D $10 $FF $FF $FF $FF $FF $FF
-.db $FF $03 $01 $00 $45 $03 $07 $36
-.db $0B $04 $FF $2D $10 $FF $FF $FF
-.db $FF $FF $FF $FF $03 $01 $00 $45
-.db $03 $05 $36 $0C $04 $FF $2D $13
-.db $FF $FF $FF $13 $FF $FF $FF $03
-.db $01 $00 $45 $09 $03 $5A $07 $05
-.db $FF $47 $10 $FF $FF $FF $FF $FF
-.db $FF $FF $06 $01 $00 $45 $09 $03
-.db $5A $07 $0A $FF $47 $13 $FF $FF
-.db $FF $FF $FF $FF $FF $03 $01 $00
-.db $45 $09 $05 $5A $08 $0E $FF $47
-.db $13 $FF $FF $FF $FF $FF $FF $FF
-.db $06 $01 $00 $45 $0C $03 $36 $06
-.db $06 $FF $3D $1A $FF $FF $FF $1A
-.db $FF $FF $FF $0E $03 $00 $45 $11
-.db $03 $5B $10 $18 $FF $53 $01 $FF
-.db $FF $FF $FF $FF $FF $FF $06 $03
-.db $03 $45 $11 $03 $5B $11 $18 $FF
-.db $53 $01 $FF $FF $FF $FF $FF $FF
-.db $FF $06 $03 $03 $45 $11 $03 $5B
-.db $14 $15 $FF $53 $01 $FF $FF $FF
-.db $FF $FF $FF $FF $03 $03 $03 $45
-.db $11 $03 $5B $14 $16 $FF $53 $01
-.db $FF $FF $FF $FF $FF $FF $FF $03
-.db $03 $03 $45 $11 $05 $5B $16 $16
-.db $FF $53 $01 $FF $FF $FF $FF $FF
-.db $FF $FF $03 $03 $03 $45 $11 $05
-.db $5B $16 $15 $FF $53 $01 $FF $FF
-.db $FF $FF $FF $FF $FF $03 $03 $03
-.db $FF $45 $1A $05 $45 $17 $10 $FF
-.db $45 $33 $FF $FF $FF $33 $FF $FF
-.db $FF $01 $04 $01 $45 $0D $03 $50
-.db $02 $09 $FF $38 $1A $FF $FF $FF
-.db $FF $FF $FF $FF $0E $02 $00 $45
-.db $0D $05 $50 $01 $09 $FF $38 $1A
-.db $FF $FF $FF $FF $FF $FF $FF $0E
-.db $02 $00 $45 $19 $05 $50 $02 $02
-.db $FF $57 $2E $FF $FF $FF $2E $FF
-.db $FF $FF $1B $02 $00 $45 $07 $05
-.db $50 $06 $02 $FF $50 $13 $FF $FF
-.db $FF $FF $FF $FF $FF $03 $03 $00
-.db $45 $07 $03 $50 $08 $09 $FF $50
-.db $10 $FF $FF $FF $FF $FF $FF $FF
-.db $03 $03 $00 $45 $07 $05 $50 $09
-.db $09 $FF $50 $10 $FF $FF $FF $FF
-.db $FF $FF $FF $03 $03 $00 $4E $13
-.db $03 $7B $09 $1A $FF $35 $01 $FF
-.db $FF $FF $03 $FF $FF $FF $02 $19
-.db $03 $4F $13 $03 $7B $0A $1A $FF
-.db $35 $04 $FF $FF $FF $FF $FF $FF
-.db $FF $02 $1A $03 $51 $13 $05 $7B
-.db $03 $10 $FF $35 $01 $FF $FF $FF
-.db $FF $FF $FF $FF $02 $1B $03 $52
-.db $13 $05 $7B $03 $11 $FF $35 $01
-.db $FF $FF $FF $FF $FF $FF $FF $02
-.db $1C $03 $45 $0F $01 $50 $1B $06
-.db $FF $5B $4F $FF $FF $FF $57 $FF
-.db $FF $FF $03 $0D $00 $45 $19 $03
-.db $50 $1E $0D $FF $57 $31 $FF $FF
-.db $FF $31 $FF $FF $FF $1B $02 $00
-.db $45 $19 $05 $50 $1E $0F $FF $57
-.db $2E $FF $FF $FF $FF $FF $FF $FF
-.db $1B $02 $00 $45 $02 $05 $50 $1C
-.db $1B $FF $27 $11 $FF $FF $FF $FF
-.db $FF $FF $FF $03 $03 $00 $45 $02
-.db $07 $50 $1D $1A $FF $27 $11 $FF
-.db $FF $FF $66 $FF $FF $FF $03 $03
-.db $00 $45 $02 $05 $50 $1E $1B $FF
-.db $27 $11 $FF $FF $FF $FF $FF $FF
-.db $FF $03 $03 $00 $45 $1A $05 $50
-.db $17 $11 $FF $59 $41 $FF $FF $FF
-.db $FF $FF $FF $FF $02 $05 $00 $45
-.db $1A $05 $50 $17 $0F $FF $59 $43
-.db $FF $FF $FF $43 $FF $FF $FF $02
-.db $05 $00 $45 $0C $05 $50 $17 $0C
-.db $FF $3D $1A $FF $FF $FF $FF $FF
-.db $FF $FF $0E $03 $00 $45 $08 $03
-.db $50 $15 $0D $FF $52 $10 $FF $FF
-.db $FF $FF $FF $FF $FF $03 $03 $00
-.db $FF $45 $08 $05 $44 $12 $03 $FF
-.db $44 $11 $FF $FF $FF $11 $FF $FF
-.db $FF $01 $04 $01 $45 $0D $05 $51
-.db $07 $06 $FF $38 $1A $FF $FF $FF
-.db $FF $FF $FF $FF $0E $03 $00 $45
-.db $0D $05 $51 $08 $06 $FF $38 $1A
-.db $FF $FF $FF $FF $FF $FF $FF $0E
-.db $03 $00 $45 $0C $05 $51 $07 $11
-.db $FF $3D $1B $FF $FF $FF $FF $FF
-.db $FF $FF $0E $03 $00 $45 $0D $05
-.db $51 $09 $06 $FF $38 $1A $FF $FF
-.db $FF $FF $FF $FF $FF $0E $03 $00
-.db $45 $0D $05 $51 $07 $08 $FF $38
-.db $1A $FF $FF $FF $FF $FF $FF $FF
-.db $0E $03 $00 $45 $0D $05 $51 $07
-.db $0A $FF $38 $1A $FF $FF $FF $FF
-.db $FF $FF $FF $0E $03 $00 $45 $1A
-.db $07 $51 $08 $07 $FF $59 $47 $FF
-.db $FF $FF $FF $FF $FF $FF $02 $27
-.db $00 $45 $1A $03 $51 $12 $04 $FF
-.db $59 $43 $FF $FF $FF $FF $FF $FF
-.db $FF $02 $05 $00 $45 $07 $05 $51
-.db $0A $11 $FF $50 $12 $FF $FF $FF
-.db $FF $FF $FF $FF $10 $03 $00 $45
-.db $07 $05 $51 $0A $10 $FF $50 $13
-.db $FF $FF $FF $FF $FF $FF $FF $03
-.db $03 $00 $45 $07 $05 $51 $0B $15
-.db $FF $50 $13 $FF $FF $FF $FF $FF
-.db $FF $FF $03 $03 $00 $45 $07 $05
-.db $51 $0B $16 $FF $50 $11 $FF $FF
-.db $FF $FF $FF $FF $FF $03 $03 $00
-.db $45 $0C $03 $51 $16 $18 $FF $3D
-.db $1B $FF $FF $FF $FF $FF $FF $FF
-.db $0E $03 $00 $51 $13 $05 $7B $1C
-.db $0B $FF $35 $00 $FF $FF $FF $57
-.db $FF $FF $FF $02 $1E $00 $54 $13
-.db $07 $7B $1C $09 $FF $35 $00 $FF
-.db $FF $FF $57 $FF $FF $FF $02 $1F
-.db $00 $45 $07 $05 $51 $14 $02 $FF
-.db $50 $10 $FF $FF $FF $FF $FF $FF
-.db $FF $03 $03 $00 $5C $07 $09 $51
-.db $14 $09 $FF $50 $11 $FF $FF $FF
-.db $FF $FF $FF $FF $03 $03 $00 $45
-.db $12 $01 $51 $1A $09 $FF $55 $01
-.db $FF $FF $FF $FF $FF $FF $FF $03
-.db $03 $00 $2B $12 $01 $2B $08 $11
-.db $FF $2B $02 $FF $FF $FF $02 $FF
-.db $FF $FF $02 $1D $00 $FF $46 $1A
-.db $0A $4E $18 $1C $FF $4E $37 $FF
-.db $FF $FF $0B $FF $FF $FF $1B $01
-.db $01 $45 $1A $03 $55 $04 $04 $FF
-.db $59 $33 $FF $FF $FF $FF $FF $FF
-.db $FF $01 $04 $00 $45 $1A $03 $55
-.db $01 $04 $FF $59 $41 $FF $FF $FF
-.db $FF $FF $FF $FF $02 $05 $00 $45
-.db $19 $03 $55 $0A $03 $FF $57 $2D
-.db $FF $FF $FF $FF $FF $FF $FF $1B
-.db $00 $00 $45 $19 $03 $55 $0A $02
-.db $FF $57 $2E $FF $FF $FF $FF $FF
-.db $FF $FF $1B $01 $00 $45 $1A $03
-.db $55 $0C $02 $FF $59 $41 $FF $FF
-.db $FF $FF $FF $FF $FF $02 $05 $00
-.db $45 $1A $01 $55 $0D $01 $FF $59
-.db $2D $40 $FF $FF $FF $FF $FF $FF
-.db $1B $01 $00 $45 $19 $01 $55 $17
-.db $0A $FF $57 $2D $FF $FF $FF $FF
-.db $FF $FF $FF $1B $00 $00 $45 $19
-.db $03 $55 $17 $0B $FF $57 $2E $FF
-.db $FF $FF $FF $FF $FF $FF $1B $00
-.db $00 $45 $19 $03 $55 $15 $18 $FF
-.db $57 $31 $FF $FF $FF $FF $FF $FF
-.db $FF $1B $00 $00 $45 $19 $01 $55
-.db $0C $1C $FF $57 $2D $FF $FF $FF
-.db $FF $FF $FF $FF $1B $01 $00 $45
-.db $19 $01 $55 $0C $1D $FF $57 $2E
-.db $FF $FF $FF $2E $FF $FF $FF $1B
-.db $01 $00 $45 $09 $05 $5A $07 $18
-.db $FF $47 $0F $FF $FF $FF $FF $FF
-.db $FF $FF $06 $00 $00 $45 $09 $05
-.db $5A $06 $14 $FF $47 $10 $FF $FF
-.db $FF $FF $FF $FF $FF $06 $00 $00
-.db $45 $0A $03 $57 $06 $13 $FF $2E
-.db $13 $FF $FF $FF $FF $FF $FF $FF
-.db $06 $00 $00 $45 $0A $03 $57 $04
-.db $06 $FF $2E $0F $FF $FF $FF $FF
-.db $FF $FF $FF $06 $00 $00 $51 $13
-.db $05 $7B $0B $1B $FF $35 $01 $FF
-.db $FF $FF $41 $FF $FF $FF $02 $20
-.db $00 $FF $5C $08 $07 $46 $0D $14
-.db $FF $46 $15 $FF $FF $FF $5D $FF
-.db $FF $FF $01 $04 $01 $45 $08 $03
-.db $36 $0D $15 $FF $52 $12 $FF $FF
-.db $FF $FF $FF $FF $FF $10 $03 $00
-.db $45 $12 $03 $36 $12 $1C $FF $55
-.db $09 $FF $FF $FF $09 $FF $FF $FF
-.db $03 $03 $00 $45 $12 $03 $36 $17
-.db $1B $FF $55 $02 $FF $FF $FF $67
-.db $FF $FF $FF $03 $03 $00 $45 $04
-.db $01 $54 $0F $13 $FF $5E $11 $FF
-.db $FF $FF $FF $FF $FF $FF $03 $01
-.db $00 $45 $0E $03 $36 $10 $12 $FF
-.db $5F $18 $FF $FF $FF $FF $FF $FF
-.db $FF $0E $01 $00 $45 $0E $03 $36
-.db $10 $13 $FF $5F $18 $FF $FF $FF
-.db $FF $FF $FF $FF $0E $01 $00 $45
-.db $0E $03 $36 $10 $14 $FF $5F $1A
-.db $FF $FF $FF $FF $FF $FF $FF $0E
-.db $01 $00 $45 $03 $05 $36 $11 $12
-.db $FF $2D $12 $FF $FF $FF $FF $FF
-.db $FF $FF $04 $01 $00 $45 $03 $03
-.db $36 $11 $13 $FF $2D $0F $FF $FF
-.db $FF $FF $FF $FF $FF $03 $01 $00
-.db $45 $03 $03 $36 $11 $14 $FF $2D
-.db $10 $FF $FF $FF $FF $FF $FF $FF
-.db $03 $01 $00 $45 $03 $03 $36 $1C
-.db $13 $FF $2D $0F $FF $FF $FF $FF
-.db $FF $FF $FF $03 $01 $00 $45 $03
-.db $03 $36 $1C $14 $FF $2D $10 $FF
-.db $FF $FF $FF $FF $FF $FF $03 $01
-.db $00 $45 $03 $03 $36 $1C $15 $FF
-.db $2D $0F $FF $FF $FF $FF $FF $FF
-.db $FF $03 $01 $00 $54 $13 $07 $7B
-.db $12 $03 $FF $35 $01 $FF $FF $FF
-.db $FF $FF $FF $FF $02 $06 $00 $45
-.db $1A $05 $36 $0D $12 $FF $59 $42
-.db $FF $FF $FF $FF $FF $FF $FF $02
-.db $29 $00 $45 $0A $03 $57 $10 $16
-.db $FF $2E $13 $FF $FF $FF $FF $FF
-.db $FF $FF $04 $01 $00 $45 $0A $03
-.db $57 $10 $17 $FF $2E $13 $FF $FF
-.db $FF $FF $FF $FF $FF $04 $01 $00
-.db $45 $0A $01 $57 $11 $16 $FF $2E
-.db $10 $FF $FF $FF $FF $FF $FF $FF
-.db $04 $01 $00 $28 $14 $01 $28 $14
-.db $1B $FF $28 $00 $FF $FF $FF $FF
-.db $FF $FF $FF $18 $07 $00 $FF $5C
-.db $0F $01 $4D $09 $19 $FF $4D $56
-.db $FF $FF $FF $5F $FF $FF $FF $01
-.db $04 $01 $45 $1A $0A $50 $10 $1D
-.db $FF $59 $42 $FF $FF $FF $7C $FF
-.db $FF $FF $02 $05 $00 $45 $1A $0A
-.db $50 $10 $1E $FF $59 $47 $FF $FF
-.db $FF $47 $FF $FF $FF $02 $05 $00
-.db $45 $1A $01 $50 $09 $1A $FF $59
-.db $3B $FF $FF $FF $FF $FF $FF $FF
-.db $12 $03 $00 $45 $0C $03 $50 $0E
-.db $1C $FF $3D $1B $FF $FF $FF $FF
-.db $FF $FF $FF $0E $03 $00 $45 $07
-.db $05 $50 $0B $18 $FF $50 $13 $FF
-.db $FF $FF $FF $FF $FF $FF $03 $03
-.db $00 $45 $07 $05 $50 $0C $18 $FF
-.db $50 $13 $FF $FF $FF $FF $FF $FF
-.db $FF $03 $03 $00 $45 $19 $05 $50
-.db $16 $0D $FF $57 $2F $FF $FF $FF
-.db $FF $FF $FF $FF $1B $01 $00 $45
-.db $19 $05 $50 $13 $0B $FF $57 $2E
-.db $FF $FF $FF $FF $FF $FF $FF $1B
-.db $01 $00 $45 $0C $03 $50 $13 $08
-.db $FF $3D $1A $FF $FF $FF $FF $FF
-.db $FF $FF $0E $01 $00 $45 $12 $03
-.db $50 $10 $08 $FF $55 $01 $FF $FF
-.db $FF $FF $FF $FF $FF $03 $01 $00
-.db $45 $07 $05 $50 $08 $07 $FF $50
-.db $10 $FF $FF $FF $FF $FF $FF $FF
-.db $03 $01 $00 $45 $07 $05 $50 $09
-.db $08 $FF $50 $10 $FF $FF $FF $FF
-.db $FF $FF $FF $03 $01 $00 $45 $0F
-.db $01 $50 $05 $08 $FF $5B $4F $FF
-.db $FF $FF $FF $FF $FF $FF $03 $0D
-.db $00 $45 $19 $07 $50 $06 $0B $FF
-.db $57 $31 $FF $FF $FF $FF $FF $FF
-.db $FF $1B $01 $00 $5D $13 $09 $7B
-.db $14 $0B $FF $35 $00 $FF $FF $FF
-.db $58 $FF $FF $FF $02 $64 $00 $5E
-.db $13 $07 $7B $14 $0A $FF $35 $01
-.db $FF $FF $FF $FF $FF $FF $FF $02
-.db $65 $00 $5F $13 $07 $7B $15 $0B
-.db $FF $35 $01 $FF $FF $FF $FF $FF
-.db $FF $FF $02 $66 $00 $60 $13 $07
-.db $7B $15 $0C $FF $35 $01 $FF $FF
-.db $FF $FF $FF $FF $FF $02 $67 $00
-.db $FF $30 $1C $05 $30 $01 $08 $FF
-.db $30 $55 $FF $FF $FF $FF $FF $FF
-.db $FF $01 $04 $01 $45 $19 $01 $50
-.db $02 $08 $FF $57 $33 $FF $FF $FF
-.db $FF $FF $FF $FF $1B $03 $00 $45
-.db $19 $01 $50 $02 $07 $FF $57 $31
-.db $FF $FF $FF $FF $FF $FF $FF $1B
-.db $03 $00 $45 $1A $05 $50 $02 $0A
-.db $FF $59 $41 $FF $FF $FF $FF $FF
-.db $FF $FF $02 $05 $00 $45 $1A $05
-.db $50 $02 $05 $FF $59 $43 $FF $FF
-.db $FF $FF $FF $FF $FF $02 $05 $00
-.db $45 $12 $05 $50 $02 $03 $FF $55
-.db $02 $FF $FF $FF $02 $FF $FF $FF
-.db $06 $03 $00 $45 $12 $05 $50 $07
-.db $07 $FF $55 $01 $FF $FF $FF $FF
-.db $FF $FF $FF $06 $03 $00 $45 $12
-.db $03 $50 $02 $09 $FF $55 $02 $FF
-.db $FF $FF $FF $FF $FF $FF $06 $03
-.db $00 $45 $19 $07 $50 $05 $04 $FF
-.db $57 $2D $FF $FF $FF $FF $FF $FF
-.db $FF $1B $03 $00 $45 $12 $01 $50
-.db $05 $0B $FF $55 $09 $FF $FF $FF
-.db $FF $FF $FF $FF $06 $03 $00 $45
-.db $0C $05 $50 $09 $0C $FF $3D $1A
-.db $FF $FF $FF $FF $FF $FF $FF $04
-.db $03 $00 $45 $0B $05 $50 $0D $03
-.db $FF $36 $1A $FF $FF $FF $1A $FF
-.db $FF $FF $04 $03 $00 $45 $11 $07
-.db $50 $0B $08 $FF $53 $01 $FF $FF
-.db $FF $FF $FF $FF $FF $06 $03 $00
-.db $45 $11 $07 $50 $0F $07 $FF $53
-.db $01 $FF $FF $FF $FF $FF $FF $FF
-.db $06 $03 $00 $45 $11 $07 $50 $13
-.db $08 $FF $53 $01 $FF $FF $FF $FF
-.db $FF $FF $FF $06 $03 $00 $45 $0B
-.db $05 $50 $15 $03 $FF $36 $1A $FF
-.db $FF $FF $FF $FF $FF $FF $04 $03
-.db $00 $45 $0B $05 $50 $11 $0C $FF
-.db $36 $1A $FF $FF $FF $FF $FF $FF
-.db $FF $04 $03 $00 $5D $13 $09 $74
-.db $02 $0C $FF $35 $01 $FF $FF $FF
-.db $FF $FF $64 $00 $02 $68 $00 $5E
-.db $13 $07 $74 $02 $0D $FF $35 $01
-.db $FF $FF $FF $FF $FF $64 $00 $02
-.db $69 $00 $5F $13 $07 $74 $02 $02
-.db $FF $35 $04 $FF $FF $FF $FF $FF
-.db $FF $FF $02 $6A $00 $60 $13 $09
-.db $74 $01 $02 $FF $35 $01 $FF $FF
-.db $FF $FF $FF $64 $00 $02 $6B $00
-.db $61 $13 $07 $74 $01 $03 $FF $35
-.db $01 $FF $FF $FF $FF $FF $FF $FF
-.db $02 $6C $00 $FF $6B $04 $0E $4B
-.db $04 $0A $FF $4B $17 $FF $FF $FF
-.db $17 $FF $FF $FF $01 $04 $01 $45
-.db $04 $03 $54 $04 $09 $FF $5E $11
-.db $FF $FF $FF $FF $FF $FF $FF $01
-.db $03 $03 $45 $04 $03 $54 $04 $0B
-.db $FF $5E $11 $FF $FF $FF $FF $FF
-.db $FF $FF $01 $03 $03 $45 $04 $03
-.db $54 $05 $0A $FF $5E $11 $FF $FF
-.db $FF $FF $FF $FF $FF $01 $03 $03
-.db $45 $04 $03 $54 $04 $0E $FF $5E
-.db $11 $FF $FF $FF $66 $FF $FF $FF
-.db $04 $01 $00 $45 $04 $03 $54 $04
-.db $0F $FF $5E $11 $FF $FF $FF $FF
-.db $FF $FF $FF $04 $01 $00 $45 $04
-.db $03 $54 $04 $10 $FF $5E $11 $FF
-.db $FF $FF $FF $FF $FF $FF $04 $01
-.db $00 $45 $04 $03 $54 $0B $0F $FF
-.db $5E $11 $FF $FF $FF $FF $FF $FF
-.db $FF $04 $03 $00 $45 $04 $01 $54
-.db $0C $0F $FF $5E $11 $FF $FF $FF
-.db $FF $FF $FF $FF $04 $03 $00 $45
-.db $04 $01 $54 $0C $0E $FF $5E $11
-.db $FF $FF $FF $FF $FF $FF $FF $04
-.db $03 $00 $45 $04 $03 $54 $0C $10
-.db $FF $5E $11 $FF $FF $FF $FF $FF
-.db $FF $FF $04 $03 $00 $45 $08 $03
-.db $36 $07 $18 $FF $52 $10 $FF $FF
-.db $FF $FF $FF $FF $FF $06 $03 $00
-.db $45 $08 $03 $36 $06 $18 $FF $52
-.db $10 $FF $FF $FF $FF $FF $FF $FF
-.db $06 $03 $00 $45 $23 $03 $36 $05
-.db $17 $FF $43 $25 $FF $FF $FF $FF
-.db $FF $FF $FF $13 $03 $00 $45 $1A
-.db $05 $36 $06 $0A $FF $59 $47 $FF
-.db $FF $FF $FF $FF $FF $FF $02 $28
-.db $00 $45 $23 $05 $36 $04 $0C $FF
-.db $43 $28 $FF $FF $FF $FF $FF $FF
-.db $FF $13 $03 $00 $45 $23 $03 $36
-.db $0D $0F $FF $43 $27 $FF $FF $FF
-.db $FF $FF $FF $FF $13 $03 $00 $45
-.db $23 $05 $36 $0D $10 $FF $43 $25
-.db $FF $FF $FF $FF $FF $FF $FF $13
-.db $03 $00 $45 $13 $0A $7B $0A $04
-.db $FF $35 $05 $FF $FF $FF $FF $FF
-.db $C8 $00 $02 $10 $00 $45 $1A $05
-.db $36 $01 $0B $FF $59 $43 $FF $FF
-.db $FF $FF $FF $FF $FF $02 $05 $00
-.db $45 $23 $03 $36 $03 $0C $FF $43
-.db $28 $FF $FF $FF $FF $FF $FF $FF
-.db $14 $03 $00 $45 $08 $03 $36 $01
-.db $0E $FF $52 $13 $FF $FF $FF $FF
-.db $FF $FF $FF $06 $03 $00 $31 $08
-.db $05 $31 $01 $0D $FF $31 $11 $FF
-.db $FF $FF $FF $FF $FF $FF $06 $03
-.db $00 $FF $49 $0A $14 $4C $11 $15
-.db $FF $4C $11 $FF $FF $FF $6D $FF
-.db $FF $FF $06 $01 $01 $45 $1A $05
-.db $59 $13 $16 $FF $59 $42 $FF $FF
-.db $FF $FF $FF $FF $FF $02 $05 $00
-.db $45 $1A $05 $59 $13 $14 $FF $59
-.db $42 $FF $FF $FF $FF $FF $FF $FF
-.db $02 $05 $00 $45 $13 $07 $7B $09
-.db $05 $FF $35 $05 $FF $FF $FF $FF
-.db $FF $FF $FF $02 $06 $00 $45 $0E
-.db $03 $59 $0D $16 $FF $5F $1B $FF
-.db $FF $FF $1B $FF $FF $FF $0E $01
-.db $00 $45 $0E $03 $59 $0C $10 $FF
-.db $5F $1B $FF $FF $FF $FF $FF $FF
-.db $FF $0E $01 $00 $45 $0A $03 $57
-.db $11 $17 $FF $2E $10 $FF $FF $FF
-.db $FF $FF $FF $FF $01 $04 $00 $45
-.db $0A $03 $57 $11 $13 $FF $2E $10
-.db $FF $FF $FF $FF $FF $FF $FF $03
-.db $01 $00 $45 $0A $03 $57 $0F $17
-.db $FF $2E $10 $FF $FF $FF $69 $FF
-.db $FF $FF $03 $01 $00 $45 $0A $03
-.db $57 $0C $11 $FF $2E $10 $FF $FF
-.db $FF $FF $FF $FF $FF $03 $01 $00
-.db $45 $0A $03 $57 $10 $12 $FF $2E
-.db $10 $FF $FF $FF $FF $FF $FF $FF
-.db $04 $01 $00 $45 $09 $0A $5A $0C
-.db $15 $FF $47 $13 $FF $FF $FF $FF
-.db $FF $FF $FF $04 $01 $00 $45 $09
-.db $0A $5A $0D $15 $FF $47 $13 $FF
-.db $FF $FF $FF $FF $FF $FF $04 $01
-.db $00 $45 $09 $0A $5A $10 $11 $FF
-.db $47 $13 $FF $FF $FF $FF $FF $FF
-.db $FF $04 $01 $00 $45 $09 $0A $5A
-.db $0F $10 $FF $47 $13 $FF $FF $FF
-.db $FF $FF $FF $FF $04 $01 $00 $45
-.db $03 $05 $59 $0D $0F $FF $5D $10
-.db $FF $FF $FF $FF $FF $FF $FF $04
-.db $01 $00 $45 $03 $05 $59 $0D $11
-.db $FF $5D $10 $FF $FF $FF $FF $FF
-.db $FF $FF $04 $01 $00 $45 $03 $05
-.db $59 $0C $14 $FF $5D $10 $FF $FF
-.db $FF $FF $FF $FF $FF $04 $01 $00
-.db $45 $03 $05 $59 $0E $16 $FF $5D
-.db $10 $FF $FF $FF $FF $FF $FF $FF
-.db $04 $01 $00 $FF $46 $1A $0A $4E
-.db $0D $0F $FF $4E $37 $FF $FF $FF
-.db $0B $FF $FF $FF $1B $03 $01 $45
-.db $1A $0A $60 $0A $0F $FF $4E $3A
-.db $FF $FF $FF $68 $FF $FF $FF $13
-.db $04 $00 $45 $1A $0A $60 $0D $10
-.db $FF $4E $32 $FF $FF $FF $FF $FF
-.db $FF $FF $1B $03 $00 $45 $1A $0A
-.db $60 $0D $0E $FF $4E $32 $FF $FF
-.db $FF $FF $FF $FF $FF $1B $03 $00
-.db $45 $1A $0A $60 $14 $06 $FF $4E
-.db $47 $FF $FF $FF $FF $FF $FF $FF
-.db $02 $05 $00 $45 $1A $0A $60 $14
-.db $19 $FF $4E $47 $FF $FF $FF $FF
-.db $FF $FF $FF $02 $05 $00 $45 $19
-.db $05 $5D $15 $19 $FF $57 $31 $FF
-.db $FF $FF $FF $FF $FF $FF $1B $03
-.db $00 $45 $19 $05 $5D $15 $18 $FF
-.db $57 $31 $FF $FF $FF $FF $FF $FF
-.db $FF $1B $03 $00 $45 $19 $05 $5D
-.db $15 $06 $FF $57 $31 $FF $FF $FF
-.db $FF $FF $FF $FF $1B $03 $00 $45
-.db $19 $05 $5D $15 $07 $FF $57 $31
-.db $FF $FF $FF $FF $FF $FF $FF $1B
-.db $03 $00 $45 $19 $0A $5D $17 $0C
-.db $FF $57 $33 $FF $FF $FF $FF $FF
-.db $FF $FF $1B $03 $00 $45 $19 $0A
-.db $5D $17 $12 $FF $57 $33 $FF $FF
-.db $FF $FF $FF $FF $FF $1B $03 $00
-.db $45 $0C $05 $50 $0A $0A $FF $3D
-.db $1B $FF $FF $FF $FF $FF $FF $FF
-.db $0E $03 $00 $45 $0C $05 $50 $0A
-.db $14 $FF $3D $1B $FF $FF $FF $FF
-.db $FF $FF $FF $0E $03 $00 $45 $0C
-.db $05 $50 $16 $13 $FF $3D $1A $FF
-.db $FF $FF $FF $FF $FF $FF $0E $03
-.db $00 $45 $0C $05 $50 $16 $0B $FF
-.db $3D $1A $FF $FF $FF $FF $FF $FF
-.db $FF $0E $03 $00 $45 $12 $05 $50
-.db $11 $0E $FF $55 $04 $FF $FF $FF
-.db $FF $FF $FF $FF $03 $03 $00 $45
-.db $12 $05 $50 $11 $0F $FF $55 $0D
-.db $FF $FF $FF $FF $FF $FF $FF $06
-.db $03 $00 $45 $12 $05 $50 $11 $10
-.db $FF $55 $04 $FF $FF $FF $FF $FF
-.db $FF $FF $06 $03 $00 $45 $08 $03
-.db $50 $15 $0F $FF $52 $11 $FF $FF
-.db $FF $FF $FF $FF $FF $03 $03 $00
-.db $45 $08 $03 $50 $0B $0B $FF $52
-.db $11 $FF $FF $FF $FF $FF $FF $FF
-.db $06 $03 $00 $45 $08 $03 $50 $0B
-.db $13 $FF $52 $11 $FF $FF $FF $FF
-.db $FF $FF $FF $06 $03 $00 $FF $5C
-.db $0F $01 $49 $0E $03 $FF $49 $56
-.db $FF $FF $FF $FF $FF $FF $FF $01
-.db $04 $01 $45 $10 $01 $50 $0F $03
-.db $0F $5C $29 $FF $FF $FF $FF $FF
-.db $FF $FF $01 $03 $03 $45 $10 $01
-.db $50 $0E $02 $0F $5C $29 $FF $FF
-.db $FF $FF $FF $FF $FF $01 $03 $03
-.db $45 $10 $01 $50 $0E $04 $0F $5C
-.db $29 $FF $FF $FF $FF $FF $FF $FF
-.db $01 $03 $03 $45 $10 $01 $50 $0E
-.db $0B $0F $5C $29 $FF $FF $FF $FF
-.db $FF $FF $FF $04 $01 $00 $45 $0F
-.db $01 $50 $0D $07 $FF $5B $4F $FF
-.db $FF $FF $FF $FF $FF $FF $03 $0E
-.db $00 $45 $10 $01 $50 $0E $08 $0F
-.db $5C $29 $FF $FF $FF $FF $FF $FF
-.db $FF $04 $01 $00 $51 $13 $0A $7B
-.db $0D $0F $FF $35 $05 $FF $FF $FF
-.db $05 $FF $32 $00 $02 $6E $00 $45
-.db $0C $03 $50 $0D $0D $FF $3D $1B
-.db $FF $FF $FF $FF $FF $FF $FF $0E
-.db $01 $00 $45 $0C $03 $50 $0D $0E
-.db $FF $3D $1B $FF $FF $FF $FF $FF
-.db $FF $FF $0E $01 $00 $45 $0F $01
-.db $50 $19 $0F $FF $5B $4F $FF $FF
-.db $FF $FF $FF $FF $FF $03 $0D $00
-.db $45 $10 $01 $50 $18 $0F $0F $5C
-.db $29 $FF $FF $FF $FF $FF $FF $FF
-.db $04 $03 $00 $45 $12 $05 $50 $17
-.db $0F $FF $55 $02 $FF $FF $FF $FF
-.db $FF $FF $FF $03 $03 $00 $45 $1A
-.db $05 $50 $15 $19 $FF $59 $47 $FF
-.db $FF $FF $47 $FF $FF $FF $02 $05
-.db $00 $45 $0C $05 $50 $15 $1B $FF
-.db $3D $1B $FF $FF $FF $FF $FF $FF
-.db $FF $0E $01 $00 $45 $0F $01 $50
-.db $10 $0F $FF $5B $4F $FF $FF $FF
-.db $FF $FF $FF $FF $03 $0E $00 $45
-.db $1A $05 $50 $10 $11 $FF $59 $3B
-.db $41 $FF $FF $FF $FF $FF $FF $12
-.db $01 $00 $45 $10 $01 $50 $0F $17
-.db $0F $5C $29 $FF $FF $FF $FF $FF
-.db $FF $FF $04 $01 $00 $45 $1A $03
-.db $50 $0D $18 $FF $59 $42 $FF $FF
-.db $FF $FF $FF $FF $FF $02 $05 $00
-.db $45 $0F $01 $50 $05 $1A $FF $5B
-.db $4F $FF $FF $FF $FF $FF $FF $FF
-.db $03 $0E $00 $45 $10 $01 $50 $07
-.db $1B $0F $5C $29 $FF $FF $FF $FF
-.db $FF $FF $FF $04 $01 $00 $45 $1A
-.db $05 $50 $12 $07 $FF $59 $31 $FF
-.db $FF $FF $FF $FF $FF $FF $1B $01
-.db $00 $45 $1A $05 $50 $13 $03 $FF
-.db $59 $42 $FF $FF $FF $FF $FF $FF
-.db $FF $02 $05 $00 $FF $5A $0F $0A
-.db $4F $0F $10 $FF $4F $53 $FF $FF
-.db $FF $FF $FF $FF $FF $01 $04 $03
-.db $45 $0F $01 $50 $10 $10 $FF $5B
-.db $56 $FF $FF $FF $57 $FF $FF $FF
-.db $06 $0D $03 $45 $1A $0A $50 $0F
-.db $0F $FF $59 $42 $FF $FF $FF $FF
-.db $FF $FF $FF $02 $05 $03 $45 $1A
-.db $0A $50 $0F $11 $FF $59 $3A $FF
-.db $FF $FF $FF $FF $FF $FF $13 $03
-.db $03 $45 $0C $0A $50 $0A $12 $FF
-.db $3D $1B $FF $FF $FF $FF $FF $FF
-.db $FF $0E $03 $03 $45 $0C $0A $50
-.db $0A $0E $FF $3D $1B $FF $FF $FF
-.db $FF $FF $FF $FF $0E $03 $03 $45
-.db $08 $0A $50 $07 $0B $FF $52 $11
-.db $FF $FF $FF $FF $FF $FF $FF $03
-.db $01 $03 $45 $08 $0A $50 $07 $15
-.db $FF $52 $11 $FF $FF $FF $FF $FF
-.db $FF $FF $03 $01 $03 $45 $08 $0A
-.db $50 $13 $05 $FF $52 $11 $FF $FF
-.db $FF $FF $FF $FF $FF $03 $01 $03
-.db $45 $1A $0A $50 $13 $06 $FF $59
-.db $32 $FF $FF $FF $58 $FF $FF $FF
-.db $1B $01 $03 $45 $12 $0A $50 $13
-.db $02 $FF $55 $02 $FF $FF $FF $02
-.db $FF $FF $FF $03 $00 $03 $45 $0F
-.db $01 $50 $0D $03 $FF $5B $4F $FF
-.db $FF $FF $FF $FF $FF $FF $03 $0D
-.db $03 $45 $0C $0A $50 $0D $05 $FF
-.db $3D $1B $FF $FF $FF $FF $FF $FF
-.db $FF $0E $01 $03 $45 $12 $0A $50
-.db $0C $04 $FF $55 $0D $FF $FF $FF
-.db $0D $FF $FF $FF $11 $00 $03 $45
-.db $0C $0A $50 $14 $0C $FF $3D $1B
-.db $FF $FF $FF $FF $FF $FF $FF $0E
-.db $01 $03 $45 $12 $0A $50 $15 $14
-.db $FF $55 $09 $FF $FF $FF $FF $FF
-.db $FF $FF $04 $01 $03 $45 $08 $0A
-.db $50 $14 $14 $FF $52 $13 $FF $FF
-.db $FF $FF $FF $FF $FF $04 $01 $03
-.db $45 $08 $0A $50 $0F $1B $FF $52
-.db $11 $FF $FF $FF $FF $FF $FF $FF
-.db $04 $01 $03 $45 $08 $0A $50 $0E
-.db $19 $FF $52 $11 $FF $FF $FF $FF
-.db $FF $FF $FF $04 $01 $03 $45 $1A
-.db $0A $50 $0D $1B $FF $59 $33 $FF
-.db $FF $FF $FF $FF $FF $FF $1B $01
-.db $03 $45 $0F $01 $50 $02 $10 $FF
-.db $5B $4F $FF $FF $FF $FF $FF $FF
-.db $FF $03 $0E $00 $45 $0F $01 $50
-.db $0C $19 $FF $5B $4F $FF $FF $FF
-.db $FF $FF $FF $FF $03 $0E $00 $45
-.db $0F $01 $50 $14 $13 $FF $5B $4F
-.db $FF $FF $FF $FF $FF $FF $FF $03
-.db $0E $00 $FF $5C $08 $01 $31 $05
-.db $02 $FF $31 $14 $FF $FF $FF $FF
-.db $FF $FF $FF $01 $04 $00 $63 $1D
-.db $03 $7A $0A $08 $FF $0E $20 $FF
-.db $FF $FF $FF $FF $FF $FF $01 $03
-.db $00 $64 $1D $01 $7A $0A $09 $FF
-.db $0E $1E $FF $FF $FF $57 $FF $FF
-.db $FF $01 $03 $00 $65 $1D $01 $7A
-.db $09 $06 $FF $0E $1E $FF $FF $FF
-.db $FF $FF $FF $FF $01 $03 $00 $60
-.db $1D $01 $7A $06 $03 $FF $0E $1E
-.db $FF $FF $FF $57 $FF $FF $FF $01
-.db $03 $00 $61 $1D $01 $7A $05 $04
-.db $FF $0E $1E $FF $FF $FF $FF $FF
-.db $FF $FF $01 $03 $00 $62 $1D $01
-.db $7A $06 $05 $FF $0E $1E $FF $FF
-.db $FF $FF $FF $FF $FF $01 $03 $00
-.db $45 $0B $01 $7A $09 $08 $FF $36
-.db $18 $FF $FF $FF $FF $FF $FF $FF
-.db $01 $03 $00 $45 $0B $01 $7A $09
-.db $07 $FF $36 $18 $FF $FF $FF $FF
-.db $FF $FF $FF $01 $03 $00 $45 $0B
-.db $01 $7A $08 $07 $FF $36 $18 $FF
-.db $FF $FF $FF $FF $FF $FF $01 $03
-.db $00 $FF $5C $0A $03 $67 $09 $10
-.db $FF $7A $12 $FF $FF $FF $12 $FF
-.db $FF $FF $03 $03 $00 $45 $0A $01
-.db $59 $09 $11 $FF $2E $0F $FF $FF
-.db $FF $FF $FF $FF $FF $03 $2A $00
-.db $45 $0A $01 $59 $09 $0F $FF $2E
-.db $0F $FF $FF $FF $FF $FF $FF $FF
-.db $03 $2A $00 $45 $0B $02 $59 $11
-.db $11 $FF $36 $18 $FF $FF $FF $FF
-.db $FF $FF $FF $03 $01 $00 $5D $13
-.db $01 $7B $12 $12 $FF $35 $00 $FF
-.db $FF $FF $08 $FF $32 $00 $02 $2B
-.db $00 $45 $0B $02 $59 $10 $14 $FF
-.db $36 $18 $FF $FF $FF $FF $FF $FF
-.db $FF $03 $01 $00 $45 $03 $01 $59
-.db $07 $10 $FF $2D $0F $FF $FF $FF
-.db $FF $FF $FF $FF $03 $01 $00 $45
-.db $03 $01 $59 $02 $10 $FF $2D $0F
-.db $FF $FF $FF $FF $FF $FF $FF $03
-.db $01 $00 $45 $03 $01 $59 $02 $0F
-.db $FF $2D $0F $FF $FF $FF $FF $FF
-.db $FF $FF $04 $01 $00 $45 $03 $01
-.db $59 $04 $14 $FF $2D $0F $FF $FF
-.db $FF $FF $FF $FF $FF $03 $01 $00
-.db $45 $03 $01 $59 $04 $0B $FF $2D
-.db $0F $FF $FF $FF $FF $FF $FF $FF
-.db $03 $01 $00 $45 $02 $01 $59 $0B
-.db $0F $FF $27 $0F $FF $FF $FF $FF
-.db $FF $FF $FF $03 $01 $00 $45 $02
-.db $01 $59 $0B $10 $FF $27 $0F $FF
-.db $FF $FF $FF $FF $FF $FF $03 $01
-.db $00 $45 $02 $01 $59 $0B $11 $FF
-.db $27 $0F $FF $FF $FF $FF $FF $FF
-.db $FF $03 $01 $00 $70 $0B $02 $65
-.db $0F $10 $FF $79 $18 $FF $FF $FF
-.db $5A $FF $FF $FF $0E $01 $00 $FF
-.db $5C $08 $01 $68 $12 $14 $FF $7B
-.db $10 $FF $FF $FF $71 $FF $FF $FF
-.db $01 $04 $01 $45 $23 $01 $59 $15
-.db $13 $FF $43 $25 $FF $FF $FF $FF
-.db $FF $FF $FF $14 $03 $03 $45 $03
-.db $04 $59 $12 $13 $FF $2D $0F $FF
-.db $FF $FF $FF $FF $FF $FF $04 $03
-.db $00 $45 $03 $04 $59 $12 $15 $FF
-.db $2D $0F $FF $FF $FF $FF $FF $FF
-.db $FF $04 $03 $00 $45 $03 $04 $59
-.db $13 $14 $FF $2D $0F $FF $FF $FF
-.db $FF $FF $FF $FF $04 $03 $00 $45
-.db $0A $01 $59 $11 $18 $FF $2E $0F
-.db $FF $FF $FF $FF $FF $FF $FF $04
-.db $03 $00 $45 $0A $01 $59 $0F $18
-.db $FF $2E $10 $FF $FF $FF $FF $FF
-.db $FF $FF $04 $03 $00 $45 $0A $01
-.db $59 $10 $19 $FF $2E $0F $FF $FF
-.db $FF $FF $FF $FF $FF $04 $03 $00
-.db $45 $0A $01 $59 $0F $1B $FF $2E
-.db $0F $FF $FF $FF $FF $FF $FF $FF
-.db $04 $03 $00 $45 $0A $01 $59 $10
-.db $1C $FF $2E $0F $FF $FF $FF $FF
-.db $FF $FF $FF $04 $03 $00 $45 $0A
-.db $01 $59 $11 $1B $FF $2E $0F $FF
-.db $FF $FF $FF $FF $FF $FF $04 $03
-.db $00 $5D $0A $01 $59 $0D $0E $FF
-.db $2E $0F $FF $FF $FF $FF $FF $FF
-.db $FF $02 $03 $00 $5D $0A $01 $59
-.db $0C $0B $FF $2E $0F $FF $FF $FF
-.db $FF $FF $FF $FF $02 $03 $00 $5D
-.db $0A $01 $59 $0C $09 $FF $2E $0F
-.db $FF $FF $FF $66 $FF $FF $FF $02
-.db $03 $00 $5D $0A $01 $59 $0B $0C
-.db $FF $2E $0F $FF $FF $FF $11 $FF
-.db $FF $FF $02 $03 $00 $45 $13 $01
-.db $7B $01 $0B $FF $35 $00 $FF $FF
-.db $FF $FF $FF $64 $00 $02 $06 $00
-.db $86 $03 $04 $2C $13 $12 $FF $2C
-.db $13 $FF $FF $FF $FF $FF $FF $FF
-.db $03 $03 $00 $FF $5C $1E $0A $6C
-.db $12 $1E $FF $7F $21 $FF $FF $FF
-.db $21 $FF $FF $FF $01 $04 $00 $45
-.db $1E $05 $6D $12 $1D $FF $08 $1F
-.db $FF $FF $FF $FF $FF $FF $FF $03
-.db $03 $00 $45 $1E $05 $6D $13 $1D
-.db $FF $08 $1F $FF $FF $FF $FF $FF
-.db $FF $FF $03 $03 $00 $45 $1E $05
-.db $6D $10 $1C $FF $08 $1F $FF $FF
-.db $FF $FF $FF $FF $FF $04 $03 $00
-.db $45 $0B $05 $6D $12 $1C $FF $36
-.db $1A $FF $FF $FF $FF $FF $FF $FF
-.db $0E $03 $00 $45 $0B $05 $6D $12
-.db $1B $FF $36 $1A $FF $FF $FF $FF
-.db $FF $FF $FF $0E $03 $00 $45 $0B
-.db $03 $6D $0B $1D $FF $36 $18 $FF
-.db $FF $FF $FF $FF $FF $FF $0E $01
-.db $00 $45 $0B $03 $6D $0C $1C $FF
-.db $36 $18 $FF $FF $FF $FF $FF $FF
-.db $FF $0E $01 $00 $45 $0B $03 $6D
-.db $0A $1C $FF $36 $18 $FF $FF $FF
-.db $FF $FF $FF $FF $0E $01 $00 $45
-.db $0B $03 $6D $0A $1B $FF $36 $18
-.db $FF $FF $FF $FF $FF $FF $FF $0E
-.db $01 $00 $45 $1E $03 $6D $0D $1B
-.db $FF $08 $1E $FF $FF $FF $FF $FF
-.db $FF $FF $03 $01 $00 $45 $1E $03
-.db $6D $0C $1A $FF $08 $1E $FF $FF
-.db $FF $FF $FF $FF $FF $03 $01 $00
-.db $45 $1E $03 $6D $0B $19 $FF $08
-.db $1E $FF $FF $FF $FF $FF $FF $FF
-.db $04 $01 $00 $45 $1E $03 $6D $0B
-.db $18 $FF $08 $1E $FF $FF $FF $FF
-.db $FF $FF $FF $04 $01 $00 $45 $1E
-.db $03 $6D $0B $17 $FF $08 $1E $FF
-.db $FF $FF $FF $FF $FF $FF $04 $01
-.db $00 $45 $1E $03 $6D $09 $18 $FF
-.db $08 $1E $FF $FF $FF $FF $FF $FF
-.db $FF $04 $01 $00 $45 $1E $03 $6D
-.db $0C $17 $FF $08 $1E $FF $FF $FF
-.db $FF $FF $FF $FF $03 $01 $00 $45
-.db $1D $03 $6D $0F $0B $FF $0E $1E
-.db $FF $FF $FF $FF $FF $FF $FF $03
-.db $01 $00 $45 $1D $03 $6D $0D $0A
-.db $FF $0E $1E $FF $FF $FF $FF $FF
-.db $FF $FF $03 $01 $00 $45 $1D $03
-.db $6D $0F $07 $FF $0E $1E $FF $FF
-.db $FF $FF $FF $FF $FF $03 $01 $00
-.db $45 $1D $03 $6D $10 $07 $FF $0E
-.db $1E $FF $FF $FF $FF $FF $FF $FF
-.db $03 $01 $00 $45 $1D $03 $6D $10
-.db $06 $FF $0E $1E $FF $FF $FF $FF
-.db $FF $FF $FF $03 $01 $00 $45 $1D
-.db $03 $6D $11 $08 $FF $0E $1E $FF
-.db $FF $FF $FF $FF $FF $FF $04 $01
-.db $00 $45 $13 $05 $6D $09 $10 $FF
-.db $35 $01 $FF $FF $FF $FF $FF $64
-.db $00 $02 $06 $00 $45 $13 $01 $6D
-.db $1E $03 $FF $35 $0C $FF $FF $FF
-.db $0C $FF $FF $FF $02 $06 $00 $45
-.db $13 $01 $6D $01 $11 $FF $35 $05
-.db $FF $FF $FF $05 $FF $FF $FF $02
-.db $06 $00 $75 $04 $04 $6B $08 $1A
-.db $FF $7E $0F $00 $FF $FF $FF $FF
-.db $FF $FF $1C $71 $00 $FF $5C $23
-.db $03 $6F $14 $0A $FF $81 $25 $FF
-.db $FF $FF $72 $FF $FF $FF $12 $04
-.db $00 $5F $0C $01 $84 $03 $1A $FF
-.db $3D $1B $FF $FF $FF $FF $FF $FF
-.db $FF $02 $03 $00 $5F $0C $01 $84
-.db $04 $1B $FF $3D $1B $FF $FF $FF
-.db $FF $FF $FF $FF $02 $03 $00 $5F
-.db $0C $01 $84 $05 $1C $FF $3D $1B
-.db $FF $FF $FF $FF $FF $FF $FF $02
-.db $03 $00 $5F $0C $01 $84 $06 $1C
-.db $FF $3D $1B $FF $FF $FF $FF $FF
-.db $FF $FF $02 $03 $00 $8C $0C $05
-.db $20 $05 $1B $FF $20 $1D $FF $FF
-.db $FF $1D $FF $FF $FF $02 $03 $00
-.db $45 $1A $01 $84 $02 $1C $FF $59
-.db $42 $FF $FF $FF $42 $FF $FF $FF
-.db $02 $29 $00 $45 $19 $01 $84 $05
-.db $14 $FF $57 $2D $FF $FF $FF $FF
-.db $FF $FF $FF $1B $01 $00 $45 $19
-.db $01 $84 $03 $14 $FF $57 $2D $FF
-.db $FF $FF $FF $FF $FF $FF $1B $01
-.db $00 $45 $07 $05 $84 $14 $0F $FF
-.db $50 $13 $FF $FF $FF $FF $FF $FF
-.db $FF $01 $03 $03 $45 $03 $05 $84
-.db $04 $12 $FF $2D $10 $FF $FF $FF
-.db $FF $FF $FF $FF $03 $01 $00 $45
-.db $03 $05 $84 $03 $11 $FF $2D $10
-.db $FF $FF $FF $FF $FF $FF $FF $04
-.db $01 $00 $45 $03 $05 $84 $02 $10
-.db $FF $2D $10 $FF $FF $FF $FF $FF
-.db $FF $FF $03 $01 $00 $45 $03 $07
-.db $84 $01 $0E $FF $2D $13 $FF $FF
-.db $FF $FF $FF $FF $FF $03 $01 $00
-.db $45 $03 $07 $84 $01 $0F $FF $2D
-.db $13 $FF $FF $FF $FF $FF $FF $FF
-.db $04 $01 $00 $45 $03 $07 $84 $13
-.db $0D $FF $2D $13 $FF $FF $FF $FF
-.db $FF $FF $FF $04 $01 $00 $45 $03
-.db $07 $84 $14 $0D $FF $2D $13 $FF
-.db $FF $FF $FF $FF $FF $FF $03 $01
-.db $00 $45 $23 $01 $84 $14 $0C $FF
-.db $43 $26 $FF $FF $FF $FF $FF $FF
-.db $FF $12 $03 $00 $45 $23 $01 $84
-.db $12 $0B $FF $43 $26 $FF $FF $FF
-.db $FF $FF $FF $FF $13 $03 $00 $45
-.db $03 $05 $84 $11 $04 $FF $2D $10
-.db $FF $FF $FF $FF $FF $FF $FF $03
-.db $01 $00 $45 $03 $05 $84 $10 $03
-.db $FF $2D $10 $FF $FF $FF $FF $FF
-.db $FF $FF $04 $01 $00 $45 $03 $05
-.db $84 $10 $02 $FF $2D $10 $FF $FF
-.db $FF $FF $FF $FF $FF $03 $01 $00
-.db $45 $03 $07 $84 $0E $01 $FF $2D
-.db $13 $FF $FF $FF $FF $FF $FF $FF
-.db $03 $01 $00 $45 $03 $07 $84 $0F
-.db $01 $FF $2D $13 $FF $FF $FF $FF
-.db $FF $FF $FF $04 $01 $00 $45 $0A
-.db $03 $57 $08 $05 $FF $2E $10 $FF
-.db $FF $FF $FF $FF $FF $FF $04 $03
-.db $00 $45 $0A $03 $57 $08 $06 $FF
-.db $2E $10 $FF $FF $FF $FF $FF $FF
-.db $FF $04 $03 $00 $45 $0A $03 $57
-.db $08 $07 $FF $2E $10 $FF $FF $FF
-.db $FF $FF $FF $FF $04 $03 $00 $45
-.db $0A $03 $57 $09 $05 $FF $2E $10
-.db $FF $FF $FF $FF $FF $FF $FF $04
-.db $03 $00 $45 $0A $03 $57 $09 $06
-.db $FF $2E $10 $FF $FF $FF $FF $FF
-.db $FF $FF $04 $03 $00 $5D $13 $03
-.db $7B $0E $19 $FF $35 $00 $FF $FF
-.db $FF $FF $FF $64 $00 $02 $2C $00
-.db $5E $13 $03 $7B $09 $18 $FF $35
-.db $00 $FF $FF $FF $66 $FF $FF $FF
-.db $02 $34 $00 $8B $13 $03 $07 $0C
-.db $19 $FF $07 $00 $FF $FF $FF $7C
-.db $FF $FF $FF $02 $2D $00 $FF $5C
-.db $08 $0A $71 $03 $10 $FF $83 $13
-.db $FF $FF $FF $73 $FF $FF $FF $01
-.db $04 $00 $45 $1A $01 $84 $03 $0D
-.db $FF $59 $40 $FF $FF $FF $40 $FF
-.db $FF $FF $02 $29 $03 $45 $1A $01
-.db $84 $03 $13 $FF $59 $40 $FF $FF
-.db $FF $40 $FF $FF $FF $02 $29 $03
-.db $45 $1A $01 $84 $0F $1C $FF $59
-.db $3B $FF $FF $FF $FF $FF $FF $FF
-.db $13 $03 $03 $45 $1A $08 $84 $0D
-.db $1C $FF $59 $42 $FF $FF $FF $5E
-.db $FF $FF $FF $02 $29 $03 $45 $07
-.db $08 $84 $03 $11 $FF $50 $10 $FF
-.db $FF $FF $FF $FF $FF $FF $03 $03
-.db $00 $45 $07 $08 $84 $04 $11 $FF
-.db $50 $10 $FF $FF $FF $FF $FF $FF
-.db $FF $03 $03 $00 $45 $07 $08 $84
-.db $04 $10 $FF $50 $10 $FF $FF $FF
-.db $FF $FF $FF $FF $04 $03 $00 $45
-.db $07 $08 $84 $04 $0F $FF $50 $10
-.db $FF $FF $FF $FF $FF $FF $FF $03
-.db $03 $00 $45 $07 $08 $84 $03 $0F
-.db $FF $50 $10 $FF $FF $FF $FF $FF
-.db $FF $FF $04 $03 $00 $45 $19 $05
-.db $84 $08 $1B $FF $57 $31 $FF $FF
-.db $FF $31 $FF $FF $FF $1B $01 $00
-.db $45 $19 $0A $84 $14 $1A $FF $57
-.db $31 $FF $FF $FF $FF $FF $FF $FF
-.db $1B $03 $00 $45 $07 $01 $84 $0D
-.db $05 $FF $50 $10 $FF $FF $FF $58
-.db $FF $FF $FF $03 $01 $00 $45 $07
-.db $01 $84 $0E $06 $FF $50 $10 $FF
-.db $FF $FF $FF $FF $FF $FF $03 $01
-.db $00 $45 $07 $01 $84 $0F $05 $FF
-.db $50 $10 $FF $FF $FF $FF $FF $FF
-.db $FF $03 $01 $00 $45 $07 $01 $84
-.db $0F $04 $FF $50 $10 $FF $FF $FF
-.db $FF $FF $FF $FF $04 $01 $00 $45
-.db $07 $01 $84 $11 $05 $FF $50 $10
-.db $FF $FF $FF $FF $FF $FF $FF $03
-.db $01 $00 $45 $07 $01 $84 $12 $06
-.db $FF $50 $10 $FF $FF $FF $FF $FF
-.db $FF $FF $03 $01 $00 $79 $11 $05
-.db $12 $07 $05 $FF $12 $04 $FF $FF
-.db $FF $6E $FF $FF $FF $03 $01 $00
-.db $FF $5C $13 $0A $73 $06 $1A $FF
-.db $85 $09 $FF $FF $FF $09 $FF $FF
-.db $FF $01 $04 $00 $5D $13 $05 $74
-.db $0F $1C $FF $35 $01 $FF $FF $FF
-.db $67 $FF $FF $FF $02 $2F $00 $5E
-.db $13 $05 $74 $0C $1C $FF $35 $01
-.db $FF $FF $FF $6A $FF $FF $FF $02
-.db $30 $00 $5F $13 $05 $74 $0C $15
-.db $FF $35 $01 $FF $FF $FF $FF $FF
-.db $F4 $01 $02 $31 $00 $60 $13 $05
-.db $74 $0A $14 $FF $35 $01 $FF $FF
-.db $FF $69 $FF $FF $FF $02 $32 $00
-.db $61 $13 $05 $74 $0F $19 $FF $35
-.db $01 $FF $FF $FF $77 $FF $FF $FF
-.db $02 $33 $00 $51 $13 $05 $74 $09
-.db $15 $FF $35 $01 $FF $FF $FF $61
-.db $FF $FF $FF $02 $83 $00 $45 $13
-.db $05 $74 $0F $16 $FF $35 $01 $FF
-.db $FF $FF $01 $FF $FF $FF $04 $01
-.db $00 $45 $13 $05 $74 $0E $1A $FF
-.db $35 $01 $FF $FF $FF $FF $FF $FF
-.db $FF $03 $01 $00 $45 $13 $05 $74
-.db $11 $19 $FF $35 $01 $FF $FF $FF
-.db $FF $FF $32 $00 $03 $01 $00 $45
-.db $13 $05 $74 $12 $17 $FF $35 $01
-.db $FF $FF $FF $FF $FF $FF $FF $03
-.db $01 $00 $45 $13 $05 $74 $11 $15
-.db $FF $35 $01 $FF $FF $FF $FF $FF
-.db $FF $FF $03 $01 $00 $45 $13 $05
-.db $74 $11 $14 $FF $35 $01 $FF $FF
-.db $FF $FF $FF $FF $FF $04 $01 $00
-.db $45 $13 $05 $74 $08 $18 $FF $35
-.db $01 $FF $FF $FF $FF $FF $FF $FF
-.db $04 $01 $00 $45 $13 $05 $74 $08
-.db $19 $FF $35 $01 $FF $FF $FF $FF
-.db $FF $FF $FF $04 $01 $00 $45 $13
-.db $05 $74 $0A $1A $FF $35 $01 $FF
-.db $FF $FF $FF $FF $32 $00 $03 $01
-.db $00 $62 $12 $01 $84 $09 $05 $FF
-.db $55 $02 $FF $FF $FF $FF $FF $FF
-.db $FF $02 $03 $00 $62 $12 $01 $84
-.db $09 $07 $FF $55 $02 $FF $FF $FF
-.db $FF $FF $FF $FF $02 $03 $00 $62
-.db $12 $01 $84 $08 $07 $FF $55 $02
-.db $FF $FF $FF $FF $FF $FF $FF $02
-.db $03 $00 $62 $12 $01 $84 $08 $08
-.db $FF $55 $02 $FF $FF $FF $FF $FF
-.db $FF $FF $02 $03 $00 $62 $12 $01
-.db $84 $07 $09 $FF $55 $02 $FF $FF
-.db $FF $FF $FF $FF $FF $02 $03 $00
-.db $62 $12 $01 $84 $08 $0A $FF $55
-.db $02 $FF $FF $FF $FF $FF $FF $FF
-.db $02 $03 $00 $8F $12 $04 $2B $07
-.db $0A $FF $2B $0A $FF $FF $FF $0A
-.db $FF $FF $FF $02 $03 $03 $62 $12
-.db $01 $84 $06 $0B $FF $55 $02 $FF
-.db $FF $FF $FF $FF $FF $FF $02 $03
-.db $00 $62 $12 $01 $84 $05 $0C $FF
-.db $55 $02 $FF $FF $FF $FF $FF $FF
-.db $FF $02 $03 $00 $FF $5C $24 $01
-.db $13 $03 $1D $FF $93 $17 $FF $FF
-.db $FF $17 $3E $FF $FF $04 $03 $00
-.db $45 $0C $01 $84 $03 $0A $FF $3D
-.db $1B $FF $FF $FF $1B $FF $FF $FF
-.db $01 $04 $00 $5F $12 $01 $84 $1E
-.db $0B $FF $55 $02 $FF $FF $FF $FF
-.db $FF $FF $FF $02 $03 $00 $5F $12
-.db $01 $84 $1E $09 $FF $55 $02 $FF
-.db $FF $FF $FF $FF $FF $FF $02 $03
-.db $00 $5F $12 $01 $84 $1E $08 $FF
-.db $55 $02 $FF $FF $FF $FF $FF $FF
-.db $FF $02 $03 $00 $5F $12 $01 $84
-.db $1E $06 $FF $55 $02 $FF $FF $FF
-.db $FF $FF $FF $FF $02 $03 $00 $5F
-.db $12 $01 $84 $1C $0B $FF $55 $02
-.db $FF $FF $FF $FF $FF $FF $FF $02
-.db $03 $00 $5F $12 $01 $84 $1C $0C
-.db $FF $55 $02 $FF $FF $FF $FF $FF
-.db $FF $FF $02 $03 $00 $5F $12 $01
-.db $84 $1B $0D $FF $55 $02 $FF $FF
-.db $FF $FF $FF $FF $FF $02 $03 $00
-.db $5F $12 $01 $84 $1A $0C $FF $55
-.db $02 $FF $FF $FF $FF $FF $FF $FF
-.db $02 $03 $00 $5F $08 $01 $84 $05
-.db $15 $FF $52 $11 $FF $FF $FF $FF
-.db $FF $FF $FF $03 $01 $00 $5F $08
-.db $01 $84 $04 $16 $FF $52 $11 $FF
-.db $FF $FF $FF $FF $FF $FF $03 $01
-.db $00 $5F $08 $01 $84 $05 $13 $FF
-.db $52 $11 $FF $FF $FF $FF $FF $FF
-.db $FF $04 $01 $00 $5F $08 $01 $84
-.db $03 $16 $FF $52 $11 $FF $FF $FF
-.db $FF $FF $FF $FF $04 $01 $00 $5F
-.db $08 $01 $84 $05 $18 $FF $52 $11
-.db $FF $FF $FF $63 $FF $FF $FF $03
-.db $03 $00 $45 $04 $01 $84 $07 $0F
-.db $FF $5D $13 $FF $FF $FF $FF $FF
-.db $FF $FF $03 $01 $00 $45 $04 $01
-.db $84 $06 $0E $FF $5D $13 $FF $FF
-.db $FF $FF $FF $FF $FF $03 $01 $00
-.db $5D $13 $01 $74 $0D $0E $FF $35
-.db $00 $FF $FF $FF $4F $FF $FF $FF
-.db $02 $35 $00 $5E $13 $01 $74 $17
-.db $0E $FF $35 $00 $FF $FF $FF $74
-.db $FF $FF $FF $02 $36 $00 $FF $5C
-.db $1A $03 $75 $04 $04 $FF $86 $33
-.db $FF $FF $FF $68 $FF $FF $FF $01
-.db $04 $00 $45 $19 $01 $55 $07 $09
-.db $FF $57 $2D $FF $FF $FF $FF $FF
-.db $FF $FF $05 $03 $00 $45 $19 $01
-.db $55 $07 $0C $FF $57 $2D $FF $FF
-.db $FF $FF $FF $FF $FF $05 $03 $00
-.db $45 $19 $01 $55 $0B $05 $FF $57
-.db $2D $FF $FF $FF $FF $FF $FF $FF
-.db $05 $03 $00 $45 $19 $01 $55 $0C
-.db $02 $FF $57 $2D $FF $FF $FF $FF
-.db $FF $FF $FF $05 $03 $00 $45 $19
-.db $01 $55 $07 $04 $FF $57 $2D $FF
-.db $FF $FF $FF $FF $FF $FF $05 $03
-.db $00 $45 $19 $01 $55 $08 $0B $FF
-.db $57 $2D $FF $FF $FF $FF $FF $FF
-.db $FF $05 $03 $00 $45 $19 $03 $55
-.db $03 $08 $FF $57 $2E $FF $FF $FF
-.db $FF $FF $FF $FF $03 $03 $00 $45
-.db $19 $03 $55 $05 $0B $FF $57 $2E
-.db $FF $FF $FF $FF $FF $FF $FF $03
-.db $03 $00 $45 $19 $03 $55 $09 $0D
-.db $FF $57 $2E $FF $FF $FF $FF $FF
-.db $FF $FF $03 $03 $00 $45 $19 $03
-.db $55 $0A $07 $FF $57 $2E $FF $FF
-.db $FF $FF $FF $FF $FF $03 $03 $00
-.db $45 $0A $03 $57 $04 $06 $FF $2E
-.db $10 $FF $FF $FF $FF $FF $FF $FF
-.db $04 $03 $00 $45 $0A $03 $57 $06
-.db $03 $FF $2E $10 $FF $FF $FF $FF
-.db $FF $FF $FF $04 $03 $00 $45 $0A
-.db $03 $57 $09 $03 $FF $2E $10 $FF
-.db $FF $FF $FF $FF $FF $FF $04 $03
-.db $00 $45 $0A $03 $57 $04 $0D $FF
-.db $2E $10 $FF $FF $FF $FF $FF $FF
-.db $FF $04 $03 $00 $45 $0A $03 $57
-.db $08 $0A $FF $2E $10 $FF $FF $FF
-.db $FF $FF $FF $FF $04 $03 $00 $45
-.db $1A $01 $55 $04 $03 $FF $59 $3B
-.db $FF $FF $FF $43 $FF $FF $FF $13
-.db $03 $00 $45 $1A $01 $55 $04 $05
-.db $FF $59 $3B $FF $FF $FF $5F $FF
-.db $FF $FF $13 $03 $00 $5D $13 $03
-.db $7B $11 $16 $FF $35 $04 $FF $FF
-.db $FF $4C $FF $FF $FF $02 $37 $00
-.db $5E $13 $01 $7B $0D $08 $FF $35
-.db $00 $FF $FF $FF $FF $FF $FF $FF
-.db $02 $38 $00 $5F $13 $01 $7B $0C
-.db $07 $FF $35 $00 $FF $FF $FF $FF
-.db $FF $FF $FF $02 $39 $00 $60 $13
-.db $01 $7B $0F $10 $FF $35 $00 $FF
-.db $FF $FF $FF $FF $FF $FF $02 $3A
-.db $00 $61 $13 $01 $7B $0E $11 $FF
-.db $35 $00 $FF $FF $FF $FF $FF $64
-.db $00 $02 $3B $00 $62 $13 $01 $7B
-.db $0F $0E $FF $35 $00 $FF $FF $FF
-.db $69 $FF $FF $FF $02 $3C $00 $FF
-.db $95 $19 $0A $76 $0A $0F $FF $87
-.db $32 $FF $FF $FF $70 $FF $FF $FF
-.db $1B $3D $00 $45 $19 $01 $55 $0B
-.db $07 $FF $57 $31 $FF $FF $FF $FF
-.db $FF $FF $FF $1B $03 $00 $45 $19
-.db $01 $55 $08 $06 $FF $57 $2D $FF
-.db $FF $FF $FF $FF $FF $FF $1B $03
-.db $00 $45 $19 $01 $55 $0E $06 $FF
-.db $57 $31 $FF $FF $FF $FF $FF $FF
-.db $FF $1B $03 $00 $45 $19 $01 $55
-.db $0A $19 $FF $57 $2D $FF $FF $FF
-.db $FF $FF $FF $FF $1B $03 $00 $45
-.db $19 $01 $55 $0E $18 $FF $57 $31
-.db $FF $FF $FF $FF $FF $FF $FF $1B
-.db $03 $00 $45 $19 $01 $55 $10 $19
-.db $FF $57 $2D $FF $FF $FF $FF $FF
-.db $FF $FF $1B $03 $00 $45 $19 $03
-.db $55 $0F $1A $FF $57 $2E $FF $FF
-.db $FF $FF $FF $FF $FF $1B $03 $00
-.db $45 $19 $03 $55 $0B $19 $FF $57
-.db $2E $FF $FF $FF $FF $FF $FF $FF
-.db $1B $03 $00 $45 $19 $03 $55 $0A
-.db $05 $FF $57 $2E $FF $FF $FF $FF
-.db $FF $FF $FF $1B $03 $00 $45 $19
-.db $03 $55 $10 $05 $FF $57 $2E $FF
-.db $FF $FF $FF $FF $FF $FF $1B $03
-.db $00 $5D $16 $01 $55 $13 $07 $FF
-.db $58 $40 $FF $FF $FF $FF $FF $FF
-.db $FF $02 $05 $00 $5F $16 $01 $55
-.db $0A $09 $FF $58 $40 $FF $FF $FF
-.db $FF $FF $FF $FF $02 $05 $00 $60
-.db $16 $01 $55 $0F $13 $FF $58 $40
-.db $FF $FF $FF $FF $FF $FF $FF $02
-.db $05 $00 $61 $16 $01 $55 $15 $19
-.db $FF $58 $40 $FF $FF $FF $FF $FF
-.db $FF $FF $02 $05 $00 $62 $16 $01
-.db $55 $08 $19 $FF $58 $40 $FF $FF
-.db $FF $FF $FF $FF $FF $02 $05 $00
-.db $63 $16 $01 $55 $0C $05 $FF $58
-.db $40 $FF $FF $FF $FF $FF $FF $FF
-.db $02 $05 $00 $5E $1A $01 $55 $14
-.db $0E $FF $59 $3B $FF $FF $FF $FF
-.db $FF $FF $FF $13 $03 $00 $5E $1A
-.db $01 $55 $14 $10 $FF $59 $3B $FF
-.db $FF $FF $FF $FF $FF $FF $13 $03
-.db $00 $45 $11 $03 $87 $0D $05 $FF
-.db $53 $00 $FF $FF $FF $FF $FF $FF
-.db $FF $03 $03 $00 $45 $11 $03 $87
-.db $0C $06 $FF $53 $00 $FF $FF $FF
-.db $FF $FF $FF $FF $03 $03 $00 $45
-.db $11 $03 $87 $0D $14 $FF $53 $00
-.db $FF $FF $FF $FF $FF $FF $FF $04
-.db $03 $00 $45 $11 $03 $87 $0C $18
-.db $FF $53 $00 $FF $FF $FF $FF $FF
-.db $FF $FF $04 $03 $00 $45 $11 $05
-.db $87 $14 $0F $FF $53 $04 $FF $FF
-.db $FF $04 $FF $FF $FF $04 $03 $00
-.db $FF $5C $28 $01 $77 $04 $03 $FF
-.db $5C $29 $FF $FF $FF $63 $FF $FF
-.db $FF $01 $04 $00 $5D $1F $05 $78
-.db $04 $07 $FF $42 $1F $FF $FF $FF
-.db $FF $FF $FF $FF $04 $03 $00 $5D
-.db $1F $05 $78 $08 $08 $FF $42 $1F
-.db $FF $FF $FF $FF $FF $FF $FF $04
-.db $03 $00 $5D $1F $05 $78 $0A $0E
-.db $FF $42 $1F $FF $FF $FF $FF $FF
-.db $FF $FF $04 $03 $00 $5D $1F $05
-.db $78 $0D $11 $FF $42 $1F $FF $FF
-.db $FF $FF $FF $FF $FF $04 $03 $00
-.db $5D $1F $05 $78 $0C $13 $FF $42
-.db $1F $FF $FF $FF $FF $FF $FF $FF
-.db $04 $03 $00 $5D $1F $05 $78 $09
-.db $1A $FF $42 $1F $FF $FF $FF $FF
-.db $FF $FF $FF $04 $03 $00 $5D $1F
-.db $05 $78 $0D $1A $FF $42 $1F $FF
-.db $FF $FF $FF $FF $FF $FF $04 $03
-.db $00 $5D $1F $05 $78 $0E $1D $FF
-.db $42 $1F $FF $FF $FF $FF $FF $FF
-.db $FF $04 $03 $00 $5E $0B $05 $78
-.db $08 $03 $FF $36 $1A $FF $FF $FF
-.db $FF $FF $FF $FF $0E $03 $00 $5E
-.db $0B $05 $78 $11 $03 $FF $36 $1A
-.db $FF $FF $FF $FF $FF $FF $FF $0E
-.db $03 $00 $5E $0B $05 $78 $12 $09
-.db $FF $36 $1A $FF $FF $FF $FF $FF
-.db $FF $FF $0E $03 $00 $5E $0B $05
-.db $78 $16 $0D $FF $36 $1A $FF $FF
-.db $FF $FF $FF $FF $FF $0E $03 $00
-.db $5E $0B $05 $78 $0F $0F $FF $36
-.db $1A $FF $FF $FF $FF $FF $FF $FF
-.db $0E $03 $00 $5E $0B $05 $78 $0F
-.db $19 $FF $36 $1A $FF $FF $FF $FF
-.db $FF $FF $FF $0E $03 $00 $5E $0B
-.db $05 $78 $05 $12 $FF $36 $1A $FF
-.db $FF $FF $FF $FF $FF $FF $0E $03
-.db $00 $5F $28 $01 $77 $0C $1C $FF
-.db $5C $29 $FF $FF $FF $FF $FF $FF
-.db $FF $04 $03 $00 $5F $28 $01 $77
-.db $04 $18 $FF $5C $29 $FF $FF $FF
-.db $FF $FF $FF $FF $04 $03 $00 $5F
-.db $28 $01 $77 $0C $04 $FF $5C $29
-.db $FF $FF $FF $FF $FF $FF $FF $04
-.db $03 $00 $5E $28 $01 $77 $03 $0A
-.db $FF $5C $29 $FF $FF $FF $FF $FF
-.db $FF $FF $04 $03 $00 $45 $20 $0A
-.db $79 $02 $0B $FF $55 $07 $FF $FF
-.db $FF $07 $FF $FF $FF $04 $03 $00
-.db $FF $5C $10 $01 $7C $03 $02 $FF
-.db $5C $29 $FF $FF $FF $6A $FF $FF
-.db $FF $01 $04 $00 $45 $10 $01 $7C
-.db $0B $0F $FF $5C $29 $FF $FF $FF
-.db $FF $FF $FF $FF $03 $03 $00 $45
-.db $10 $01 $7C $14 $0F $FF $5C $29
-.db $FF $FF $FF $FF $FF $FF $FF $03
-.db $03 $00 $45 $10 $01 $7C $04 $0F
-.db $FF $5C $29 $FF $FF $FF $FF $FF
-.db $FF $FF $03 $03 $00 $45 $10 $01
-.db $7C $04 $0C $FF $5C $29 $FF $FF
-.db $FF $FF $FF $FF $FF $03 $03 $00
-.db $45 $10 $01 $7C $04 $16 $FF $5C
-.db $29 $FF $FF $FF $FF $FF $FF $FF
-.db $03 $03 $00 $45 $10 $01 $7C $04
-.db $1A $FF $5C $29 $FF $FF $FF $FF
-.db $FF $FF $FF $03 $03 $00 $45 $28
-.db $01 $77 $0C $01 $FF $5C $29 $FF
-.db $FF $FF $FF $FF $FF $FF $03 $01
-.db $00 $45 $28 $01 $77 $0D $02 $FF
-.db $5C $29 $FF $FF $FF $FF $FF $FF
-.db $FF $03 $01 $00 $45 $28 $01 $77
-.db $0E $01 $FF $5C $29 $FF $FF $FF
-.db $FF $FF $FF $FF $04 $01 $00 $45
-.db $10 $01 $7C $04 $03 $FF $5C $29
-.db $FF $FF $FF $FF $FF $FF $FF $03
-.db $03 $00 $45 $10 $01 $7C $04 $06
-.db $FF $5C $29 $FF $FF $FF $FF $FF
-.db $FF $FF $04 $03 $00 $45 $1F $05
-.db $88 $09 $0F $FF $42 $22 $FF $FF
-.db $FF $FF $FF $FF $FF $03 $01 $00
-.db $45 $1F $05 $88 $04 $10 $FF $42
-.db $22 $FF $FF $FF $FF $FF $FF $FF
-.db $03 $01 $00 $45 $1F $05 $88 $04
-.db $0E $FF $42 $22 $FF $FF $FF $FF
-.db $FF $FF $FF $04 $01 $00 $45 $1F
-.db $05 $88 $0F $0F $FF $42 $22 $FF
-.db $FF $FF $FF $FF $FF $FF $04 $01
-.db $00 $FF $5C $26 $01 $7D $0A $0F
-.db $FF $5C $2A $FF $FF $FF $67 $FF
-.db $FF $FF $01 $04 $00 $45 $26 $01
-.db $7D $0A $0E $FF $5C $2A $FF $FF
-.db $FF $FF $FF $FF $FF $04 $01 $00
-.db $45 $26 $01 $7D $0A $10 $FF $5C
-.db $2A $FF $FF $FF $FF $FF $FF $FF
-.db $04 $01 $00 $45 $26 $01 $7D $0B
-.db $0E $FF $5C $2A $FF $FF $FF $FF
-.db $FF $FF $FF $04 $01 $00 $45 $26
-.db $01 $7D $0B $0F $FF $5C $2A $FF
-.db $FF $FF $FF $FF $FF $FF $04 $01
-.db $00 $45 $26 $01 $7D $0B $10 $FF
-.db $5C $2A $FF $FF $FF $FF $FF $FF
-.db $FF $04 $01 $00 $45 $1F $07 $7E
-.db $15 $11 $FF $42 $21 $FF $FF $FF
-.db $FF $FF $FF $FF $03 $03 $00 $45
-.db $1F $07 $7E $15 $10 $FF $42 $21
-.db $FF $FF $FF $FF $FF $FF $FF $03
-.db $03 $00 $45 $1F $07 $7E $16 $11
-.db $FF $42 $21 $FF $FF $FF $FF $FF
-.db $FF $FF $04 $03 $00 $45 $1F $07
-.db $7E $14 $11 $FF $42 $21 $FF $FF
-.db $FF $FF $FF $FF $FF $04 $03 $00
-.db $45 $1F $07 $7E $14 $1D $FF $42
-.db $21 $FF $FF $FF $FF $FF $FF $FF
-.db $03 $03 $00 $45 $1F $07 $7E $13
-.db $1D $FF $42 $21 $FF $FF $FF $FF
-.db $FF $FF $FF $03 $03 $00 $45 $1F
-.db $07 $7E $17 $1D $FF $42 $21 $FF
-.db $FF $FF $FF $FF $FF $FF $04 $03
-.db $00 $45 $1F $07 $7E $19 $03 $FF
-.db $42 $21 $FF $FF $FF $FF $FF $FF
-.db $FF $04 $03 $00 $45 $1F $07 $7E
-.db $1B $04 $FF $42 $21 $FF $FF $FF
-.db $FF $FF $FF $FF $03 $03 $00 $45
-.db $1F $07 $7E $1B $02 $FF $42 $21
-.db $FF $FF $FF $FF $FF $FF $FF $03
-.db $03 $00 $4E $13 $0A $7E $19 $01
-.db $FF $35 $05 $FF $FF $FF $FF $FF
-.db $FF $FF $02 $70 $00 $4B $13 $0A
-.db $7E $19 $1C $FF $35 $05 $FF $FF
-.db $FF $FF $FF $FF $FF $02 $6F $00
-.db $45 $26 $01 $7D $17 $19 $FF $5C
-.db $2A $FF $FF $FF $FF $FF $FF $FF
-.db $03 $01 $00 $45 $28 $01 $77 $07
-.db $0D $FF $5C $29 $FF $FF $FF $FF
-.db $FF $FF $FF $04 $03 $00 $45 $28
-.db $01 $77 $07 $11 $FF $5C $29 $FF
-.db $FF $FF $FF $FF $FF $FF $04 $03
-.db $00 $FF $45 $26 $01 $7D $18 $16
-.db $FF $5C $2A $FF $FF $FF $FF $FF
-.db $FF $FF $03 $03 $00 $45 $26 $01
-.db $7D $16 $17 $FF $5C $2A $FF $FF
-.db $FF $FF $FF $FF $FF $03 $03 $00
-.db $45 $26 $01 $7D $15 $17 $FF $5C
-.db $2A $FF $FF $FF $FF $FF $FF $FF
-.db $03 $03 $00 $45 $26 $01 $7D $18
-.db $10 $FF $5C $2A $FF $FF $FF $FF
-.db $FF $FF $FF $03 $03 $00 $45 $26
-.db $01 $7D $17 $0F $FF $5C $2A $FF
-.db $FF $FF $FF $FF $FF $FF $03 $03
-.db $00 $45 $26 $01 $7D $14 $0E $FF
-.db $5C $2A $FF $FF $FF $FF $FF $FF
-.db $FF $03 $03 $00 $45 $26 $01 $7D
-.db $15 $13 $FF $5C $2A $FF $FF $FF
-.db $FF $FF $FF $FF $04 $03 $00 $45
-.db $26 $01 $7D $11 $13 $FF $5C $2A
-.db $FF $FF $FF $FF $FF $FF $FF $04
-.db $03 $00 $45 $26 $01 $7D $11 $14
-.db $FF $5C $2A $FF $FF $FF $FF $FF
-.db $FF $FF $03 $03 $00 $45 $26 $01
-.db $7D $11 $12 $FF $5C $2A $FF $FF
-.db $FF $FF $FF $FF $FF $03 $03 $00
-.db $5C $13 $0A $7E $0F $09 $FF $35
-.db $05 $FF $FF $FF $68 $FF $FF $FF
-.db $02 $3E $00 $5D $13 $0A $7E $0E
-.db $08 $FF $35 $05 $FF $FF $FF $FF
-.db $FF $FF $FF $02 $3F $00 $5E $13
-.db $0A $7E $0F $0B $FF $35 $05 $FF
-.db $FF $FF $FF $FF $FF $FF $02 $40
-.db $00 $5F $13 $0A $7E $0F $14 $FF
-.db $35 $05 $FF $FF $FF $FF $FF $FF
-.db $FF $02 $41 $00 $64 $13 $0A $7E
-.db $0E $1A $FF $35 $05 $FF $FF $FF
-.db $FF $FF $FF $FF $02 $46 $00 $65
-.db $13 $0A $7E $0F $19 $FF $35 $05
-.db $FF $FF $FF $FF $FF $64 $00 $02
-.db $47 $00 $4E $13 $0A $7E $1B $0B
-.db $FF $35 $05 $FF $FF $FF $44 $FF
-.db $FF $FF $02 $48 $00 $FF $5C $08
-.db $0A $7F $0D $14 $FF $88 $11 $FF
-.db $FF $FF $11 $FF $FF $FF $01 $04
-.db $00 $45 $04 $01 $51 $0A $1D $FF
-.db $5D $12 $FF $FF $FF $12 $FF $FF
-.db $FF $03 $01 $00 $45 $04 $01 $51
-.db $0B $1E $FF $5D $10 $FF $FF $FF
-.db $10 $FF $FF $FF $04 $01 $00 $45
-.db $04 $01 $51 $0C $1D $FF $5D $11
-.db $FF $FF $FF $11 $FF $FF $FF $03
-.db $01 $00 $45 $04 $01 $51 $0C $1C
-.db $FF $5D $13 $FF $FF $FF $FF $FF
-.db $FF $FF $04 $01 $00 $45 $07 $05
-.db $84 $06 $0D $FF $50 $13 $FF $FF
-.db $FF $FF $FF $FF $FF $03 $03 $00
-.db $45 $07 $05 $84 $07 $0C $FF $50
-.db $13 $FF $FF $FF $FF $FF $FF $FF
-.db $03 $03 $00 $45 $07 $05 $84 $08
-.db $0D $FF $50 $13 $FF $FF $FF $FF
-.db $FF $FF $FF $03 $03 $00 $45 $07
-.db $05 $84 $0D $1A $FF $50 $13 $FF
-.db $FF $FF $FF $FF $FF $FF $04 $03
-.db $00 $5D $08 $01 $84 $14 $1B $FF
-.db $52 $11 $FF $FF $FF $11 $FF $FF
-.db $FF $02 $03 $00 $45 $08 $01 $84
-.db $0D $15 $FF $52 $12 $FF $FF $FF
-.db $FF $FF $FF $FF $03 $03 $00 $54
-.db $13 $07 $7B $14 $0A $FF $35 $02
-.db $FF $FF $FF $02 $FF $FF $FF $02
-.db $06 $00 $54 $13 $07 $7B $1B $07
-.db $FF $35 $02 $FF $FF $FF $02 $FF
-.db $FF $FF $02 $06 $00 $54 $13 $07
-.db $7B $15 $04 $FF $35 $00 $FF $FF
-.db $FF $03 $FF $FF $FF $02 $06 $00
-.db $54 $13 $07 $7B $1A $15 $FF $35
-.db $00 $FF $FF $FF $FF $FF $96 $00
-.db $02 $06 $00 $45 $19 $05 $84 $0F
-.db $17 $FF $57 $31 $FF $FF $FF $31
-.db $FF $FF $FF $1B $03 $00 $45 $19
-.db $05 $84 $0E $1B $FF $57 $31 $FF
-.db $FF $FF $31 $FF $FF $FF $1B $03
-.db $00 $45 $19 $05 $84 $0A $0C $FF
-.db $57 $2F $FF $FF $FF $2F $FF $FF
-.db $FF $1B $03 $00 $45 $1A $05 $84
-.db $0A $13 $FF $59 $42 $FF $FF $FF
-.db $42 $FF $FF $FF $02 $05 $00 $45
-.db $1A $05 $84 $0A $15 $FF $59 $47
-.db $FF $FF $FF $FF $FF $FF $FF $02
-.db $29 $00 $45 $1A $05 $84 $1B $1A
-.db $FF $59 $3B $FF $FF $FF $FF $FF
-.db $FF $FF $12 $03 $00 $45 $07 $05
-.db $84 $10 $1C $FF $50 $13 $FF $FF
-.db $FF $FF $FF $FF $FF $04 $03 $00
-.db $45 $0C $01 $51 $0F $1C $FF $3D
-.db $1A $FF $FF $FF $FF $FF $FF $FF
-.db $03 $03 $00 $45 $0C $01 $51 $0F
-.db $15 $FF $3D $1A $FF $FF $FF $FF
-.db $FF $FF $FF $03 $03 $00 $45 $0C
-.db $01 $51 $08 $0A $FF $3D $1A $FF
-.db $FF $FF $FF $FF $FF $FF $04 $03
-.db $00 $45 $0E $01 $51 $0E $1E $FF
-.db $5F $1B $FF $FF $FF $1B $FF $FF
-.db $FF $03 $01 $00 $45 $0E $01 $51
-.db $0D $1D $FF $5F $1B $FF $FF $FF
-.db $1B $FF $FF $FF $04 $01 $00 $45
-.db $0E $01 $51 $0B $1C $FF $5F $1B
-.db $FF $FF $FF $FF $FF $FF $FF $03
-.db $01 $00 $45 $23 $01 $84 $0A $11
-.db $FF $43 $24 $FF $FF $FF $FF $FF
-.db $FF $FF $12 $03 $00 $45 $23 $01
-.db $84 $0B $17 $FF $43 $24 $FF $FF
-.db $FF $FF $FF $FF $FF $13 $03 $00
-.db $99 $04 $01 $04 $0D $13 $FF $04
-.db $12 $FF $FF $FF $FF $FF $FF $FF
-.db $04 $01 $FF $FF $5C $1A $0A $83
-.db $09 $19 $FF $8A $3A $FF $FF $FF
-.db $41 $FF $FF $FF $14 $04 $00 $45
-.db $1A $05 $84 $09 $1A $FF $59 $42
-.db $FF $FF $FF $42 $FF $FF $FF $02
-.db $05 $00 $45 $1A $05 $84 $09 $18
-.db $FF $59 $47 $FF $FF $FF $47 $FF
-.db $FF $FF $02 $29 $00 $45 $1A $05
-.db $84 $0A $1A $FF $59 $3B $FF $FF
-.db $FF $FF $FF $FF $FF $12 $03 $00
-.db $45 $1A $05 $84 $0A $18 $FF $59
-.db $3B $FF $FF $FF $FF $FF $FF $FF
-.db $13 $03 $00 $45 $02 $0A $84 $0B
-.db $1B $FF $27 $0F $FF $FF $FF $FF
-.db $FF $FF $FF $04 $01 $00 $45 $02
-.db $0A $84 $0D $19 $FF $27 $0F $FF
-.db $FF $FF $FF $FF $FF $FF $04 $01
-.db $00 $45 $02 $0A $84 $0F $19 $FF
-.db $27 $0F $FF $FF $FF $FF $FF $FF
-.db $FF $04 $01 $00 $45 $02 $0A $84
-.db $0F $18 $FF $27 $0F $FF $FF $FF
-.db $FF $FF $FF $FF $04 $01 $00 $45
-.db $02 $0A $84 $0C $15 $FF $27 $0F
-.db $FF $FF $FF $FF $FF $FF $FF $04
-.db $01 $00 $45 $02 $0A $84 $07 $15
-.db $FF $27 $0F $FF $FF $FF $FF $FF
-.db $FF $FF $04 $01 $00 $45 $19 $05
-.db $84 $0C $18 $FF $57 $31 $FF $FF
-.db $FF $FF $FF $FF $FF $1B $01 $00
-.db $45 $19 $05 $84 $0E $17 $FF $57
-.db $31 $FF $FF $FF $FF $FF $FF $FF
-.db $1B $01 $00 $45 $19 $05 $84 $10
-.db $17 $FF $57 $31 $FF $FF $FF $FF
-.db $FF $FF $FF $1B $01 $00 $45 $19
-.db $05 $84 $10 $1A $FF $57 $31 $FF
-.db $FF $FF $FF $FF $FF $FF $1B $01
-.db $00 $45 $0C $05 $84 $0A $19 $FF
-.db $3D $1C $FF $FF $FF $FF $FF $FF
-.db $FF $04 $03 $00 $45 $0C $05 $84
-.db $0E $18 $FF $3D $1C $FF $FF $FF
-.db $FF $FF $FF $FF $03 $01 $00 $45
-.db $12 $01 $84 $0E $08 $FF $55 $02
-.db $FF $FF $FF $FF $FF $FF $FF $03
-.db $01 $00 $45 $12 $01 $84 $0E $07
-.db $FF $55 $02 $FF $FF $FF $FF $FF
-.db $FF $FF $03 $01 $00 $45 $12 $01
-.db $84 $10 $09 $FF $55 $02 $FF $FF
-.db $FF $FF $FF $FF $FF $03 $01 $00
-.db $45 $12 $05 $84 $12 $08 $FF $55
-.db $0E $FF $FF $FF $FF $FF $FF $FF
-.db $03 $01 $00 $45 $12 $01 $84 $0C
-.db $08 $FF $55 $02 $FF $FF $FF $FF
-.db $FF $FF $FF $03 $01 $00 $45 $12
-.db $01 $84 $0C $0A $FF $55 $02 $FF
-.db $FF $FF $FF $FF $FF $FF $04 $01
-.db $00 $45 $12 $01 $84 $0B $0A $FF
-.db $55 $02 $FF $FF $FF $FF $FF $FF
-.db $FF $04 $01 $00 $45 $12 $03 $84
-.db $0A $09 $FF $55 $09 $FF $FF $FF
-.db $FF $FF $FF $FF $03 $01 $00 $45
-.db $12 $03 $84 $11 $09 $FF $55 $0C
-.db $FF $FF $FF $0C $FF $FF $FF $04
-.db $01 $00 $5D $13 $01 $7B $09 $07
-.db $FF $35 $00 $FF $FF $FF $FF $FF
-.db $FF $FF $02 $49 $00 $5E $13 $01
-.db $7B $09 $08 $FF $35 $00 $FF $FF
-.db $FF $FF $FF $FF $FF $02 $4A $00
-.db $5F $13 $01 $7B $0E $0C $FF $35
-.db $00 $FF $FF $FF $FF $FF $32 $00
-.db $02 $4B $00 $60 $13 $14 $7B $1B
-.db $08 $FF $35 $05 $FF $FF $FF $3C
-.db $FF $FF $FF $02 $4D $00 $61 $13
-.db $01 $7B $0D $11 $FF $35 $00 $FF
-.db $FF $FF $FF $FF $FF $FF $02 $4C
-.db $00 $FF $38 $08 $01 $80 $12 $08
-.db $FF $89 $11 $FF $FF $FF $FF $FF
-.db $FF $FF $FF $FF $FF $39 $12 $05
-.db $26 $12 $09 $FF $26 $02 $FF $FF
-.db $FF $FF $FF $FF $FF $FF $FF $FF
-.db $80 $08 $01 $80 $12 $03 $FF $89
-.db $11 $FF $FF $FF $5C $FF $FF $FF
-.db $02 $04 $00 $9B $12 $05 $26 $12
-.db $04 $FF $26 $02 $FF $FF $FF $FF
-.db $FF $FF $FF $04 $03 $00 $45 $02
-.db $14 $84 $17 $0A $FF $27 $11 $FF
-.db $FF $FF $FF $FF $FF $FF $04 $03
-.db $00 $45 $02 $14 $84 $0F $09 $FF
-.db $27 $11 $FF $FF $FF $FF $FF $FF
-.db $FF $04 $03 $00 $45 $02 $14 $84
-.db $0E $0F $FF $27 $11 $FF $FF $FF
-.db $FF $FF $FF $FF $04 $03 $00 $45
-.db $02 $14 $84 $09 $13 $FF $27 $11
-.db $FF $FF $FF $FF $FF $FF $FF $04
-.db $03 $00 $45 $02 $14 $84 $0F $17
-.db $FF $27 $11 $FF $FF $FF $FF $FF
-.db $FF $FF $04 $03 $00 $45 $02 $14
-.db $84 $13 $0A $FF $27 $11 $FF $FF
-.db $FF $FF $FF $FF $FF $04 $03 $00
-.db $45 $0D $14 $84 $17 $18 $FF $38
-.db $1B $FF $FF $FF $FF $FF $FF $FF
-.db $04 $03 $00 $45 $0D $14 $84 $13
-.db $18 $FF $38 $1B $FF $FF $FF $FF
-.db $FF $FF $FF $04 $03 $00 $45 $0D
-.db $14 $84 $0F $05 $FF $38 $1B $FF
-.db $FF $FF $FF $FF $FF $FF $04 $03
-.db $00 $45 $0D $14 $84 $05 $0D $FF
-.db $38 $1B $FF $FF $FF $FF $FF $FF
-.db $FF $04 $03 $00 $45 $0D $14 $84
-.db $18 $0A $FF $38 $1B $FF $FF $FF
-.db $FF $FF $FF $FF $04 $03 $00 $45
-.db $0D $14 $84 $15 $04 $FF $38 $1B
-.db $FF $FF $FF $FF $FF $FF $FF $04
-.db $03 $00 $61 $02 $01 $51 $0C $0B
-.db $FF $27 $0F $FF $FF $FF $FF $FF
-.db $FF $FF $02 $03 $00 $62 $02 $01
-.db $51 $0E $11 $FF $27 $0F $FF $FF
-.db $FF $FF $FF $FF $FF $02 $03 $00
-.db $63 $02 $01 $51 $0B $15 $FF $27
-.db $0F $FF $FF $FF $FF $FF $FF $FF
-.db $02 $03 $00 $64 $02 $01 $51 $14
-.db $14 $FF $27 $0F $FF $FF $FF $FF
-.db $FF $FF $FF $02 $03 $00 $65 $02
-.db $01 $51 $14 $10 $FF $27 $0F $FF
-.db $FF $FF $FF $FF $FF $FF $02 $03
-.db $00 $66 $0D $01 $51 $14 $11 $FF
-.db $38 $18 $FF $FF $FF $FF $FF $FF
-.db $FF $02 $03 $00 $67 $0D $01 $51
-.db $0C $11 $FF $38 $18 $FF $FF $FF
-.db $FF $FF $FF $FF $02 $03 $00 $68
-.db $0D $01 $51 $0A $06 $FF $38 $18
-.db $FF $FF $FF $FF $FF $FF $FF $02
-.db $03 $00 $6A $0D $01 $51 $07 $05
-.db $FF $38 $18 $FF $FF $FF $FF $FF
-.db $FF $FF $02 $03 $00 $60 $13 $0A
-.db $7B $13 $14 $FF $35 $00 $FF $FF
-.db $FF $39 $FF $FF $FF $02 $52 $00
-.db $45 $0A $05 $57 $1E $1B $FF $2E
-.db $11 $FF $FF $FF $FF $FF $FF $FF
-.db $04 $01 $00 $45 $0A $05 $57 $1E
-.db $1C $FF $2E $11 $FF $FF $FF $FF
-.db $FF $FF $FF $04 $01 $00 $45 $0A
-.db $05 $57 $1E $1D $FF $2E $11 $FF
-.db $FF $FF $FF $FF $FF $FF $04 $01
-.db $00 $45 $0A $05 $57 $02 $01 $FF
-.db $2E $11 $FF $FF $FF $FF $FF $FF
-.db $FF $04 $01 $00 $45 $0A $05 $57
-.db $03 $01 $FF $2E $11 $FF $FF $FF
-.db $FF $FF $FF $FF $04 $01 $00 $45
-.db $0A $05 $57 $04 $01 $FF $2E $11
-.db $FF $FF $FF $FF $FF $FF $FF $04
-.db $01 $00 $FF $5C $0E $0C $14 $09
-.db $0D $FF $14 $1A $FF $FF $FF $FF
-.db $FF $FF $FF $03 $01 $02 $5D $04
-.db $08 $17 $0A $0D $FF $17 $10 $FF
-.db $FF $FF $FF $FF $FF $FF $03 $01
-.db $02 $5E $0E $0A $15 $09 $0E $FF
-.db $15 $1A $FF $FF $FF $FF $FF $FF
-.db $FF $04 $01 $02 $9E $04 $08 $16
-.db $08 $0D $FF $16 $10 $FF $FF $FF
-.db $FF $FF $FF $FF $03 $01 $02 $5F
-.db $04 $03 $85 $07 $0E $FF $5D $10
-.db $FF $FF $FF $FF $FF $FF $FF $03
-.db $01 $02 $60 $04 $03 $85 $08 $0C
-.db $FF $5D $10 $FF $FF $FF $FF $FF
-.db $FF $FF $04 $01 $02 $61 $04 $03
-.db $85 $09 $0B $FF $5D $10 $FF $FF
-.db $FF $FF $FF $FF $FF $04 $01 $02
-.db $62 $04 $03 $85 $0A $0C $FF $5D
-.db $10 $FF $FF $FF $FF $FF $FF $FF
-.db $03 $01 $02 $63 $04 $03 $85 $0B
-.db $0D $FF $5D $10 $FF $FF $FF $FF
-.db $FF $FF $FF $04 $01 $02 $64 $04
-.db $03 $85 $0B $0E $FF $5D $10 $FF
-.db $FF $FF $FF $FF $FF $FF $03 $01
-.db $02 $65 $0E $05 $85 $07 $0D $FF
-.db $5F $1A $FF $FF $FF $FF $FF $FF
-.db $FF $0E $01 $02 $66 $0E $05 $85
-.db $09 $0C $FF $5F $1A $FF $FF $FF
-.db $FF $FF $FF $FF $0E $01 $02 $67
-.db $0E $05 $85 $06 $0D $FF $5F $1A
-.db $FF $FF $FF $FF $FF $FF $FF $0E
-.db $01 $02 $68 $0E $05 $85 $05 $0D
-.db $FF $5F $1A $FF $FF $FF $FF $FF
-.db $FF $FF $0E $01 $02 $69 $0E $05
-.db $85 $04 $0D $FF $5F $1A $FF $FF
-.db $FF $FF $FF $FF $FF $0E $01 $02
-.db $6A $0E $05 $85 $05 $0C $FF $5F
-.db $1A $FF $FF $FF $FF $FF $FF $FF
-.db $0E $01 $02 $45 $08 $01 $84 $10
-.db $1D $FF $52 $11 $FF $FF $FF $FF
-.db $FF $FF $FF $03 $03 $00 $45 $08
-.db $01 $84 $11 $1D $FF $52 $11 $FF
-.db $FF $FF $FF $FF $FF $FF $03 $03
-.db $00 $45 $08 $01 $84 $10 $1C $FF
-.db $52 $11 $FF $FF $FF $FF $FF $FF
-.db $FF $04 $03 $00 $45 $08 $01 $84
-.db $10 $1B $FF $52 $11 $FF $FF $FF
-.db $FF $FF $FF $FF $04 $03 $00 $45
-.db $23 $05 $84 $10 $1A $FF $43 $26
-.db $FF $FF $FF $FF $FF $FF $FF $12
-.db $03 $00 $45 $23 $05 $84 $11 $1A
-.db $FF $43 $26 $FF $FF $FF $FF $FF
-.db $FF $FF $12 $03 $00 $45 $08 $01
-.db $84 $10 $19 $FF $52 $11 $FF $FF
-.db $FF $FF $FF $FF $FF $03 $03 $00
-.db $45 $08 $01 $84 $0F $19 $FF $52
-.db $11 $FF $FF $FF $FF $FF $FF $FF
-.db $03 $03 $00 $45 $08 $01 $84 $0F
-.db $18 $FF $52 $11 $FF $FF $FF $FF
-.db $FF $FF $FF $04 $03 $00 $45 $08
-.db $01 $84 $10 $18 $FF $52 $11 $FF
-.db $FF $FF $FF $FF $FF $FF $04 $03
-.db $00 $45 $1A $05 $84 $0F $1A $FF
-.db $59 $47 $FF $FF $FF $FF $FF $FF
-.db $FF $02 $05 $00 $45 $1A $05 $84
-.db $0E $1B $FF $59 $47 $FF $FF $FF
-.db $FF $FF $FF $FF $02 $05 $00 $45
-.db $1A $05 $84 $11 $1C $FF $59 $47
-.db $FF $FF $FF $FF $FF $FF $FF $02
-.db $05 $00 $FF $5C $08 $0E $8A $09
-.db $07 $FF $51 $11 $FF $FF $FF $FF
-.db $FF $FF $FF $01 $04 $00 $45 $07
-.db $14 $84 $09 $06 $FF $50 $11 $FF
-.db $FF $FF $FF $FF $FF $FF $04 $03
-.db $00 $45 $07 $14 $84 $0A $07 $FF
-.db $50 $11 $FF $FF $FF $FF $FF $FF
-.db $FF $03 $03 $00 $45 $07 $14 $84
-.db $0A $06 $FF $50 $11 $FF $FF $FF
-.db $FF $FF $FF $FF $03 $03 $00 $5E
-.db $04 $0A $84 $08 $09 $FF $5D $11
-.db $FF $FF $FF $FF $FF $FF $FF $03
-.db $03 $00 $5E $04 $0A $84 $07 $09
-.db $FF $5D $11 $FF $FF $FF $FF $FF
-.db $FF $FF $03 $03 $00 $5E $04 $0A
-.db $84 $09 $0A $FF $5D $11 $FF $FF
-.db $FF $FF $FF $FF $FF $04 $03 $00
-.db $5E $04 $0A $84 $08 $0B $FF $5D
-.db $11 $FF $FF $FF $FF $FF $FF $FF
-.db $04 $03 $00 $5E $04 $0A $84 $07
-.db $0C $FF $5D $11 $FF $FF $FF $FF
-.db $FF $FF $FF $03 $03 $00 $5E $04
-.db $0A $84 $09 $0C $FF $5D $11 $FF
-.db $FF $FF $FF $FF $FF $FF $04 $03
-.db $00 $5E $04 $0A $84 $05 $0A $FF
-.db $5D $15 $FF $FF $FF $FF $FF $FF
-.db $FF $03 $03 $00 $5E $04 $0A $84
-.db $05 $08 $FF $5D $15 $FF $FF $FF
-.db $FF $FF $FF $FF $03 $03 $00 $5E
-.db $04 $0A $84 $07 $0A $FF $5D $15
-.db $FF $FF $FF $FF $FF $FF $FF $04
-.db $03 $00 $5E $19 $0A $84 $04 $0C
-.db $FF $57 $33 $FF $FF $FF $FF $FF
-.db $FF $FF $1B $03 $00 $5E $19 $0A
-.db $84 $05 $0D $FF $57 $33 $FF $FF
-.db $FF $FF $FF $FF $FF $1B $03 $00
-.db $5E $19 $0A $84 $07 $0D $FF $57
-.db $33 $FF $FF $FF $FF $FF $FF $FF
-.db $1B $03 $00 $45 $23 $0A $84 $0A
-.db $08 $FF $43 $28 $FF $FF $FF $FF
-.db $FF $FF $FF $12 $03 $00 $45 $23
-.db $0A $84 $0D $07 $FF $43 $28 $FF
-.db $FF $FF $FF $FF $FF $FF $13 $03
-.db $00 $45 $23 $0A $84 $0D $03 $FF
-.db $43 $28 $FF $FF $FF $FF $FF $FF
-.db $FF $12 $03 $00 $45 $23 $0A $84
-.db $0A $0C $FF $43 $28 $FF $FF $FF
-.db $FF $FF $FF $FF $12 $03 $00 $45
-.db $23 $0A $84 $0B $07 $FF $43 $27
-.db $FF $FF $FF $FF $FF $FF $FF $12
-.db $03 $00 $45 $23 $0A $84 $08 $05
-.db $FF $43 $27 $FF $FF $FF $FF $FF
-.db $FF $FF $13 $03 $00 $45 $23 $0A
-.db $84 $06 $0B $FF $43 $27 $FF $FF
-.db $FF $FF $FF $FF $FF $13 $03 $00
-.db $45 $1A $0A $84 $06 $08 $FF $59
-.db $3B $FF $FF $FF $FF $FF $FF $FF
-.db $13 $03 $00 $45 $1A $0A $84 $0C
-.db $06 $FF $59 $3B $FF $FF $FF $FF
-.db $FF $FF $FF $12 $03 $00 $45 $1A
-.db $0A $84 $0E $09 $FF $59 $3B $FF
-.db $FF $FF $FF $FF $FF $FF $12 $03
-.db $00 $45 $1A $0A $84 $08 $03 $FF
-.db $59 $47 $FF $FF $FF $FF $FF $FF
-.db $FF $02 $05 $00 $45 $1A $0A $84
-.db $06 $06 $FF $59 $47 $FF $FF $FF
-.db $FF $FF $FF $FF $02 $05 $00 $5D
-.db $13 $01 $7B $04 $0E $FF $35 $00
-.db $FF $FF $FF $FF $FF $FF $FF $02
-.db $06 $00 $5D $13 $01 $7B $06 $12
-.db $FF $35 $00 $FF $FF $FF $FF $FF
-.db $64 $00 $02 $06 $00 $5E $04 $10
-.db $84 $09 $08 $FF $5D $11 $FF $FF
-.db $FF $5D $FF $FF $FF $02 $03 $00
-.db $FF $5C $24 $01 $13 $17 $10 $FF
-.db $93 $17 $FF $FF $FF $17 $3E $FF
-.db $FF $01 $04 $00 $6A $07 $01 $8D
-.db $17 $12 $FF $50 $10 $FF $FF $FF
-.db $FF $FF $FF $FF $02 $03 $00 $6A
-.db $07 $01 $8D $17 $14 $FF $50 $10
-.db $FF $FF $FF $FF $FF $FF $FF $02
-.db $03 $00 $63 $08 $14 $8D $1A $18
-.db $FF $52 $13 $FF $FF $FF $FF $FF
-.db $FF $FF $04 $03 $00 $63 $08 $14
-.db $8D $10 $07 $FF $52 $13 $FF $FF
-.db $FF $FF $FF $FF $FF $03 $03 $00
-.db $63 $08 $14 $8D $05 $03 $FF $52
-.db $13 $FF $FF $FF $FF $FF $FF $FF
-.db $03 $03 $00 $6A $0C $14 $8D $17
-.db $0E $FF $3D $1B $FF $FF $FF $FF
-.db $FF $FF $FF $02 $03 $00 $64 $0C
-.db $14 $8D $1E $0E $FF $3D $1B $FF
-.db $FF $FF $FF $FF $FF $FF $0E $03
-.db $00 $64 $0C $14 $8D $06 $06 $FF
-.db $3D $1B $FF $FF $FF $FF $FF $FF
-.db $FF $0E $03 $00 $64 $0C $14 $8D
-.db $13 $09 $FF $3D $1B $FF $FF $FF
-.db $FF $FF $FF $FF $0E $03 $00 $65
-.db $12 $14 $8D $10 $04 $FF $55 $0E
-.db $FF $FF $FF $FF $FF $FF $FF $04
-.db $03 $00 $65 $12 $14 $8D $19 $07
-.db $FF $55 $0E $FF $FF $FF $FF $FF
-.db $FF $FF $04 $03 $00 $65 $12 $14
-.db $8D $1D $0D $FF $55 $02 $FF $FF
-.db $FF $FF $FF $FF $FF $04 $03 $00
-.db $65 $12 $14 $8D $08 $08 $FF $55
-.db $02 $FF $FF $FF $FF $FF $FF $FF
-.db $03 $03 $00 $65 $12 $14 $8D $03
-.db $06 $FF $55 $02 $FF $FF $FF $FF
-.db $FF $FF $FF $03 $03 $00 $66 $19
-.db $14 $8D $06 $04 $FF $57 $33 $FF
-.db $FF $FF $FF $FF $FF $FF $1B $03
-.db $00 $6A $19 $14 $8D $17 $11 $FF
-.db $57 $33 $FF $FF $FF $FF $FF $FF
-.db $FF $02 $03 $00 $66 $19 $14 $8D
-.db $1E $0F $FF $57 $33 $FF $FF $FF
-.db $FF $FF $FF $FF $1B $03 $00 $66
-.db $22 $14 $82 $17 $0C $FF $57 $38
-.db $FF $FF $FF $FF $FF $FF $FF $1B
-.db $03 $00 $66 $19 $14 $8D $10 $06
-.db $FF $57 $32 $FF $FF $FF $FF $FF
-.db $FF $FF $1B $03 $00 $66 $19 $14
-.db $8D $05 $09 $FF $57 $32 $FF $FF
-.db $FF $FF $FF $FF $FF $1B $03 $00
-.db $6A $1A $14 $8D $03 $07 $FF $59
-.db $33 $FF $FF $FF $FF $FF $FF $FF
-.db $02 $03 $00 $67 $1A $14 $8D $12
-.db $07 $FF $59 $3A $FF $FF $FF $FF
-.db $FF $FF $FF $12 $03 $00 $67 $1A
-.db $14 $8D $12 $08 $FF $59 $3B $FF
-.db $FF $FF $FF $FF $FF $FF $12 $03
-.db $00 $67 $1A $14 $8D $1C $17 $FF
-.db $59 $3B $FF $FF $FF $FF $FF $FF
-.db $FF $13 $03 $00 $67 $1A $14 $8D
-.db $10 $08 $FF $59 $3A $FF $FF $FF
-.db $FF $FF $FF $FF $13 $03 $00 $67
-.db $1A $14 $8D $03 $04 $FF $59 $3A
-.db $FF $FF $FF $FF $FF $FF $FF $13
-.db $03 $00 $67 $1A $14 $8D $03 $05
-.db $FF $59 $47 $FF $FF $FF $FF $FF
-.db $FF $FF $02 $05 $00 $67 $1A $14
-.db $8D $1E $11 $FF $59 $47 $FF $FF
-.db $FF $FF $FF $FF $FF $02 $05 $00
-.db $67 $1A $14 $8D $1C $19 $FF $59
-.db $47 $FF $FF $FF $FF $FF $FF $FF
-.db $02 $05 $00 $68 $29 $01 $81 $1B
-.db $06 $0F $5C $2B $FF $FF $FF $FF
-.db $FF $FF $FF $04 $03 $00 $4E $13
-.db $14 $7B $0E $0D $FF $35 $00 $FF
-.db $FF $FF $FF $FF $FF $FF $02 $82
-.db $03 $FF $5C $22 $0A $82 $17 $1D
-.db $FF $5A $38 $FF $FF $FF $FF $FF
-.db $FF $FF $01 $04 $00 $45 $1F $0A
-.db $89 $0F $17 $FF $42 $22 $FF $FF
-.db $FF $FF $FF $FF $FF $03 $03 $00
-.db $45 $1F $0A $89 $0E $15 $FF $42
-.db $22 $FF $FF $FF $FF $FF $FF $FF
-.db $04 $03 $00 $45 $1F $0A $89 $0D
-.db $0D $FF $42 $22 $FF $FF $FF $FF
-.db $FF $FF $FF $04 $03 $00 $45 $1F
-.db $0A $89 $11 $09 $FF $42 $22 $FF
-.db $FF $FF $FF $FF $FF $FF $03 $03
-.db $00 $45 $1F $0A $89 $09 $08 $FF
-.db $42 $22 $FF $FF $FF $FF $FF $FF
-.db $FF $03 $03 $00 $45 $1F $0A $89
-.db $06 $08 $FF $42 $22 $FF $FF $FF
-.db $FF $FF $FF $FF $03 $03 $00 $45
-.db $1F $0A $89 $07 $06 $FF $42 $22
-.db $FF $FF $FF $FF $FF $FF $FF $04
-.db $03 $00 $45 $1F $0A $89 $07 $1A
-.db $FF $42 $22 $FF $FF $FF $FF $FF
-.db $FF $FF $04 $03 $00 $45 $1F $0A
-.db $89 $06 $19 $FF $42 $22 $FF $FF
-.db $FF $FF $FF $FF $FF $03 $03 $00
-.db $45 $1F $0A $89 $04 $18 $FF $42
-.db $22 $FF $FF $FF $FF $FF $FF $FF
-.db $03 $03 $00 $5D $28 $01 $77 $09
-.db $1D $FF $5C $29 $FF $FF $FF $FF
-.db $FF $FF $FF $04 $03 $00 $5D $28
-.db $01 $77 $04 $1B $FF $5C $29 $FF
-.db $FF $FF $FF $FF $FF $FF $04 $03
-.db $00 $5D $28 $01 $77 $09 $0E $FF
-.db $5C $29 $FF $FF $FF $FF $FF $FF
-.db $FF $04 $03 $00 $5D $28 $01 $77
-.db $07 $0F $FF $5C $29 $FF $FF $FF
-.db $FF $FF $FF $FF $04 $03 $00 $5D
-.db $28 $01 $77 $15 $1C $FF $5C $29
-.db $FF $FF $FF $FF $FF $FF $FF $04
-.db $03 $00 $5D $28 $01 $77 $13 $1E
-.db $FF $5C $29 $FF $FF $FF $FF $FF
-.db $FF $FF $04 $03 $00 $5D $28 $01
-.db $77 $11 $11 $FF $5C $29 $FF $FF
-.db $FF $FF $FF $FF $FF $04 $03 $00
-.db $5D $28 $01 $77 $13 $12 $FF $5C
-.db $29 $FF $FF $FF $FF $FF $FF $FF
-.db $04 $03 $00 $5D $28 $01 $77 $12
-.db $0F $FF $5C $29 $FF $FF $FF $FF
-.db $FF $FF $FF $04 $03 $00 $45 $22
-.db $01 $82 $0D $0E $FF $5A $3A $FF
-.db $FF $FF $FF $FF $FF $FF $12 $03
-.db $00 $45 $22 $01 $82 $0E $1D $FF
-.db $5A $3A $FF $FF $FF $FF $FF $FF
-.db $FF $12 $03 $00 $45 $22 $01 $82
-.db $14 $1D $FF $5A $3A $FF $FF $FF
-.db $FF $FF $FF $FF $13 $03 $00 $FF
-.db $5C $2C $01 $8C $01 $10 $FF $5C
-.db $29 $FF $FF $FF $FF $FF $FF $FF
-.db $01 $04 $00 $45 $22 $05 $82 $05
-.db $05 $FF $5A $3A $FF $FF $FF $FF
-.db $FF $FF $FF $12 $03 $00 $45 $22
-.db $05 $82 $03 $0B $FF $5A $3A $FF
-.db $FF $FF $FF $FF $FF $FF $12 $03
-.db $00 $45 $22 $05 $82 $03 $15 $FF
-.db $5A $3A $FF $FF $FF $FF $FF $FF
-.db $FF $13 $03 $00 $45 $22 $05 $82
-.db $05 $13 $FF $5A $3A $FF $FF $FF
-.db $FF $FF $FF $FF $13 $03 $00 $45
-.db $22 $0A $82 $07 $11 $FF $5A $33
-.db $FF $FF $FF $FF $FF $FF $FF $1B
-.db $03 $00 $45 $22 $0A $82 $02 $11
-.db $FF $5A $38 $FF $FF $FF $FF $FF
-.db $FF $FF $1B $03 $00 $45 $22 $0A
-.db $82 $14 $11 $FF $5A $38 $FF $FF
-.db $FF $FF $FF $FF $FF $1B $03 $00
-.db $45 $22 $0A $82 $16 $05 $FF $5A
-.db $38 $FF $FF $FF $FF $FF $FF $FF
-.db $01 $03 $00 $45 $22 $0A $82 $16
-.db $1B $FF $5A $38 $FF $FF $FF $FF
-.db $FF $FF $FF $01 $03 $00 $45 $22
-.db $05 $82 $05 $1B $FF $5A $47 $FF
-.db $FF $FF $FF $FF $FF $FF $02 $05
-.db $00 $45 $22 $05 $82 $03 $03 $FF
-.db $5A $47 $FF $FF $FF $FF $FF $FF
-.db $FF $02 $05 $00 $45 $22 $05 $82
-.db $01 $0E $FF $5A $47 $FF $FF $FF
-.db $FF $FF $FF $FF $02 $05 $00 $45
-.db $22 $05 $82 $0C $10 $FF $5A $3A
-.db $FF $FF $FF $FF $FF $FF $FF $12
-.db $03 $00 $45 $2C $01 $8C $03 $08
-.db $0F $5C $29 $FF $FF $FF $FF $FF
-.db $FF $FF $01 $03 $00 $45 $2C $01
-.db $8C $03 $18 $0F $5C $29 $FF $FF
-.db $FF $FF $FF $FF $FF $01 $03 $00
-.db $45 $2C $01 $8C $0E $10 $0F $5C
-.db $29 $FF $FF $FF $FF $FF $FF $FF
-.db $01 $03 $00 $45 $2C $01 $8C $17
-.db $05 $0F $5C $29 $FF $FF $FF $FF
-.db $FF $FF $FF $01 $03 $00 $45 $2C
-.db $01 $8C $17 $1B $0F $5C $29 $FF
-.db $FF $FF $FF $FF $FF $FF $01 $03
-.db $00 $45 $1F $14 $8B $11 $10 $FF
-.db $42 $22 $FF $FF $FF $FF $FF $FF
-.db $FF $04 $01 $00 $45 $1F $14 $8B
-.db $13 $08 $FF $42 $22 $FF $FF $FF
-.db $FF $FF $FF $FF $04 $01 $00 $45
-.db $1F $14 $8B $0A $05 $FF $42 $22
-.db $FF $FF $FF $FF $FF $FF $FF $04
-.db $01 $00 $45 $1F $14 $8B $05 $0C
-.db $FF $42 $22 $FF $FF $FF $FF $FF
-.db $FF $FF $04 $01 $00 $45 $1F $14
-.db $8B $0F $1B $FF $42 $22 $FF $FF
-.db $FF $FF $FF $FF $FF $03 $01 $00
-.db $45 $1F $14 $8B $01 $09 $FF $42
-.db $22 $FF $FF $FF $FF $FF $FF $FF
-.db $03 $01 $00 $45 $1F $14 $8B $02
-.db $0A $FF $42 $22 $FF $FF $FF $FF
-.db $FF $FF $FF $03 $01 $00 $45 $1F
-.db $14 $8B $02 $0C $FF $42 $22 $FF
-.db $FF $FF $FF $FF $FF $FF $03 $01
-.db $00 $45 $1F $14 $8B $02 $13 $FF
-.db $42 $22 $FF $FF $FF $FF $FF $FF
-.db $FF $03 $01 $00 $45 $1F $14 $8B
-.db $02 $17 $FF $42 $22 $FF $FF $FF
-.db $FF $FF $FF $FF $03 $01 $00 $45
-.db $1F $14 $8B $01 $18 $FF $42 $22
-.db $FF $FF $FF $FF $FF $FF $FF $03
-.db $01 $00 $FF $46 $22 $14 $4E $02
-.db $0F $FF $4E $37 $FF $FF $FF $0B
-.db $FF $FF $FF $1B $03 $00 $45 $22
-.db $0A $82 $02 $0D $FF $5A $3A $FF
-.db $FF $FF $FF $FF $FF $FF $12 $03
-.db $00 $45 $22 $0A $82 $02 $11 $FF
-.db $5A $3A $FF $FF $FF $FF $FF $FF
-.db $FF $13 $03 $00 $45 $22 $0A $82
-.db $07 $0B $FF $5A $3A $FF $FF $FF
-.db $FF $FF $FF $FF $13 $03 $00 $45
-.db $22 $0A $82 $07 $13 $FF $5A $3A
-.db $FF $FF $FF $FF $FF $FF $FF $13
-.db $03 $00 $45 $22 $0A $82 $15 $19
-.db $FF $5A $3A $FF $FF $FF $FF $FF
-.db $FF $FF $12 $03 $00 $45 $22 $0A
-.db $82 $15 $05 $FF $5A $3A $FF $FF
-.db $FF $FF $FF $FF $FF $12 $03 $00
-.db $45 $22 $0A $82 $15 $06 $FF $5A
-.db $38 $FF $FF $FF $FF $FF $FF $FF
-.db $1B $03 $00 $45 $22 $0A $82 $15
-.db $1A $FF $5A $33 $FF $FF $FF $FF
-.db $FF $FF $FF $1B $03 $00 $45 $22
-.db $0A $82 $0A $0D $FF $5A $38 $FF
-.db $FF $FF $FF $FF $FF $FF $1B $03
-.db $00 $45 $22 $0A $82 $0A $11 $FF
-.db $5A $33 $FF $FF $FF $FF $FF $FF
-.db $FF $1B $03 $00 $45 $22 $0A $82
-.db $03 $0E $FF $5A $38 $FF $FF $FF
-.db $FF $FF $FF $FF $1B $03 $00 $45
-.db $22 $0A $82 $03 $10 $FF $5A $33
-.db $FF $FF $FF $FF $FF $FF $FF $1B
-.db $03 $00 $45 $2C $01 $8C $15 $0F
-.db $0F $5C $29 $FF $FF $FF $FF $FF
-.db $FF $FF $03 $03 $00 $45 $2C $01
-.db $8C $0E $0F $0F $5C $29 $FF $FF
-.db $FF $FF $FF $FF $FF $04 $03 $00
-.db $45 $2C $01 $8C $09 $0F $0F $5C
-.db $29 $FF $FF $FF $FF $FF $FF $FF
-.db $04 $03 $00 $45 $2C $01 $8C $04
-.db $0F $0F $5C $29 $FF $FF $FF $FF
-.db $FF $FF $FF $03 $03 $00 $45 $2C
-.db $01 $8C $06 $0F $0F $5C $29 $FF
-.db $FF $FF $FF $FF $FF $FF $04 $03
-.db $00 $45 $2C $01 $8C $13 $06 $0F
-.db $5C $29 $FF $FF $FF $FF $FF $FF
-.db $FF $03 $03 $00 $45 $2C $01 $8C
-.db $13 $18 $0F $5C $29 $FF $FF $FF
-.db $FF $FF $FF $FF $04 $03 $00 $45
-.db $22 $0A $82 $08 $04 $FF $5A $47
-.db $FF $FF $FF $FF $FF $FF $FF $02
-.db $05 $00 $45 $22 $0A $82 $09 $05
-.db $FF $5A $47 $FF $FF $FF $FF $FF
-.db $FF $FF $02 $05 $00 $45 $22 $0A
-.db $82 $07 $1A $FF $5A $47 $FF $FF
-.db $FF $FF $FF $FF $FF $02 $05 $00
-.db $45 $22 $0A $82 $08 $1B $FF $5A
-.db $47 $FF $FF $FF $FF $FF $FF $FF
-.db $02 $05 $00 $FF $5C $2A $01 $4F
-.db $07 $10 $0F $91 $2B $FF $FF $FF
-.db $FF $FF $FF $FF $01 $03 $03 $A7
-.db $18 $07 $86 $07 $0F $FF $61 $32
-.db $FF $FF $FF $FF $FF $FF $FF $01
-.db $03 $00 $A9 $18 $05 $32 $06 $10
-.db $FF $32 $47 $FF $FF $FF $FF $FF
-.db $FF $FF $02 $05 $00 $A8 $18 $01
-.db $1D $07 $11 $FF $1D $41 $FF $FF
-.db $FF $FF $FF $FF $FF $02 $53 $00
-.db $AA $18 $03 $10 $08 $10 $FF $10
-.db $33 $FF $FF $FF $FF $FF $FF $FF
-.db $01 $03 $00 $45 $29 $01 $81 $05
-.db $0D $0F $5C $2B $FF $FF $FF $FF
-.db $FF $FF $FF $04 $01 $00 $45 $29
-.db $01 $81 $04 $10 $0F $5C $2B $FF
-.db $FF $FF $FF $FF $FF $FF $04 $01
-.db $00 $45 $29 $01 $81 $05 $13 $0F
-.db $5C $2B $FF $FF $FF $FF $FF $FF
-.db $FF $04 $01 $00 $45 $29 $01 $81
-.db $09 $13 $0F $5C $2B $FF $FF $FF
-.db $FF $FF $FF $FF $04 $01 $00 $45
-.db $29 $01 $81 $09 $0D $0F $5C $2B
-.db $FF $FF $FF $FF $FF $FF $FF $04
-.db $01 $00 $FF $FF $DA $C4 $E9 $C4
+CHAPTERS_ENEMY_UNITS:
+.dw L89807E
+.dw L898176
+.dw L898223
+.dw L8982BC
+.dw L8983ED
+.dw L89857D
+.dw L8986D5
+.dw L89883F
+.dw L8989A9
+.dw L898B39
+.dw L898CB6
+.dw L898DFA
+.dw L898F77
+.dw L8990E1
+.dw L899284
+.dw L89943A
+.dw L8995A4
+.dw L8998FD
+.dw L899AB3
+.dw L89B70B
+.dw L899DD4
+.dw L899B72
+.dw L899C90
+.dw L89C45B
+.dw L899FD6
+.dw L89A237
+.dw L89A3A1
+.dw L89C45B
+.dw L89A57D
+.dw L89A6E7
+.dw L89A8B0
+.dw L89B00E
+.dw L89B25C
+.dw L89AA79
+.dw L89C45B
+.dw L89AC09
+.dw L89AD3A
+.dw L89AECA
+.dw L89B4AA
+.dw L89BDE2
+.dw L89B933
+.dw L89BB81
+.dw L89BF98
+.dw L89C1D3
+.dw L89C39C
+.dw L898177
+.dw L8986AE
+.dw L899747
+.dw L89C45B
+.dw L89C45B
+.dw L89C45B
+.dw L89C45B
+.dw L89C45B
+.dw L89C45B
+.dw L89C45B
+.dw L89C45B
+.dw L89C45B
+.dw L89C45B
+.dw L89C45B
+.dw L89C45B
+.dw L89C45B
+.dw L89C45B
+.dw L89C45B
+
+L89807E:
+.db UNIT_ENEMY_45 CLASS_MAGE_FEMALE LEVEL_01 NAME_GALDER
+.db $05 $05 UNDEFINED PORTRAIT_MARTH_ID
+.db ITEM_RESIRE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $00 $00 $00
+
+.db UNIT_ENEMY_45 CLASS_MERCENARY LEVEL_03 NAME_GALDER
+.db $06 $04 UNDEFINED PORTRAIT_MARTH_ID
+.db ITEM_STEEL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $00 $00 $00
+
+.db UNIT_ENEMY_45 CLASS_GENERAL LEVEL_05 NAME_GALDER
+.db $0A $08 UNDEFINED PORTRAIT_MARTH_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $00 $00 $00
+
+.db UNIT_ENEMY_45 CLASS_BANDIT LEVEL_01 NAME_GALDER
+.db $0D $04 UNDEFINED PORTRAIT_MARTH_ID
+.db ITEM_IRON_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $00 $00 $00
+
+.db UNIT_ENEMY_45 CLASS_BANDIT LEVEL_01 NAME_GALDER
+.db $0E $05 UNDEFINED PORTRAIT_MARTH_ID
+.db ITEM_IRON_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $00 $00 $00
+
+.db UNIT_ENEMY_45 CLASS_BANDIT LEVEL_01 NAME_GALDER
+.db $0F $04 UNDEFINED PORTRAIT_MARTH_ID
+.db ITEM_IRON_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $00 $00 $00
+
+.db UNIT_ENEMY_45 CLASS_BANDIT LEVEL_01 NAME_GALDER
+.db $0F $06 UNDEFINED PORTRAIT_MARTH_ID
+.db ITEM_IRON_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $00 $00 $00
+
+.db UNIT_ENEMY_45 CLASS_BANDIT LEVEL_01 NAME_GALDER
+.db $0E $0C UNDEFINED PORTRAIT_MARTH_ID
+.db ITEM_IRON_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $00 $00 $00
+
+.db UNIT_ENEMY_45 CLASS_BANDIT LEVEL_01 NAME_GALDER
+.db $0E $0D UNDEFINED PORTRAIT_MARTH_ID
+.db ITEM_IRON_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $00 $00 $00
+
+.db UNIT_ENEMY_45 CLASS_BANDIT LEVEL_01 NAME_GALDER
+.db $0F $0D UNDEFINED PORTRAIT_MARTH_ID
+.db ITEM_IRON_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $00 $00 $00
+
+.db UNIT_ENEMY_45 CLASS_BANDIT LEVEL_03 NAME_GALDER
+.db $0F $0B UNDEFINED PORTRAIT_MARTH_ID
+.db ITEM_HAND_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $00 $00 $00
+
+.db UNIT_ENEMY_45 CLASS_BANDIT LEVEL_03 NAME_GALDER
+.db $10 $07 UNDEFINED PORTRAIT_MARTH_ID
+.db ITEM_HAND_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $00 $00 $00
+
+.db UNIT_ENEMY_45 CLASS_MERCENARY LEVEL_03 NAME_GALDER
+.db $05 $04 UNDEFINED PORTRAIT_MARTH_ID
+.db ITEM_STEEL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $00 $00 $00
+
+.db TERMINATOR
+
+L898176:
+.db TERMINATOR
+
+L898177:
+.db UNIT_ENEMY_45 CLASS_PIRATE LEVEL_07 NAME_GOMER
+.db $05 $03 UNDEFINED PORTRAIT_GOMER_ID
+.db ITEM_HAND_AXE UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_STEEL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db $01 $04 $01
+
+.db UNIT_ENEMY_45 CLASS_PIRATE LEVEL_01 NAME_GALDER
+.db $04 $02 UNDEFINED PORTRAIT_PIRATE_ID
+.db ITEM_IRON_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $05 $0B $03
+
+.db UNIT_ENEMY_45 CLASS_PIRATE LEVEL_01 NAME_GALDER
+.db $05 $04 UNDEFINED PORTRAIT_PIRATE_ID
+.db ITEM_IRON_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $05 $0C $03
+
+.db UNIT_ENEMY_45 CLASS_PIRATE LEVEL_01 NAME_GALDER
+.db $06 $04 UNDEFINED PORTRAIT_PIRATE_ID
+.db ITEM_IRON_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $08 $00
+
+.db UNIT_ENEMY_45 CLASS_PIRATE LEVEL_01 NAME_GALDER
+.db $06 $05 UNDEFINED PORTRAIT_PIRATE_ID
+.db ITEM_IRON_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $08 $00
+
+.db UNIT_ENEMY_45 CLASS_HUNTER LEVEL_01 NAME_GALDER
+.db $04 $06 UNDEFINED PORTRAIT_ARCHER_ID
+.db ITEM_IRON_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $08 $00
+
+.db UNIT_ENEMY_45 CLASS_CAVALIER LEVEL_01 NAME_GRUST
+.db $05 $01 UNDEFINED PORTRAIT_HORSEMAN_ID
+.db ITEM_IRON_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $07 $03
+
+.db UNIT_ENEMY_45 CLASS_CAVALIER LEVEL_01 NAME_GRUST
+.db $06 $01 UNDEFINED PORTRAIT_HORSEMAN_ID
+.db ITEM_IRON_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $07 $03
+
+.db UNIT_CASTOR CLASS_HUNTER LEVEL_03 NAME_CASTOR
+.db $05 $06 UNDEFINED PORTRAIT_CASTOR_ID
+.db ITEM_IRON_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $01 $03
+
+.db TERMINATOR
+
+L898223:
+.db UNIT_ENEMY_45 CLASS_BANDIT LEVEL_08 NAME_HYMAN
+.db $0A $03 UNDEFINED PORTRAIT_HYMAN_ID
+.db ITEM_HAND_AXE UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_MEND UNDEFINED UNDEFINED UNDEFINED
+.db $01 $04 $01
+
+.db UNIT_ENEMY_45 CLASS_BANDIT LEVEL_01 NAME_SOOTHSIRE
+.db $0A $05 UNDEFINED PORTRAIT_AXEBRO_ID
+.db ITEM_IRON_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $13 $02
+
+.db UNIT_ENEMY_45 CLASS_BANDIT LEVEL_01 NAME_SOOTHSIRE
+.db $0B $04 UNDEFINED PORTRAIT_AXEBRO_ID
+.db ITEM_IRON_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $14 $01
+
+.db UNIT_ENEMY_45 CLASS_BANDIT LEVEL_01 NAME_SOOTHSIRE
+.db $08 $01 UNDEFINED PORTRAIT_AXEBRO_ID
+.db ITEM_IRON_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_BANDIT LEVEL_03 NAME_SOOTHSIRE
+.db $07 $03 UNDEFINED PORTRAIT_AXEBRO_ID
+.db ITEM_IRON_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_BANDIT LEVEL_03 NAME_SOOTHSIRE
+.db $07 $04 UNDEFINED PORTRAIT_AXEBRO_ID
+.db ITEM_IRON_AXE UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_VULNERARY UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_HUNTER LEVEL_01 NAME_SOOTHSIRE
+.db $0E $04 UNDEFINED PORTRAIT_ARCHER_ID
+.db ITEM_IRON_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $03 $01
+
+.db UNIT_ENEMY_45 CLASS_HUNTER LEVEL_03 NAME_SOOTHSIRE
+.db $0D $05 UNDEFINED PORTRAIT_ARCHER_ID
+.db ITEM_IRON_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $03 $01
+
+.db TERMINATOR
+
+L8982BC:
+.db UNIT_BOSS_47 CLASS_ARMOR_KNIGHT LEVEL_05 NAME_MERACH
+.db $07 $08 UNDEFINED PORTRAIT_MERACH_ID
+.db ITEM_KNIGHT_KILLER UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_KNIGHT_KILLER UNDEFINED UNDEFINED UNDEFINED
+.db $01 $04 $01
+
+.db UNIT_ENEMY_45 CLASS_ARMOR_KNIGHT LEVEL_03 NAME_IRON_KNIGHT
+.db $07 $09 UNDEFINED PORTRAIT_ARMOUR_ID
+.db ITEM_IRON_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_ARMOR_KILLER UNDEFINED UNDEFINED UNDEFINED
+.db $01 $04 $03
+
+.db UNIT_ENEMY_45 CLASS_ARMOR_KNIGHT LEVEL_01 NAME_IRON_KNIGHT
+.db $04 $0B UNDEFINED PORTRAIT_ARMOUR_ID
+.db ITEM_IRON_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $03
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_01 NAME_MACEDON
+.db $04 $0A UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_HEAL UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_HEAL UNDEFINED UNDEFINED UNDEFINED
+.db $02 $05 $03
+
+.db UNIT_ENEMY_45 CLASS_CAVALIER LEVEL_03 NAME_MACEDON
+.db $07 $04 UNDEFINED PORTRAIT_HORSEMAN_ID
+.db ITEM_IRON_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $05 $00 $03
+
+.db UNIT_ENEMY_45 CLASS_PEGASUS_KNIGHT LEVEL_01 NAME_PEGASUS
+.db $06 $02 UNDEFINED PORTRAIT_PEGASUS_KNIGHT_ID
+.db ITEM_JAVELIN UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $05 $00 $03
+
+.db UNIT_ENEMY_45 CLASS_ARCHER LEVEL_03 NAME_MACEDON
+.db $09 $08 UNDEFINED PORTRAIT_GUARD_ARCHER_ID
+.db ITEM_IRON_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $00 $03
+
+.db UNIT_ENEMY_45 CLASS_ARCHER LEVEL_01 NAME_MACEDON
+.db $09 $09 UNDEFINED PORTRAIT_GUARD_ARCHER_ID
+.db ITEM_IRON_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $02 $03
+
+.db UNIT_ENEMY_45 CLASS_THIEF LEVEL_03 NAME_THIEF
+.db $0D $09 UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_IRON_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED ITEM_BOOTS ITEM_IRON_SWORD
+.db $02 $06 $03
+
+.db UNIT_ENEMY_45 CLASS_THIEF LEVEL_01 NAME_THIEF
+.db $0D $08 UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_IRON_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_SILVER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db $02 $06 $03
+
+.db UNIT_ENEMY_45 CLASS_CAVALIER LEVEL_01 NAME_MACEDON
+.db $04 $1A UNDEFINED PORTRAIT_HORSEMAN_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $03
+
+.db UNIT_ENEMY_45 CLASS_CAVALIER LEVEL_01 NAME_MACEDON
+.db $04 $1B UNDEFINED PORTRAIT_HORSEMAN_ID
+.db ITEM_IRON_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $03
+
+.db UNIT_ENEMY_45 CLASS_CAVALIER LEVEL_01 NAME_MACEDON
+.db $04 $1C UNDEFINED PORTRAIT_HORSEMAN_ID
+.db ITEM_IRON_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $03
+
+.db UNIT_ENEMY_45 CLASS_ARCHER LEVEL_03 NAME_MACEDON
+.db $04 $1D UNDEFINED PORTRAIT_GUARD_ARCHER_ID
+.db ITEM_IRON_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $01 $03
+
+.db UNIT_ENEMY_45 CLASS_PEGASUS_KNIGHT LEVEL_03 NAME_PEGASUS
+.db $03 $1C UNDEFINED PORTRAIT_PEGASUS_KNIGHT_ID
+.db ITEM_IRON_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $01
+
+.db UNIT_MATTHIS CLASS_CAVALIER LEVEL_02 NAME_MATTHIS
+.db $07 $05 UNDEFINED PORTRAIT_MATTHIS_ID
+.db ITEM_IRON_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $06 $02 $01
+
+.db TERMINATOR
+
+L8983ED:
+.db UNIT_ENEMY_45 CLASS_GENERAL LEVEL_03 NAME_EMEREUS
+.db $0C $0C UNDEFINED PORTRAIT_EMEREUS_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db $01 $04 $01
+
+.db UNIT_ENEMY_45 CLASS_ARMOR_KNIGHT LEVEL_03 NAME_IRON_KNIGHT
+.db $02 $09 UNDEFINED PORTRAIT_ARMOUR_ID
+.db ITEM_IRON_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $03
+
+.db UNIT_ENEMY_45 CLASS_ARMOR_KNIGHT LEVEL_03 NAME_IRON_KNIGHT
+.db $07 $0C UNDEFINED PORTRAIT_ARMOUR_ID
+.db ITEM_IRON_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $03
+
+.db UNIT_ENEMY_45 CLASS_ARCHER LEVEL_03 NAME_MACEDON
+.db $06 $0E UNDEFINED PORTRAIT_GUARD_ARCHER_ID
+.db ITEM_STEEL_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $03 $03
+
+.db UNIT_ENEMY_45 CLASS_ARCHER LEVEL_03 NAME_MACEDON
+.db $06 $0A UNDEFINED PORTRAIT_GUARD_ARCHER_ID
+.db ITEM_IRON_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $03 $03
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_03 NAME_MACEDON
+.db $04 $0C UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_HEAL UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $05 $03
+
+.db UNIT_ENEMY_45 CLASS_MAGE_MALE LEVEL_03 NAME_MACEDON
+.db $04 $07 UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_FIRE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $03 $03
+
+.db UNIT_ENEMY_45 CLASS_SOLDIER LEVEL_03 NAME_MACEDON
+.db $02 $18 UNDEFINED PORTRAIT_BECK_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $03
+
+.db UNIT_ENEMY_45 CLASS_SOLDIER LEVEL_03 NAME_MACEDON
+.db $03 $1B UNDEFINED PORTRAIT_BECK_ID
+.db ITEM_IRON_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_DOOR_KEY UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $03
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_05 NAME_MACEDON
+.db $0D $0E UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_HEAL UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $05 $03
+
+.db UNIT_ENEMY_45 CLASS_MAGE_MALE LEVEL_03 NAME_MACEDON
+.db $0E $0D UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_THUNDER UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $03 $03
+
+.db UNIT_ENEMY_45 CLASS_ARCHER LEVEL_03 NAME_MACEDON
+.db $0F $0D UNDEFINED PORTRAIT_GUARD_ARCHER_ID
+.db ITEM_STEEL_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $03 $03
+
+.db UNIT_ENEMY_45 CLASS_ARCHER LEVEL_03 NAME_MACEDON
+.db $0F $0B UNDEFINED PORTRAIT_GUARD_ARCHER_ID
+.db ITEM_IRON_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $03 $03
+
+.db UNIT_ENEMY_4B CLASS_THIEF LEVEL_01 NAME_THIEF
+.db $12 $0A UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_STEEL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $15 $03
+
+.db UNIT_ENEMY_4E CLASS_THIEF LEVEL_03 NAME_THIEF
+.db $02 $1A UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_IRON_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED ITEM_BOOTS ITEM_IRON_SWORD
+.db $02 $16 $03
+
+.db UNIT_ENEMY_4F CLASS_THIEF LEVEL_03 NAME_THIEF
+.db $12 $0E UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_STEEL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $17 $03
+
+.db UNIT_ENEMY_50 CLASS_THIEF LEVEL_03 NAME_THIEF
+.db $12 $0B UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_STEEL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $18 $03
+
+.db UNIT_ENEMY_45 CLASS_ARMOR_KNIGHT LEVEL_01 NAME_IRON_KNIGHT
+.db $12 $09 UNDEFINED PORTRAIT_ARMOUR_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $02 $03
+
+.db UNIT_ENEMY_45 CLASS_ARMOR_KNIGHT LEVEL_01 NAME_IRON_KNIGHT
+.db $13 $09 UNDEFINED PORTRAIT_ARMOUR_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $02 $03
+
+.db UNIT_RICKARD CLASS_THIEF LEVEL_01 NAME_RICKARD
+.db $0A $19 UNDEFINED PORTRAIT_RICKARD_ID
+.db ITEM_IRON_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_DOOR_KEY UNDEFINED UNDEFINED UNDEFINED
+.db $17 $07 $03
+
+.db UNIT_WENDELL CLASS_BISHOP_MALE LEVEL_01 NAME_WENDELL
+.db $0A $1C UNDEFINED PORTRAIT_WENDELL_ID
+.db ITEM_THUNDER UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_MAGIC_SHIELD UNDEFINED UNDEFINED UNDEFINED
+.db $0B $07 $03
+
+.db TERMINATOR
+
+L89857D:
+.db UNIT_BOSS_48 CLASS_GENERAL LEVEL_03 NAME_HARMEIN
+.db $1B $0A UNDEFINED PORTRAIT_HARMEIN_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db $01 $04 $01
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_03 NAME_GRUST
+.db $1B $0E UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_RECOVER UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $05 $03
+
+.db UNIT_ENEMY_45 CLASS_ARMOR_KNIGHT LEVEL_01 NAME_GRUST
+.db $1A $08 UNDEFINED PORTRAIT_ARMOUR_ID
+.db ITEM_IRON_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $03
+
+.db UNIT_ENEMY_45 CLASS_ARMOR_KNIGHT LEVEL_03 NAME_GRUST
+.db $1A $07 UNDEFINED PORTRAIT_ARMOUR_ID
+.db ITEM_IRON_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $03
+
+.db UNIT_ENEMY_45 CLASS_THIEF LEVEL_03 NAME_THIEF
+.db $15 $08 UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_IRON_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_DOOR_KEY UNDEFINED UNDEFINED UNDEFINED
+.db $02 $10 $03
+
+.db UNIT_ENEMY_45 CLASS_MERCENARY LEVEL_03 NAME_GRUST
+.db $0F $0E UNDEFINED PORTRAIT_SMALL_ID
+.db ITEM_IRON_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $00 $03
+
+.db UNIT_ENEMY_45 CLASS_MERCENARY LEVEL_03 NAME_GRUST
+.db $0F $0C UNDEFINED PORTRAIT_SMALL_ID
+.db ITEM_STEEL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $00 $03
+
+.db UNIT_ENEMY_45 CLASS_ARCHER LEVEL_03 NAME_GRUST
+.db $09 $0C UNDEFINED PORTRAIT_GUARD_ARCHER_ID
+.db ITEM_IRON_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $01 $03
+
+.db UNIT_ENEMY_45 CLASS_ARCHER LEVEL_03 NAME_GRUST
+.db $09 $0E UNDEFINED PORTRAIT_GUARD_ARCHER_ID
+.db ITEM_IRON_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $01 $03
+
+.db UNIT_ENEMY_45 CLASS_DRACOKNIGHT LEVEL_01 NAME_DRAGOON
+.db $18 $0B UNDEFINED PORTRAIT_WYVERN_ID
+.db ITEM_IRON_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $05 $02 $00
+
+.db UNIT_ENEMY_45 CLASS_PEGASUS_KNIGHT LEVEL_03 NAME_PEGASUS
+.db $18 $0C UNDEFINED PORTRAIT_PEGASUS_KNIGHT_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $05 $02 $00
+
+.db UNIT_ENEMY_45 CLASS_PEGASUS_KNIGHT LEVEL_01 NAME_PEGASUS
+.db $19 $0C UNDEFINED PORTRAIT_PEGASUS_KNIGHT_ID
+.db ITEM_JAVELIN UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $02 $00
+
+.db UNIT_EST CLASS_PEGASUS_KNIGHT LEVEL_03 NAME_EST
+.db $1C $0E UNDEFINED PORTRAIT_EST_ID
+.db ITEM_IRON_LANCE ITEM_ARMOR_KILLER UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $00 $00
+
+.db UNIT_CATRIA CLASS_PEGASUS_KNIGHT LEVEL_03 NAME_CATRIA
+.db $1B $0D UNDEFINED PORTRAIT_CATRIA_ID
+.db ITEM_IRON_LANCE ITEM_KILLER_SWORD UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $00 $00
+
+.db UNIT_PALLA CLASS_PEGASUS_KNIGHT LEVEL_03 NAME_PALLA
+.db $1C $0C UNDEFINED PORTRAIT_PALLA_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $00 $00
+
+.db UNIT_MINERVA_ENEMY CLASS_DRACOKNIGHT LEVEL_01 NAME_MINERVA
+.db $19 $0B UNDEFINED PORTRAIT_MINERVA_ID
+.db ITEM_JAVELIN ITEM_IRON_SWORD UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $00 $00
+
+.db TERMINATOR
+
+L8986AE:
+.db UNIT_BOSS_5B CLASS_ARMOR_KNIGHT LEVEL_10 NAME_KANNIVAL
+.db $0C $1A UNDEFINED PORTRAIT_KANNIVAL_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_GODDESS_ICON UNDEFINED UNDEFINED UNDEFINED
+.db $01 $04 $01
+
+.db UNIT_ENEMY_57 CLASS_PIRATE LEVEL_01 NAME_PYRATHI
+.db $13 $0D UNDEFINED PORTRAIT_PIRATE_ID
+.db ITEM_SILVER_AXE UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_SILVER_AXE UNDEFINED UNDEFINED UNDEFINED
+.db $02 $57 $03
+
+.db TERMINATOR
+
+L8986D5:
+.db UNIT_ENEMY_45 CLASS_GENERAL LEVEL_01 NAME_ZHAROV
+.db $02 $03 UNDEFINED PORTRAIT_NEHRING_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_SPEED_RING UNDEFINED UNDEFINED UNDEFINED
+.db $01 $04 $01
+
+.db UNIT_ENEMY_5C CLASS_DRACOKNIGHT LEVEL_01 NAME_DRAGOON
+.db $03 $03 UNDEFINED PORTRAIT_WYVERN_ID
+.db ITEM_IRON_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_5D CLASS_PEGASUS_KNIGHT LEVEL_03 NAME_PEGASUS
+.db $04 $03 UNDEFINED PORTRAIT_PEGASUS_KNIGHT_ID
+.db ITEM_JAVELIN UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_DRACOKNIGHT LEVEL_01 NAME_DRAGOON
+.db $03 $04 UNDEFINED PORTRAIT_WYVERN_ID
+.db ITEM_JAVELIN UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_03 NAME_GRUST
+.db $02 $06 UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_FORTIFY UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $27 $03
+
+.db UNIT_ENEMY_45 CLASS_PEGASUS_KNIGHT LEVEL_03 NAME_PEGASUS
+.db $01 $06 UNDEFINED PORTRAIT_PEGASUS_KNIGHT_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_CAVALIER LEVEL_05 NAME_GRUST
+.db $03 $02 UNDEFINED PORTRAIT_HORSEMAN_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_ARMOR_KNIGHT LEVEL_03 NAME_GRUST
+.db $02 $01 UNDEFINED PORTRAIT_ARMOUR_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_5E CLASS_CAVALIER LEVEL_03 NAME_GRUST
+.db $02 $0F UNDEFINED PORTRAIT_HORSEMAN_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $03
+
+.db UNIT_ENEMY_45 CLASS_CAVALIER LEVEL_03 NAME_GRUST
+.db $02 $10 UNDEFINED PORTRAIT_HORSEMAN_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_HERO LEVEL_01 NAME_GRUST
+.db $06 $12 UNDEFINED PORTRAIT_SWORD_AND_SHIELD_ID
+.db ITEM_ARMOR_KILLER UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_HERO_CREST UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $03
+
+.db UNIT_ENEMY_45 CLASS_ARMOR_KNIGHT LEVEL_03 NAME_GRUST
+.db $10 $15 UNDEFINED PORTRAIT_ARMOUR_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $03
+
+.db UNIT_ENEMY_45 CLASS_ARMOR_KNIGHT LEVEL_03 NAME_GRUST
+.db $13 $10 UNDEFINED PORTRAIT_ARMOUR_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $03
+
+.db UNIT_ENEMY_45 CLASS_ARCHER LEVEL_03 NAME_GRUST
+.db $0F $0E UNDEFINED PORTRAIT_GUARD_ARCHER_ID
+.db ITEM_IRON_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $03 $03
+
+.db UNIT_ENEMY_45 CLASS_ARCHER LEVEL_05 NAME_GRUST
+.db $0F $0D UNDEFINED PORTRAIT_GUARD_ARCHER_ID
+.db ITEM_STEEL_BOW UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_STEEL_BOW UNDEFINED UNDEFINED UNDEFINED
+.db $0E $03 $03
+
+.db UNIT_ENEMY_45 CLASS_SNIPER LEVEL_01 NAME_GRUST
+.db $0F $0C UNDEFINED PORTRAIT_GUARD_ARCHER_AIMING_ID
+.db ITEM_STEEL_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $03 $00
+
+.db UNIT_ENEMY_51 CLASS_THIEF LEVEL_07 NAME_THIEF
+.db $11 $14 UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_IRON_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $63 $03
+
+.db UNIT_MARIA CLASS_SISTER LEVEL_03 NAME_MARIA
+.db $0D $10 UNDEFINED PORTRAIT_MARIA_ID
+.db ITEM_HEAL UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $02 $00
+
+.db UNIT_MINERVA CLASS_DRACOKNIGHT LEVEL_01 NAME_MINERVA
+.db $1E $03 UNDEFINED PORTRAIT_MINERVA_ID
+.db ITEM_JAVELIN UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $02 $00
+
+.db TERMINATOR
+
+L89883F:
+.db UNIT_ENEMY_45 CLASS_MANAKETE_MALE LEVEL_01 NAME_KHOZEN
+.db $06 $08 UNDEFINED PORTRAIT_KHOZEN_ID
+.db ITEM_FIRE_DRAGON_STONE UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_ENERGY_RING UNDEFINED UNDEFINED UNDEFINED
+.db $04 $0D $01
+
+.db UNIT_ENEMY_45 CLASS_BALLISTICIAN LEVEL_03 NAME_GRUST
+.db $09 $07 UNDEFINED PORTRAIT_CATAPULT_ID
+.db ITEM_STONE_HEDGE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $12 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_BALLISTICIAN LEVEL_03 NAME_GRUST
+.db $04 $0C UNDEFINED PORTRAIT_CATAPULT_ID
+.db ITEM_STONE_HEDGE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $12 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_THIEF LEVEL_05 NAME_THIEF
+.db $06 $0C UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_STEEL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $06 $00
+
+.db UNIT_ENEMY_45 CLASS_HORSEMAN LEVEL_01 NAME_GRUST
+.db $09 $0B UNDEFINED PORTRAIT_HORSEMAN_BOW_ID
+.db ITEM_IRON_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $01 $00
+
+.db UNIT_ENEMY_45 CLASS_BALLISTICIAN LEVEL_03 NAME_GRUST
+.db $0B $06 UNDEFINED PORTRAIT_CATAPULT_ID
+.db ITEM_QUICK_RAIN UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $12 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_CAVALIER LEVEL_05 NAME_GRUST
+.db $0C $05 UNDEFINED PORTRAIT_HORSEMAN_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_CAVALIER LEVEL_07 NAME_GRUST
+.db $0B $04 UNDEFINED PORTRAIT_HORSEMAN_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_CAVALIER LEVEL_05 NAME_GRUST
+.db $0C $04 UNDEFINED PORTRAIT_HORSEMAN_ID
+.db ITEM_JAVELIN UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_JAVELIN UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_PEGASUS_KNIGHT LEVEL_03 NAME_PEGASUS
+.db $07 $05 UNDEFINED PORTRAIT_PEGASUS_KNIGHT_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $06 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_PEGASUS_KNIGHT LEVEL_03 NAME_PEGASUS
+.db $07 $0A UNDEFINED PORTRAIT_PEGASUS_KNIGHT_ID
+.db ITEM_JAVELIN UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_PEGASUS_KNIGHT LEVEL_05 NAME_PEGASUS
+.db $08 $0E UNDEFINED PORTRAIT_PEGASUS_KNIGHT_ID
+.db ITEM_JAVELIN UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $06 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_SNIPER LEVEL_03 NAME_GRUST
+.db $06 $06 UNDEFINED PORTRAIT_GUARD_ARCHER_AIMING_ID
+.db ITEM_STEEL_BOW UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_STEEL_BOW UNDEFINED UNDEFINED UNDEFINED
+.db $0E $03 $00
+
+.db UNIT_ENEMY_45 CLASS_MERCENARY LEVEL_03 NAME_RUFFIAN
+.db $10 $18 UNDEFINED PORTRAIT_SMALL_ID
+.db ITEM_STEEL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $06 $03 $03
+
+.db UNIT_ENEMY_45 CLASS_MERCENARY LEVEL_03 NAME_RUFFIAN
+.db $11 $18 UNDEFINED PORTRAIT_SMALL_ID
+.db ITEM_STEEL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $06 $03 $03
+
+.db UNIT_ENEMY_45 CLASS_MERCENARY LEVEL_03 NAME_RUFFIAN
+.db $14 $15 UNDEFINED PORTRAIT_SMALL_ID
+.db ITEM_STEEL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $03
+
+.db UNIT_ENEMY_45 CLASS_MERCENARY LEVEL_03 NAME_RUFFIAN
+.db $14 $16 UNDEFINED PORTRAIT_SMALL_ID
+.db ITEM_STEEL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $03
+
+.db UNIT_ENEMY_45 CLASS_MERCENARY LEVEL_05 NAME_RUFFIAN
+.db $16 $16 UNDEFINED PORTRAIT_SMALL_ID
+.db ITEM_STEEL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $03
+
+.db UNIT_ENEMY_45 CLASS_MERCENARY LEVEL_05 NAME_RUFFIAN
+.db $16 $15 UNDEFINED PORTRAIT_SMALL_ID
+.db ITEM_STEEL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $03
+
+.db TERMINATOR
+
+L8989A9:
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_05 NAME_VOLZHIN
+.db $17 $10 UNDEFINED PORTRAIT_VOLZHIN_ID
+.db ITEM_BOLGANONE UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_BOLGANONE UNDEFINED UNDEFINED UNDEFINED
+.db $01 $04 $01
+
+.db UNIT_ENEMY_45 CLASS_ARCHER LEVEL_03 NAME_DOLHR
+.db $02 $09 UNDEFINED PORTRAIT_GUARD_ARCHER_ID
+.db ITEM_STEEL_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $02 $00
+
+.db UNIT_ENEMY_45 CLASS_ARCHER LEVEL_05 NAME_DOLHR
+.db $01 $09 UNDEFINED PORTRAIT_GUARD_ARCHER_ID
+.db ITEM_STEEL_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $02 $00
+
+.db UNIT_ENEMY_45 CLASS_MAGE_MALE LEVEL_05 NAME_DOLHR
+.db $02 $02 UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_THUNDER UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_THUNDER UNDEFINED UNDEFINED UNDEFINED
+.db $1B $02 $00
+
+.db UNIT_ENEMY_45 CLASS_ARMOR_KNIGHT LEVEL_05 NAME_DOLHR
+.db $06 $02 UNDEFINED PORTRAIT_ARMOUR_ID
+.db ITEM_JAVELIN UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_ARMOR_KNIGHT LEVEL_03 NAME_DOLHR
+.db $08 $09 UNDEFINED PORTRAIT_ARMOUR_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_ARMOR_KNIGHT LEVEL_05 NAME_DOLHR
+.db $09 $09 UNDEFINED PORTRAIT_ARMOUR_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_4E CLASS_THIEF LEVEL_03 NAME_THIEF
+.db $09 $1A UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_STEEL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_RAPIER UNDEFINED UNDEFINED UNDEFINED
+.db $02 $19 $03
+
+.db UNIT_ENEMY_4F CLASS_THIEF LEVEL_03 NAME_THIEF
+.db $0A $1A UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_KILLER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $1A $03
+
+.db UNIT_ENEMY_51 CLASS_THIEF LEVEL_05 NAME_THIEF
+.db $03 $10 UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_STEEL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $1B $03
+
+.db UNIT_ENEMY_52 CLASS_THIEF LEVEL_05 NAME_THIEF
+.db $03 $11 UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_STEEL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $1C $03
+
+.db UNIT_ENEMY_45 CLASS_MANAKETE_MALE LEVEL_01 NAME_DOLHR
+.db $1B $06 UNDEFINED PORTRAIT_WINGED_MAGE_ID
+.db ITEM_FIRE_DRAGON_STONE UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_VULNERARY UNDEFINED UNDEFINED UNDEFINED
+.db $03 $0D $00
+
+.db UNIT_ENEMY_45 CLASS_MAGE_MALE LEVEL_03 NAME_DOLHR
+.db $1E $0D UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_ELFIRE UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_ELFIRE UNDEFINED UNDEFINED UNDEFINED
+.db $1B $02 $00
+
+.db UNIT_ENEMY_45 CLASS_MAGE_MALE LEVEL_05 NAME_DOLHR
+.db $1E $0F UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_THUNDER UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $02 $00
+
+.db UNIT_ENEMY_45 CLASS_SOLDIER LEVEL_05 NAME_DOLHR
+.db $1C $1B UNDEFINED PORTRAIT_BECK_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_SOLDIER LEVEL_07 NAME_DOLHR
+.db $1D $1A UNDEFINED PORTRAIT_BECK_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_KNIGHT_CREST UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_SOLDIER LEVEL_05 NAME_DOLHR
+.db $1E $1B UNDEFINED PORTRAIT_BECK_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_05 NAME_DOLHR
+.db $17 $11 UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_RECOVER UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $05 $00
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_05 NAME_DOLHR
+.db $17 $0F UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_MEND UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_MEND UNDEFINED UNDEFINED UNDEFINED
+.db $02 $05 $00
+
+.db UNIT_ENEMY_45 CLASS_SNIPER LEVEL_05 NAME_DOLHR
+.db $17 $0C UNDEFINED PORTRAIT_GUARD_ARCHER_AIMING_ID
+.db ITEM_STEEL_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $03 $00
+
+.db UNIT_ENEMY_45 CLASS_GENERAL LEVEL_03 NAME_DOLHR
+.db $15 $0D UNDEFINED PORTRAIT_GENERAL_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db TERMINATOR
+
+L898B39:
+.db UNIT_ENEMY_45 CLASS_GENERAL LEVEL_05 NAME_JIOL
+.db $12 $03 UNDEFINED PORTRAIT_JIOL_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db $01 $04 $01
+
+.db UNIT_ENEMY_45 CLASS_ARCHER LEVEL_05 NAME_GRA
+.db $07 $06 UNDEFINED PORTRAIT_GUARD_ARCHER_ID
+.db ITEM_STEEL_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $03 $00
+
+.db UNIT_ENEMY_45 CLASS_ARCHER LEVEL_05 NAME_GRA
+.db $08 $06 UNDEFINED PORTRAIT_GUARD_ARCHER_ID
+.db ITEM_STEEL_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $03 $00
+
+.db UNIT_ENEMY_45 CLASS_SNIPER LEVEL_05 NAME_GRA
+.db $07 $11 UNDEFINED PORTRAIT_GUARD_ARCHER_AIMING_ID
+.db ITEM_SILVER_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $03 $00
+
+.db UNIT_ENEMY_45 CLASS_ARCHER LEVEL_05 NAME_GRA
+.db $09 $06 UNDEFINED PORTRAIT_GUARD_ARCHER_ID
+.db ITEM_STEEL_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $03 $00
+
+.db UNIT_ENEMY_45 CLASS_ARCHER LEVEL_05 NAME_GRA
+.db $07 $08 UNDEFINED PORTRAIT_GUARD_ARCHER_ID
+.db ITEM_STEEL_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $03 $00
+
+.db UNIT_ENEMY_45 CLASS_ARCHER LEVEL_05 NAME_GRA
+.db $07 $0A UNDEFINED PORTRAIT_GUARD_ARCHER_ID
+.db ITEM_STEEL_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $03 $00
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_07 NAME_GRA
+.db $08 $07 UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_FORTIFY UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $27 $00
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_03 NAME_GRA
+.db $12 $04 UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_MEND UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $05 $00
+
+.db UNIT_ENEMY_45 CLASS_ARMOR_KNIGHT LEVEL_05 NAME_GRA
+.db $0A $11 UNDEFINED PORTRAIT_ARMOUR_ID
+.db ITEM_KNIGHT_KILLER UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $10 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_ARMOR_KNIGHT LEVEL_05 NAME_GRA
+.db $0A $10 UNDEFINED PORTRAIT_ARMOUR_ID
+.db ITEM_JAVELIN UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_ARMOR_KNIGHT LEVEL_05 NAME_GRA
+.db $0B $15 UNDEFINED PORTRAIT_ARMOUR_ID
+.db ITEM_JAVELIN UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_ARMOR_KNIGHT LEVEL_05 NAME_GRA
+.db $0B $16 UNDEFINED PORTRAIT_ARMOUR_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_SNIPER LEVEL_03 NAME_GRA
+.db $16 $18 UNDEFINED PORTRAIT_GUARD_ARCHER_AIMING_ID
+.db ITEM_SILVER_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $03 $00
+
+.db UNIT_ENEMY_51 CLASS_THIEF LEVEL_05 NAME_THIEF
+.db $1C $0B UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_IRON_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_VULNERARY UNDEFINED UNDEFINED UNDEFINED
+.db $02 $1E $00
+
+.db UNIT_ENEMY_54 CLASS_THIEF LEVEL_07 NAME_THIEF
+.db $1C $09 UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_IRON_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_VULNERARY UNDEFINED UNDEFINED UNDEFINED
+.db $02 $1F $00
+
+.db UNIT_ENEMY_45 CLASS_ARMOR_KNIGHT LEVEL_05 NAME_GRA
+.db $14 $02 UNDEFINED PORTRAIT_ARMOUR_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_5C CLASS_ARMOR_KNIGHT LEVEL_09 NAME_GRA
+.db $14 $09 UNDEFINED PORTRAIT_ARMOUR_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_HERO LEVEL_01 NAME_GRA
+.db $1A $09 UNDEFINED PORTRAIT_SWORD_AND_SHIELD_ID
+.db ITEM_STEEL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ASTRAM CLASS_HERO LEVEL_01 NAME_ASTRAM
+.db $08 $11 UNDEFINED PORTRAIT_ASTRAM_ID
+.db ITEM_SILVER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_SILVER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db $02 $1D $00
+
+.db TERMINATOR
+
+L898CB6:
+.db UNIT_GHARNEF CLASS_BISHOP_MALE LEVEL_10 NAME_GHARNEF
+.db $18 $1C UNDEFINED PORTRAIT_GHARNEF_ID
+.db ITEM_IMHULLU UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_FALCHION UNDEFINED UNDEFINED UNDEFINED
+.db $1B $01 $01
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_03 NAME_KHADEIN
+.db $04 $04 UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_BOLGANONE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $01 $04 $00
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_03 NAME_KHADEIN
+.db $01 $04 UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_RECOVER UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $05 $00
+
+.db UNIT_ENEMY_45 CLASS_MAGE_MALE LEVEL_03 NAME_KHADEIN
+.db $0A $03 UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_FIRE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $00 $00
+
+.db UNIT_ENEMY_45 CLASS_MAGE_MALE LEVEL_03 NAME_KHADEIN
+.db $0A $02 UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_THUNDER UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $01 $00
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_03 NAME_KHADEIN
+.db $0C $02 UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_RECOVER UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $05 $00
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_01 NAME_KHADEIN
+.db $0D $01 UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_FIRE ITEM_HEAL UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $01 $00
+
+.db UNIT_ENEMY_45 CLASS_MAGE_MALE LEVEL_01 NAME_KHADEIN
+.db $17 $0A UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_FIRE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $00 $00
+
+.db UNIT_ENEMY_45 CLASS_MAGE_MALE LEVEL_03 NAME_KHADEIN
+.db $17 $0B UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_THUNDER UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $00 $00
+
+.db UNIT_ENEMY_45 CLASS_MAGE_MALE LEVEL_03 NAME_KHADEIN
+.db $15 $18 UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_ELFIRE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $00 $00
+
+.db UNIT_ENEMY_45 CLASS_MAGE_MALE LEVEL_01 NAME_KHADEIN
+.db $0C $1C UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_FIRE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $01 $00
+
+.db UNIT_ENEMY_45 CLASS_MAGE_MALE LEVEL_01 NAME_KHADEIN
+.db $0C $1D UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_THUNDER UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_THUNDER UNDEFINED UNDEFINED UNDEFINED
+.db $1B $01 $00
+
+.db UNIT_ENEMY_45 CLASS_PEGASUS_KNIGHT LEVEL_05 NAME_PEGASUS
+.db $07 $18 UNDEFINED PORTRAIT_PEGASUS_KNIGHT_ID
+.db ITEM_IRON_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $06 $00 $00
+
+.db UNIT_ENEMY_45 CLASS_PEGASUS_KNIGHT LEVEL_05 NAME_PEGASUS
+.db $06 $14 UNDEFINED PORTRAIT_PEGASUS_KNIGHT_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $06 $00 $00
+
+.db UNIT_ENEMY_45 CLASS_DRACOKNIGHT LEVEL_03 NAME_DRAGOON
+.db $06 $13 UNDEFINED PORTRAIT_WYVERN_ID
+.db ITEM_JAVELIN UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $06 $00 $00
+
+.db UNIT_ENEMY_45 CLASS_DRACOKNIGHT LEVEL_03 NAME_DRAGOON
+.db $04 $06 UNDEFINED PORTRAIT_WYVERN_ID
+.db ITEM_IRON_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $06 $00 $00
+
+.db UNIT_ENEMY_51 CLASS_THIEF LEVEL_05 NAME_THIEF
+.db $0B $1B UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_STEEL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_RECOVER UNDEFINED UNDEFINED UNDEFINED
+.db $02 $20 $00
+
+.db TERMINATOR
+
+L898DFA:
+.db UNIT_ENEMY_5C CLASS_GENERAL LEVEL_07 NAME_HOLLSTADT
+.db $0D $14 UNDEFINED PORTRAIT_HOLLSTADT_ID
+.db ITEM_KILLER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_SHIELD_RING UNDEFINED UNDEFINED UNDEFINED
+.db $01 $04 $01
+
+.db UNIT_ENEMY_45 CLASS_GENERAL LEVEL_03 NAME_GRUST
+.db $0D $15 UNDEFINED PORTRAIT_GENERAL_ID
+.db ITEM_KNIGHT_KILLER UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $10 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_HERO LEVEL_03 NAME_GRUST
+.db $12 $1C UNDEFINED PORTRAIT_SWORD_AND_SHIELD_ID
+.db ITEM_THUNDER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_THUNDER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_HERO LEVEL_03 NAME_GRUST
+.db $17 $1B UNDEFINED PORTRAIT_SWORD_AND_SHIELD_ID
+.db ITEM_SILVER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_HERO_CREST UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_PALADIN LEVEL_01 NAME_SABLE_KNIGHT
+.db $0F $13 UNDEFINED PORTRAIT_HORSEMAN_JAVELIN_2_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_HORSEMAN LEVEL_03 NAME_GRUST
+.db $10 $12 UNDEFINED PORTRAIT_HORSEMAN_BOW_ID
+.db ITEM_IRON_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $01 $00
+
+.db UNIT_ENEMY_45 CLASS_HORSEMAN LEVEL_03 NAME_GRUST
+.db $10 $13 UNDEFINED PORTRAIT_HORSEMAN_BOW_ID
+.db ITEM_IRON_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $01 $00
+
+.db UNIT_ENEMY_45 CLASS_HORSEMAN LEVEL_03 NAME_GRUST
+.db $10 $14 UNDEFINED PORTRAIT_HORSEMAN_BOW_ID
+.db ITEM_STEEL_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $01 $00
+
+.db UNIT_ENEMY_45 CLASS_CAVALIER LEVEL_05 NAME_GRUST
+.db $11 $12 UNDEFINED PORTRAIT_HORSEMAN_ID
+.db ITEM_KNIGHT_KILLER UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_CAVALIER LEVEL_03 NAME_GRUST
+.db $11 $13 UNDEFINED PORTRAIT_HORSEMAN_ID
+.db ITEM_IRON_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_CAVALIER LEVEL_03 NAME_GRUST
+.db $11 $14 UNDEFINED PORTRAIT_HORSEMAN_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_CAVALIER LEVEL_03 NAME_GRUST
+.db $1C $13 UNDEFINED PORTRAIT_HORSEMAN_ID
+.db ITEM_IRON_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_CAVALIER LEVEL_03 NAME_GRUST
+.db $1C $14 UNDEFINED PORTRAIT_HORSEMAN_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_CAVALIER LEVEL_03 NAME_GRUST
+.db $1C $15 UNDEFINED PORTRAIT_HORSEMAN_ID
+.db ITEM_IRON_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_54 CLASS_THIEF LEVEL_07 NAME_THIEF
+.db $12 $03 UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_STEEL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $06 $00
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_05 NAME_GRUST
+.db $0D $12 UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_PHYSIC UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $29 $00
+
+.db UNIT_ENEMY_45 CLASS_DRACOKNIGHT LEVEL_03 NAME_DRAGOON
+.db $10 $16 UNDEFINED PORTRAIT_WYVERN_ID
+.db ITEM_JAVELIN UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_DRACOKNIGHT LEVEL_03 NAME_DRAGOON
+.db $10 $17 UNDEFINED PORTRAIT_WYVERN_ID
+.db ITEM_JAVELIN UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_DRACOKNIGHT LEVEL_01 NAME_DRAGOON
+.db $11 $16 UNDEFINED PORTRAIT_WYVERN_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_XANE CLASS_FREELANCER LEVEL_01 NAME_XANE
+.db $14 $1B UNDEFINED PORTRAIT_XANE_ID
+.db ITEM_IRON_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $18 $07 $00
+
+.db TERMINATOR
+
+L898F77:
+.db UNIT_ENEMY_5C CLASS_MANAKETE_MALE LEVEL_01 NAME_MORZAS
+.db $09 $19 UNDEFINED PORTRAIT_MORZAS_ID
+.db ITEM_DEMON_DRAGON_STONE UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_SPEED_RING UNDEFINED UNDEFINED UNDEFINED
+.db $01 $04 $01
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_10 NAME_DOLHR
+.db $10 $1D UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_PHYSIC UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_MEMBER_CARD UNDEFINED UNDEFINED UNDEFINED
+.db $02 $05 $00
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_10 NAME_DOLHR
+.db $10 $1E UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_FORTIFY UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_FORTIFY UNDEFINED UNDEFINED UNDEFINED
+.db $02 $05 $00
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_01 NAME_DOLHR
+.db $09 $1A UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_WORM UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $12 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_SNIPER LEVEL_03 NAME_DOLHR
+.db $0E $1C UNDEFINED PORTRAIT_GUARD_ARCHER_AIMING_ID
+.db ITEM_SILVER_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $03 $00
+
+.db UNIT_ENEMY_45 CLASS_ARMOR_KNIGHT LEVEL_05 NAME_DOLHR
+.db $0B $18 UNDEFINED PORTRAIT_ARMOUR_ID
+.db ITEM_JAVELIN UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_ARMOR_KNIGHT LEVEL_05 NAME_DOLHR
+.db $0C $18 UNDEFINED PORTRAIT_ARMOUR_ID
+.db ITEM_JAVELIN UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_MAGE_MALE LEVEL_05 NAME_DOLHR
+.db $16 $0D UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_BLIZZARD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $01 $00
+
+.db UNIT_ENEMY_45 CLASS_MAGE_MALE LEVEL_05 NAME_DOLHR
+.db $13 $0B UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_THUNDER UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $01 $00
+
+.db UNIT_ENEMY_45 CLASS_SNIPER LEVEL_03 NAME_DOLHR
+.db $13 $08 UNDEFINED PORTRAIT_GUARD_ARCHER_AIMING_ID
+.db ITEM_STEEL_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $01 $00
+
+.db UNIT_ENEMY_45 CLASS_HERO LEVEL_03 NAME_DOLHR
+.db $10 $08 UNDEFINED PORTRAIT_SWORD_AND_SHIELD_ID
+.db ITEM_STEEL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_ARMOR_KNIGHT LEVEL_05 NAME_DOLHR
+.db $08 $07 UNDEFINED PORTRAIT_ARMOUR_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_ARMOR_KNIGHT LEVEL_05 NAME_DOLHR
+.db $09 $08 UNDEFINED PORTRAIT_ARMOUR_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_MANAKETE_MALE LEVEL_01 NAME_DOLHR
+.db $05 $08 UNDEFINED PORTRAIT_WINGED_MAGE_ID
+.db ITEM_FIRE_DRAGON_STONE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $0D $00
+
+.db UNIT_ENEMY_45 CLASS_MAGE_MALE LEVEL_07 NAME_DOLHR
+.db $06 $0B UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_ELFIRE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $01 $00
+
+.db UNIT_ENEMY_5D CLASS_THIEF LEVEL_09 NAME_THIEF
+.db $14 $0B UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_IRON_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_DOOR_KEY UNDEFINED UNDEFINED UNDEFINED
+.db $02 $64 $00
+
+.db UNIT_ENEMY_5E CLASS_THIEF LEVEL_07 NAME_THIEF
+.db $14 $0A UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_STEEL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $65 $00
+
+.db UNIT_ENEMY_5F CLASS_THIEF LEVEL_07 NAME_THIEF
+.db $15 $0B UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_STEEL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $66 $00
+
+.db UNIT_ENEMY_60 CLASS_THIEF LEVEL_07 NAME_THIEF
+.db $15 $0C UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_STEEL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $67 $00
+
+.db TERMINATOR
+
+L8990E1:
+.db UNIT_TIKI CLASS_MANAKETE_FEMALE LEVEL_05 NAME_TIKI
+.db $01 $08 UNDEFINED PORTRAIT_TIKI_ID
+.db ITEM_DIVINE_DRAGON_STONE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $01 $04 $01
+
+.db UNIT_ENEMY_45 CLASS_MAGE_MALE LEVEL_01 NAME_DOLHR
+.db $02 $08 UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_BOLGANONE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $03 $00
+
+.db UNIT_ENEMY_45 CLASS_MAGE_MALE LEVEL_01 NAME_DOLHR
+.db $02 $07 UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_ELFIRE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $03 $00
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_05 NAME_DOLHR
+.db $02 $0A UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_RECOVER UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $05 $00
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_05 NAME_DOLHR
+.db $02 $05 UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_MEND UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $05 $00
+
+.db UNIT_ENEMY_45 CLASS_HERO LEVEL_05 NAME_DOLHR
+.db $02 $03 UNDEFINED PORTRAIT_SWORD_AND_SHIELD_ID
+.db ITEM_SILVER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_SILVER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db $06 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_HERO LEVEL_05 NAME_DOLHR
+.db $07 $07 UNDEFINED PORTRAIT_SWORD_AND_SHIELD_ID
+.db ITEM_STEEL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $06 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_HERO LEVEL_03 NAME_DOLHR
+.db $02 $09 UNDEFINED PORTRAIT_SWORD_AND_SHIELD_ID
+.db ITEM_SILVER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $06 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_MAGE_MALE LEVEL_07 NAME_DOLHR
+.db $05 $04 UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_FIRE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $03 $00
+
+.db UNIT_ENEMY_45 CLASS_HERO LEVEL_01 NAME_DOLHR
+.db $05 $0B UNDEFINED PORTRAIT_SWORD_AND_SHIELD_ID
+.db ITEM_THUNDER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $06 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_SNIPER LEVEL_05 NAME_DOLHR
+.db $09 $0C UNDEFINED PORTRAIT_GUARD_ARCHER_AIMING_ID
+.db ITEM_STEEL_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_HUNTER LEVEL_05 NAME_DOLHR
+.db $0D $03 UNDEFINED PORTRAIT_ARCHER_ID
+.db ITEM_STEEL_BOW UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_STEEL_BOW UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_MERCENARY LEVEL_07 NAME_DOLHR
+.db $0B $08 UNDEFINED PORTRAIT_SMALL_ID
+.db ITEM_STEEL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $06 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_MERCENARY LEVEL_07 NAME_DOLHR
+.db $0F $07 UNDEFINED PORTRAIT_SMALL_ID
+.db ITEM_STEEL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $06 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_MERCENARY LEVEL_07 NAME_DOLHR
+.db $13 $08 UNDEFINED PORTRAIT_SMALL_ID
+.db ITEM_STEEL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $06 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_HUNTER LEVEL_05 NAME_DOLHR
+.db $15 $03 UNDEFINED PORTRAIT_ARCHER_ID
+.db ITEM_STEEL_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_HUNTER LEVEL_05 NAME_DOLHR
+.db $11 $0C UNDEFINED PORTRAIT_ARCHER_ID
+.db ITEM_STEEL_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_5D CLASS_THIEF LEVEL_09 NAME_THIEF_74
+.db $02 $0C UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_STEEL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED ITEM_BOOTS ITEM_IRON_SWORD
+.db $02 $68 $00
+
+.db UNIT_ENEMY_5E CLASS_THIEF LEVEL_07 NAME_THIEF_74
+.db $02 $0D UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_STEEL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED ITEM_BOOTS ITEM_IRON_SWORD
+.db $02 $69 $00
+
+.db UNIT_ENEMY_5F CLASS_THIEF LEVEL_07 NAME_THIEF_74
+.db $02 $02 UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_KILLER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $6A $00
+
+.db UNIT_ENEMY_60 CLASS_THIEF LEVEL_09 NAME_THIEF_74
+.db $01 $02 UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_STEEL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED ITEM_BOOTS ITEM_IRON_SWORD
+.db $02 $6B $00
+
+.db UNIT_ENEMY_61 CLASS_THIEF LEVEL_07 NAME_THIEF_74
+.db $01 $03 UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_STEEL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $6C $00
+
+.db TERMINATOR
+
+L899284:
+.db UNIT_CAMUS CLASS_PALADIN LEVEL_14 NAME_CAMUS
+.db $04 $0A UNDEFINED PORTRAIT_CAMUS_ID
+.db ITEM_GRADIVUS UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_GRADIVUS UNDEFINED UNDEFINED UNDEFINED
+.db $01 $04 $01
+
+.db UNIT_ENEMY_45 CLASS_PALADIN LEVEL_03 NAME_SABLE_KNIGHT
+.db $04 $09 UNDEFINED PORTRAIT_HORSEMAN_JAVELIN_2_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $01 $03 $03
+
+.db UNIT_ENEMY_45 CLASS_PALADIN LEVEL_03 NAME_SABLE_KNIGHT
+.db $04 $0B UNDEFINED PORTRAIT_HORSEMAN_JAVELIN_2_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $01 $03 $03
+
+.db UNIT_ENEMY_45 CLASS_PALADIN LEVEL_03 NAME_SABLE_KNIGHT
+.db $05 $0A UNDEFINED PORTRAIT_HORSEMAN_JAVELIN_2_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $01 $03 $03
+
+.db UNIT_ENEMY_45 CLASS_PALADIN LEVEL_03 NAME_SABLE_KNIGHT
+.db $04 $0E UNDEFINED PORTRAIT_HORSEMAN_JAVELIN_2_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_KNIGHT_CREST UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_PALADIN LEVEL_03 NAME_SABLE_KNIGHT
+.db $04 $0F UNDEFINED PORTRAIT_HORSEMAN_JAVELIN_2_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_PALADIN LEVEL_03 NAME_SABLE_KNIGHT
+.db $04 $10 UNDEFINED PORTRAIT_HORSEMAN_JAVELIN_2_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_PALADIN LEVEL_03 NAME_SABLE_KNIGHT
+.db $0B $0F UNDEFINED PORTRAIT_HORSEMAN_JAVELIN_2_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_PALADIN LEVEL_01 NAME_SABLE_KNIGHT
+.db $0C $0F UNDEFINED PORTRAIT_HORSEMAN_JAVELIN_2_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_PALADIN LEVEL_01 NAME_SABLE_KNIGHT
+.db $0C $0E UNDEFINED PORTRAIT_HORSEMAN_JAVELIN_2_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_PALADIN LEVEL_03 NAME_SABLE_KNIGHT
+.db $0C $10 UNDEFINED PORTRAIT_HORSEMAN_JAVELIN_2_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_GENERAL LEVEL_03 NAME_GRUST
+.db $07 $18 UNDEFINED PORTRAIT_GENERAL_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $06 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_GENERAL LEVEL_03 NAME_GRUST
+.db $06 $18 UNDEFINED PORTRAIT_GENERAL_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $06 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_BALLISTICIAN LEVEL_03 NAME_GRUST
+.db $05 $17 UNDEFINED PORTRAIT_CATAPULT_ID
+.db ITEM_QUICK_RAIN UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $13 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_05 NAME_GRUST
+.db $06 $0A UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_FORTIFY UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $28 $00
+
+.db UNIT_ENEMY_45 CLASS_BALLISTICIAN LEVEL_05 NAME_GRUST
+.db $04 $0C UNDEFINED PORTRAIT_CATAPULT_ID
+.db ITEM_ELEPHANT UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $13 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_BALLISTICIAN LEVEL_03 NAME_GRUST
+.db $0D $0F UNDEFINED PORTRAIT_CATAPULT_ID
+.db ITEM_FIRE_GUN UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $13 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_BALLISTICIAN LEVEL_05 NAME_GRUST
+.db $0D $10 UNDEFINED PORTRAIT_CATAPULT_ID
+.db ITEM_QUICK_RAIN UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $13 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_THIEF LEVEL_10 NAME_THIEF
+.db $0A $04 UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_DEVIL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED $C8 ITEM_IRON_SWORD
+.db $02 $10 $00
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_05 NAME_GRUST
+.db $01 $0B UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_MEND UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $05 $00
+
+.db UNIT_ENEMY_45 CLASS_BALLISTICIAN LEVEL_03 NAME_GRUST
+.db $03 $0C UNDEFINED PORTRAIT_CATAPULT_ID
+.db ITEM_ELEPHANT UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $14 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_GENERAL LEVEL_03 NAME_GRUST
+.db $01 $0E UNDEFINED PORTRAIT_GENERAL_ID
+.db ITEM_JAVELIN UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $06 $03 $00
+
+.db UNIT_LORENZ CLASS_GENERAL LEVEL_05 NAME_LORENZ
+.db $01 $0D UNDEFINED PORTRAIT_LORENZ_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $06 $03 $00
+
+.db TERMINATOR
+
+L89943A:
+.db UNIT_MICHALIS CLASS_DRACOKNIGHT LEVEL_20 NAME_MICHALIS
+.db $11 $15 UNDEFINED PORTRAIT_MICHALIS_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_IOTE_SHIELD UNDEFINED UNDEFINED UNDEFINED
+.db $06 $01 $01
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_05 NAME_MACEDON
+.db $13 $16 UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_PHYSIC UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $05 $00
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_05 NAME_MACEDON
+.db $13 $14 UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_PHYSIC UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $05 $00
+
+.db UNIT_ENEMY_45 CLASS_THIEF LEVEL_07 NAME_THIEF
+.db $09 $05 UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_DEVIL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $06 $00
+
+.db UNIT_ENEMY_45 CLASS_HORSEMAN LEVEL_03 NAME_MACEDON
+.db $0D $16 UNDEFINED PORTRAIT_HORSEMAN_BOW_ID
+.db ITEM_SILVER_BOW UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_SILVER_BOW UNDEFINED UNDEFINED UNDEFINED
+.db $0E $01 $00
+
+.db UNIT_ENEMY_45 CLASS_HORSEMAN LEVEL_03 NAME_MACEDON
+.db $0C $10 UNDEFINED PORTRAIT_HORSEMAN_BOW_ID
+.db ITEM_SILVER_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $01 $00
+
+.db UNIT_ENEMY_45 CLASS_DRACOKNIGHT LEVEL_03 NAME_DRAGOON
+.db $11 $17 UNDEFINED PORTRAIT_WYVERN_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $01 $04 $00
+
+.db UNIT_ENEMY_45 CLASS_DRACOKNIGHT LEVEL_03 NAME_DRAGOON
+.db $11 $13 UNDEFINED PORTRAIT_WYVERN_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_DRACOKNIGHT LEVEL_03 NAME_DRAGOON
+.db $0F $17 UNDEFINED PORTRAIT_WYVERN_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_ELYSIAN_WHIP UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_DRACOKNIGHT LEVEL_03 NAME_DRAGOON
+.db $0C $11 UNDEFINED PORTRAIT_WYVERN_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_DRACOKNIGHT LEVEL_03 NAME_DRAGOON
+.db $10 $12 UNDEFINED PORTRAIT_WYVERN_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_PEGASUS_KNIGHT LEVEL_10 NAME_PEGASUS
+.db $0C $15 UNDEFINED PORTRAIT_PEGASUS_KNIGHT_ID
+.db ITEM_JAVELIN UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_PEGASUS_KNIGHT LEVEL_10 NAME_PEGASUS
+.db $0D $15 UNDEFINED PORTRAIT_PEGASUS_KNIGHT_ID
+.db ITEM_JAVELIN UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_PEGASUS_KNIGHT LEVEL_10 NAME_PEGASUS
+.db $10 $11 UNDEFINED PORTRAIT_PEGASUS_KNIGHT_ID
+.db ITEM_JAVELIN UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_PEGASUS_KNIGHT LEVEL_10 NAME_PEGASUS
+.db $0F $10 UNDEFINED PORTRAIT_PEGASUS_KNIGHT_ID
+.db ITEM_JAVELIN UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_CAVALIER LEVEL_05 NAME_MACEDON
+.db $0D $0F UNDEFINED PORTRAIT_HORSEMAN_JAVELIN_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_CAVALIER LEVEL_05 NAME_MACEDON
+.db $0D $11 UNDEFINED PORTRAIT_HORSEMAN_JAVELIN_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_CAVALIER LEVEL_05 NAME_MACEDON
+.db $0C $14 UNDEFINED PORTRAIT_HORSEMAN_JAVELIN_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_CAVALIER LEVEL_05 NAME_MACEDON
+.db $0E $16 UNDEFINED PORTRAIT_HORSEMAN_JAVELIN_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db TERMINATOR
+
+L8995A4:
+.db UNIT_GHARNEF CLASS_BISHOP_MALE LEVEL_10 NAME_GHARNEF
+.db $0D $0F UNDEFINED PORTRAIT_GHARNEF_ID
+.db ITEM_IMHULLU UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_FALCHION UNDEFINED UNDEFINED UNDEFINED
+.db $1B $03 $01
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_10 NAME_FAKE_GHARNEF
+.db $0A $0F UNDEFINED PORTRAIT_GHARNEF_ID
+.db ITEM_METEOR UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_GUIDING_RING UNDEFINED UNDEFINED UNDEFINED
+.db $13 $04 $00
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_10 NAME_FAKE_GHARNEF
+.db $0D $10 UNDEFINED PORTRAIT_GHARNEF_ID
+.db ITEM_THORON UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $03 $00
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_10 NAME_FAKE_GHARNEF
+.db $0D $0E UNDEFINED PORTRAIT_GHARNEF_ID
+.db ITEM_THORON UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $03 $00
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_10 NAME_FAKE_GHARNEF
+.db $14 $06 UNDEFINED PORTRAIT_GHARNEF_ID
+.db ITEM_FORTIFY UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $05 $00
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_10 NAME_FAKE_GHARNEF
+.db $14 $19 UNDEFINED PORTRAIT_GHARNEF_ID
+.db ITEM_FORTIFY UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $05 $00
+
+.db UNIT_ENEMY_45 CLASS_MAGE_MALE LEVEL_05 NAME_MAGE
+.db $15 $19 UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_ELFIRE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $03 $00
+
+.db UNIT_ENEMY_45 CLASS_MAGE_MALE LEVEL_05 NAME_MAGE
+.db $15 $18 UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_ELFIRE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $03 $00
+
+.db UNIT_ENEMY_45 CLASS_MAGE_MALE LEVEL_05 NAME_MAGE
+.db $15 $06 UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_ELFIRE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $03 $00
+
+.db UNIT_ENEMY_45 CLASS_MAGE_MALE LEVEL_05 NAME_MAGE
+.db $15 $07 UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_ELFIRE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $03 $00
+
+.db UNIT_ENEMY_45 CLASS_MAGE_MALE LEVEL_10 NAME_MAGE
+.db $17 $0C UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_BOLGANONE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $03 $00
+
+.db UNIT_ENEMY_45 CLASS_MAGE_MALE LEVEL_10 NAME_MAGE
+.db $17 $12 UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_BOLGANONE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $03 $00
+
+.db UNIT_ENEMY_45 CLASS_SNIPER LEVEL_05 NAME_DOLHR
+.db $0A $0A UNDEFINED PORTRAIT_GUARD_ARCHER_AIMING_ID
+.db ITEM_SILVER_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $03 $00
+
+.db UNIT_ENEMY_45 CLASS_SNIPER LEVEL_05 NAME_DOLHR
+.db $0A $14 UNDEFINED PORTRAIT_GUARD_ARCHER_AIMING_ID
+.db ITEM_SILVER_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $03 $00
+
+.db UNIT_ENEMY_45 CLASS_SNIPER LEVEL_05 NAME_DOLHR
+.db $16 $13 UNDEFINED PORTRAIT_GUARD_ARCHER_AIMING_ID
+.db ITEM_STEEL_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $03 $00
+
+.db UNIT_ENEMY_45 CLASS_SNIPER LEVEL_05 NAME_DOLHR
+.db $16 $0B UNDEFINED PORTRAIT_GUARD_ARCHER_AIMING_ID
+.db ITEM_STEEL_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $03 $00
+
+.db UNIT_ENEMY_45 CLASS_HERO LEVEL_05 NAME_DOLHR
+.db $11 $0E UNDEFINED PORTRAIT_SWORD_AND_SHIELD_ID
+.db ITEM_KILLER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_HERO LEVEL_05 NAME_DOLHR
+.db $11 $0F UNDEFINED PORTRAIT_SWORD_AND_SHIELD_ID
+.db ITEM_DRAGON_KILLER UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $06 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_HERO LEVEL_05 NAME_DOLHR
+.db $11 $10 UNDEFINED PORTRAIT_SWORD_AND_SHIELD_ID
+.db ITEM_KILLER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $06 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_GENERAL LEVEL_03 NAME_DOLHR
+.db $15 $0F UNDEFINED PORTRAIT_GENERAL_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_GENERAL LEVEL_03 NAME_DOLHR
+.db $0B $0B UNDEFINED PORTRAIT_GENERAL_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $06 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_GENERAL LEVEL_03 NAME_DOLHR
+.db $0B $13 UNDEFINED PORTRAIT_GENERAL_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $06 $03 $00
+
+.db TERMINATOR
+
+L899747:
+.db UNIT_ENEMY_5C CLASS_MANAKETE_MALE LEVEL_01 NAME_XEMCEL
+.db $0E $03 UNDEFINED PORTRAIT_XEMCEL_ID
+.db ITEM_DEMON_DRAGON_STONE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $01 $04 $01
+
+.db UNIT_ENEMY_45 CLASS_FIRE_DRAGON LEVEL_01 NAME_DOLHR
+.db $0F $03 15 PORTRAIT_DRAGON_ID
+.db ITEM_FIRE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $01 $03 $03
+
+.db UNIT_ENEMY_45 CLASS_FIRE_DRAGON LEVEL_01 NAME_DOLHR
+.db $0E $02 15 PORTRAIT_DRAGON_ID
+.db ITEM_FIRE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $01 $03 $03
+
+.db UNIT_ENEMY_45 CLASS_FIRE_DRAGON LEVEL_01 NAME_DOLHR
+.db $0E $04 15 PORTRAIT_DRAGON_ID
+.db ITEM_FIRE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $01 $03 $03
+
+.db UNIT_ENEMY_45 CLASS_FIRE_DRAGON LEVEL_01 NAME_DOLHR
+.db $0E $0B 15 PORTRAIT_DRAGON_ID
+.db ITEM_FIRE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_MANAKETE_MALE LEVEL_01 NAME_DOLHR
+.db $0D $07 UNDEFINED PORTRAIT_WINGED_MAGE_ID
+.db ITEM_FIRE_DRAGON_STONE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $0E $00
+
+.db UNIT_ENEMY_45 CLASS_FIRE_DRAGON LEVEL_01 NAME_DOLHR
+.db $0E $08 15 PORTRAIT_DRAGON_ID
+.db ITEM_FIRE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_51 CLASS_THIEF LEVEL_10 NAME_THIEF
+.db $0D $0F UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_DEVIL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_DEVIL_SWORD UNDEFINED ITEM_THORON ITEM_IRON_SWORD
+.db $02 $6E $00
+
+.db UNIT_ENEMY_45 CLASS_SNIPER LEVEL_03 NAME_DOLHR
+.db $0D $0D UNDEFINED PORTRAIT_GUARD_ARCHER_AIMING_ID
+.db ITEM_SILVER_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $01 $00
+
+.db UNIT_ENEMY_45 CLASS_SNIPER LEVEL_03 NAME_DOLHR
+.db $0D $0E UNDEFINED PORTRAIT_GUARD_ARCHER_AIMING_ID
+.db ITEM_SILVER_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $01 $00
+
+.db UNIT_ENEMY_45 CLASS_MANAKETE_MALE LEVEL_01 NAME_DOLHR
+.db $19 $0F UNDEFINED PORTRAIT_WINGED_MAGE_ID
+.db ITEM_FIRE_DRAGON_STONE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $0D $00
+
+.db UNIT_ENEMY_45 CLASS_FIRE_DRAGON LEVEL_01 NAME_DOLHR
+.db $18 $0F 15 PORTRAIT_DRAGON_ID
+.db ITEM_FIRE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_HERO LEVEL_05 NAME_DOLHR
+.db $17 $0F UNDEFINED PORTRAIT_SWORD_AND_SHIELD_ID
+.db ITEM_SILVER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_05 NAME_DOLHR
+.db $15 $19 UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_FORTIFY UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_FORTIFY UNDEFINED UNDEFINED UNDEFINED
+.db $02 $05 $00
+
+.db UNIT_ENEMY_45 CLASS_SNIPER LEVEL_05 NAME_DOLHR
+.db $15 $1B UNDEFINED PORTRAIT_GUARD_ARCHER_AIMING_ID
+.db ITEM_SILVER_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $01 $00
+
+.db UNIT_ENEMY_45 CLASS_MANAKETE_MALE LEVEL_01 NAME_DOLHR
+.db $10 $0F UNDEFINED PORTRAIT_WINGED_MAGE_ID
+.db ITEM_FIRE_DRAGON_STONE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $0E $00
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_05 NAME_DOLHR
+.db $10 $11 UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_WORM ITEM_RECOVER UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $12 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_FIRE_DRAGON LEVEL_01 NAME_DOLHR
+.db $0F $17 15 PORTRAIT_DRAGON_ID
+.db ITEM_FIRE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_03 NAME_DOLHR
+.db $0D $18 UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_PHYSIC UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $05 $00
+
+.db UNIT_ENEMY_45 CLASS_MANAKETE_MALE LEVEL_01 NAME_DOLHR
+.db $05 $1A UNDEFINED PORTRAIT_WINGED_MAGE_ID
+.db ITEM_FIRE_DRAGON_STONE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $0E $00
+
+.db UNIT_ENEMY_45 CLASS_FIRE_DRAGON LEVEL_01 NAME_DOLHR
+.db $07 $1B 15 PORTRAIT_DRAGON_ID
+.db ITEM_FIRE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_05 NAME_DOLHR
+.db $12 $07 UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_ELFIRE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $01 $00
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_05 NAME_DOLHR
+.db $13 $03 UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_PHYSIC UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $05 $00
+
+.db TERMINATOR
+
+L8998FD:
+.db UNIT_BOSS_MEDEUS CLASS_MANAKETE_MALE LEVEL_10 NAME_MEDEUS
+.db $0F $10 UNDEFINED PORTRAIT_MEDEUS_ID
+.db ITEM_EARTH_DRAGON_STONE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $01 $04 $03
+
+.db UNIT_ENEMY_45 CLASS_MANAKETE_MALE LEVEL_01 NAME_DOLHR
+.db $10 $10 UNDEFINED PORTRAIT_WINGED_MAGE_ID
+.db ITEM_DEMON_DRAGON_STONE UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_VULNERARY UNDEFINED UNDEFINED UNDEFINED
+.db $06 $0D $03
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_10 NAME_DOLHR
+.db $0F $0F UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_PHYSIC UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $05 $03
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_10 NAME_DOLHR
+.db $0F $11 UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_METEOR UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $13 $03 $03
+
+.db UNIT_ENEMY_45 CLASS_SNIPER LEVEL_10 NAME_DOLHR
+.db $0A $12 UNDEFINED PORTRAIT_GUARD_ARCHER_AIMING_ID
+.db ITEM_SILVER_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $03 $03
+
+.db UNIT_ENEMY_45 CLASS_SNIPER LEVEL_10 NAME_DOLHR
+.db $0A $0E UNDEFINED PORTRAIT_GUARD_ARCHER_AIMING_ID
+.db ITEM_SILVER_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $03 $03
+
+.db UNIT_ENEMY_45 CLASS_GENERAL LEVEL_10 NAME_DOLHR
+.db $07 $0B UNDEFINED PORTRAIT_GENERAL_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $03
+
+.db UNIT_ENEMY_45 CLASS_GENERAL LEVEL_10 NAME_DOLHR
+.db $07 $15 UNDEFINED PORTRAIT_GENERAL_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $03
+
+.db UNIT_ENEMY_45 CLASS_GENERAL LEVEL_10 NAME_DOLHR
+.db $13 $05 UNDEFINED PORTRAIT_GENERAL_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $03
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_10 NAME_DOLHR
+.db $13 $06 UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_THORON UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_DOOR_KEY UNDEFINED UNDEFINED UNDEFINED
+.db $1B $01 $03
+
+.db UNIT_ENEMY_45 CLASS_HERO LEVEL_10 NAME_DOLHR
+.db $13 $02 UNDEFINED PORTRAIT_SWORD_AND_SHIELD_ID
+.db ITEM_SILVER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_SILVER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db $03 $00 $03
+
+.db UNIT_ENEMY_45 CLASS_MANAKETE_MALE LEVEL_01 NAME_DOLHR
+.db $0D $03 UNDEFINED PORTRAIT_WINGED_MAGE_ID
+.db ITEM_FIRE_DRAGON_STONE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $0D $03
+
+.db UNIT_ENEMY_45 CLASS_SNIPER LEVEL_10 NAME_DOLHR
+.db $0D $05 UNDEFINED PORTRAIT_GUARD_ARCHER_AIMING_ID
+.db ITEM_SILVER_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $01 $03
+
+.db UNIT_ENEMY_45 CLASS_HERO LEVEL_10 NAME_DOLHR
+.db $0C $04 UNDEFINED PORTRAIT_SWORD_AND_SHIELD_ID
+.db ITEM_DRAGON_KILLER UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_DRAGON_KILLER UNDEFINED UNDEFINED UNDEFINED
+.db $11 $00 $03
+
+.db UNIT_ENEMY_45 CLASS_SNIPER LEVEL_10 NAME_DOLHR
+.db $14 $0C UNDEFINED PORTRAIT_GUARD_ARCHER_AIMING_ID
+.db ITEM_SILVER_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $01 $03
+
+.db UNIT_ENEMY_45 CLASS_HERO LEVEL_10 NAME_DOLHR
+.db $15 $14 UNDEFINED PORTRAIT_SWORD_AND_SHIELD_ID
+.db ITEM_THUNDER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $03
+
+.db UNIT_ENEMY_45 CLASS_GENERAL LEVEL_10 NAME_DOLHR
+.db $14 $14 UNDEFINED PORTRAIT_GENERAL_ID
+.db ITEM_JAVELIN UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $03
+
+.db UNIT_ENEMY_45 CLASS_GENERAL LEVEL_10 NAME_DOLHR
+.db $0F $1B UNDEFINED PORTRAIT_GENERAL_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $03
+
+.db UNIT_ENEMY_45 CLASS_GENERAL LEVEL_10 NAME_DOLHR
+.db $0E $19 UNDEFINED PORTRAIT_GENERAL_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $03
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_10 NAME_DOLHR
+.db $0D $1B UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_BOLGANONE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $01 $03
+
+.db UNIT_ENEMY_45 CLASS_MANAKETE_MALE LEVEL_01 NAME_DOLHR
+.db $02 $10 UNDEFINED PORTRAIT_WINGED_MAGE_ID
+.db ITEM_FIRE_DRAGON_STONE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $0E $00
+
+.db UNIT_ENEMY_45 CLASS_MANAKETE_MALE LEVEL_01 NAME_DOLHR
+.db $0C $19 UNDEFINED PORTRAIT_WINGED_MAGE_ID
+.db ITEM_FIRE_DRAGON_STONE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $0E $00
+
+.db UNIT_ENEMY_45 CLASS_MANAKETE_MALE LEVEL_01 NAME_DOLHR
+.db $14 $13 UNDEFINED PORTRAIT_WINGED_MAGE_ID
+.db ITEM_FIRE_DRAGON_STONE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $0E $00
+
+.db TERMINATOR
+
+L899AB3:
+.db UNIT_ENEMY_5C CLASS_GENERAL LEVEL_01 NAME_LORENZ
+.db $05 $02 UNDEFINED PORTRAIT_LORENZ_ID
+.db ITEM_BROKEN_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $01 $04 $00
+
+.db UNIT_ENEMY_63 CLASS_BANDIT LEVEL_03 NAME_BANDIT
+.db $0A $08 UNDEFINED PORTRAIT_AXEBRO_ID
+.db ITEM_HAND_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $01 $03 $00
+
+.db UNIT_ENEMY_64 CLASS_BANDIT LEVEL_01 NAME_BANDIT
+.db $0A $09 UNDEFINED PORTRAIT_AXEBRO_ID
+.db ITEM_IRON_AXE UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_VULNERARY UNDEFINED UNDEFINED UNDEFINED
+.db $01 $03 $00
+
+.db UNIT_ENEMY_65 CLASS_BANDIT LEVEL_01 NAME_BANDIT
+.db $09 $06 UNDEFINED PORTRAIT_AXEBRO_ID
+.db ITEM_IRON_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $01 $03 $00
+
+.db UNIT_ENEMY_60 CLASS_BANDIT LEVEL_01 NAME_BANDIT
+.db $06 $03 UNDEFINED PORTRAIT_AXEBRO_ID
+.db ITEM_IRON_AXE UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_VULNERARY UNDEFINED UNDEFINED UNDEFINED
+.db $01 $03 $00
+
+.db UNIT_ENEMY_61 CLASS_BANDIT LEVEL_01 NAME_BANDIT
+.db $05 $04 UNDEFINED PORTRAIT_AXEBRO_ID
+.db ITEM_IRON_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $01 $03 $00
+
+.db UNIT_ENEMY_62 CLASS_BANDIT LEVEL_01 NAME_BANDIT
+.db $06 $05 UNDEFINED PORTRAIT_AXEBRO_ID
+.db ITEM_IRON_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $01 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_HUNTER LEVEL_01 NAME_BANDIT
+.db $09 $08 UNDEFINED PORTRAIT_ARCHER_ID
+.db ITEM_IRON_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $01 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_HUNTER LEVEL_01 NAME_BANDIT
+.db $09 $07 UNDEFINED PORTRAIT_ARCHER_ID
+.db ITEM_IRON_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $01 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_HUNTER LEVEL_01 NAME_BANDIT
+.db $08 $07 UNDEFINED PORTRAIT_ARCHER_ID
+.db ITEM_IRON_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $01 $03 $00
+
+.db TERMINATOR
+
+L899B72:
+.db UNIT_ENEMY_5C CLASS_DRACOKNIGHT LEVEL_03 NAME_RUMEL
+.db $09 $10 UNDEFINED PORTRAIT_LUMEL_ID
+.db ITEM_KNIGHT_KILLER UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_KNIGHT_KILLER UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_DRACOKNIGHT LEVEL_01 NAME_MACEDON
+.db $09 $11 UNDEFINED PORTRAIT_WYVERN_ID
+.db ITEM_IRON_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $2A $00
+
+.db UNIT_ENEMY_45 CLASS_DRACOKNIGHT LEVEL_01 NAME_MACEDON
+.db $09 $0F UNDEFINED PORTRAIT_WYVERN_ID
+.db ITEM_IRON_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $2A $00
+
+.db UNIT_ENEMY_45 CLASS_HUNTER LEVEL_02 NAME_MACEDON
+.db $11 $11 UNDEFINED PORTRAIT_ARCHER_ID
+.db ITEM_IRON_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_5D CLASS_THIEF LEVEL_01 NAME_THIEF
+.db $12 $12 UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_IRON_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_LADY_SWORD UNDEFINED ITEM_THORON ITEM_IRON_SWORD
+.db $02 $2B $00
+
+.db UNIT_ENEMY_45 CLASS_HUNTER LEVEL_02 NAME_MACEDON
+.db $10 $14 UNDEFINED PORTRAIT_ARCHER_ID
+.db ITEM_IRON_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_CAVALIER LEVEL_01 NAME_MACEDON
+.db $07 $10 UNDEFINED PORTRAIT_HORSEMAN_ID
+.db ITEM_IRON_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_CAVALIER LEVEL_01 NAME_MACEDON
+.db $02 $10 UNDEFINED PORTRAIT_HORSEMAN_ID
+.db ITEM_IRON_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_CAVALIER LEVEL_01 NAME_MACEDON
+.db $02 $0F UNDEFINED PORTRAIT_HORSEMAN_ID
+.db ITEM_IRON_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_CAVALIER LEVEL_01 NAME_MACEDON
+.db $04 $14 UNDEFINED PORTRAIT_HORSEMAN_ID
+.db ITEM_IRON_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_CAVALIER LEVEL_01 NAME_MACEDON
+.db $04 $0B UNDEFINED PORTRAIT_HORSEMAN_ID
+.db ITEM_IRON_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_SOLDIER LEVEL_01 NAME_MACEDON
+.db $0B $0F UNDEFINED PORTRAIT_BECK_ID
+.db ITEM_IRON_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_SOLDIER LEVEL_01 NAME_MACEDON
+.db $0B $10 UNDEFINED PORTRAIT_BECK_ID
+.db ITEM_IRON_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_SOLDIER LEVEL_01 NAME_MACEDON
+.db $0B $11 UNDEFINED PORTRAIT_BECK_ID
+.db ITEM_IRON_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_WARREN CLASS_HUNTER LEVEL_02 NAME_WARREN
+.db $0F $10 UNDEFINED PORTRAIT_WARREN_ID
+.db ITEM_IRON_BOW UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_BRIDGE_KEY UNDEFINED UNDEFINED UNDEFINED
+.db $0E $01 $00
+
+.db TERMINATOR
+
+L899C90:
+.db UNIT_ENEMY_5C CLASS_GENERAL LEVEL_01 NAME_RUCKE
+.db $12 $14 UNDEFINED PORTRAIT_LYKKE_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_TAURUS_ORB UNDEFINED UNDEFINED UNDEFINED
+.db $01 $04 $01
+
+.db UNIT_ENEMY_45 CLASS_BALLISTICIAN LEVEL_01 NAME_MACEDON
+.db $15 $13 UNDEFINED PORTRAIT_CATAPULT_ID
+.db ITEM_QUICK_RAIN UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $14 $03 $03
+
+.db UNIT_ENEMY_45 CLASS_CAVALIER LEVEL_04 NAME_MACEDON
+.db $12 $13 UNDEFINED PORTRAIT_HORSEMAN_ID
+.db ITEM_IRON_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_CAVALIER LEVEL_04 NAME_MACEDON
+.db $12 $15 UNDEFINED PORTRAIT_HORSEMAN_ID
+.db ITEM_IRON_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_CAVALIER LEVEL_04 NAME_MACEDON
+.db $13 $14 UNDEFINED PORTRAIT_HORSEMAN_ID
+.db ITEM_IRON_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_DRACOKNIGHT LEVEL_01 NAME_MACEDON
+.db $11 $18 UNDEFINED PORTRAIT_WYVERN_ID
+.db ITEM_IRON_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_DRACOKNIGHT LEVEL_01 NAME_MACEDON
+.db $0F $18 UNDEFINED PORTRAIT_WYVERN_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_DRACOKNIGHT LEVEL_01 NAME_MACEDON
+.db $10 $19 UNDEFINED PORTRAIT_WYVERN_ID
+.db ITEM_IRON_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_DRACOKNIGHT LEVEL_01 NAME_MACEDON
+.db $0F $1B UNDEFINED PORTRAIT_WYVERN_ID
+.db ITEM_IRON_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_DRACOKNIGHT LEVEL_01 NAME_MACEDON
+.db $10 $1C UNDEFINED PORTRAIT_WYVERN_ID
+.db ITEM_IRON_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_DRACOKNIGHT LEVEL_01 NAME_MACEDON
+.db $11 $1B UNDEFINED PORTRAIT_WYVERN_ID
+.db ITEM_IRON_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_5D CLASS_DRACOKNIGHT LEVEL_01 NAME_MACEDON
+.db $0D $0E UNDEFINED PORTRAIT_WYVERN_ID
+.db ITEM_IRON_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $03 $00
+
+.db UNIT_ENEMY_5D CLASS_DRACOKNIGHT LEVEL_01 NAME_MACEDON
+.db $0C $0B UNDEFINED PORTRAIT_WYVERN_ID
+.db ITEM_IRON_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $03 $00
+
+.db UNIT_ENEMY_5D CLASS_DRACOKNIGHT LEVEL_01 NAME_MACEDON
+.db $0C $09 UNDEFINED PORTRAIT_WYVERN_ID
+.db ITEM_IRON_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_KNIGHT_CREST UNDEFINED UNDEFINED UNDEFINED
+.db $02 $03 $00
+
+.db UNIT_ENEMY_5D CLASS_DRACOKNIGHT LEVEL_01 NAME_MACEDON
+.db $0B $0C UNDEFINED PORTRAIT_WYVERN_ID
+.db ITEM_IRON_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db $02 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_THIEF LEVEL_01 NAME_THIEF
+.db $01 $0B UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_IRON_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED ITEM_BOOTS ITEM_IRON_SWORD
+.db $02 $06 $00
+
+.db UNIT_MATTHIS_BOOK2 CLASS_CAVALIER LEVEL_04 NAME_MATTHIS
+.db $13 $12 UNDEFINED PORTRAIT_MATTHIS_ID
+.db ITEM_JAVELIN UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db TERMINATOR
+
+L899DD4:
+.db UNIT_ENEMY_5C CLASS_PIRATE LEVEL_10 NAME_GAIL
+.db $12 $1E UNDEFINED PORTRAIT_GAIL_ID
+.db ITEM_SILVER_AXE UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_SILVER_AXE UNDEFINED UNDEFINED UNDEFINED
+.db $01 $04 $00
+
+.db UNIT_ENEMY_45 CLASS_PIRATE LEVEL_05 NAME_PAIKING
+.db $12 $1D UNDEFINED PORTRAIT_PIRATE_ID
+.db ITEM_STEEL_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_PIRATE LEVEL_05 NAME_PAIKING
+.db $13 $1D UNDEFINED PORTRAIT_PIRATE_ID
+.db ITEM_STEEL_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_PIRATE LEVEL_05 NAME_PAIKING
+.db $10 $1C UNDEFINED PORTRAIT_PIRATE_ID
+.db ITEM_STEEL_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_HUNTER LEVEL_05 NAME_PAIKING
+.db $12 $1C UNDEFINED PORTRAIT_ARCHER_ID
+.db ITEM_STEEL_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $03 $00
+
+.db UNIT_ENEMY_45 CLASS_HUNTER LEVEL_05 NAME_PAIKING
+.db $12 $1B UNDEFINED PORTRAIT_ARCHER_ID
+.db ITEM_STEEL_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $03 $00
+
+.db UNIT_ENEMY_45 CLASS_HUNTER LEVEL_03 NAME_PAIKING
+.db $0B $1D UNDEFINED PORTRAIT_ARCHER_ID
+.db ITEM_IRON_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $01 $00
+
+.db UNIT_ENEMY_45 CLASS_HUNTER LEVEL_03 NAME_PAIKING
+.db $0C $1C UNDEFINED PORTRAIT_ARCHER_ID
+.db ITEM_IRON_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $01 $00
+
+.db UNIT_ENEMY_45 CLASS_HUNTER LEVEL_03 NAME_PAIKING
+.db $0A $1C UNDEFINED PORTRAIT_ARCHER_ID
+.db ITEM_IRON_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $01 $00
+
+.db UNIT_ENEMY_45 CLASS_HUNTER LEVEL_03 NAME_PAIKING
+.db $0A $1B UNDEFINED PORTRAIT_ARCHER_ID
+.db ITEM_IRON_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $01 $00
+
+.db UNIT_ENEMY_45 CLASS_PIRATE LEVEL_03 NAME_PAIKING
+.db $0D $1B UNDEFINED PORTRAIT_PIRATE_ID
+.db ITEM_IRON_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_PIRATE LEVEL_03 NAME_PAIKING
+.db $0C $1A UNDEFINED PORTRAIT_PIRATE_ID
+.db ITEM_IRON_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_PIRATE LEVEL_03 NAME_PAIKING
+.db $0B $19 UNDEFINED PORTRAIT_PIRATE_ID
+.db ITEM_IRON_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_PIRATE LEVEL_03 NAME_PAIKING
+.db $0B $18 UNDEFINED PORTRAIT_PIRATE_ID
+.db ITEM_IRON_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_PIRATE LEVEL_03 NAME_PAIKING
+.db $0B $17 UNDEFINED PORTRAIT_PIRATE_ID
+.db ITEM_IRON_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_PIRATE LEVEL_03 NAME_PAIKING
+.db $09 $18 UNDEFINED PORTRAIT_PIRATE_ID
+.db ITEM_IRON_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_PIRATE LEVEL_03 NAME_PAIKING
+.db $0C $17 UNDEFINED PORTRAIT_PIRATE_ID
+.db ITEM_IRON_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_BANDIT LEVEL_03 NAME_PAIKING
+.db $0F $0B UNDEFINED PORTRAIT_AXEBRO_ID
+.db ITEM_IRON_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_BANDIT LEVEL_03 NAME_PAIKING
+.db $0D $0A UNDEFINED PORTRAIT_AXEBRO_ID
+.db ITEM_IRON_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_BANDIT LEVEL_03 NAME_PAIKING
+.db $0F $07 UNDEFINED PORTRAIT_AXEBRO_ID
+.db ITEM_IRON_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_BANDIT LEVEL_03 NAME_PAIKING
+.db $10 $07 UNDEFINED PORTRAIT_AXEBRO_ID
+.db ITEM_IRON_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_BANDIT LEVEL_03 NAME_PAIKING
+.db $10 $06 UNDEFINED PORTRAIT_AXEBRO_ID
+.db ITEM_IRON_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_BANDIT LEVEL_03 NAME_PAIKING
+.db $11 $08 UNDEFINED PORTRAIT_AXEBRO_ID
+.db ITEM_IRON_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_THIEF LEVEL_05 NAME_PAIKING
+.db $09 $10 UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_STEEL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED ITEM_BOOTS ITEM_IRON_SWORD
+.db $02 $06 $00
+
+.db UNIT_ENEMY_45 CLASS_THIEF LEVEL_01 NAME_PAIKING
+.db $1E $03 UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_ARMOR_KILLER UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_ARMOR_KILLER UNDEFINED UNDEFINED UNDEFINED
+.db $02 $06 $00
+
+.db UNIT_ENEMY_45 CLASS_THIEF LEVEL_01 NAME_PAIKING
+.db $01 $11 UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_DEVIL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_DEVIL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db $02 $06 $00
+
+.db UNIT_SIRIUS CLASS_PALADIN LEVEL_04 NAME_SIRIUS
+.db $08 $1A UNDEFINED PORTRAIT_SIRIUS_ID
+.db ITEM_IRON_LANCE ITEM_IRON_SWORD UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1C $71 $00
+
+.db TERMINATOR
+
+L899FD6:
+.db UNIT_ENEMY_5C CLASS_BALLISTICIAN LEVEL_03 NAME_TORAS
+.db $14 $0A UNDEFINED PORTRAIT_TORUS_ID
+.db ITEM_QUICK_RAIN UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_GEMINI_ORB UNDEFINED UNDEFINED UNDEFINED
+.db $12 $04 $00
+
+.db UNIT_ENEMY_5F CLASS_SNIPER LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $03 $1A UNDEFINED PORTRAIT_GUARD_ARCHER_AIMING_ID
+.db ITEM_SILVER_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $03 $00
+
+.db UNIT_ENEMY_5F CLASS_SNIPER LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $04 $1B UNDEFINED PORTRAIT_GUARD_ARCHER_AIMING_ID
+.db ITEM_SILVER_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $03 $00
+
+.db UNIT_ENEMY_5F CLASS_SNIPER LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $05 $1C UNDEFINED PORTRAIT_GUARD_ARCHER_AIMING_ID
+.db ITEM_SILVER_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $03 $00
+
+.db UNIT_ENEMY_5F CLASS_SNIPER LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $06 $1C UNDEFINED PORTRAIT_GUARD_ARCHER_AIMING_ID
+.db ITEM_SILVER_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $03 $00
+
+.db UNIT_JEORGE_BOOK2 CLASS_SNIPER LEVEL_05 NAME_JEORGE
+.db $05 $1B UNDEFINED PORTRAIT_JEORGE_ID
+.db ITEM_PARTHIA UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_PARTHIA UNDEFINED UNDEFINED UNDEFINED
+.db $02 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $02 $1C UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_PHYSIC UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_PHYSIC UNDEFINED UNDEFINED UNDEFINED
+.db $02 $29 $00
+
+.db UNIT_ENEMY_45 CLASS_MAGE_MALE LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $05 $14 UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_FIRE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $01 $00
+
+.db UNIT_ENEMY_45 CLASS_MAGE_MALE LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $03 $14 UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_FIRE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $01 $00
+
+.db UNIT_ENEMY_45 CLASS_ARMOR_KNIGHT LEVEL_05 NAME_AKANEIA_SOLDIER
+.db $14 $0F UNDEFINED PORTRAIT_ARMOUR_ID
+.db ITEM_JAVELIN UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $01 $03 $03
+
+.db UNIT_ENEMY_45 CLASS_CAVALIER LEVEL_05 NAME_AKANEIA_SOLDIER
+.db $04 $12 UNDEFINED PORTRAIT_HORSEMAN_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_CAVALIER LEVEL_05 NAME_AKANEIA_SOLDIER
+.db $03 $11 UNDEFINED PORTRAIT_HORSEMAN_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_CAVALIER LEVEL_05 NAME_AKANEIA_SOLDIER
+.db $02 $10 UNDEFINED PORTRAIT_HORSEMAN_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_CAVALIER LEVEL_07 NAME_AKANEIA_SOLDIER
+.db $01 $0E UNDEFINED PORTRAIT_HORSEMAN_ID
+.db ITEM_JAVELIN UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_CAVALIER LEVEL_07 NAME_AKANEIA_SOLDIER
+.db $01 $0F UNDEFINED PORTRAIT_HORSEMAN_ID
+.db ITEM_JAVELIN UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_CAVALIER LEVEL_07 NAME_AKANEIA_SOLDIER
+.db $13 $0D UNDEFINED PORTRAIT_HORSEMAN_ID
+.db ITEM_JAVELIN UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_CAVALIER LEVEL_07 NAME_AKANEIA_SOLDIER
+.db $14 $0D UNDEFINED PORTRAIT_HORSEMAN_ID
+.db ITEM_JAVELIN UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_BALLISTICIAN LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $14 $0C UNDEFINED PORTRAIT_CATAPULT_ID
+.db ITEM_STONE_HEDGE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $12 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_BALLISTICIAN LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $12 $0B UNDEFINED PORTRAIT_CATAPULT_ID
+.db ITEM_STONE_HEDGE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $13 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_CAVALIER LEVEL_05 NAME_AKANEIA_SOLDIER
+.db $11 $04 UNDEFINED PORTRAIT_HORSEMAN_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_CAVALIER LEVEL_05 NAME_AKANEIA_SOLDIER
+.db $10 $03 UNDEFINED PORTRAIT_HORSEMAN_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_CAVALIER LEVEL_05 NAME_AKANEIA_SOLDIER
+.db $10 $02 UNDEFINED PORTRAIT_HORSEMAN_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_CAVALIER LEVEL_07 NAME_AKANEIA_SOLDIER
+.db $0E $01 UNDEFINED PORTRAIT_HORSEMAN_ID
+.db ITEM_JAVELIN UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_CAVALIER LEVEL_07 NAME_AKANEIA_SOLDIER
+.db $0F $01 UNDEFINED PORTRAIT_HORSEMAN_ID
+.db ITEM_JAVELIN UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_DRACOKNIGHT LEVEL_03 NAME_DRAGOON
+.db $08 $05 UNDEFINED PORTRAIT_WYVERN_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_DRACOKNIGHT LEVEL_03 NAME_DRAGOON
+.db $08 $06 UNDEFINED PORTRAIT_WYVERN_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_DRACOKNIGHT LEVEL_03 NAME_DRAGOON
+.db $08 $07 UNDEFINED PORTRAIT_WYVERN_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_DRACOKNIGHT LEVEL_03 NAME_DRAGOON
+.db $09 $05 UNDEFINED PORTRAIT_WYVERN_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_DRACOKNIGHT LEVEL_03 NAME_DRAGOON
+.db $09 $06 UNDEFINED PORTRAIT_WYVERN_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_5D CLASS_THIEF LEVEL_03 NAME_THIEF
+.db $0E $19 UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_IRON_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED ITEM_BOOTS ITEM_IRON_SWORD
+.db $02 $2C $00
+
+.db UNIT_ENEMY_5E CLASS_THIEF LEVEL_03 NAME_THIEF
+.db $09 $18 UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_IRON_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_KNIGHT_CREST UNDEFINED UNDEFINED UNDEFINED
+.db $02 $34 $00
+
+.db UNIT_RICKARD_BOOK2 CLASS_THIEF LEVEL_03 NAME_RICKARD
+.db $0C $19 UNDEFINED PORTRAIT_RICKARD_ID
+.db ITEM_IRON_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_MEMBER_CARD UNDEFINED UNDEFINED UNDEFINED
+.db $02 $2D $00
+
+.db TERMINATOR
+
+L89A237:
+.db UNIT_ENEMY_5C CLASS_GENERAL LEVEL_10 NAME_LANG
+.db $03 $10 UNDEFINED PORTRAIT_LANG_ID
+.db ITEM_JAVELIN UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_CANCER_ORB UNDEFINED UNDEFINED UNDEFINED
+.db $01 $04 $00
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $03 $0D UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_HEAL UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_HEAL UNDEFINED UNDEFINED UNDEFINED
+.db $02 $29 $03
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $03 $13 UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_HEAL UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_HEAL UNDEFINED UNDEFINED UNDEFINED
+.db $02 $29 $03
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $0F $1C UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_WORM UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $13 $03 $03
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_08 NAME_AKANEIA_SOLDIER
+.db $0D $1C UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_PHYSIC UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_SECRET_BOOK UNDEFINED UNDEFINED UNDEFINED
+.db $02 $29 $03
+
+.db UNIT_ENEMY_45 CLASS_ARMOR_KNIGHT LEVEL_08 NAME_AKANEIA_SOLDIER
+.db $03 $11 UNDEFINED PORTRAIT_ARMOUR_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_ARMOR_KNIGHT LEVEL_08 NAME_AKANEIA_SOLDIER
+.db $04 $11 UNDEFINED PORTRAIT_ARMOUR_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_ARMOR_KNIGHT LEVEL_08 NAME_AKANEIA_SOLDIER
+.db $04 $10 UNDEFINED PORTRAIT_ARMOUR_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_ARMOR_KNIGHT LEVEL_08 NAME_AKANEIA_SOLDIER
+.db $04 $0F UNDEFINED PORTRAIT_ARMOUR_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_ARMOR_KNIGHT LEVEL_08 NAME_AKANEIA_SOLDIER
+.db $03 $0F UNDEFINED PORTRAIT_ARMOUR_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_MAGE_MALE LEVEL_05 NAME_AKANEIA_SOLDIER
+.db $08 $1B UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_ELFIRE UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_ELFIRE UNDEFINED UNDEFINED UNDEFINED
+.db $1B $01 $00
+
+.db UNIT_ENEMY_45 CLASS_MAGE_MALE LEVEL_10 NAME_AKANEIA_SOLDIER
+.db $14 $1A UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_ELFIRE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $03 $00
+
+.db UNIT_ENEMY_45 CLASS_ARMOR_KNIGHT LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $0D $05 UNDEFINED PORTRAIT_ARMOUR_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_DOOR_KEY UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_ARMOR_KNIGHT LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $0E $06 UNDEFINED PORTRAIT_ARMOUR_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_ARMOR_KNIGHT LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $0F $05 UNDEFINED PORTRAIT_ARMOUR_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_ARMOR_KNIGHT LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $0F $04 UNDEFINED PORTRAIT_ARMOUR_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_ARMOR_KNIGHT LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $11 $05 UNDEFINED PORTRAIT_ARMOUR_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_ARMOR_KNIGHT LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $12 $06 UNDEFINED PORTRAIT_ARMOUR_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_SAMUEL CLASS_MERCENARY LEVEL_05 NAME_NAVARRE
+.db $07 $05 UNDEFINED PORTRAIT_NAVARRE_ID
+.db ITEM_KILLER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_AQUARIUS_ORB UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db TERMINATOR
+
+L89A3A1:
+.db UNIT_ENEMY_5C CLASS_THIEF LEVEL_10 NAME_DAHL
+.db $06 $1A UNDEFINED PORTRAIT_DALL_ID
+.db ITEM_THUNDER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_THUNDER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db $01 $04 $00
+
+.db UNIT_ENEMY_5D CLASS_THIEF LEVEL_05 NAME_THIEF_74
+.db $0F $1C UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_STEEL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_HERO_CREST UNDEFINED UNDEFINED UNDEFINED
+.db $02 $2F $00
+
+.db UNIT_ENEMY_5E CLASS_THIEF LEVEL_05 NAME_THIEF_74
+.db $0C $1C UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_STEEL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_ORIONS_BOLT UNDEFINED UNDEFINED UNDEFINED
+.db $02 $30 $00
+
+.db UNIT_ENEMY_5F CLASS_THIEF LEVEL_05 NAME_THIEF_74
+.db $0C $15 UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_STEEL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED $F4 ITEM_STEEL_SWORD
+.db $02 $31 $00
+
+.db UNIT_ENEMY_60 CLASS_THIEF LEVEL_05 NAME_THIEF_74
+.db $0A $14 UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_STEEL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_ELYSIAN_WHIP UNDEFINED UNDEFINED UNDEFINED
+.db $02 $32 $00
+
+.db UNIT_ENEMY_61 CLASS_THIEF LEVEL_05 NAME_THIEF_74
+.db $0F $19 UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_STEEL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_SCORPIO_ORB UNDEFINED UNDEFINED UNDEFINED
+.db $02 $33 $00
+
+.db UNIT_ENEMY_51 CLASS_THIEF LEVEL_05 NAME_THIEF_74
+.db $09 $15 UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_STEEL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_ANGELIC_ROBE UNDEFINED UNDEFINED UNDEFINED
+.db $02 $83 $00
+
+.db UNIT_ENEMY_45 CLASS_THIEF LEVEL_05 NAME_THIEF_74
+.db $0F $16 UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_STEEL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_STEEL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_THIEF LEVEL_05 NAME_THIEF_74
+.db $0E $1A UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_STEEL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_THIEF LEVEL_05 NAME_THIEF_74
+.db $11 $19 UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_STEEL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED ITEM_THORON ITEM_IRON_SWORD
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_THIEF LEVEL_05 NAME_THIEF_74
+.db $12 $17 UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_STEEL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_THIEF LEVEL_05 NAME_THIEF_74
+.db $11 $15 UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_STEEL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_THIEF LEVEL_05 NAME_THIEF_74
+.db $11 $14 UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_STEEL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_THIEF LEVEL_05 NAME_THIEF_74
+.db $08 $18 UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_STEEL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_THIEF LEVEL_05 NAME_THIEF_74
+.db $08 $19 UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_STEEL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_THIEF LEVEL_05 NAME_THIEF_74
+.db $0A $1A UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_STEEL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED ITEM_THORON ITEM_IRON_SWORD
+.db $03 $01 $00
+
+.db UNIT_ENEMY_62 CLASS_HERO LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $09 $05 UNDEFINED PORTRAIT_SWORD_AND_SHIELD_ID
+.db ITEM_SILVER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $03 $00
+
+.db UNIT_ENEMY_62 CLASS_HERO LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $09 $07 UNDEFINED PORTRAIT_SWORD_AND_SHIELD_ID
+.db ITEM_SILVER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $03 $00
+
+.db UNIT_ENEMY_62 CLASS_HERO LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $08 $07 UNDEFINED PORTRAIT_SWORD_AND_SHIELD_ID
+.db ITEM_SILVER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $03 $00
+
+.db UNIT_ENEMY_62 CLASS_HERO LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $08 $08 UNDEFINED PORTRAIT_SWORD_AND_SHIELD_ID
+.db ITEM_SILVER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $03 $00
+
+.db UNIT_ENEMY_62 CLASS_HERO LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $07 $09 UNDEFINED PORTRAIT_SWORD_AND_SHIELD_ID
+.db ITEM_SILVER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $03 $00
+
+.db UNIT_ENEMY_62 CLASS_HERO LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $08 $0A UNDEFINED PORTRAIT_SWORD_AND_SHIELD_ID
+.db ITEM_SILVER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $03 $00
+
+.db UNIT_ASTRAM_BOOK2 CLASS_HERO LEVEL_04 NAME_ASTRAM
+.db $07 $0A UNDEFINED PORTRAIT_ASTRAM_ID
+.db ITEM_MERCURIUS UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_MERCURIUS UNDEFINED UNDEFINED UNDEFINED
+.db $02 $03 $03
+
+.db UNIT_ENEMY_62 CLASS_HERO LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $06 $0B UNDEFINED PORTRAIT_SWORD_AND_SHIELD_ID
+.db ITEM_SILVER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $03 $00
+
+.db UNIT_ENEMY_62 CLASS_HERO LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $05 $0C UNDEFINED PORTRAIT_SWORD_AND_SHIELD_ID
+.db ITEM_SILVER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $03 $00
+
+.db TERMINATOR
+
+L89A57D:
+.db UNIT_ENEMY_5C CLASS_EMPEROR LEVEL_01 NAME_HARDIN
+.db $03 $1D UNDEFINED PORTRAIT_HARDIN_BOOK_2_ID
+.db ITEM_GRADIVUS UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_GRADIVUS ITEM_DARK_ORB UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_SNIPER LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $03 $0A UNDEFINED PORTRAIT_GUARD_ARCHER_AIMING_ID
+.db ITEM_SILVER_BOW UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_SILVER_BOW UNDEFINED UNDEFINED UNDEFINED
+.db $01 $04 $00
+
+.db UNIT_ENEMY_5F CLASS_HERO LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $1E $0B UNDEFINED PORTRAIT_SWORD_AND_SHIELD_ID
+.db ITEM_SILVER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $03 $00
+
+.db UNIT_ENEMY_5F CLASS_HERO LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $1E $09 UNDEFINED PORTRAIT_SWORD_AND_SHIELD_ID
+.db ITEM_SILVER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $03 $00
+
+.db UNIT_ENEMY_5F CLASS_HERO LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $1E $08 UNDEFINED PORTRAIT_SWORD_AND_SHIELD_ID
+.db ITEM_SILVER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $03 $00
+
+.db UNIT_ENEMY_5F CLASS_HERO LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $1E $06 UNDEFINED PORTRAIT_SWORD_AND_SHIELD_ID
+.db ITEM_SILVER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $03 $00
+
+.db UNIT_ENEMY_5F CLASS_HERO LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $1C $0B UNDEFINED PORTRAIT_SWORD_AND_SHIELD_ID
+.db ITEM_SILVER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $03 $00
+
+.db UNIT_ENEMY_5F CLASS_HERO LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $1C $0C UNDEFINED PORTRAIT_SWORD_AND_SHIELD_ID
+.db ITEM_SILVER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $03 $00
+
+.db UNIT_ENEMY_5F CLASS_HERO LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $1B $0D UNDEFINED PORTRAIT_SWORD_AND_SHIELD_ID
+.db ITEM_SILVER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $03 $00
+
+.db UNIT_ENEMY_5F CLASS_HERO LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $1A $0C UNDEFINED PORTRAIT_SWORD_AND_SHIELD_ID
+.db ITEM_SILVER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $03 $00
+
+.db UNIT_ENEMY_5F CLASS_GENERAL LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $05 $15 UNDEFINED PORTRAIT_GENERAL_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_5F CLASS_GENERAL LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $04 $16 UNDEFINED PORTRAIT_GENERAL_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_5F CLASS_GENERAL LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $05 $13 UNDEFINED PORTRAIT_GENERAL_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_5F CLASS_GENERAL LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $03 $16 UNDEFINED PORTRAIT_GENERAL_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_5F CLASS_GENERAL LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $05 $18 UNDEFINED PORTRAIT_GENERAL_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_MANUAL UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_PALADIN LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $07 $0F UNDEFINED PORTRAIT_HORSEMAN_JAVELIN_ID
+.db ITEM_JAVELIN UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_PALADIN LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $06 $0E UNDEFINED PORTRAIT_HORSEMAN_JAVELIN_ID
+.db ITEM_JAVELIN UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_5D CLASS_THIEF LEVEL_01 NAME_THIEF_74
+.db $0D $0E UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_IRON_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_FIRE_DRAGON_STONE UNDEFINED UNDEFINED UNDEFINED
+.db $02 $35 $00
+
+.db UNIT_ENEMY_5E CLASS_THIEF LEVEL_01 NAME_THIEF_74
+.db $17 $0E UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_IRON_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_LEO_ORB UNDEFINED UNDEFINED UNDEFINED
+.db $02 $36 $00
+
+.db TERMINATOR
+
+L89A6E7:
+.db UNIT_ENEMY_5C CLASS_BISHOP_MALE LEVEL_03 NAME_YODEL
+.db $04 $04 UNDEFINED PORTRAIT_YODEL_ID
+.db ITEM_BOLGANONE UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_GUIDING_RING UNDEFINED UNDEFINED UNDEFINED
+.db $01 $04 $00
+
+.db UNIT_ENEMY_45 CLASS_MAGE_MALE LEVEL_01 NAME_KHADEIN
+.db $07 $09 UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_FIRE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $05 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_MAGE_MALE LEVEL_01 NAME_KHADEIN
+.db $07 $0C UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_FIRE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $05 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_MAGE_MALE LEVEL_01 NAME_KHADEIN
+.db $0B $05 UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_FIRE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $05 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_MAGE_MALE LEVEL_01 NAME_KHADEIN
+.db $0C $02 UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_FIRE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $05 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_MAGE_MALE LEVEL_01 NAME_KHADEIN
+.db $07 $04 UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_FIRE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $05 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_MAGE_MALE LEVEL_01 NAME_KHADEIN
+.db $08 $0B UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_FIRE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $05 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_MAGE_MALE LEVEL_03 NAME_KHADEIN
+.db $03 $08 UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_THUNDER UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_MAGE_MALE LEVEL_03 NAME_KHADEIN
+.db $05 $0B UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_THUNDER UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_MAGE_MALE LEVEL_03 NAME_KHADEIN
+.db $09 $0D UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_THUNDER UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_MAGE_MALE LEVEL_03 NAME_KHADEIN
+.db $0A $07 UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_THUNDER UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_DRACOKNIGHT LEVEL_03 NAME_DRAGOON
+.db $04 $06 UNDEFINED PORTRAIT_WYVERN_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_DRACOKNIGHT LEVEL_03 NAME_DRAGOON
+.db $06 $03 UNDEFINED PORTRAIT_WYVERN_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_DRACOKNIGHT LEVEL_03 NAME_DRAGOON
+.db $09 $03 UNDEFINED PORTRAIT_WYVERN_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_DRACOKNIGHT LEVEL_03 NAME_DRAGOON
+.db $04 $0D UNDEFINED PORTRAIT_WYVERN_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_DRACOKNIGHT LEVEL_03 NAME_DRAGOON
+.db $08 $0A UNDEFINED PORTRAIT_WYVERN_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_01 NAME_KHADEIN
+.db $04 $03 UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_WORM UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_MEND UNDEFINED UNDEFINED UNDEFINED
+.db $13 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_01 NAME_KHADEIN
+.db $04 $05 UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_WORM UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_SPEED_RING UNDEFINED UNDEFINED UNDEFINED
+.db $13 $03 $00
+
+.db UNIT_ENEMY_5D CLASS_THIEF LEVEL_03 NAME_THIEF
+.db $11 $16 UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_KILLER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_THIEF_STAFF UNDEFINED UNDEFINED UNDEFINED
+.db $02 $37 $00
+
+.db UNIT_ENEMY_5E CLASS_THIEF LEVEL_01 NAME_THIEF
+.db $0D $08 UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_IRON_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $38 $00
+
+.db UNIT_ENEMY_5F CLASS_THIEF LEVEL_01 NAME_THIEF
+.db $0C $07 UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_IRON_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $39 $00
+
+.db UNIT_ENEMY_60 CLASS_THIEF LEVEL_01 NAME_THIEF
+.db $0F $10 UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_IRON_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $3A $00
+
+.db UNIT_ENEMY_61 CLASS_THIEF LEVEL_01 NAME_THIEF
+.db $0E $11 UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_IRON_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED ITEM_BOOTS ITEM_IRON_SWORD
+.db $02 $3B $00
+
+.db UNIT_ENEMY_62 CLASS_THIEF LEVEL_01 NAME_THIEF
+.db $0F $0E UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_IRON_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_ELYSIAN_WHIP UNDEFINED UNDEFINED UNDEFINED
+.db $02 $3C $00
+
+.db TERMINATOR
+
+L89A8B0:
+.db UNIT_ARLEN CLASS_MAGE_MALE LEVEL_10 NAME_ARLEN
+.db $0A $0F UNDEFINED PORTRAIT_ARLEN_ID
+.db ITEM_THORON UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_ARIES_ORB UNDEFINED UNDEFINED UNDEFINED
+.db $1B $3D $00
+
+.db UNIT_ENEMY_45 CLASS_MAGE_MALE LEVEL_01 NAME_KHADEIN
+.db $0B $07 UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_ELFIRE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $03 $00
+
+.db UNIT_ENEMY_45 CLASS_MAGE_MALE LEVEL_01 NAME_KHADEIN
+.db $08 $06 UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_FIRE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $03 $00
+
+.db UNIT_ENEMY_45 CLASS_MAGE_MALE LEVEL_01 NAME_KHADEIN
+.db $0E $06 UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_ELFIRE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $03 $00
+
+.db UNIT_ENEMY_45 CLASS_MAGE_MALE LEVEL_01 NAME_KHADEIN
+.db $0A $19 UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_FIRE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $03 $00
+
+.db UNIT_ENEMY_45 CLASS_MAGE_MALE LEVEL_01 NAME_KHADEIN
+.db $0E $18 UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_ELFIRE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $03 $00
+
+.db UNIT_ENEMY_45 CLASS_MAGE_MALE LEVEL_01 NAME_KHADEIN
+.db $10 $19 UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_FIRE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $03 $00
+
+.db UNIT_ENEMY_45 CLASS_MAGE_MALE LEVEL_03 NAME_KHADEIN
+.db $0F $1A UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_THUNDER UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $03 $00
+
+.db UNIT_ENEMY_45 CLASS_MAGE_MALE LEVEL_03 NAME_KHADEIN
+.db $0B $19 UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_THUNDER UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $03 $00
+
+.db UNIT_ENEMY_45 CLASS_MAGE_MALE LEVEL_03 NAME_KHADEIN
+.db $0A $05 UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_THUNDER UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $03 $00
+
+.db UNIT_ENEMY_45 CLASS_MAGE_MALE LEVEL_03 NAME_KHADEIN
+.db $10 $05 UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_THUNDER UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $03 $00
+
+.db UNIT_ENEMY_5D CLASS_SISTER LEVEL_01 NAME_KHADEIN
+.db $13 $07 UNDEFINED PORTRAIT_WOMAN_WITH_STAFF_ID
+.db ITEM_HEAL UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $05 $00
+
+.db UNIT_ENEMY_5F CLASS_SISTER LEVEL_01 NAME_KHADEIN
+.db $0A $09 UNDEFINED PORTRAIT_WOMAN_WITH_STAFF_ID
+.db ITEM_HEAL UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $05 $00
+
+.db UNIT_ENEMY_60 CLASS_SISTER LEVEL_01 NAME_KHADEIN
+.db $0F $13 UNDEFINED PORTRAIT_WOMAN_WITH_STAFF_ID
+.db ITEM_HEAL UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $05 $00
+
+.db UNIT_ENEMY_61 CLASS_SISTER LEVEL_01 NAME_KHADEIN
+.db $15 $19 UNDEFINED PORTRAIT_WOMAN_WITH_STAFF_ID
+.db ITEM_HEAL UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $05 $00
+
+.db UNIT_ENEMY_62 CLASS_SISTER LEVEL_01 NAME_KHADEIN
+.db $08 $19 UNDEFINED PORTRAIT_WOMAN_WITH_STAFF_ID
+.db ITEM_HEAL UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $05 $00
+
+.db UNIT_ENEMY_63 CLASS_SISTER LEVEL_01 NAME_KHADEIN
+.db $0C $05 UNDEFINED PORTRAIT_WOMAN_WITH_STAFF_ID
+.db ITEM_HEAL UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $05 $00
+
+.db UNIT_ENEMY_5E CLASS_BISHOP_MALE LEVEL_01 NAME_KHADEIN
+.db $14 $0E UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_WORM UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $13 $03 $00
+
+.db UNIT_ENEMY_5E CLASS_BISHOP_MALE LEVEL_01 NAME_KHADEIN
+.db $14 $10 UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_WORM UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $13 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_MERCENARY LEVEL_03 NAME_KHADEIN_MERCENARY
+.db $0D $05 UNDEFINED PORTRAIT_SMALL_ID
+.db ITEM_IRON_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_MERCENARY LEVEL_03 NAME_KHADEIN_MERCENARY
+.db $0C $06 UNDEFINED PORTRAIT_SMALL_ID
+.db ITEM_IRON_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_MERCENARY LEVEL_03 NAME_KHADEIN_MERCENARY
+.db $0D $14 UNDEFINED PORTRAIT_SMALL_ID
+.db ITEM_IRON_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_MERCENARY LEVEL_03 NAME_KHADEIN_MERCENARY
+.db $0C $18 UNDEFINED PORTRAIT_SMALL_ID
+.db ITEM_IRON_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_MERCENARY LEVEL_05 NAME_KHADEIN_MERCENARY
+.db $14 $0F UNDEFINED PORTRAIT_SMALL_ID
+.db ITEM_KILLER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_KILLER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db TERMINATOR
+
+L89AA79:
+.db UNIT_ENEMY_5C CLASS_FLYING_DRAGON LEVEL_01 NAME_STRAY_DRAGON
+.db $04 $03 UNDEFINED PORTRAIT_DRAGON_ID
+.db ITEM_FIRE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_MANUAL UNDEFINED UNDEFINED UNDEFINED
+.db $01 $04 $00
+
+.db UNIT_ENEMY_5D CLASS_BARBARIAN LEVEL_05 NAME_SAND_TRIBE
+.db $04 $07 UNDEFINED PORTRAIT_DOUBLE_AXE_ID
+.db ITEM_STEEL_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_5D CLASS_BARBARIAN LEVEL_05 NAME_SAND_TRIBE
+.db $08 $08 UNDEFINED PORTRAIT_DOUBLE_AXE_ID
+.db ITEM_STEEL_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_5D CLASS_BARBARIAN LEVEL_05 NAME_SAND_TRIBE
+.db $0A $0E UNDEFINED PORTRAIT_DOUBLE_AXE_ID
+.db ITEM_STEEL_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_5D CLASS_BARBARIAN LEVEL_05 NAME_SAND_TRIBE
+.db $0D $11 UNDEFINED PORTRAIT_DOUBLE_AXE_ID
+.db ITEM_STEEL_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_5D CLASS_BARBARIAN LEVEL_05 NAME_SAND_TRIBE
+.db $0C $13 UNDEFINED PORTRAIT_DOUBLE_AXE_ID
+.db ITEM_STEEL_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_5D CLASS_BARBARIAN LEVEL_05 NAME_SAND_TRIBE
+.db $09 $1A UNDEFINED PORTRAIT_DOUBLE_AXE_ID
+.db ITEM_STEEL_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_5D CLASS_BARBARIAN LEVEL_05 NAME_SAND_TRIBE
+.db $0D $1A UNDEFINED PORTRAIT_DOUBLE_AXE_ID
+.db ITEM_STEEL_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_5D CLASS_BARBARIAN LEVEL_05 NAME_SAND_TRIBE
+.db $0E $1D UNDEFINED PORTRAIT_DOUBLE_AXE_ID
+.db ITEM_STEEL_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_5E CLASS_HUNTER LEVEL_05 NAME_SAND_TRIBE
+.db $08 $03 UNDEFINED PORTRAIT_ARCHER_ID
+.db ITEM_STEEL_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $03 $00
+
+.db UNIT_ENEMY_5E CLASS_HUNTER LEVEL_05 NAME_SAND_TRIBE
+.db $11 $03 UNDEFINED PORTRAIT_ARCHER_ID
+.db ITEM_STEEL_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $03 $00
+
+.db UNIT_ENEMY_5E CLASS_HUNTER LEVEL_05 NAME_SAND_TRIBE
+.db $12 $09 UNDEFINED PORTRAIT_ARCHER_ID
+.db ITEM_STEEL_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $03 $00
+
+.db UNIT_ENEMY_5E CLASS_HUNTER LEVEL_05 NAME_SAND_TRIBE
+.db $16 $0D UNDEFINED PORTRAIT_ARCHER_ID
+.db ITEM_STEEL_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $03 $00
+
+.db UNIT_ENEMY_5E CLASS_HUNTER LEVEL_05 NAME_SAND_TRIBE
+.db $0F $0F UNDEFINED PORTRAIT_ARCHER_ID
+.db ITEM_STEEL_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $03 $00
+
+.db UNIT_ENEMY_5E CLASS_HUNTER LEVEL_05 NAME_SAND_TRIBE
+.db $0F $19 UNDEFINED PORTRAIT_ARCHER_ID
+.db ITEM_STEEL_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $03 $00
+
+.db UNIT_ENEMY_5E CLASS_HUNTER LEVEL_05 NAME_SAND_TRIBE
+.db $05 $12 UNDEFINED PORTRAIT_ARCHER_ID
+.db ITEM_STEEL_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $03 $00
+
+.db UNIT_ENEMY_5F CLASS_FLYING_DRAGON LEVEL_01 NAME_STRAY_DRAGON
+.db $0C $1C UNDEFINED PORTRAIT_DRAGON_ID
+.db ITEM_FIRE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_5F CLASS_FLYING_DRAGON LEVEL_01 NAME_STRAY_DRAGON
+.db $04 $18 UNDEFINED PORTRAIT_DRAGON_ID
+.db ITEM_FIRE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_5F CLASS_FLYING_DRAGON LEVEL_01 NAME_STRAY_DRAGON
+.db $0C $04 UNDEFINED PORTRAIT_DRAGON_ID
+.db ITEM_FIRE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_5E CLASS_FLYING_DRAGON LEVEL_01 NAME_STRAY_DRAGON
+.db $03 $0A UNDEFINED PORTRAIT_DRAGON_ID
+.db ITEM_FIRE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_BERSERKER LEVEL_10 NAME_BERSERKER
+.db $02 $0B UNDEFINED PORTRAIT_SWORD_AND_SHIELD_ID
+.db ITEM_MASTER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_MASTER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db TERMINATOR
+
+L89AC09:
+.db UNIT_ENEMY_5C CLASS_FIRE_DRAGON LEVEL_01 NAME_FIRE_DRAGON
+.db $03 $02 UNDEFINED PORTRAIT_DRAGON_ID
+.db ITEM_FIRE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_ORIONS_BOLT UNDEFINED UNDEFINED UNDEFINED
+.db $01 $04 $00
+
+.db UNIT_ENEMY_45 CLASS_FIRE_DRAGON LEVEL_01 NAME_FIRE_DRAGON
+.db $0B $0F UNDEFINED PORTRAIT_DRAGON_ID
+.db ITEM_FIRE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_FIRE_DRAGON LEVEL_01 NAME_FIRE_DRAGON
+.db $14 $0F UNDEFINED PORTRAIT_DRAGON_ID
+.db ITEM_FIRE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_FIRE_DRAGON LEVEL_01 NAME_FIRE_DRAGON
+.db $04 $0F UNDEFINED PORTRAIT_DRAGON_ID
+.db ITEM_FIRE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_FIRE_DRAGON LEVEL_01 NAME_FIRE_DRAGON
+.db $04 $0C UNDEFINED PORTRAIT_DRAGON_ID
+.db ITEM_FIRE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_FIRE_DRAGON LEVEL_01 NAME_FIRE_DRAGON
+.db $04 $16 UNDEFINED PORTRAIT_DRAGON_ID
+.db ITEM_FIRE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_FIRE_DRAGON LEVEL_01 NAME_FIRE_DRAGON
+.db $04 $1A UNDEFINED PORTRAIT_DRAGON_ID
+.db ITEM_FIRE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_FLYING_DRAGON LEVEL_01 NAME_STRAY_DRAGON
+.db $0C $01 UNDEFINED PORTRAIT_DRAGON_ID
+.db ITEM_FIRE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_FLYING_DRAGON LEVEL_01 NAME_STRAY_DRAGON
+.db $0D $02 UNDEFINED PORTRAIT_DRAGON_ID
+.db ITEM_FIRE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_FLYING_DRAGON LEVEL_01 NAME_STRAY_DRAGON
+.db $0E $01 UNDEFINED PORTRAIT_DRAGON_ID
+.db ITEM_FIRE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_FIRE_DRAGON LEVEL_01 NAME_FIRE_DRAGON
+.db $04 $03 UNDEFINED PORTRAIT_DRAGON_ID
+.db ITEM_FIRE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_FIRE_DRAGON LEVEL_01 NAME_FIRE_DRAGON
+.db $04 $06 UNDEFINED PORTRAIT_DRAGON_ID
+.db ITEM_FIRE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_BARBARIAN LEVEL_05 NAME_FIRE_TRIBE
+.db $09 $0F UNDEFINED PORTRAIT_DOUBLE_AXE_ID
+.db ITEM_DEVIL_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_BARBARIAN LEVEL_05 NAME_FIRE_TRIBE
+.db $04 $10 UNDEFINED PORTRAIT_DOUBLE_AXE_ID
+.db ITEM_DEVIL_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_BARBARIAN LEVEL_05 NAME_FIRE_TRIBE
+.db $04 $0E UNDEFINED PORTRAIT_DOUBLE_AXE_ID
+.db ITEM_DEVIL_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_BARBARIAN LEVEL_05 NAME_FIRE_TRIBE
+.db $0F $0F UNDEFINED PORTRAIT_DOUBLE_AXE_ID
+.db ITEM_DEVIL_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db TERMINATOR
+
+L89AD3A:
+.db UNIT_ENEMY_5C CLASS_ICE_DRAGON LEVEL_01 NAME_ICE_DRAGON
+.db $0A $0F UNDEFINED PORTRAIT_DRAGON_ID
+.db ITEM_ICE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_HERO_CREST UNDEFINED UNDEFINED UNDEFINED
+.db $01 $04 $00
+
+.db UNIT_ENEMY_45 CLASS_ICE_DRAGON LEVEL_01 NAME_ICE_DRAGON
+.db $0A $0E UNDEFINED PORTRAIT_DRAGON_ID
+.db ITEM_ICE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_ICE_DRAGON LEVEL_01 NAME_ICE_DRAGON
+.db $0A $10 UNDEFINED PORTRAIT_DRAGON_ID
+.db ITEM_ICE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_ICE_DRAGON LEVEL_01 NAME_ICE_DRAGON
+.db $0B $0E UNDEFINED PORTRAIT_DRAGON_ID
+.db ITEM_ICE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_ICE_DRAGON LEVEL_01 NAME_ICE_DRAGON
+.db $0B $0F UNDEFINED PORTRAIT_DRAGON_ID
+.db ITEM_ICE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_ICE_DRAGON LEVEL_01 NAME_ICE_DRAGON
+.db $0B $10 UNDEFINED PORTRAIT_DRAGON_ID
+.db ITEM_ICE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_BARBARIAN LEVEL_07 NAME_ICE_WARRIOR
+.db $15 $11 UNDEFINED PORTRAIT_DOUBLE_AXE_ID
+.db ITEM_SILVER_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_BARBARIAN LEVEL_07 NAME_ICE_WARRIOR
+.db $15 $10 UNDEFINED PORTRAIT_DOUBLE_AXE_ID
+.db ITEM_SILVER_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_BARBARIAN LEVEL_07 NAME_ICE_WARRIOR
+.db $16 $11 UNDEFINED PORTRAIT_DOUBLE_AXE_ID
+.db ITEM_SILVER_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_BARBARIAN LEVEL_07 NAME_ICE_WARRIOR
+.db $14 $11 UNDEFINED PORTRAIT_DOUBLE_AXE_ID
+.db ITEM_SILVER_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_BARBARIAN LEVEL_07 NAME_ICE_WARRIOR
+.db $14 $1D UNDEFINED PORTRAIT_DOUBLE_AXE_ID
+.db ITEM_SILVER_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_BARBARIAN LEVEL_07 NAME_ICE_WARRIOR
+.db $13 $1D UNDEFINED PORTRAIT_DOUBLE_AXE_ID
+.db ITEM_SILVER_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_BARBARIAN LEVEL_07 NAME_ICE_WARRIOR
+.db $17 $1D UNDEFINED PORTRAIT_DOUBLE_AXE_ID
+.db ITEM_SILVER_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_BARBARIAN LEVEL_07 NAME_ICE_WARRIOR
+.db $19 $03 UNDEFINED PORTRAIT_DOUBLE_AXE_ID
+.db ITEM_SILVER_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_BARBARIAN LEVEL_07 NAME_ICE_WARRIOR
+.db $1B $04 UNDEFINED PORTRAIT_DOUBLE_AXE_ID
+.db ITEM_SILVER_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_BARBARIAN LEVEL_07 NAME_ICE_WARRIOR
+.db $1B $02 UNDEFINED PORTRAIT_DOUBLE_AXE_ID
+.db ITEM_SILVER_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_4E CLASS_THIEF LEVEL_10 NAME_ICE_WARRIOR
+.db $19 $01 UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_DEVIL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $70 $00
+
+.db UNIT_ENEMY_4B CLASS_THIEF LEVEL_10 NAME_ICE_WARRIOR
+.db $19 $1C UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_DEVIL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $6F $00
+
+.db UNIT_ENEMY_45 CLASS_ICE_DRAGON LEVEL_01 NAME_ICE_DRAGON
+.db $17 $19 UNDEFINED PORTRAIT_DRAGON_ID
+.db ITEM_ICE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_FLYING_DRAGON LEVEL_01 NAME_STRAY_DRAGON
+.db $07 $0D UNDEFINED PORTRAIT_DRAGON_ID
+.db ITEM_FIRE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_FLYING_DRAGON LEVEL_01 NAME_STRAY_DRAGON
+.db $07 $11 UNDEFINED PORTRAIT_DRAGON_ID
+.db ITEM_FIRE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db TERMINATOR
+
+L89AECA:
+.db UNIT_ENEMY_45 CLASS_ICE_DRAGON LEVEL_01 NAME_ICE_DRAGON
+.db $18 $16 UNDEFINED PORTRAIT_DRAGON_ID
+.db ITEM_ICE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_ICE_DRAGON LEVEL_01 NAME_ICE_DRAGON
+.db $16 $17 UNDEFINED PORTRAIT_DRAGON_ID
+.db ITEM_ICE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_ICE_DRAGON LEVEL_01 NAME_ICE_DRAGON
+.db $15 $17 UNDEFINED PORTRAIT_DRAGON_ID
+.db ITEM_ICE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_ICE_DRAGON LEVEL_01 NAME_ICE_DRAGON
+.db $18 $10 UNDEFINED PORTRAIT_DRAGON_ID
+.db ITEM_ICE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_ICE_DRAGON LEVEL_01 NAME_ICE_DRAGON
+.db $17 $0F UNDEFINED PORTRAIT_DRAGON_ID
+.db ITEM_ICE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_ICE_DRAGON LEVEL_01 NAME_ICE_DRAGON
+.db $14 $0E UNDEFINED PORTRAIT_DRAGON_ID
+.db ITEM_ICE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_ICE_DRAGON LEVEL_01 NAME_ICE_DRAGON
+.db $15 $13 UNDEFINED PORTRAIT_DRAGON_ID
+.db ITEM_ICE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_ICE_DRAGON LEVEL_01 NAME_ICE_DRAGON
+.db $11 $13 UNDEFINED PORTRAIT_DRAGON_ID
+.db ITEM_ICE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_ICE_DRAGON LEVEL_01 NAME_ICE_DRAGON
+.db $11 $14 UNDEFINED PORTRAIT_DRAGON_ID
+.db ITEM_ICE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_ICE_DRAGON LEVEL_01 NAME_ICE_DRAGON
+.db $11 $12 UNDEFINED PORTRAIT_DRAGON_ID
+.db ITEM_ICE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_5C CLASS_THIEF LEVEL_10 NAME_ICE_WARRIOR
+.db $0F $09 UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_DEVIL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_GUIDING_RING UNDEFINED UNDEFINED UNDEFINED
+.db $02 $3E $00
+
+.db UNIT_ENEMY_5D CLASS_THIEF LEVEL_10 NAME_ICE_WARRIOR
+.db $0E $08 UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_DEVIL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $3F $00
+
+.db UNIT_ENEMY_5E CLASS_THIEF LEVEL_10 NAME_ICE_WARRIOR
+.db $0F $0B UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_DEVIL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $40 $00
+
+.db UNIT_ENEMY_5F CLASS_THIEF LEVEL_10 NAME_ICE_WARRIOR
+.db $0F $14 UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_DEVIL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $41 $00
+
+.db UNIT_ENEMY_64 CLASS_THIEF LEVEL_10 NAME_ICE_WARRIOR
+.db $0E $1A UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_DEVIL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $46 $00
+
+.db UNIT_ENEMY_65 CLASS_THIEF LEVEL_10 NAME_ICE_WARRIOR
+.db $0F $19 UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_DEVIL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED ITEM_BOOTS ITEM_IRON_SWORD
+.db $02 $47 $00
+
+.db UNIT_ENEMY_4E CLASS_THIEF LEVEL_10 NAME_ICE_WARRIOR
+.db $1B $0B UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_DEVIL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_WARP UNDEFINED UNDEFINED UNDEFINED
+.db $02 $48 $00
+
+.db TERMINATOR
+
+L89B00E:
+.db UNIT_ENEMY_5C CLASS_GENERAL LEVEL_10 NAME_EIBEL
+.db $0D $14 UNDEFINED PORTRAIT_EIBEL_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db $01 $04 $00
+
+.db UNIT_ENEMY_45 CLASS_PALADIN LEVEL_01 NAME_GRA
+.db $0A $1D UNDEFINED PORTRAIT_HORSEMAN_JAVELIN_ID
+.db ITEM_KNIGHT_KILLER UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_KNIGHT_KILLER UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_PALADIN LEVEL_01 NAME_GRA
+.db $0B $1E UNDEFINED PORTRAIT_HORSEMAN_JAVELIN_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_PALADIN LEVEL_01 NAME_GRA
+.db $0C $1D UNDEFINED PORTRAIT_HORSEMAN_JAVELIN_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_PALADIN LEVEL_01 NAME_GRA
+.db $0C $1C UNDEFINED PORTRAIT_HORSEMAN_JAVELIN_ID
+.db ITEM_JAVELIN UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_ARMOR_KNIGHT LEVEL_05 NAME_AKANEIA_SOLDIER
+.db $06 $0D UNDEFINED PORTRAIT_ARMOUR_ID
+.db ITEM_JAVELIN UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_ARMOR_KNIGHT LEVEL_05 NAME_AKANEIA_SOLDIER
+.db $07 $0C UNDEFINED PORTRAIT_ARMOUR_ID
+.db ITEM_JAVELIN UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_ARMOR_KNIGHT LEVEL_05 NAME_AKANEIA_SOLDIER
+.db $08 $0D UNDEFINED PORTRAIT_ARMOUR_ID
+.db ITEM_JAVELIN UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_ARMOR_KNIGHT LEVEL_05 NAME_AKANEIA_SOLDIER
+.db $0D $1A UNDEFINED PORTRAIT_ARMOUR_ID
+.db ITEM_JAVELIN UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_5D CLASS_GENERAL LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $14 $1B UNDEFINED PORTRAIT_GENERAL_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db $02 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_GENERAL LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $0D $15 UNDEFINED PORTRAIT_GENERAL_ID
+.db ITEM_KNIGHT_KILLER UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_54 CLASS_THIEF LEVEL_07 NAME_THIEF
+.db $14 $0A UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_SILVER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_SILVER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db $02 $06 $00
+
+.db UNIT_ENEMY_54 CLASS_THIEF LEVEL_07 NAME_THIEF
+.db $1B $07 UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_SILVER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_SILVER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db $02 $06 $00
+
+.db UNIT_ENEMY_54 CLASS_THIEF LEVEL_07 NAME_THIEF
+.db $15 $04 UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_IRON_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_RAPIER UNDEFINED UNDEFINED UNDEFINED
+.db $02 $06 $00
+
+.db UNIT_ENEMY_54 CLASS_THIEF LEVEL_07 NAME_THIEF
+.db $1A $15 UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_IRON_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED $96 ITEM_IRON_SWORD
+.db $02 $06 $00
+
+.db UNIT_ENEMY_45 CLASS_MAGE_MALE LEVEL_05 NAME_AKANEIA_SOLDIER
+.db $0F $17 UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_ELFIRE UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_ELFIRE UNDEFINED UNDEFINED UNDEFINED
+.db $1B $03 $00
+
+.db UNIT_ENEMY_45 CLASS_MAGE_MALE LEVEL_05 NAME_AKANEIA_SOLDIER
+.db $0E $1B UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_ELFIRE UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_ELFIRE UNDEFINED UNDEFINED UNDEFINED
+.db $1B $03 $00
+
+.db UNIT_ENEMY_45 CLASS_MAGE_MALE LEVEL_05 NAME_AKANEIA_SOLDIER
+.db $0A $0C UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_BLIZZARD UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_BLIZZARD UNDEFINED UNDEFINED UNDEFINED
+.db $1B $03 $00
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_05 NAME_AKANEIA_SOLDIER
+.db $0A $13 UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_PHYSIC UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_PHYSIC UNDEFINED UNDEFINED UNDEFINED
+.db $02 $05 $00
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_05 NAME_AKANEIA_SOLDIER
+.db $0A $15 UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_FORTIFY UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $29 $00
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_05 NAME_AKANEIA_SOLDIER
+.db $1B $1A UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_WORM UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $12 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_ARMOR_KNIGHT LEVEL_05 NAME_AKANEIA_SOLDIER
+.db $10 $1C UNDEFINED PORTRAIT_ARMOUR_ID
+.db ITEM_JAVELIN UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_SNIPER LEVEL_01 NAME_GRA
+.db $0F $1C UNDEFINED PORTRAIT_GUARD_ARCHER_AIMING_ID
+.db ITEM_STEEL_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_SNIPER LEVEL_01 NAME_GRA
+.db $0F $15 UNDEFINED PORTRAIT_GUARD_ARCHER_AIMING_ID
+.db ITEM_STEEL_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_SNIPER LEVEL_01 NAME_GRA
+.db $08 $0A UNDEFINED PORTRAIT_GUARD_ARCHER_AIMING_ID
+.db ITEM_STEEL_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_HORSEMAN LEVEL_01 NAME_GRA
+.db $0E $1E UNDEFINED PORTRAIT_HORSEMAN_BOW_ID
+.db ITEM_SILVER_BOW UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_SILVER_BOW UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_HORSEMAN LEVEL_01 NAME_GRA
+.db $0D $1D UNDEFINED PORTRAIT_HORSEMAN_BOW_ID
+.db ITEM_SILVER_BOW UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_SILVER_BOW UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_HORSEMAN LEVEL_01 NAME_GRA
+.db $0B $1C UNDEFINED PORTRAIT_HORSEMAN_BOW_ID
+.db ITEM_SILVER_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_BALLISTICIAN LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $0A $11 UNDEFINED PORTRAIT_CATAPULT_ID
+.db ITEM_THUNDERBOLT UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $12 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_BALLISTICIAN LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $0B $17 UNDEFINED PORTRAIT_CATAPULT_ID
+.db ITEM_THUNDERBOLT UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $13 $03 $00
+
+.db UNIT_ABEL_BOOK2 CLASS_PALADIN LEVEL_01 NAME_ABEL
+.db $0D $13 UNDEFINED PORTRAIT_ABEL_ID
+.db ITEM_KNIGHT_KILLER UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 UNDEFINED
+
+.db TERMINATOR
+
+L89B25C:
+.db UNIT_ENEMY_5C CLASS_BISHOP_MALE LEVEL_10 NAME_WILLOW
+.db $09 $19 UNDEFINED PORTRAIT_WILLOW_ID
+.db ITEM_METEOR UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_RECOVER UNDEFINED UNDEFINED UNDEFINED
+.db $14 $04 $00
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_05 NAME_AKANEIA_SOLDIER
+.db $09 $1A UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_PHYSIC UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_PHYSIC UNDEFINED UNDEFINED UNDEFINED
+.db $02 $05 $00
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_05 NAME_AKANEIA_SOLDIER
+.db $09 $18 UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_FORTIFY UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_FORTIFY UNDEFINED UNDEFINED UNDEFINED
+.db $02 $29 $00
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_05 NAME_AKANEIA_SOLDIER
+.db $0A $1A UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_WORM UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $12 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_05 NAME_AKANEIA_SOLDIER
+.db $0A $18 UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_WORM UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $13 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_SOLDIER LEVEL_10 NAME_AKANEIA_SOLDIER
+.db $0B $1B UNDEFINED PORTRAIT_BECK_ID
+.db ITEM_IRON_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_SOLDIER LEVEL_10 NAME_AKANEIA_SOLDIER
+.db $0D $19 UNDEFINED PORTRAIT_BECK_ID
+.db ITEM_IRON_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_SOLDIER LEVEL_10 NAME_AKANEIA_SOLDIER
+.db $0F $19 UNDEFINED PORTRAIT_BECK_ID
+.db ITEM_IRON_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_SOLDIER LEVEL_10 NAME_AKANEIA_SOLDIER
+.db $0F $18 UNDEFINED PORTRAIT_BECK_ID
+.db ITEM_IRON_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_SOLDIER LEVEL_10 NAME_AKANEIA_SOLDIER
+.db $0C $15 UNDEFINED PORTRAIT_BECK_ID
+.db ITEM_IRON_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_SOLDIER LEVEL_10 NAME_AKANEIA_SOLDIER
+.db $07 $15 UNDEFINED PORTRAIT_BECK_ID
+.db ITEM_IRON_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_MAGE_MALE LEVEL_05 NAME_AKANEIA_SOLDIER
+.db $0C $18 UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_ELFIRE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $01 $00
+
+.db UNIT_ENEMY_45 CLASS_MAGE_MALE LEVEL_05 NAME_AKANEIA_SOLDIER
+.db $0E $17 UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_ELFIRE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $01 $00
+
+.db UNIT_ENEMY_45 CLASS_MAGE_MALE LEVEL_05 NAME_AKANEIA_SOLDIER
+.db $10 $17 UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_ELFIRE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $01 $00
+
+.db UNIT_ENEMY_45 CLASS_MAGE_MALE LEVEL_05 NAME_AKANEIA_SOLDIER
+.db $10 $1A UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_ELFIRE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $01 $00
+
+.db UNIT_ENEMY_45 CLASS_SNIPER LEVEL_05 NAME_AKANEIA_SOLDIER
+.db $0A $19 UNDEFINED PORTRAIT_GUARD_ARCHER_AIMING_ID
+.db ITEM_KILLER_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_SNIPER LEVEL_05 NAME_AKANEIA_SOLDIER
+.db $0E $18 UNDEFINED PORTRAIT_GUARD_ARCHER_AIMING_ID
+.db ITEM_KILLER_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_HERO LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $0E $08 UNDEFINED PORTRAIT_SWORD_AND_SHIELD_ID
+.db ITEM_SILVER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_HERO LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $0E $07 UNDEFINED PORTRAIT_SWORD_AND_SHIELD_ID
+.db ITEM_SILVER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_HERO LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $10 $09 UNDEFINED PORTRAIT_SWORD_AND_SHIELD_ID
+.db ITEM_SILVER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_HERO LEVEL_05 NAME_AKANEIA_SOLDIER
+.db $12 $08 UNDEFINED PORTRAIT_SWORD_AND_SHIELD_ID
+.db ITEM_SWORD_KILLER UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_HERO LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $0C $08 UNDEFINED PORTRAIT_SWORD_AND_SHIELD_ID
+.db ITEM_SILVER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_HERO LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $0C $0A UNDEFINED PORTRAIT_SWORD_AND_SHIELD_ID
+.db ITEM_SILVER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_HERO LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $0B $0A UNDEFINED PORTRAIT_SWORD_AND_SHIELD_ID
+.db ITEM_SILVER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_HERO LEVEL_03 NAME_AKANEIA_SOLDIER
+.db $0A $09 UNDEFINED PORTRAIT_SWORD_AND_SHIELD_ID
+.db ITEM_THUNDER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_HERO LEVEL_03 NAME_AKANEIA_SOLDIER
+.db $11 $09 UNDEFINED PORTRAIT_SWORD_AND_SHIELD_ID
+.db ITEM_ARMOR_KILLER UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_ARMOR_KILLER UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_5D CLASS_THIEF LEVEL_01 NAME_THIEF
+.db $09 $07 UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_IRON_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $49 $00
+
+.db UNIT_ENEMY_5E CLASS_THIEF LEVEL_01 NAME_THIEF
+.db $09 $08 UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_IRON_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $4A $00
+
+.db UNIT_ENEMY_5F CLASS_THIEF LEVEL_01 NAME_THIEF
+.db $0E $0C UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_IRON_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED ITEM_THORON ITEM_IRON_SWORD
+.db $02 $4B $00
+
+.db UNIT_ENEMY_60 CLASS_THIEF LEVEL_20 NAME_THIEF
+.db $1B $08 UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_DEVIL_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_EARTH_ORB UNDEFINED UNDEFINED UNDEFINED
+.db $02 $4D $00
+
+.db UNIT_ENEMY_61 CLASS_THIEF LEVEL_01 NAME_THIEF
+.db $0D $11 UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_IRON_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $4C $00
+
+.db TERMINATOR
+
+L89B4AA:
+.db UNIT_SHEENA_ENEMY CLASS_GENERAL LEVEL_01 NAME_SHEENA
+.db $12 $08 UNDEFINED PORTRAIT_SHEENA_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED
+
+.db UNIT_SAMSON_ENEMY CLASS_HERO LEVEL_05 NAME_SAMSON
+.db $12 $09 UNDEFINED PORTRAIT_SAMSON_ID
+.db ITEM_SILVER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED
+
+.db UNIT_SHEENA CLASS_GENERAL LEVEL_01 NAME_SHEENA
+.db $12 $03 UNDEFINED PORTRAIT_SHEENA_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_ENERGY_RING UNDEFINED UNDEFINED UNDEFINED
+.db $02 $04 $00
+
+.db UNIT_SAMSON_BOOK2 CLASS_HERO LEVEL_05 NAME_SAMSON
+.db $12 $04 UNDEFINED PORTRAIT_SAMSON_ID
+.db ITEM_SILVER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_SOLDIER LEVEL_20 NAME_AKANEIA_SOLDIER
+.db $17 $0A UNDEFINED PORTRAIT_BECK_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_SOLDIER LEVEL_20 NAME_AKANEIA_SOLDIER
+.db $0F $09 UNDEFINED PORTRAIT_BECK_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_SOLDIER LEVEL_20 NAME_AKANEIA_SOLDIER
+.db $0E $0F UNDEFINED PORTRAIT_BECK_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_SOLDIER LEVEL_20 NAME_AKANEIA_SOLDIER
+.db $09 $13 UNDEFINED PORTRAIT_BECK_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_SOLDIER LEVEL_20 NAME_AKANEIA_SOLDIER
+.db $0F $17 UNDEFINED PORTRAIT_BECK_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_SOLDIER LEVEL_20 NAME_AKANEIA_SOLDIER
+.db $13 $0A UNDEFINED PORTRAIT_BECK_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_ARCHER LEVEL_20 NAME_AKANEIA_SOLDIER
+.db $17 $18 UNDEFINED PORTRAIT_GUARD_ARCHER_ID
+.db ITEM_SILVER_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_ARCHER LEVEL_20 NAME_AKANEIA_SOLDIER
+.db $13 $18 UNDEFINED PORTRAIT_GUARD_ARCHER_ID
+.db ITEM_SILVER_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_ARCHER LEVEL_20 NAME_AKANEIA_SOLDIER
+.db $0F $05 UNDEFINED PORTRAIT_GUARD_ARCHER_ID
+.db ITEM_SILVER_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_ARCHER LEVEL_20 NAME_AKANEIA_SOLDIER
+.db $05 $0D UNDEFINED PORTRAIT_GUARD_ARCHER_ID
+.db ITEM_SILVER_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_ARCHER LEVEL_20 NAME_AKANEIA_SOLDIER
+.db $18 $0A UNDEFINED PORTRAIT_GUARD_ARCHER_ID
+.db ITEM_SILVER_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_ARCHER LEVEL_20 NAME_AKANEIA_SOLDIER
+.db $15 $04 UNDEFINED PORTRAIT_GUARD_ARCHER_ID
+.db ITEM_SILVER_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_61 CLASS_SOLDIER LEVEL_01 NAME_GRA
+.db $0C $0B UNDEFINED PORTRAIT_BECK_ID
+.db ITEM_IRON_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $03 $00
+
+.db UNIT_ENEMY_62 CLASS_SOLDIER LEVEL_01 NAME_GRA
+.db $0E $11 UNDEFINED PORTRAIT_BECK_ID
+.db ITEM_IRON_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $03 $00
+
+.db UNIT_ENEMY_63 CLASS_SOLDIER LEVEL_01 NAME_GRA
+.db $0B $15 UNDEFINED PORTRAIT_BECK_ID
+.db ITEM_IRON_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $03 $00
+
+.db UNIT_ENEMY_64 CLASS_SOLDIER LEVEL_01 NAME_GRA
+.db $14 $14 UNDEFINED PORTRAIT_BECK_ID
+.db ITEM_IRON_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $03 $00
+
+.db UNIT_ENEMY_65 CLASS_SOLDIER LEVEL_01 NAME_GRA
+.db $14 $10 UNDEFINED PORTRAIT_BECK_ID
+.db ITEM_IRON_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $03 $00
+
+.db UNIT_ENEMY_66 CLASS_ARCHER LEVEL_01 NAME_GRA
+.db $14 $11 UNDEFINED PORTRAIT_GUARD_ARCHER_ID
+.db ITEM_IRON_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $03 $00
+
+.db UNIT_ENEMY_67 CLASS_ARCHER LEVEL_01 NAME_GRA
+.db $0C $11 UNDEFINED PORTRAIT_GUARD_ARCHER_ID
+.db ITEM_IRON_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $03 $00
+
+.db UNIT_ENEMY_68 CLASS_ARCHER LEVEL_01 NAME_GRA
+.db $0A $06 UNDEFINED PORTRAIT_GUARD_ARCHER_ID
+.db ITEM_IRON_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $03 $00
+
+.db UNIT_ENEMY_6A CLASS_ARCHER LEVEL_01 NAME_GRA
+.db $07 $05 UNDEFINED PORTRAIT_GUARD_ARCHER_ID
+.db ITEM_IRON_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $03 $00
+
+.db UNIT_ENEMY_60 CLASS_THIEF LEVEL_10 NAME_THIEF
+.db $13 $14 UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_IRON_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_RESIRE UNDEFINED UNDEFINED UNDEFINED
+.db $02 $52 $00
+
+.db UNIT_ENEMY_45 CLASS_DRACOKNIGHT LEVEL_05 NAME_DRAGOON
+.db $1E $1B UNDEFINED PORTRAIT_WYVERN_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_DRACOKNIGHT LEVEL_05 NAME_DRAGOON
+.db $1E $1C UNDEFINED PORTRAIT_WYVERN_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_DRACOKNIGHT LEVEL_05 NAME_DRAGOON
+.db $1E $1D UNDEFINED PORTRAIT_WYVERN_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_DRACOKNIGHT LEVEL_05 NAME_DRAGOON
+.db $02 $01 UNDEFINED PORTRAIT_WYVERN_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_DRACOKNIGHT LEVEL_05 NAME_DRAGOON
+.db $03 $01 UNDEFINED PORTRAIT_WYVERN_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_DRACOKNIGHT LEVEL_05 NAME_DRAGOON
+.db $04 $01 UNDEFINED PORTRAIT_WYVERN_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db TERMINATOR
+
+L89B70B:
+.db UNIT_ENEMY_5C CLASS_HORSEMAN LEVEL_12 NAME_WOLF
+.db $09 $0D UNDEFINED PORTRAIT_WOLF_ID
+.db ITEM_STEEL_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $02
+
+.db UNIT_ENEMY_5D CLASS_PALADIN LEVEL_08 NAME_VYLAND
+.db $0A $0D UNDEFINED PORTRAIT_VYLAND_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $02
+
+.db UNIT_ENEMY_5E CLASS_HORSEMAN LEVEL_10 NAME_SEDGAR
+.db $09 $0E UNDEFINED PORTRAIT_SEDGAR_ID
+.db ITEM_STEEL_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $02
+
+.db UNIT_ROSHEA_BOOK2 CLASS_PALADIN LEVEL_08 NAME_ROSHEA
+.db $08 $0D UNDEFINED PORTRAIT_ROSHEA_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $02
+
+.db UNIT_ENEMY_5F CLASS_PALADIN LEVEL_03 NAME_ORLEANS_SOLDIER
+.db $07 $0E UNDEFINED PORTRAIT_HORSEMAN_JAVELIN_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $02
+
+.db UNIT_ENEMY_60 CLASS_PALADIN LEVEL_03 NAME_ORLEANS_SOLDIER
+.db $08 $0C UNDEFINED PORTRAIT_HORSEMAN_JAVELIN_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $02
+
+.db UNIT_ENEMY_61 CLASS_PALADIN LEVEL_03 NAME_ORLEANS_SOLDIER
+.db $09 $0B UNDEFINED PORTRAIT_HORSEMAN_JAVELIN_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $02
+
+.db UNIT_ENEMY_62 CLASS_PALADIN LEVEL_03 NAME_ORLEANS_SOLDIER
+.db $0A $0C UNDEFINED PORTRAIT_HORSEMAN_JAVELIN_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $02
+
+.db UNIT_ENEMY_63 CLASS_PALADIN LEVEL_03 NAME_ORLEANS_SOLDIER
+.db $0B $0D UNDEFINED PORTRAIT_HORSEMAN_JAVELIN_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $02
+
+.db UNIT_ENEMY_64 CLASS_PALADIN LEVEL_03 NAME_ORLEANS_SOLDIER
+.db $0B $0E UNDEFINED PORTRAIT_HORSEMAN_JAVELIN_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $02
+
+.db UNIT_ENEMY_65 CLASS_HORSEMAN LEVEL_05 NAME_ORLEANS_SOLDIER
+.db $07 $0D UNDEFINED PORTRAIT_HORSEMAN_BOW_ID
+.db ITEM_STEEL_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $01 $02
+
+.db UNIT_ENEMY_66 CLASS_HORSEMAN LEVEL_05 NAME_ORLEANS_SOLDIER
+.db $09 $0C UNDEFINED PORTRAIT_HORSEMAN_BOW_ID
+.db ITEM_STEEL_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $01 $02
+
+.db UNIT_ENEMY_67 CLASS_HORSEMAN LEVEL_05 NAME_ORLEANS_SOLDIER
+.db $06 $0D UNDEFINED PORTRAIT_HORSEMAN_BOW_ID
+.db ITEM_STEEL_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $01 $02
+
+.db UNIT_ENEMY_68 CLASS_HORSEMAN LEVEL_05 NAME_ORLEANS_SOLDIER
+.db $05 $0D UNDEFINED PORTRAIT_HORSEMAN_BOW_ID
+.db ITEM_STEEL_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $01 $02
+
+.db UNIT_ENEMY_69 CLASS_HORSEMAN LEVEL_05 NAME_ORLEANS_SOLDIER
+.db $04 $0D UNDEFINED PORTRAIT_HORSEMAN_BOW_ID
+.db ITEM_STEEL_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $01 $02
+
+.db UNIT_ENEMY_6A CLASS_HORSEMAN LEVEL_05 NAME_ORLEANS_SOLDIER
+.db $05 $0C UNDEFINED PORTRAIT_HORSEMAN_BOW_ID
+.db ITEM_STEEL_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $01 $02
+
+.db UNIT_ENEMY_45 CLASS_GENERAL LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $10 $1D UNDEFINED PORTRAIT_GENERAL_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_GENERAL LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $11 $1D UNDEFINED PORTRAIT_GENERAL_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_GENERAL LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $10 $1C UNDEFINED PORTRAIT_GENERAL_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_GENERAL LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $10 $1B UNDEFINED PORTRAIT_GENERAL_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_BALLISTICIAN LEVEL_05 NAME_AKANEIA_SOLDIER
+.db $10 $1A UNDEFINED PORTRAIT_CATAPULT_ID
+.db ITEM_STONE_HEDGE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $12 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_BALLISTICIAN LEVEL_05 NAME_AKANEIA_SOLDIER
+.db $11 $1A UNDEFINED PORTRAIT_CATAPULT_ID
+.db ITEM_STONE_HEDGE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $12 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_GENERAL LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $10 $19 UNDEFINED PORTRAIT_GENERAL_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_GENERAL LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $0F $19 UNDEFINED PORTRAIT_GENERAL_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_GENERAL LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $0F $18 UNDEFINED PORTRAIT_GENERAL_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_GENERAL LEVEL_01 NAME_AKANEIA_SOLDIER
+.db $10 $18 UNDEFINED PORTRAIT_GENERAL_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_05 NAME_AKANEIA_SOLDIER
+.db $0F $1A UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_FORTIFY UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $05 $00
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_05 NAME_AKANEIA_SOLDIER
+.db $0E $1B UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_FORTIFY UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $05 $00
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_05 NAME_AKANEIA_SOLDIER
+.db $11 $1C UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_FORTIFY UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $05 $00
+
+.db TERMINATOR
+
+L89B933:
+.db UNIT_ENEMY_5C CLASS_GENERAL LEVEL_14 NAME_NEHRING
+.db $09 $07 UNDEFINED PORTRAIT_ZHAROV_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $01 $04 $00
+
+.db UNIT_ENEMY_45 CLASS_ARMOR_KNIGHT LEVEL_20 NAME_AKANEIA_SOLDIER
+.db $09 $06 UNDEFINED PORTRAIT_ARMOUR_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_ARMOR_KNIGHT LEVEL_20 NAME_AKANEIA_SOLDIER
+.db $0A $07 UNDEFINED PORTRAIT_ARMOUR_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_ARMOR_KNIGHT LEVEL_20 NAME_AKANEIA_SOLDIER
+.db $0A $06 UNDEFINED PORTRAIT_ARMOUR_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_5E CLASS_PALADIN LEVEL_10 NAME_AKANEIA_SOLDIER
+.db $08 $09 UNDEFINED PORTRAIT_HORSEMAN_JAVELIN_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_5E CLASS_PALADIN LEVEL_10 NAME_AKANEIA_SOLDIER
+.db $07 $09 UNDEFINED PORTRAIT_HORSEMAN_JAVELIN_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_5E CLASS_PALADIN LEVEL_10 NAME_AKANEIA_SOLDIER
+.db $09 $0A UNDEFINED PORTRAIT_HORSEMAN_JAVELIN_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_5E CLASS_PALADIN LEVEL_10 NAME_AKANEIA_SOLDIER
+.db $08 $0B UNDEFINED PORTRAIT_HORSEMAN_JAVELIN_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_5E CLASS_PALADIN LEVEL_10 NAME_AKANEIA_SOLDIER
+.db $07 $0C UNDEFINED PORTRAIT_HORSEMAN_JAVELIN_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_5E CLASS_PALADIN LEVEL_10 NAME_AKANEIA_SOLDIER
+.db $09 $0C UNDEFINED PORTRAIT_HORSEMAN_JAVELIN_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_5E CLASS_PALADIN LEVEL_10 NAME_AKANEIA_SOLDIER
+.db $05 $0A UNDEFINED PORTRAIT_HORSEMAN_JAVELIN_ID
+.db ITEM_KILLER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_5E CLASS_PALADIN LEVEL_10 NAME_AKANEIA_SOLDIER
+.db $05 $08 UNDEFINED PORTRAIT_HORSEMAN_JAVELIN_ID
+.db ITEM_KILLER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_5E CLASS_PALADIN LEVEL_10 NAME_AKANEIA_SOLDIER
+.db $07 $0A UNDEFINED PORTRAIT_HORSEMAN_JAVELIN_ID
+.db ITEM_KILLER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_5E CLASS_MAGE_MALE LEVEL_10 NAME_AKANEIA_SOLDIER
+.db $04 $0C UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_BOLGANONE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $03 $00
+
+.db UNIT_ENEMY_5E CLASS_MAGE_MALE LEVEL_10 NAME_AKANEIA_SOLDIER
+.db $05 $0D UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_BOLGANONE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $03 $00
+
+.db UNIT_ENEMY_5E CLASS_MAGE_MALE LEVEL_10 NAME_AKANEIA_SOLDIER
+.db $07 $0D UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_BOLGANONE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $03 $00
+
+.db UNIT_ENEMY_45 CLASS_BALLISTICIAN LEVEL_10 NAME_AKANEIA_SOLDIER
+.db $0A $08 UNDEFINED PORTRAIT_CATAPULT_ID
+.db ITEM_ELEPHANT UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $12 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_BALLISTICIAN LEVEL_10 NAME_AKANEIA_SOLDIER
+.db $0D $07 UNDEFINED PORTRAIT_CATAPULT_ID
+.db ITEM_ELEPHANT UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $13 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_BALLISTICIAN LEVEL_10 NAME_AKANEIA_SOLDIER
+.db $0D $03 UNDEFINED PORTRAIT_CATAPULT_ID
+.db ITEM_ELEPHANT UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $12 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_BALLISTICIAN LEVEL_10 NAME_AKANEIA_SOLDIER
+.db $0A $0C UNDEFINED PORTRAIT_CATAPULT_ID
+.db ITEM_ELEPHANT UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $12 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_BALLISTICIAN LEVEL_10 NAME_AKANEIA_SOLDIER
+.db $0B $07 UNDEFINED PORTRAIT_CATAPULT_ID
+.db ITEM_FIRE_GUN UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $12 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_BALLISTICIAN LEVEL_10 NAME_AKANEIA_SOLDIER
+.db $08 $05 UNDEFINED PORTRAIT_CATAPULT_ID
+.db ITEM_FIRE_GUN UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $13 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_BALLISTICIAN LEVEL_10 NAME_AKANEIA_SOLDIER
+.db $06 $0B UNDEFINED PORTRAIT_CATAPULT_ID
+.db ITEM_FIRE_GUN UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $13 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_10 NAME_AKANEIA_SOLDIER
+.db $06 $08 UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_WORM UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $13 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_10 NAME_AKANEIA_SOLDIER
+.db $0C $06 UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_WORM UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $12 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_10 NAME_AKANEIA_SOLDIER
+.db $0E $09 UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_WORM UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $12 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_10 NAME_AKANEIA_SOLDIER
+.db $08 $03 UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_FORTIFY UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $05 $00
+
+.db UNIT_ENEMY_45 CLASS_BISHOP_MALE LEVEL_10 NAME_AKANEIA_SOLDIER
+.db $06 $06 UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_FORTIFY UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $05 $00
+
+.db UNIT_ENEMY_5D CLASS_THIEF LEVEL_01 NAME_THIEF
+.db $04 $0E UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_IRON_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $06 $00
+
+.db UNIT_ENEMY_5D CLASS_THIEF LEVEL_01 NAME_THIEF
+.db $06 $12 UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_IRON_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED ITEM_BOOTS ITEM_IRON_SWORD
+.db $02 $06 $00
+
+.db UNIT_ENEMY_5E CLASS_PALADIN LEVEL_16 NAME_AKANEIA_SOLDIER
+.db $09 $08 UNDEFINED PORTRAIT_HORSEMAN_JAVELIN_ID
+.db ITEM_SILVER_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_SHIELD_RING UNDEFINED UNDEFINED UNDEFINED
+.db $02 $03 $00
+
+.db TERMINATOR
+
+L89BB81:
+.db UNIT_ENEMY_5C CLASS_EMPEROR LEVEL_01 NAME_HARDIN
+.db $17 $10 UNDEFINED PORTRAIT_HARDIN_BOOK_2_ID
+.db ITEM_GRADIVUS UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_GRADIVUS ITEM_DARK_ORB UNDEFINED UNDEFINED
+.db $01 $04 $00
+
+.db UNIT_ENEMY_6A CLASS_ARMOR_KNIGHT LEVEL_01 NAME_BODYGUARD
+.db $17 $12 UNDEFINED PORTRAIT_ARMOUR_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $03 $00
+
+.db UNIT_ENEMY_6A CLASS_ARMOR_KNIGHT LEVEL_01 NAME_BODYGUARD
+.db $17 $14 UNDEFINED PORTRAIT_ARMOUR_ID
+.db ITEM_STEEL_LANCE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $03 $00
+
+.db UNIT_ENEMY_63 CLASS_GENERAL LEVEL_20 NAME_BODYGUARD
+.db $1A $18 UNDEFINED PORTRAIT_GENERAL_ID
+.db ITEM_JAVELIN UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_63 CLASS_GENERAL LEVEL_20 NAME_BODYGUARD
+.db $10 $07 UNDEFINED PORTRAIT_GENERAL_ID
+.db ITEM_JAVELIN UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_63 CLASS_GENERAL LEVEL_20 NAME_BODYGUARD
+.db $05 $03 UNDEFINED PORTRAIT_GENERAL_ID
+.db ITEM_JAVELIN UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_6A CLASS_SNIPER LEVEL_20 NAME_BODYGUARD
+.db $17 $0E UNDEFINED PORTRAIT_GUARD_ARCHER_AIMING_ID
+.db ITEM_SILVER_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $03 $00
+
+.db UNIT_ENEMY_64 CLASS_SNIPER LEVEL_20 NAME_BODYGUARD
+.db $1E $0E UNDEFINED PORTRAIT_GUARD_ARCHER_AIMING_ID
+.db ITEM_SILVER_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $03 $00
+
+.db UNIT_ENEMY_64 CLASS_SNIPER LEVEL_20 NAME_BODYGUARD
+.db $06 $06 UNDEFINED PORTRAIT_GUARD_ARCHER_AIMING_ID
+.db ITEM_SILVER_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $03 $00
+
+.db UNIT_ENEMY_64 CLASS_SNIPER LEVEL_20 NAME_BODYGUARD
+.db $13 $09 UNDEFINED PORTRAIT_GUARD_ARCHER_AIMING_ID
+.db ITEM_SILVER_BOW UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $0E $03 $00
+
+.db UNIT_ENEMY_65 CLASS_HERO LEVEL_20 NAME_BODYGUARD
+.db $10 $04 UNDEFINED PORTRAIT_SWORD_AND_SHIELD_ID
+.db ITEM_SWORD_KILLER UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_65 CLASS_HERO LEVEL_20 NAME_BODYGUARD
+.db $19 $07 UNDEFINED PORTRAIT_SWORD_AND_SHIELD_ID
+.db ITEM_SWORD_KILLER UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_65 CLASS_HERO LEVEL_20 NAME_BODYGUARD
+.db $1D $0D UNDEFINED PORTRAIT_SWORD_AND_SHIELD_ID
+.db ITEM_SILVER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_65 CLASS_HERO LEVEL_20 NAME_BODYGUARD
+.db $08 $08 UNDEFINED PORTRAIT_SWORD_AND_SHIELD_ID
+.db ITEM_SILVER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_65 CLASS_HERO LEVEL_20 NAME_BODYGUARD
+.db $03 $06 UNDEFINED PORTRAIT_SWORD_AND_SHIELD_ID
+.db ITEM_SILVER_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_66 CLASS_MAGE_MALE LEVEL_20 NAME_BODYGUARD
+.db $06 $04 UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_BOLGANONE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $03 $00
+
+.db UNIT_ENEMY_6A CLASS_MAGE_MALE LEVEL_20 NAME_BODYGUARD
+.db $17 $11 UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_BOLGANONE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $03 $00
+
+.db UNIT_ENEMY_66 CLASS_MAGE_MALE LEVEL_20 NAME_BODYGUARD
+.db $1E $0F UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_BOLGANONE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $03 $00
+
+.db UNIT_ENEMY_66 CLASS_DARK_MAGE LEVEL_20 NAME_DARK_PRIEST
+.db $17 $0C UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_DULAM UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $03 $00
+
+.db UNIT_ENEMY_66 CLASS_MAGE_MALE LEVEL_20 NAME_BODYGUARD
+.db $10 $06 UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_THORON UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $03 $00
+
+.db UNIT_ENEMY_66 CLASS_MAGE_MALE LEVEL_20 NAME_BODYGUARD
+.db $05 $09 UNDEFINED PORTRAIT_GREEN_MAGE_ID
+.db ITEM_THORON UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $03 $00
+
+.db UNIT_ENEMY_6A CLASS_BISHOP_MALE LEVEL_20 NAME_BODYGUARD
+.db $03 $07 UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_BOLGANONE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $03 $00
+
+.db UNIT_ENEMY_67 CLASS_BISHOP_MALE LEVEL_20 NAME_BODYGUARD
+.db $12 $07 UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_METEOR UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $12 $03 $00
+
+.db UNIT_ENEMY_67 CLASS_BISHOP_MALE LEVEL_20 NAME_BODYGUARD
+.db $12 $08 UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_WORM UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $12 $03 $00
+
+.db UNIT_ENEMY_67 CLASS_BISHOP_MALE LEVEL_20 NAME_BODYGUARD
+.db $1C $17 UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_WORM UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $13 $03 $00
+
+.db UNIT_ENEMY_67 CLASS_BISHOP_MALE LEVEL_20 NAME_BODYGUARD
+.db $10 $08 UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_METEOR UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $13 $03 $00
+
+.db UNIT_ENEMY_67 CLASS_BISHOP_MALE LEVEL_20 NAME_BODYGUARD
+.db $03 $04 UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_METEOR UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $13 $03 $00
+
+.db UNIT_ENEMY_67 CLASS_BISHOP_MALE LEVEL_20 NAME_BODYGUARD
+.db $03 $05 UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_FORTIFY UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $05 $00
+
+.db UNIT_ENEMY_67 CLASS_BISHOP_MALE LEVEL_20 NAME_BODYGUARD
+.db $1E $11 UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_FORTIFY UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $05 $00
+
+.db UNIT_ENEMY_67 CLASS_BISHOP_MALE LEVEL_20 NAME_BODYGUARD
+.db $1C $19 UNDEFINED PORTRAIT_ELECTRIC_MAGE_ID
+.db ITEM_FORTIFY UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $05 $00
+
+.db UNIT_ENEMY_68 CLASS_EARTH_DRAGON LEVEL_01 NAME_EARTH_DRAGON
+.db $1B $06 15 PORTRAIT_DRAGON_ID
+.db ITEM_DARK_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_4E CLASS_THIEF LEVEL_20 NAME_THIEF
+.db $0E $0D UNDEFINED PORTRAIT_THIEF_ID
+.db ITEM_IRON_SWORD UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $82 $03
+
+.db TERMINATOR
+
+L89BDE2:
+.db UNIT_ENEMY_5C CLASS_DARK_MAGE LEVEL_10 NAME_DARK_PRIEST
+.db $17 $1D UNDEFINED PORTRAIT_FIRE_RED_MAGE_ID
+.db ITEM_DULAM UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $01 $04 $00
+
+.db UNIT_ENEMY_45 CLASS_BARBARIAN LEVEL_10 NAME_MOUNTAIN_TRIBE
+.db $0F $17 UNDEFINED PORTRAIT_DOUBLE_AXE_ID
+.db ITEM_DEVIL_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_BARBARIAN LEVEL_10 NAME_MOUNTAIN_TRIBE
+.db $0E $15 UNDEFINED PORTRAIT_DOUBLE_AXE_ID
+.db ITEM_DEVIL_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_BARBARIAN LEVEL_10 NAME_MOUNTAIN_TRIBE
+.db $0D $0D UNDEFINED PORTRAIT_DOUBLE_AXE_ID
+.db ITEM_DEVIL_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_BARBARIAN LEVEL_10 NAME_MOUNTAIN_TRIBE
+.db $11 $09 UNDEFINED PORTRAIT_DOUBLE_AXE_ID
+.db ITEM_DEVIL_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_BARBARIAN LEVEL_10 NAME_MOUNTAIN_TRIBE
+.db $09 $08 UNDEFINED PORTRAIT_DOUBLE_AXE_ID
+.db ITEM_DEVIL_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_BARBARIAN LEVEL_10 NAME_MOUNTAIN_TRIBE
+.db $06 $08 UNDEFINED PORTRAIT_DOUBLE_AXE_ID
+.db ITEM_DEVIL_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_BARBARIAN LEVEL_10 NAME_MOUNTAIN_TRIBE
+.db $07 $06 UNDEFINED PORTRAIT_DOUBLE_AXE_ID
+.db ITEM_DEVIL_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_BARBARIAN LEVEL_10 NAME_MOUNTAIN_TRIBE
+.db $07 $1A UNDEFINED PORTRAIT_DOUBLE_AXE_ID
+.db ITEM_DEVIL_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_BARBARIAN LEVEL_10 NAME_MOUNTAIN_TRIBE
+.db $06 $19 UNDEFINED PORTRAIT_DOUBLE_AXE_ID
+.db ITEM_DEVIL_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_BARBARIAN LEVEL_10 NAME_MOUNTAIN_TRIBE
+.db $04 $18 UNDEFINED PORTRAIT_DOUBLE_AXE_ID
+.db ITEM_DEVIL_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_5D CLASS_FLYING_DRAGON LEVEL_01 NAME_STRAY_DRAGON
+.db $09 $1D UNDEFINED PORTRAIT_DRAGON_ID
+.db ITEM_FIRE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_5D CLASS_FLYING_DRAGON LEVEL_01 NAME_STRAY_DRAGON
+.db $04 $1B UNDEFINED PORTRAIT_DRAGON_ID
+.db ITEM_FIRE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_5D CLASS_FLYING_DRAGON LEVEL_01 NAME_STRAY_DRAGON
+.db $09 $0E UNDEFINED PORTRAIT_DRAGON_ID
+.db ITEM_FIRE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_5D CLASS_FLYING_DRAGON LEVEL_01 NAME_STRAY_DRAGON
+.db $07 $0F UNDEFINED PORTRAIT_DRAGON_ID
+.db ITEM_FIRE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_5D CLASS_FLYING_DRAGON LEVEL_01 NAME_STRAY_DRAGON
+.db $15 $1C UNDEFINED PORTRAIT_DRAGON_ID
+.db ITEM_FIRE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_5D CLASS_FLYING_DRAGON LEVEL_01 NAME_STRAY_DRAGON
+.db $13 $1E UNDEFINED PORTRAIT_DRAGON_ID
+.db ITEM_FIRE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_5D CLASS_FLYING_DRAGON LEVEL_01 NAME_STRAY_DRAGON
+.db $11 $11 UNDEFINED PORTRAIT_DRAGON_ID
+.db ITEM_FIRE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_5D CLASS_FLYING_DRAGON LEVEL_01 NAME_STRAY_DRAGON
+.db $13 $12 UNDEFINED PORTRAIT_DRAGON_ID
+.db ITEM_FIRE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_5D CLASS_FLYING_DRAGON LEVEL_01 NAME_STRAY_DRAGON
+.db $12 $0F UNDEFINED PORTRAIT_DRAGON_ID
+.db ITEM_FIRE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_DARK_MAGE LEVEL_01 NAME_DARK_PRIEST
+.db $0D $0E UNDEFINED PORTRAIT_FIRE_RED_MAGE_ID
+.db ITEM_METEOR UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $12 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_DARK_MAGE LEVEL_01 NAME_DARK_PRIEST
+.db $0E $1D UNDEFINED PORTRAIT_FIRE_RED_MAGE_ID
+.db ITEM_METEOR UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $12 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_DARK_MAGE LEVEL_01 NAME_DARK_PRIEST
+.db $14 $1D UNDEFINED PORTRAIT_FIRE_RED_MAGE_ID
+.db ITEM_METEOR UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $13 $03 $00
+
+.db TERMINATOR
+
+L89BF98:
+.db UNIT_ENEMY_5C CLASS_DEMON_DRAGON LEVEL_01 NAME_DEMON_DRAGON
+.db $01 $10 UNDEFINED PORTRAIT_DRAGON_ID
+.db ITEM_FIRE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $01 $04 $00
+
+.db UNIT_ENEMY_45 CLASS_DARK_MAGE LEVEL_05 NAME_DARK_PRIEST
+.db $05 $05 UNDEFINED PORTRAIT_FIRE_RED_MAGE_ID
+.db ITEM_METEOR UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $12 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_DARK_MAGE LEVEL_05 NAME_DARK_PRIEST
+.db $03 $0B UNDEFINED PORTRAIT_FIRE_RED_MAGE_ID
+.db ITEM_METEOR UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $12 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_DARK_MAGE LEVEL_05 NAME_DARK_PRIEST
+.db $03 $15 UNDEFINED PORTRAIT_FIRE_RED_MAGE_ID
+.db ITEM_METEOR UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $13 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_DARK_MAGE LEVEL_05 NAME_DARK_PRIEST
+.db $05 $13 UNDEFINED PORTRAIT_FIRE_RED_MAGE_ID
+.db ITEM_METEOR UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $13 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_DARK_MAGE LEVEL_10 NAME_DARK_PRIEST
+.db $07 $11 UNDEFINED PORTRAIT_FIRE_RED_MAGE_ID
+.db ITEM_BOLGANONE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $03 $00
+
+.db UNIT_ENEMY_45 CLASS_DARK_MAGE LEVEL_10 NAME_DARK_PRIEST
+.db $02 $11 UNDEFINED PORTRAIT_FIRE_RED_MAGE_ID
+.db ITEM_DULAM UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $03 $00
+
+.db UNIT_ENEMY_45 CLASS_DARK_MAGE LEVEL_10 NAME_DARK_PRIEST
+.db $14 $11 UNDEFINED PORTRAIT_FIRE_RED_MAGE_ID
+.db ITEM_DULAM UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $03 $00
+
+.db UNIT_ENEMY_45 CLASS_DARK_MAGE LEVEL_10 NAME_DARK_PRIEST
+.db $16 $05 UNDEFINED PORTRAIT_FIRE_RED_MAGE_ID
+.db ITEM_DULAM UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $01 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_DARK_MAGE LEVEL_10 NAME_DARK_PRIEST
+.db $16 $1B UNDEFINED PORTRAIT_FIRE_RED_MAGE_ID
+.db ITEM_DULAM UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $01 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_DARK_MAGE LEVEL_05 NAME_DARK_PRIEST
+.db $05 $1B UNDEFINED PORTRAIT_FIRE_RED_MAGE_ID
+.db ITEM_FORTIFY UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $05 $00
+
+.db UNIT_ENEMY_45 CLASS_DARK_MAGE LEVEL_05 NAME_DARK_PRIEST
+.db $03 $03 UNDEFINED PORTRAIT_FIRE_RED_MAGE_ID
+.db ITEM_FORTIFY UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $05 $00
+
+.db UNIT_ENEMY_45 CLASS_DARK_MAGE LEVEL_05 NAME_DARK_PRIEST
+.db $01 $0E UNDEFINED PORTRAIT_FIRE_RED_MAGE_ID
+.db ITEM_FORTIFY UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $05 $00
+
+.db UNIT_ENEMY_45 CLASS_DARK_MAGE LEVEL_05 NAME_DARK_PRIEST
+.db $0C $10 UNDEFINED PORTRAIT_FIRE_RED_MAGE_ID
+.db ITEM_METEOR UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $12 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_DEMON_DRAGON LEVEL_01 NAME_DEMON_DRAGON
+.db $03 $08 15 PORTRAIT_DRAGON_ID
+.db ITEM_FIRE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $01 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_DEMON_DRAGON LEVEL_01 NAME_DEMON_DRAGON
+.db $03 $18 15 PORTRAIT_DRAGON_ID
+.db ITEM_FIRE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $01 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_DEMON_DRAGON LEVEL_01 NAME_DEMON_DRAGON
+.db $0E $10 15 PORTRAIT_DRAGON_ID
+.db ITEM_FIRE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $01 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_DEMON_DRAGON LEVEL_01 NAME_DEMON_DRAGON
+.db $17 $05 15 PORTRAIT_DRAGON_ID
+.db ITEM_FIRE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $01 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_DEMON_DRAGON LEVEL_01 NAME_DEMON_DRAGON
+.db $17 $1B 15 PORTRAIT_DRAGON_ID
+.db ITEM_FIRE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $01 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_BARBARIAN LEVEL_20 NAME_DARK_TRIBE
+.db $11 $10 UNDEFINED PORTRAIT_DOUBLE_AXE_ID
+.db ITEM_DEVIL_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_BARBARIAN LEVEL_20 NAME_DARK_TRIBE
+.db $13 $08 UNDEFINED PORTRAIT_DOUBLE_AXE_ID
+.db ITEM_DEVIL_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_BARBARIAN LEVEL_20 NAME_DARK_TRIBE
+.db $0A $05 UNDEFINED PORTRAIT_DOUBLE_AXE_ID
+.db ITEM_DEVIL_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_BARBARIAN LEVEL_20 NAME_DARK_TRIBE
+.db $05 $0C UNDEFINED PORTRAIT_DOUBLE_AXE_ID
+.db ITEM_DEVIL_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_BARBARIAN LEVEL_20 NAME_DARK_TRIBE
+.db $0F $1B UNDEFINED PORTRAIT_DOUBLE_AXE_ID
+.db ITEM_DEVIL_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_BARBARIAN LEVEL_20 NAME_DARK_TRIBE
+.db $01 $09 UNDEFINED PORTRAIT_DOUBLE_AXE_ID
+.db ITEM_DEVIL_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_BARBARIAN LEVEL_20 NAME_DARK_TRIBE
+.db $02 $0A UNDEFINED PORTRAIT_DOUBLE_AXE_ID
+.db ITEM_DEVIL_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_BARBARIAN LEVEL_20 NAME_DARK_TRIBE
+.db $02 $0C UNDEFINED PORTRAIT_DOUBLE_AXE_ID
+.db ITEM_DEVIL_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_BARBARIAN LEVEL_20 NAME_DARK_TRIBE
+.db $02 $13 UNDEFINED PORTRAIT_DOUBLE_AXE_ID
+.db ITEM_DEVIL_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_BARBARIAN LEVEL_20 NAME_DARK_TRIBE
+.db $02 $17 UNDEFINED PORTRAIT_DOUBLE_AXE_ID
+.db ITEM_DEVIL_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_BARBARIAN LEVEL_20 NAME_DARK_TRIBE
+.db $01 $18 UNDEFINED PORTRAIT_DOUBLE_AXE_ID
+.db ITEM_DEVIL_AXE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $01 $00
+
+.db TERMINATOR
+
+L89C1D3:
+.db UNIT_GHARNEF CLASS_DARK_MAGE LEVEL_20 NAME_GHARNEF
+.db $02 $0F UNDEFINED PORTRAIT_GHARNEF_ID
+.db ITEM_IMHULLU UNDEFINED UNDEFINED UNDEFINED
+.db ITEM_FALCHION UNDEFINED UNDEFINED UNDEFINED
+.db $1B $03 $00
+
+.db UNIT_ENEMY_45 CLASS_DARK_MAGE LEVEL_10 NAME_DARK_PRIEST
+.db $02 $0D UNDEFINED PORTRAIT_FIRE_RED_MAGE_ID
+.db ITEM_METEOR UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $12 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_DARK_MAGE LEVEL_10 NAME_DARK_PRIEST
+.db $02 $11 UNDEFINED PORTRAIT_FIRE_RED_MAGE_ID
+.db ITEM_METEOR UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $13 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_DARK_MAGE LEVEL_10 NAME_DARK_PRIEST
+.db $07 $0B UNDEFINED PORTRAIT_FIRE_RED_MAGE_ID
+.db ITEM_METEOR UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $13 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_DARK_MAGE LEVEL_10 NAME_DARK_PRIEST
+.db $07 $13 UNDEFINED PORTRAIT_FIRE_RED_MAGE_ID
+.db ITEM_METEOR UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $13 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_DARK_MAGE LEVEL_10 NAME_DARK_PRIEST
+.db $15 $19 UNDEFINED PORTRAIT_FIRE_RED_MAGE_ID
+.db ITEM_METEOR UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $12 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_DARK_MAGE LEVEL_10 NAME_DARK_PRIEST
+.db $15 $05 UNDEFINED PORTRAIT_FIRE_RED_MAGE_ID
+.db ITEM_METEOR UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $12 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_DARK_MAGE LEVEL_10 NAME_DARK_PRIEST
+.db $15 $06 UNDEFINED PORTRAIT_FIRE_RED_MAGE_ID
+.db ITEM_DULAM UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $03 $00
+
+.db UNIT_ENEMY_45 CLASS_DARK_MAGE LEVEL_10 NAME_DARK_PRIEST
+.db $15 $1A UNDEFINED PORTRAIT_FIRE_RED_MAGE_ID
+.db ITEM_BOLGANONE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $03 $00
+
+.db UNIT_ENEMY_45 CLASS_DARK_MAGE LEVEL_10 NAME_DARK_PRIEST
+.db $0A $0D UNDEFINED PORTRAIT_FIRE_RED_MAGE_ID
+.db ITEM_DULAM UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $03 $00
+
+.db UNIT_ENEMY_45 CLASS_DARK_MAGE LEVEL_10 NAME_DARK_PRIEST
+.db $0A $11 UNDEFINED PORTRAIT_FIRE_RED_MAGE_ID
+.db ITEM_BOLGANONE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $03 $00
+
+.db UNIT_ENEMY_45 CLASS_DARK_MAGE LEVEL_10 NAME_DARK_PRIEST
+.db $03 $0E UNDEFINED PORTRAIT_FIRE_RED_MAGE_ID
+.db ITEM_DULAM UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $03 $00
+
+.db UNIT_ENEMY_45 CLASS_DARK_MAGE LEVEL_10 NAME_DARK_PRIEST
+.db $03 $10 UNDEFINED PORTRAIT_FIRE_RED_MAGE_ID
+.db ITEM_BOLGANONE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $1B $03 $00
+
+.db UNIT_ENEMY_45 CLASS_DEMON_DRAGON LEVEL_01 NAME_DEMON_DRAGON
+.db $15 $0F 15 PORTRAIT_DRAGON_ID
+.db ITEM_FIRE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_DEMON_DRAGON LEVEL_01 NAME_DEMON_DRAGON
+.db $0E $0F 15 PORTRAIT_DRAGON_ID
+.db ITEM_FIRE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_DEMON_DRAGON LEVEL_01 NAME_DEMON_DRAGON
+.db $09 $0F 15 PORTRAIT_DRAGON_ID
+.db ITEM_FIRE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_DEMON_DRAGON LEVEL_01 NAME_DEMON_DRAGON
+.db $04 $0F 15 PORTRAIT_DRAGON_ID
+.db ITEM_FIRE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_DEMON_DRAGON LEVEL_01 NAME_DEMON_DRAGON
+.db $06 $0F 15 PORTRAIT_DRAGON_ID
+.db ITEM_FIRE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_DEMON_DRAGON LEVEL_01 NAME_DEMON_DRAGON
+.db $13 $06 15 PORTRAIT_DRAGON_ID
+.db ITEM_FIRE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $03 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_DEMON_DRAGON LEVEL_01 NAME_DEMON_DRAGON
+.db $13 $18 15 PORTRAIT_DRAGON_ID
+.db ITEM_FIRE_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_DARK_MAGE LEVEL_10 NAME_DARK_PRIEST
+.db $08 $04 UNDEFINED PORTRAIT_FIRE_RED_MAGE_ID
+.db ITEM_FORTIFY UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $05 $00
+
+.db UNIT_ENEMY_45 CLASS_DARK_MAGE LEVEL_10 NAME_DARK_PRIEST
+.db $09 $05 UNDEFINED PORTRAIT_FIRE_RED_MAGE_ID
+.db ITEM_FORTIFY UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $05 $00
+
+.db UNIT_ENEMY_45 CLASS_DARK_MAGE LEVEL_10 NAME_DARK_PRIEST
+.db $07 $1A UNDEFINED PORTRAIT_FIRE_RED_MAGE_ID
+.db ITEM_FORTIFY UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $05 $00
+
+.db UNIT_ENEMY_45 CLASS_DARK_MAGE LEVEL_10 NAME_DARK_PRIEST
+.db $08 $1B UNDEFINED PORTRAIT_FIRE_RED_MAGE_ID
+.db ITEM_FORTIFY UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $05 $00
+
+.db TERMINATOR
+
+L89C39C:
+.db UNIT_ENEMY_5C CLASS_DARK_DRAGON LEVEL_01 NAME_MEDEUS
+.db $07 $10 15 PORTRAIT_MEDEUS_DRAGON_ID
+.db ITEM_DARK_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $01 $03 $03
+
+.db UNIT_NYNA CLASS_BISHOP_FEMALE LEVEL_07 NAME_NYNA
+.db $07 $0F UNDEFINED PORTRAIT_NYNA_ID
+.db ITEM_THORON UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $01 $03 $00
+
+.db UNIT_ELICE_BOOK2 CLASS_BISHOP_FEMALE LEVEL_05 NAME_ELICE
+.db $06 $10 UNDEFINED PORTRAIT_ELICE_ID
+.db ITEM_FORTIFY UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $05 $00
+
+.db UNIT_MARIA_BOOK2 CLASS_BISHOP_FEMALE LEVEL_01 NAME_MARIA
+.db $07 $11 UNDEFINED PORTRAIT_MARIA_ID
+.db ITEM_RECOVER UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $02 $53 $00
+
+.db UNIT_LENA_BOOK2 CLASS_BISHOP_FEMALE LEVEL_03 NAME_LENA
+.db $08 $10 UNDEFINED PORTRAIT_LENA_ID
+.db ITEM_BOLGANONE UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $01 $03 $00
+
+.db UNIT_ENEMY_45 CLASS_EARTH_DRAGON LEVEL_01 NAME_EARTH_DRAGON
+.db $05 $0D 15 PORTRAIT_DRAGON_ID
+.db ITEM_DARK_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_EARTH_DRAGON LEVEL_01 NAME_EARTH_DRAGON
+.db $04 $10 15 PORTRAIT_DRAGON_ID
+.db ITEM_DARK_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_EARTH_DRAGON LEVEL_01 NAME_EARTH_DRAGON
+.db $05 $13 15 PORTRAIT_DRAGON_ID
+.db ITEM_DARK_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_EARTH_DRAGON LEVEL_01 NAME_EARTH_DRAGON
+.db $09 $13 15 PORTRAIT_DRAGON_ID
+.db ITEM_DARK_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db UNIT_ENEMY_45 CLASS_EARTH_DRAGON LEVEL_01 NAME_EARTH_DRAGON
+.db $09 $0D 15 PORTRAIT_DRAGON_ID
+.db ITEM_DARK_BREATH UNDEFINED UNDEFINED UNDEFINED
+.db UNDEFINED UNDEFINED UNDEFINED UNDEFINED
+.db $04 $01 $00
+
+.db TERMINATOR
+
+L89C45B:
+.db TERMINATOR
+
+.db $DA $C4 $E9 $C4
 .db $07 $C5 $20 $C5 $35 $C5 $4E $C5
 .db $8A $C5 $A5 $C5 $E3 $C5 $FA $C5
 .db $15 $C6 $34 $C6 $4F $C6 $6C $C6
