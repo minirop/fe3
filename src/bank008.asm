@@ -3524,6 +3524,7 @@ AI_1_POINTERS_TABLE:
 .dl L88C51F
 .dl L88C522
 
+; bottom nibble = index into $8285FA table
 L88C4C3:
 .db $00 $00 $12
 L88C4C6:
