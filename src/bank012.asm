@@ -2495,19 +2495,59 @@ L8C903F:
 .db $01 $0A $00 $FF $01 $0B $00 $FF
 .db $03 $90 $05 $15 $FF $03 $01 $FF
 .db $03 $02 $FF $05 $15 $FF $05 $08
-.db $FF $79 $A1 $7B $A1 $8B $A1 $93
-.db $A1 $A1 $A1 $A9 $A1 $CB $A1 $D9
-.db $A1 $E1 $A1 $E9 $A1 $FD $A1 $11
-.db $A2 $1F $A2 $27 $A2 $2F $A2 $3D
-.db $A2 $4B $A2 $67 $A2 $87 $A2 $7B
-.db $A3 $B1 $A2 $95 $A2 $9D $A2 $E9
-.db $A3 $BF $A2 $D3 $A2 $E7 $A2 $E9
-.db $A3 $F5 $A2 $0F $A3 $1D $A3 $57
-.db $A3 $5F $A3 $2B $A3 $E9 $A3 $39
-.db $A3 $41 $A3 $4F $A3 $6D $A3 $A5
-.db $A3 $89 $A3 $97 $A3 $B9 $A3 $CD
-.db $A3 $DB $A3 $83 $A1 $B7 $A1 $59
-.db $A2 $FF $FF $01 $00 $00 $EB $A3
+.db $FF
+
+TABLE_8CA119:
+.dw $A179
+.dw $A17B
+.dw $A18B
+.dw $A193
+.dw $A1A1
+.dw $A1A9
+.dw $A1CB
+.dw $A1D9
+.dw $A1E1
+.dw $A1E9
+.dw $A1FD
+.dw $A211
+.dw $A21F
+.dw $A227
+.dw $A22F
+.dw $A23D
+.dw $A24B
+.dw $A267
+.dw $A287
+.dw $A37B
+.dw $A2B1
+.dw $A295
+.dw $A29D
+.dw $A3E9
+.dw $A2BF
+.dw $A2D3
+.dw $A2E7
+.dw $A3E9
+.dw $A2F5
+.dw $A30F
+.dw $A31D
+.dw $A357
+.dw $A35F
+.dw $A32B
+.dw $A3E9
+.dw $A339
+.dw $A341
+.dw $A34F
+.dw $A36D
+.dw $A3A5
+.dw $A389
+.dw $A397
+.dw $A3B9
+.dw $A3CD
+.dw $A3DB
+.dw $A183
+.dw $A1B7
+.dw $A259
+
+.db $FF $FF $01 $00 $00 $EB $A3
 .db $8C $FF $FF $01 $00 $00 $0A $A6
 .db $8C $FF $FF $01 $00 $00 $2B $A7
 .db $8C $FF $FF $01 $00 $00 $33 $A8
