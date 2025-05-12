@@ -37,6 +37,7 @@ lists:
 	fe3-text text/lists/receive_deposit_throw_away.json compile list text/lists/receive_deposit_throw_away.gen.asm
 	fe3-text text/lists/debug_strings.json compile list text/lists/debug_strings.gen.asm
 	fe3-text text/lists/menu_preparation.json compile list text/lists/menu_preparation.gen.asm
+	fe3-text text/lists/knight_names.json compile list text/lists/knight_names.gen.asm
 
 $(ROM).sfc: $(COBJ)
 	$(LD) -d -v -S linkfile $(ROM).sfc
