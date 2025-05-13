@@ -6,7 +6,7 @@ COBJ=game.obj
 
 all: $(ROM).sfc
 
-$(COBJ): src/main.s lists
+$(COBJ): src/main.s lists descriptions
 	$(AS) -I src -I bin -I text/dialogues -I text/lists -x -v -o $@ $<
 
 # need makefile magic to avoid having to list all files manually
@@ -38,6 +38,30 @@ lists:
 	fe3-text text/lists/debug_strings.json compile list text/lists/debug_strings.gen.asm
 	fe3-text text/lists/menu_preparation.json compile list text/lists/menu_preparation.gen.asm
 	fe3-text text/lists/knight_names.json compile list text/lists/knight_names.gen.asm
+
+descriptions:
+	fe3-text text/descriptions/knight.txt compile dialogue text/descriptions/knight.bin
+	fe3-text text/descriptions/thief.txt compile dialogue text/descriptions/thief.bin
+	fe3-text text/descriptions/fighter.txt compile dialogue text/descriptions/fighter.bin
+	fe3-text text/descriptions/hunter.txt compile dialogue text/descriptions/hunter.bin
+	fe3-text text/descriptions/archer.txt compile dialogue text/descriptions/archer.bin
+	fe3-text text/descriptions/sniper.txt compile dialogue text/descriptions/sniper.bin
+	fe3-text text/descriptions/horseman.txt compile dialogue text/descriptions/horseman.bin
+	fe3-text text/descriptions/cavalier.txt compile dialogue text/descriptions/cavalier.bin
+	fe3-text text/descriptions/paladin.txt compile dialogue text/descriptions/paladin.bin
+	fe3-text text/descriptions/pegasus_knight.txt compile dialogue text/descriptions/pegasus_knight.bin
+	fe3-text text/descriptions/dracoknight.txt compile dialogue text/descriptions/dracoknight.bin
+	fe3-text text/descriptions/manakete.txt compile dialogue text/descriptions/manakete.bin
+	fe3-text text/descriptions/mercenary.txt compile dialogue text/descriptions/mercenary.bin
+	fe3-text text/descriptions/freelancer.txt compile dialogue text/descriptions/freelancer.bin
+	fe3-text text/descriptions/cleric.txt compile dialogue text/descriptions/cleric.bin
+	fe3-text text/descriptions/mage.txt compile dialogue text/descriptions/mage.bin
+	fe3-text text/descriptions/bishop.txt compile dialogue text/descriptions/bishop.bin
+	fe3-text text/descriptions/hero.txt compile dialogue text/descriptions/hero.bin
+	fe3-text text/descriptions/armour_knight.txt compile dialogue text/descriptions/armour_knight.bin
+	fe3-text text/descriptions/lord.txt compile dialogue text/descriptions/lord.bin
+	fe3-text text/descriptions/general.txt compile dialogue text/descriptions/general.bin
+	fe3-text text/descriptions/dancer.txt compile dialogue text/descriptions/dancer.bin
 
 $(ROM).sfc: $(COBJ)
 	$(LD) -d -v -S linkfile $(ROM).sfc
