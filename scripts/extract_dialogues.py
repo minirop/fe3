@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-import os
+import os, fe
 
 # there are 5 extra bytes between dialogues 516 and 517 (at 0x92001)
 # that are not extracted by this script
@@ -26,8 +26,7 @@ convert = [
 	0x898000,
 ]
 
-with open("../baserom.sfc", 'rb') as file:
-	rom = bytearray(file.read())
+rom = fe.rom()
 
 for i in range(1, len(offsets) - 1):
 	bank = (offsets[i] >> 16) - 142

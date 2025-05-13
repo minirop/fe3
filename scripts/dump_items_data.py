@@ -1,56 +1,16 @@
 #!/usr/bin/env python
 
-import os
+import os, fe
 
-ITEMS = ['ITEM_IRON_SWORD', 'ITEM_STEEL_SWORD', 'ITEM_SILVER_SWORD', 'ITEM_RAPIER', 'ITEM_KILLER_SWORD', 'ITEM_DEVIL_SWORD', 'ITEM_BROKEN_SWORD', 'ITEM_MASTER_SWORD', 'ITEM_LADY_SWORD', 'ITEM_THUNDER_SWORD', 'ITEM_MERCURIUS', 'ITEM_FALCHION', 'ITEM_ARMOR_KILLER', 'ITEM_DRAGON_KILLER', 'ITEM_SWORD_KILLER', 'ITEM_IRON_LANCE', 'ITEM_STEEL_LANCE', 'ITEM_SILVER_LANCE', 'ITEM_KNIGHT_KILLER', 'ITEM_JAVELIN', 'ITEM_BROKEN_LANCE', 'ITEM_KILLER_LANCE', 'ITEM_THIN_LANCE', 'ITEM_GRADIVUS', 'ITEM_IRON_BOW', 'ITEM_BROKEN_BOW', 'ITEM_STEEL_BOW', 'ITEM_SILVER_BOW', 'ITEM_KILLER_BOW', 'ITEM_PARTHIA', 'ITEM_IRON_AXE', 'ITEM_STEEL_AXE', 'ITEM_HAND_AXE', 'ITEM_SILVER_AXE', 'ITEM_DEVIL_AXE', 'ITEM_BROKEN_AXE', 'ITEM_THUNDERBOLT', 'ITEM_QUICK_RAIN', 'ITEM_STONE_HEDGE', 'ITEM_FIRE_GUN', 'ITEM_ELEPHANT', 'ITEM_FIRE_BREATH', 'ITEM_ICE_BREATH', 'ITEM_DARK_BREATH', 'ITEM_MIST_BREATH', 'ITEM_FIRE', 'ITEM_THUNDER', 'ITEM_BLIZZARD', 'ITEM_SHAVER', 'ITEM_ELFIRE', 'ITEM_THORON', 'ITEM_BOLGANONE', 'ITEM_EXCALIBUR', 'ITEM_AURA', 'ITEM_STARLIGHT', 'ITEM_IMHULLU', 'ITEM_DULAM', 'ITEM_RESIRE', 'ITEM_METEOR', 'ITEM_WORM', 'ITEM_EARTH_ORB', 'ITEM_SHIELD_OF_SEALS', 'ITEM_DARK_ORB', 'ITEM_FIRE_EMBLEM', 'ITEM_HEAL', 'ITEM_RECOVER', 'ITEM_PHYSIC', 'ITEM_MEND', 'ITEM_WARP', 'ITEM_MAGIC_SHIELD', 'ITEM_HAMMERNE', 'ITEM_FORTIFY', 'ITEM_SILENCE', 'ITEM_RESCUE', 'ITEM_AUM', 'ITEM_UNLOCK', 'ITEM_THIEF_STAFF', 'ITEM_WATCH_STAFF', 'ITEM_AGAIN_STAFF', 'ITEM_FIRE_DRAGON_STONE', 'ITEM_AUM_UNK', 'ITEM_ICE_DRAGON_STONE', 'ITEM_FLYING_DRAGON_STONE', 'ITEM_EARTH_DRAGON_STONE', 'ITEM_DARK_DRAGON_STONE', 'ITEM_DIVINE_DRAGON_STONE', 'ITEM_DEMON_DRAGON_STONE', 'ITEM_VULNERARY', 'ITEM_DOOR_KEY', 'ITEM_SILVER_KEY', 'ITEM_BRIDGE_KEY', 'ITEM_TREASURE_KEY', 'ITEM_ENERGY_RING', 'ITEM_SHIELD_RING', 'ITEM_SECRET_BOOK', 'ITEM_SPEED_RING', 'ITEM_AMULET', 'ITEM_ANGELIC_ROBE', 'ITEM_GODDESS_ICON', 'ITEM_MANUAL', 'ITEM_BOOTS', 'ITEM_PURE_WATER', 'ITEM_KNIGHT_CREST', 'ITEM_HERO_CREST', 'ITEM_GUIDING_RING', 'ITEM_ELYSIAN_WHIP', 'ITEM_ORIONS_BOLT', 'ITEM_EARTH_ORB_UNK', 'ITEM_LIFE_ORB', 'ITEM_IOTE_SHIELD', 'ITEM_AQUARIUS_ORB', 'ITEM_PISCES_ORB', 'ITEM_ARIES_ORB', 'ITEM_TAURUS_ORB', 'ITEM_GEMINI_ORB', 'ITEM_CANCER_ORB', 'ITEM_LEO_ORB', 'ITEM_VIRGO_ORB', 'ITEM_LIBRA_ORB', 'ITEM_SCORPIO_ORB', 'ITEM_SAGITTARIUS_ORB', 'ITEM_CAPRICORN_ORB', 'ITEM_AUM_FRAGMENT', 'ITEM_SILVER_CARD', 'ITEM_MEMBER_CARD', 'ITEM_LIGHT_ORB', 'ITEM_STAR_ORB']
+ITEMS = fe.get_items()
 
-def get_range(r):
-	output = get_sub_range(r & 0x0F)
-	if r & 0x80:
-		output = "(RANGE_UNKNOWN | {})".format(output)
-	return output
-
-def get_sub_range(r):
-	match r:
-		case 0:
-			return 'RANGE_NONE'
-		case 1:
-			return 'RANGE_UNK_1'
-		case 4:
-			return 'RANGE_UNK_4'
-		case 9:
-			return 'RANGE_1'
-		case 10:
-			return 'RANGE_2'
-		case 11:
-			return 'RANGE_1_2'
-		case 12:
-			return 'RANGE_ANY'
-	raise ValueError("Unknown range {}".format(r))
-
-def get_type(type):
-	TYPES = {
-		0x00: 'TYPE_NONE',
-		0x01: 'TYPE_SWORD',
-		0x02: 'TYPE_LANCE',
-		0x04: 'TYPE_BOW',
-		0x08: 'TYPE_STAFF',
-		0x10: 'TYPE_MAGIC',
-		0x11: 'TYPE_MAGIC_SWORD',
-		0x20: 'TYPE_ITEM',
-		0x40: 'TYPE_AXE',
-		0x80: 'TYPE_DRAGON_BREATH'
-	}
-	return TYPES[type]
-
-with open("../baserom.sfc", 'rb') as file:
-	rom = bytearray(file.read())
+rom = fe.rom()
 
 for (id, name) in enumerate(ITEMS):
 	i = 0x426e9 + id * 14
 
 	print ("; {:06X} // {:06X}".format(i, i + 0x848000))
-	print (".db {} {} LEVEL_{:02}".format(get_type(rom[i]), rom[i+1], rom[i+2]))
+	print (".db {} {} LEVEL_{:02}".format(fe.get_type(rom[i]), rom[i+1], rom[i+2]))
 	print (".db {} {} {}".format(rom[i+3], rom[i+4], rom[i+5]))
 	if rom[i+7] != 0xFF:
 		raise ValueError("separator is not $FF")
@@ -59,4 +19,4 @@ for (id, name) in enumerate(ITEMS):
 	print ("COST({})".format(cost * 10))
 	if rom[i+12] != id or id != rom[i+13]:
 		raise ValueError("item has not the correct name")
-	print (".db {} {} {}\n".format(get_range(rom[i+11]), name, name))
+	print (".db {} {} {}\n".format(fe.get_range(rom[i+11]), name, name))

@@ -1,9 +1,8 @@
 #!/usr/bin/env python
 
-import os
+import os, fe
 
-with open("../baserom.sfc", 'rb') as file:
-	rom = bytearray(file.read())
+rom = fe.rom()
 
 for i in range(0, 23):
 	offset = 0x50261 + i * 0x400
