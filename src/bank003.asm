@@ -7884,7 +7884,7 @@ L83F79C:
 	cmp $1b
 	bne L83F7BA
 	tyx
-	lda $f7bb,x
+	lda.w L83F7BB,x
 	ora $1d
 	sta $1d
 L83F7BA:

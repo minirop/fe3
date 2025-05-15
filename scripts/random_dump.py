@@ -17,3 +17,4 @@ for i in range(0, len(addresses) - 1):
 			print ("\n.db", end = '')
 
 		print (" ${:02X}".format(b), end = '')
+print ("")

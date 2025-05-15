@@ -3306,9 +3306,9 @@
 
 L93E61A:
 	rep #$20
-	lda.w #bank(UNKNOWN2_CHAPTERS_POINTER_DATA) << 8
+	lda.w #bank(MAP_DATA) << 8
 	sta $01
-	lda.w #UNKNOWN2_CHAPTERS_POINTER_DATA
+	lda.w #MAP_DATA
 	sta $00
 	lda $07CE
 	and #$00FF

@@ -4,9 +4,9 @@
 .SECTION "Bank10" FORCE
 
 ; the first byte is an index into SOME_POINTERS_TABLE
-; the second byte is an index into TABLE_89CA4E, TABLE_89C9EB, UNKNOWN2_CHAPTERS_POINTER_DATA, CHAPTERS_REINFORCEMENT_ENEMY_UNITS, TABLE_8CA119, CHAPTERS_UNITS
+; the second byte is an index into TABLE_89CA4E, TABLE_89C9EB, MAP_DATA, CHAPTERS_REINFORCEMENT_ENEMY_UNITS, TABLE_8CA119, CHAPTERS_UNITS
 
-UNKNOWN_CHAPTERS_DATA:
+CHAPTERS_INFORMATION:
 .db $05 $00 $1F $1F $1D $1F $20 $00
 .db $06 $01 $1F $0E $1E $1F $20 $00
 .db $05 $00 $1F $15 $1D $1F $20 $00
@@ -108,72 +108,72 @@ UNKNOWN_CHAPTERS_DATA:
 .dl L8ABA61
 
 L8A8261:
-.INCBIN "maps/header00.bin"
+.INCBIN "maps/information00.bin"
 
 L8A8661:
-.INCBIN "maps/header01.bin"
+.INCBIN "maps/information01.bin"
 
 L8A8A61:
-.INCBIN "maps/header02.bin"
+.INCBIN "maps/information02.bin"
 
 L8A8E61:
-.INCBIN "maps/header03.bin"
+.INCBIN "maps/information03.bin"
 
 L8A9261:
-.INCBIN "maps/header04.bin"
+.INCBIN "maps/information04.bin"
 
 L8A9661:
-.INCBIN "maps/header05.bin"
+.INCBIN "maps/information05.bin"
 
 L8A9A61:
-.INCBIN "maps/header06.bin"
+.INCBIN "maps/information06.bin"
 
 L8A9E61:
-.INCBIN "maps/header07.bin"
+.INCBIN "maps/information07.bin"
 
 L8AA261:
-.INCBIN "maps/header08.bin"
+.INCBIN "maps/information08.bin"
 
 L8AA661:
-.INCBIN "maps/header09.bin"
+.INCBIN "maps/information09.bin"
 
 L8AAA61:
-.INCBIN "maps/header10.bin"
+.INCBIN "maps/information10.bin"
 
 L8AAE61:
-.INCBIN "maps/header11.bin"
+.INCBIN "maps/information11.bin"
 
 L8AB261:
-.INCBIN "maps/header12.bin"
+.INCBIN "maps/information12.bin"
 
 L8AB661:
-.INCBIN "maps/header13.bin"
+.INCBIN "maps/information13.bin"
 
 L8ABA61:
-.INCBIN "maps/header14.bin"
+.INCBIN "maps/information14.bin"
 
 L8ABE61:
-.INCBIN "maps/header15.bin"
+.INCBIN "maps/information15.bin"
 
 L8AC261:
-.INCBIN "maps/header16.bin"
+.INCBIN "maps/information16.bin"
 
 L8AC661:
-.INCBIN "maps/header17.bin"
+.INCBIN "maps/information17.bin"
 
 L8ACA61:
-.INCBIN "maps/header18.bin"
+.INCBIN "maps/information18.bin"
 
 L8ACE61:
-.INCBIN "maps/header19.bin"
+.INCBIN "maps/information19.bin"
 
 L8AD261:
-.INCBIN "maps/header20.bin"
+.INCBIN "maps/information20.bin"
 
 L8AD661:
-.INCBIN "maps/header21.bin"
+.INCBIN "maps/information21.bin"
 
 L8ADA61:
-.INCBIN "maps/header22.bin"
+.INCBIN "maps/information22.bin"
 
 .ENDS

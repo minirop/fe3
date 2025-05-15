@@ -2469,163 +2469,347 @@ L8C903F:
 .db $01 $0D $12 $62 $09 $00 $21 $15
 .db $06 $13 $63 $0A $00 $27 $0E $06
 .db $05 $21 $00 $00 $27 $11 $16 $06
-.db $21 $01 $00 $FF $9A $A0 $8C $9B
-.db $A0 $8C $A0 $A0 $8C $A9 $A0 $8C
-.db $AF $A0 $8C $B2 $A0 $8C $B6 $A0
-.db $8C $BA $A0 $8C $BE $A0 $8C $C4
-.db $A0 $8C $C8 $A0 $8C $E1 $A0 $8C
-.db $E4 $A0 $8C $E8 $A0 $8C $EC $A0
-.db $8C $F0 $A0 $8C $F4 $A0 $8C $F8
-.db $A0 $8C $FC $A0 $8C $00 $A1 $8C
-.db $04 $A1 $8C $08 $A1 $8C $0D $A1
-.db $8C $10 $A1 $8C $13 $A1 $8C $16
-.db $A1 $8C $FF $00 $7D $00 $7E $FF
-.db $02 $1D $01 $01 $00 $01 $04 $00
-.db $FF $03 $1E $01 $00 $00 $FF $00
-.db $7C $FF $01 $00 $00 $FF $01 $01
-.db $00 $FF $01 $02 $00 $FF $03 $1E
-.db $01 $01 $00 $FF $01 $03 $00 $FF
-.db $04 $6E $04 $6F $04 $70 $04 $71
-.db $04 $72 $04 $73 $04 $74 $04 $75
-.db $04 $76 $04 $77 $04 $78 $04 $79
-.db $FF $04 $3D $FF $01 $12 $00 $FF
-.db $01 $04 $00 $FF $01 $05 $00 $FF
-.db $01 $06 $00 $FF $01 $07 $00 $FF
-.db $01 $08 $00 $FF $01 $09 $00 $FF
-.db $01 $0A $00 $FF $01 $0B $00 $FF
-.db $03 $90 $05 $15 $FF $03 $01 $FF
-.db $03 $02 $FF $05 $15 $FF $05 $08
+.db $21 $01 $00 $FF
+
+.dl L8CA09A
+.dl L8CA09B
+.dl L8CA0A0
+.dl L8CA0A9
+.dl L8CA0AF
+.dl L8CA0B2
+.dl L8CA0B6
+.dl L8CA0BA
+.dl L8CA0BE
+.dl L8CA0C4
+.dl L8CA0C8
+.dl L8CA0E1
+.dl L8CA0E4
+.dl L8CA0E8
+.dl L8CA0EC
+.dl L8CA0F0
+.dl L8CA0F4
+.dl L8CA0F8
+.dl L8CA0FC
+.dl L8CA100
+.dl L8CA104
+.dl L8CA108
+.dl L8CA10D
+.dl L8CA110
+.dl L8CA113
+.dl L8CA116
+
+L8CA09A:
 .db $FF
 
-TABLE_8CA119:
-.dw $A179
-.dw $A17B
-.dw $A18B
-.dw $A193
-.dw $A1A1
-.dw $A1A9
-.dw $A1CB
-.dw $A1D9
-.dw $A1E1
-.dw $A1E9
-.dw $A1FD
-.dw $A211
-.dw $A21F
-.dw $A227
-.dw $A22F
-.dw $A23D
-.dw $A24B
-.dw $A267
-.dw $A287
-.dw $A37B
-.dw $A2B1
-.dw $A295
-.dw $A29D
-.dw $A3E9
-.dw $A2BF
-.dw $A2D3
-.dw $A2E7
-.dw $A3E9
-.dw $A2F5
-.dw $A30F
-.dw $A31D
-.dw $A357
-.dw $A35F
-.dw $A32B
-.dw $A3E9
-.dw $A339
-.dw $A341
-.dw $A34F
-.dw $A36D
-.dw $A3A5
-.dw $A389
-.dw $A397
-.dw $A3B9
-.dw $A3CD
-.dw $A3DB
-.dw $A183
-.dw $A1B7
-.dw $A259
+L8CA09B:
+.db $00 $7D $00 $7E $FF
 
-.db $FF $FF $01 $00 $00 $EB $A3
-.db $8C $FF $FF $01 $00 $00 $0A $A6
-.db $8C $FF $FF $01 $00 $00 $2B $A7
-.db $8C $FF $FF $01 $00 $00 $33 $A8
-.db $8C $0E $00 $01 $BE $B1 $8C $FF
-.db $FF $01 $00 $00 $E8 $A8 $8C $FF
-.db $FF $01 $00 $00 $08 $A9 $8C $02
-.db $00 $01 $80 $AF $8C $FF $FF $00
-.db $00 $00 $8E $A9 $8C $01 $00 $00
-.db $2C $BA $8C $0E $00 $01 $4B $BB
-.db $8C $FF $FF $01 $00 $00 $7C $AB
-.db $8C $0F $00 $01 $F7 $AF $8C $FF
-.db $FF $01 $00 $00 $8D $AC $8C $FF
-.db $FF $01 $00 $00 $B6 $AC $8C $FF
-.db $FF $00 $00 $00 $E1 $AF $8C $01
-.db $00 $00 $41 $AD $8C $05 $00 $01
-.db $30 $B0 $8C $FF $FF $01 $00 $00
-.db $CE $AD $8C $01 $00 $01 $3F $B0
-.db $8C $04 $00 $01 $10 $B1 $8C $FF
-.db $FF $01 $00 $00 $F7 $AD $8C $0B
-.db $00 $01 $47 $B0 $8C $FF $FF $01
-.db $00 $00 $0E $AE $8C $FF $FF $01
-.db $00 $00 $36 $AE $8C $FF $FF $01
-.db $00 $00 $5C $AE $8C $07 $00 $01
-.db $73 $B0 $8C $FF $FF $01 $00 $00
-.db $85 $AE $8C $0A $00 $01 $6F $BB
-.db $8C $FF $FF $01 $00 $00 $2D $AF
-.db $8C $07 $00 $01 $AD $B0 $8C $FF
-.db $FF $01 $00 $00 $47 $AF $8C $0A
-.db $00 $01 $CA $B0 $8C $FF $FF $01
-.db $00 $00 $63 $AF $8C $04 $00 $01
-.db $03 $B1 $8C $05 $00 $01 $38 $B1
-.db $8C $06 $00 $01 $5C $B1 $8C $07
-.db $00 $01 $38 $B1 $8C $FF $FF $01
-.db $00 $00 $CD $B1 $8C $01 $00 $01
-.db $8B $B8 $8C $FF $FF $01 $00 $00
-.db $A6 $B3 $8C $FF $FF $01 $00 $00
-.db $10 $B4 $8C $02 $00 $01 $9B $B8
-.db $8C $04 $00 $01 $2A $B9 $8C $FF
-.db $FF $01 $00 $00 $84 $B4 $8C $04
-.db $00 $01 $39 $B9 $8C $FF $FF $01
-.db $00 $00 $B0 $B4 $8C $02 $00 $01
-.db $CD $B9 $8C $0D $00 $01 $4C $BA
-.db $8C $FF $FF $00 $00 $00 $9A $BB
-.db $8C $01 $00 $00 $CD $B4 $8C $03
-.db $00 $01 $56 $B9 $8C $FF $FF $01
-.db $00 $00 $E1 $B4 $8C $03 $00 $01
-.db $F1 $BB $8C $FF $FF $00 $00 $00
-.db $54 $BA $8C $01 $00 $00 $10 $B5
-.db $8C $03 $00 $01 $0E $BC $8C $06
-.db $00 $01 $DD $B9 $8C $FF $FF $01
-.db $00 $00 $6F $B5 $8C $07 $00 $01
-.db $7A $BA $8C $FF $FF $01 $00 $00
-.db $0C $B6 $8C $0A $00 $01 $2B $BC
-.db $8C $FF $FF $01 $00 $00 $2C $B6
-.db $8C $14 $00 $01 $16 $BA $8C $FF
-.db $FF $01 $00 $00 $49 $B6 $8C $FF
-.db $FF $01 $00 $00 $81 $B6 $8C $03
-.db $00 $01 $73 $B9 $8C $FF $FF $01
-.db $00 $00 $98 $B6 $8C $FF $FF $01
-.db $00 $00 $B5 $B6 $8C $FF $FF $00
-.db $00 $00 $71 $BA $8C $01 $00 $00
-.db $DB $B6 $8C $FF $FF $01 $00 $00
-.db $FE $B6 $8C $05 $00 $01 $B8 $BA
-.db $8C $FF $FF $01 $00 $00 $6D $B7
-.db $8C $01 $00 $01 $7C $B9 $8C $FF
-.db $FF $00 $00 $00 $BC $BB $8C $01
-.db $00 $00 $90 $B7 $8C $FF $FF $00
-.db $00 $00 $DD $BB $8C $01 $00 $00
-.db $B3 $B7 $8C $FF $FF $01 $00 $00
-.db $2A $B8 $8C $01 $00 $01 $84 $B9
-.db $8C $0C $00 $01 $8C $B9 $8C $FF
-.db $FF $00 $00 $00 $4D $B8 $8C $01
-.db $00 $00 $C9 $BB $8C $0C $00 $01
-.db $F5 $BA $8C $FF $FF $01 $00 $00
-.db $5A $B8 $8C $0C $00 $01 $12 $BB
-.db $8C $FF $FF $01 $00 $00 $71 $B8
-.db $8C $02 $00 $01 $A9 $B9 $8C $FF
-.db $FF $FF $FF $25 $07 $0C $01 $5C
+L8CA0A0:
+.db $02 $1D $01 $01 $00 $01 $04 $00 $FF
+
+L8CA0A9:
+.db $03 $1E $01 $00 $00 $FF
+
+L8CA0AF:
+.db $00 $7C $FF
+
+L8CA0B2:
+.db $01 $00 $00 $FF
+
+L8CA0B6:
+.db $01 $01 $00 $FF
+
+L8CA0BA:
+.db $01 $02 $00 $FF
+
+L8CA0BE:
+.db $03 $1E $01 $01 $00 $FF
+
+L8CA0C4:
+.db $01 $03 $00 $FF
+
+L8CA0C8:
+.db $04 $6E $04 $6F $04 $70 $04 $71 $04 $72 $04 $73 $04 $74 $04 $75 $04 $76 $04 $77 $04 $78 $04 $79 $FF
+
+L8CA0E1:
+.db $04 $3D $FF
+
+L8CA0E4:
+.db $01 $12 $00 $FF
+
+L8CA0E8:
+.db $01 $04 $00 $FF
+
+L8CA0EC:
+.db $01 $05 $00 $FF
+
+L8CA0F0:
+.db $01 $06 $00 $FF
+
+L8CA0F4:
+.db $01 $07 $00 $FF
+
+L8CA0F8:
+.db $01 $08 $00 $FF
+
+L8CA0FC:
+.db $01 $09 $00 $FF
+
+L8CA100:
+.db $01 $0A $00 $FF
+
+L8CA104:
+.db $01 $0B $00 $FF
+
+L8CA108:
+.db $03 $90 $05 $15 $FF
+
+L8CA10D:
+.db $03 $01 $FF
+
+L8CA110:
+.db $03 $02 $FF
+
+L8CA113:
+.db $05 $15 $FF
+
+L8CA116:
+.db $05 $08 $FF
+
+TABLE_8CA119:
+.dw L8CA179
+.dw L8CA17B
+.dw L8CA18B
+.dw L8CA193
+.dw L8CA1A1
+.dw L8CA1A9
+.dw L8CA1CB
+.dw L8CA1D9
+.dw L8CA1E1
+.dw L8CA1E9
+.dw L8CA1FD
+.dw L8CA211
+.dw L8CA21F
+.dw L8CA227
+.dw L8CA22F
+.dw L8CA23D
+.dw L8CA24B
+.dw L8CA267
+.dw L8CA287
+.dw L8CA37B
+.dw L8CA2B1
+.dw L8CA295
+.dw L8CA29D
+.dw L8CA3E9
+.dw L8CA2BF
+.dw L8CA2D3
+.dw L8CA2E7
+.dw L8CA3E9
+.dw L8CA2F5
+.dw L8CA30F
+.dw L8CA31D
+.dw L8CA357
+.dw L8CA35F
+.dw L8CA32B
+.dw L8CA3E9
+.dw L8CA339
+.dw L8CA341
+.dw L8CA34F
+.dw L8CA36D
+.dw L8CA3A5
+.dw L8CA389
+.dw L8CA397
+.dw L8CA3B9
+.dw L8CA3CD
+.dw L8CA3DB
+.dw L8CA183
+.dw L8CA1B7
+.dw L8CA259
+
+L8CA179:
+.db $FF $FF
+
+L8CA17B:
+.db $01 $00 $00 $EB $A3 $8C $FF $FF
+
+L8CA183:
+.db $01 $00 $00 $0A $A6 $8C $FF $FF
+
+L8CA18B:
+.db $01 $00 $00 $2B $A7 $8C $FF $FF
+
+L8CA193:
+.db $01 $00 $00 $33 $A8 $8C $0E $00
+.db $01 $BE $B1 $8C $FF $FF
+
+L8CA1A1:
+.db $01 $00 $00 $E8 $A8 $8C $FF $FF
+
+L8CA1A9:
+.db $01 $00 $00 $08 $A9 $8C $02 $00
+.db $01 $80 $AF $8C $FF $FF
+
+L8CA1B7:
+.db $00 $00 $00 $8E $A9 $8C $01 $00
+.db $00 $2C $BA $8C $0E $00 $01 $4B
+.db $BB $8C $FF $FF
+
+L8CA1CB:
+.db $01 $00 $00 $7C $AB $8C $0F $00
+.db $01 $F7 $AF $8C $FF $FF
+
+L8CA1D9:
+.db $01 $00 $00 $8D $AC $8C $FF $FF
+
+L8CA1E1:
+.db $01 $00 $00 $B6 $AC $8C $FF $FF
+
+L8CA1E9:
+.db $00 $00 $00 $E1 $AF $8C $01 $00
+.db $00 $41 $AD $8C $05 $00 $01 $30
+.db $B0 $8C $FF $FF
+
+L8CA1FD:
+.db $01 $00 $00 $CE $AD $8C $01 $00
+.db $01 $3F $B0 $8C $04 $00 $01 $10
+.db $B1 $8C $FF $FF
+
+L8CA211:
+.db $01 $00 $00 $F7 $AD $8C $0B $00
+.db $01 $47 $B0 $8C $FF $FF
+
+L8CA21F:
+.db $01 $00 $00 $0E $AE $8C $FF $FF
+
+L8CA227:
+.db $01 $00 $00 $36 $AE $8C $FF $FF
+
+L8CA22F:
+.db $01 $00 $00 $5C $AE $8C $07 $00
+.db $01 $73 $B0 $8C $FF $FF
+
+L8CA23D:
+.db $01 $00 $00 $85 $AE $8C $0A $00
+.db $01 $6F $BB $8C $FF $FF
+
+L8CA24B:
+.db $01 $00 $00 $2D $AF $8C $07 $00
+.db $01 $AD $B0 $8C $FF $FF
+
+L8CA259:
+.db $01 $00 $00 $47 $AF $8C $0A $00
+.db $01 $CA $B0 $8C $FF $FF
+
+L8CA267:
+.db $01 $00 $00 $63 $AF $8C $04 $00
+.db $01 $03 $B1 $8C $05 $00 $01 $38
+.db $B1 $8C $06 $00 $01 $5C $B1 $8C
+.db $07 $00 $01 $38 $B1 $8C $FF $FF
+
+L8CA287:
+.db $01 $00 $00 $CD $B1 $8C $01 $00
+.db $01 $8B $B8 $8C $FF $FF
+
+L8CA295:
+.db $01 $00 $00 $A6 $B3 $8C $FF $FF
+
+L8CA29D:
+.db $01 $00 $00 $10 $B4 $8C $02 $00
+.db $01 $9B $B8 $8C $04 $00 $01 $2A
+.db $B9 $8C $FF $FF
+
+L8CA2B1:
+.db $01 $00 $00 $84 $B4 $8C $04 $00
+.db $01 $39 $B9 $8C $FF $FF
+
+L8CA2BF:
+.db $01 $00 $00 $B0 $B4 $8C $02 $00
+.db $01 $CD $B9 $8C $0D $00 $01 $4C
+.db $BA $8C $FF $FF
+
+L8CA2D3:
+.db $00 $00 $00 $9A $BB $8C $01 $00
+.db $00 $CD $B4 $8C $03 $00 $01 $56
+.db $B9 $8C $FF $FF
+
+L8CA2E7:
+.db $01 $00 $00 $E1 $B4 $8C $03 $00
+.db $01 $F1 $BB $8C $FF $FF
+
+L8CA2F5:
+.db $00 $00 $00 $54 $BA $8C $01 $00
+.db $00 $10 $B5 $8C $03 $00 $01 $0E
+.db $BC $8C $06 $00 $01 $DD $B9 $8C
+.db $FF $FF
+
+L8CA30F:
+.db $01 $00 $00 $6F $B5 $8C $07 $00
+.db $01 $7A $BA $8C $FF $FF
+
+L8CA31D:
+.db $01 $00 $00 $0C $B6 $8C $0A $00
+.db $01 $2B $BC $8C $FF $FF
+
+L8CA32B:
+.db $01 $00 $00 $2C $B6 $8C $14 $00
+.db $01 $16 $BA $8C $FF $FF
+
+L8CA339:
+.db $01 $00 $00 $49 $B6 $8C $FF $FF
+
+L8CA341:
+.db $01 $00 $00 $81 $B6 $8C $03 $00
+.db $01 $73 $B9 $8C $FF $FF
+
+L8CA34F:
+.db $01 $00 $00 $98 $B6 $8C $FF $FF
+
+L8CA357:
+.db $01 $00 $00 $B5 $B6 $8C $FF $FF
+
+L8CA35F:
+.db $00 $00 $00 $71 $BA $8C $01 $00
+.db $00 $DB $B6 $8C $FF $FF
+
+L8CA36D:
+.db $01 $00 $00 $FE $B6 $8C $05 $00
+.db $01 $B8 $BA $8C $FF $FF
+
+L8CA37B:
+.db $01 $00 $00 $6D $B7 $8C $01 $00
+.db $01 $7C $B9 $8C $FF $FF
+
+L8CA389:
+.db $00 $00 $00 $BC $BB $8C $01 $00
+.db $00 $90 $B7 $8C $FF $FF
+
+L8CA397:
+.db $00 $00 $00 $DD $BB $8C $01 $00
+.db $00 $B3 $B7 $8C $FF $FF
+
+L8CA3A5:
+.db $01 $00 $00 $2A $B8 $8C $01 $00
+.db $01 $84 $B9 $8C $0C $00 $01 $8C
+.db $B9 $8C $FF $FF
+
+L8CA3B9:
+.db $00 $00 $00 $4D $B8 $8C $01 $00
+.db $00 $C9 $BB $8C $0C $00 $01 $F5
+.db $BA $8C $FF $FF
+
+L8CA3CD:
+.db $01 $00 $00 $5A $B8 $8C $0C $00
+.db $01 $12 $BB $8C $FF $FF
+
+L8CA3DB:
+.db $01 $00 $00 $71 $B8 $8C $02 $00
+.db $01 $A9 $B9 $8C $FF $FF
+
+L8CA3E9:
+.db $FF $FF
+
+L8CA3EB:
+.db $25 $07 $0C $01 $5C
 .db $0C $01 $5D $0C $01 $5E $0C $01
 .db $62 $0C $01 $63 $0C $01 $64 $0C
 .db $01 $65 $0C $01 $66 $0C $01 $67
