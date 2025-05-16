@@ -11,8 +11,11 @@
 .dw \1
 .ENDM
 
+.DEFINE SPEED_02 $02
 .DEFINE SPEED_04 $04
 
+; X, Y, speed
+; in tiles, not pixels
 .MACRO EV_MOVE_CAMERA
 .db $03 \1 \2 \3
 .ENDM
@@ -99,7 +102,7 @@
 
 .MACRO EV_GET_MONEY
 .db $15
-.dw \1
+COST(\1)
 .db \2
 .ENDM
 
@@ -176,6 +179,8 @@
 
 .DEFINE MOV_LAND_OR_WATER $01
 .DEFINE MOV_LAND_ONLY $02
+
+.DEFINE MOV_DIR_CHANGE $02
 
 .DEFINE MOV_LEFT $01
 .DEFINE MOV_UP $02
