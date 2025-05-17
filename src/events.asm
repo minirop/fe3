@@ -147,6 +147,10 @@ COST(\1)
 .db $22 \1
 .ENDM
 
+.MACRO EV_ARENA
+.db $27
+.ENDM
+
 .MACRO EV_ITEM_NOT_OWNED
 .db $29 \1
 .dw \2

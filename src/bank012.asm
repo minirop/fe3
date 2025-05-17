@@ -1954,49 +1954,49 @@ EV_SHOP $26 SHOP_WEAPON
 EV_STOP
 
 L8C903F:
-; ARENA?
-.db $27 $00 $00 $0F
+; ARENA
+EV_ARENA
+EV_STOP
 
-.db $13 $18 $1E $FE $FE
-.db $FE $00 $0F $18 $1E $1F $20 $FE
-.db $FE $00 $01 $0F $10 $13 $18 $FE
-.db $FE $00 $01 $10 $13 $16 $18 $FE
-.db $FE $01 $04 $10 $11 $16 $1A $1F
-.db $FE $57 $58 $40 $2D $2E $FE $FE
-.db $FE $00 $01 $10 $16 $11 $1A $FE
-.db $FE $01 $0C $16 $12 $11 $1A $FE
-.db $FE $57 $58 $40 $2D $2E $2F $FE
-.db $FE $00 $01 $02 $16 $11 $1A $1F
-.db $FE $01 $02 $10 $11 $1A $1B $FE
-.db $FE $2D $2E $2F $31 $40 $43 $FE
-.db $FE $57 $65 $58 $5B $5A $FE $FE
-.db $FE $04 $02 $13 $15 $11 $1B $FE
-.db $FE $00 $01 $0F $10 $18 $1A $1F
-.db $FE $03 $09 $30 $33 $42 $45 $FE
-.db $FE $04 $02 $15 $11 $1C $1B $FE
-.db $FE $00 $0F $18 $1E $1F $20 $FE
-.db $FE $2D $2E $2F $31 $40 $41 $FE
-.db $FE $0C $0D $02 $12 $11 $1B $FE
-.db $FE $00 $01 $0F $10 $18 $1A $FE
-.db $FE $66 $67 $68 $69 $6A $FE $FE
-.db $FE $04 $0D $02 $12 $11 $1B $FE
-.db $FE $58 $2D $2E $2F $31 $40 $41
-.db $FE $5C $63 $5F $62 $61 $5E $5D
-.db $FE $00 $0F $13 $18 $FE $FE $FE
-.db $FE $00 $01 $0F $10 $13 $18 $FE
-.db $FE $0F $10 $13 $16 $18 $1A $FE
-.db $FE $57 $58 $40 $2D $FE $FE $FE
-.db $FE $00 $01 $0F $10 $18 $1A $FE
-.db $FE $0C $01 $0F $11 $18 $1A $FE
-.db $FE $00 $04 $02 $16 $11 $1A $FE
-.db $FE $03 $0C $0D $02 $12 $1B $FE
-.db $FE $15 $1C $30 $33 $42 $45 $FE
-.db $FE $4F $52 $51 $56 $FE $FE $FE
-.db $FE $02 $13 $16 $11 $1C $1B $FE
-.db $FE $57 $58 $43 $2E $2F $31 $FE
-.db $FE $02 $0C $0D $12 $11 $1B $FE
-.db $FE $04 $0D $02 $12 $11 $1B $FE
-.db $FE
+.db $00 $0F $13 $18 $1E $FE $FE $FE
+.db $00 $0F $18 $1E $1F $20 $FE $FE
+.db $00 $01 $0F $10 $13 $18 $FE $FE
+.db $00 $01 $10 $13 $16 $18 $FE $FE
+.db $01 $04 $10 $11 $16 $1A $1F $FE
+.db $57 $58 $40 $2D $2E $FE $FE $FE
+.db $00 $01 $10 $16 $11 $1A $FE $FE
+.db $01 $0C $16 $12 $11 $1A $FE $FE
+.db $57 $58 $40 $2D $2E $2F $FE $FE
+.db $00 $01 $02 $16 $11 $1A $1F $FE
+.db $01 $02 $10 $11 $1A $1B $FE $FE
+.db $2D $2E $2F $31 $40 $43 $FE $FE
+.db $57 $65 $58 $5B $5A $FE $FE $FE
+.db $04 $02 $13 $15 $11 $1B $FE $FE
+.db $00 $01 $0F $10 $18 $1A $1F $FE
+.db $03 $09 $30 $33 $42 $45 $FE $FE
+.db $04 $02 $15 $11 $1C $1B $FE $FE
+.db $00 $0F $18 $1E $1F $20 $FE $FE
+.db $2D $2E $2F $31 $40 $41 $FE $FE
+.db $0C $0D $02 $12 $11 $1B $FE $FE
+.db $00 $01 $0F $10 $18 $1A $FE $FE
+.db $66 $67 $68 $69 $6A $FE $FE $FE
+.db $04 $0D $02 $12 $11 $1B $FE $FE
+.db $58 $2D $2E $2F $31 $40 $41 $FE
+.db $5C $63 $5F $62 $61 $5E $5D $FE
+.db $00 $0F $13 $18 $FE $FE $FE $FE
+.db $00 $01 $0F $10 $13 $18 $FE $FE
+.db $0F $10 $13 $16 $18 $1A $FE $FE
+.db $57 $58 $40 $2D $FE $FE $FE $FE
+.db $00 $01 $0F $10 $18 $1A $FE $FE
+.db $0C $01 $0F $11 $18 $1A $FE $FE
+.db $00 $04 $02 $16 $11 $1A $FE $FE
+.db $03 $0C $0D $02 $12 $1B $FE $FE
+.db $15 $1C $30 $33 $42 $45 $FE $FE
+.db $4F $52 $51 $56 $FE $FE $FE $FE
+.db $02 $13 $16 $11 $1C $1B $FE $FE
+.db $57 $58 $43 $2E $2F $31 $FE $FE
+.db $02 $0C $0D $12 $11 $1B $FE $FE
+.db $04 $0D $02 $12 $11 $1B $FE $FE
 
 ; chapter id
 ; unit than can go ($ff = everyone)
@@ -2427,6 +2427,7 @@ CREATE_BUILDING CHAPTER_E04_THE_DRAGON_ALTAR_PART_3,   UNIT_MARTH,    $10, $03, 
 .db $05 $21 $00 $00 $27 $11 $16 $06
 .db $21 $01 $00 $FF
 
+L8CA04C:
 .dl L8CA09A
 .dl L8CA09B
 .dl L8CA0A0
