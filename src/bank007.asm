@@ -1923,7 +1923,11 @@ L878746:
 .db $5A $E2 $20 $FA $BF $20 $AA $87
 .db $85 $15 $FA $BD $E1 $07 $25 $15
 .db $F0 $03 $28 $38 $6B $28 $18 $6B
-.db $01 $02 $04 $08 $10 $20 $40 $80
+
+FLAGS_87AA20:
+.db FLAG_0 FLAG_1 FLAG_2 FLAG_3
+.db FLAG_4 FLAG_5 FLAG_6 FLAG_7
+
 .db $08 $C2 $20 $A8 $A9 $08 $00 $22
 .db $18 $D7 $81 $48 $5A $E2 $20 $FA
 .db $BF $20 $AA $87 $85 $15 $FA $BD
