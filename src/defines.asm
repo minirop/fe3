@@ -187,3 +187,5 @@
 .DEFINE FLAG_5 $20
 .DEFINE FLAG_6 $40
 .DEFINE FLAG_7 $80
+
+.FUNCTION RGB(r, g, b) ((r / 8) + ((g / 8) * 32) + ((b / 8) * 1024))
