@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-import os, fe
+import fe
 
 ITEMS = fe.get_items()
 
