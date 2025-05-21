@@ -189,3 +189,13 @@
 .DEFINE FLAG_7 $80
 
 .FUNCTION RGB(r, g, b) ((r / 8) + ((g / 8) * 32) + ((b / 8) * 1024))
+
+.MACRO DMA_DATA
+.db \1 ; unk
+.dl \2 ; A1B1/A1T1H/A1T1L
+.dw \3 ; DAS1H/DAS1L
+.db \4 ; WMAIN
+.dw \5 ; VWADDH/VMADDL
+.ENDM
+
+.FUNCTION bank100(addr) (bankbyte(addr) * $100)

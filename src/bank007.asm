@@ -321,7 +321,7 @@ L87833A:
 	inx
 	dey
 	bne L87833A
-	lda #bankbyte(UNK_DATA_878412) * $100
+	lda #bank100(UNK_DATA_878412)
 	sta $01
 	lda #UNK_DATA_878412
 	sta $00
@@ -331,7 +331,7 @@ L87833A:
 	lda #$8848
 	sta $00
 	jsl L808EAD
-	lda #bankbyte(DIALOGUES_POINTER_TABLE) * $100
+	lda #bank100(DIALOGUES_POINTER_TABLE)
 	sta $01
 	ldy #$0001
 	lda [$0F],Y
@@ -388,7 +388,7 @@ L8783E1:
 	inx
 	dey
 	bne L8783E1
-	lda #bankbyte(UNK_DATA_878412) * $100
+	lda #bank100(UNK_DATA_878412)
 	sta $01
 	lda #UNK_DATA_878412
 	sta $00

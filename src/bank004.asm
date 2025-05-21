@@ -503,28 +503,103 @@ CHAPTERS_ID:
 .db CHAPTER_000_DEBUG
 .db CHAPTER_UNKNOWN_99
 
-.db $08 $A9 $00 $84 $85 $01 $A9
-.db $C3 $80 $85 $00 $A9 $00 $7E $85
-.db $04 $A9 $FE $40 $85 $03 $AD $0F
-.db $0E $20 $96 $8C $28 $60 $08 $E2
-.db $20 $64 $08 $8D $02 $42 $A0 $00
-.db $00 $B7 $00 $8D $03 $42 $EA $EA
-.db $EA $C2 $20 $AD $16 $42 $4A $4A
-.db $4A $4A $4A $85 $06 $E2 $20 $C8
-.db $B7 $00 $8D $03 $42 $EA $EA $EA
-.db $C2 $20 $AD $16 $42 $EB $4A $4A
-.db $4A $4A $4A $18 $65 $06 $88 $97
-.db $03 $C8 $C8 $C0 $80 $03 $90 $C9
-.db $28 $60 $08 $A0 $00 $00 $A2 $FE
-.db $FF $A9 $00 $AF $85 $01 $A9 $00
-.db $C0 $85 $00 $A9 $00 $CB $85 $04
-.db $A9 $00 $C0 $85 $03 $E2 $20 $E8
-.db $E8 $B7 $03 $9F $FE $40 $7E $B7
-.db $00 $9F $FF $40 $7E $C8 $C0 $00
-.db $40 $90 $EC $C2 $20 $A9 $00 $84
-.db $85 $01 $A9 $1D $8D $85 $00 $22
-.db $AD $8E $80 $28 $60 $02 $FE $40
-.db $7E $00 $80 $80 $00 $00 $08 $A9
+L848C79:
+	php
+	lda.w #$8400
+	sta $01
+	lda.w #$80c3
+	sta $00
+	lda.w #$7e00
+	sta $04
+	lda.w #DecompressionLocation
+	sta $03
+	lda $0e0f
+	jsr $8c96
+	plp
+	rts
+
+L848C96:
+	php
+	sep #$20
+	stz $08
+	sta $4202
+	ldy #$0000
+L848CA1:
+	lda [$00],y
+	sta $4203
+	nop
+	nop
+	nop
+	rep #$20
+	lda $4216
+	lsr
+	lsr
+	lsr
+	lsr
+	lsr
+	sta $06
+	sep #$20
+	iny
+	lda [$00],y
+	sta $4203
+	nop
+	nop
+	nop
+	rep #$20
+	lda $4216
+	xba
+	lsr
+	lsr
+	lsr
+	lsr
+	lsr
+	clc
+	adc $06
+	dey
+	sta [$03],y
+	iny
+	iny
+	cpy #$0380
+	bcc L848CA1
+	plp
+	rts
+
+L848CDA:
+	php
+	ldy #$0000
+	ldx #$fffe
+	lda #$af00
+	sta $01
+	lda #$c000
+	sta $00
+	lda #$cb00
+	sta $04
+	lda #$c000
+	sta $03
+	sep #$20
+L848CF7:
+	inx
+	inx
+	lda [$03],y
+	sta.l DecompressionLocation,x
+	lda [$00],y
+	sta.l (DecompressionLocation+1),x
+	iny
+	cpy #$4000
+	bcc L848CF7
+	rep #$20
+	lda #bank100(L848D1D)
+	sta $01
+	lda #L848D1D
+	sta $00
+	jsl L808EAD
+	plp
+	rts
+
+L848D1D:
+DMA_DATA $02 DecompressionLocation $8000 $80 $0000
+
+.db $08 $A9
 .db $00 $DB $8F $72 $00 $00 $A9 $A5
 .db $F7 $8F $71 $00 $00 $A9 $00 $00
 .db $8F $76 $00 $00 $22 $18 $8F $80
