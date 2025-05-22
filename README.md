@@ -36,4 +36,4 @@ Just type `make`.
 
 ## Thanks
 
-[RobertTheSable](https://github.com/RobertTheSable/), Unknown Japanese hackers, [people on FEU](https://feuniverse.us/t/fe3-japanese-documentation-nightmare-modules-event-editing-patches-fixed-growths-and-more/5963) that backed up the Japanese documentation.
+[RobertTheSable](https://github.com/RobertTheSable/), Unknown Japanese hackers, [people on FEU](https://feuniverse.us/t/fe3-japanese-documentation-nightmare-modules-event-editing-patches-fixed-growths-and-more/5963) that backed up the Japanese documentation, [FireEmblem wiki](https://fireemblemwiki.org), [IsoFrieze](https://www.youtube.com/@RGMechEx).
