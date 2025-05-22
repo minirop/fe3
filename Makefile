@@ -38,6 +38,8 @@ lists:
 	fe3-text text/lists/debug_strings.json compile list text/lists/debug_strings.gen.asm
 	fe3-text text/lists/menu_preparation.json compile list text/lists/menu_preparation.gen.asm
 	fe3-text text/lists/knight_names.json compile list text/lists/knight_names.gen.asm
+	fe3-text text/lists/actions_messages.json compile list text/lists/actions_messages.gen.asm
+	fe3-text text/lists/unk_names.json compile list text/lists/unk_names.gen.asm
 
 descriptions:
 	fe3-text text/descriptions/knight.txt compile dialogue text/descriptions/knight.bin
