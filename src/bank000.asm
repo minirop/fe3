@@ -8125,58 +8125,146 @@ L80BCD1:
 	plp
 	rtl
 
-.db $00 $FC $D0 $41
-.db $9B $AC $9E $A6 $AC $FB $B0 $AC
-.db $89 $BC $AC $96 $C3 $AC $13 $CC
-.db $AC $5D $D6 $AC $B9 $E0 $AC $BF
-.db $EA $AC $71 $F6 $AC $AF $FF $AC
-.db $4D $8B $AD $49 $96 $AD $AC $A0
-.db $AD $5B $AB $AD $A6 $B4 $AD $A5
-.db $BC $AD $BA $C7 $AD $D3 $D0 $AD
-.db $41 $DA $AD $B4 $E2 $AD $62 $EB
-.db $AD $07 $F5 $AD $CD $FF $AD $F4
-.db $87 $AE $9A $90 $AE $00 $99 $AE
-.db $AA $A0 $AE $F8 $A9 $AE $DF $AE
-.db $AE $3C $B9 $AE $B7 $C3 $AE $4A
-.db $CD $AE $B0 $D6 $AE $E4 $DF $AE
-.db $0D $E7 $AE $CD $EF $AE $C9 $F0
-.db $AE $77 $FB $AE $AE $84 $AF $D6
-.db $8C $AF $B4 $94 $AF $13 $A2 $AF
-.db $71 $A9 $AF $43 $B2 $AF $00 $80
-.db $A7 $E5 $90 $A7 $D2 $A0 $A7 $52
-.db $B2 $A7 $8F $C3 $A7 $C9 $D5 $A7
-.db $85 $E2 $A7 $ED $EF $A7 $FB $82
-.db $A8 $1F $93 $A8 $C3 $A9 $A8 $2D
-.db $C0 $A8 $A4 $CD $A8 $F2 $D7 $A8
-.db $7C $E2 $A8 $E4 $F2 $A8 $52 $FC
-.db $A8 $1B $90 $A9 $8F $9E $A9 $24
-.db $AF $A9 $12 $BC $A9 $A1 $C9 $A9
-.db $9E $D4 $A9 $7F $DC $A9 $41 $ED
-.db $A9 $C9 $F6 $A9 $9B $82 $AA $A2
-.db $8B $AA $59 $99 $AA $FE $A0 $AA
-.db $EB $B0 $AA $03 $C0 $AA $BB $CE
-.db $AA $6B $DF $AA $68 $F1 $AA $C8
-.db $FB $AA $02 $87 $AB $3A $90 $AB
-.db $39 $A3 $AB $5E $B2 $AB $23 $BD
-.db $AB $61 $CC $AB $7D $E1 $AB $77
-.db $EC $AB $A3 $87 $AC $F6 $86 $A7
-.db $B4 $95 $A7 $EE $A5 $A7 $2A $B9
-.db $A7 $A9 $CA $A7 $26 $DA $A7 $8E
-.db $E7 $A7 $1E $F7 $A7 $49 $88 $A8
-.db $C4 $9C $A8 $0F $B4 $A8 $8F $C6
-.db $A8 $DD $D0 $A8 $67 $DB $A8 $DF
-.db $EA $A8 $11 $F9 $A8 $ED $82 $A9
-.db $37 $93 $A9 $1C $A2 $A9 $4C $B7
-.db $A9 $59 $C1 $A9 $38 $CD $A9 $A9
-.db $D7 $A9 $7F $E5 $A9 $A7 $F1 $A9
-.db $77 $FB $A9 $A6 $86 $AA $44 $90
-.db $AA $85 $9D $AA $CD $A5 $AA $E5
-.db $B4 $AA $CF $C6 $AA $63 $D2 $AA
-.db $AB $E7 $AA $52 $F7 $AA $9A $FD
-.db $AA $DB $8D $AB $8F $96 $AB $D6
-.db $A7 $AB $82 $B7 $AB $2B $C1 $AB
-.db $09 $D4 $AB $DB $E8 $AB $3A $F8
-.db $AB $13 $8E $AC $31 $00 $32 $00
+.db $00 $FC $D0
+
+L80BCD7:
+.dl $AC9B41
+.dl $ACA69E
+.dl $ACB0FB
+.dl $ACBC89
+.dl $ACC396
+.dl $ACCC13
+.dl $ACD65D
+.dl $ACE0B9
+.dl $ACEABF
+.dl $ACF671
+.dl $ACFFAF
+.dl $AD8B4D
+.dl $AD9649
+.dl $ADA0AC
+.dl $ADAB5B
+.dl $ADB4A6
+.dl $ADBCA5
+.dl $ADC7BA
+.dl $ADD0D3
+.dl $ADDA41
+.dl $ADE2B4
+.dl $ADEB62
+.dl $ADF507
+.dl $ADFFCD
+.dl $AE87F4
+.dl $AE909A
+.dl $AE9900
+.dl $AEA0AA
+.dl $AEA9F8
+.dl $AEAEDF
+.dl $AEB93C
+.dl $AEC3B7
+.dl $AECD4A
+.dl $AED6B0
+.dl $AEDFE4
+.dl $AEE70D
+.dl $AEEFCD
+.dl $AEF0C9
+.dl $AEFB77
+.dl $AF84AE
+.dl $AF8CD6
+.dl $AF94B4
+.dl $AFA213
+.dl $AFA971
+.dl $AFB243
+.dl $A78000
+.dl $A790E5
+.dl $A7A0D2
+.dl $A7B252
+.dl $A7C38F
+.dl $A7D5C9
+.dl $A7E285
+.dl $A7EFED
+.dl $A882FB
+.dl $A8931F
+.dl $A8A9C3
+.dl $A8C02D
+.dl $A8CDA4
+.dl $A8D7F2
+.dl $A8E27C
+.dl $A8F2E4
+.dl $A8FC52
+.dl $A9901B
+.dl $A99E8F
+.dl $A9AF24
+.dl $A9BC12
+.dl $A9C9A1
+.dl $A9D49E
+.dl $A9DC7F
+.dl $A9ED41
+.dl $A9F6C9
+.dl $AA829B
+.dl $AA8BA2
+.dl $AA9959
+.dl $AAA0FE
+.dl $AAB0EB
+.dl $AAC003
+.dl $AACEBB
+.dl $AADF6B
+.dl $AAF168
+.dl $AAFBC8
+.dl $AB8702
+.dl $AB903A
+.dl $ABA339
+.dl $ABB25E
+.dl $ABBD23
+.dl $ABCC61
+.dl $ABE17D
+.dl $ABEC77
+.dl $AC87A3
+.dl $A786F6
+.dl $A795B4
+.dl $A7A5EE
+.dl $A7B92A
+.dl $A7CAA9
+.dl $A7DA26
+.dl $A7E78E
+.dl $A7F71E
+.dl $A88849
+.dl $A89CC4
+.dl $A8B40F
+.dl $A8C68F
+.dl $A8D0DD
+.dl $A8DB67
+.dl $A8EADF
+.dl $A8F911
+.dl $A982ED
+.dl $A99337
+.dl $A9A21C
+.dl $A9B74C
+.dl $A9C159
+.dl $A9CD38
+.dl $A9D7A9
+.dl $A9E57F
+.dl $A9F1A7
+.dl $A9FB77
+.dl $AA86A6
+.dl $AA9044
+.dl $AA9D85
+.dl $AAA5CD
+.dl $AAB4E5
+.dl $AAC6CF
+.dl $AAD263
+.dl $AAE7AB
+.dl $AAF752
+.dl $AAFD9A
+.dl $AB8DDB
+.dl $AB968F
+.dl $ABA7D6
+.dl $ABB782
+.dl $ABC12B
+.dl $ABD409
+.dl $ABE8DB
+.dl $ABF83A
+.dl $AC8E13
+
+.db $31 $00 $32 $00
 .db $33 $00 $34 $00 $35 $00 $39 $00
 .db $B1 $00 $B2 $00 $B3 $00 $B4 $00
 .db $B5 $00 $B6 $00 $53 $00 $51 $00

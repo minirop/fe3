@@ -54,7 +54,7 @@ CHAPTERS_UNITS:
 .dw L888803
 
 ; unit, class, level, name
-; y-pos, x-pos, unk, portrait
+; y-pos, x-pos, mounted class, portrait
 ; weapon 1, weapon 2, weapon 3, weapon 4
 ; item 1, item 2, item 3, item 4
 ; AI 1, AI 2, AI 3
