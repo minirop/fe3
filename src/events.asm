@@ -194,8 +194,8 @@ COST(\1)
 
 .DEFINE MOV_METHOD_01  $01
 .DEFINE MOV_DIR_CHANGE $02
-.DEFINE MOV_METHOD_03  $03 ; seems to be "movement speed" ($0C = $0200 or 2px/frame)
+.DEFINE MOV_METHOD_03  $03 ; seems to be "movement speed" ($0C = $0002 or 2px/frame)
 .DEFINE MOV_METHOD_04  $04
-.DEFINE MOV_METHOD_05  $05 ; seems to be "movement target" (x$100)
+.DEFINE MOV_METHOD_05  $05 ; seems to be "movement target"
 
 .DEFINE MOV_END $FF $FF

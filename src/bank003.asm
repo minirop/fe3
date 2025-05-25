@@ -1011,13 +1011,14 @@ L838F60:
 	and #$00FF
 	tax
 	sep #$20
-	lda $8F77,X
+	lda.w L838F77,X
 	sta $08D1
 	stz $08D4
 	rep #$20
 	rts
 
-.db $01 $02 ; ORA ($02,X) ???
+L838F77:
+.db $01 $02
 
 L838F79:
 	sep #$20

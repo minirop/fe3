@@ -4027,14 +4027,14 @@ L809DCD:
 
 .dw L809C2C
 .dw L809CFB
-.dw $9C98
+.dw L809C98
 .dw L809C47
-.dw $9C62
+.dw L809C62
 .dw L809D2A
-.dw $9D17
-.dw $9C7D
-.dw $9CAD
-.dw $9CE5
+.dw L809D17
+.dw L809C7D
+.dw L809CAD
+.dw L809CE5
 
 .dw $0000
 .dw $0000
