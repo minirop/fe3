@@ -57,12 +57,10 @@
 .db $0B \1
 .ENDM
 
-; called after a recruitment dialogue
 .MACRO EV_SET_UNIT_ALLY
 .db $0C $00 \1
 .ENDM
 
-; or "create unit"?
 .MACRO EV_SET_UNIT_ENEMY
 .db $0C $01 \1
 .ENDM
@@ -148,6 +146,10 @@ COST(\1)
 .db $22 \1
 .ENDM
 
+.MACRO EV_COMMAND_25
+.db $25 \1
+.ENDM
+
 .MACRO EV_ARENA
 .db $27
 .ENDM
@@ -186,7 +188,7 @@ COST(\1)
 .DEFINE MOV_LAND_ONLY $02
 
 
-.DEFINE MOV_NONE $00 ; i.e. idle
+.DEFINE MOV_IDLE $00
 .DEFINE MOV_LEFT $01
 .DEFINE MOV_UP $02
 .DEFINE MOV_DOWN $03

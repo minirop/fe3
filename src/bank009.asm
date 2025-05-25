@@ -6567,7 +6567,7 @@ TABLE_89CA4E:
 .dl $0087C0
 .dl $008800
 
-MAP_DATA:
+MAP_DATA: ; add $A40000
 .dl $008000 ; 120000.bin
 .dl $00855D ; 12055D.bin
 .dl $00880F ; 12080F.bin
@@ -6632,7 +6632,7 @@ MAP_DATA:
 .dl $01F57D ; 12F57D.bin
 .dl $01F9AA ; 12F9AA.bin
 
-SOME_POINTERS_TABLE:
+SOME_POINTERS_TABLE: ; add $A20000
 .dl $008000 ; 110000.bin
 .dl $0090D2 ; 1110d2.bin
 .dl $00A07E ; 11207E.bin
@@ -6646,12 +6646,15 @@ SOME_POINTERS_TABLE:
 .dl $01A4C6 ; 11A4C6.bin
 .dl $01B3E8 ; 11B3E8.bin
 
-.dl $89CB98
-.dl $89CB9C
-.dl $000115
-.dl $0001FF
+L89CB92:
+.dl L89CB98
+.dl L89CB9C
 
-.db $00 $FF
+L89CB98:
+.db $15 $01 $00 $FF
+
+L89CB9C:
+.db $01 $00 $00 $FF
 
 ; I have no ideas what I'm doing here.
 .dl $008000
