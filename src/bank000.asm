@@ -6,8 +6,8 @@
 
 L808000:
 	rep #$30
-	jsr $801d
-	jsr $824c
+	jsr L80801D
+	jsr L80824C
 	bra L80801C
 L80800A:
 	stz $045e
@@ -42,7 +42,7 @@ L80801D:
 	stz $045f
 	ldx.b #$01
 	lda $421a
-	jsr $8061
+	jsr $8061 ; ???
 	dex
 	lda $4218
 	sta $15
@@ -64,17 +64,18 @@ L80807B:
 	rol $0455,x
 	dey
 	bne L80807B
-	jsr $8090
-	jsr $80b0
+	jsr L808090
+	jsr L8080B0
 	rts
 
 L80808E:
 	ora ($02,x)
-	jsr $809b
+L808090:
+	jsr L80809B
 	phx
 	inx
 	inx
-	jsr $809b
+	jsr L80809B
 	plx
 	rts
 
@@ -163,7 +164,7 @@ L80813D:
 	stz $0462,x
 	stz $0460,x
 L808143:
-	jsr $822c
+	jsr L80822C
 	rep #$20
 	lda $045b
 	and #$00ff
@@ -201,16 +202,16 @@ L808189:
 	lda $0137
 	lsr
 	bcs L8081A8
-	jsr $81b6
+	jsr L8081B6
 	lda $08de
 	bne L8081B3
-	jsr $81f1
+	jsr L8081F1
 	bra L8081B3
 L8081A8:
-	jsr $81f1
+	jsr L8081F1
 	lda $08de
 	bne L8081B3
-	jsr $81b6
+	jsr L8081B6
 L8081B3:
 	sep #$20
 	rts
@@ -310,7 +311,7 @@ L808255:
 	lda $0450,x
 	cmp $044e,x
 	beq L80826E
-	jsr $8275
+	jsr L808275
 	bcs L80826E
 	lda $044e,x
 L80826E:
@@ -4463,7 +4464,7 @@ L80A146:
 	cmp #$80
 	inc $55
 	phy
-	jsr $a272
+	jsr L80A272
 	ply
 	dec $55
 	stz $16
@@ -4512,7 +4513,7 @@ L80A179:
 	lda $1e
 	cmp #$01
 	phy
-	jsr $a272
+	jsr L80A272
 	ply
 	lda $1d
 	ldx $50
@@ -4914,7 +4915,7 @@ L80A4E1:
 
 L80A4F7:
 	jsl L80884A
-	jsl $81D845
+	jsl L81D845
 	jsl $83878B
 	jsl L80AA09
 	jsl $838851
@@ -6574,10 +6575,10 @@ L80B184:
 	lda $8cdc
 	cmp $4000,x
 	bcs L80B194
-	jsr $b1e5
+	jsr L80B1E5
 	bra L80B197
 L80B194:
-	jsr $b212
+	jsr L80B212
 L80B197:
 	rep #$20
 	lda $8cdf
@@ -6649,9 +6650,9 @@ L80B212:
 	lda $4003,x
 	and #$00ff
 	sta $1f
-	jsr $b248
-	jsr $b263
-	jsr $b27e
+	jsr L80B248
+	jsr L80B263
+	jsr L80B27E
 	lda $1f
 	cmp #$0002
 	beq L80B247

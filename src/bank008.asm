@@ -54,7 +54,7 @@ CHAPTERS_UNITS:
 .dw L888803
 
 ; unit, class, level, name
-; y-pos, x-pos, mounted class, portrait
+; y-pos, x-pos, unk (mounted class?), portrait
 ; weapon 1, weapon 2, weapon 3, weapon 4
 ; item 1, item 2, item 3, item 4
 ; AI 1, AI 2, AI 3
@@ -4958,7 +4958,10 @@ L88CB6B:
 
 AI_3_TABLE:
 .db $1E $50 $0A $3C $46 $64
-.db $00 $64 $1A $1B $1C $1D $1E $20
+.db $00 $64
+
+L88CB7A:
+.db $1A $1B $1C $1D $1E $20
 .db $21 $26 $29 $2C $32 $35 $38 $3B
 .db $3E $41 $44 $47 $4A $4D $50 $91
 .db $94 $FF $18 $2F $61 $FF $5E $FF
