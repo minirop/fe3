@@ -4,21 +4,37 @@
 .SECTION "Bank43" FORCE
 
 .INCBIN "157D9A.bin" SKIP 614
+LAB8702:
 .INCBIN "158702.bin" ; spritesheet
+LAB8DDB:
 .INCBIN "158DDB.bin"
+LAB903A:
 .INCBIN "15903A.bin" ; spritesheet
+LAB968F:
 .INCBIN "15968F.bin"
+LABA339:
 .INCBIN "15A339.bin" ; spritesheet
+LABA7D6:
 .INCBIN "15A7D6.bin"
+LABB25E:
 .INCBIN "15B25E.bin" ; spritesheet
+LABB782:
 .INCBIN "15B782.bin"
+LABBD23:
 .INCBIN "15BD23.bin" ; spritesheet
+LABC12B:
 .INCBIN "15C12B.bin"
+LABCC61:
 .INCBIN "15CC61.bin" ; spritesheet
+LABD409:
 .INCBIN "15D409.bin"
+LABE17D:
 .INCBIN "15E17D.bin" ; spritesheet
+LABE8DB:
 .INCBIN "15E8DB.bin"
+LABEC77:
 .INCBIN "15EC77.bin" ; spritesheet
+LABF83A:
 .INCBIN "15F83A.bin" READ 1990
 
 .ENDS

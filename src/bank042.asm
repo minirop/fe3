@@ -4,25 +4,45 @@
 .SECTION "Bank42" FORCE
 
 .INCBIN "14FB77.bin" SKIP 1161
+LAA829B:
 .INCBIN "15029B.bin" ; spritesheet
+LAA86A6:
 .INCBIN "1506A6.bin"
+LAA8BA2:
 .INCBIN "150BA2.bin" ; spritesheet
+LAA9044:
 .INCBIN "151044.bin"
+LAA9959:
 .INCBIN "151959.bin" ; spritesheet
+LAA9D85:
 .INCBIN "151D85.bin"
+LAAA0FE:
 .INCBIN "1520FE-spritesheet.bin"
+LAAA5CD:
 .INCBIN "1525CD.bin"
+LAAB0EB:
 .INCBIN "pirate-spritesheet.bin"
+LAAB4E5:
 .INCBIN "1534E5.bin"
+LAAC003:
 .INCBIN "axebro-spritesheet.bin"
+LAAC6CF:
 .INCBIN "1546CF.bin"
+LAACEBB:
 .INCBIN "154EBB.bin" ; spritesheet
+LAAD263:
 .INCBIN "155263.bin"
+LAADF6B:
 .INCBIN "155F6B.bin" ; spritesheet
+LAAE7AB:
 .INCBIN "1567AB.bin"
+LAAF168:
 .INCBIN "157168.bin" ; spritesheet
+LAAF752:
 .INCBIN "157752.bin"
+LAAFBC8:
 .INCBIN "157BC8.bin" ; spritesheet
+LAAFD9A:
 .INCBIN "157D9A.bin" READ 614
 
 .ENDS

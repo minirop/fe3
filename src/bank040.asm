@@ -4,22 +4,39 @@
 .SECTION "Bank40" FORCE
 
 .INCBIN "13F71E.bin" SKIP 2274
+LA882FB:
 .INCBIN "1402FB.bin" ; spritesheet
+LA88849:
 .INCBIN "140849.bin"
+LA8931F:
 .INCBIN "14131F.bin" ; spritesheet
+LA89CC4:
 .INCBIN "141CC4.bin"
+LA8A9C3:
 .INCBIN "1429C3.bin" ; spritesheet
+LA8B40F:
 .INCBIN "14340F.bin"
+LA8C02D:
 .INCBIN "14402D.bin" ; spritesheet archer
+LA8C68F:
 .INCBIN "14468F.bin"
+LA8CDA4:
 .INCBIN "144DA4.bin" ; spritesheet
+LA8D0DD:
 .INCBIN "1450DD.bin"
+LA8D7F2:
 .INCBIN "1457F2.bin" ; spritesheet archer
+LA8DB67:
 .INCBIN "145B67.bin"
+LA8E27C:
 .INCBIN "14627C.bin" ; spritesheet horseman archer
+LA8EADF:
 .INCBIN "146ADF.bin"
+LA8F2E4:
 .INCBIN "1472E4.bin" ; spritesheet
+LA8F911:
 .INCBIN "147911.bin"
+LA8FC52:
 .INCBIN "147C52.bin" READ 942 ; spritesheet
 
 .ENDS

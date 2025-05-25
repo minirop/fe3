@@ -83,3 +83,12 @@ def get_ai(id):
 def unknown(id):
 	if id == 0xFF: return 'UNDEFINED'
 	return id
+
+def cpu_to_prg(addr):
+	bank = (addr >> 16) - 0x80
+	addr = addr & 0xFFFF
+	prg_bank = bank // 2
+	if bank % 2 == 0:
+		addr -= 0x8000
+	addr += prg_bank << 16
+	return addr

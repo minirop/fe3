@@ -8126,183 +8126,268 @@ L80BCD1:
 	plp
 	rtl
 
-.db $00 $FC $D0
+L80BCD4:
+.dl LD0FC00
 
 L80BCD7:
-.dl $AC9B41
-.dl $ACA69E
-.dl $ACB0FB
-.dl $ACBC89
-.dl $ACC396
-.dl $ACCC13
-.dl $ACD65D
-.dl $ACE0B9
-.dl $ACEABF
-.dl $ACF671
-.dl $ACFFAF
-.dl $AD8B4D
-.dl $AD9649
-.dl $ADA0AC
-.dl $ADAB5B
-.dl $ADB4A6
-.dl $ADBCA5
-.dl $ADC7BA
-.dl $ADD0D3
-.dl $ADDA41
-.dl $ADE2B4
-.dl $ADEB62
-.dl $ADF507
-.dl $ADFFCD
-.dl $AE87F4
-.dl $AE909A
-.dl $AE9900
-.dl $AEA0AA
-.dl $AEA9F8
-.dl $AEAEDF
-.dl $AEB93C
-.dl $AEC3B7
-.dl $AECD4A
-.dl $AED6B0
-.dl $AEDFE4
-.dl $AEE70D
-.dl $AEEFCD
-.dl $AEF0C9
-.dl $AEFB77
-.dl $AF84AE
-.dl $AF8CD6
-.dl $AF94B4
-.dl $AFA213
-.dl $AFA971
-.dl $AFB243
-.dl $A78000
-.dl $A790E5
-.dl $A7A0D2
-.dl $A7B252
-.dl $A7C38F
-.dl $A7D5C9
-.dl $A7E285
-.dl $A7EFED
-.dl $A882FB
-.dl $A8931F
-.dl $A8A9C3
-.dl $A8C02D
-.dl $A8CDA4
-.dl $A8D7F2
-.dl $A8E27C
-.dl $A8F2E4
-.dl $A8FC52
-.dl $A9901B
-.dl $A99E8F
-.dl $A9AF24
-.dl $A9BC12
-.dl $A9C9A1
-.dl $A9D49E
-.dl $A9DC7F
-.dl $A9ED41
-.dl $A9F6C9
-.dl $AA829B
-.dl $AA8BA2
-.dl $AA9959
-.dl $AAA0FE
-.dl $AAB0EB
-.dl $AAC003
-.dl $AACEBB
-.dl $AADF6B
-.dl $AAF168
-.dl $AAFBC8
-.dl $AB8702
-.dl $AB903A
-.dl $ABA339
-.dl $ABB25E
-.dl $ABBD23
-.dl $ABCC61
-.dl $ABE17D
-.dl $ABEC77
-.dl $AC87A3
-.dl $A786F6
-.dl $A795B4
-.dl $A7A5EE
-.dl $A7B92A
-.dl $A7CAA9
-.dl $A7DA26
-.dl $A7E78E
-.dl $A7F71E
-.dl $A88849
-.dl $A89CC4
-.dl $A8B40F
-.dl $A8C68F
-.dl $A8D0DD
-.dl $A8DB67
-.dl $A8EADF
-.dl $A8F911
-.dl $A982ED
-.dl $A99337
-.dl $A9A21C
-.dl $A9B74C
-.dl $A9C159
-.dl $A9CD38
-.dl $A9D7A9
-.dl $A9E57F
-.dl $A9F1A7
-.dl $A9FB77
-.dl $AA86A6
-.dl $AA9044
-.dl $AA9D85
-.dl $AAA5CD
-.dl $AAB4E5
-.dl $AAC6CF
-.dl $AAD263
-.dl $AAE7AB
-.dl $AAF752
-.dl $AAFD9A
-.dl $AB8DDB
-.dl $AB968F
-.dl $ABA7D6
-.dl $ABB782
-.dl $ABC12B
-.dl $ABD409
-.dl $ABE8DB
-.dl $ABF83A
-.dl $AC8E13
+.dl LAC9B41
+.dl LACA69E
+.dl LACB0FB
+.dl LACBC89
+.dl LACC396
+.dl LACCC13
+.dl LACD65D
+.dl LACE0B9
+.dl LACEABF
+.dl LACF671
+.dl LACFFAF
+.dl LAD8B4D
+.dl LAD9649
+.dl LADA0AC
+.dl LADAB5B
+.dl LADB4A6
+.dl LADBCA5
+.dl LADC7BA
+.dl LADD0D3
+.dl LADDA41
+.dl LADE2B4
+.dl LADEB62
+.dl LADF507
+.dl LADFFCD
+.dl LAE87F4
+.dl LAE909A
+.dl LAE9900
+.dl LAEA0AA
+.dl LAEA9F8
+.dl LAEAEDF
+.dl LAEB93C
+.dl LAEC3B7
+.dl LAECD4A
+.dl LAED6B0
+.dl LAEDFE4
+.dl LAEE70D
+.dl LAEEFCD
+.dl LAEF0C9
+.dl LAEFB77
+.dl LAF84AE
+.dl LAF8CD6
+.dl LAF94B4
+.dl LAFA213
+.dl LAFA971
+.dl LAFB243
+.dl LA78000
+.dl LA790E5
+.dl LA7A0D2
+.dl LA7B252
+.dl LA7C38F
+.dl LA7D5C9
+.dl LA7E285
+.dl LA7EFED
+.dl LA882FB
+.dl LA8931F
+.dl LA8A9C3
+.dl LA8C02D
+.dl LA8CDA4
+.dl LA8D7F2
+.dl LA8E27C
+.dl LA8F2E4
+.dl LA8FC52
+.dl LA9901B
+.dl LA99E8F
+.dl LA9AF24
+.dl LA9BC12
+.dl LA9C9A1
+.dl LA9D49E
+.dl LA9DC7F
+.dl LA9ED41
+.dl LA9F6C9
+.dl LAA829B
+.dl LAA8BA2
+.dl LAA9959
+.dl LAAA0FE
+.dl LAAB0EB
+.dl LAAC003
+.dl LAACEBB
+.dl LAADF6B
+.dl LAAF168
+.dl LAAFBC8
+.dl LAB8702
+.dl LAB903A
+.dl LABA339
+.dl LABB25E
+.dl LABBD23
+.dl LABCC61
+.dl LABE17D
+.dl LABEC77
+.dl LAC87A3
+.dl LA786F6
+.dl LA795B4
+.dl LA7A5EE
+.dl LA7B92A
+.dl LA7CAA9
+.dl LA7DA26
+.dl LA7E78E
+.dl LA7F71E
+.dl LA88849
+.dl LA89CC4
+.dl LA8B40F
+.dl LA8C68F
+.dl LA8D0DD
+.dl LA8DB67
+.dl LA8EADF
+.dl LA8F911
+.dl LA982ED
+.dl LA99337
+.dl LA9A21C
+.dl LA9B74C
+.dl LA9C159
+.dl LA9CD38
+.dl LA9D7A9
+.dl LA9E57F
+.dl LA9F1A7
+.dl LA9FB77
+.dl LAA86A6
+.dl LAA9044
+.dl LAA9D85
+.dl LAAA5CD
+.dl LAAB4E5
+.dl LAAC6CF
+.dl LAAD263
+.dl LAAE7AB
+.dl LAAF752
+.dl LAAFD9A
+.dl LAB8DDB
+.dl LAB968F
+.dl LABA7D6
+.dl LABB782
+.dl LABC12B
+.dl LABD409
+.dl LABE8DB
+.dl LABF83A
+.dl LAC8E13
 
-.db $31 $00 $32 $00
-.db $33 $00 $34 $00 $35 $00 $39 $00
-.db $B1 $00 $B2 $00 $B3 $00 $B4 $00
-.db $B5 $00 $B6 $00 $53 $00 $51 $00
-.db $51 $00 $59 $00 $57 $00 $51 $00
-.db $51 $00 $55 $00 $55 $00 $5B $00
-.db $5B $00 $51 $00 $53 $00 $55 $00
-.db $59 $00 $51 $00 $5D $00 $53 $00
-.db $53 $00 $53 $00 $51 $00 $53 $00
-.db $51 $00 $51 $00 $51 $00 $51 $00
-.db $51 $00 $51 $00 $51 $00 $51 $00
-.db $51 $00 $51 $00 $53 $00 $59 $00
-.db $51 $00 $51 $00 $55 $00 $55 $00
-.db $68 $00 $00 $00 $67 $00 $66 $00
-.db $00 $00 $00 $00 $5D $00 $51 $00
-.db $51 $00 $51 $00 $00 $80 $D0 $15
-.db $86 $D0 $E4 $88 $D0 $FE $90 $D0
-.db $41 $96 $D0 $E7 $9A $D0 $D2 $9F
-.db $D0 $35 $A9 $D0 $35 $AF $D0 $FE
-.db $90 $D0 $35 $AF $D0 $D2 $B2 $D0
-.db $B2 $B5 $D0 $D1 $B8 $D0 $5D $BE
-.db $D0 $44 $C1 $D0 $44 $C1 $D0 $44
-.db $C1 $D0 $44 $C1 $D0 $38 $C5 $D0
-.db $38 $CA $D0 $44 $CC $D0 $44 $C1
-.db $D0 $42 $CE $D0 $38 $C5 $D0 $44
-.db $C1 $D0 $E7 $D0 $D0 $B6 $D2 $D0
-.db $8F $D8 $D0 $BC $DA $D0 $5E $DD
-.db $D0 $81 $81 $D0 $7C $87 $D0 $26
-.db $8A $D0 $00 $93 $D0 $49 $98 $D0
-.db $34 $9C $D0 $27 $A2 $D0 $F4 $AB
-.db $D0 $F5 $B0 $D0 $00 $93 $D0 $F5
-.db $B0 $D0 $AF $B4 $D0 $91 $B7 $D0
-.db $01 $BC $D0 $16 $C0 $D0 $C8 $C3
-.db $D0 $C8 $C3 $D0 $C8 $C3 $D0 $C8
-.db $C3 $D0 $0C $C8 $D0 $87 $CB $D0
-.db $CD $CD $D0 $77 $C4 $D0 $54 $D0
-.db $D0 $0C $C8 $D0 $C8 $C3 $D0 $20
-.db $D2 $D0 $92 $D5 $D0 $1A $DA $D0
-.db $1A $DC $D0 $95 $DE $D0 $FF
+.dw $0031
+.dw $0032
+.dw $0033
+.dw $0034
+.dw $0035
+.dw $0039
+.dw $00B1
+.dw $00B2
+.dw $00B3
+.dw $00B4
+.dw $00B5
+.dw $00B6
+.dw $0053
+.dw $0051
+.dw $0051
+.dw $0059
+.dw $0057
+.dw $0051
+.dw $0051
+.dw $0055
+.dw $0055
+.dw $005B
+.dw $005B
+.dw $0051
+.dw $0053
+.dw $0055
+.dw $0059
+.dw $0051
+.dw $005D
+.dw $0053
+.dw $0053
+.dw $0053
+.dw $0051
+.dw $0053
+.dw $0051
+.dw $0051
+.dw $0051
+.dw $0051
+.dw $0051
+.dw $0051
+.dw $0051
+.dw $0051
+.dw $0051
+.dw $0051
+.dw $0053
+.dw $0059
+.dw $0051
+.dw $0051
+.dw $0055
+.dw $0055
+.dw $0068
+.dw $0000
+.dw $0067
+.dw $0066
+.dw $0000
+.dw $0000
+.dw $005D
+.dw $0051
+.dw $0051
+.dw $0051
+
+.dl LD08000
+.dl LD08615
+.dl LD088E4
+.dl LD090FE
+.dl LD09641
+.dl LD09AE7
+.dl LD09FD2
+.dl LD0A935
+.dl LD0AF35
+.dl LD090FE
+.dl LD0AF35
+.dl LD0B2D2
+.dl LD0B5B2
+.dl LD0B8D1
+.dl LD0BE5D
+.dl LD0C144
+.dl LD0C144
+.dl LD0C144
+.dl LD0C144
+.dl LD0C538
+.dl LD0CA38
+.dl LD0CC44
+.dl LD0C144
+.dl LD0CE42
+.dl LD0C538
+.dl LD0C144
+.dl LD0D0E7
+.dl LD0D2B6
+.dl LD0D88F
+.dl LD0DABC
+.dl LD0DD5E
+.dl LD08181
+.dl LD0877C
+.dl LD08A26
+.dl LD09300
+.dl LD09849
+.dl LD09C34
+.dl LD0A227
+.dl LD0ABF4
+.dl LD0B0F5
+.dl LD09300
+.dl LD0B0F5
+.dl LD0B4AF
+.dl LD0B791
+.dl LD0BC01
+.dl LD0C016
+.dl LD0C3C8
+.dl LD0C3C8
+.dl LD0C3C8
+.dl LD0C3C8
+.dl LD0C80C
+.dl LD0CB87
+.dl LD0CDCD
+.dl LD0C477
+.dl LD0D054
+.dl LD0C80C
+.dl LD0C3C8
+.dl LD0D220
+.dl LD0D592
+.dl LD0DA1A
+.dl LD0DC1A
+.dl LD0DE95
 
 .ENDS

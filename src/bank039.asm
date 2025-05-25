@@ -3,21 +3,37 @@
 
 .SECTION "Bank39" FORCE
 
+LA78000:
 .INCBIN "138000-spritesheet.bin"
+LA786F6:
 .INCBIN "1386F6.bin"
+LA790E5:
 .INCBIN "1390E5.bin" ; spritesheet
+LA795B4:
 .INCBIN "1395B4.bin"
+LA7A0D2:
 .INCBIN "13A0D2.bin" ; spritesheet
+LA7A5EE:
 .INCBIN "13A5EE.bin"
+LA7B252:
 .INCBIN "13B252.bin" ; spritesheet
+LA7B92A:
 .INCBIN "13B92A.bin"
+LA7C38F:
 .INCBIN "13C38F.bin" ; spritesheet
+LA7CAA9:
 .INCBIN "13CAA9.bin"
+LA7D5C9:
 .INCBIN "13D5C9.bin" ; spritesheet
+LA7DA26:
 .INCBIN "13DA26.bin"
+LA7E285:
 .INCBIN "13E285.bin" ; spritesheet
+LA7E78E:
 .INCBIN "13E78E.bin"
+LA7EFED:
 .INCBIN "13EFED.bin" ; spritesheet
+LA7F71E:
 .INCBIN "13F71E.bin" READ 2274
 
 .ENDS
