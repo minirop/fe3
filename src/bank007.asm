@@ -98,7 +98,7 @@ L878156:
 
 L878157:
 	sep #$20
-	jsl $83FE6D
+	jsl L83FE6D
 	lda $0C17
 	sta $074A
 	ldx.w #$0000
@@ -208,7 +208,7 @@ L878245:
 	lda $0ac7
 	bne L878264
 	stz $f7
-	jsl $83fe6d
+	jsl L83FE6D
 	rep #$20
 	lda #$8300
 	sta $01
@@ -252,7 +252,7 @@ L87826B:
 	sta $8b
 	sta $8f
 	sta $93
-	jsl $83f1d9
+	jsl L83F1D9
 	jsl L8088A0
 	jsl L808CB4
 	stz $91
@@ -573,7 +573,7 @@ L878576:
 	rep #$20
 	inc $0f
 	lda [$0f]
-	jsl $83f201
+	jsl L83F201
 	jsl $93d32f
 	jsl L8087EA
 	inc $0fa2
@@ -647,7 +647,7 @@ L87860F:
 	jsl L80AA3A
 	bra L878625
 L878621:
-	jsl $83f312
+	jsl L83F312
 L878625:
 	inc $0fa2
 	inc $0fa2
@@ -751,7 +751,7 @@ L8786B8:
 	lda [$0f],y
 	and #$00ff
 	bne L8786EA
-	jsl $838851
+	jsl L838851
 L8786EA:
 	inc $0fa2
 	inc $0fa2
@@ -3615,7 +3615,7 @@ PLAY_SONG_CMD:
 	jsl $80AA3A
 	bra L87D082
 L87D07E:
-	jsl $83F312
+	jsl L83F312
 L87D082:
 	rep #$20
 	inc $0F02
@@ -3802,7 +3802,7 @@ L87D213:
 	lda $08ED
 L87D216:
 	rep #$20
-	jsl $83D912
+	jsl L83D912
 	lda.l ActiveUnit.XPosition
 	xba
 	sec

@@ -1293,7 +1293,7 @@ L81A5FA:
 	jsl $819770
 	bcs L81A61F
 	lda.l ActiveUnit.Weapons
-	jsl $83EE65
+	jsl L83EE65
 	bcc L81A688
 L81A61F:
 	lda.l ActiveUnit.ClassID
@@ -1457,14 +1457,14 @@ L81A767:
 	and #$00FF
 	sta $17
 	stz $19
-	jsl $83D8F7
+	jsl L83D8F7
 	ldx $19
-	jsl $83F63C
+	jsl L83F63C
 	sep #$20
 	xba
 	lda.l ActiveUnit.ClassID
 	xba
-	jsl $83FCF7
+	jsl L83FCF7
 	clc
 	adc $076B
 	sta $076B
@@ -3396,9 +3396,9 @@ L81DC20:
 	stz $18
 	stz $19
 	stz $1A
-	jsl $83D8F7
+	jsl L83D8F7
 	ldx $19
-	jsl $83F63C
+	jsl L83F63C
 	pha
 	inc $0C1B
 	inc $0C1C

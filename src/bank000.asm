@@ -2660,16 +2660,16 @@ L80938E:
 	plp
 	rtl
 
-L80939a:
+L80939A:
 	php
 	phb
 	phk
 	plb
 	rep #$30
 	bra L8093C2
-L8093a2:
+L8093A2:
 	stz $5E
-L8093a4:
+L8093A4:
 	php
 	phb
 	phk
@@ -2968,7 +2968,7 @@ L8095D6:
 	bne L8095D6
 	rtl
 
-L8095e1:
+L8095E1:
 	php
 	rep #$20
 	lda #$0000
@@ -4916,10 +4916,10 @@ L80A4E1:
 L80A4F7:
 	jsl L80884A
 	jsl L81D845
-	jsl $83878B
+	jsl L83878B
 	jsl L80AA09
-	jsl $838851
-	jsl $838820
+	jsl L838851
+	jsl L838820
 	jsr L80A528
 	jsl L80A61A
 	jsl L808826
@@ -5124,7 +5124,7 @@ L80A6A7:
 	sta $63
 	lda #$94be
 	sta $62
-	jsl L8093a2
+	jsl L8093A2
 	lda $17
 	asl
 	asl
@@ -5168,7 +5168,7 @@ L80A6FE:
 	pha
 	plb
 	rep #$20
-	jsl $8384B4
+	jsl L8384B4
 	plb
 	rts
 
@@ -5289,7 +5289,7 @@ L80A7CB:
 L80A7D7:
 	stz $15
 L80A7D9:
-	jsl $83DCBE
+	jsl L83DCBE
 	sep #$20
 	lda #$00
 	sta.l ActiveUnit.EXP
@@ -5680,7 +5680,7 @@ L80AAA9:
 	sta $1B
 	phy
 	stz $19
-	jsl $83D8F7
+	jsl L83D8F7
 	ldy.w #$000F
 L80AAC1:
 	phy
@@ -5737,7 +5737,7 @@ L80AADC:
 	pha
 	lda $1D
 	pha
-	jsl $83DC3F
+	jsl L83DC3F
 	lda $1F
 	cmp #$0400
 	bcc L80AB4B
@@ -6007,7 +6007,7 @@ L80AD2B:
 	sta $23
 	phx
 	stz $19
-	jsl $83D8F7
+	jsl L83D8F7
 	lda $19
 	and #$07FF
 	tax
@@ -6269,7 +6269,7 @@ L80AF13:
 	and #$01FF
 	sta $1B
 L80AF1E:
-	jsl $83DC3F
+	jsl L83DC3F
 	rts
 
 L80AF23:
@@ -6474,7 +6474,7 @@ L80B0AC:
 	lda $0882
 	bit #$02
 	beq L80B0B9
-	jsl $83f312
+	jsl L83F312
 L80B0B9:
 	lda #$02
 	trb $0882
@@ -6490,7 +6490,7 @@ L80B0C2:
 	lda #$02
 	tsb $0882
 	rep #$20
-	jsl $83f312
+	jsl L83F312
 L80B0D6:
 	plp
 	rtl
@@ -6499,10 +6499,10 @@ L80B0D8:
 	php
 	rep #$20
 	pha
-	jsl $83D912
+	jsl L83D912
 	lda.l ActiveUnit.ClassID
 	and #$00FF
-	jsl $83F1AC
+	jsl L83F1AC
 	sta $23
 	pla
 	and #$0020
