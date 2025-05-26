@@ -92,3 +92,12 @@ def cpu_to_prg(addr):
 		addr -= 0x8000
 	addr += prg_bank << 16
 	return addr
+
+def prg_to_cpu(addr):
+	prg_bank = (addr >> 16)
+	addr = addr & 0xFFFF
+	bank = (prg_bank * 2) + 0x80
+	if prg_bank % 2 == 0:
+		addr += 0x8000
+	addr += bank << 16
+	return addr

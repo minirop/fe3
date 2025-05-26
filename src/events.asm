@@ -57,10 +57,12 @@
 .db $0B \1
 .ENDM
 
+; create unit?
 .MACRO EV_SET_UNIT_ALLY
 .db $0C $00 \1
 .ENDM
 
+; create unit?
 .MACRO EV_SET_UNIT_ENEMY
 .db $0C $01 \1
 .ENDM
@@ -177,6 +179,11 @@ COST(\1)
 
 .MACRO EV_SHAKE_SCREEN
 .db $2D
+.ENDM
+
+; guess
+.MACRO EV_COMMAND_2E
+.db $2E \1
 .ENDM
 
 .MACRO EV_SOUND_EFFECT_30
