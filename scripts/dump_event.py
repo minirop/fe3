@@ -1,11 +1,12 @@
 #!/usr/bin/env python
 
-import fe
+import fe, sys
 
 rom = fe.rom()
 
-address = fe.cpu_to_prg(0x8CA3EB)
-bank = 0x8C
+addr = int(sys.argv[1], 0)
+address = fe.cpu_to_prg(addr)
+bank = (addr >> 16) & 0xFF
 
 command_9_pointers = []
 
@@ -34,8 +35,9 @@ while not stop:
 		case 5:
 			print(f"EV_COMMAND_05 ${rom[address]:02X}")
 			address += 1
-		case 6:
-			raise NotImplementedError()
+		case 7:
+			print(f"EV_COMMAND_07 {rom[address]} {rom[address + 1]}")
+			address += 2
 		case 8:
 			unk1 = rom[address]
 			unk2 = rom[address+1]
@@ -76,7 +78,11 @@ while not stop:
 			print(f" {fe.get_unit(rom[address+1])}")
 			address += 2
 		case 0x0D:
-			raise NotImplementedError("EV_SET_ALLY")
+			print(f"EV_SET_ALLY {fe.get_unit(rom[address])} {fe.get_unit(rom[address+1])}")
+			address += 2
+		case 0x0F:
+			print(f"EV_COMMAND_0F {rom[address]} {rom[address+1]}")
+			address += 2
 		case 0x10:
 			raise NotImplementedError("EV_SHOP")
 		case 0x11:
@@ -87,6 +93,17 @@ while not stop:
 			flag = rom[address] + rom[address+1] * 0x100
 			address += 2
 			print(f"EV_UNSET_FLAG {flag}")
+		case 0x18:
+			print(f"EV_COMMAND_18 ${rom[address]:02X} ${rom[address+1]:02X} ${rom[address+2]:02X} ${rom[address+3]:02X} ${rom[address+4]:02X}")
+			address += 5
+		case 0x1A:
+			raise NotImplementedError(f"${opcode:X}")
+		case 0x1B:
+			print(f"EV_COMMAND_1B ${rom[address]:02X} ${rom[address+1]:02X}")
+			address += 2
+		case 0x1C:
+			print(f"EV_COMMAND_1C ${rom[address]:02X} ${rom[address + 1]:02X} ${rom[address + 2]:02X}")
+			address += 3
 		case 0x21:
 			print(f"EV_COMMAND_21 ${rom[address]:02X} ${rom[address+1]:02X} ${rom[address+2]:02X} ${rom[address+3]:02X} ${rom[address+4]:02X}")
 			address += 5
@@ -135,11 +152,10 @@ for addr in command_9_pointers:
 			case 2:
 				print(f" MOV_DIR_CHANGE ", end='')
 				match rom[address]:
-					case 0: print("MOV_IDLE", end='')
+					case 0: print("MOV_RIGHT", end='')
 					case 1: print("MOV_LEFT", end='')
 					case 2: print("MOV_UP", end='')
 					case 3: print("MOV_DOWN", end='')
-					case 4: print("MOV_RIGHT", end='')
 					case _: raise ValueError()
 			case 0xFF:
 				if rom[address] == 0xFF:
