@@ -69,7 +69,8 @@ L80807B:
 	rts
 
 L80808E:
-	ora ($02,x)
+.db $01 $02
+
 L808090:
 	jsr L80809B
 	phx
@@ -100,26 +101,24 @@ L8080B0:
 	asl
 	tay
 	lda $0115,y
-	and #$9980
-	rol $01
+	and.b #$80
+	sta $0126,y
 	lda $0115,y
-	and #$0a40
+	and.b #$40
+	asl
 	sta $0125,y
 	lda $0117,y
-	and #$9980
-	plp
-	ora ($b9,x)
-	ora [$01],y
-	and #$0a40
+	and.b #$80
+	sta $0128,y
+	lda $0117,y
+	and.b #$40
+	asl
 	sta $0127,y
 	lda $0119,y
-	and #$9980
-	rol
-	ora ($b9,x)
-	ora $2901,y
-	rti
-
-L8080E4:
+	and.b #$80
+	sta $012a,y
+	lda $0119,y
+	and.b #$40
 	asl
 	sta $0129,y
 	lda $0125,y
@@ -306,7 +305,7 @@ L80824C:
 	ldx.b #$01
 L808255:
 	lda $044d
-	and $80808e,x
+	and.l L80808E,x
 	beq L80826E
 	lda $0450,x
 	cmp $044e,x
@@ -865,14 +864,15 @@ L808744:
 	sta $0471
 	bra L808767
 L80875F:
-	jsr L8087C0
-	lda.w #$8D00
-	adc ($04),Y
+	jsr $87c0
+	lda #$00
+	sta $0471
 L808767:
 	tay
 	jsl L808726
 	lda $046B
-	and.w #$A81F
+	and #$1f
+	tay
 	lda $0472,Y
 	plb
 	plp
@@ -3936,8 +3936,7 @@ L809D69:
 	tyx
 	lda.l $809DCF, X
 	jsl L80B44D
-
-.db $80 $13
+	bra L809D9A
 
 L809D87:
 	lda $04CE, X
@@ -3947,6 +3946,7 @@ L809D87:
 	tyx
 	lda.l $809DD9, X
 	jsl L80B49E
+L809D9A:
 	plx
 	plp
 	rts
@@ -6796,10 +6796,7 @@ L80B330:
 	sta $4203,X
 	ldx $1B
 	pla
-; sta $3800,X
-.db $9D
-L80B340:
-.db $00 $38
+	sta $3800,X
 	lda $25
 	sta $3801,X
 	rep #$20

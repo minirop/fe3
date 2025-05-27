@@ -1444,7 +1444,8 @@ L81A74A:
 	plp
 	rtl
 
-.db $C2 $20
+L81A765:
+	rep #$20
 
 L81A767:
 	php
