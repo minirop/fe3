@@ -2822,15 +2822,19 @@ L809492:
 L80949B:
 	ldx $54
 	lda $0410,X
-	and $94AC,Y
-	ora $94B5,Y
+	and L8094AC,Y
+	ora L8094B5,Y
 	sta $0410,X
 	rep #$10
 	rts
 
+L8094AC:
 .db $FF $FE $FD $FB $F7 $EF $DF $BF $7F
+
+L8094B5:
 .db $00 $01 $02 $04 $08 $10 $20 $40 $80
 
+L8094BE:
 .dl L8094EE
 .dl L8094F4
 .dl L8094FA
@@ -5122,7 +5126,7 @@ L80A6A7:
 	sta $5a
 	lda #$8000
 	sta $63
-	lda #$94be
+	lda #$94be ; L8094be
 	sta $62
 	jsl L8093A2
 	lda $17

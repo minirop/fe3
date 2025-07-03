@@ -2,6 +2,8 @@
 
 import glob, os
 
+banksize = 0x8000
+
 counter = 0
 files = []
 for file in glob.glob("../src/bank*.asm"):
@@ -14,9 +16,10 @@ for file in glob.glob("../src/bank*.asm"):
 		files.append((file[7:], local_counter))
 
 files = sorted(files, key=lambda tup: tup[0])
-for d in files:
-	if d[1] > 0:
-		print("%s: %d" % d)
+for (name, count) in files:
+	if count > 0:
+		progress = 100 * count / banksize
+		print(f"{name}: {banksize - count:>5}/{banksize} ({100 - progress:05.2f}%)")
 
 fsize = os.path.getsize("../fe3.sfc")
 progress = 100 * (fsize - counter) / fsize
