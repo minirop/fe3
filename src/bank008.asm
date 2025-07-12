@@ -1539,7 +1539,7 @@ CLASSES_INITIAL_STATS: ; 9 bytes per class
 CHARACTERS_INITIAL_STATS: ; 8 bytes
 .db $02 $03 $03 $07 $01 $00 $12 $06
 CHARACTERS_GROWTH_RATES: ; 9 bytes
-; first one looks like being "gender" since female have 1 and male 0
+; first one looks like being "gender" since females have 1 and males 0
 ; except Samuel which has 1.
 .db $00 $32 $28 $32 $46 $14 $03 $5A $28
 .db $00 $01 $05 $09 $01 $00 $10 $07

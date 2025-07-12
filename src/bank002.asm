@@ -3060,11 +3060,30 @@ L82992E:
 	rts
 
 .ALIGN 4096
-.db $08 $BD $DA $04 $29 $FF $00 $D0
-.db $07 $E2 $20 $9C $0A $07 $C2 $20
-.db $28 $60 $08 $E2 $20 $A9 $01 $8D
-.db $0A $07 $C2 $20 $20 $00 $A0 $28
-.db $6B $08 $AD $02 $0D $29 $FF $00
+
+L82A000:
+	php
+	lda $04da,x
+	and #$00ff
+	bne L82A010
+	sep #$20
+	stz $070a
+	rep #$20
+L82A010:
+	plp
+	rts
+
+L82A012:
+	php
+	sep #$20
+	lda #$01
+	sta $070a
+	rep #$20
+	jsr $a000
+	plp
+	rtl
+
+.db $08 $AD $02 $0D $29 $FF $00
 .db $F0 $06 $20 $00 $A0 $20 $15 $BE
 .db $28 $6B $08 $AD $02 $0D $29 $FF
 .db $00 $F0 $06 $20 $00 $A0 $20 $15
@@ -5334,36 +5353,150 @@ L82992E:
 .db $18 $3A $0A $AA $A9 $00 $00 $9F
 .db $1B $BD $7E $8A $22 $EC $B5 $80
 .db $FA $DA $A9 $00 $00 $9F $1F $BD
-.db $7E $FA $28 $60 $08 $B7 $00 $E2
-.db $20 $C9 $00 $D0 $05 $20 $87 $E7
-.db $80 $36 $C9 $01 $D0 $05 $20 $B8
-.db $E7 $80 $2D $C9 $02 $D0 $05 $20
-.db $F3 $E7 $80 $24 $C9 $03 $D0 $05
-.db $20 $FC $E7 $80 $1B $C9 $04 $D0
-.db $05 $20 $70 $E8 $80 $12 $C9 $05
-.db $D0 $05 $20 $0E $E9 $80 $0F $C9
-.db $FF $D0 $05 $20 $C9 $EA $80 $06
-.db $C2 $20 $C8 $C8 $80 $B7 $C2 $20
-.db $98 $9D $00 $0D $28 $60 $08 $BD
-.db $16 $0D $D0 $19 $BD $03 $0D $29
-.db $C0 $00 $C9 $C0 $00 $F0 $0E $A9
-.db $20 $00 $49 $FF $FF $3F $21 $BD
-.db $7E $9F $21 $BD $7E $28 $60 $08
-.db $5A $DA $EB $89 $80 $F0 $0C $29
-.db $7F $DA $C2 $20 $22 $F4 $A8 $87
-.db $E2 $20 $FA $9D $12 $0D $85 $15
-.db $C2 $20 $A5 $15 $29 $FF $00 $22
-.db $12 $D9 $83 $FA $E2 $20 $AF $01
-.db $44 $7F $9D $11 $0D $7A $28 $60
-.db $08 $C2 $20 $EB $29 $FF $00 $F0
-.db $09 $0A $0A $0A $0A $9D $1A $0D
-.db $80 $03 $20 $CF $E7 $28 $60 $08
-.db $AF $0B $44 $7F $29 $FF $00 $C9
-.db $06 $00 $90 $0A $C9 $0E $00 $B0
-.db $0A $A9 $00 $02 $80 $08 $A9 $00
-.db $01 $80 $03 $A9 $00 $03 $9D $1A
-.db $0D $28 $60 $08 $EB $29 $03 $9D
-.db $0D $0D $28 $60 $08 $EB $48 $29
+.db $7E $FA $28 $60
+
+L82E714:
+	php
+L82E715:
+	lda [$00],y
+	sep #$20
+	cmp #$00
+	bne L82E722
+	jsr $e787
+	bra L82E758
+L82E722:
+	cmp #$01
+	bne L82E72B
+	jsr $e7b8
+	bra L82E758
+L82E72B:
+	cmp #$02
+	bne L82E734
+	jsr $e7f3
+	bra L82E758
+L82E734:
+	cmp #$03
+	bne L82E73D
+	jsr $e7fc
+	bra L82E758
+L82E73D:
+	cmp #$04
+	bne L82E746
+	jsr $e870
+	bra L82E758
+L82E746:
+	cmp #$05
+	bne L82E74F
+	jsr $e90e
+	bra L82E75E
+L82E74F:
+	cmp #$ff
+	bne L82E758
+	jsr $eac9
+	bra L82E75E
+L82E758:
+	rep #$20
+	iny
+	iny
+	bra L82E715
+L82E75E:
+	rep #$20
+	tya
+	sta $0d00,x
+	plp
+	rts
+
+L82E766:
+	php
+	lda $0d16,x
+	bne L82E785
+	lda $0d03,x
+	and #$00c0
+	cmp #$00c0
+	beq L82E785
+	lda #$0020
+	eor #$ffff
+	and $7ebd21,x
+	sta $7ebd21,x
+L82E785:
+	plp
+	rts
+
+L82E787:
+	php
+	phy
+	phx
+	xba
+	bit.b #$80
+	beq L82E79B
+	and.b #$7f
+	phx
+	rep #$20
+	jsl $87a8f4
+	sep #$20
+	plx
+L82E79B:
+	sta $0d12,x
+	sta $15
+	rep #$20
+	lda $15
+	and #$00ff
+	jsl L83D912
+	plx
+	sep #$20
+	lda.l ActiveUnit.ClassID
+	sta $0d11,x
+	ply
+	plp
+	rts
+
+L82E7B8:
+	php
+	rep #$20
+	xba
+	and #$00ff
+	beq L82E7CA
+	asl
+	asl
+	asl
+	asl
+	sta $0d1a,x
+	bra L82E7CD
+L82E7CA:
+	jsr $e7cf
+L82E7CD:
+	plp
+	rts
+
+L82E7CF:
+	php
+	lda.l ActiveUnit.Speed
+	and #$00ff
+	cmp #$0006
+	bcc L82E7E6
+	cmp #$000e
+	bcs L82E7EB
+	lda #$0200
+	bra L82E7EE
+L82E7E6
+	lda #$0100
+	bra L82E7EE
+L82E7EB:
+	lda #$0300
+L82E7EE:
+	sta $0d1a,x
+	plp
+	rts
+
+L82E7F3:
+	php
+	xba
+	and.b #$03
+	sta $0d0d,x
+	plp
+	rts
+
+.db $08 $EB $48 $29
 .db $07 $0A $0A $1D $03 $0D $9D $03
 .db $0D $68 $48 $20 $19 $E8 $68 $C2
 .db $20 $29 $03 $00 $20 $26 $E8 $28
