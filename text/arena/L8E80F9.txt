@@ -1,0 +1,4 @@
+[StartDialogue(Shop)]
+[PlaySong(21, 128)]
+[Unknown95]
+なんだ こうさんかい？[End]

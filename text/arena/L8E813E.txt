@@ -1,0 +1,5 @@
+[StartDialogue(Shop)]
+[PlaySong(21, 128)]
+[Unknown95]
+あーあ 死んじまって\nばかなやつだ・・・[WaitForA]
+[End]

@@ -1,0 +1,5 @@
+[StartDialogue(Shop)]
+[PlaySong(21, 128)]
+[Unknown95]
+ちっ 勝ちやがったか。\n賞金の[Unknown82]
+0ゴールドだ[End]

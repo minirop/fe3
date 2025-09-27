@@ -1,3 +1,11 @@
 *.obj
 *.sfc
 *.sym
+*.srm
+*.bp
+text/lists/*.gen.asm
+text/dialogues_orig/*.bin
+text/dialogues/*.txt
+text/descriptions/*.bin
+text/shop/*.bin
+text/arena/*.bin

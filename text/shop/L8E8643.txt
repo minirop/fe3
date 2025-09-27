@@ -1,0 +1,4 @@
+[StartDialogue(Shop)]
+[PlaySong(22, 128)]
+[Unknown95]
+ここは 秘密のお店よ[End]

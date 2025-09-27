@@ -1,0 +1,7 @@
+\nあんたの相手は\n[Unknown8B]
+ レベル[Unknown8C]
+\n賞金は[Unknown82]
+0ゴールドだ[WaitForA]
+\n勝負は ケリがつくまで続くが\nターン表示中ならBボタンで\nやめることができるぜ[WaitForA]
+\nまあ 死なないていどに\nがんばりなよ[WaitForA]
+[End]

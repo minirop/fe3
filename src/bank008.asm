@@ -3725,6 +3725,7 @@ TABLE_KNIGHTS:
 
 .INCLUDE "knight_names.gen.asm"
 
+L88B383: ; Terrain entry cost table?
 .dl L88BCEC
 .dl L88BD8E
 .dl L88B698
@@ -4302,6 +4303,7 @@ L88C1FC:
 .db $FF $01 $01 $FF $01 $02 $01 $01
 .db $02 $02
 
+L88C29E: ; Terrain effect table?
 .dl L88C328
 .dl L88C328
 .dl L88C328
@@ -4486,6 +4488,7 @@ L88C51F:
 L88C522:
 .db $13 $89 $14 $00
 
+L88C526:
 .db $02 $01
 .db $01 $01 $01 $01 $01 $01 $0A $0F
 .db $1E $14 $05 $00 $00 $00 $00 $02

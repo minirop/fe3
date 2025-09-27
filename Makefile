@@ -6,8 +6,8 @@ COBJ=game.obj
 
 all: $(ROM).sfc
 
-$(COBJ): src/main.s lists descriptions
-	$(AS) -I src -I bin -I text/dialogues -I text/lists -x -v -o $@ $<
+$(COBJ): src/main.s lists descriptions arena shop
+	$(AS) -I src -I bin -I text/dialogues -I text/lists -I text/arena -I text/shop -x -v -o $@ $<
 
 # need makefile magic to avoid having to list all files manually
 lists:
@@ -64,6 +64,67 @@ descriptions:
 	fe3-text text/descriptions/lord.txt compile dialogue text/descriptions/lord.bin
 	fe3-text text/descriptions/general.txt compile dialogue text/descriptions/general.bin
 	fe3-text text/descriptions/dancer.txt compile dialogue text/descriptions/dancer.bin
+
+arena:
+	fe3-text text/arena/L8E801E.txt compile dialogue text/arena/L8E801E.bin
+	fe3-text text/arena/L8E804E.txt compile dialogue text/arena/L8E804E.bin
+	fe3-text text/arena/L8E806D.txt compile dialogue text/arena/L8E806D.bin
+	fe3-text text/arena/L8E80F9.txt compile dialogue text/arena/L8E80F9.bin
+	fe3-text text/arena/L8E810F.txt compile dialogue text/arena/L8E810F.bin
+	fe3-text text/arena/L8E813E.txt compile dialogue text/arena/L8E813E.bin
+	fe3-text text/arena/L8E8164.txt compile dialogue text/arena/L8E8164.bin
+	fe3-text text/arena/L8E8183.txt compile dialogue text/arena/L8E8183.bin
+	fe3-text text/arena/L8E81A2.txt compile dialogue text/arena/L8E81A2.bin
+	fe3-text text/arena/L8E81C0.txt compile dialogue text/arena/L8E81C0.bin
+
+shop:
+	fe3-text text/shop/L8E8293.txt compile dialogue text/shop/L8E8293.bin
+	fe3-text text/shop/L8E82AC.txt compile dialogue text/shop/L8E82AC.bin
+	fe3-text text/shop/L8E82B8.txt compile dialogue text/shop/L8E82B8.bin
+	fe3-text text/shop/L8E82C5.txt compile dialogue text/shop/L8E82C5.bin
+	fe3-text text/shop/L8E82D7.txt compile dialogue text/shop/L8E82D7.bin
+	fe3-text text/shop/L8E82E7.txt compile dialogue text/shop/L8E82E7.bin
+	fe3-text text/shop/L8E82F3.txt compile dialogue text/shop/L8E82F3.bin
+	fe3-text text/shop/L8E8301.txt compile dialogue text/shop/L8E8301.bin
+	fe3-text text/shop/L8E831F.txt compile dialogue text/shop/L8E831F.bin
+	fe3-text text/shop/L8E8343.txt compile dialogue text/shop/L8E8343.bin
+	fe3-text text/shop/L8E8355.txt compile dialogue text/shop/L8E8355.bin
+	fe3-text text/shop/L8E8364.txt compile dialogue text/shop/L8E8364.bin
+	fe3-text text/shop/L8E8374.txt compile dialogue text/shop/L8E8374.bin
+	fe3-text text/shop/L8E838A.txt compile dialogue text/shop/L8E838A.bin
+	fe3-text text/shop/L8E8395.txt compile dialogue text/shop/L8E8395.bin
+	fe3-text text/shop/L8E83A6.txt compile dialogue text/shop/L8E83A6.bin
+	fe3-text text/shop/L8E83B6.txt compile dialogue text/shop/L8E83B6.bin
+	fe3-text text/shop/L8E83C9.txt compile dialogue text/shop/L8E83C9.bin
+	fe3-text text/shop/L8E83DD.txt compile dialogue text/shop/L8E83DD.bin
+	fe3-text text/shop/L8E8401.txt compile dialogue text/shop/L8E8401.bin
+	fe3-text text/shop/L8E8422.txt compile dialogue text/shop/L8E8422.bin
+	fe3-text text/shop/L8E843D.txt compile dialogue text/shop/L8E843D.bin
+	fe3-text text/shop/L8E844E.txt compile dialogue text/shop/L8E844E.bin
+	fe3-text text/shop/L8E8466.txt compile dialogue text/shop/L8E8466.bin
+	fe3-text text/shop/L8E847D.txt compile dialogue text/shop/L8E847D.bin
+	fe3-text text/shop/L8E848C.txt compile dialogue text/shop/L8E848C.bin
+	fe3-text text/shop/L8E8498.txt compile dialogue text/shop/L8E8498.bin
+	fe3-text text/shop/L8E84A9.txt compile dialogue text/shop/L8E84A9.bin
+	fe3-text text/shop/L8E84B7.txt compile dialogue text/shop/L8E84B7.bin
+	fe3-text text/shop/L8E84C3.txt compile dialogue text/shop/L8E84C3.bin
+	fe3-text text/shop/L8E84D4.txt compile dialogue text/shop/L8E84D4.bin
+	fe3-text text/shop/L8E84F2.txt compile dialogue text/shop/L8E84F2.bin
+	fe3-text text/shop/L8E8517.txt compile dialogue text/shop/L8E8517.bin
+	fe3-text text/shop/L8E852D.txt compile dialogue text/shop/L8E852D.bin
+	fe3-text text/shop/L8E853E.txt compile dialogue text/shop/L8E853E.bin
+	fe3-text text/shop/L8E854D.txt compile dialogue text/shop/L8E854D.bin
+	fe3-text text/shop/L8E8564.txt compile dialogue text/shop/L8E8564.bin
+	fe3-text text/shop/L8E8570.txt compile dialogue text/shop/L8E8570.bin
+	fe3-text text/shop/L8E8582.txt compile dialogue text/shop/L8E8582.bin
+	fe3-text text/shop/L8E8595.txt compile dialogue text/shop/L8E8595.bin
+	fe3-text text/shop/L8E85A9.txt compile dialogue text/shop/L8E85A9.bin
+	fe3-text text/shop/L8E85BC.txt compile dialogue text/shop/L8E85BC.bin
+	fe3-text text/shop/L8E85DF.txt compile dialogue text/shop/L8E85DF.bin
+	fe3-text text/shop/L8E85FE.txt compile dialogue text/shop/L8E85FE.bin
+	fe3-text text/shop/L8E8619.txt compile dialogue text/shop/L8E8619.bin
+	fe3-text text/shop/L8E862C.txt compile dialogue text/shop/L8E862C.bin
+	fe3-text text/shop/L8E8643.txt compile dialogue text/shop/L8E8643.bin
 
 $(ROM).sfc: $(COBJ)
 	$(LD) -d -v -S linkfile $(ROM).sfc

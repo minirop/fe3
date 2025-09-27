@@ -1,0 +1,4 @@
+[StartDialogue(Shop)]
+[PlaySong(20, 128)]
+[Unknown95]
+ここは 武器屋だ[End]

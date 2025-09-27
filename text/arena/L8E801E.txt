@@ -1,0 +1,5 @@
+[StartDialogue(Shop)]
+[PlaySong(21, 128)]
+[Unknown95]
+ここは 闘技場だ\nかけ金は[Unknown82]
+0ゴールドだが\nやってみるかい？[End]
