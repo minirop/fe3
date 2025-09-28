@@ -5,7 +5,7 @@
 *.bp
 text/lists/*.gen.asm
 text/dialogues_orig/*.bin
-text/dialogues/*.txt
+text/dialogues/*.bin
 text/descriptions/*.bin
 text/shop/*.bin
 text/arena/*.bin
