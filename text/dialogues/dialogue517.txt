@@ -1,0 +1,7 @@
+[StartDialogue(Default)]
+[SwitchFrame(Top)]
+[PlaySong(80, 128)]
+[ShowPortrait(Gotoh, TopLeft, 0x1)]
+マルスよ そなた自身が\nかべの前に 立つのじゃ！\nさすれば扉は ひらかれよう[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

@@ -1,0 +1,5 @@
+[StartDialogue(Village)]
+[ShowPortrait(Villager (old woman), TopLeft, 0x1)]
+いやだねえ\nアカネイアが 滅びてから\nこの町も さびれたよ[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

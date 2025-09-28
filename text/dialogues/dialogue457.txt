@@ -1,0 +1,7 @@
+[StartDialogue(Default)]
+[PlaySong(33, 128)]
+[SwitchFrame(Top)]
+[ShowPortrait(Villager (old man), TopLeft, 0x1)]
+砦には 敢が大ぜい\nかくれているようじゃ\nゆだんしては ならぬぞ[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

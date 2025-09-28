@@ -1,0 +1,6 @@
+[StartDialogue(Default)]
+[PlaySong(73, 128)]
+[ShowPortrait(Villager (female), TopLeft, 0x1)]
+星のカケラってきれいだね\nそれを持ってると 何か\nいいことがあるかもしれないよ[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

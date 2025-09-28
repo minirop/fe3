@@ -1,0 +1,7 @@
+[StartDialogue(Default)]
+[PlaySong(33, 128)]
+[ShowPortrait(Villager (male), TopLeft, 0x1)]
+城内を守っている傭兵隊は\nアカネイアきっての精鋭ぞろい[WaitForA]
+\n敢にしとくのがもったいないよ\n呋方になってくれたらなあ[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

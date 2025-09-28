@@ -1,0 +1,6 @@
+[StartDialogue(Village)]
+[ShowPortrait(Villager (male), TopLeft, 0x1)]
+武器は 鉄・鋼・銀と\nなるにつれ 力があがる[WaitForA]
+\nそのかわり 使うための\n武器レベルも 必要に\nなってくるけどね[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

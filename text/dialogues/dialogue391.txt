@@ -1,0 +1,8 @@
+[StartDialogue(Default)]
+[PlaySong(191, 128)]
+[SwitchFrame(Top)]
+[ShowPortrait(Nyna, TopLeft, 0x1)]
+ああ カミユ・・・[TimedWaitForA(288)]
+[CloseFrame(BottomLeft, 0x0)]
+[PlaySong(255, 255)]
+[End]

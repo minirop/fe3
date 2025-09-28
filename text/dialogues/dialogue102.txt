@@ -1,0 +1,7 @@
+[StartDialogue(Village)]
+[SwitchFrame(Top)]
+[ShowPortrait(Villager (auntie), TopLeft, 0x1)]
+東の牢屋に\nチェイニーとかいう\nよその国の若者が\n捕まってるらしいよ[WaitForA]
+\nうわさでは 何かすごい力を\nもってるんだって[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

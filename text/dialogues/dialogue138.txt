@@ -1,0 +1,8 @@
+[StartDialogue(Default)]
+[PlaySong(19, 128)]
+[SwitchFrame(Top)]
+[ShowPortrait(Medeus, TopLeft, 0x1)]
+わしの ねむりをさまたげる\n反乱軍の者どもよ\n地獄の 炎の中で\n苦しみながら焼け死ぬがよい[TimedWaitForA(288)]
+[CloseFrame(BottomLeft, 0x0)]
+[PlaySong(255, 255)]
+[End]

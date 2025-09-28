@@ -1,0 +1,7 @@
+[StartDialogue(Default)]
+[PlaySong(97, 128)]
+[ShowPortrait(Villager (old woman), TopLeft, 0x1)]
+おお アリティアの方\nどうかお願いです\nラング将軍を倒してください[WaitForA]
+\nあの男がいる限り\nわたしたちは\nおちついたくらしができません[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

@@ -1,0 +1,8 @@
+[StartDialogue(Default)]
+[PlaySong(116, 128)]
+[SwitchFrame(Top)]
+[ShowPortrait(Gharnef, TopLeft, 0x1)]
+マルスよ・・・・\n残念だがいつまでも\nお前の相手をしておれぬ[WaitForA]
+\nこのファルシオンが欲しくば\n[SetColor(Green)]テーベ [SetColor(White)]まで取りに来るがよい[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

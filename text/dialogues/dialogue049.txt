@@ -1,0 +1,8 @@
+[StartDialogue(Default)]
+[SwitchFrame(Top)]
+[PlaySong(18, 128)]
+[ShowPortrait(Harmein, TopLeft, 0x1)]
+くそ ミネルバの奴め\nわしらを うらぎりおって\nこの上は お前を\n地獄の道連れにしてくれるわ[TimedWaitForA(288)]
+[CloseFrame(BottomLeft, 0x0)]
+[PlaySong(255, 255)]
+[End]

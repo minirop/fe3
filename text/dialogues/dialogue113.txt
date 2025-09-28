@@ -1,0 +1,8 @@
+[StartDialogue(Default)]
+[PlaySong(18, 128)]
+[SwitchFrame(Top)]
+[ShowPortrait(Tiki, TopLeft, 0x1)]
+・・・だ・・だめ・・・\nわたしに・・・\n・・・近よらないで・・・[TimedWaitForA(288)]
+[CloseFrame(BottomLeft, 0x0)]
+[PlaySong(255, 255)]
+[End]

@@ -1,0 +1,7 @@
+[StartDialogue(Default)]
+[PlaySong(18, 128)]
+[SwitchFrame(Bottom)]
+[ShowPortrait(Minerva, BottomRight, 0x1)]
+マリアは人質として\nとらえられていただけなのに\nどうして・・・許せない！！[TimedWaitForA(288)]
+[CloseFrame(BottomRight, 0x0)]
+[End]

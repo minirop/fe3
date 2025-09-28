@@ -1,0 +1,7 @@
+[StartDialogue(Default)]
+[PlaySong(33, 128)]
+[ShowPortrait(Villager (male), TopLeft, 0x1)]
+グラ王国はアリティアに\n敢対しているけどさ[WaitForA]
+\nほんとは同盟国のアカネイアに\nつきあわされてるだけなんじゃ\nないかな[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

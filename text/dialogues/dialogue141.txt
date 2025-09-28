@@ -1,0 +1,7 @@
+[StartDialogue(Village)]
+[ShowPortrait(Villager (old man), TopLeft, 0x1)]
+ラーマンの神殿には\n偉大なる力を秘めた\n[SetColor(Yellow)]三種のオーブ [SetColor(White)]がある[WaitForA]
+\n[SetColor(Yellow)] 光 [SetColor(White)]と[SetColor(Yellow)] 星 [SetColor(White)]と[SetColor(Yellow)] 大地 [SetColor(White)]と[WaitForA]
+\nその 不思議な力は\n手にする者だけが知ること\nとなろう・・[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

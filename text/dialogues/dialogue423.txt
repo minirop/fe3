@@ -1,0 +1,7 @@
+[StartDialogue(Default)]
+[SwitchFrame(Top)]
+[ShowPortrait(Gharnef, TopLeft, 0x1)]
+ふふ・・・\nもはやおそい・・・\n世界は終わりだ・・・\nぐふっ[TimedWaitForA(288)]
+[CloseFrame(BottomLeft, 0x0)]
+[PlaySong(255, 255)]
+[End]

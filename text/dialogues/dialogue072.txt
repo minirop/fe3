@@ -1,0 +1,6 @@
+[StartDialogue(Village)]
+[ShowPortrait(Villager (male), TopLeft, 0x1)]
+町はずれに奴隷市場が\nたってるってよ[WaitForA]
+\nしかし どこでひろったか\nきたねえガキばかりだけどよ[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

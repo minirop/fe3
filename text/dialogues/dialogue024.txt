@@ -1,0 +1,6 @@
+[StartDialogue(Village)]
+[ShowPortrait(Villager (male), TopLeft, 0x1)]
+傭兵には 気をつけな [WaitForA]
+\n奴らは 腕がいいから\n下手すると 一発で\nくびが飛ぶぜ[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

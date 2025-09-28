@@ -1,0 +1,6 @@
+[StartDialogue(Village)]
+[ShowPortrait(Villager (auntie), TopLeft, 0x1)]
+戦争は いやだねえ\nいつだって 泣くのは\n女と子供さ[WaitForA]
+\nあんたもいつまでも\nそんなことしてないで\nはやく 恋人のもとへ\n帰ってやりなよ[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

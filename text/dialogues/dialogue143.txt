@@ -1,0 +1,7 @@
+[StartDialogue(Village)]
+[ShowPortrait(Villager (old man), TopLeft, 0x1)]
+ホッホー\n城の中では\n馬やペガサスは使えぬよ\nおりて 戦うことじゃな[WaitForA]
+\nお前さんだって\n家の中まで 動物が\n入ってきたら いやじゃろ[WaitForA]
+\nくさくって かなわんからな[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

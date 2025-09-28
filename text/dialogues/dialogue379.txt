@@ -1,0 +1,8 @@
+[StartDialogue(Default)]
+[PlaySong(191, 128)]
+[SwitchFrame(Top)]
+[ShowPortrait(Tiki (book 2), TopLeft, 0x1)]
+どうして・・・[TimedWaitForA(288)]
+[CloseFrame(BottomLeft, 0x0)]
+[PlaySong(255, 255)]
+[End]

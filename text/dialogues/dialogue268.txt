@@ -1,0 +1,8 @@
+[StartDialogue(Default)]
+[PlaySong(58, 128)]
+[SwitchFrame(Top)]
+[ShowPortrait(Nehring, TopLeft, 0x1)]
+くっ・・ なんてことだ\nわがアカネイアが敗れるとは\nだが このわしがいるかぎり\n城内には入れさせぬ！[TimedWaitForA(288)]
+[CloseFrame(BottomLeft, 0x0)]
+[PlaySong(255, 255)]
+[End]

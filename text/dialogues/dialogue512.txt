@@ -1,0 +1,7 @@
+[StartDialogue(Default)]
+[SwitchFrame(Top)]
+[ShowPortrait(Medeus (dragon), TopLeft, 0x1)]
+グフフ・・・\nマダ オワッタワケデハナイ\nオマエノ ソノアマサガ・・\nミヲ ホロボスノダ・・・[WaitForA]
+\nワガ イケニエトナリシ\nオンナドモ・・\nワガチトナリ ニクトナレ・・・\nワレニ チカラヲ アタエヨ！[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

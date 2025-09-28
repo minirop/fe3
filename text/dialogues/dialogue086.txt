@@ -1,0 +1,6 @@
+[StartDialogue(Village)]
+[ShowPortrait(Villager (Uncle), TopLeft, 0x1)]
+シルバーカードを持っていれば\n全ての店で はんがくで\n買いものできるらしい[WaitForA]
+\nまるで ゆめのような話だろう[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

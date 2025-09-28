@@ -1,0 +1,5 @@
+[StartDialogue(Village)]
+[ShowPortrait(Villager (Uncle), TopLeft, 0x1)]
+スナイパーは弓の名手だ\nうかつに近づいたら\nあっというまに\nやられてしまうぞ[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

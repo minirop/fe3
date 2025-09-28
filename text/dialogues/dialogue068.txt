@@ -1,0 +1,6 @@
+[StartDialogue(Village)]
+[ShowPortrait(Villager (Uncle), TopLeft, 0x1)]
+ここはアカネイアのノルダの町[WaitForA]
+\n武器屋 道具屋を\nのぞいてごらん\nめずらしいものを売ってるよ[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

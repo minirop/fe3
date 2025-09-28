@@ -1,0 +1,7 @@
+[StartDialogue(Default)]
+[PlaySong(191, 128)]
+[SwitchFrame(Top)]
+[ShowPortrait(Malledus, TopLeft, 0x1)]
+マルス様\nきろくがありませんぞ！\n残念ですが\n最初からやりなおして\nいただきます！[TimedWaitForA(288)]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

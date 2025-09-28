@@ -1,0 +1,8 @@
+[StartDialogue(Village)]
+[ShowPortrait(Villager (male), TopLeft, 0x1)]
+魔王ガーネフに\n勝てるわけねえよ[WaitForA]
+\nあくりょうをよぶ魔法 \n[SetColor(Yellow)]マフー [SetColor(White)]で\n守られているからな[WaitForA]
+\nあれをやぶれるのはガトー様の\n[SetColor(Yellow)]スターライト・・[WaitForA]
+[SetColor(White)]\n・・おっと やべえやべえ\nはやくどっかへ消えちまいな[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

@@ -1,0 +1,6 @@
+[StartDialogue(Village)]
+[ShowPortrait(Villager (old man), TopLeft, 0x1)]
+お城には 財宝が入った\n宝箱がある[WaitForA]
+\nしかし 盗賊でないと\n開けることはできぬぞよ[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

@@ -1,0 +1,7 @@
+[StartDialogue(Default)]
+[SwitchFrame(Top)]
+[ShowPortrait(Gharnef, TopLeft, 0x1)]
+ふぉふぉふぉ・・・\nわが暗黒魔法 マフーの\n威力を思い知れ・・・[TimedWaitForA(288)]
+[CloseFrame(BottomLeft, 0x0)]
+[PlaySong(255, 255)]
+[End]

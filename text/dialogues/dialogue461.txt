@@ -1,0 +1,8 @@
+[StartDialogue(Default)]
+[PlaySong(97, 128)]
+[SwitchFrame(Top)]
+[ShowPortrait(Villager (Uncle), TopLeft, 0x1)]
+アカネイア軍も\nかわっちまったよ\n兵隊達は 血にうえた\nゴロツキばかりだ[WaitForA]
+\nこの国は いったい\nどうなってしまうのだろう[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

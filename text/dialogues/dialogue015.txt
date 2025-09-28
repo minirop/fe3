@@ -1,0 +1,6 @@
+[StartDialogue(Village)]
+[ShowPortrait(Villager (Uncle), TopLeft, 0x1)]
+わざがあがると\n必殺の一撃が出やすくなる[WaitForA]
+\nそして はやさがあがると\n敢の攻撃をかわしやすくなるよ[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

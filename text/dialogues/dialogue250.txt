@@ -1,0 +1,7 @@
+[StartDialogue(Default)]
+[PlaySong(33, 128)]
+[SwitchFrame(Top)]
+[ShowPortrait(Villager (auntie), TopLeft, 0x1)]
+ここから北には\nもう お店もないよ\nもし 行くんなら\nじゅうぶんに 買っとくんだね[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

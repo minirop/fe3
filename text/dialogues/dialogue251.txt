@@ -1,0 +1,8 @@
+[StartDialogue(Default)]
+[PlaySong(58, 128)]
+[SwitchFrame(Top)]
+[ShowPortrait(Lorenz, TopLeft, 0x1)]
+なに！？ お前達は・・・\nアリティア軍なのか\nアリティアまで わが民を\n苦しめるというのか・・・[TimedWaitForA(288)]
+[CloseFrame(BottomLeft, 0x0)]
+[PlaySong(255, 255)]
+[End]

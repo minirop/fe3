@@ -1,0 +1,8 @@
+[StartDialogue(Default)]
+[PlaySong(192, 128)]
+[SwitchFrame(Top)]
+[ShowPortrait(Xemcel, TopLeft, 0x1)]
+クッ・・ メディウスサマ・・\nオユルシヲ・・・[TimedWaitForA(288)]
+[CloseFrame(BottomLeft, 0x0)]
+[PlaySong(255, 255)]
+[End]

@@ -1,0 +1,8 @@
+[StartDialogue(Default)]
+[PlaySong(191, 128)]
+[SwitchFrame(Top)]
+[ShowPortrait(Jubelo, TopLeft, 0x1)]
+ユミナ・・ごめんね・・[TimedWaitForA(288)]
+[CloseFrame(BottomLeft, 0x0)]
+[PlaySong(255, 255)]
+[End]

@@ -1,0 +1,8 @@
+[StartDialogue(Default)]
+[SwitchFrame(Top)]
+[PlaySong(17, 128)]
+[ShowPortrait(Matthis, TopLeft, 0x1)]
+レナ・・・\nおまえは 今どこにいるんだ\n死ぬ前に 一度でいいから\nおまえに会いたかったな・・[TimedWaitForA(288)]
+[CloseFrame(BottomLeft, 0x0)]
+[PlaySong(255, 255)]
+[End]

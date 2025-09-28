@@ -1,0 +1,8 @@
+[StartDialogue(Default)]
+[PlaySong(192, 128)]
+[SwitchFrame(Top)]
+[ShowPortrait(Dall, TopLeft, 0x1)]
+人殺しー[TimedWaitForA(288)]
+[CloseFrame(BottomLeft, 0x0)]
+[PlaySong(255, 255)]
+[End]

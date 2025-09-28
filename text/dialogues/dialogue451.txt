@@ -1,0 +1,8 @@
+[StartDialogue(Default)]
+[PlaySong(56, 128)]
+[SwitchFrame(Top)]
+[ShowPortrait(Sirius, TopLeft, 0x1)]
+ふりかかる火のこは\nはらわねばならぬ・・[TimedWaitForA(288)]
+[CloseFrame(BottomLeft, 0x0)]
+[PlaySong(255, 255)]
+[End]

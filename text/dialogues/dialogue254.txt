@@ -1,0 +1,8 @@
+[StartDialogue(Default)]
+[PlaySong(58, 128)]
+[SwitchFrame(Top)]
+[ShowPortrait(Gail, TopLeft, 0x1)]
+お願いだ 許してくれ！\nと言ってもムリだな・・・\nしゃあねえな・・・\nあたまをカチわってやる！！[TimedWaitForA(288)]
+[CloseFrame(BottomLeft, 0x0)]
+[PlaySong(255, 255)]
+[End]

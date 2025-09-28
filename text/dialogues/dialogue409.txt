@@ -1,0 +1,8 @@
+[StartDialogue(Default)]
+[PlaySong(83, 128)]
+[SwitchFrame(Top)]
+[ShowPortrait(Maria, TopLeft, 0x1)]
+メディウスサマニ・・・\nサカラウモノ・・・\nコロス・・・[TimedWaitForA(288)]
+[CloseFrame(BottomLeft, 0x0)]
+[PlaySong(255, 255)]
+[End]

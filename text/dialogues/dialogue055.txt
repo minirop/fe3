@@ -1,0 +1,5 @@
+[StartDialogue(Village)]
+[ShowPortrait(Villager (Uncle), TopLeft, 0x1)]
+ドラゴンを倒すには\nドラゴンキラーという剣が\n必要です[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

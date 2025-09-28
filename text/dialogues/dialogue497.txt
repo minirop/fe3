@@ -1,0 +1,7 @@
+[StartDialogue(Default)]
+[PlaySong(33, 128)]
+[ShowPortrait(Villager (old man), TopLeft, 0x1)]
+踊り子さんの踊りを\n見たことがあるかね\nあれはいいもんじゃな[WaitForA]
+\nつかれた体にみるみる\n元気がわいてくるぞ[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

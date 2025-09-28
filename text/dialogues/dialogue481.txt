@@ -1,0 +1,6 @@
+[StartDialogue(Village)]
+[ShowPortrait(Villager (old man), TopLeft, 0x1)]
+一人だけ\nみんなとはなれて戦うのは\nきけんじゃから気をつけなされ[WaitForA]
+\nただし おとりになって\n敢をおびきよせる作戦もあるぞ[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

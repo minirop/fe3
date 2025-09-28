@@ -1,0 +1,8 @@
+[StartDialogue(Default)]
+[PlaySong(191, 128)]
+[SwitchFrame(Top)]
+[ShowPortrait(Castor, TopLeft, 0x1)]
+母さん・・・\n仕送りできなくてゴメン[TimedWaitForA(288)]
+[CloseFrame(BottomLeft, 0x0)]
+[PlaySong(255, 255)]
+[End]

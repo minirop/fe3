@@ -1,0 +1,8 @@
+[StartDialogue(Default)]
+[SwitchFrame(Top)]
+[PlaySong(18, 128)]
+[ShowPortrait(Kannival, TopLeft, 0x1)]
+お お前達\nどうしてここまで・・・\nくそ・・・もはやこれまでか！[TimedWaitForA(288)]
+[CloseFrame(BottomLeft, 0x0)]
+[PlaySong(255, 255)]
+[End]

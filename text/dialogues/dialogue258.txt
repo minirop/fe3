@@ -1,0 +1,8 @@
+[StartDialogue(Default)]
+[PlaySong(57, 128)]
+[SwitchFrame(Top)]
+[ShowPortrait(Hardin (book 2), TopLeft, 0x1)]
+反乱兵ども・・・\nわざわざ死にに 来たか！\nグラディウスの恐ろしさ\n思い知らせてくれる！！[TimedWaitForA(288)]
+[CloseFrame(BottomLeft, 0x0)]
+[PlaySong(255, 255)]
+[End]

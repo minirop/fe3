@@ -1,0 +1,8 @@
+[StartDialogue(Default)]
+[PlaySong(33, 128)]
+[ShowPortrait(Villager (male), TopLeft, 0x1)]
+そういやあ 最近\n傭兵のサムトーを見かけないな[WaitForA]
+\nあんた達の仲間に加わったら\nどうかなと思ったんだけど・・・[WaitForA]
+\nいいかげんなやつだけど\n腕は たしかだからね[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

@@ -1,0 +1,8 @@
+[StartDialogue(Default)]
+[PlaySong(32, 128)]
+[ShowPortrait(Villager (Bald Dad #1), TopLeft, 0x1)]
+マルス王子\nよくおいでくださいました[WaitForA]
+\nここに 村人達が集めた\n5000ゴールドの金貨が\nあります[WaitForA]
+\nこれで装備を ととのえて\nガルダの海賊から\nこの国を お救いください[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

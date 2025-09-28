@@ -1,0 +1,8 @@
+[StartDialogue(Default)]
+[PlaySong(97, 128)]
+[SwitchFrame(Top)]
+[ShowPortrait(Villager (auntie), TopLeft, 0x1)]
+エリス様は 城がおちた後\n黒いローブの不気呋な司祭に\nむりやりどこかへ\n連れて行かれたのです・・・[WaitForA]
+\nああ・・エリス姫様・・\nどうか ご無事で・・・・[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

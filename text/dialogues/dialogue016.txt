@@ -1,0 +1,5 @@
+[StartDialogue(Village)]
+[ShowPortrait(Villager (male), TopLeft, 0x1)]
+アーチャー・ハンター系は\n間接攻撃しか\nできないので 接近戦は\nさけたほうがいいよ[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

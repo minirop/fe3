@@ -1,0 +1,6 @@
+[StartDialogue(Village)]
+[ShowPortrait(Villager (male), TopLeft, 0x1)]
+メンバーカードがあればさ\n秘密の店に入れるって\n話だぜ[WaitForA]
+\nだけど その店が\nどこにあるかは だれも\n知らねえってよ[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

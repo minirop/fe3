@@ -1,0 +1,8 @@
+[StartDialogue(Village)]
+[ShowPortrait(Villager (female), TopLeft, 0x1)]
+えっ あなたが\nアリティアの王子様！[WaitForA]
+\nお会いできるなんて\nまるでゆめみたい・・・[WaitForA]
+\nあの・・このきずぐすりは\nわたしの ささやかな\n気持ちです[WaitForA]
+\nどうか 受け取って下さい[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

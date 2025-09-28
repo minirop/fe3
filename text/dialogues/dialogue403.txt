@@ -1,0 +1,8 @@
+[StartDialogue(Default)]
+[PlaySong(56, 128)]
+[SwitchFrame(Top)]
+[ShowPortrait(Warren, TopLeft, 0x1)]
+すまねぇな\nあんたにゃ うらみはないが\nこれも 生活のためだ\n許せよ！[TimedWaitForA(288)]
+[CloseFrame(BottomLeft, 0x0)]
+[PlaySong(255, 255)]
+[End]

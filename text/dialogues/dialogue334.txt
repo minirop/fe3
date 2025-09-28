@@ -1,0 +1,7 @@
+[StartDialogue(Default)]
+[PlaySong(191, 128)]
+[SwitchFrame(Top)]
+[ShowPortrait(Ceada, TopLeft, 0x1)]
+ああ マルス様・・・\n死んでしまうなんて・・・[TimedWaitForA(288)]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

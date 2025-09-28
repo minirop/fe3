@@ -1,0 +1,8 @@
+[StartDialogue(Default)]
+[PlaySong(33, 128)]
+[SwitchFrame(Top)]
+[ShowPortrait(Villager (male), TopLeft, 0x1)]
+ルーメルには 気をつけろ\nやつは\nナイトキラーをもっている[WaitForA]
+\nソシアルナイトやパラディンは\n一発で くびがとぶぜ！！[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

@@ -1,0 +1,6 @@
+[StartDialogue(Default)]
+[PlaySong(33, 128)]
+[ShowPortrait(Villager (auntie), TopLeft, 0x1)]
+やっぱり\n弓兵は 弓兵どうし\n仲が いいんじゃないの[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

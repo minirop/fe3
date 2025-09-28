@@ -1,0 +1,6 @@
+[StartDialogue(Village)]
+[ShowPortrait(Villager (old man), TopLeft, 0x1)]
+ドラゴンのブレスは\n生身の人間には\nとうてい防ぐことはできんぞ[WaitForA]
+\nどんな防具もまるで役にたたん\nまともにぶつかるのは\nきけんじゃ[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

@@ -1,0 +1,7 @@
+[StartDialogue(Default)]
+[PlaySong(95, 128)]
+[SwitchFrame(Bottom)]
+[ShowPortrait(Jagen, BottomRight, 0x1)]
+王子 さらに上への階段が\nあります！！[WaitForA]
+[CloseFrame(BottomRight, 0x0)]
+[End]

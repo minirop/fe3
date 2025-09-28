@@ -1,0 +1,8 @@
+[StartDialogue(Default)]
+[PlaySong(58, 128)]
+[SwitchFrame(Top)]
+[ShowPortrait(Yodel, TopLeft, 0x1)]
+神殿をおかす者は\n何人たりとも 許さぬ！\n大地よ 怒れ！\nボルガノン！！[TimedWaitForA(288)]
+[CloseFrame(BottomLeft, 0x0)]
+[PlaySong(255, 255)]
+[End]

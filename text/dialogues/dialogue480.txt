@@ -1,0 +1,6 @@
+[StartDialogue(Village)]
+[ShowPortrait(Villager (old woman), TopLeft, 0x1)]
+シスターは攻撃はできません[WaitForA]
+\nけれど 聖なる杖を使って\n仲間を助けることができます[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

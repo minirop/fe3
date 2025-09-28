@@ -1,0 +1,8 @@
+[StartDialogue(Default)]
+[PlaySong(56, 128)]
+[SwitchFrame(Top)]
+[ShowPortrait(Midia, TopLeft, 0x1)]
+アカネイア聖王国に弓をひく\n心なき者達よ\nパレスの宮殿に入りたくば\nこのわたしを殺してから行け！[TimedWaitForA(288)]
+[CloseFrame(BottomLeft, 0x0)]
+[PlaySong(255, 255)]
+[End]

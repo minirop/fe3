@@ -1,0 +1,8 @@
+[StartDialogue(Default)]
+[PlaySong(58, 128)]
+[SwitchFrame(Top)]
+[ShowPortrait(Vyland, TopLeft, 0x1)]
+我らがいるかぎり\nパレスには 行かせない\n死にたくなければ国へ帰れ！[TimedWaitForA(288)]
+[CloseFrame(BottomLeft, 0x0)]
+[PlaySong(255, 255)]
+[End]

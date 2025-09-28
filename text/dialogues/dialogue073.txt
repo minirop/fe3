@@ -1,0 +1,5 @@
+[StartDialogue(Village)]
+[ShowPortrait(Villager (auntie), TopLeft, 0x1)]
+今じゃ ならず者がのさばって\n外を 歩くことすら\nできないのよ[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

@@ -1,0 +1,5 @@
+[StartDialogue(Village)]
+[ShowPortrait(Villager (old man), TopLeft, 0x1)]
+村は 王子のために\n門をひらいて待っておる\nはやくたずねてやりなされ[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

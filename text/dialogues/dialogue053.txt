@@ -1,0 +1,6 @@
+[StartDialogue(Village)]
+[ShowPortrait(Villager (Uncle), TopLeft, 0x1)]
+砦で 敢が大ぜい\n出撃の準備をしているらしい[WaitForA]
+\n出て来ないうちにはやく\nおさえたほうがいいよ[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

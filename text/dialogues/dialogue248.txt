@@ -1,0 +1,8 @@
+[StartDialogue(Default)]
+[PlaySong(33, 128)]
+[SwitchFrame(Top)]
+[ShowPortrait(Villager (male), TopLeft, 0x1)]
+砦を守っているのは\nアストリア傭兵隊と言って\n泣く子もだまる強者ぞろい[WaitForA]
+\n「さわらぬ神に たたりなし」\nこれだよな[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

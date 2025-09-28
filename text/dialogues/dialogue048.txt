@@ -1,0 +1,8 @@
+[StartDialogue(Village)]
+[ShowPortrait(Villager (Uncle), TopLeft, 0x1)]
+ミネルバってのは 本当は\nマケドニアのお姫様なんだ[WaitForA]
+\nだけど 妹が\nドルーアに捕まってるから\nしかたなく戦ってるらしいぜ[WaitForA]
+\nみんなはこわがってるけど\nホントはとてもきれいで\nやさしい人なんだって[WaitForA]
+\nなんとか 助けてやれないかな[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

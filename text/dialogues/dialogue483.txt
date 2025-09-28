@@ -1,0 +1,6 @@
+[StartDialogue(Village)]
+[ShowPortrait(Villager (male), TopLeft, 0x1)]
+闘技場で闘いに勝つと\n賞金がもらえて経験もつめる\nでも 負けたら死んでしまうぜ[WaitForA]
+\nまあ 行くんなら\nかくごを決めて入ることだね[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

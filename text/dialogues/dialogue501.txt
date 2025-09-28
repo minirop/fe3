@@ -1,0 +1,6 @@
+[StartDialogue(Default)]
+[SwitchFrame(Top)]
+[ShowPortrait(Marth (book 2), TopLeft, 0x1)]
+ロレンス将軍！！\nばかな・・・[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

@@ -1,0 +1,7 @@
+[StartDialogue(Default)]
+[PlaySong(33, 128)]
+[ShowPortrait(Villager (old man), TopLeft, 0x1)]
+神聖なラーマン神殿も\n盗賊どもにとっては\nただの古い建物[WaitForA]
+\n盗んだ宝を持ち歩いてる連中\nが そこらじゅうにおるよ\nまったく ばちあたりなことだ[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

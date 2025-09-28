@@ -1,0 +1,6 @@
+[StartDialogue(Village)]
+[ShowPortrait(Villager (female), TopLeft, 0x1)]
+ソシアルナイトや\nペガサスナイトが\n馬などからおりると ナイトに[WaitForA]
+\nホースメンが馬からおりると\nハンターになって\n戦うことができるよ[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

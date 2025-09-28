@@ -1,0 +1,8 @@
+[StartDialogue(Default)]
+[PlaySong(33, 128)]
+[SwitchFrame(Top)]
+[ShowPortrait(Villager (auntie), TopLeft, 0x1)]
+どうくつには\n絶対近よっちゃだめよ[WaitForA]
+\nあそこには 恐ろしい\n火竜が すんでるって\nうわさだからね[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

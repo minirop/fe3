@@ -1,0 +1,6 @@
+[StartDialogue(Village)]
+[ShowPortrait(Villager (old woman), TopLeft, 0x1)]
+北の村にね\nすごくえらい司祭様が\nすんでいるらしいよ[WaitForA]
+\nだけど 人間ぎらいで\nだれにも会わないんだってさ[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

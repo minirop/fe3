@@ -1,0 +1,8 @@
+[StartDialogue(Default)]
+[PlaySong(58, 128)]
+[SwitchFrame(Top)]
+[ShowPortrait(Roshea, TopLeft, 0x1)]
+オレルアン騎兵隊のロシェだ\n戦いたくはないが\n仲間はうらぎれない\n許してくれ・・・[TimedWaitForA(288)]
+[CloseFrame(BottomLeft, 0x0)]
+[PlaySong(255, 255)]
+[End]

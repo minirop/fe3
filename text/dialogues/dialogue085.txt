@@ -1,0 +1,7 @@
+[StartDialogue(Village)]
+[ShowPortrait(Villager (male), TopLeft, 0x1)]
+レベル10になると\n職業を\nかえられることがあるらしい[WaitForA]
+\nソシアルナイトはパラディンに\n傭兵は 勇者に[WaitForA]
+\n・・あとは忘れちまった[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

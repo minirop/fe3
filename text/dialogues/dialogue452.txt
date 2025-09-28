@@ -1,0 +1,8 @@
+[StartDialogue(Default)]
+[PlaySong(17, 128)]
+[SwitchFrame(Top)]
+[ShowPortrait(Rickard, TopLeft, 0x1)]
+ジュリアンのアニキー[TimedWaitForA(288)]
+[CloseFrame(BottomLeft, 0x0)]
+[PlaySong(255, 255)]
+[End]

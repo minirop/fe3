@@ -1,0 +1,7 @@
+[StartDialogue(Default)]
+[SwitchFrame(Top)]
+[ShowPortrait(Gharnef, TopLeft, 0x1)]
+このわしに はむかうとは\n命知らずなやつらじゃ\n封印されし暗黒魔法マフーの\n恐ろしさを見せてくれよう[TimedWaitForA(288)]
+[CloseFrame(BottomLeft, 0x0)]
+[PlaySong(255, 255)]
+[End]

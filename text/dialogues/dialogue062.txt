@@ -1,0 +1,6 @@
+[StartDialogue(Village)]
+[ShowPortrait(Villager (old man), TopLeft, 0x1)]
+サンダーソード\nそれを手にする者[WaitForA]
+\nいかづちをはっし\nあつきよろいをも\nうちくだくといふ・・・[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

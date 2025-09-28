@@ -1,0 +1,8 @@
+[StartDialogue(Default)]
+[PlaySong(18, 128)]
+[SwitchFrame(Top)]
+[ShowPortrait(Xemcel, TopLeft, 0x1)]
+この大地は\nすべて我らのものだった・・・\nそれをおかしたのは\nお前達人間なのだ！[TimedWaitForA(288)]
+[CloseFrame(BottomLeft, 0x0)]
+[PlaySong(255, 255)]
+[End]

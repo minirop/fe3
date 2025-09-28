@@ -1,0 +1,6 @@
+[StartDialogue(Village)]
+[ShowPortrait(Villager (old woman), TopLeft, 0x1)]
+ガルダというのは\nタリス島の西にある港町です[WaitForA]
+\n今はゴメスという男が\n支配していて 海賊の\nそうくつと なっています[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

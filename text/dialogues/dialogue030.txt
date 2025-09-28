@@ -1,0 +1,8 @@
+[StartDialogue(Default)]
+[SwitchFrame(Top)]
+[PlaySong(18, 128)]
+[ShowPortrait(Merach, TopLeft, 0x1)]
+この城はミネルバ様からの\nあずかりもの\nお前達の自由にはさせぬ[TimedWaitForA(288)]
+[CloseFrame(BottomLeft, 0x0)]
+[PlaySong(255, 255)]
+[End]

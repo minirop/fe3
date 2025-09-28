@@ -1,0 +1,5 @@
+[StartDialogue(Village)]
+[ShowPortrait(Villager (old man), TopLeft, 0x1)]
+シューターには用心しなされ\nここから北の砦くらい\nはなれていても攻撃してくるぞ[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

@@ -1,0 +1,6 @@
+[StartDialogue(Village)]
+[ShowPortrait(Villager (male), TopLeft, 0x1)]
+敢の攻撃をかわすひけつは\nズバリすばやさと\nあとは 運だな[WaitForA]
+\nかくれるものがあるところに\nいるのも有効だよ[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

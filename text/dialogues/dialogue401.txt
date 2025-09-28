@@ -1,0 +1,8 @@
+[StartDialogue(Default)]
+[PlaySong(17, 128)]
+[SwitchFrame(Top)]
+[ShowPortrait(Astram, TopLeft, 0x1)]
+すまぬ・・\nこれも愛する者のため・・\n許せよ・・[TimedWaitForA(288)]
+[CloseFrame(BottomLeft, 0x0)]
+[PlaySong(255, 255)]
+[End]

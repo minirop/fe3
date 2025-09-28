@@ -1,0 +1,6 @@
+[StartDialogue(Default)]
+[PlaySong(33, 128)]
+[ShowPortrait(Villager (old man), TopLeft, 0x1)]
+ソードキラーは\n傭兵や勇者に対して\n威力を発揮する剣じゃ\nぜひ 手に入れられるがよい[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

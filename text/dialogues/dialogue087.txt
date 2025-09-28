@@ -1,0 +1,7 @@
+[StartDialogue(Village)]
+[ShowPortrait(Villager (female), TopLeft, 0x1)]
+この国もアリティアと共に\n戦ったのです[WaitForA]
+\nしかし カミユ将軍に敗れて\nグルニアに 占領されて\nしまいました[WaitForA]
+\nでも これでやっと\n自由になれるのですね[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

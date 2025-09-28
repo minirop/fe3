@@ -1,0 +1,8 @@
+[StartDialogue(Default)]
+[SwitchFrame(Top)]
+[ShowPortrait(Gotoh, TopLeft, 0x1)]
+しかし そなた自身にとって\nこの勝利は つらいものに\nなった[WaitForA]
+\n愛する者を失い これからは\n一人で生きて行かねばならぬ[WaitForA]
+\nマルスよ すまぬ・・・\nそなたは この世界の未来と\nひきかえに もっとも大事な\nものを 失ってしまったのだ・・[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

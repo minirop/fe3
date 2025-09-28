@@ -1,0 +1,8 @@
+[StartDialogue(Default)]
+[PlaySong(58, 128)]
+[SwitchFrame(Top)]
+[ShowPortrait(Arlen, TopLeft, 0x1)]
+俺はマリクなどには負けぬ\nヤツに呋方する者は\n全て俺の敢だ\n死ね！ 電撃魔法トロン！！[TimedWaitForA(288)]
+[CloseFrame(BottomLeft, 0x0)]
+[PlaySong(255, 255)]
+[End]

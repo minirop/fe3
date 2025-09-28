@@ -1,0 +1,6 @@
+[StartDialogue(Village)]
+[ShowPortrait(Villager (auntie), TopLeft, 0x1)]
+まあアリティアの騎士だね\nうれしいよ\nよく帰って来てくれたね[WaitForA]
+\nこれでこの国も 昔のように\n平和になるんだね[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

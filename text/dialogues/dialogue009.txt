@@ -1,0 +1,7 @@
+[StartDialogue(Village)]
+[ShowPortrait(Villager (Uncle), TopLeft, 0x1)]
+アカネイアのニーナ王女様が\nオレルアンのハーディン様と\n共に[WaitForA]
+\nオレルアンに攻め込んできた\nドルーア帝国軍と\n戦っているらしいね[WaitForA]
+\n苦戦してるらしいから\nはやく行って助けてやりなよ[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

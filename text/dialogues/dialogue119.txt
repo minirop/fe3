@@ -1,0 +1,8 @@
+[StartDialogue(Default)]
+[PlaySong(18, 128)]
+[SwitchFrame(Top)]
+[ShowPortrait(Lorenz, TopLeft, 0x1)]
+栄光あるグルニア王国も\nこれで 終わりだな・・・・\n国王 あなたを\nおうらみいたしますぞ・・・[TimedWaitForA(288)]
+[CloseFrame(BottomLeft, 0x0)]
+[PlaySong(255, 255)]
+[End]

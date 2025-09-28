@@ -1,0 +1,6 @@
+[StartDialogue(Village)]
+[ShowPortrait(Villager (auntie), TopLeft, 0x1)]
+ワーレンの港には\nめずらしい物が\nたくさん売られてるらしいよ[WaitForA]
+\nもし 行くんなら\nそれまではムダ使い\nしないようにね[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

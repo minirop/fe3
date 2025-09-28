@@ -1,0 +1,7 @@
+[StartDialogue(Village)]
+[SwitchFrame(Top)]
+[ShowPortrait(Villager (male), TopLeft, 0x1)]
+デビルソードにゃ気をつけな[WaitForA]
+\n威力は すげえが\n下手すると\n自分のくびが飛ぶことになるぜ[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

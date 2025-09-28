@@ -1,0 +1,8 @@
+[StartDialogue(Default)]
+[PlaySong(73, 128)]
+[SwitchFrame(Top)]
+[ShowPortrait(Villager (female), TopLeft, 0x1)]
+レスキューって魔法\n知ってる？[WaitForA]
+\n遠くにいる人を 近くによぶ\nことができるんだって\nホントだったら すごいよね[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

@@ -1,0 +1,8 @@
+[StartDialogue(Default)]
+[PlaySong(192, 128)]
+[SwitchFrame(Top)]
+[ShowPortrait(Zharov, TopLeft, 0x1)]
+アリティア騎士団・・・\n強い・・・強すぎる・・・[TimedWaitForA(288)]
+[CloseFrame(BottomLeft, 0x0)]
+[PlaySong(255, 255)]
+[End]

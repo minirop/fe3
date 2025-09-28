@@ -1,0 +1,8 @@
+[StartDialogue(Default)]
+[PlaySong(58, 128)]
+[SwitchFrame(Top)]
+[ShowPortrait(Lykke, TopLeft, 0x1)]
+くっ くそ・・・\nなぜアリティア軍が・・・\nこの上は貴様も道連れだ\n死ね！[TimedWaitForA(288)]
+[CloseFrame(BottomLeft, 0x0)]
+[PlaySong(255, 255)]
+[End]

@@ -1,0 +1,8 @@
+[StartDialogue(Default)]
+[PlaySong(33, 128)]
+[SwitchFrame(Top)]
+[ShowPortrait(Villager (Uncle), TopLeft, 0x1)]
+ここだけの話だが\nあの武器屋は 反乱軍と\nグルらしいよ[WaitForA]
+\nもし 入るのなら\nおそわれないように\n気をつけた方がいいな[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

@@ -1,0 +1,8 @@
+[StartDialogue(Default)]
+[PlaySong(97, 128)]
+[SwitchFrame(Top)]
+[ShowPortrait(Villager (Uncle), TopLeft, 0x1)]
+ここは 飛竜の谷だ\nここから先には\n足をふみいれるな[WaitForA]
+\n恐ろしいドラゴンに\n焼き殺されるぞ[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

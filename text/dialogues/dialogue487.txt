@@ -1,0 +1,7 @@
+[StartDialogue(Default)]
+[PlaySong(33, 128)]
+[ShowPortrait(Villager (auntie), TopLeft, 0x1)]
+最近 山賊や海賊どもが\nはばをきかせてこまるよ\nまったく[WaitForA]
+\nこれというのも\n国が いいかげんな政治しか\nしていないせいだよ[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

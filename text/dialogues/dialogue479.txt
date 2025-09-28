@@ -1,0 +1,6 @@
+[StartDialogue(Village)]
+[ShowPortrait(Villager (Uncle), TopLeft, 0x1)]
+力が強いほど\n武器や魔道書で与えられる\nダメージが大きくなる[WaitForA]
+\nそして ちりょうの杖の\n効果も上がるぞ[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

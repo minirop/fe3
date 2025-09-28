@@ -1,0 +1,6 @@
+[StartDialogue(Village)]
+[ShowPortrait(Villager (auntie), TopLeft, 0x1)]
+魔法を防ぐにはよろいじゃ\nダメだよ[WaitForA]
+\nＭ・シールドの杖や聖水を\n使うのさ[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

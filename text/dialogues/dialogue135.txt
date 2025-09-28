@@ -1,0 +1,7 @@
+[StartDialogue(Village)]
+[ShowPortrait(Villager (old man), TopLeft, 0x1)]
+南の山の上に\n聖なる神殿がある[WaitForA]
+\nそのまん中のはしらの前に立ち\n復活の杖オームを使うのじゃ[WaitForA]
+\nさすれば なつかしい人に\n再びめぐり会えるかも\n知れぬ・・[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

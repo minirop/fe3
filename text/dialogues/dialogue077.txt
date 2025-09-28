@@ -1,0 +1,8 @@
+[StartDialogue(Default)]
+[PlaySong(18, 128)]
+[SwitchFrame(Top)]
+[ShowPortrait(Volzhin, TopLeft, 0x1)]
+ドルーアに たてつく\n反乱軍の兵士ども \nわしの 超破壊魔法\nボルガノンを受けてみよ！！[TimedWaitForA(288)]
+[CloseFrame(BottomLeft, 0x0)]
+[PlaySong(255, 255)]
+[End]

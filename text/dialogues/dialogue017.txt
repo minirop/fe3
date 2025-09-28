@@ -1,0 +1,8 @@
+[StartDialogue(Default)]
+[SwitchFrame(Top)]
+[PlaySong(18, 128)]
+[ShowPortrait(Gomer, TopLeft, 0x1)]
+ガルダの海賊をなめるな\nオレ様の 手斧の\n切れ呋をみせてやる！[TimedWaitForA(288)]
+[CloseFrame(BottomLeft, 0x0)]
+[PlaySong(255, 255)]
+[End]

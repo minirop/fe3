@@ -1,0 +1,8 @@
+[StartDialogue(Default)]
+[SwitchFrame(Top)]
+[PlaySong(18, 128)]
+[ShowPortrait(Gazzak, TopLeft, 0x1)]
+なにぃ アリティア軍だと！？\nこんなやつらに なめられちゃあ\n俺達 海賊の名がすたる！\n・・死ね！[TimedWaitForA(288)]
+[CloseFrame(BottomLeft, 0x0)]
+[PlaySong(255, 255)]
+[End]

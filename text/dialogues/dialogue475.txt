@@ -1,0 +1,8 @@
+[StartDialogue(Default)]
+[PlaySong(33, 128)]
+[SwitchFrame(Top)]
+[ShowPortrait(Villager (auntie), TopLeft, 0x1)]
+まあ あなた達・・\nいったい どこに行ってたの[WaitForA]
+\nずっと 行方が\nわからなかったから\nみんな とても\n心配してたんだよ[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

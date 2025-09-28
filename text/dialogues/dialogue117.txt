@@ -1,0 +1,8 @@
+[StartDialogue(Default)]
+[PlaySong(18, 128)]
+[SwitchFrame(Top)]
+[ShowPortrait(Camus, TopLeft, 0x1)]
+かわいそうだが わたしに\nこのグラディウスあるかぎり\n倒すことはできないだろう\n不運だったとあきらめてくれ[TimedWaitForA(288)]
+[CloseFrame(BottomLeft, 0x0)]
+[PlaySong(255, 255)]
+[End]

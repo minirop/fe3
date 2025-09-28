@@ -1,0 +1,5 @@
+[StartDialogue(Village)]
+[ShowPortrait(Villager (auntie), TopLeft, 0x1)]
+きずついたら砦で休みなよ\n少し休めば\nまた元気になるからね[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

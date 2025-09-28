@@ -1,0 +1,8 @@
+[StartDialogue(Default)]
+[PlaySong(97, 128)]
+[SwitchFrame(Top)]
+[ShowPortrait(Villager (female), TopLeft, 0x1)]
+ニーナ様とハーディン公が\n結ばれて やっと世界も\n平和になると思ったのに\nこんなことになるなんて[WaitForA]
+\nああ 神様・・・\nわたし達はいったい\nどうすればよいのでしょう・・[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

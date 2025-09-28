@@ -1,0 +1,6 @@
+[StartDialogue(Village)]
+[ShowPortrait(Villager (auntie), TopLeft, 0x1)]
+持ちきれない武器や道具は\nゆそう隊にあずけるといいよ[WaitForA]
+\n受けわたしを\nしたくなったら\n王子に近づけばいいんだ[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

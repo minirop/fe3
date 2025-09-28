@@ -1,0 +1,8 @@
+[StartDialogue(Default)]
+[SwitchFrame(Top)]
+[PlaySong(18, 128)]
+[ShowPortrait(Emereus, TopLeft, 0x1)]
+くっ くそ 思い上がるな\n反乱軍の兵士ども\nこの鋼の槍を受けてみよ！！[TimedWaitForA(288)]
+[CloseFrame(BottomLeft, 0x0)]
+[PlaySong(255, 255)]
+[End]

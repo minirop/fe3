@@ -1,0 +1,8 @@
+[StartDialogue(Default)]
+[PlaySong(73, 128)]
+[ShowPortrait(Villager (female), TopLeft, 0x1)]
+少し前にね\n旅をしているっていう\nパラディンがここに来たのよ[WaitForA]
+\n仮面をしていたけど\nはずしたら きっとステキな\n人だと思うわ[WaitForA]
+\nやさしくて\nどこか かげりがあって\nあーあ また会えないかしら[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

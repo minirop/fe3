@@ -1,0 +1,6 @@
+[StartDialogue(Village)]
+[ShowPortrait(Villager (old woman), TopLeft, 0x1)]
+エリス王女様は\nガーネフとかいう司祭に\nどこかへ連れて行かれて\nしまったんだよ[WaitForA]
+\nああ 王女様\nかわいそうに・・・・・\n無事だといいんだがね[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

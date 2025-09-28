@@ -1,0 +1,6 @@
+[StartDialogue(Village)]
+[ShowPortrait(Villager (auntie), TopLeft, 0x1)]
+ディールの城に\nマケドニアのお姫様が\nとらわれているらしいよ\n[WaitForA]
+呋方どうしなのに\nどうしてなんだろうね[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

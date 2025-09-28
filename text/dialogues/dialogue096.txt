@@ -1,0 +1,8 @@
+[StartDialogue(Default)]
+[PlaySong(18, 128)]
+[SwitchFrame(Top)]
+[ShowPortrait(Hollstadt, TopLeft, 0x1)]
+アリティアの敗残兵ども\nよく生き残っていたな\nだが このわしがいるかぎり\n城には 入らせぬぞ！[TimedWaitForA(288)]
+[CloseFrame(BottomLeft, 0x0)]
+[PlaySong(255, 255)]
+[End]

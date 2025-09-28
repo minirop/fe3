@@ -1,0 +1,8 @@
+[StartDialogue(Default)]
+[PlaySong(97, 128)]
+[SwitchFrame(Top)]
+[ShowPortrait(Villager (auntie), TopLeft, 0x1)]
+ハーディン王は とても\nやさしい方だった\nそれが 急に恐ろしい\n帝王となられてしまって・・[WaitForA]
+\nああ・・・\nこんな話をすれば\nあたしも 殺されちまうよ[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

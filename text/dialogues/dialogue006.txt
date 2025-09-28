@@ -1,0 +1,6 @@
+[StartDialogue(Village)]
+[ShowPortrait(Villager (male), TopLeft, 0x1)]
+強い武器は\n武器レベルが高くないと\n使えないことがあるぜ[WaitForA]
+\n空を飛ぶ者は\n弓に気をつけなよ[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]

@@ -1,0 +1,7 @@
+[StartDialogue(Default)]
+[PlaySong(33, 128)]
+[ShowPortrait(Villager (old man), TopLeft, 0x1)]
+前の戦争のせいで どの国も\nつらい生活を強いられている[WaitForA]
+\n唯一ゆたかなのが\nハーディン皇帝のおさめる\nアカネイアかの[WaitForA]
+[CloseFrame(BottomLeft, 0x0)]
+[End]
