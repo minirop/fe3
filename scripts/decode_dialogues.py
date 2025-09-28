@@ -1,0 +1,62 @@
+#!/usr/bin/env python
+
+import os, subprocess
+
+addresses = [
+'0x70293',
+'0x702AC',
+'0x702B8',
+'0x702C5',
+'0x702D7',
+'0x702E7',
+'0x702F3',
+'0x70301',
+'0x7031F',
+'0x70343',
+'0x70355',
+'0x70364',
+'0x70374',
+'0x7038A',
+'0x70395',
+'0x703A6',
+'0x703B6',
+'0x703C9',
+'0x703DD',
+'0x70401',
+'0x70422',
+'0x7043D',
+'0x7044E',
+'0x70466',
+'0x7047D',
+'0x7048C',
+'0x70498',
+'0x704A9',
+'0x704B7',
+'0x704C3',
+'0x704D4',
+'0x704F2',
+'0x70517',
+'0x7052D',
+'0x7053E',
+'0x7054D',
+'0x70564',
+'0x70570',
+'0x70582',
+'0x70595',
+'0x705A9',
+'0x705BC',
+'0x705DF',
+'0x705FE',
+'0x70619',
+'0x7062C',
+'0x70643',
+]
+
+for addr in addresses:
+	print (f"=== {addr} ===")
+	cmd = f'fe3-text ../fe3.sfc decompile dialogue -o {addr}'
+	result = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE)
+	fname = f'L8E8{addr[4:]}'
+
+	with open(f'{fname}.txt', 'w') as f:
+		f.write(result.stdout.read().decode("utf-8"))

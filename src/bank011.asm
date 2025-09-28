@@ -1826,6 +1826,7 @@ L8B8F85:
 .db TERMINATOR
 
 ; events pointer table
+L8B91F7:
 .dw L8B9297
 .dw L8B929A
 .dw L8B929D
