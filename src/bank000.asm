@@ -779,7 +779,7 @@ L808468:
 	plp
 	rtl
 
-L808607:
+L808607: ; get RNG byte?
 	php
 	sep #$30
 	jsl L808726
@@ -794,7 +794,7 @@ L808607:
 	plp
 	rtl
 
-L808626:
+L808626: ; RNG table?
 .db $FD $65 $BE $22 $E4 $E6 $96 $EB
 .db $F0 $6B $6A $95 $C2 $B3 $4E $CC
 .db $81 $40 $8B $1C $B6 $63 $12 $C7
@@ -828,7 +828,7 @@ L808626:
 .db $86 $EA $39 $5C $55 $EF $B5 $7E
 .db $3D $3A $6D $99 $15 $98 $B9 $2B
 
-L808726:
+L808726: ; update RNG?
 	php
 	sep #$30
 	phx
@@ -7355,7 +7355,7 @@ L80B6A9:
 	asl
 	txy
 	tax
-	lda $B1D940,X
+	lda.l LB1D940,X
 	sta $0876,Y
 	tyx
 	bra L80B6BF
@@ -7578,7 +7578,7 @@ L80B83F:
 	asl
 	bra L80B83F
 L80B845:
-	and $B18010,X
+	and.l LB18010,X
 	beq L80B853
 	ldx #$00E2
 	lda #$01F7
@@ -7748,23 +7748,23 @@ L80B992:
 	dec A
 	asl
 	tax
-	lda $B1D800,X
+	lda.l LB1D800,X
 	sta $0888
 	ldx #$0000
 	brl L80BA26
 L80B9A9:
 	stx $2142
 	tax
-	lda $B1DB01,X
+	lda.l (LB1DB00 + 1),X
 	clc
 	adc #$B000
 	sta $01
 	stz $00
-	lda $B1DB03,X
+	lda.l (LB1DB00 + 3),X
 	inc A
 	lsr
 	sta $088A
-	lda $B1DB05,X
+	lda.l (LB1DB00 + 5),X
 	ldy #$1234
 L80B9C9:
 	cpy $2140
@@ -7776,7 +7776,7 @@ L80B9C9:
 L80B9DA:
 	cmp $2140
 	bne L80B9DA
-	lda $B1DB00,X
+	lda.l LB1DB00,X
 	tay
 	stz $088C
 	lda [$00],Y
@@ -7946,7 +7946,7 @@ L80BB0E:
 	lda $0760
 	and #$00FF
 	tax
-	lda $B1FF00,X
+	lda.l LB1FF00,X
 	and #$00FF
 	beq L80BB38
 	lda $08B5
@@ -7954,11 +7954,11 @@ L80BB0E:
 	inc $08B5
 	dec $0888
 	dec $0888
-	lda $B1FE00,X
+	lda.l LB1FE00,X
 	bra L80BB3F
 L80BB38:
 	stz $08B5
-	lda $B1FD00,X
+	lda.l LB1FD00,X
 L80BB3F:
 	cpy #$FFF6
 	beq L80BB88
@@ -7972,7 +7972,7 @@ L80BB4B:
 	lda $075F
 	and #$00FF
 	tax
-	lda $B1FF00,X
+	lda.l LB1FF00,X
 	and #$00FF
 	beq L80BB75
 	lda $08B5
@@ -7980,11 +7980,11 @@ L80BB4B:
 	inc $08B5
 	dec $0888
 	dec $0888
-	lda $B1FE00,X
+	lda.l LB1FE00,X
 	bra L80BB7C
 L80BB75:
 	stz $08B5
-	lda $B1FD00,X
+	lda.l LB1FD00,X
 L80BB7C:
 	cpy #$FFFA
 	beq L80BBB5
@@ -7997,7 +7997,7 @@ L80BB88:
 	dec A
 	dec A
 	tax
-	lda $B1FB80,X
+	lda.l LB1FB80,X
 	brl L80BBDF
 L80BB97:
 	and #$00FF
@@ -8005,7 +8005,7 @@ L80BB97:
 	dec A
 	dec A
 	tax
-	lda $B1FBC0,X
+	lda.l LB1FBC0,X
 	brl L80BBDF
 L80BBA6:
 	and #$00FF
@@ -8013,7 +8013,7 @@ L80BBA6:
 	dec A
 	dec A
 	tax
-	lda $B1FC00,X
+	lda.l LB1FC00,X
 	brl L80BBDF
 L80BBB5:
 	and #$00FF
@@ -8021,7 +8021,7 @@ L80BBB5:
 	dec A
 	dec A
 	tax
-	lda $B1FC40,X
+	lda.l LB1FC40,X
 	bra L80BBDF
 L80BBC3:
 	and #$00FF
@@ -8029,7 +8029,7 @@ L80BBC3:
 	dec A
 	dec A
 	tax
-	lda $B1FC80,X
+	lda.l LB1FC80,X
 	bra L80BBDF
 L80BBD1:
 	and #$00FF
@@ -8037,7 +8037,7 @@ L80BBD1:
 	dec A
 	dec A
 	tax
-	lda $B1FCC0,X
+	lda.l LB1FCC0,X
 	bra L80BBDF
 L80BBDF:
 	plx
