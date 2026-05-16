@@ -417,7 +417,7 @@ L848C96:
 	sta $4202
 	ldy #$0000
 L848CA1:
-	lda [$00],y
+	lda [$00],Y
 	sta $4203
 	nop
 	nop
@@ -432,7 +432,7 @@ L848CA1:
 	sta $06
 	sep #$20
 	iny
-	lda [$00],y
+	lda [$00],Y
 	sta $4203
 	nop
 	nop
@@ -448,7 +448,7 @@ L848CA1:
 	clc
 	adc $06
 	dey
-	sta [$03],y
+	sta [$03],Y
 	iny
 	iny
 	cpy #$0380
@@ -472,10 +472,10 @@ L848CDA:
 L848CF7:
 	inx
 	inx
-	lda [$03],y
-	sta.l DecompressionLocation,x
-	lda [$00],y
-	sta.l (DecompressionLocation+1),x
+	lda [$03],Y
+	sta.l DecompressionLocation,X
+	lda [$00],Y
+	sta.l (DecompressionLocation+1),X
 	iny
 	cpy #$4000
 	bcc L848CF7

@@ -225,10 +225,10 @@ L878264:
 L87826B:
 	sep #$20
 	ldy #$0001
-	lda [$0f],y
+	lda [$0f],Y
 	sta $0860
 	iny
-	lda [$0f],y
+	lda [$0f],Y
 	sta $0861
 	rep #$20
 	jsl L808CEA
@@ -413,7 +413,7 @@ UNK_DATA_878412:
 L87842B:
 	rep #$20
 	ldy #$0001
-	lda [$0f],y
+	lda [$0f],Y
 	and #$00ff
 	sta $15
 	lda $0860
@@ -423,7 +423,7 @@ L87842B:
 	beq L878475
 	bcs L87845E
 	ldy #$0003
-	lda [$0f],y
+	lda [$0f],Y
 	and #$00ff
 	pha
 	lda $15
@@ -436,7 +436,7 @@ L87842B:
 	bra L878475
 L87845E:
 	ldy #$0003
-	lda [$0f],y
+	lda [$0f],Y
 	and #$00ff
 	pha
 	lda $17
@@ -448,7 +448,7 @@ L87845E:
 	jsl L8784E7
 L878475:
 	ldy #$0002
-	lda [$0f],y
+	lda [$0f],Y
 	and #$00ff
 	sta $15
 	lda $0861
@@ -458,7 +458,7 @@ L878475:
 	beq L8784BD
 	bcs L8784A6
 	ldy #$0003
-	lda [$0f],y
+	lda [$0f],Y
 	and #$00ff
 	pha
 	lda $15
@@ -471,7 +471,7 @@ L878475:
 	bra L8784BD
 L8784A6:
 	ldy #$0003
-	lda [$0f],y
+	lda [$0f],Y
 	and #$00ff
 	pha
 	lda $17
@@ -511,7 +511,7 @@ L8784E7:
 	sta $08df
 L8784F8:
 	ldx $0f84
-	jmp (L8784FE,x)
+	jmp (L8784FE,X)
 
 L8784FE:
 .dw L878506
@@ -546,20 +546,20 @@ L87851C:
 L878536:
 	rep #$20
 	ldy #$0001
-	lda [$0f],y
+	lda [$0f],Y
 	jsl $87a8f4
-	lda $7f4441,x
+	lda $7f4441,X
 	and #$00ff
 	sta $15
-	lda $7f4440,x
+	lda $7f4440,X
 	and #$00ff
 	sta $17
 	ldy #$0003
-	lda [$0f],y
+	lda [$0f],Y
 	and #$00ff
 	tax
 	ldy #$0002
-	lda [$0f],y
+	lda [$0f],Y
 	and #$00ff
 	jsl $879ec9
 	inc $0fa2
@@ -584,14 +584,14 @@ L878576:
 L878590:
 	rep #$20
 	ldy #$0002
-	lda [$0f],y
+	lda [$0f],Y
 	jsl $82dfc1
 	jsl L8087EA
 	ldy #$0020
 	ldx #$0000
 L8785A5:
-	lda $94d060,x
-	sta $7f5310,x
+	lda $94d060,X
+	sta $7f5310,X
 	inx
 	dey
 	inx
@@ -613,11 +613,11 @@ L8785A5:
 L8785D3:
 	rep #$20
 	ldy #$0001
-	lda [$0f],y
+	lda [$0f],Y
 	and #$00ff
 	asl
 	tax
-	lda $8785ef,x
+	lda $8785ef,X
 	jsl L80B467
 	inc $0fa2
 	inc $0fa2
@@ -641,7 +641,7 @@ L8785FB:
 L87860F:
 	rep #$20
 	ldy #$0001
-	lda [$0f],y
+	lda [$0f],Y
 	cmp #$ffff
 	beq L878621
 	jsl L80AA3A
@@ -694,7 +694,7 @@ L878630:
 	clc
 	adc $15
 	tay
-	lda [$0f],y
+	lda [$0f],Y
 	sta $0c
 	sep #$20
 	lda $0fa4
@@ -709,7 +709,7 @@ L878684:
 	cmp #$ffff
 	beq L8786A1
 L878695:
-	sta $7f5d20,x
+	sta $7f5d20,X
 	inx
 	inx
 	inc $0c
@@ -735,20 +735,20 @@ L8786A3:
 L8786B8:
 	sep #$20
 	ldx #$0000
-	lda $0d02,x
+	lda $0d02,X
 	bne L8786F2
 	ldx #$0020
-	lda $0d02,x
+	lda $0d02,X
 	bne L8786F2
 	ldx #$0040
-	lda $0d02,x
+	lda $0d02,X
 	bne L8786F2
 	ldx #$0060
-	lda $0d02,x
+	lda $0d02,X
 	bne L8786F2
 	rep #$20
 	ldy #$0001
-	lda [$0f],y
+	lda [$0f],Y
 	and #$00ff
 	bne L8786EA
 	jsl L838851
@@ -765,7 +765,7 @@ L8786F2:
 L8786F4:
 	rep #$20
 	ldy #$0001
-	lda [$0f],y
+	lda [$0f],Y
 	and #$00ff
 	sta $0f84
 L878701:
@@ -788,7 +788,7 @@ L878722:
 	rep #$20
 	jsl $87875b
 	ldy #$0001
-	lda [$0f],y
+	lda [$0f],Y
 	and #$00ff
 	bne L878742
 	sep #$20

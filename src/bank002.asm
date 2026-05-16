@@ -3063,7 +3063,7 @@ L82992E:
 
 L82A000:
 	php
-	lda $04da,x
+	lda $04da,X
 	and #$00ff
 	bne L82A010
 	sep #$20
@@ -5358,7 +5358,7 @@ L82A012:
 L82E714:
 	php
 L82E715:
-	lda [$00],y
+	lda [$00],Y
 	sep #$20
 	cmp #$00
 	bne L82E722
@@ -5402,22 +5402,22 @@ L82E758:
 L82E75E:
 	rep #$20
 	tya
-	sta $0d00,x
+	sta $0d00,X
 	plp
 	rts
 
 L82E766:
 	php
-	lda $0d16,x
+	lda $0d16,X
 	bne L82E785
-	lda $0d03,x
+	lda $0d03,X
 	and #$00c0
 	cmp #$00c0
 	beq L82E785
 	lda #$0020
 	eor #$ffff
-	and $7ebd21,x
-	sta $7ebd21,x
+	and $7ebd21,X
+	sta $7ebd21,X
 L82E785:
 	plp
 	rts
@@ -5436,7 +5436,7 @@ L82E787:
 	sep #$20
 	plx
 L82E79B:
-	sta $0d12,x
+	sta $0d12,X
 	sta $15
 	rep #$20
 	lda $15
@@ -5445,7 +5445,7 @@ L82E79B:
 	plx
 	sep #$20
 	lda.l ActiveUnit.ClassID
-	sta $0d11,x
+	sta $0d11,X
 	ply
 	plp
 	rts
@@ -5460,7 +5460,7 @@ L82E7B8:
 	asl
 	asl
 	asl
-	sta $0d1a,x
+	sta $0d1a,X
 	bra L82E7CD
 L82E7CA:
 	jsr $e7cf
@@ -5484,7 +5484,7 @@ L82E7E6
 L82E7EB:
 	lda #$0300
 L82E7EE:
-	sta $0d1a,x
+	sta $0d1a,X
 	plp
 	rts
 
@@ -5492,7 +5492,7 @@ L82E7F3:
 	php
 	xba
 	and.b #$03
-	sta $0d0d,x
+	sta $0d0d,X
 	plp
 	rts
 

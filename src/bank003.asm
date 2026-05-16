@@ -1446,7 +1446,7 @@ L8392E1:
 	and #$00ff
 	asl
 	tax
-	jsr (L8392ED,x)
+	jsr (L8392ED,X)
 	rts
 
 L8392ED:
@@ -1698,7 +1698,7 @@ L839521:
 
 L83952D:
 	ldx $08d2
-	lda $0791,x
+	lda $0791,X
 	and #$00ff
 	cmp #$00ff
 	beq L839568
@@ -1708,7 +1708,7 @@ L83952D:
 	pha
 	jsl L83D912
 	ldx $08d2
-	lda $0791,x
+	lda $0791,X
 	and #$00ff
 	jsl L83FBBE
 	pla
@@ -1752,7 +1752,7 @@ L8395AC:
 	and #$00ff
 	asl
 	tax
-	jsr ($95b8,x)
+	jsr ($95b8,X)
 	rts
 
 L8395B8:
@@ -1782,8 +1782,8 @@ L8395C0:
 	jsl L83C083
 	ldx #$002e
 L8395F9:
-	lda.l ActiveUnit.UnitID,x
-	sta $7f5ba0,x
+	lda.l ActiveUnit.UnitID,X
+	sta $7f5ba0,X
 	dex
 	dex
 	bpl L8395F9
@@ -1808,8 +1808,8 @@ L8395F9:
 	sta.l ActiveUnit.EXP
 	ldx #$000f
 L839651:
-	lda $7f5bc0,x
-	sta.l ActiveUnit.Weapons,x
+	lda $7f5bc0,X
+	sta.l ActiveUnit.Weapons,X
 	dex
 	bpl L839651
 	rep #$20
@@ -1902,7 +1902,7 @@ L839728:
 	and #$00ff
 	asl
 	tax
-	jsr (L839734,x)
+	jsr (L839734,X)
 	rts
 
 L839734:
@@ -1976,7 +1976,7 @@ L8397D9:
 	and #$00ff
 	asl
 	tax
-	jsr (L8397EC,x)
+	jsr (L8397EC,X)
 	rts
 
 L8397EC:
@@ -1997,7 +1997,7 @@ L839802:
 	and #$00ff
 	asl
 	tax
-	jsr (L83980E,x)
+	jsr (L83980E,X)
 	rts
 
 L83980E:
@@ -2016,7 +2016,7 @@ L839818:
 	lda $02
 	pha
 	ldy $08f1
-	lda [$00],y
+	lda [$00],Y
 	rep #$30
 	and #$00ff
 	jsl $81da91
@@ -2159,7 +2159,7 @@ L839952:
 	ldx #$0000
 L839965:
 	phx
-	lda.l ActiveUnit.Weapons,x
+	lda.l ActiveUnit.Weapons,X
 	and #$00ff
 	jsl L83EE65
 	bcs L839984
@@ -2197,7 +2197,7 @@ L8399AB:
 	cmp $07ce
 	bne L839A01
 	ldy #$0001
-	lda [$03],y
+	lda [$03],Y
 	cmp #$ff
 	beq L8399D0
 	pha
@@ -2208,7 +2208,7 @@ L8399AB:
 	bne L839A01
 L8399D0:
 	ldy #$0002
-	lda [$03],y
+	lda [$03],Y
 	cmp #$ff
 	beq L8399E8
 	pha
@@ -2219,7 +2219,7 @@ L8399D0:
 	bne L839A01
 L8399E8:
 	ldy #$0003
-	lda [$03],y
+	lda [$03],Y
 	cmp #$ff
 	beq L8399F7
 	jsl $87aa9b
@@ -2227,7 +2227,7 @@ L8399E8:
 L8399F7:
 	rep #$20
 	ldy #$0004
-	lda [$03],y
+	lda [$03],Y
 	sta $08f1
 L839A01:
 	rep #$20
@@ -2268,8 +2268,8 @@ L839A2D:
 	asl
 	tay
 	ldx $19
-	lda $83de,y
-	sta $7f2800,x
+	lda $83de,Y
+	sta $7f2800,X
 	pha
 	phx
 	jsl L83FF49
@@ -2278,8 +2278,8 @@ L839A2D:
 	sbc #$0040
 	tax
 	pla
-	lda $83dc,y
-	sta $7f2800,x
+	lda $83dc,Y
+	sta $7f2800,X
 	jsl L83FF49
 	jsl L83F1D9
 	sep #$20
@@ -2341,7 +2341,7 @@ L839AC7:
 	jsl L83D8F7
 	ldx $19
 	pla
-	sta $7f2800,x
+	sta $7f2800,X
 	jsl L83FF49
 	jsl L83F1D9
 L839AFE:
@@ -2478,7 +2478,7 @@ L839C1D:
 	sta $07df
 	ldx $085d
 	lda #$01
-	sta $701ff8,x
+	sta $701ff8,X
 	lda #$02
 	sta $074a
 	lda #$06
@@ -2643,7 +2643,7 @@ L839D9E:
 	brl	L839E05
 L839DA6:
 	ldy	#$0001
-	lda	[$03],y
+	lda	[$03],Y
 	sec
 	sbc	$08ee
 	bcs	L839DB4
@@ -2656,7 +2656,7 @@ L839DB4:
 	asl
 	sta	$15
 	ldy	#$0002
-	lda	[$03],y
+	lda	[$03],Y
 	sec
 	sbc	$08ef
 	bcs	L839DCB
@@ -2670,7 +2670,7 @@ L839DD1:
 	cmp	#$02
 	beq	L839E05
 	ldy	#$0003
-	lda	[$03],y
+	lda	[$03],Y
 	cmp	#$ff
 	beq	L839DE4
 	jsl	$87aa9b
@@ -2698,7 +2698,7 @@ L839E05:
 L839E12:
 	rep	#$20
 	ldy	#$0005
-	lda	[$03],y
+	lda	[$03],Y
 	jsl	$87aa28
 	lda	#$80b2
 	sta	$0876
@@ -2706,7 +2706,7 @@ L839E12:
 	stz	$93
 	sep	#$20
 	ldy	#$0004
-	lda	[$03],y
+	lda	[$03],Y
 	xba
 	lda	#$00
 	xba
@@ -3164,11 +3164,11 @@ L83A205:
 	stz $19
 	jsl L83D8F7
 	ldx $19
-	lda $7f3800,x
+	lda $7f3800,X
 	and #$00ff
 	cmp #$00ff
 	beq L83A260
-	lda $7f2800,x
+	lda $7f2800,X
 	cmp #$0400
 	bcs L83A260
 	sep #$20
@@ -3270,7 +3270,7 @@ L83A319:
 	and #$00ff
 	asl
 	tax
-	jsr (L83A331,x)
+	jsr (L83A331,X)
 	sep #$20
 	lda $08f0
 	sta $08f7
@@ -3308,7 +3308,7 @@ L83A361:
 	and #$00ff
 	asl
 	tax
-	jsr (L83A36D,x)
+	jsr (L83A36D,X)
 	rts
 
 L83A36D:
@@ -3332,7 +3332,7 @@ L83A38C:
 	and #$00ff
 	asl
 	tax
-	jsr (L83A398,x)
+	jsr (L83A398,X)
 	rts
 
 L83A398:
@@ -3384,7 +3384,7 @@ L83A3D8:
 	inc $08d4
 	rep #$20
 	tax
-	lda.l ActiveUnit.Weapons,x
+	lda.l ActiveUnit.Weapons,X
 	and #$00ff
 	ora #$0e00
 	sta.l WRMPYA
@@ -3393,7 +3393,7 @@ L83A3D8:
 	nop
 	lda.l RDMPYL
 	tax
-	lda $88a6f4,x
+	lda $88a6f4,X
 	bit #$0004
 	bne L83A43A
 	lda $0909
@@ -3458,7 +3458,7 @@ L83A488:
 	lda $0903
 	sta $1f
 	jsr L83F801
-	lda $7f2800,x
+	lda $7f2800,X
 	and #$00ff
 	sep #$20
 	sta $08f2
@@ -3492,7 +3492,7 @@ L83A4CA:
 	stz $19
 	jsl L83D8F7
 	ldx $19
-	lda $7f2800,x
+	lda $7f2800,X
 	cmp #$0400
 	bmi L83A50F
 	and #$0020
@@ -3503,7 +3503,7 @@ L83A4CA:
 	sep #$20
 	cmp $07d3
 	beq L83A50F
-	lda $7f2800,x
+	lda $7f2800,X
 	sta $08f2
 	lda #$01
 	sta $08f0
@@ -3523,7 +3523,7 @@ L83A515:
 	and #$00ff
 	asl
 	tax
-	jsr (L83A521,x)
+	jsr (L83A521,X)
 	rts
 
 L83A521:
@@ -3594,7 +3594,7 @@ L83A657:
 	and #$00ff
 	asl
 	tax
-	jsr (L83A663,x)
+	jsr (L83A663,X)
 	rts
 
 L83A663:
@@ -3615,7 +3615,7 @@ L83A692:
 	and #$00ff
 	asl
 	tax
-	jsr (L83A69E,x)
+	jsr (L83A69E,X)
 	rts
 
 L83A69E:
@@ -3634,7 +3634,7 @@ L83A6DF:
 	and #$00ff
 	asl
 	tax
-	jsr (L83A6EB,x)
+	jsr (L83A6EB,X)
 	rts
 
 L83A6EB:
@@ -4696,7 +4696,7 @@ L83C155:
 
 L83C15F:
 	jsr L83BA9D
-	lda $0aa3,y
+	lda $0aa3,Y
 	jsr L83BA9D
 	bit #$01
 	bne L83C174
@@ -6009,15 +6009,15 @@ L83DBB7:
 	beq L83DBC4
 	iny
 L83DBC4:
-	lda $0787,y
+	lda $0787,Y
 	sta.l ActiveUnit.YPosition
-	lda $0789,y
+	lda $0789,Y
 	sta.l ActiveUnit.XPosition
 	tya
 	asl
 	tay
 	rep #$20
-	lda $07c0,y
+	lda $07c0,Y
 	sta.l ActiveUnit.Terrain
 	rep #$10
 	jsr L83DB89
@@ -7388,7 +7388,7 @@ L83E666:
 	cmp $07ce
 	bne L83E6D9
 	ldy #$0001
-	lda [$03],y
+	lda [$03],Y
 	cmp #$ff
 	beq L83E679
 	cmp $7F4416
@@ -7397,14 +7397,14 @@ L83E679:
 	jsr L83E737
 	bcs L83E6D9
 	ldy #$0004
-	lda [$03],y
+	lda [$03],Y
 	cmp #$ff
 	beq L83E68E
 	jsl $87aa9b
 	bcs L83E6D9
 L83E68E:
 	ldy #$0005
-	lda [$03],y
+	lda [$03],Y
 	cmp #$06
 	bne L83E6D9
 	rep #$20
@@ -7417,7 +7417,7 @@ L83E68E:
 	stz $19
 	jsl L83D8F7
 	ldx $19
-	lda $7f2800,x
+	lda $7f2800,X
 	jsl L83F7D5
 	cmp #$000a
 	bne L83E6D9
@@ -7460,22 +7460,22 @@ L83E700:
 	php
 	sep #$20
 	ldy #$0002
-	lda [$03],y
+	lda [$03],Y
 	sta $08f5
 	iny
-	lda [$03],y
+	lda [$03],Y
 	sta $08f6
 	ldy #$0006
-	lda [$03],y
+	lda [$03],Y
 	sta $08f1
 	iny
-	lda [$03],y
+	lda [$03],Y
 	sta $08f2
 	iny
-	lda [$03],y
+	lda [$03],Y
 	sta $08f3
 	iny
-	lda [$03],y
+	lda [$03],Y
 	sta $08f4
 	rep #$20
 	plp
@@ -7496,20 +7496,20 @@ L83E73D:
 	lda $08ef
 	sta $1f
 	dex
-	lda $8383c4,x
+	lda $8383c4,X
 	clc
 	adc $1f
 	sta $1f
-	lda $8383c3,x
+	lda $8383c3,X
 	clc
 	adc $1d
 	sta $1d
 	ldy #$0002
-	lda [$03],y
+	lda [$03],Y
 	cmp $1d
 	bne L83E76D
 	iny
-	lda [$03],y
+	lda [$03],Y
 	cmp $1f
 	bne L83E76D
 	plp
@@ -7558,7 +7558,7 @@ L83E7B6:
 	cmp $07ce
 	bne L83E82E
 	ldy #$0001
-	lda [$03],y
+	lda [$03],Y
 	cmp #$ff
 	beq L83E7CA
 	cmp.l ActiveUnit.NameID
@@ -7567,14 +7567,14 @@ L83E7CA:
 	jsr L83E737
 	bcs L83E82E
 	ldy #$0004
-	lda [$03],y
+	lda [$03],Y
 	cmp #$ff
 	beq L83E7DE
 	jsl $87AA9B
 	bcs L83E82E
 L83E7DE:
 	ldy #$0005
-	lda [$03],y
+	lda [$03],Y
 	cmp #$05
 	bne L83E82E
 	rep #$20
@@ -7587,7 +7587,7 @@ L83E7DE:
 	stz $19
 	jsl L83D8F7
 	ldx $19
-	lda $7f2800,x
+	lda $7f2800,X
 	cmp #$0400
 	bpl L83E82E
 	jsl L83F7D5
@@ -7655,31 +7655,31 @@ L83E898:
 	cmp $07ce
 	bne L83E918
 	ldy #$0001
-	lda [$03],y
+	lda [$03],Y
 	cmp #$ff
 	beq L83E8AC
 	cmp.l ActiveUnit.NameID
 	bne L83E918
 L83E8AC:
 	iny
-	lda [$03],y
+	lda [$03],Y
 	sta $1d
 	cmp $08ee
 	bne L83E918
 	iny
-	lda [$03],y
+	lda [$03],Y
 	sta $1f
 	cmp $08ef
 	bne L83E918
 	iny
-	lda [$03],y
+	lda [$03],Y
 	cmp #$ff
 	beq L83E8CD
 	jsl $87aa9b
 	bcs L83E918
 L83E8CD:
 	ldy #$0005
-	lda [$03],y
+	lda [$03],Y
 	cmp #$07
 	bne L83E918
 	rep #$20
@@ -7692,7 +7692,7 @@ L83E8CD:
 	stz $19
 	jsl L83D8F7
 	ldx $19
-	lda $7f2800,x
+	lda $7f2800,X
 	jsl L83F7D5
 	cmp #$0009
 	bne L83E918
@@ -7730,7 +7730,7 @@ L83E928:
 	beq L83E99E
 	ldx #$0000
 L83E946:
-	lda $e9a1,x
+	lda $e9a1,X
 	cmp #$ff
 	beq L83E99E
 	cmp.l ActiveUnit.ClassID
@@ -7759,7 +7759,7 @@ L83E956:
 	jsl $80a89d
 	lda [$00]
 	sta $00
-	lda [$00],y
+	lda [$00],Y
 	and #$00ff
 	cmp #$00ff
 	beq L83E99E
@@ -7781,7 +7781,7 @@ L83E9A5:
 	sep #$20
 	ldx #$0000
 L83E9BD:
-	lda $ea1b,x
+	lda $ea1b,X
 	cmp #$ff
 	beq L83EA18
 	cmp.l ActiveUnit.ClassID
@@ -7792,7 +7792,7 @@ L83E9BD:
 L83E9CE:
 	inx
 	rep #$20
-	lda $ea1b,x
+	lda $ea1b,X
 	and #$00ff
 	pha
 	lda $08ee
@@ -7814,7 +7814,7 @@ L83E9CE:
 	jsl $80a89d
 	lda [$00]
 	sta $00
-	lda [$00],y
+	lda [$00],Y
 	and #$00ff
 	cmp #$00ff
 	beq L83EA18
@@ -7847,7 +7847,7 @@ L83EA50:
 	phx
 	jsr L83F801
 	bcs L83EA7A
-	lda $7f2800,x
+	lda $7f2800,X
 	jsl L83D912
 	lda.l ActiveUnit.NameID
 	and #$00ff
@@ -7861,7 +7861,7 @@ L83EA6F:
 	asl
 	tax
 	lda $1f
-	eor $f7bb,x
+	eor $f7bb,X
 	sta $1f
 L83EA7A:
 	plx
@@ -7903,7 +7903,7 @@ L83EACB:
 	phx
 	jsr L83F801
 	bcs L83EAF6
-	lda $7f2800,x
+	lda $7f2800,X
 	jsl L83D912
 	lda.l ActiveUnit.HasMoved
 	and #$0001
@@ -7913,7 +7913,7 @@ L83EACB:
 	txa
 	asl
 	tax
-	lda $f7bb,x
+	lda $f7bb,X
 	ora $090b
 	sta $090b
 	lda #$000f
@@ -7945,7 +7945,7 @@ L83EB0B:
 	stz $19
 	jsl L83D8F7
 	ldx $19
-	lda $7f2800,x
+	lda $7f2800,X
 	jsl L83F7D5
 	cmp #$0003
 	bne L83EB36
@@ -8012,7 +8012,7 @@ L83EB79:
 	nop
 	lda.l RDMPYL
 	tax
-	lda $88a6e9,x
+	lda $88a6e9,X
 	and.w #$0008
 	beq L83EBA2
 	clc
@@ -8052,7 +8052,7 @@ L83EBBE:
 	bcc L83EBBB
 	asl
 	tax
-	lda $93cee8,x
+	lda $93cee8,X
 	sta $09
 	lda [$09]
 	and.w #$00ff
@@ -8062,7 +8062,7 @@ L83EBBE:
 	ldx #$0800
 L83EBE6:
 	phx
-	lda $7f27fe,x
+	lda $7f27fe,X
 	cmp.w #$0400
 	bpl L83EBFC
 	jsl L83F7D5
@@ -8166,14 +8166,14 @@ L83EC9B:
 	phx
 	jsr L83F801
 	bcs L83ECCF
-	lda $7f2800,x
+	lda $7f2800,X
 	jsl L83D912
 	ldx #$0003
 L83ECAC:
 	sep #$20
-	lda.l ActiveUnit.Weapon1,x
+	lda.l ActiveUnit.Weapon1,X
 	xba
-	lda.l ActiveUnit.Weapon1Uses,x
+	lda.l ActiveUnit.Weapon1Uses,X
 	xba
 	phx
 	jsr L83CA75
@@ -8187,7 +8187,7 @@ L83ECAC:
 	asl
 	tax
 	lda $1f
-	eor $f7bb,x
+	eor $f7bb,X
 	sta $1f
 L83ECCF:
 	rep #$20
@@ -8276,10 +8276,10 @@ L83ED1B:
 	nop
 	lda.l RDMPYL
 	tax
-	lda $88a6e9,x
+	lda $88a6e9,X
 	and #$0020
 	beq L83ED8A
-	lda $88a6ec,x
+	lda $88a6ec,X
 	and #$00ff
 	cmp #$00ff
 	beq L83ED8A
@@ -8402,7 +8402,7 @@ L83EE2F:
 	nop
 	lda.l RDMPYL
 	tax
-	lda $88a6f4,x
+	lda $88a6f4,X
 	and #$0080
 	bne L83EE52
 	pla
@@ -8470,11 +8470,11 @@ L83EE9B:
 	nop
 	lda.l RDMPYL
 	tax
-	lda $88a6f5,x
+	lda $88a6f5,X
 	and #$00ff
 	asl
 	tax
-	lda.l EQUIPEMENTS_PER_CLASS_TABLE,x
+	lda.l EQUIPEMENTS_PER_CLASS_TABLE,X
 	sta $00
 	sep #$20
 	lda #$88
@@ -8514,7 +8514,7 @@ L83EEF9:
 	nop
 	lda.l RDMPYL
 	tax
-	lda.l ITEMS_DATA,x
+	lda.l ITEMS_DATA,X
 	sep #$20
 	and #$03
 	beq L83EF18
@@ -8545,7 +8545,7 @@ L83EF3A:
 	lda.l RDMPYL
 	tax
 	sep #$20
-	lda $88a6eb,x
+	lda $88a6eb,X
 	bit #$80
 	bne L83EF5F
 	dec A
@@ -8561,7 +8561,7 @@ L83EF5F:
 	and #$00ff
 	asl
 	tax
-	lda $88a48e,x
+	lda $88a48e,X
 	sta $00
 	sep #$20
 	lda #$88
@@ -8702,12 +8702,12 @@ L83F057:
 	asl
 	tay
 	sep #$20
-	lda $83c4,y
+	lda $83c4,Y
 	clc
 	adc.l ActiveUnit.YPosition
 	sta $085e
 	iny
-	lda $83c4,y
+	lda $83c4,Y
 	clc
 	adc.l ActiveUnit.XPosition
 	sta $085f
@@ -8731,13 +8731,13 @@ L83F082:
 	lda #$4420
 	sta $00
 	sep #$20
-	lda.l ActiveUnit.Weapons,x
+	lda.l ActiveUnit.Weapons,X
 	pha
-	lda.l ActiveUnit.WeaponsUses,x
+	lda.l ActiveUnit.WeaponsUses,X
 	pha
 	lda #$ff
-	sta.l ActiveUnit.Weapons,x
-	sta.l ActiveUnit.WeaponsUses,x
+	sta.l ActiveUnit.Weapons,X
+	sta.l ActiveUnit.WeaponsUses,X
 	jsl $93e31d
 	pla
 	sta.l ActiveUnit.Weapon1Uses
@@ -8765,13 +8765,13 @@ L83F0CE:
 	lda #$4428
 	sta $00
 	sep #$20
-	lda.l ActiveUnit.Items,x
+	lda.l ActiveUnit.Items,X
 	pha
-	lda.l ActiveUnit.ItemsUses,x
+	lda.l ActiveUnit.ItemsUses,X
 	pha
 	lda #$ff
-	sta.l ActiveUnit.Items,x
-	sta.l ActiveUnit.ItemsUses,x
+	sta.l ActiveUnit.Items,X
+	sta.l ActiveUnit.ItemsUses,X
 	jsl $93e31d
 	pla
 	sta.l ActiveUnit.Item1Uses
@@ -8856,7 +8856,7 @@ L83F1AC:
 	ldx #$0000
 	sep #$20
 L83F1C4:
-	cmp $0a9c,x
+	cmp $0a9c,X
 	beq L83F1CC
 	inx
 	bra L83F1C4
@@ -8905,7 +8905,7 @@ L83F20C:
 	pha
 	asl
 	tax
-	lda $83f2e2,x
+	lda $83f2e2,X
 	jsl $80aa24
 	lda #$8900
 	sta $01
@@ -8930,7 +8930,7 @@ L83F23E:
 	phy
 	ldy $1b
 L83F241:
-	lda $7f2800,x
+	lda $7f2800,X
 	cmp #$0400
 	bcc L83F260
 	phx
@@ -8946,7 +8946,7 @@ L83F241:
 	bra L83F266
 L83F260:
 	lda [$00]
-	sta $7f2800,x
+	sta $7f2800,X
 L83F266:
 	inc $00
 	inc $00
@@ -9079,7 +9079,7 @@ L83F368:
 	asl
 	rep #$20
 	tax
-	lda $83f380,x
+	lda $83f380,X
 	jsl L80AA3A
 	plp
 	rtl
@@ -9101,7 +9101,7 @@ L83F3B8:
 	ldx #$0800
 L83F3C4:
 	rep #$30
-	lda $7f37fe,x
+	lda $7f37fe,X
 	cmp #$ffff
 	beq L83F41C
 	phx
@@ -9119,14 +9119,14 @@ L83F3C4:
 	lda.l RDMPYL
 	sep #$20
 	tax
-	lda.l ITEMS_DATA,x
+	lda.l ITEMS_DATA,X
 	bit #$d7
 	bne L83f3f8
 L83F3F5:
 	plx
 	bra L83F41C
 L83f3f8:
-	lda $88a6ec,x
+	lda $88a6ec,X
 	clc
 	adc.l ActiveUnit.Strength
 	lsr
@@ -9134,14 +9134,14 @@ L83f3f8:
 	lsr
 	plx
 	clc
-	adc $7f1ffe,x
+	adc $7f1ffe,X
 	cmp #$0a
 	bcc L83F416
-	lda $7f1ffe,x
+	lda $7f1ffe,X
 	and #$e0
 	ora #$0a
 L83F416:
-	sta $7f1ffe,x
+	sta $7f1ffe,X
 	rep #$20
 L83F41C:
 	dex
@@ -9156,14 +9156,14 @@ L83F423:
 	sep #$20
 	lda.l ActiveUnit.YPosition
 	clc
-	adc $8383c4,x
+	adc $8383c4,X
 	rep #$20
 	and #$00ff
 	sta $15
 	sep #$20
 	lda.l ActiveUnit.XPosition
 	clc
-	adc $8383c5,x
+	adc $8383c5,X
 	rep #$20
 	and #$00ff
 	sta $17
@@ -9177,14 +9177,14 @@ L83F423:
 	tya
 	cmp #$0004
 	bpl L83f469
-	lda $7f2000,x
+	lda $7f2000,X
 	ora #$0040
 	bra L83F470
 L83f469:
-	lda $7f2000,x
+	lda $7f2000,X
 	ora #$0080
 L83F470:
-	sta $7f2000,x
+	sta $7f2000,X
 	dey
 	bpl L83F423
 	plp
@@ -9203,7 +9203,7 @@ L83F47C:
 	ldy #$0800
 	ldx #$0000
 L83F48B:
-	sta $7f5d20,x
+	sta $7f5d20,X
 	inx
 	dey
 	inx
@@ -9246,7 +9246,7 @@ L83F4E9:
 	ldy #$0800
 	ldx #$0000
 L83F4F5:
-	sta $7f5d20,x
+	sta $7f5d20,X
 	inx
 	dey
 	inx
@@ -9268,7 +9268,7 @@ L83F513:
 	ldy #$07fe
 	ldx #$0000
 L83F51F:
-	sta $7f5d22,x
+	sta $7f5d22,X
 	inx
 	dey
 	inx
@@ -9278,7 +9278,7 @@ L83F51F:
 	ldy #$000c
 	ldx #$0000
 L83F532:
-	sta.l DecompressionLocation,x
+	sta.l DecompressionLocation,X
 	inx
 	dey
 	inx
@@ -9295,29 +9295,29 @@ L83F532:
 	ldy #$0000
 L83F555:
 	ldx $19
-	lda $7f3800,x
+	lda $7f3800,X
 	and #$00ff
 	bne L83F563
 	brl L83F60B
 L83F563:
 	phx
 	phy
-	lda $7f37fe,x
+	lda $7f37fe,X
 	and #$00ff
 	sta $15
-	lda $7f3802,x
+	lda $7f3802,X
 	and #$00ff
 	cmp $15
 	bcs L83F57B
 	sta $15
 L83F57B:
-	lda $7f37c0,x
+	lda $7f37c0,X
 	and #$00ff
 	cmp $15
 	bcs L83F588
 	sta $15
 L83F588:
-	lda $7f3840,x
+	lda $7f3840,X
 	and #$00ff
 	cmp $15
 	bcs L83F595
@@ -9333,7 +9333,7 @@ L83F595:
 	and #$0007
 	tay
 L83F5A9:
-	lda $7f37fe,x
+	lda $7f37fe,X
 	and #$00ff
 	cmp $15
 	bne L83f5ba
@@ -9341,7 +9341,7 @@ L83F5A9:
 	dey
 	bmi L83F5ED
 L83f5ba:
-	lda $7f3802,x
+	lda $7f3802,X
 	and #$00ff
 	cmp $15
 	bne L83F5CB
@@ -9349,7 +9349,7 @@ L83f5ba:
 	dey
 	bmi L83F5ED
 L83F5CB:
-	lda $7f37c0,x
+	lda $7f37c0,X
 	and #$00ff
 	cmp $15
 	bne L83F5DC
@@ -9357,7 +9357,7 @@ L83F5CB:
 	dey
 	bmi L83F5ED
 L83F5DC:
-	lda $7f3840,x
+	lda $7f3840,X
 	and #$00ff
 	cmp $15
 	bne L83F5A9
@@ -9369,7 +9369,7 @@ L83F5ED:
 	pha
 	asl
 	tax
-	lda $f634,x
+	lda $f634,X
 	clc
 	adc $19
 	sta $19
@@ -9377,7 +9377,7 @@ L83F5ED:
 	eor #$0001
 	sep #$20
 	tyx
-	sta.l DecompressionLocation,x
+	sta.l DecompressionLocation,X
 	plx
 	rep #$20
 	iny
@@ -9390,16 +9390,16 @@ L83F60B:
 L83f612:
 	phx
 	tyx
-	lda.l DecompressionLocation,x
+	lda.l DecompressionLocation,X
 	and #$00ff
 	xba
 	ora #$0002
 	plx
-	sta $7f5d22,x
+	sta $7f5d22,X
 	inx
 	inx
 	lda #$1005
-	sta $7f5d22,x
+	sta $7f5d22,X
 	inx
 	inx
 	dey
@@ -9423,7 +9423,7 @@ L83F63C:
 	jsl L80A89D
 	lda [$00]
 	sta $00
-	lda $7f2800,x
+	lda $7f2800,X
 	and #$07ff
 	cmp #$0400
 	bcc L83F679
@@ -9435,11 +9435,11 @@ L83F63C:
 	nop
 	lda.l RDMPYL
 	tax
-	lda $7f4436,x
+	lda $7f4436,X
 L83F679:
 	and #$03ff
 	tay
-	lda [$00],y
+	lda [$00],Y
 	and #$00ff
 	plp
 	rtl
@@ -9477,7 +9477,7 @@ L83F6A8:
 	nop
 	lda.l RDMPYL
 	tax
-	lda $88a6f4,x
+	lda $88a6f4,X
 	and #$00ff
 	sta $1b
 	bit #$0004
@@ -9537,7 +9537,7 @@ L83F71D:
 	phx
 	stz $15
 	stz $17
-	lda $8383c4,x
+	lda $8383c4,X
 	sep #$20
 	clc
 	adc $08ee
@@ -9573,17 +9573,17 @@ L83F754:
 
 L83F75F:
 	ldx $19
-	lda $7f2800,x
+	lda $7f2800,X
 	cmp #$0400
 	bmi L83F79B
 	lda $1b
 	cmp #$00ff
 	beq L83f793
-	lda $7f2800,x
+	lda $7f2800,X
 	and #$0020
 	cmp $1b
 	bne L83F79B
-	lda $7f2800,x
+	lda $7f2800,X
 	and #$00ff
 	asl
 	asl
@@ -9591,12 +9591,12 @@ L83F75F:
 	asl
 	asl
 	tax
-	lda $7f4436,x
+	lda $7f4436,X
 	jsl $93d29c
 	bcs L83F79B
 L83f793:
 	tyx
-	lda $f7bb,x
+	lda $f7bb,X
 	ora $1d
 	sta $1d
 L83F79B:
@@ -9604,7 +9604,7 @@ L83F79B:
 
 L83F79C:
 	ldx $19
-	lda $7f2800,x
+	lda $7f2800,X
 	cmp #$0400
 	bpl L83F7BA
 	jsl L83F7D5
@@ -9612,7 +9612,7 @@ L83F79C:
 	cmp $1b
 	bne L83F7BA
 	tyx
-	lda.w L83F7BB,x
+	lda.w L83F7BB,X
 	ora $1d
 	sta $1d
 L83F7BA:
@@ -9649,7 +9649,7 @@ L83F7D5:
 	pla
 	and #$03ff
 	tay
-	lda [$00],y
+	lda [$00],Y
 	and #$00ff
 	jsl L829806
 	plp
@@ -9659,12 +9659,12 @@ L83F801:
 	txa
 	asl
 	tax
-	lda.w L83F7BB,x
+	lda.w L83F7BB,X
 	and $1f
 	beq L83F82E
 	stz $15
 	stz $17
-	lda $8383c4,x
+	lda $8383c4,X
 	sep #$20
 	clc
 	adc $08ee
@@ -9698,14 +9698,14 @@ L83F83C:
 	asl
 	tax
 	lda $0903
-	bit.w L83F7BB,x
+	bit.w L83F7BB,X
 	beq L83F830
 	sta $1f
 	lda $0902
 	and #$00ff
 	tax
 	jsr L83F801
-	lda $7f2800,x
+	lda $7f2800,X
 	jsl L83D912
 	stz $93
 	stz $91
@@ -9730,14 +9730,14 @@ L83F882:
 	asl
 	tax
 	lda $0903
-	bit $f7bb,x
+	bit $f7bb,X
 	beq L83F878
 	sta $1f
 	lda $0902
 	and #$00ff
 	tax
 	jsr L83F801
-	lda $7f2800,x
+	lda $7f2800,X
 	jsl L83D912
 	stz $93
 	stz $91
@@ -10053,7 +10053,7 @@ L83FF0C:
 	ldx #$00
 L83FF0E:
 	lda #$ff
-	sta.l ActiveUnit.Weapons,x
+	sta.l ActiveUnit.Weapons,X
 	inx
 	cpx #$08
 	bne L83FF0E
@@ -10074,7 +10074,7 @@ L83FF27:
 	tax
 	pla
 	sep #$20
-	sta $07f6,x
+	sta $07f6,X
 	inc $0858
 	lda $0858
 	cmp #$11
@@ -10095,9 +10095,9 @@ L83FF49:
 	asl
 	tax
 	pla
-	sta $0806,x
+	sta $0806,X
 	pla
-	sta $0808,x
+	sta $0808,X
 	sep #$20
 	inc $0859
 	lda $0859
@@ -10121,7 +10121,7 @@ L83FF79:
 	cmp $07ce
 	bne L83FFEC
 	ldy #$0001
-	lda [$03],y
+	lda [$03],Y
 	cmp #$ff
 	beq L83FF95
 	cmp.l ActiveUnit.NameID
@@ -10130,13 +10130,13 @@ L83FF95:
 	jsr L83E72F
 	bcs L83FFEC
 	ldy #$0004
-	lda [$03],y
+	lda [$03],Y
 	cmp #$ff
 	beq 06
 	jsl $87AA9B
 	bcs L83FFEC
 	ldy #$0005
-	lda [$03],y
+	lda [$03],Y
 	cmp #$05
 	bne L83FFEC
 	rep #$20
@@ -10149,7 +10149,7 @@ L83FF95:
 	stz $19
 	jsl L83D8F7
 	ldx $19
-	lda $7f2800,x
+	lda $7f2800,X
 	cmp #$0400
 	bpl L83FFEC
 	jsl L83F7D5
