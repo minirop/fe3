@@ -508,13 +508,13 @@ L8083C4:
 	php
 	lda $0455
 	and #$80
-	beq L8083E2
+	beq L8083E1
 	plp
 	cpy $0455
 	bcc L8083E6
 	ldy #$00
 	bra L8083E6
-L8083E2:
+L8083E1:
 	plp
 	bcc L8083E6
 	ldy #$ff
