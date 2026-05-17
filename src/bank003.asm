@@ -2145,10 +2145,10 @@ L83991C:
 	jsl $93d951
 	lda $08f0
 	cmp #$10
-	bne L839952
+	bne L839951
 	lda #$ff
 	sta.l $7f4414
-L839952:
+L839951:
 	lda #$01
 	sta $08d1
 	lda #$04
@@ -7390,10 +7390,10 @@ L83E666:
 	ldy #$0001
 	lda [$03],Y
 	cmp #$ff
-	beq L83E679
+	beq L83E67A
 	cmp $7F4416
 	bne L83E6D9
-L83E679:
+L83E67A:
 	jsr L83E737
 	bcs L83E6D9
 	ldy #$0004

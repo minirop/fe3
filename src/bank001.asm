@@ -4072,18 +4072,18 @@ L81A314:
 	sep #$20
 	lda $0C00
 	cmp #$01
-	beq L81A31F
+	beq L81A320
 	jsr $A32D
-L81A31F:
+L81A320:
 	lda $0C00
 	cmp $0BFF
-	beq L81A32A
+	beq L81A32B
 	jsr $A343
-L81A32A:
+L81A32B:
 	plp
 	rts
 
-L81A32C:
+L81A32D:
 	php
 	rep #$20
 	ldx #$01BA
