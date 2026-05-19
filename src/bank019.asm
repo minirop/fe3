@@ -3333,7 +3333,7 @@ L93E61A:
 	sta $00
 	lda $07CE
 	and #$00FF
-	jsl $80A89D
+	jsl L80A89D
 	inc $00
 	lda [$00]
 	clc

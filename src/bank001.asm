@@ -12513,6 +12513,8 @@ L81E8B2:
 	sta $0BB0
 	plp
 	bra L81E93E
+
+L81E8D7:
 	php
 	rep #$20
 	lda #$0001
@@ -12532,6 +12534,8 @@ L81E8B2:
 	sta $0BB0
 	plp
 	bra L81E93E
+
+L81E906:
 	php
 	rep #$20
 	lda $085D

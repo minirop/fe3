@@ -9,6 +9,7 @@ L808000:
 	jsr L80801D
 	jsr L80824C
 	bra L80801C
+
 L80800A:
 	stz $045e
 	stz $0453
@@ -3125,7 +3126,7 @@ L809711:
 	phy
 	ldy $01
 	phy
-	jsl $809777
+	jsl L809777
 	lda $00
 	sta $03
 	lda $01
@@ -5154,7 +5155,7 @@ L80A6A7:
 	sta $5a
 	lda #$8000
 	sta $63
-	lda #$94be ; L8094be
+	lda #$94be ; L8094BE
 	sta $62
 	jsl L8093A2
 	lda $17
@@ -5301,7 +5302,7 @@ L80A7A6:
 	inx
 	dey
 	bne L80A7A6
-	jsl $81DB8F
+	jsl L81DB8F
 	sep #$20
 	lda $07DF
 	cmp #$15

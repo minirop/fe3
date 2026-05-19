@@ -5944,7 +5944,7 @@ L87B1AE:
 	lda #$00
 	sta $7F5D2B
 	jsl $82E4A1
-	jsl $81E475
+	jsl L81E475
 	rep #$20
 L87B20B:
 	ldx #$00F0
