@@ -222,6 +222,7 @@ L838357:
 .db $29 $2B $2B $2C $29
 
 L8384B4:
+.ACCU 16
 	lda $08D0
 	and #$00FF
 	asl A
