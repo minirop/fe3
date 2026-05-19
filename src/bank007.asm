@@ -9,7 +9,7 @@ L878000:
 	lda $0F9E
 	beq L87800C
 	plp
-	jmp $80F3
+	jmp L8780F3
 
 L87800C:
 	lda #$87
@@ -59,7 +59,7 @@ L87804B:
 	inc $0FA9
 	lda #$87
 	ldx #$806C
-	jsl $87816D
+	jsl L87816D
 	rts
 
 L87806C:
@@ -75,7 +75,7 @@ L87806C:
 
 L8780B4:
 	sep #$20
-	jsl $87817D
+	jsl L87817D
 	lda $0FA8
 	cmp #$FF
 	bne L8780C5
@@ -104,7 +104,7 @@ L8780DD:
 	stx $0FA9
 	lda #$01
 	sta $0F9E
-	jmp $8000
+	jmp L878000
 
 L8780F3:
 ;.ACCU 16
@@ -1231,19 +1231,21 @@ L8789A4:
 	jsl L8087EA
 	lda #$0000
 	jsl L8795C7
+L878A8F:
 	lda #$0001
 	jsl L8795EB
 	lda #$0000
 	jsl L879641
 	bcs L878AA2
-	jmp $8B6C
+	jmp L878B6C
 
 L878AA2:
 	lda $0BB6
 	and #$00FF
 	cmp #$000C
 	beq L878AB0
-	jmp $8E00
+	jmp L878E00
+
 L878AB0:
 	lda $7F4400
 	and #$00FF
@@ -1257,7 +1259,8 @@ L878AC1:
 	lda #$0002
 	jsl L879641
 	bcs L878AD4
-	jmp $8B48
+	jmp L878B48
+
 L878AD4:
 	lda $0BB6
 	and #$00FF
@@ -1270,8 +1273,10 @@ L878AD4:
 	ldx #$0C0A
 	stx $0BBD
 	bra L878B01
+
 L878AF0:
 	bra L878AF2
+
 L878AF2:
 	sep #$20
 	stz $0F95
@@ -1279,12 +1284,15 @@ L878AF2:
 	ldx #$0C0A
 	stx $0BBD
 	bra L878B01
+
 L878B01:
 	lda #$0002
 	jsl L8795EB
+L878B08:
 	jsl L879140
 	bcs L878B11
-	jmp $8B48
+	jmp L878B48
+
 L878B11:
 	sep #$20
 	lda #$28
@@ -1294,6 +1302,7 @@ L878B11:
 	bcs L878B26
 	stz $0C14
 	bra L878B2B
+
 L878B26:
 	lda #$01
 	sta $0C14
@@ -1306,7 +1315,9 @@ L878B2B:
 	jsl L879394
 	jsl L87B0E5
 	jsl L8087EA
-	jmp $8C40
+	jmp L878C40
+
+L878B48:
 	lda #$0004
 	jsl L8795EB
 	lda #$0001
@@ -1317,9 +1328,12 @@ L878B2B:
 	cmp #$000C
 	bne L878B69
 	jsr L8798F9
-	jmp $8A8F
+	jmp L878A8F
+
 L878B69:
-	jmp $8B6C
+	jmp L878B6C
+
+L878B6C:
 	lda #$000D
 	jsl L8795EB
 L878B73:
@@ -1330,6 +1344,7 @@ L878B73:
 	bit #$8000
 	bne L878B86
 	bra L878B73
+
 L878B86:
 	rep #$20
 	ldx #$0B01
@@ -1417,47 +1432,47 @@ L878C40:
 	cmp #$000C
 	beq L878C6F
 L878C6C:
-	jmp $8DBC
+	jmp L878DBC
 
 L878C6F:
 	lda $07F1
 	sec
 	sbc $0F9A
 	bcs L878C7B
-	jmp $8DCA
+	jmp L878DCA
 
 L878C7B:
 	lda $0F95
 	and #$00FF
 	beq L878C86
-	jmp $8CA3
+	jmp L878CA3
 
 L878C86:
 	jsl L8790F3
 	bcs L878C97
 	jsl L878CBE
 	jsl L878D0B
-	jmp $8DBC
+	jmp L878DBC
 
 L878C97:
 	jsl L87AC1E
 	bcc L878CA0
-	jmp $8DD4
+	jmp L878DD4
 
 L878CA0:
-	jmp $8D5E
+	jmp L878D5E
 
 L878CA3:
 	jsl L87AC1E
 	bcc L878CAC
-	jmp $8DEA
+	jmp L878DEA
 
 L878CAC:
 	jsl L878CBE
 	jsl L878D0B
 	lda #$000C
 	jsl L8795EB
-	jmp $8DBC
+	jmp L878DBC
 
 L878CBE:
 	lda $0F95
@@ -1565,18 +1580,18 @@ L878D9C:
 	bra L878D86
 L878DB5:
 	jsl L878D0B
-	jmp $8DBC
+	jmp L878DBC
 
 L878DBC:
 	lda #$0009
 	jsl L8795EB
 	jsl L879110
-	jmp $8B08
+	jmp L878B08
 
 L878DCA:
 	lda #$0006
 	jsl L8795EB
-	jmp $8DBC
+	jmp L878DBC
 
 L878DD4:
 	jsl L879110
@@ -1584,7 +1599,7 @@ L878DD4:
 	jsl L8087EA
 	lda #$0008
 	jsl L8795EB
-	jmp $8B48
+	jmp L878B48
 
 L878DEA:
 	jsl L879110
@@ -1592,7 +1607,7 @@ L878DEA:
 	jsl L8087EA
 	lda #$000B
 	jsl L8795EB
-	jmp $8B48
+	jmp L878B48
 
 L878E00:
 	lda $7F4400
@@ -1607,7 +1622,7 @@ L878E11:
 	and #$00FF
 	cmp #$00FF
 	beq L878E23
-	jmp $8E6C
+	jmp L878E6C
 
 L878E23:
 	stz $15
@@ -1629,10 +1644,10 @@ L878E36:
 	lda #$01
 	sta $0C14
 	rep #$20
-	jmp $8EEF
+	jmp L878EEF
 
 L878E55:
-	jmp $8E9A
+	jmp L878E9A
 
 L878E58:
 	lda $15
@@ -1641,10 +1656,10 @@ L878E58:
 	sep #$20
 	stz $0C14
 	rep #$20
-	jmp $8EEF
+	jmp L878EEF
 
 L878E69:
-	jmp $8E90
+	jmp L878E90
 
 L878E6C:
 	lda #$0011
@@ -1652,22 +1667,22 @@ L878E6C:
 	lda #$0002
 	jsl L879641
 	bcs L878E7F
-	jmp $8ECE
+	jmp L878ECE
 
 L878E7F:
 	lda $0BB6
 	and #$00FF
 	cmp #$000C
 	bne L878E8D
-	jmp $8E23
+	jmp L878E23
 
 L878E8D:
-	jmp $8FC9
+	jmp L878FC9
 
 L878E90:
 	lda #$0010
 	jsl L8795EB
-	jmp $8B48
+	jmp L878B48
 
 L878E9A:
 	lda #$000E
@@ -1675,7 +1690,7 @@ L878E9A:
 	lda #$0003
 	jsl L879641
 	bcs L878EAD
-	jmp $8ECE
+	jmp L878ECE
 
 L878EAD:
 	lda $0BB6
@@ -1685,14 +1700,14 @@ L878EAD:
 	sep #$20
 	stz $0C14
 	rep #$20
-	jmp $8EEF
+	jmp L878EEF
 
 L878EC2:
 	sep #$20
 	lda #$01
 	sta $0C14
 	rep #$20
-	jmp $8EEF
+	jmp L878EEF
 
 L878ECE:
 	lda #$000F
@@ -1704,10 +1719,10 @@ L878ECE:
 	and #$00FF
 	cmp #$000C
 	bne L878EEC
-	jmp $8E00
+	jmp L878E00
 
 L878EEC:
-	jmp $8B48
+	jmp L878B48
 
 L878EEF:
 	lda #$0016
@@ -1718,7 +1733,7 @@ L878EFA:
 	jsl L87977A
 	bcc L878F07
 	jsl L879110
-	jmp $8B48
+	jmp L878B48
 
 L878F07:
 	jsr L8798C6
@@ -1742,7 +1757,7 @@ L878F1C:
 	cmp #$000E
 	bne L878F40
 L878F3D:
-	jmp $8FB8
+	jmp L878FB8
 
 L878F40:
 	lda $0F86
@@ -1770,7 +1785,7 @@ L878F40:
 	jsr L87935C
 	jsl L87B0E5
 	jsl L809374
-	jmp $8FB8
+	jmp L878FB8
 
 L878F82:
 	lda $7F4420
@@ -1784,13 +1799,13 @@ L878F82:
 	jsl L879110
 	jsl L87B0E5
 	jsl L809374
-	jmp $8B48
+	jmp L878B48
 
 L878FA9:
 	jsl L879110
 	jsl L87B0E5
 	jsl L809374
-	jmp $8ECE
+	jmp L878ECE
 
 L878FB8:
 	lda #$0015
@@ -1798,7 +1813,7 @@ L878FB8:
 	lda $0F86
 	sta $0BB5
 	sec
-	jmp $8EFA
+	jmp L878EFA
 
 L878FC9:
 	lda #$0012
@@ -1838,10 +1853,11 @@ L878FC9:
 	jsl L809374
 	jsl L81E475
 	jsl L87B0E5
+L87903C:
 	jsl L879409
 	bcc L879049
 	jsl L879110
-	jmp $8ECE
+	jmp L878ECE
 
 L879049:
 	sta $0F84
@@ -1849,12 +1865,12 @@ L879049:
 	bcc L87905B
 	lda #$0013
 	jsl L8795EB
-	jmp $903C
+	jmp L87903C
 
 L87905B:
 	ldx $0BB5
 	stx $0BB7
-	jmp $9064
+	jmp L879064
 
 L879064:
 	lda #$0014
@@ -1867,7 +1883,7 @@ L879064:
 	cmp #$000E
 	bne L879082
 L87907F:
-	jmp $90D8
+	jmp L8790D8
 
 L879082:
 	lda $0F9A
@@ -1893,12 +1909,12 @@ L879082:
 	cmp #$00FF
 	bne L8790CF
 	jsl L879110
-	jmp $8ECE
+	jmp L878ECE
 
 L8790CF:
 	ldx $0BB5
 	stx $0BB7
-	jmp $90D8
+	jmp L8790D8
 
 L8790D8:
 	rep #$20
@@ -1907,7 +1923,7 @@ L8790D8:
 	ldx $0BB7
 	stx $0BB5
 	stx $0BB3
-	jmp $903C
+	jmp L87903C
 
 L8790ED:
 .db $6E $00 $70 $00 $71 $00
@@ -2057,7 +2073,7 @@ L879228:
 	bne L879256
 	bra L879228
 L879256:
-	jmp $92F5
+	jmp L8792F5
 
 L879259:
 	dec $0BB6
@@ -2147,7 +2163,7 @@ L8792F5:
 	sta $0B32
 	lda $0F96
 	jsl L81E6A6
-	jmp $9228
+	jmp L879228
 
 L879323:
 	php
@@ -2340,7 +2356,7 @@ L8794BE:
 L8794C9:
 	dec $0BB6
 	dec $0BB6
-	jmp $952A
+	jmp L87952A
 
 L8794D2:
 	rep #$20
@@ -2359,15 +2375,15 @@ L8794D2:
 	bne L8794FF
 	jsl L81B942
 	jsl L87B0E5
-	jmp $9409
+	jmp L879409
 
 L8794FF:
 	inc $0BB6
 	inc $0BB6
-	jmp $952A
+	jmp L87952A
 
 L879508:
-	jmp $9409
+	jmp L879409
 
 L87950B:
 	rep #$20
@@ -2386,7 +2402,7 @@ L879517:
 	sta $0B30
 	jsl L81B8DE
 	jsl L81E6A6
-	jmp $9409
+	jmp L879409
 
 L87952A:
 	rep #$20
@@ -2394,7 +2410,7 @@ L87952A:
 	ldx $0BB5
 	stx $0BB3
 	jsl L87B0E5
-	jmp $9409
+	jmp L879409
 
 L87953D:
 	php
@@ -2487,7 +2503,7 @@ L8795EF:
 	lda #$0000
 	sta $0125
 	sta $0127
-	jmp $95D1
+	jmp L8795D1
 
 L87961A:
 	rep #$20
@@ -2702,16 +2718,16 @@ L8797CE:
 	lda $0127
 	and #$8000
 	bne L879805
-	jmp $97CE
+	jmp L8797CE
 
 L8797FF:
-	jmp $9878
+	jmp L879878
 
 L879802:
-	jmp $98AC
+	jmp L8798AC
 
 L879805:
-	jmp $989D
+	jmp L87989D
 
 L879808:
 	rep #$20
@@ -2764,6 +2780,8 @@ L87986C:
 	lda #$0E
 	sta $0BB6
 	bra L879808
+
+L879878:
 	rep #$20
 	lda $0BB6
 	and #$00FF
@@ -2775,11 +2793,13 @@ L879888:
 	stx $0B30
 	stx $0B32
 	jsl L81E6A6
-	jmp $97CE
+	jmp L8797CE
 
 L879898:
 	jsr L8798C6
 	bra L879888
+
+L87989D:
 	rep #$20
 	lda $0F93
 	and #$00FF
@@ -2788,7 +2808,7 @@ L879898:
 	rtl
 
 L8798A9:
-	jmp $97CE
+	jmp L8797CE
 
 L8798AC:
 	sep #$20
@@ -3099,6 +3119,7 @@ L879B18:
 	pla
 	jsl L83D969
 	bra L879B55
+
 L879B3E:
 	lda $08ED
 	jsl L83D912
@@ -3193,6 +3214,7 @@ L879BDB:
 	adc #$0020
 	tax
 	bra L879BDB
+
 L879BF2:
 	inc $0F84
 	bra L879BC6
@@ -3282,6 +3304,7 @@ L879C69:
 	cmp $15
 	beq L879CC9
 	bra L879CBD
+
 L879CA4:
 	lda $08ED
 	cmp #$20
@@ -3355,6 +3378,7 @@ L879D0D:
 	lda $8B85E0,X
 	sta $00
 	sta $0FA5
+L879D28:
 	rep #$20
 	lda $0FA6
 	sta $01
@@ -3384,7 +3408,7 @@ L879D4F:
 	rtl
 
 L879D5D:
-	jmp $8245
+	jmp L878245
 
 L879D60:
 	rep #$20
@@ -3392,7 +3416,7 @@ L879D60:
 	clc
 	adc #$0004
 	sta $0FA5
-	jmp $9D28
+	jmp L879D28
 
 L879D6F:
 	sep #$20
@@ -3437,21 +3461,22 @@ L879DB0:
 	sta $0F
 	stz $0F84
 	stz $0F86
+L879DC2:
 	ldy $0F84
 	cpy #$0032
 	bne L879DCD
-	jmp $9E92
+	jmp L879E92
 
 L879DCD:
 	lda [$0F],Y
 	and #$00FF
 	bne L879DD7
-	jmp $9E85
+	jmp L879E85
 
 L879DD7:
 	jsl L83DBED
 	bcc L879DE0
-	jmp $9E85
+	jmp L879E85
 
 L879DE0:
 	ldy $0F84
@@ -3464,13 +3489,13 @@ L879DE0:
 	jsl L83F684
 	cmp $15
 	bcc L879DFB
-	jmp $9E85
+	jmp L879E85
 
 L879DFB:
 	jsr L879E99
 	jsl L879EAE
 	bcc L879E07
-	jmp $9E85
+	jmp L879E85
 
 L879E07:
 	lda $0F86
@@ -3525,11 +3550,12 @@ L879E0F:
 	lda [$0F],Y
 	dec A
 	sta [$0F],Y
+L879E85:
 	lda $0F84
 	clc
 	adc #$0005
 	sta $0F84
-	jmp $9DC2
+	jmp L879DC2
 
 L879E92:
 	stz $17
@@ -3991,7 +4017,7 @@ L87A229:
 	sta $7F4400
 	lda #$74
 	sta $7F4417
-	jsl $83DD66
+	jsl L83DD66
 	lda $7F4409
 	clc
 	adc $7F440C
@@ -4106,7 +4132,7 @@ L87A30C:
 	sta $7F4400
 	lda #$74
 	sta $7F4417
-	jsl $83DD66
+	jsl L83DD66
 	lda $7F4402
 	cmp #$15
 	bcc L87A34E
@@ -4171,10 +4197,10 @@ L87A34E:
 	and #$00FF
 	cmp #$000C
 	bne L87A3E7
-	jmp $A3F0
+	jmp L87A3F0
 
 L87A3E7:
-	jmp $A456
+	jmp L87A456
 
 .db $00 $03 $06 $0C $18 $30
 
@@ -4398,7 +4424,7 @@ L87A5B5:
 	lda #$0006
 	jsl L87A478
 	jsl L8795EF
-	jmp $A662
+	jmp L87A662
 
 L87A60B:
 	lda #$0007
@@ -4427,13 +4453,14 @@ L87A622:
 	lda #$0009
 	jsl L87A478
 	jsl L8795EF
-	jmp $A662
+	jmp L87A662
 
 L87A653:
 	lda #$0005
 	jsl L87A478
 	jsl L87AC47
 	jsl L8795D1
+L87A662:
 	sep #$20
 	lda #$00
 	sta $0C0A
@@ -4678,7 +4705,7 @@ L87A86C:
 	sta $08ED
 	lda #$04
 	sta $08F1
-	jsl $83CF5D
+	jsl L83CF5D
 	lda #$02
 	sta $1006
 	rep #$20
@@ -5624,7 +5651,7 @@ L87AEF9:
 	stx $52
 	lda $0F79
 	beq L87AF71
-	jmp $AF9B
+	jmp L87AF9B
 
 L87AF71:
 	lda #$0A
@@ -5644,6 +5671,8 @@ L87AF76:
 	bra L87AF76
 L87AF99:
 	bra L87AFC3
+
+L87AF9B:
 	lda #$13
 	sta $0C1B
 L87AFA0:
@@ -5712,7 +5741,7 @@ L87B016:
 	stx $52
 	lda $0F79
 	beq L87B02F
-	jmp $B059
+	jmp L87B059
 
 L87B02F:
 	lda #$1D
@@ -5732,6 +5761,8 @@ L87B034:
 	bra L87B034
 L87B057:
 	bra L87B081
+
+L87B059:
 	lda #$00
 	sta $0C1B
 L87B05E:
@@ -5913,7 +5944,7 @@ L87B1AE:
 	lda #$00
 	sta $7F5D2B
 	jsl $82E4A1
-	jsl L81E475
+	jsl $81E475
 	rep #$20
 L87B20B:
 	ldx #$00F0
@@ -7912,7 +7943,7 @@ L87C9CC:
 	cmp #$0080
 	bcc L87C9DA
 	and #$007F
-	jmp $CE29
+	jmp L87CE29
 
 L87C9DA:
 	cmp #$0018
@@ -8215,7 +8246,7 @@ L87CC08:
 	lda $0F05
 	bit #$0008
 	beq L87CC14
-	jmp $CDCA
+	jmp L87CDCA
 
 L87CC14:
 	sep #$20
@@ -8341,7 +8372,7 @@ L87CCF2:
 	sta $15
 	lda $0F36
 	bne L87CD01
-	jmp $CDB0
+	jmp L87CDB0
 
 L87CD01:
 	lda $0F31
@@ -8451,6 +8482,7 @@ L87CDB0:
 	sta [$00],Y
 	sep #$20
 	stz $0F64
+L87CDCA:
 	plp
 	rtl
 
@@ -8712,7 +8744,7 @@ SCRIPT_COMMAND_8C:
 	lda $0F02
 	sta $0F46
 	lda $0F4F
-	jmp $D53F
+	jmp L87D53F
 
 SCRIPT_COMMAND_94:
 	jsr L87D3A5
@@ -9196,12 +9228,14 @@ L87D3C7:
 	bne L87D3E1
 	ldx $0F6B
 	bra L87D3E4
+
 L87D3E1:
 	ldx $0F70
 L87D3E4:
 	cpx #$FFFF
 	bne L87D3EC
-	jmp $D46B
+	jmp L87D46B
+
 L87D3EC:
 	ldy.w #$0001
 	lda [$00],Y
@@ -9248,6 +9282,8 @@ L87D430:
 	lda #$FF
 	sta $0F6A
 	bra L87D4BC
+
+L87D46B:
 	ldy #$0001
 	lda [$00],Y
 	lsr
@@ -9342,6 +9378,7 @@ SCRIPT_COMMAND_82:
 	lda $0F02
 	sta $0F46
 	lda $0F4D
+L87D53F:
 	tay
 	lda #$0064
 	jsl L81D718
@@ -9551,11 +9588,13 @@ L87D676:
 	lda [$03],Y
 	iny
 	sta $26
+L87D6C6:
 	lda [$03],Y
 	iny
 	sta $27
 	lda #$08
 	sta $28
+L87D6CF:
 	rep #$20
 	lda $50
 	cmp #$01FD
@@ -9579,6 +9618,7 @@ L87D6DB:
 	bit #$20
 	bne L87D773
 	lda [$03],Y
+L87D6F7:
 	sta $15
 	bpl L87D6FD
 	dec $16
@@ -9589,6 +9629,7 @@ L87D6FD:
 	bit #$10
 	bne L87D776
 	lda [$03],Y
+L87D708:
 	sta $1D
 	bpl L87D70E
 	dec $1E
@@ -9629,11 +9670,14 @@ L87D70E:
 	sta $020C,X
 	lda $5C
 	bmi L87D7B0
+L87D751:
 	lda $5D
 	bmi L87D7C8
+L87D755:
 	lda $5D
 	asl A
 	bmi L87D7C6
+L87D75A:
 	inc $55
 	inc $55
 	lda $55
@@ -9646,7 +9690,7 @@ L87D768:
 	beq L87D7AD
 	dec $28
 	beq L87D7AA
-	jmp $D6CF
+	jmp L87D6CF
 
 L87D773:
 	bra L87D790
@@ -9668,7 +9712,7 @@ L87D787:
 L87D78A:
 	clc
 	adc $60,X
-	jmp $D708
+	jmp L87D708
 
 L87D790:
 	lda $27
@@ -9687,10 +9731,10 @@ L87D7A1:
 L87D7A4:
 	clc
 	adc $60,X
-	jmp $D6F7
+	jmp L87D6F7
 
 L87D7AA:
-	jmp $D6C6
+	jmp L87D6C6
 
 L87D7AD:
 	plb
@@ -9708,7 +9752,7 @@ L87D7B0:
 	ora $15
 	sta $020F,X
 L87D7C3:
-	jmp $D751
+	jmp L87D751
 
 L87D7C6:
 	bra L87D7EA
@@ -9730,7 +9774,7 @@ L87D7C8:
 	and $17
 	ora $15
 	sta $020F,X
-	jmp $D755
+	jmp L87D755
 
 L87D7EA:
 	asl A
@@ -9742,7 +9786,7 @@ L87D7EA:
 	and #$CF
 	ora $15
 	sta $020F,X
-	jmp $D75A
+	jmp L87D75A
 
 L87D7FE:
 .db $F8 $F8 $F8 $F0 $F0 $E0 $F0 $E0
