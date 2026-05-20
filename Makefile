@@ -32,7 +32,7 @@ lists:
 	fe3-text text/lists/menu_unit_unk.json compile list text/lists/menu_unit_unk.gen.asm
 	fe3-text text/lists/small_menus.json compile list text/lists/small_menus.gen.asm
 	fe3-text text/lists/menu_settings.json compile list text/lists/menu_settings.gen.asm
-	fe3-text text/lists/menu_battle_animations.json compile list text/lists/menu_battle_animations.gen.asm
+	fe3-text text/lists/menu_battle_animations.json compile list text/lists/menu_battle_animations.gen.asm -s
 	fe3-text text/lists/empty_menus.json compile list text/lists/empty_menus.gen.asm
 	fe3-text text/lists/receive_deposit_throw_away.json compile list text/lists/receive_deposit_throw_away.gen.asm
 	fe3-text text/lists/debug_strings.json compile list text/lists/debug_strings.gen.asm

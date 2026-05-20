@@ -2575,8 +2575,8 @@ L8B999F:
 
 .INCLUDE "menu_settings.gen.asm"
 
-.dw L_BATTLE_ANIMATIONS
-.dw $C068
+.dw L_BATTLE_ANIMATIONS_1
+.dw L_BATTLE_ANIMATIONS_2
 
 .INCLUDE "menu_battle_animations.gen.asm"
 
