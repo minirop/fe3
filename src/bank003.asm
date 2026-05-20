@@ -1167,7 +1167,7 @@ L838D2A:
 	sep #$20
 	stz $08d4
 	rep #$20
-	jsl L82d291
+	jsl L82D291
 	lda $08ed
 	and #$00ff
 	jsl L83DB34
@@ -2100,7 +2100,7 @@ L8394E1:
 	rep #$20
 	lda #$01f0
 	jsl L80B4E3
-	jsl L82d291
+	jsl L82D291
 	jsl $93CC31
 	jsl L83DBB7
 	jsl L80AA09
@@ -2285,7 +2285,7 @@ L839687:
 L8396C5:
 	lda #$01f0
 	jsl L80B4E3
-	jsl L82d291
+	jsl L82D291
 	jsl $93CC31
 	jsl L80AA09
 	jsl $86CA9B
@@ -2607,7 +2607,7 @@ L83998B:
 	lda $08ed
 	and #$00ff
 	jsl L83D969
-	jsl L82d291
+	jsl L82D291
 	lda #$0000
 	jsl L83F47C
 	rts
@@ -2733,7 +2733,7 @@ L839A82:
 	rep #$20
 	lda $08ed
 	jsl L83DB34
-	jsl L82d291
+	jsl L82D291
 	rts
 
 L839AB1:
@@ -2775,7 +2775,7 @@ L839AC7:
 L839AFE:
 	lda $08ed
 	jsl L83DB34
-	jsl L82d291
+	jsl L82D291
 	sep #$20
 	lda #$01
 	sta $0c13
@@ -2984,7 +2984,7 @@ L839CD2:
 	lda #$8848
 	sta $00
 	jsl L808EAD
-	jsl L82d291
+	jsl L82D291
 	sep #$20
 	stz $08f8
 	lda $08ed
@@ -3392,7 +3392,7 @@ L83A034:
 	and #$01
 	bne L83A062
 	rep #$20
-	jsl L82d291
+	jsl L82D291
 	jsl L80954E
 	sep #$20
 	lda #$00
@@ -3640,7 +3640,7 @@ L83A291:
 	and #$00ff
 	bne L83A2A1
 	jsl L83F142
-	jsl L82d291
+	jsl L82D291
 L83A2A1:
 	sep #$20
 	lda #$00
@@ -4796,7 +4796,7 @@ L83ABFF:
 	beq L83AC57
 	lda $08ED
 	jsl L83DB34
-	jsl L82d291
+	jsl L82D291
 	lda $07C6
 	jsr $FCB0
 	lda $08ED
@@ -7677,7 +7677,7 @@ L83C222:
 	sta $07C8
 	lda #$01F0
 	jsl L80B4E3
-	jsl L82d291
+	jsl L82D291
 	jsl $93CC31
 	jsl L80AA09
 	jsl $86CA9B
@@ -8394,7 +8394,7 @@ L83C8B0:
 L83C8DC:
 	lda $08ED
 	jsl L83DB34
-	jsl L82d291
+	jsl L82D291
 	lda $08F1
 	cmp #$FFFF
 	beq L83C90A

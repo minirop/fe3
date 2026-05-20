@@ -5212,7 +5212,7 @@ L80A70D:
 	pha
 	plb
 	rep #$20
-	jsl L8490BD
+	jsl $8490BD
 	plb
 	rts
 
@@ -5223,7 +5223,7 @@ L80A71C:
 	pha
 	plb
 	rep #$20
-	jsl L8490BD
+	jsl $8490BD
 	plb
 	rts
 
