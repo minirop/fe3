@@ -661,7 +661,7 @@ L878590:
 	rep #$20
 	ldy #$0002
 	lda [$0f],Y
-	jsl $82DFC1
+	jsl L82DFC1
 	jsl L8087EA
 	ldy #$0020
 	ldx #$0000
@@ -747,7 +747,7 @@ L878630:
 	adc #$0009
 	sta $0fa2
 	jsl L8087EA
-	jsl $82E4A1
+	jsl L82E4A1
 	plp
 	rtl
 
@@ -5943,7 +5943,7 @@ L87B1AE:
 	sta $7F5D2A
 	lda #$00
 	sta $7F5D2B
-	jsl $82E4A1
+	jsl L82E4A1
 	jsl L81E475
 	rep #$20
 L87B20B:
@@ -5968,7 +5968,7 @@ L87B223:
 	sta $7F5D20
 	lda #$02
 	sta $7F5D21
-	jsl $82E4A1
+	jsl L82E4A1
 	rep #$20
 L87B23F:
 	ldx #$00F0

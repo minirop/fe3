@@ -4893,7 +4893,7 @@ L80A42F:
 	jsl L80B611
 	lda #$00e0
 	jsl L80B530
-	jsl $93ea4e
+	jsl $93EA4E
 L80A49B: ; main loop
 	rep #$30
 	lda $52
@@ -5212,7 +5212,7 @@ L80A70D:
 	pha
 	plb
 	rep #$20
-	jsl $8490BD
+	jsl L8490BD
 	plb
 	rts
 
@@ -5223,7 +5223,7 @@ L80A71C:
 	pha
 	plb
 	rep #$20
-	jsl $8490BD
+	jsl L8490BD
 	plb
 	rts
 
