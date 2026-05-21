@@ -4893,7 +4893,7 @@ L80A42F:
 	jsl L80B611
 	lda #$00e0
 	jsl L80B530
-	jsl $93EA4E
+	jsl L93EA4E
 L80A49B: ; main loop
 	rep #$30
 	lda $52

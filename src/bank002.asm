@@ -113,7 +113,7 @@ L82809A:
 	cmp #$003F
 	beq L828106
 	lda.l ActiveUnit.Terrain
-	jsl $93D29C
+	jsl L93D29C
 	bcs L828106
 	sep #$20
 	lda $07D3
@@ -516,7 +516,7 @@ L828438:
 
 L828439:
 	lda #$004F
-	jsl $93D52E
+	jsl L93D52E
 	bcs L828438
 	jsl L83D912
 	sep #$20
@@ -525,7 +525,7 @@ L828439:
 	rep #$20
 	beq L828438
 	lda #$004F
-	jsl $93D52E
+	jsl L93D52E
 	brl L828424
 
 L82845E:
@@ -1884,7 +1884,7 @@ L828FB9:
 
 L828FBB:
 	lda #$004F
-	jsl $93D52E
+	jsl L93D52E
 	bcs L828FB5
 	jsl L83D912
 	sep #$20
@@ -1893,7 +1893,7 @@ L828FBB:
 	rep #$20
 	beq L828FB5
 	lda #$004F
-	jsl $93D52E
+	jsl L93D52E
 	brl L828F48
 
 L828FE0:
@@ -1973,7 +1973,7 @@ L82907D:
 
 L829096:
 	lda $0C80
-	jsl $93D52E
+	jsl L93D52E
 	bcc L8290BA
 	sep #$20
 	lda $7F441B
@@ -2931,7 +2931,7 @@ L82985A:
 L82985E:
 	php
 	rep #$20
-	jsl $93D52E
+	jsl L93D52E
 	bcs L8298BC
 	ora #$0400
 	pha
@@ -3973,9 +3973,9 @@ L82A704:
 	sta $074C
 	phx
 	jsr $CD64
-	jsl $80954E
-	jsl $8098F0
-	jsl $8087EA
+	jsl L80954E
+	jsl L8098F0
+	jsl L8087EA
 	plx
 	pla
 	sta $074C
@@ -4108,7 +4108,7 @@ L82A801:
 	xba
 	sta $33
 L82A811:
-	jsl $808DBA
+	jsl L808DBA
 	lda $33
 	plp
 	rts
@@ -4149,13 +4149,13 @@ L82A850:
 L82A863:
 	tay
 	sty $25
-	jsl $82AB6C
+	jsl L82AB6C
 	pha
-	jsl $82AB28
+	jsl L82AB28
 	jsr $A882
 	sta $0DF5
 	pla
-	jsl $82AAE5
+	jsl L82AAE5
 	jsr $A882
 	sta $0DF7
 	plp
@@ -4166,7 +4166,7 @@ L82A882:
 	sta $2D
 	lda #$0003
 	sta $2F
-	jsl $808D1E
+	jsl L808D1E
 	lda $31
 	plp
 	rts
@@ -4253,7 +4253,7 @@ L82A912:
 	rep #$20
 	jsr $A93C
 	ldx $0D86
-	jsl $8096FA
+	jsl L8096FA
 	sep #$20
 	lda #$00
 	sta $04DA,X
@@ -4310,7 +4310,7 @@ L82A966:
 	sta $04DA,X
 	rep #$20
 	lda #$0034
-	jsl $8096FA
+	jsl L8096FA
 	stz $04DB,X
 	bra L82A9DC
 
@@ -4366,14 +4366,14 @@ L82A9DE:
 	and #$00FF
 	tax
 	lda $809DCF,X
-	jsl $80B467
+	jsl L80B467
 	sep #$20
 	lda $0D93
 	bit #$02
 	beq L82AA08
 	rep #$20
 	lda #$0039
-	jsl $80B467
+	jsl L80B467
 	sep #$20
 L82AA08:
 	plp
@@ -7979,7 +7979,7 @@ L82C5AF:
 	clc
 	adc #$001C
 	tyx
-	jsl $8096FA
+	jsl L8096FA
 	sep #$20
 	stz $04DA,X
 	lda #$04
@@ -8005,12 +8005,12 @@ L82C5DC:
 	lda $0D4D
 	clc
 	adc #$001C
-	jsl $8096FA
+	jsl L8096FA
 	ldx $0D8C
 	lda $0D6D
 	clc
 	adc #$001C
-	jsl $8096FA
+	jsl L8096FA
 L82C609:
 	plp
 	rts
@@ -8112,8 +8112,8 @@ L82C6AB:
 	ora #$40
 	sta $0D8E
 	rep #$20
-	jsl $83E061
-	jsl $83E06A
+	jsl L83E061
+	jsl L83E06A
 	bcs L82C6C3
 	bcc L82C6D2
 L82C6C3:
@@ -8343,7 +8343,7 @@ L82C841:
 	jsr L82C8B1
 L82C84C:
 	lda #$0037
-	jsl $8096FA
+	jsl L8096FA
 	sep #$20
 	lda #$00
 	sta.l $0004DA,X
@@ -8373,7 +8373,7 @@ L82C878:
 	and #$00FF
 L82C889:
 	phx
-	jsl $8096FA
+	jsl L8096FA
 	plx
 	sep #$20
 	lda #$00
@@ -8386,7 +8386,7 @@ L82C899:
 	pha
 	ldx $0D86
 	phx
-	jsl $8096FA
+	jsl L8096FA
 	plx
 	pla
 	bne L82C8A7
@@ -8436,7 +8436,7 @@ L82C8E7:
 	adc #$0028
 L82C8F6:
 	phx
-	jsl $8096FA
+	jsl L8096FA
 	plx
 	sep #$20
 	lda #$00
@@ -8465,7 +8465,7 @@ L82C922:
 L82C92B:
 	clc
 	adc #$0010
-	jsl $8096FA
+	jsl L8096FA
 	sep #$20
 	stz $04DA,X
 	rep #$20
@@ -8518,7 +8518,7 @@ L82C968:
 	sta $01
 	lda #$C9B5
 	sta $00
-	jsl $808EAD
+	jsl L808EAD
 	bra L82C9B3
 
 L82C99A:
@@ -8531,7 +8531,7 @@ L82C99A:
 	sta $01
 	lda #$C9BC
 	sta $00
-	jsl $808EAD
+	jsl L808EAD
 L82C9B3:
 	plp
 	rts
@@ -8596,7 +8596,7 @@ L82CA1C:
 	sta $01
 	lda #$C9B5
 	sta $00
-	jsl $808EAD
+	jsl L808EAD
 	bra L82CA6A
 
 L82CA2C:
@@ -8631,7 +8631,7 @@ L82CA5C:
 	sta $01
 	lda #$C9BC
 	sta $00
-	jsl $808EAD
+	jsl L808EAD
 L82CA6A:
 	plp
 	sec
@@ -8800,7 +8800,7 @@ L82CB60:
 	lda #$D0B2
 	sta $00
 	sep #$20
-	jsl $808EAD
+	jsl L808EAD
 	plx
 	plp
 	rts
@@ -9057,7 +9057,7 @@ L82CD17:
 	lda $15
 	sta $089D
 	lda #$0039
-	jsl $80B44D
+	jsl L80B44D
 L82CD2C:
 	plp
 	rts
@@ -9068,7 +9068,7 @@ L82CD2E:
 	lda $15
 	sta $089F
 	pla
-	jsl $80B49E
+	jsl L80B49E
 	plp
 	rts
 
@@ -9141,7 +9141,7 @@ L82CD67:
 	sta $01
 	lda #$BCFE
 	sta $00
-	jsl $808EAD
+	jsl L808EAD
 	plp
 	rts
 
@@ -9253,8 +9253,8 @@ L82CE53:
 	sta $01
 	lda #$BCFE
 	sta $00
-	jsl $808EAD
-	jsl $8087EA
+	jsl L808EAD
+	jsl L8087EA
 	plx
 	ply
 	pla
@@ -9298,8 +9298,8 @@ L82CEBA:
 	sta $01
 	lda #$BCFE
 	sta $00
-	jsl $808EAD
-	jsl $8087EA
+	jsl L808EAD
+	jsl L8087EA
 	plx
 	ply
 	pla
@@ -9314,12 +9314,12 @@ L82CF21:
 	sta $01
 	lda #$9E45
 	sta $00
-	jsl $809606
+	jsl L809606
 	lda #$8000
 	sta $01
 	lda #$9E2D
 	sta $00
-	jsl $809615
+	jsl L809615
 	pla
 	and #$00FF
 	sta $15
@@ -9340,7 +9340,7 @@ L82CF21:
 	jsr L82D11B
 	tay
 	plx
-	jsl $809689
+	jsl L809689
 	sep #$20
 	stz $04DC,X
 	stz $06FB
@@ -9516,7 +9516,7 @@ L82D090:
 	sta $01
 	lda #$D0B2
 	sta $00
-	jsl $808EAD
+	jsl L808EAD
 	plp
 	rts
 
@@ -9620,7 +9620,7 @@ L82D12E:
 	jsr L82D1F3
 	ldy #$000C
 	ldx $19
-	jsl $809689
+	jsl L809689
 	sep #$20
 	stz $04DC,X
 	ply
@@ -9650,7 +9650,7 @@ L82D16E:
 	jsr L82D1F3
 	ldy #$0002
 	ldx $19
-	jsl $809689
+	jsl L809689
 	sep #$20
 	stz $04DC,X
 	ply
@@ -9722,7 +9722,7 @@ L82D1FE:
 	ldx $0D80
 	lda $0D1E,X
 	sta.l $000076
-	jsl $808F18
+	jsl DECOMPRESS_ASSET
 	ply
 	plx
 	plp
@@ -9738,7 +9738,7 @@ L82D21F:
 	sta.l $000071
 	txa
 	sta.l $000076
-	jsl $808F18
+	jsl DECOMPRESS_ASSET
 	ply
 	plx
 	plp
@@ -9754,7 +9754,7 @@ L82D23B:
 	ldx $0D80
 	lda $0D1E,X
 	sta.l $000076
-	jsl $808F18
+	jsl DECOMPRESS_ASSET
 	plx
 	plp
 	rtl
@@ -9769,7 +9769,7 @@ L82D25A:
 	sta.l $000071
 	lda $17
 	sta.l $000076
-	jsl $808F18
+	jsl DECOMPRESS_ASSET
 	plx
 	ply
 	plp

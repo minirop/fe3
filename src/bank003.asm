@@ -268,13 +268,13 @@ L8384CC:
 	jsl L81D845
 	jsl L83878B
 	jsl L80AA09
-	jsl $93E5C0
+	jsl L93E5C0
 	jsl L83899D
 	jsl L838A73
 	jsl L838851
 	jsl L838820
-	jsl $93E61A
-	jsl $93D867
+	jsl L93E61A
+	jsl L93D867
 	jsl L80A6DD
 	lda #$8300
 	sta $01
@@ -326,8 +326,8 @@ L83859C:
 	inx
 	dey
 	bne L83859C
-	jsl $93EB6F
-	jsl $93E4A7
+	jsl L93EB6F
+	jsl L93E4A7
 	sep #$20
 	stz $0FA1
 	stz $0B61
@@ -412,9 +412,9 @@ L83863F:
 	jsl L83878B
 	jsl L80AA09
 	lda $07DF
-	jsl $93D31D
-	jsl $93D867
-	jsl $93E5C0
+	jsl L93D31D
+	jsl L93D867
+	jsl L93E5C0
 	jsl L83899D
 	lda #$0030
 	jsl $87A8F4
@@ -432,8 +432,8 @@ L8386C0:
 	jsl L838A73
 	jsl L838851
 	jsl L838820
-	jsl $93E61A
-	jsl $93D81D
+	jsl L93E61A
+	jsl L93D81D
 	jsl L80A6DD
 	lda #$8300
 	sta $01
@@ -445,7 +445,7 @@ L8386C0:
 	lda #$F19A
 	sta $00
 	jsl L808EAD
-	jsl $93E453
+	jsl L93E453
 	lda $0860
 	and #$00FF
 	asl A
@@ -743,7 +743,7 @@ L838952:
 	lda #$897A
 	sta $00
 	jsl L808EAD
-	jsl $93E007
+	jsl L93E007
 	rtl
 
 .db $01 $30 $51 $7F $00 $02 $00 $01
@@ -859,22 +859,22 @@ L838A73:
 	sta $15
 	lda $0A9B
 	sta $17
-	jsl $93E664
+	jsl L93E664
 	lda #$2740
 	sta $15
 	lda $0A9C
 	sta $17
-	jsl $93E664
+	jsl L93E664
 	lda #$2780
 	sta $15
 	lda $0A9D
 	sta $17
-	jsl $93E664
+	jsl L93E664
 	lda #$27C0
 	sta $15
 	lda $0A9E
 	sta $17
-	jsl $93E664
+	jsl L93E664
 	rtl
 
 .db $02 $00 $80 $DA $00 $10 $80 $00 $20
@@ -1037,8 +1037,8 @@ L838C0C:
 L838C16:
 	jsl L81E8D7
 	bcs L838C24
-	jsl $93C2E1
-	jsl $93D867
+	jsl L93C2E1
+	jsl L93D867
 L838C24:
 	stz $93
 	stz $91
@@ -1081,7 +1081,7 @@ L838C66:
 	lda $08de
 	and #$00ff
 	bne L838C91
-	jsl $93E196
+	jsl L93E196
 	bcs L838C91
 	jsr L83E002
 	jsl L81DC00
@@ -1103,7 +1103,7 @@ L838C9A:
 	stz $0907
 	bra L838C9F
 L838C9F:
-	jsl $93EB9A
+	jsl L93EB9A
 	bcs L838C91
 	sep #$20
 	sta $08ed
@@ -1284,9 +1284,9 @@ L838DEF:
 	lda #$04
 	sta $08D5
 	rep #$20
-	jsl $93E40A
-	jsl $93E4E8
-	jsl $93E453
+	jsl L93E40A
+	jsl L93E4E8
+	jsl L93E453
 	jsl L83F1D9
 	jsl L83F142
 	jsl L8088A0
@@ -1345,7 +1345,7 @@ L838E8D:
 
 L838E95:
 	sep #$20
-	jsl $93EBD8
+	jsl L93EBD8
 	lda #$03
 	sta $08D1
 	lda #$01
@@ -1417,7 +1417,7 @@ L838F0C:
 	rts
 
 L838F1E:
-	jsl $93D5D1
+	jsl L93D5D1
 	sep #$20
 	inc $08D4
 	rep #$20
@@ -1575,7 +1575,7 @@ L83904A:
 	inc $08d4
 	bra L839088
 L839059:
-	jsl $93EBD8
+	jsl L93EBD8
 	stz $07d3
 	stz $0c0a
 	inc $08d4
@@ -1598,8 +1598,8 @@ L839088:
 L83908B:
 	sep #$20
 	jsl L83F312
-	jsl $93E007
-	jsl $93DEA2
+	jsl L93E007
+	jsl L93DEA2
 	jsl L83FA0C
 	lda #$12
 	sta $08df
@@ -2081,7 +2081,7 @@ L83949F:
 	cmp #$002a
 	bne L8394D1
 	lda #$004f
-	jsl $93D52E
+	jsl L93D52E
 	jsl L83D912
 	lda.l ActiveUnit.HP
 	and #$00ff
@@ -2101,7 +2101,7 @@ L8394E1:
 	lda #$01f0
 	jsl L80B4E3
 	jsl L82D291
-	jsl $93CC31
+	jsl L93CC31
 	jsl L83DBB7
 	jsl L80AA09
 	jsl $86CA9B
@@ -2110,13 +2110,13 @@ L8394E1:
 	cmp #$002a
 	bne L83951D
 	lda #$004f
-	jsl $93D52E
+	jsl L93D52E
 	jsl L83D912
 	lda.l ActiveUnit.HP
 	and #$00ff
 	beq L839521
 L83951D:
-	jsl $93D55D
+	jsl L93D55D
 L839521:
 	sep #$20
 	lda #$01
@@ -2132,7 +2132,7 @@ L83952D:
 	beq L839568
 	lda $0763
 	and #$00ff
-	jsl $93D52E
+	jsl L93D52E
 	pha
 	jsl L83D912
 	ldx $08d2
@@ -2152,7 +2152,7 @@ L839568:
 	beq L83958B
 	lda $0763
 	and #$00ff
-	jsl $93D52E
+	jsl L93D52E
 	pha
 	jsl L83D912
 	ldx $07a4
@@ -2161,9 +2161,9 @@ L839568:
 	pla
 	jsl L83D969
 L83958B:
-	jsl $93E8DD
+	jsl L93E8DD
 	jsr L839CC7
-	jsl $93E6F1
+	jsl L93E6F1
 	rep #$20
 	rts
 
@@ -2286,10 +2286,10 @@ L8396C5:
 	lda #$01f0
 	jsl L80B4E3
 	jsl L82D291
-	jsl $93CC31
+	jsl L93CC31
 	jsl L80AA09
 	jsl $86CA9B
-	jsl $93D55D
+	jsl L93D55D
 	lda $08ed
 	jsl L83DB34
 	jsl L83F312
@@ -2416,7 +2416,7 @@ L8397EC:
 L8397F4:
 	sep #$30
 	ldx $08f1
-	jsl $93EAAB
+	jsl L93EAAB
 	rep #$30
 	brl L8398FB
 
@@ -2472,7 +2472,7 @@ L839844:
 	dec $00
 	dec $00
 	rep #$30
-	jsl $93E2DD
+	jsl L93E2DD
 	lda $08ed
 	jsl L83D969
 	sep #$20
@@ -2567,10 +2567,10 @@ L83991C:
 	jsl L83D912
 	lda.l ActiveUnit.ClassID
 	sta.l ActiveUnit.MountedClassID
-	jsl $93D9FF
+	jsl L93D9FF
 	lda $08f1
 	sta.l ActiveUnit.ClassID
-	jsl $93D951
+	jsl L93D951
 	lda $08f0
 	cmp #$10
 	bne L839951
@@ -2596,7 +2596,7 @@ L839965:
 	sta $01
 	lda #$4420
 	sta $00
-	jsl $93EAAB
+	jsl L93EAAB
 	bra L83998B
 L839984:
 	plx
@@ -2740,7 +2740,7 @@ L839AB1:
 	sep #$20
 	lda $0c13
 	beq L839ABD
-	jsl $93CF2C
+	jsl L93CF2C
 	rts
 
 L839ABD:
@@ -2885,12 +2885,12 @@ L839BDD:
 	beq L839C70
 	cmp #$002c
 	beq L839C70
-	jsl $93C1BC
+	jsl L93C1BC
 	lda #$80b5
 	jsl L80AA3A
 	jsl L81EDE4
 	bcs L839C48
-	jsl $93C2E1
+	jsl L93C2E1
 	bra L839C48
 L839C13:
 	lda $0f84
@@ -2913,7 +2913,7 @@ L839C1D:
 	sta $0e00
 	rep #$30
 	lda $07df
-	jsl $93D31D
+	jsl L93D31D
 	rts
 
 L839C48:
@@ -2923,7 +2923,7 @@ L839C48:
 	jsl L80909D
 	jsl L80AA09
 	lda $07df
-	jsl $93D31D
+	jsl L93D31D
 	sep #$20
 	lda #$02
 	sta $074a
@@ -2940,8 +2940,8 @@ L839C70:
 	sta $08d0
 	rep #$20
 	lda $07df
-	jsl $93D31D
-	jsl $93C1BC
+	jsl L93D31D
+	jsl L93C1BC
 	lda #$01f0
 	jsl L80B4E3
 	jsl L80AA09
@@ -3179,14 +3179,14 @@ L839E7F:
 	stz $93
 	jsl L81E906
 	bcs L839EB8
-	jsl $93C457
+	jsl L93C457
 	lda #$01F0
 	jsl L80B4E3
 	lda #$0010
 	jsl L80909D
 	lda $07DF
 	and #$00FF
-	jsl $93D31D
+	jsl L93D31D
 	jsl L80AA09
 	sep #$20
 	lda #$02
@@ -3361,7 +3361,7 @@ L839FDD:
 
 L83A001:
 	jsl L80AA09
-	jsl $93EB9A
+	jsl L93EB9A
 	bcc L83A011
 	jsl L81DC00
 	bra L839FC3
@@ -3403,7 +3403,7 @@ L83A062:
 
 L83A065:
 	jsl L80AA09
-	jsl $93EB9A
+	jsl L93EB9A
 	bcc L83A072
 	brl L839FDD
 L83A072:
@@ -3520,7 +3520,7 @@ L83A16C:
 	lda.l ActiveUnit.HasMoved
 	and #$01
 	bne L83A18F
-	jsl $93EC47
+	jsl L93EC47
 L83A18F:
 	lda #$03
 	sta $08eb
@@ -4565,7 +4565,7 @@ L83AA05:
 	lda $08ed
 	jsl L83D912
 	lda.l ActiveUnit.ClassID
-	jsl $93D9BD
+	jsl L93D9BD
 	sta $08f1
 	lda #$11
 	sta $08f0
@@ -4665,23 +4665,23 @@ L83AAB6:
 	cmp #$ff
 	beq L83AB0F
 	pha
-	jsl $93D9FF
+	jsl L93D9FF
 	lda #$ff
 	sta.l ActiveUnit.MountedClassID
 	pla
 	sta.l ActiveUnit.ClassID
-	jsl $93D951
+	jsl L93D951
 	bra L83AB2B
 L83AB0F:
-	jsl $93D9BD
+	jsl L93D9BD
 	bcs L83AB2B
 	pha
-	jsl $93D9FF
+	jsl L93D9FF
 	lda.l ActiveUnit.ClassID
 	sta.l ActiveUnit.MountedClassID
 	pla
 	sta.l ActiveUnit.ClassID
-	jsl $93D951
+	jsl L93D951
 L83AB2B:
 	pla
 	jsl L83D969
@@ -4853,7 +4853,7 @@ L83ACB0:
 	cmp #$002A
 	bne L83ACE7
 	lda #$004F
-	jsl $93D52E
+	jsl L93D52E
 	jsl L83D912
 	lda $7F4403
 	and #$00FF
@@ -4923,7 +4923,7 @@ L83AD5C:
 L83AD60:
 	phy
 	rep #$20
-	jsl $93E2DD
+	jsl L93E2DD
 	ply
 	sep #$20
 	lda $076F,Y
@@ -5011,7 +5011,7 @@ L83AE1C:
 	sta $01
 	lda #$4428
 	sta $00
-	jsl $93E2DD
+	jsl L93E2DD
 	lda $08ED
 	and #$00FF
 	jsl L83D969
@@ -5257,7 +5257,7 @@ L83B03E:
 	cmp #$2B
 	bne L83B072
 L83B064:
-	jsl $93D2C4
+	jsl L93D2C4
 	sta $075F,Y
 	lda #$FF
 	sta $0777,Y
@@ -5427,7 +5427,7 @@ L83B18E:
 	bne L83B1CB
 L83B1AD:
 	rep #$20
-	jsl $93EA87
+	jsl L93EA87
 	sep #$20
 	pha
 	lda #$15
@@ -6305,7 +6305,7 @@ L83B816:
 	jsr $B959
 	bcs L83B828
 	phy
-	jsl $93EA87
+	jsl L93EA87
 	ply
 	cmp $0767,Y
 	bmi L83B843
@@ -6459,7 +6459,7 @@ L83B92D:
 	rts
 L83B92E:
 	phy
-	jsl $93EA87
+	jsl L93EA87
 	ply
 	cmp $076D,Y
 	bpl L83B958
@@ -7123,7 +7123,7 @@ L83BE17:
 	lda #$01
 	sta $17
 L83BE2D:
-	jsl $93EA87
+	jsl L93EA87
 	cmp $15
 	bcs L83BE37
 	inc $17
@@ -7298,7 +7298,7 @@ L83BF63:
 	and #$00FF
 	bne L83BF96
 	lda $0763
-	jsl $93E5A1
+	jsl L93E5A1
 	bcs L83BF96
 	lda $085D
 	and #$00FF
@@ -7329,7 +7329,7 @@ L83BF98:
 	and #$00FF
 	beq L83BFB9
 	lda $0763
-	jsl $93E5A1
+	jsl L93E5A1
 	bcs L83BFB9
 	sep #$20
 	lda $7F675C,X
@@ -7495,7 +7495,7 @@ L83C093:
 	pha
 L83C0C5:
 	lda $0763
-	jsl $93E5A1
+	jsl L93E5A1
 	bcs L83C0DB
 	lda $7F679C,X
 	cmp #$FF
@@ -7678,10 +7678,10 @@ L83C222:
 	lda #$01F0
 	jsl L80B4E3
 	jsl L82D291
-	jsl $93CC31
+	jsl L93CC31
 	jsl L80AA09
 	jsl $86CA9B
-	jsl $93D55D
+	jsl L93D55D
 	lda $08ED
 	jsl L83DB34
 	jsl L8087EA
@@ -7787,7 +7787,7 @@ L83C366:
 	jmp $98E7
 
 L83C36B:
-	jsl $93E35E
+	jsl L93E35E
 	bra L83C366
 L83C371:
 	rep #$20
@@ -7805,7 +7805,7 @@ L83C391:
 	sep #$20
 	lda $08ED
 	pha
-	jsl $93EBD8
+	jsl L93EBD8
 	pla
 	sta $08ED
 	jsl L83D912
@@ -7813,7 +7813,7 @@ L83C391:
 L83C3A5:
 	lda $08ED
 	jsl L83DB34
-	jsl $93CD28
+	jsl L93CD28
 	lda $08ED
 	jsl L83DB7D
 	lda $08ED
@@ -8023,7 +8023,7 @@ L83C54F:
 	sta $08F1
 	lda $08ED
 	jsl L83D912
-	jsl $93DA6B
+	jsl L93DA6B
 	sep #$20
 	lda #$FF
 	sta $075E
@@ -8080,7 +8080,7 @@ L83C5E9:
 	inc $08D2
 	lda $08ED
 	jsl L83D912
-	jsl $93DA6B
+	jsl L93DA6B
 	lda #$FF
 	sta $075E
 	lda $08ED
@@ -8194,7 +8194,7 @@ L83C6C6:
 	inc $08D2
 	lda $08ED
 	jsl L83D912
-	jsl $93DA6B
+	jsl L93DA6B
 	lda #$FF
 	sta $075E
 	lda $08ED
@@ -8429,7 +8429,7 @@ L83C90C:
 	bcc L83C90C
 	lda $08ED
 	jsl L83D912
-	jsl $93DA6B
+	jsl L93DA6B
 	lda $08ED
 	jsl L83D969
 	rts
@@ -8702,7 +8702,7 @@ L83CB10:
 	inc $08D2
 	lda $08ED
 	jsl L83D912
-	jsl $93DA6B
+	jsl L93DA6B
 	lda $08ED
 	jsl L83D969
 	brl L83CAFA
@@ -8863,7 +8863,7 @@ L83CCCD:
 	jsl L83D969
 	lda $08ED
 	jsl L83D912
-	jsl $93DA6B
+	jsl L93DA6B
 	lda $08ED
 	jsl L83D969
 	rts
@@ -8885,7 +8885,7 @@ L83CD0A:
 	rep #$20
 	lda $08ED
 	jsl L83D912
-	jsl $93DA6B
+	jsl L93DA6B
 	lda $08ED
 	jsl L83D969
 	rts
@@ -8973,7 +8973,7 @@ L83CDED:
 	bne L83CDDD
 	lda $08ED
 	jsl L83D912
-	jsl $93DA6B
+	jsl L93DA6B
 	lda $08ED
 	jsl L83D969
 	lda #$0047
@@ -9092,7 +9092,7 @@ L83CEF9:
 	jsl L83D969
 	lda $08ED
 	jsl L83D912
-	jsl $93DA6B
+	jsl L93DA6B
 	lda $08ED
 	jsl L83D969
 	plp
@@ -9104,7 +9104,7 @@ L83CF18:
 	sta $075E
 	lda $08ED
 	jsl L83D912
-	jsl $93DA6B
+	jsl L93DA6B
 	lda $08ED
 	jsl L83D969
 	rep #$20
@@ -9119,7 +9119,7 @@ L83CF34:
 	sta $07F4
 	lda $08ED
 	jsl L83D912
-	jsl $93DA6B
+	jsl L93DA6B
 	lda $08ED
 	jsl L83D969
 	rep #$20
@@ -9145,7 +9145,7 @@ L83CF5D:
 	lda $7F4420,X
 	sta $0760
 	phx
-	jsl $93D2B2
+	jsl L93D2B2
 	plx
 	sta $7F4420,X
 	lda $7F4417
@@ -9162,7 +9162,7 @@ L83CF9D:
 	lda $7F4420,X
 	sta $075F
 L83CFAA:
-	jsl $93D9FF
+	jsl L93D9FF
 	lda $7F4401
 	ldy #$00
 	lda $08ED
@@ -9171,9 +9171,9 @@ L83CFAA:
 	iny
 L83CFBC:
 	lda $075F,Y
-	jsl $93D305
+	jsl L93D305
 	sta $7F4401
-	jsl $93D951
+	jsl L93D951
 	lda $7F4400
 	cmp #$30
 	beq L83CFD7
@@ -9622,10 +9622,10 @@ L83D3A3:
 	cmp #$0011
 	bne L83D3DF
 	jsr $D4D8
-	jsl $93D9FF
+	jsl L93D9FF
 	lda #$001B
 	sta $7F4401
-	jsl $93D951
+	jsl L93D951
 	sep #$20
 	lda #$01
 	sta $7F4402
@@ -9646,10 +9646,10 @@ L83D3DF:
 	bne L83D409
 L83D3F7:
 	pha
-	jsl $93D9FF
+	jsl L93D9FF
 	pla
 	sta $7F4401
-	jsl $93D951
+	jsl L93D951
 L83D405:
 	lda #$01
 	sta $1B
@@ -9702,13 +9702,13 @@ L83D473:
 	sta $7F4414
 	bra L83D491
 L83D47B:
-	jsl $93D9BD
+	jsl L93D9BD
 	bcs L83D494
 	pha
-	jsl $93D9FF
+	jsl L93D9FF
 	pla
 	sta $7F4401
-	jsl $93D951
+	jsl L93D951
 	bra L83D494
 L83D491:
 	rep #$20
@@ -10004,7 +10004,7 @@ L83D6B7:
 	jsl L83DB34
 	lda $08ED
 	jsl L83D912
-	jsl $93DA6B
+	jsl L93DA6B
 	lda $08ED
 	jsl L83D969
 L83D73E:
@@ -10815,7 +10815,7 @@ L83DCBB:
 
 L83DCBE:
 	php
-	jsl $93EB87
+	jsl L93EB87
 	sep #$20
 	rep #$10
 	ldy #$0000
@@ -11264,7 +11264,7 @@ L83E05F:
 
 L83E061:
 	jsl L80AC8D
-	jsl $93DB1F
+	jsl L93DB1F
 	rtl
 
 L83E06A:
@@ -13373,12 +13373,12 @@ L83F082:
 	lda #$ff
 	sta.l ActiveUnit.Weapons,X
 	sta.l ActiveUnit.WeaponsUses,X
-	jsl $93E31D
+	jsl L93E31D
 	pla
 	sta.l ActiveUnit.Weapon1Uses
 	pla
 	sta.l ActiveUnit.Weapon1
-	jsl $93E2DD
+	jsl L93E2DD
 	rep #$20
 	pla
 	jsl L83D969
@@ -13407,12 +13407,12 @@ L83F0CE:
 	lda #$ff
 	sta.l ActiveUnit.Items,X
 	sta.l ActiveUnit.ItemsUses,X
-	jsl $93E31D
+	jsl L93E31D
 	pla
 	sta.l ActiveUnit.Item1Uses
 	pla
 	sta.l ActiveUnit.Item1
-	jsl $93E2DD
+	jsl L93E2DD
 	lda.l ActiveUnit.Item2
 	cmp #$3f
 	beq L83F11D
@@ -13731,7 +13731,7 @@ L83F380:
 L83F3B8:
 	php
 	sep #$20
-	jsl $93EADA
+	jsl L93EADA
 	rep #$10
 	ldx #$0800
 L83F3C4:
@@ -14227,7 +14227,7 @@ L83F75F:
 	asl
 	tax
 	lda $7f4436,X
-	jsl $93D29C
+	jsl L93D29C
 	bcs L83F79B
 L83F793:
 	tyx
@@ -14648,7 +14648,7 @@ L83FAA8:
 	beq L83FAE1
 	sep #$20
 	lda $7F4401
-	jsl $93D2ED
+	jsl L93D2ED
 	sta $7F4420
 	lda #$5B
 	sta $7F4417
@@ -14707,7 +14707,7 @@ L83FB43:
 L83FB4F:
 	php
 	sep #$20
-	jsl $93D9FF
+	jsl L93D9FF
 	lda #$FF
 	sta $7F4415
 	lda $7F4416
@@ -14738,7 +14738,7 @@ L83FB86:
 	bne L83FB9E
 	jsl L83FBA4
 L83FB9E:
-	jsl $93D951
+	jsl L93D951
 	plp
 	rtl
 
@@ -14751,7 +14751,7 @@ L83FBA4:
 	lda $0a9b
 	and #$00ff
 	sta $17
-	jsl $93E664
+	jsl L93E664
 	plp
 	rtl
 
@@ -14865,7 +14865,7 @@ L83FC83:
 	xba
 	ldy #$0007
 	sta [$00],Y
-	jsl $93E2DD
+	jsl L93E2DD
 L83FC9F:
 	rep #$20
 	plp
@@ -14953,12 +14953,12 @@ L83FD29:
 	bra L83FD24
 L83FD35:
 	phx
-	jsl $93D9FF
+	jsl L93D9FF
 	plx
 	inx
 	lda $FDD1,X
 	sta $7F4401
-	jsl $93D951
+	jsl L93D951
 	lda #$01
 	sta $7F4402
 	rep #$20
@@ -15190,7 +15190,7 @@ L83FF0E:
 	cpx #$08
 	bne L83FF0E
 	lda.l ActiveUnit.ClassID
-	jsl $93D2C4
+	jsl L93D2C4
 	sta.l ActiveUnit.Weapon1
 L83FF25:
 	plp
