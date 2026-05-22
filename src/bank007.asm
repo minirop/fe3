@@ -4621,7 +4621,7 @@ L87A7AF:
 L87A7B4:
 	lda #$0003
 L87A7B7:
-	jsl $96941D
+	jsl L96941D
 	bcs L87A7C5
 	lda #$0001
 	sta $0F84
@@ -4644,7 +4644,7 @@ L87A7D9:
 	lda #$8044
 	jsl L80AA3A
 	jsl L93EDF4
-	jsl $8DC7B8
+	jsl L8DC7B8
 	jsl L80884A
 	jsl L80A61A
 	jsl L81D845

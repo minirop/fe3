@@ -2311,7 +2311,7 @@ L93C1E8:
     sta $7F4413
     rep #$20
     lda $7F4400
-    jsl $87A923
+    jsl L87A923
     bcc L93C23E
     jsl L83FE47
 L93C23E:
@@ -2331,7 +2331,7 @@ L93C242:
 
 L93C25C:
     sep #$20
-    jsl $87A8F4
+    jsl L87A8F4
     bcs L93C274
     pha
     jsl L83D912
@@ -2872,7 +2872,7 @@ L93C67C:
     and #$00FF
     cmp #$00FF
     beq L93C698
-    jsl $87A923
+    jsl L87A923
     bcc L93C694
     jsl L83FE47
 L93C694:
@@ -3655,7 +3655,7 @@ L93CCBB:
     lda [$03],Y
     cmp #$FF
     beq L93CCE2
-    jsl $87AA9B
+    jsl L87AA9B
     bcs L93CD17
 L93CCE2:
     ldy #$0002
@@ -4224,7 +4224,7 @@ L93D19F:
     sta $0C0A
 L93D1C1:
     sep #$20
-    jsl $87A5A1
+    jsl L87A5A1
     lda $0C0A
     beq L93D1D9
     lda #$01
@@ -6182,7 +6182,7 @@ L93E182:
     plb
     lda #$00
     sta $0E00
-    jsl $8490BD
+    jsl L8490BD
     plb
     plp
     rtl
@@ -6891,27 +6891,27 @@ L93E71E:
 
 L93E720:
     lda #$0000
-    jsl $87AA28
+    jsl L87AA28
     lda #$0001
-    jsl $87AA28
+    jsl L87AA28
     lda #$0002
-    jsl $87AA28
+    jsl L87AA28
     lda #$0003
-    jsl $87AA28
+    jsl L87AA28
     lda #$0005
-    jsl $87AA28
+    jsl L87AA28
     lda #$0006
-    jsl $87AA28
+    jsl L87AA28
     lda #$0007
-    jsl $87AA28
+    jsl L87AA28
     lda #$0008
-    jsl $87AA28
+    jsl L87AA28
     ldx #$0000
 L93E75B:
     phx
     lda $93E8A8,X
     ldx #$0400
-    jsl $87A8F7
+    jsl L87A8F7
     bcc L93E76C
     brl L93E834
 
@@ -7089,7 +7089,7 @@ L93E8DD:
 L93E8EA:
     stz $91
     stz $93
-    jsl $87AC1E
+    jsl L87AC1E
     ldx $0BDB
     ldy #$0000
 L93E8F8:

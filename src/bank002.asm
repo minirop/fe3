@@ -898,7 +898,7 @@ L828711:
 	lda #$0014
 	sta $0C83
 	lda $0C80
-	jsl $87A8F4
+	jsl L87A8F4
 	bcc L828754
 	lda $08ED
 	and #$00FF
@@ -12649,7 +12649,7 @@ L82E787:
 	tsb $7F29
 	phx
 	rep #$20
-	jsl $87A8F4
+	jsl L87A8F4
 	sep #$20
 	plx
 	sta $0D12,X

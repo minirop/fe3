@@ -4919,7 +4919,7 @@ L80A4BA:
 .dw L80A72B
 
 L80A4CA:
-	jsl $8DD992
+	jsl L8DD992
 	rts
 
 L80A4CF:
@@ -5212,7 +5212,7 @@ L80A70D:
 	pha
 	plb
 	rep #$20
-	jsl $8490BD
+	jsl L8490BD
 	plb
 	rts
 
@@ -5223,7 +5223,7 @@ L80A71C:
 	pha
 	plb
 	rep #$20
-	jsl $8490BD
+	jsl L8490BD
 	plb
 	rts
 

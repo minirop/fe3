@@ -417,10 +417,10 @@ L83863F:
 	jsl L93E5C0
 	jsl L83899D
 	lda #$0030
-	jsl $87A8F4
+	jsl L87A8F4
 	bcc L8386B1
 	lda #$0098
-	jsl $87A8F4
+	jsl L87A8F4
 	bcs L8386C0
 L8386B1:
 	jsl L83D912
@@ -1299,7 +1299,7 @@ L838E3A:
 	rep #$20
 	inc $0856
 	jsl L808CB4
-	jsl $87B257
+	jsl L87B257
 	rts
 
 L838E4F:
@@ -2650,7 +2650,7 @@ L8399E8:
 	lda [$03],Y
 	cmp #$ff
 	beq L8399F7
-	jsl $87AA9B
+	jsl L87AA9B
 	bcs L839A01
 L8399F7:
 	rep #$20
@@ -4965,19 +4965,19 @@ L83ADAC:
 	bne L83AE04
 	lda #$00A8
 	ldx #$0400
-	jsl $87A8F7
+	jsl L87A8F7
 	bcc L83ADE7
 	lda #$00A9
 	ldx #$0400
-	jsl $87A8F7
+	jsl L87A8F7
 	bcc L83ADE7
 	lda #$00A7
 	ldx #$0400
-	jsl $87A8F7
+	jsl L87A8F7
 	bcc L83ADE7
 	lda #$00AA
 	ldx #$0400
-	jsl $87A8F7
+	jsl L87A8F7
 	bcs L83AE04
 L83ADE7:
 	sep #$20
@@ -7180,11 +7180,11 @@ L83BE97:
 	rep #$20
 	ldy #$0003
 	lda [$03],Y
-	jsl $87A9FC
+	jsl L87A9FC
 	bcs L83BEB5
 	ldy #$0003
 	lda [$03],Y
-	jsl $87AA28
+	jsl L87AA28
 	ldy #$0005
 	lda [$03],Y
 	sta $07C6
@@ -7254,7 +7254,7 @@ L83BF17:
 	beq L83BF3B
 	phy
 	phx
-	jsl $87AA9B
+	jsl L87AA9B
 	plx
 	ply
 	bcc L83BF3B
@@ -7374,42 +7374,42 @@ L83BFFE:
 
 L83BFFF:
 	lda #$0014
-	jsl $87AA28
+	jsl L87AA28
 	rts
 
 L83C007:
 	lda #$0015
-	jsl $87AA28
+	jsl L87AA28
 	rts
 
 L83C00F:
 	lda #$0013
-	jsl $87AA28
+	jsl L87AA28
 	rts
 
 L83C017:
 	lda #$0016
-	jsl $87AA28
+	jsl L87AA28
 	rts
 
 L83C01F:
 	lda #$0017
-	jsl $87AA28
+	jsl L87AA28
 	rts
 
 L83C027:
 	lda #$0011
-	jsl $87AA28
+	jsl L87AA28
 	rts
 
 L83C02F:
 	lda #$0018
-	jsl $87AA28
+	jsl L87AA28
 	rts
 
 L83C037:
 	lda #$0006
-	jsl $87AA28
+	jsl L87AA28
 	rts
 
 L83C03F:
@@ -8406,7 +8406,7 @@ L83C8DC:
 	lda #$01
 	sta $0F9E
 	php
-	jsl $878000
+	jsl L878000
 	plp
 	rep #$20
 L83C90A:
@@ -10059,27 +10059,27 @@ L83D79A:
 
 L83D79B:
 	lda #$0014
-	jsl $87AA49
+	jsl L87AA49
 	rts
 
 L83D7A3:
 	lda #$0015
-	jsl $87AA49
+	jsl L87AA49
 	rts
 
 L83D7AB:
 	lda #$0013
-	jsl $87AA49
+	jsl L87AA49
 	rts
 
 L83D7B3:
 	lda #$0016
-	jsl $87AA49
+	jsl L87AA49
 	rts
 
 L83D7BB:
 	lda #$0017
-	jsl $87AA49
+	jsl L87AA49
 	rts
 
 .db $0F $16 $0D $09 $0D $05 $10 $04
@@ -11788,7 +11788,7 @@ L83E480:
 	lda [$03],Y
 	cmp #$FF
 	beq L83E48F
-	jsl $87AA9B
+	jsl L87AA9B
 	bcs L83E494
 L83E48F:
 	plx
@@ -11884,7 +11884,7 @@ L83E525:
 	lda [$03],Y
 	cmp #$FF
 	beq L83E546
-	jsl $87AA9B
+	jsl L87AA9B
 	bcs L83E5BA
 L83E546:
 	rep #$20
@@ -12036,7 +12036,7 @@ L83E67A:
 	lda [$03],Y
 	cmp #$ff
 	beq L83E68E
-	jsl $87AA9B
+	jsl L87AA9B
 	bcs L83E6D9
 L83E68E:
 	ldy #$0005
@@ -12206,7 +12206,7 @@ L83E7CA:
 	lda [$03],Y
 	cmp #$ff
 	beq L83E7DE
-	jsl $87AA9B
+	jsl L87AA9B
 	bcs L83E82E
 L83E7DE:
 	ldy #$0005
@@ -12311,7 +12311,7 @@ L83E8AC:
 	lda [$03],Y
 	cmp #$ff
 	beq L83E8CD
-	jsl $87AA9B
+	jsl L87AA9B
 	bcs L83E918
 L83E8CD:
 	ldy #$0005
@@ -14876,7 +14876,7 @@ L83FCA3:
 	pla
 	stz $91
 	stz $93
-	jsl $87993C
+	jsl L87993C
 	bra L83FC9F
 
 L83FCB0:
@@ -15017,7 +15017,7 @@ L83FDE4:
 	php
 	rep #$20
 	and #$00FF
-	jsl $87A923
+	jsl L87A923
 	bcs L83FE45
 	phx
 	stx $23
@@ -15265,7 +15265,7 @@ L83FF95:
 	lda [$03],Y
 	cmp #$ff
 	beq 06
-	jsl $87AA9B
+	jsl L87AA9B
 	bcs L83FFEC
 	ldy #$0005
 	lda [$03],Y
