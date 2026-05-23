@@ -457,224 +457,866 @@
 .db $C0 $00 $1B $B8 $40 $1B $00 $08
 .db $8F $01 $0F $00 $00 $01 $04 $00
 .db $00 $07 $02 $05 $00 $01 $06 $03
-.db $04 $08 $AD $03 $10 $89 $01 $00
-.db $F0 $02 $80 $04 $22 $75 $88 $80
-.db $20 $9D $8B $20 $A5 $E2 $20 $67
-.db $E3 $20 $C8 $EE $20 $65 $F2 $20
-.db $38 $94 $20 $20 $9B $20 $5A $9A
-.db $20 $7A $E4 $20 $91 $F2 $22 $AF
-.db $95 $80 $A9 $00 $86 $85 $01 $A9
-.db $81 $FD $85 $00 $22 $06 $96 $80
-.db $A9 $00 $86 $85 $01 $A9 $9C $FC
-.db $85 $00 $22 $15 $96 $80 $20 $C8
-.db $91 $20 $D2 $B3 $20 $85 $91 $E2
-.db $20 $A9 $01 $8D $08 $07 $C2 $20
-.db $20 $23 $97 $20 $79 $99 $20 $7B
-.db $ED $20 $92 $EE $20 $29 $F7 $20
-.db $F6 $D9 $20 $D6 $C2 $20 $A6 $D4
-.db $AD $61 $10 $29 $FF $00 $D0 $F8
-.db $22 $EA $87 $80 $E2 $20 $AD $03
-.db $10 $89 $08 $F0 $06 $A5 $7A $29
-.db $F0 $85 $7A $C2 $20 $AD $03 $10
-.db $29 $FD $FF $8D $03 $10 $AD $03
-.db $10 $89 $01 $00 $F0 $03 $20 $94
-.db $E0 $22 $A0 $88 $80 $20 $20 $D8
-.db $AD $03 $10 $89 $01 $00 $F0 $03
-.db $20 $1D $CD $E2 $20 $AD $03 $10
-.db $29 $DF $8D $03 $10 $C2 $20 $20
-.db $5D $F7 $20 $57 $CF $20 $A4 $D7
-.db $20 $C5 $C1 $20 $22 $9A $20 $03
-.db $AF $20 $68 $CA $20 $81 $C8 $AD
-.db $02 $10 $89 $02 $00 $D0 $67 $20
-.db $5E $DC $20 $4E $BC $20 $7E $C0
-.db $20 $7C $B4 $20 $C6 $B6 $20 $9B
-.db $D8 $20 $84 $C1 $20 $5B $D7 $20
-.db $06 $E0 $20 $BF $DC $20 $2A $C1
-.db $20 $85 $DD $20 $6D $E0 $20 $13
-.db $D2 $20 $D2 $CF $AD $04 $10 $89
-.db $04 $00 $F0 $0B $E2 $20 $29 $FB
-.db $8D $04 $10 $C2 $20 $80 $13 $AD
-.db $02 $10 $89 $40 $00 $D0 $0B $AD
-.db $04 $10 $89 $02 $00 $D0 $03 $20
-.db $85 $91 $20 $F2 $BC $20 $83 $B9
-.db $AD $02 $10 $89 $20 $00 $F0 $06
-.db $20 $70 $F8 $20 $93 $D3 $20 $FC
-.db $98 $20 $44 $96 $20 $0A $D8 $20
-.db $46 $BE $20 $0B $F7 $AD $02 $10
-.db $89 $02 $00 $D0 $03 $20 $94 $E0
-.db $20 $A0 $99 $E2 $20 $AD $02 $10
-.db $89 $02 $D0 $07 $AD $04 $10 $89
-.db $02 $D0 $04 $A9 $00 $80 $02 $A9
-.db $01 $8D $10 $0C $C2 $20 $AD $04
-.db $10 $89 $08 $00 $F0 $10 $E2 $20
-.db $64 $F7 $A9 $80 $85 $7A $C2 $20
-.db $22 $EA $87 $80 $80 $52 $22 $EA
-.db $87 $80 $E2 $20 $AD $00 $10 $29
-.db $BF $8D $00 $10 $C2 $20 $AD $B2
-.db $04 $29 $80 $00 $D0 $08 $20 $1B
-.db $99 $90 $03 $20 $62 $D8 $AD $B2
-.db $04 $29 $FF $00 $C9 $80 $00 $F0
-.db $0A $E2 $20 $EE $05 $10 $C2 $20
-.db $4C $F7 $8E $AD $03 $10 $89 $01
-.db $00 $F0 $05 $89 $10 $00 $F0 $10
-.db $E2 $20 $A9 $FF $49 $FF $25 $F7
-.db $85 $F7 $C2 $20 $22 $75 $88 $80
-.db $28 $6B $AD $12 $10 $85 $15 $AD
-.db $5F $07 $20 $7E $90 $48 $E2 $20
-.db $A5 $15 $8D $12 $10 $C2 $20 $68
-.db $60 $AD $13 $10 $85 $15 $AD $60
-.db $07 $20 $7E $90 $48 $E2 $20 $A5
-.db $15 $8D $13 $10 $C2 $20 $68 $60
-.db $AD $5D $07 $85 $15 $AD $5F $07
-.db $20 $7E $90 $48 $E2 $20 $A5 $15
-.db $8D $5D $07 $C2 $20 $68 $60 $AD
-.db $5E $07 $85 $15 $AD $60 $07 $20
-.db $7E $90 $48 $E2 $20 $A5 $15 $8D
-.db $5E $07 $C2 $20 $68 $60 $20 $B9
-.db $90 $85 $17 $5A $E2 $20 $A2 $00
-.db $00 $A0 $00 $00 $BF $36 $8C $95
-.db $C9 $FF $F0 $1B $C5 $15 $D0 $12
-.db $A5 $17 $C9 $FF $F0 $16 $C9 $66
-.db $F0 $12 $BF $37 $8C $95 $C5 $17
-.db $F0 $0A $C8 $E8 $E8 $80 $DD $A0
-.db $00 $00 $84 $15 $C2 $20 $98 $7A
-.db $60 $29 $FF $00 $48 $AD $8F $07
-.db $89 $02 $00 $D0 $03 $68 $80 $1C
-.db $68 $C9 $20 $00 $D0 $03 $4C $84
-.db $91 $C9 $17 $00 $D0 $06 $A9 $13
-.db $00 $4C $84 $91 $C9 $13 $00 $D0
-.db $03 $4C $84 $91 $C9 $0F $00 $90
-.db $0B $C9 $18 $00 $B0 $06 $A9 $0F
-.db $00 $4C $84 $91 $C9 $18 $00 $90
-.db $0B $C9 $1E $00 $B0 $06 $A9 $18
-.db $00 $4C $84 $91 $C9 $2D $00 $90
-.db $0A $C9 $3C $00 $B0 $05 $A9 $2D
-.db $00 $80 $71 $C9 $40 $00 $90 $0A
-.db $C9 $4F $00 $B0 $05 $A9 $40 $00
-.db $80 $62 $C9 $09 $00 $D0 $03 $4C
-.db $84 $91 $C9 $1E $00 $90 $0A $C9
-.db $24 $00 $B0 $05 $A9 $1E $00 $80
-.db $4B $C9 $24 $00 $90 $07 $C9 $29
-.db $00 $B0 $02 $80 $3F $C9 $29 $00
-.db $90 $0A $C9 $2D $00 $B0 $05 $A9
-.db $29 $00 $80 $30 $C9 $4F $00 $90
-.db $0A $C9 $57 $00 $B0 $05 $A9 $4F
-.db $00 $80 $21 $C9 $66 $00 $90 $0A
-.db $C9 $6B $00 $B0 $05 $A9 $66 $00
-.db $80 $12 $C9 $FF $00 $F0 $0D $C9
-.db $03 $00 $F0 $08 $C9 $0B $00 $F0
-.db $03 $A9 $00 $00 $60 $E2 $20 $A9
-.db $01 $8D $0A $07 $C2 $20 $22 $4E
-.db $95 $80 $A9 $00 $02 $8D $46 $10
-.db $22 $F0 $98 $80 $E2 $20 $AD $0A
-.db $07 $D0 $05 $9C $3D $10 $80 $1D
-.db $AD $37 $10 $D0 $18 $AD $08 $07
-.db $D0 $13 $AD $3D $10 $D0 $0E $AF
-.db $08 $07 $00 $1A $8F $08 $07 $00
-.db $A9 $01 $8D $3D $10 $C2 $20 $60
-.db $AD $5F $07 $20 $B9 $90 $C9 $40
-.db $00 $F0 $1B $AD $B7 $07 $89 $10
-.db $00 $D0 $13 $20 $D8 $92 $64 $15
-.db $20 $8F $92 $E2 $20 $A9 $00 $8D
-.db $3B $10 $C2 $20 $80 $11 $64 $15
-.db $20 $8F $92 $20 $D8 $92 $E2 $20
-.db $A9 $01 $8D $3B $10 $C2 $20 $60
-.db $A2 $00 $00 $BF $DE $04 $00 $48
-.db $BF $BE $04 $00 $9F $DE $04 $00
-.db $68 $9F $BE $04 $00 $E8 $E8 $E0
-.db $20 $00 $90 $E7 $E2 $20 $AD $3B
-.db $10 $49 $01 $8D $3B $10 $C2 $20
-.db $60 $AD $5F $07 $20 $B9 $90 $C9
-.db $40 $00 $F0 $08 $AD $3B $10 $89
-.db $01 $00 $F0 $05 $A2 $00 $00 $80
-.db $22 $A2 $20 $00 $80 $1D $AD $5F
-.db $07 $20 $B9 $90 $C9 $40 $00 $F0
-.db $0D $AD $3B $10 $89 $01 $00 $D0
-.db $05 $A2 $00 $00 $80 $05 $A2 $20
-.db $00 $80 $00 $AC $39 $10 $B9 $B4
-.db $1D $29 $FF $00 $22 $FA $96 $80
-.db $E2 $20 $A9 $00 $9F $DA $04 $00
-.db $C2 $20 $EE $39 $10 $60 $AC $39
-.db $10 $B9 $B4 $1D $29 $FF $00 $A8
-.db $EE $39 $10 $64 $15 $80 $0F $AD
-.db $5D $07 $29 $FF $00 $C9 $FF $00
-.db $D0 $01 $60 $A0 $00 $00 $AD $01
-.db $10 $89 $20 $00 $F0 $0D $AD $B7
-.db $07 $89 $10 $00 $F0 $05 $A9 $4E
-.db $4C $80 $03 $AD $62 $10 $18 $65
-.db $15 $8D $1A $10 $9C $1C $10 $20
-.db $50 $90 $A9 $FE $7A $20 $DA $93
-.db $60 $AC $39 $10 $B9 $B4 $1D $29
-.db $FF $00 $A8 $EE $39 $10 $80 $18
-.db $AD $5E $07 $29 $FF $00 $C9 $FF
-.db $00 $D0 $01 $60 $AD $01 $10 $89
-.db $04 $00 $F0 $01 $60 $A0 $00 $00
-.db $AD $B7 $07 $89 $10 $00 $F0 $17
-.db $AD $60 $07 $29 $FF $00 $C9 $24
-.db $00 $90 $0C $C9 $29 $00 $B0 $07
-.db $A9 $18 $00 $85 $15 $80 $02 $64
-.db $15 $AD $01 $10 $89 $20 $00 $F0
-.db $0D $AD $B7 $07 $89 $10 $00 $D0
-.db $05 $AD $62 $10 $80 $03 $A9 $4E
-.db $4C $38 $E5 $15 $8D $1A $10 $A9
-.db $01 $00 $8D $1C $10 $20 $67 $90
-.db $A9 $FE $89 $20 $DA $93 $60 $5A
-.db $A8 $20 $53 $93 $7A $6B $AC $39
-.db $10 $B9 $B4 $1D $29 $FF $00 $A8
-.db $EE $39 $10 $AD $62 $10 $8D $1A
-.db $10 $9C $1C $10 $AD $5F $07 $29
-.db $FF $00 $38 $E9 $2D $00 $A9 $FE
-.db $98 $20 $CE $93 $60 $A8 $20 $7F
-.db $93 $6B $AC $39 $10 $B9 $B4 $1D
-.db $29 $FF $00 $A8 $EE $39 $10 $A9
-.db $4E $4C $8D $1A $10 $A9 $01 $00
-.db $8D $1C $10 $AD $60 $07 $29 $FF
-.db $00 $38 $E9 $2D $00 $A9 $FE $AC
-.db $20 $CE $93 $60 $A0 $00 $00 $A9
-.db $4E $4C $8D $1A $10 $A9 $01 $00
-.db $8D $1C $10 $20 $39 $90 $A9 $FE
-.db $AC $20 $DA $93 $60 $A0 $00 $00
-.db $A9 $4E $4C $8D $1A $10 $A9 $01
-.db $00 $8D $1C $10 $20 $39 $90 $A9
-.db $FE $89 $20 $DA $93 $60 $48 $A9
-.db $00 $7E $85 $01 $68 $85 $00 $4C
-.db $E6 $93 $48 $A9 $00 $7E $85 $01
-.db $68 $85 $00 $4C $E6 $93 $AD $1A
-.db $10 $22 $11 $94 $86 $E2 $20 $AD
-.db $1C $10 $D0 $0E $A9 $00 $9F $C9
-.db $04 $00 $A9 $00 $9F $CA $04 $00
-.db $80 $0C $A9 $94 $9F $C9 $04 $00
-.db $A9 $80 $9F $CA $04 $00 $C2 $20
-.db $60 $A2 $00 $86 $86 $04 $A2 $20
-.db $94 $86 $03 $22 $33 $96 $80 $6B
-.db $BF $CE $04 $00 $BF $D0 $04 $00
-.db $BD $DA $04 $29 $FF $00 $D0 $07
-.db $E2 $20 $9C $0A $07 $C2 $20 $6B
-.db $E2 $20 $A9 $00 $8D $21 $21 $A9
-.db $00 $8D $22 $21 $8D $22 $21 $C2
-.db $20 $AD $03 $10 $89 $01 $00 $F0
-.db $10 $A9 $00 $86 $85 $01 $A9 $02
-.db $95 $85 $00 $22 $AD $8E $80 $80
-.db $14 $20 $31 $95 $20 $1B $95 $A9
-.db $00 $86 $85 $01 $A9 $FB $94 $85
-.db $00 $22 $AD $8E $80 $60 $AD $03
-.db $10 $89 $01 $00 $D0 $40 $A9 $00
-.db $14 $85 $15 $A4 $15 $A2 $00 $00
-.db $BF $00 $80 $94 $9F $FE $40 $7E
-.db $E8 $88 $E8 $88 $D0 $F2 $A9 $00
-.db $04 $85 $15 $A4 $15 $A2 $00 $00
-.db $BF $00 $A0 $94 $9F $FE $54 $7E
-.db $E8 $88 $E8 $88 $D0 $F2 $A9 $00
-.db $86 $85 $01 $A9 $09 $95 $85 $00
-.db $22 $AD $8E $80 $80 $3C $A9 $00
-.db $16 $85 $15 $A4 $15 $A2 $00 $00
-.db $BF $00 $80 $94 $9F $FE $40 $7E
-.db $E8 $88 $E8 $88 $D0 $F2 $E2 $20
-.db $A9 $CA $85 $73 $C2 $20 $A9 $C0
-.db $9E $85 $71 $A9 $00 $18 $85 $76
-.db $22 $18 $8F $80 $A9 $00 $86 $85
-.db $01 $A9 $12 $95 $85 $00 $22 $AD
-.db $8E $80 $60 $01 $C0 $D0 $94 $20
+.db $04
+
+L868E31:
+.ACCU 16
+    php
+    lda $1003
+    bit #$0001
+    beq L868E3C
+    bra L868E40
+
+L868E3C:
+    jsl L808875
+L868E40:
+    jsr $8B9D
+    jsr $E2A5
+    jsr $E367
+    jsr $EEC8
+    jsr $F265
+    jsr $9438
+    jsr $9B20
+    jsr $9A5A
+    jsr $E47A
+    jsr $F291
+    jsl L8095AF
+    lda #$8600
+    sta $01
+    lda #$FD81
+    sta $00
+    jsl L809606
+    lda #$8600
+    sta $01
+    lda #$FC9C
+    sta $00
+    jsl L809615
+    jsr $91C8
+    jsr $B3D2
+    jsr $9185
+    sep #$20
+    lda #$01
+    sta $0708
+    rep #$20
+    jsr $9723
+    jsr $9979
+    jsr $ED7B
+    jsr $EE92
+    jsr $F729
+    jsr $D9F6
+    jsr $C2D6
+    jsr $D4A6
+L868EA8:
+    lda $1061
+    and #$00FF
+    bne L868EA8
+    jsl L8087EA
+    sep #$20
+    lda $1003
+    bit #$08
+    beq L868EC3
+    lda $7A
+    and #$F0
+    sta $7A
+L868EC3:
+    rep #$20
+    lda $1003
+    and #$FFFD
+    sta $1003
+    lda $1003
+    bit #$0001
+    beq L868ED9
+    jsr $E094
+L868ED9:
+    jsl L8088A0
+    jsr $D820
+    lda $1003
+    bit #$0001
+    beq L868EEB
+    jsr $CD1D
+L868EEB:
+    sep #$20
+    lda $1003
+    and #$DF
+    sta $1003
+    rep #$20
+    jsr $F75D
+    jsr $CF57
+    jsr $D7A4
+    jsr $C1C5
+    jsr $9A22
+    jsr $AF03
+    jsr $CA68
+    jsr $C881
+    lda $1002
+    bit #$0002
+    bne L868F7E
+    jsr $DC5E
+    jsr $BC4E
+    jsr $C07E
+    jsr $B47C
+    jsr $B6C6
+    jsr $D89B
+    jsr $C184
+    jsr $D75B
+    jsr $E006
+    jsr $DCBF
+    jsr $C12A
+    jsr $DD85
+    jsr $E06D
+    jsr $D213
+    jsr $CFD2
+    lda $1004
+    bit #$0004
+    beq L868F57
+    sep #$20
+    and #$FB
+    sta $1004
+    rep #$20
+    bra L868F6A
+
+L868F57:
+    lda $1002
+    bit #$0040
+    bne L868F6A
+    lda $1004
+    bit #$0002
+    bne L868F6A
+    jsr $9185
+L868F6A:
+    jsr $BCF2
+    jsr $B983
+    lda $1002
+    bit #$0020
+    beq L868F7E
+    jsr $F870
+    jsr $D393
+L868F7E:
+    jsr $98FC
+    jsr $9644
+    jsr $D80A
+    jsr $BE46
+    jsr $F70B
+    lda $1002
+    bit #$0002
+    bne L868F98
+    jsr $E094
+L868F98:
+    jsr $99A0
+    sep #$20
+    lda $1002
+    bit #$02
+    bne L868FAB
+    lda $1004
+    bit #$02
+    bne L868FAF
+L868FAB:
+    lda #$00
+    bra L868FB1
+
+L868FAF:
+    lda #$01
+L868FB1:
+    sta $0C10
+    rep #$20
+    lda $1004
+    bit #$0008
+    beq L868FCE
+    sep #$20
+    stz $F7
+    lda #$80
+    sta $7A
+    rep #$20
+    jsl L8087EA
+    bra L869020
+
+L868FCE:
+    jsl L8087EA
+    sep #$20
+    lda $1000
+    and #$BF
+    sta $1000
+    rep #$20
+    lda $04B2
+    and #$0080
+    bne L868FEE
+    jsr $991B
+    bcc L868FEE
+    jsr $D862
+L868FEE:
+    lda $04B2
+    and #$00FF
+    cmp #$0080
+    beq L869003
+    sep #$20
+    inc $1005
+    rep #$20
+    jmp $8EF7
+
+L869003:
+    lda $1003
+    bit #$0001
+    beq L869010
+    bit #$0010
+    beq L869020
+L869010:
+    sep #$20
+    lda #$FF
+    eor #$FF
+    and $F7
+    sta $F7
+    rep #$20
+    jsl L808875
+L869020:
+    plp
+    rtl
+
+L869022:
+    lda $1012
+    sta $15
+    lda $075F
+    jsr $907E
+    pha
+    sep #$20
+    lda $15
+    sta $1012
+    rep #$20
+    pla
+    rts
+
+L869039:
+    lda $1013
+    sta $15
+    lda $0760
+    jsr $907E
+    pha
+    sep #$20
+    lda $15
+    sta $1013
+    rep #$20
+    pla
+    rts
+
+L869050:
+    lda $075D
+    sta $15
+    lda $075F
+    jsr $907E
+    pha
+    sep #$20
+    lda $15
+    sta $075D
+    rep #$20
+    pla
+    rts
+
+L869067:
+    lda $075E
+    sta $15
+    lda $0760
+    jsr $907E
+    pha
+    sep #$20
+    lda $15
+    sta $075E
+    rep #$20
+    pla
+    rts
+
+L86907E:
+    jsr $90B9
+    sta $17
+    phy
+    sep #$20
+    ldx #$0000
+    ldy #$0000
+L86908C:
+    lda $958C36,X
+    cmp #$FF
+    beq L8690AF
+    cmp $15
+    bne L8690AA
+    lda $17
+    cmp #$FF
+    beq L8690B4
+    cmp #$66
+    beq L8690B4
+    lda $958C37,X
+    cmp $17
+    beq L8690B4
+L8690AA:
+    iny
+    inx
+    inx
+    bra L86908C
+
+L8690AF:
+    ldy #$0000
+    sty $15
+L8690B4:
+    rep #$20
+    tya
+    ply
+    rts
+
+L8690B9:
+    and #$00FF
+    pha
+    lda $078F
+    bit #$0002
+    bne L8690C8
+    pla
+    bra L8690E4
+
+L8690C8:
+    pla
+    cmp #$0020
+    bne L8690D1
+    jmp $9184
+
+L8690D1:
+    cmp #$0017
+    bne L8690DC
+    lda #$0013
+    jmp $9184
+
+L8690DC:
+    cmp #$0013
+    bne L8690E4
+    jmp $9184
+
+L8690E4:
+    cmp #$000F
+    bcc L8690F4
+    cmp #$0018
+    bcs L8690F4
+    lda #$000F
+    jmp $9184
+
+L8690F4:
+    cmp #$0018
+    bcc L869104
+    cmp #$001E
+    bcs L869104
+    lda #$0018
+    jmp $9184
+
+L869104:
+    cmp #$002D
+    bcc L869113
+    cmp #$003C
+    bcs L869113
+    lda #$002D
+    bra L869184
+
+L869113:
+    cmp #$0040
+    bcc L869122
+    cmp #$004F
+    bcs L869122
+    lda #$0040
+    bra L869184
+
+L869122:
+    cmp #$0009
+    bne L86912A
+    jmp $9184
+
+L86912A:
+    cmp #$001E
+    bcc L869139
+    cmp #$0024
+    bcs L869139
+    lda #$001E
+    bra L869184
+
+L869139:
+    cmp #$0024
+    bcc L869145
+    cmp #$0029
+    bcs L869145
+    bra L869184
+
+L869145:
+    cmp #$0029
+    bcc L869154
+    cmp #$002D
+    bcs L869154
+    lda #$0029
+    bra L869184
+
+L869154:
+    cmp #$004F
+    bcc L869163
+    cmp #$0057
+    bcs L869163
+    lda #$004F
+    bra L869184
+
+L869163:
+    cmp #$0066
+    bcc L869172
+    cmp #$006B
+    bcs L869172
+    lda #$0066
+    bra L869184
+
+L869172:
+    cmp #$00FF
+    beq L869184
+    cmp #$0003
+    beq L869184
+    cmp #$000B
+    beq L869184
+    lda #$0000
+L869184:
+    rts
+
+L869185:
+    sep #$20
+    lda #$01
+    sta $070A
+    rep #$20
+    jsl L80954E
+    lda #$0200
+    sta $1046
+    jsl L8098F0
+    sep #$20
+    lda $070A
+    bne L8691A8
+    stz $103D
+    bra L8691C5
+
+L8691A8:
+    lda $1037
+    bne L8691C5
+    lda $0708
+    bne L8691C5
+    lda $103D
+    bne L8691C5
+    lda.l $000708
+    inc A
+    sta.l $000708
+    lda #$01
+    sta $103D
+L8691C5:
+    rep #$20
+    rts
+
+L8691C8:
+    lda $075F
+    jsr $90B9
+    cmp #$0040
+    beq L8691EE
+    lda $07B7
+    bit #$0010
+    bne L8691EE
+    jsr $92D8
+    stz $15
+    jsr $928F
+    sep #$20
+    lda #$00
+    sta $103B
+    rep #$20
+    bra L8691FF
+
+L8691EE:
+    stz $15
+    jsr $928F
+    jsr $92D8
+    sep #$20
+    lda #$01
+    sta $103B
+    rep #$20
+L8691FF:
+    rts
+
+L869200:
+    ldx #$0000
+L869203:
+    lda.l $0004DE,X
+    pha
+    lda.l $0004BE,X
+    sta.l $0004DE,X
+    pla
+    sta.l $0004BE,X
+    inx
+    inx
+    cpx #$0020
+    bcc L869203
+    sep #$20
+    lda $103B
+    eor #$01
+    sta $103B
+    rep #$20
+    rts
+
+L869229:
+    lda $075F
+    jsr $90B9
+    cmp #$0040
+    beq L86923C
+    lda $103B
+    bit #$0001
+    beq L869241
+L86923C:
+    ldx #$0000
+    bra L869263
+
+L869241:
+    ldx #$0020
+    bra L869263
+
+L869246:
+    lda $075F
+    jsr $90B9
+    cmp #$0040
+    beq L86925E
+    lda $103B
+    bit #$0001
+    bne L86925E
+    ldx #$0000
+    bra L869263
+
+L86925E:
+    ldx #$0020
+    bra L869263
+
+L869263:
+    ldy $1039
+    lda $1DB4,Y
+    and #$00FF
+    jsl L8096FA
+    sep #$20
+    lda #$00
+    sta.l $0004DA,X
+    rep #$20
+    inc $1039
+    rts
+
+L86927E:
+    ldy $1039
+    lda $1DB4,Y
+    and #$00FF
+    tay
+    inc $1039
+    stz $15
+    bra L86929E
+
+L86928F:
+    lda $075D
+    and #$00FF
+    cmp #$00FF
+    bne L86929B
+    rts
+
+L86929B:
+    ldy #$0000
+L86929E:
+    lda $1001
+    bit #$0020
+    beq L8692B3
+    lda $07B7
+    bit #$0010
+    beq L8692B3
+    lda #$4C4E
+    bra L8692B6
+
+L8692B3:
+    lda $1062
+L8692B6:
+    clc
+    adc $15
+    sta $101A
+    stz $101C
+    jsr $9050
+    lda #$7AFE
+    jsr $93DA
+    rts
+
+L8692C9:
+    ldy $1039
+    lda $1DB4,Y
+    and #$00FF
+    tay
+    inc $1039
+    bra L8692F0
+
+L8692D8:
+    lda $075E
+    and #$00FF
+    cmp #$00FF
+    bne L8692E4
+    rts
+
+L8692E4:
+    lda $1001
+    bit #$0004
+    beq L8692ED
+    rts
+
+L8692ED:
+    ldy #$0000
+L8692F0:
+    lda $07B7
+    bit #$0010
+    beq L86930F
+    lda $0760
+    and #$00FF
+    cmp #$0024
+    bcc L86930F
+    cmp #$0029
+    bcs L86930F
+    lda #$0018
+    sta $15
+    bra L869311
+
+L86930F:
+    stz $15
+L869311:
+    lda $1001
+    bit #$0020
+    beq L869326
+    lda $07B7
+    bit #$0010
+    bne L869326
+    lda $1062
+    bra L869329
+
+L869326:
+    lda #$4C4E
+L869329:
+    sec
+    sbc $15
+    sta $101A
+    lda #$0001
+    sta $101C
+    jsr $9067
+    lda #$89FE
+    jsr $93DA
+    rts
+
+L86933F:
+    phy
+    tay
+    jsr $9353
+    ply
+    rtl
+
+L869346:
+    ldy $1039
+    lda $1DB4,Y
+    and #$00FF
+    tay
+    inc $1039
+    lda $1062
+    sta $101A
+    stz $101C
+    lda $075F
+    and #$00FF
+    sec
+    sbc #$002D
+    lda #$98FE
+    jsr $93CE
+    rts
+
+L86936D:
+    tay
+    jsr $937F
+    rtl
+
+L869372:
+    ldy $1039
+    lda $1DB4,Y
+    and #$00FF
+    tay
+    inc $1039
+    lda #$4C4E
+    sta $101A
+    lda #$0001
+    sta $101C
+    lda $0760
+    and #$00FF
+    sec
+    sbc #$002D
+    lda #$ACFE
+    jsr $93CE
+    rts
+
+L86939C:
+    ldy #$0000
+    lda #$4C4E
+    sta $101A
+    lda #$0001
+    sta $101C
+    jsr $9039
+    lda #$ACFE
+    jsr $93DA
+    rts
+
+L8693B5:
+    ldy #$0000
+    lda #$4C4E
+    sta $101A
+    lda #$0001
+    sta $101C
+    jsr $9039
+    lda #$89FE
+    jsr $93DA
+    rts
+
+L8693CE:
+    pha
+    lda #$7E00
+    sta $01
+    pla
+    sta $00
+    jmp $93E6
+
+L8693DA:
+    pha
+    lda #$7E00
+    sta $01
+    pla
+    sta $00
+    jmp $93E6
+
+L8693E6:
+    lda $101A
+    jsl L869411
+    sep #$20
+    lda $101C
+    bne L869402
+    lda #$00
+    sta.l $0004C9,X
+    lda #$00
+    sta.l $0004CA,X
+    bra L86940E
+
+L869402:
+    lda #$94
+    sta.l $0004C9,X
+    lda #$80
+    sta.l $0004CA,X
+L86940E:
+    rep #$20
+    rts
+
+L869411:
+    ldx #$8600
+    stx $04
+    ldx #$9420
+    stx $03
+    jsl L809633
+    rtl
+
+L869420:
+    lda.l $0004CE,X
+    lda.l $0004D0,X
+    lda $04DA,X
+    and #$00FF
+    bne L869437
+    sep #$20
+    stz $070A
+    rep #$20
+L869437:
+    rtl
+
+L869438:
+    sep #$20
+    lda #$00
+    sta $2121
+    lda #$00
+    sta $2122
+    sta $2122
+    rep #$20
+    lda $1003
+    bit #$0001
+    beq L869461
+    lda #$8600
+    sta $01
+    lda #$9502
+    sta $00
+    jsl L808EAD
+    bra L869475
+
+L869461:
+    jsr $9531
+    jsr $951B
+    lda #$8600
+    sta $01
+    lda #$94FB
+    sta $00
+    jsl L808EAD
+L869475:
+    rts
+
+L869476:
+    lda $1003
+    bit #$0001
+    bne L8694BE
+    lda #$1400
+    sta $15
+    ldy $15
+    ldx #$0000
+L869488:
+    lda $948000,X
+    sta $7E40FE,X
+    inx
+    dey
+    inx
+    dey
+    bne L869488
+    lda #$0400
+    sta $15
+    ldy $15
+    ldx #$0000
+L8694A0:
+    lda $94A000,X
+    sta $7E54FE,X
+    inx
+    dey
+    inx
+    dey
+    bne L8694A0
+    lda #$8600
+    sta $01
+    lda #$9509
+    sta $00
+    jsl L808EAD
+    bra L8694FA
+
+L8694BE:
+    lda #$1600
+    sta $15
+    ldy $15
+    ldx #$0000
+L8694C8:
+    lda $948000,X
+    sta $7E40FE,X
+    inx
+    dey
+    inx
+    dey
+    bne L8694C8
+    sep #$20
+    lda #$CA
+    sta $73
+    rep #$20
+    lda #$9EC0
+    sta $71
+    lda #$1800
+    sta $76
+    jsl L808F18
+    lda #$8600
+    sta $01
+    lda #$9512
+    sta $00
+    jsl L808EAD
+L8694FA:
+    rts
+
+.db $01 $C0 $D0 $94 $20
 .db $00 $10 $01 $C2 $FB $85 $3E $00
 .db $01 $02 $FE $40 $7E $00 $18 $80
 .db $00 $10 $02 $FE $40 $7E $00 $1E
@@ -2332,210 +2974,803 @@
 .db $29 $DF $8D $00 $10 $9C $A1 $0F
 .db $C2 $20 $60 $AD $27 $01 $29 $80
 .db $0F $D0 $02 $80 $D2 $22 $03 $B9
-.db $87 $80 $CC $AD $27 $01 $48 $9C
-.db $27 $01 $22 $32 $B9 $87 $68 $8D
-.db $27 $01 $60 $08 $E2 $20 $9C $0D
-.db $0F $9C $10 $0F $C2 $20 $A9 $00
-.db $00 $8D $00 $0F $A5 $00 $8D $02
-.db $0F $A5 $01 $8D $03 $0F $A9 $06
-.db $00 $8D $07 $0F $8D $09 $0F $9C
-.db $0B $0F $9C $0E $0F $9C $27 $0F
-.db $9C $29 $0F $A9 $FE $22 $8D $12
-.db $0F $A9 $01 $00 $8D $05 $0F $A2
-.db $00 $00 $A9 $FF $FF $9F $D0 $5B
-.db $7F $E8 $E8 $E0 $00 $01 $90 $F5
-.db $A9 $00 $7E $8D $21 $0F $A9 $8A
-.db $34 $8D $20 $0F $A9 $00 $24 $8D
-.db $14 $0F $A9 $00 $30 $8D $23 $0F
-.db $A9 $16 $08 $8D $25 $0F $9C $2B
-.db $0F $A9 $14 $08 $8D $00 $1B $28
-.db $60 $08 $E2 $20 $9C $0D $0F $A9
-.db $01 $8D $10 $0F $C2 $20 $A9 $00
-.db $00 $8D $00 $0F $A5 $00 $8D $02
-.db $0F $A5 $01 $8D $03 $0F $A9 $05
-.db $00 $8D $07 $0F $8D $09 $0F $9C
-.db $0B $0F $9C $0E $0F $9C $27 $0F
-.db $9C $29 $0F $A9 $FE $30 $8D $12
-.db $0F $A9 $01 $00 $8D $05 $0F $A2
-.db $00 $00 $A9 $FF $FF $9F $D0 $5B
-.db $7F $E8 $E8 $E0 $00 $01 $90 $F5
-.db $A9 $00 $7E $8D $21 $0F $AD $02
-.db $10 $89 $01 $00 $D0 $05 $A9 $94
-.db $34 $80 $03 $A9 $84 $34 $8D $20
-.db $0F $A9 $00 $34 $8D $14 $0F $A9
-.db $00 $10 $8D $23 $0F $A9 $14 $08
-.db $8D $25 $0F $9C $2B $0F $A9 $14
-.db $08 $8D $00 $1B $28 $60 $08 $C2
-.db $20 $AD $64 $10 $29 $FF $00 $C9
-.db $91 $00 $F0 $05 $20 $EE $C9 $80
-.db $03 $20 $16 $CA $28 $6B $AD $67
-.db $10 $29 $FF $00 $0A $AA $E2 $20
-.db $BF $F0 $DA $95 $8D $12 $02 $BF
-.db $F1 $DA $95 $8D $16 $02 $AD $67
-.db $10 $1A $C9 $03 $90 $02 $A9 $00
-.db $8D $67 $10 $C2 $20 $60 $AD $67
-.db $10 $29 $FF $00 $0A $0A $AA $E2
-.db $20 $BF $F6 $DA $95 $8D $12 $02
-.db $BF $F7 $DA $95 $8D $16 $02 $BF
-.db $F8 $DA $95 $8D $1A $02 $BF $F9
-.db $DA $95 $8D $1E $02 $AD $67 $10
-.db $1A $C9 $02 $90 $02 $A9 $00 $8D
-.db $67 $10 $C2 $20 $60 $08 $C2 $20
-.db $AD $69 $10 $C9 $FF $FF $F0 $0E
-.db $A9 $F0 $01 $22 $E3 $B4 $80 $E2
-.db $20 $A9 $10 $8D $68 $10 $28 $60
-.db $E2 $20 $AD $68 $10 $F0 $15 $CE
-.db $68 $10 $D0 $10 $AD $02 $10 $09
-.db $10 $8D $02 $10 $C2 $20 $AD $69
-.db $10 $8D $76 $08 $C2 $20 $60 $E2
-.db $20 $A9 $01 $8D $03 $10 $C2 $20
-.db $A9 $FF $FF $8D $C6 $07 $8D $C8
-.db $07 $80 $07 $E2 $20 $9C $03 $10
-.db $C2 $20 $22 $75 $88 $80 $20 $7A
-.db $F7 $20 $27 $CC $20 $03 $E2 $AD
-.db $03 $10 $89 $01 $00 $D0 $05 $20
-.db $FB $CA $80 $03 $20 $0A $CB $E2
-.db $20 $9C $A1 $0F $C2 $20 $22 $75
-.db $88 $80 $A9 $7F $80 $22 $BB $B4
-.db $80 $22 $E1 $95 $80 $E2 $20 $A9
-.db $FF $49 $FF $25 $F7 $85 $F7 $C2
-.db $20 $20 $7A $F7 $20 $DE $CC $AD
-.db $01 $10 $89 $80 $00 $D0 $05 $A9
-.db $00 $00 $80 $06 $20 $EE $D5 $A9
-.db $01 $00 $6B $E2 $20 $9C $03 $10
-.db $C2 $20 $20 $76 $94 $22 $31 $8E
-.db $86 $60 $22 $7A $8B $80 $20 $5C
-.db $CE $22 $EA $87 $80 $E2 $20 $9C
-.db $D9 $07 $A5 $85 $29 $F0 $09 $04
-.db $85 $85 $A9 $0F $8D $5E $10 $AD
-.db $04 $10 $09 $01 $8D $04 $10 $AD
-.db $03 $10 $09 $01 $8D $03 $10 $C2
-.db $20 $20 $76 $94 $20 $5D $F7 $22
-.db $EA $87 $80 $A9 $00 $00 $48 $20
-.db $9D $CB $20 $C0 $CB $20 $C7 $CD
-.db $20 $D1 $CD $20 $04 $CF $E2 $20
-.db $AD $50 $10 $09 $80 $8D $50 $10
-.db $C2 $20 $AD $03 $10 $89 $08 $00
-.db $F0 $03 $20 $12 $CF $22 $EA $87
-.db $80 $22 $31 $8E $86 $AD $01 $10
-.db $89 $80 $00 $D0 $1E $E2 $20 $A9
-.db $FF $49 $FF $25 $F7 $85 $F7 $C2
-.db $20 $E2 $20 $A9 $20 $8D $61 $10
-.db $C2 $20 $68 $1A $C9 $16 $00 $90
-.db $AD $80 $01 $68 $60 $48 $E2 $20
-.db $D0 $07 $AD $03 $10 $09 $08 $80
-.db $10 $C9 $15 $D0 $07 $AD $03 $10
-.db $09 $10 $80 $05 $AD $03 $10 $29
-.db $E7 $8D $03 $10 $C2 $20 $68 $60
-.db $0A $85 $15 $0A $18 $65 $15 $AA
-.db $E2 $20 $BF $8C $95 $95 $8D $5D
-.db $07 $BF $8D $95 $95 $8D $5F $07
-.db $BF $8E $95 $95 $8D $62 $07 $BF
-.db $8F $95 $95 $8D $61 $07 $BF $90
-.db $95 $95 $8D $5F $10 $BF $91 $95
-.db $95 $29 $3F $8D $60 $10 $BF $91
-.db $95 $95 $29 $C0 $4A $4A $4A $C2
-.db $20 $29 $FF $00 $85 $15 $A9 $B2
-.db $4C $38 $E5 $15 $8D $62 $10 $E2
-.db $20 $A9 $FF $8D $5E $07 $9C $63
-.db $07 $A9 $00 $8D $8B $07 $9C $8F
-.db $07 $9C $B7 $07 $C2 $20 $60 $E2
-.db $20 $A9 $80 $85 $7A $8D $50 $10
-.db $8D $00 $21 $9C $04 $10 $64 $91
-.db $A2 $10 $00 $A9 $FF $9D $70 $10
-.db $CA $D0 $FA $9C $6F $10 $9C $70
-.db $10 $A9 $81 $8D $00 $42 $85 $F2
-.db $9C $34 $10 $9C $61 $10 $9C $5E
-.db $10 $9C $6B $10 $C2 $20 $A9 $B2
-.db $4C $8D $62 $10 $22 $61 $AC $87
-.db $AD $03 $10 $89 $01 $00 $D0 $0F
-.db $A9 $FF $00 $A2 $00 $30 $A0 $00
-.db $08 $22 $8E $8C $80 $80 $1A $A9
-.db $FF $00 $A2 $00 $30 $A0 $00 $04
-.db $22 $8E $8C $80 $A9 $FF $02 $A2
-.db $00 $34 $A0 $00 $04 $22 $8E $8C
-.db $80 $20 $0B $97 $20 $65 $F2 $22
-.db $EA $87 $80 $E2 $20 $A9 $00 $8D
-.db $60 $43 $A9 $14 $8D $61 $43 $A9
-.db $73 $8D $62 $43 $A9 $8D $8D $63
-.db $43 $A9 $86 $8D $64 $43 $C2 $20
-.db $E2 $20 $A9 $00 $8D $70 $43 $A9
-.db $14 $8D $71 $43 $A9 $73 $8D $72
-.db $43 $A9 $8D $8D $73 $43 $A9 $86
-.db $8D $74 $43 $C2 $20 $60 $E2 $20
-.db $9C $02 $10 $9C $03 $10 $9C $D9
-.db $07 $9C $10 $0C $C2 $20 $60 $E2
-.db $20 $AD $03 $10 $89 $01 $F0 $0D
-.db $A9 $5B $8D $09 $10 $A9 $CC $85
-.db $87 $A9 $0C $85 $99 $C2 $20 $60
-.db $E2 $20 $AD $5E $10 $29 $3F $09
-.db $80 $8D $5E $10 $EE $08 $07 $C2
-.db $20 $20 $B9 $C2 $60 $E2 $20 $A9
-.db $4F $8D $5E $10 $EE $08 $07 $C2
-.db $20 $20 $CC $C2 $60 $48 $DA $E2
-.db $20 $AD $5E $10 $89 $C0 $F0 $34
-.db $89 $80 $F0 $22 $29 $3F $1A $C9
-.db $0F $B0 $04 $B0 $27 $80 $10 $AD
-.db $03 $10 $89 $10 $D0 $05 $09 $02
-.db $8D $03 $10 $A9 $0F $80 $02 $09
-.db $80 $8D $5E $10 $80 $0E $89 $40
-.db $F0 $0A $29 $3F $3A $F0 $02 $09
-.db $40 $8D $5E $10 $AD $5E $10 $0A
-.db $0A $0A $49 $FF $1A $85 $91 $A2
-.db $00 $00 $A9 $08 $9D $28 $1D $A9
-.db $FF $9D $29 $1D $A9 $00 $9D $2A
-.db $1D $A9 $70 $9D $2B $1D $AD $5E
-.db $10 $0A $0A $0A $18 $69 $80 $9D
-.db $2C $1D $A9 $F7 $9D $2D $1D $A9
-.db $08 $9D $2E $1D $A9 $FF $9D $2F
-.db $1D $A9 $00 $9D $30 $1D $A9 $01
-.db $9D $31 $1D $A9 $00 $9D $32 $1D
-.db $A9 $FF $9D $33 $1D $A9 $00 $9D
-.db $34 $1D $C2 $20 $FA $68 $60 $20
-.db $CD $CD $4C $CD $CE $20 $82 $CE
-.db $60 $A9 $00 $20 $85 $06 $AD $5D
-.db $07 $20 $3A $98 $48 $20 $E7 $CE
-.db $A9 $0D $00 $38 $E5 $19 $29 $FE
-.db $FF $18 $69 $84 $00 $AA $68 $20
-.db $0D $B2 $E2 $20 $A9 $88 $85 $02
-.db $C2 $20 $A9 $6C $90 $85 $00 $AD
-.db $5D $07 $29 $FF $00 $85 $15 $0A
-.db $0A $0A $18 $65 $15 $A8 $A9 $C4
-.db $21 $85 $17 $B7 $00 $A2 $4C $01
-.db $20 $E3 $B2 $C8 $B7 $00 $A2 $CC
-.db $01 $20 $E3 $B2 $C8 $B7 $00 $A2
-.db $4C $02 $20 $E3 $B2 $C8 $B7 $00
-.db $A2 $CC $02 $20 $E3 $B2 $C8 $B7
-.db $00 $A2 $5A $01 $20 $E3 $B2 $C8
-.db $B7 $00 $A2 $DA $01 $20 $E3 $B2
-.db $C8 $B7 $00 $A2 $DA $02 $20 $E3
-.db $B2 $C8 $C8 $B7 $00 $A2 $5A $02
-.db $20 $E3 $B2 $60 $A9 $00 $CA $85
-.db $72 $A9 $42 $A2 $85 $71 $20 $E7
-.db $F7 $A9 $A4 $01 $85 $15 $A4 $15
-.db $A2 $00 $00 $BF $FE $40 $7E $9F
-.db $00 $38 $7E $E8 $88 $E8 $88 $D0
-.db $F2 $60 $A9 $00 $7E $85 $01 $A9
-.db $00 $38 $85 $00 $A2 $42 $00 $A0
-.db $00 $00 $A9 $0E $00 $48 $A9 $0F
-.db $00 $48 $B7 $00 $9F $00 $30 $7E
-.db $E8 $E8 $C8 $C8 $68 $3A $D0 $F1
-.db $8A $18 $69 $22 $00 $AA $68 $3A
-.db $D0 $E3 $60 $A2 $01 $01 $A0 $0F
-.db $0E $A9 $00 $30 $85 $00 $E2 $20
-.db $A9 $7E $85 $02 $C2 $20 $A9 $00
-.db $30 $20 $E4 $B7 $60 $A2 $03 $11
-.db $A0 $1C $1A $A9 $00 $30 $85 $00
-.db $E2 $20 $A9 $7E $85 $02 $C2 $20
-.db $A9 $04 $20 $20 $E4 $B7 $60 $0A
-.db $A8 $A5 $01 $85 $04 $B7 $00 $85
-.db $03 $A0 $00 $00 $64 $19 $B7 $03
-.db $C9 $FF $FF $F0 $06 $E6 $19 $C8
-.db $C8 $80 $F3 $60 $A9 $00 $00 $A2
-.db $00 $20 $A0 $00 $04 $22 $8E $8C
-.db $80 $60 $A9 $00 $86 $85 $01 $A9
-.db $21 $CF $85 $00 $22 $AD $8E $80
-.db $60 $02 $40 $30 $7E $80 $03 $80
+.db $87 $80 $CC
+
+L86C8CB:
+    lda $0127
+    pha
+    stz $0127
+    jsl L87B932
+    pla
+    sta $0127
+    rts
+
+L86C8DB:
+    php
+    sep #$20
+    stz $0F0D
+    stz $0F10
+    rep #$20
+    lda #$0000
+    sta $0F00
+    lda $00
+    sta $0F02
+    lda $01
+    sta $0F03
+    lda #$0006
+    sta $0F07
+    sta $0F09
+    stz $0F0B
+    stz $0F0E
+    stz $0F27
+    stz $0F29
+    lda #$22FE
+    sta $0F12
+    lda #$0001
+    sta $0F05
+    ldx #$0000
+    lda #$FFFF
+L86C91D:
+    sta $7F5BD0,X
+    inx
+    inx
+    cpx #$0100
+    bcc L86C91D
+    lda #$7E00
+    sta $0F21
+    lda #$348A
+    sta $0F20
+    lda #$2400
+    sta $0F14
+    lda #$3000
+    sta $0F23
+    lda #$0816
+    sta $0F25
+    stz $0F2B
+    lda #$0814
+    sta $1B00
+    plp
+    rts
+
+L86C951:
+    php
+    sep #$20
+    stz $0F0D
+    lda #$01
+    sta $0F10
+    rep #$20
+    lda #$0000
+    sta $0F00
+    lda $00
+    sta $0F02
+    lda $01
+    sta $0F03
+    lda #$0005
+    sta $0F07
+    sta $0F09
+    stz $0F0B
+    stz $0F0E
+    stz $0F27
+    stz $0F29
+    lda #$30FE
+    sta $0F12
+    lda #$0001
+    sta $0F05
+    ldx #$0000
+    lda #$FFFF
+L86C995:
+    sta $7F5BD0,X
+    inx
+    inx
+    cpx #$0100
+    bcc L86C995
+    lda #$7E00
+    sta $0F21
+    lda $1002
+    bit #$0001
+    bne L86C9B3
+    lda #$3494
+    bra L86C9B6
+
+L86C9B3:
+    lda #$3484
+L86C9B6:
+    sta $0F20
+    lda #$3400
+    sta $0F14
+    lda #$1000
+    sta $0F23
+    lda #$0814
+    sta $0F25
+    stz $0F2B
+    lda #$0814
+    sta $1B00
+    plp
+    rts
+
+L86C9D6:
+    php
+    rep #$20
+    lda $1064
+    and #$00FF
+    cmp #$0091
+    beq L86C9E9
+    jsr $C9EE
+    bra L86C9EC
+
+L86C9E9:
+    jsr $CA16
+L86C9EC:
+    plp
+    rtl
+
+L86C9EE:
+    lda $1067
+    and #$00FF
+    asl A
+    tax
+    sep #$20
+    lda $95DAF0,X
+    sta $0212
+    lda $95DAF1,X
+    sta $0216
+    lda $1067
+    inc A
+    cmp #$03
+    bcc L86CA10
+    lda #$00
+L86CA10:
+    sta $1067
+    rep #$20
+    rts
+
+L86CA16:
+    lda $1067
+    and #$00FF
+    asl A
+    asl A
+    tax
+    sep #$20
+    lda $95DAF6,X
+    sta $0212
+    lda $95DAF7,X
+    sta $0216
+    lda $95DAF8,X
+    sta $021A
+    lda $95DAF9,X
+    sta $021E
+    lda $1067
+    inc A
+    cmp #$02
+    bcc L86CA47
+    lda #$00
+L86CA47:
+    sta $1067
+    rep #$20
+    rts
+
+L86CA4D:
+    php
+    rep #$20
+    lda $1069
+    cmp #$FFFF
+    beq L86CA66
+    lda #$01F0
+    jsl L80B4E3
+    sep #$20
+    lda #$10
+    sta $1068
+L86CA66:
+    plp
+    rts
+
+L86CA68:
+    sep #$20
+    lda $1068
+    beq L86CA84
+    dec $1068
+    bne L86CA84
+    lda $1002
+    ora #$10
+    sta $1002
+    rep #$20
+    lda $1069
+    sta $0876
+L86CA84:
+    rep #$20
+    rts
+
+L86CA87:
+    sep #$20
+    lda #$01
+    sta $1003
+    rep #$20
+    lda #$FFFF
+    sta $07C6
+    sta $07C8
+    bra L86CAA2
+
+L86CA9B:
+    sep #$20
+    stz $1003
+    rep #$20
+L86CAA2:
+    jsl L808875
+    jsr $F77A
+    jsr $CC27
+    jsr $E203
+    lda $1003
+    bit #$0001
+    bne L86CABC
+    jsr $CAFB
+    bra L86CABF
+
+L86CABC:
+    jsr $CB0A
+L86CABF:
+    sep #$20
+    stz $0FA1
+    rep #$20
+    jsl L808875
+    lda #$807F
+    jsl L80B4BB
+    jsl L8095E1
+    sep #$20
+    lda #$FF
+    eor #$FF
+    and $F7
+    sta $F7
+    rep #$20
+    jsr $F77A
+    jsr $CCDE
+    lda $1001
+    bit #$0080
+    bne L86CAF4
+    lda #$0000
+    bra L86CAFA
+
+L86CAF4:
+    jsr $D5EE
+    lda #$0001
+L86CAFA:
+    rtl
+
+L86CAFB:
+    sep #$20
+    stz $1003
+    rep #$20
+    jsr $9476
+    jsl L868E31
+    rts
+
+L86CB0A:
+    jsl L808B7A
+    jsr $CE5C
+    jsl L8087EA
+    sep #$20
+    stz $07D9
+    lda $85
+    and #$F0
+    ora #$04
+    sta $85
+    lda #$0F
+    sta $105E
+    lda $1004
+    ora #$01
+    sta $1004
+    lda $1003
+    ora #$01
+    sta $1003
+    rep #$20
+    jsr $9476
+    jsr $F75D
+    jsl L8087EA
+    lda #$0000
+L86CB46:
+    pha
+    jsr $CB9D
+    jsr $CBC0
+    jsr $CDC7
+    jsr $CDD1
+    jsr $CF04
+    sep #$20
+    lda $1050
+    ora #$80
+    sta $1050
+    rep #$20
+    lda $1003
+    bit #$0008
+    beq L86CB6D
+    jsr $CF12
+L86CB6D:
+    jsl L8087EA
+    jsl L868E31
+    lda $1001
+    bit #$0080
+    bne L86CB9B
+    sep #$20
+    lda #$FF
+    eor #$FF
+    and $F7
+    sta $F7
+    rep #$20
+    sep #$20
+    lda #$20
+    sta $1061
+    rep #$20
+    pla
+    inc A
+    cmp #$0016
+    bcc L86CB46
+    bra L86CB9C
+
+L86CB9B:
+    pla
+L86CB9C:
+    rts
+
+L86CB9D:
+    pha
+    sep #$20
+    bne L86CBA9
+    lda $1003
+    ora #$08
+    bra L86CBB9
+
+L86CBA9:
+    cmp #$15
+    bne L86CBB4
+    lda $1003
+    ora #$10
+    bra L86CBB9
+
+L86CBB4:
+    lda $1003
+    and #$E7
+L86CBB9:
+    sta $1003
+    rep #$20
+    pla
+    rts
+
+L86CBC0:
+    asl A
+    sta $15
+    asl A
+    clc
+    adc $15
+    tax
+    sep #$20
+    lda $95958C,X
+    sta $075D
+    lda $95958D,X
+    sta $075F
+    lda $95958E,X
+    sta $0762
+    lda $95958F,X
+    sta $0761
+    lda $959590,X
+    sta $105F
+    lda $959591,X
+    and #$3F
+    sta $1060
+    lda $959591,X
+    and #$C0
+    lsr A
+    lsr A
+    lsr A
+    rep #$20
+    and #$00FF
+    sta $15
+    lda #$4CB2
+    sec
+    sbc $15
+    sta $1062
+    sep #$20
+    lda #$FF
+    sta $075E
+    stz $0763
+    lda #$00
+    sta $078B
+    stz $078F
+    stz $07B7
+    rep #$20
+    rts
+
+L86CC27:
+    sep #$20
+    lda #$80
+    sta $7A
+    sta $1050
+    sta $2100
+    stz $1004
+    stz $91
+    ldx #$0010
+    lda #$FF
+L86CC3D:
+    sta $1070,X
+    dex
+    bne L86CC3D
+    stz $106F
+    stz $1070
+    lda #$81
+    sta $4200
+    sta $F2
+    stz $1034
+    stz $1061
+    stz $105E
+    stz $106B
+    rep #$20
+    lda #$4CB2
+    sta $1062
+    jsl L87AC61
+    lda $1003
+    bit #$0001
+    bne L86CC7F
+    lda #$00FF
+    ldx #$3000
+    ldy #$0800
+    jsl L808C8E
+    bra L86CC99
+
+L86CC7F:
+    lda #$00FF
+    ldx #$3000
+    ldy #$0400
+    jsl L808C8E
+    lda #$02FF
+    ldx #$3400
+    ldy #$0400
+    jsl L808C8E
+L86CC99:
+    jsr $970B
+    jsr $F265
+    jsl L8087EA
+    sep #$20
+    lda #$00
+    sta $4360
+    lda #$14
+    sta $4361
+    lda #$73
+    sta $4362
+    lda #$8D
+    sta $4363
+    lda #$86
+    sta $4364
+    rep #$20
+    sep #$20
+    lda #$00
+    sta $4370
+    lda #$14
+    sta $4371
+    lda #$73
+    sta $4372
+    lda #$8D
+    sta $4373
+    lda #$86
+    sta $4374
+    rep #$20
+    rts
+
+L86CCDE:
+    sep #$20
+    stz $1002
+    stz $1003
+    stz $07D9
+    stz $0C10
+    rep #$20
+    rts
+
+L86CCEF:
+    sep #$20
+    lda $1003
+    bit #$01
+    beq L86CD05
+    lda #$5B
+    sta $1009
+    lda #$CC
+    sta $87
+    lda #$0C
+    sta $99
+L86CD05:
+    rep #$20
+    rts
+
+L86CD08:
+    sep #$20
+    lda $105E
+    and #$3F
+    ora #$80
+    sta $105E
+    inc $0708
+    rep #$20
+    jsr $C2B9
+    rts
+
+L86CD1D:
+    sep #$20
+    lda #$4F
+    sta $105E
+    inc $0708
+    rep #$20
+    jsr $C2CC
+    rts
+
+L86CD2D:
+    pha
+    phx
+    sep #$20
+    lda $105E
+    bit #$C0
+    beq L86CD6C
+    bit #$80
+    beq L86CD5E
+    and #$3F
+    inc A
+    cmp #$0F
+    bcs L86CD47
+    bcs L86CD6C
+    bra L86CD57
+
+L86CD47:
+    lda $1003
+    bit #$10
+    bne L86CD53
+    ora #$02
+    sta $1003
+L86CD53:
+    lda #$0F
+    bra L86CD59
+
+L86CD57:
+    ora #$80
+L86CD59:
+    sta $105E
+    bra L86CD6C
+
+L86CD5E:
+    bit #$40
+    beq L86CD6C
+    and #$3F
+    dec A
+    beq L86CD69
+    ora #$40
+L86CD69:
+    sta $105E
+L86CD6C:
+    lda $105E
+    asl A
+    asl A
+    asl A
+    eor #$FF
+    inc A
+    sta $91
+    ldx #$0000
+    lda #$08
+    sta $1D28,X
+    lda #$FF
+    sta $1D29,X
+    lda #$00
+    sta $1D2A,X
+    lda #$70
+    sta $1D2B,X
+    lda $105E
+    asl A
+    asl A
+    asl A
+    clc
+    adc #$80
+    sta $1D2C,X
+    lda #$F7
+    sta $1D2D,X
+    lda #$08
+    sta $1D2E,X
+    lda #$FF
+    sta $1D2F,X
+    lda #$00
+    sta $1D30,X
+    lda #$01
+    sta $1D31,X
+    lda #$00
+    sta $1D32,X
+    lda #$FF
+    sta $1D33,X
+    lda #$00
+    sta $1D34,X
+    rep #$20
+    plx
+    pla
+    rts
+
+L86CDC7:
+    jsr $CDCD
+    jmp $CECD
+
+L86CDCD:
+    jsr $CE82
+    rts
+
+L86CDD1:
+    lda #$2000
+    sta $06
+    lda $075D
+    jsr $983A
+    pha
+    jsr $CEE7
+    lda #$000D
+    sec
+    sbc $19
+    and #$FFFE
+    clc
+    adc #$0084
+    tax
+    pla
+    jsr $B20D
+    sep #$20
+    lda #$88
+    sta $02
+    rep #$20
+    lda #$906C
+    sta $00
+    lda $075D
+    and #$00FF
+    sta $15
+    asl A
+    asl A
+    asl A
+    clc
+    adc $15
+    tay
+    lda #$21C4
+    sta $17
+    lda [$00],Y
+    ldx #$014C
+    jsr $B2E3
+    iny
+    lda [$00],Y
+    ldx #$01CC
+    jsr $B2E3
+    iny
+    lda [$00],Y
+    ldx #$024C
+    jsr $B2E3
+    iny
+    lda [$00],Y
+    ldx #$02CC
+    jsr $B2E3
+    iny
+    lda [$00],Y
+    ldx #$015A
+    jsr $B2E3
+    iny
+    lda [$00],Y
+    ldx #$01DA
+    jsr $B2E3
+    iny
+    lda [$00],Y
+    ldx #$02DA
+    jsr $B2E3
+    iny
+    iny
+    lda [$00],Y
+    ldx #$025A
+    jsr $B2E3
+    rts
+
+L86CE5C:
+    lda #$CA00
+    sta $72
+    lda #$A242
+    sta $71
+    jsr $F7E7
+    lda #$01A4
+    sta $15
+    ldy $15
+    ldx #$0000
+L86CE73:
+    lda $7E40FE,X
+    sta $7E3800,X
+    inx
+    dey
+    inx
+    dey
+    bne L86CE73
+    rts
+
+L86CE82:
+    lda #$7E00
+    sta $01
+    lda #$3800
+    sta $00
+    ldx #$0042
+    ldy #$0000
+    lda #$000E
+L86CE95:
+    pha
+    lda #$000F
+L86CE99:
+    pha
+    lda [$00],Y
+    sta $7E3000,X
+    inx
+    inx
+    iny
+    iny
+    pla
+    dec A
+    bne L86CE99
+    txa
+    clc
+    adc #$0022
+    tax
+    pla
+    dec A
+    bne L86CE95
+    rts
+
+L86CEB3:
+    ldx #$0101
+    ldy #$0E0F
+    lda #$3000
+    sta $00
+    sep #$20
+    lda #$7E
+    sta $02
+    rep #$20
+    lda #$3000
+    jsr $B7E4
+    rts
+
+L86CECD:
+    ldx #$1103
+    ldy #$1A1C
+    lda #$3000
+    sta $00
+    sep #$20
+    lda #$7E
+    sta $02
+    rep #$20
+    lda #$2004
+    jsr $B7E4
+    rts
+
+L86CEE7:
+    asl A
+    tay
+    lda $01
+    sta $04
+    lda [$00],Y
+    sta $03
+    ldy #$0000
+    stz $19
+L86CEF6:
+    lda [$03],Y
+    cmp #$FFFF
+    beq L86CF03
+    inc $19
+    iny
+    iny
+    bra L86CEF6
+
+L86CF03:
+    rts
+
+L86CF04:
+    lda #$0000
+    ldx #$2000
+    ldy #$0400
+    jsl L808C8E
+    rts
+
+L86CF12:
+    lda #$8600
+    sta $01
+    lda #$CF21
+    sta $00
+    jsl L808EAD
+    rts
+
+.db $02 $40 $30 $7E $80 $03 $80
 .db $20 $1C $E2 $20 $AD $61 $10 $F0
 .db $23 $3A $8D $61 $10 $C9 $10 $D0
 .db $07 $C2 $20 $20 $12 $CF $80 $14
@@ -3667,149 +4902,628 @@
 .db $A9 $00 $86 $85 $01 $A9 $77 $F2
 .db $85 $00 $22 $AD $8E $80 $60 $02
 .db $00 $20 $7E $00 $10 $80 $00 $78
-.db $29 $FF $00 $85 $2D $A9 $04 $00
-.db $85 $2F $22 $1E $8D $80 $A5 $31
-.db $60 $AD $5D $07 $29 $FF $00 $C9
-.db $FF $00 $F0 $0A $22 $EA $87 $80
-.db $20 $B8 $F2 $20 $06 $F3 $AD $5E
-.db $07 $29 $FF $00 $C9 $FF $00 $F0
-.db $06 $20 $DF $F2 $20 $53 $F3 $60
-.db $A9 $FE $7A $85 $03 $20 $22 $90
-.db $20 $C3 $F3 $AD $01 $10 $89 $20
-.db $00 $F0 $08 $AD $B7 $07 $89 $10
-.db $00 $D0 $06 $A9 $00 $00 $4C $ED
-.db $F3 $A9 $00 $00 $4C $86 $F4 $A9
-.db $FE $89 $85 $03 $20 $39 $90 $20
-.db $C3 $F3 $AD $01 $10 $89 $20 $00
-.db $F0 $08 $AD $B7 $07 $89 $10 $00
-.db $F0 $06 $A9 $08 $00 $4C $86 $F4
-.db $A9 $08 $00 $4C $ED $F3 $A9 $FE
-.db $98 $85 $03 $AD $5F $07 $20 $B9
-.db $90 $C9 $09 $00 $D0 $05 $A9 $4F
-.db $00 $80 $2A $C9 $4F $00 $D0 $10
-.db $AD $01 $10 $29 $FF $00 $89 $20
-.db $00 $F0 $27 $A9 $50 $00 $80 $15
-.db $C9 $29 $00 $F0 $0A $C9 $40 $00
-.db $F0 $05 $C9 $2D $00 $D0 $13 $AD
-.db $5F $07 $29 $FF $00 $38 $E9 $29
-.db $00 $20 $D6 $F3 $A9 $00 $00 $20
-.db $ED $F3 $60 $A9 $FE $AC $85 $03
-.db $AD $5E $07 $29 $FF $00 $C9 $2A
-.db $00 $D0 $05 $A9 $51 $00 $80 $3A
-.db $AD $60 $07 $20 $B9 $90 $C9 $09
-.db $00 $D0 $05 $A9 $4F $00 $80 $2A
-.db $C9 $4F $00 $D0 $10 $AD $01 $10
-.db $29 $FF $00 $89 $20 $00 $F0 $3A
-.db $A9 $50 $00 $80 $15 $C9 $29 $00
-.db $F0 $0A $C9 $40 $00 $F0 $05 $C9
-.db $2D $00 $D0 $26 $AD $60 $07 $29
-.db $FF $00 $38 $E9 $29 $00 $20 $D6
-.db $F3 $AD $5E $07 $29 $FF $00 $C9
-.db $2A $00 $D0 $08 $A9 $08 $00 $20
-.db $ED $F3 $80 $06 $A9 $08 $00 $20
-.db $86 $F4 $60 $85 $15 $0A $65 $15
-.db $AA $BF $EA $8C $95 $85 $72 $BF
-.db $E9 $8C $95 $85 $71 $60 $85 $15
-.db $0A $65 $15 $AA $BF $69 $8A $95
-.db $85 $72 $BF $68 $8A $95 $85 $71
-.db $60 $20 $E7 $F7 $60 $48 $20 $E9
-.db $F3 $68 $85 $15 $E2 $20 $8B $A9
-.db $7E $48 $AB $AD $10 $41 $85 $27
-.db $C2 $20 $AD $0E $41 $85 $00 $A5
-.db $27 $29 $FF $00 $0A $65 $00 $48
-.db $AA $A0 $00 $00 $E2 $20 $B9 $FE
-.db $40 $91 $03 $C8 $CA $D0 $F7 $C2
-.db $20 $A5 $00 $18 $69 $FE $40 $85
-.db $00 $85 $06 $68 $18 $65 $03 $AA
-.db $C2 $20 $B2 $06 $A8 $E6 $06 $E6
-.db $06 $E2 $20 $B1 $00 $85 $28 $9D
-.db $00 $00 $E8 $C8 $A9 $08 $85 $25
-.db $B1 $00 $9D $00 $00 $E8 $C8 $B1
-.db $00 $9D $00 $00 $E8 $C8 $B1 $00
-.db $9D $00 $00 $E8 $C8 $B1 $00 $9D
-.db $00 $00 $E8 $C8 $B1 $00 $29 $E7
-.db $09 $20 $05 $15 $9D $00 $00 $E8
-.db $C8 $C6 $28 $F0 $06 $C6 $25 $D0
-.db $D6 $80 $C9 $C6 $27 $F0 $03 $4C
-.db $30 $F4 $C2 $20 $AB $60 $48 $20
-.db $E9 $F3 $68 $85 $15 $E2 $20 $8B
-.db $A9 $7E $48 $AB $AD $10 $41 $85
-.db $27 $C2 $20 $AD $0E $41 $85 $00
-.db $A5 $27 $29 $FF $00 $0A $65 $00
-.db $48 $AA $A0 $00 $00 $E2 $20 $B9
-.db $FE $40 $91 $03 $C8 $CA $D0 $F7
-.db $C2 $20 $A5 $00 $18 $69 $FE $40
-.db $85 $00 $85 $06 $68 $18 $65 $03
-.db $AA $C2 $20 $B2 $06 $A8 $E6 $06
-.db $E6 $06 $E2 $20 $B1 $00 $85 $28
-.db $9D $00 $00 $E8 $C8 $A9 $08 $85
-.db $25 $B1 $00 $85 $26 $9D $00 $00
-.db $E8 $C8 $B1 $00 $9D $00 $00 $E8
-.db $C8 $B1 $00 $49 $FF $1A $06 $26
-.db $90 $04 $E9 $10 $80 $03 $38 $E9
-.db $08 $9D $00 $00 $E8 $C8 $B1 $00
-.db $9D $00 $00 $E8 $C8 $B1 $00 $49
-.db $40 $29 $E7 $09 $20 $05 $15 $9D
-.db $00 $00 $E8 $C8 $C6 $28 $F0 $06
-.db $C6 $25 $D0 $C6 $80 $B7 $C6 $27
-.db $F0 $03 $4C $C9 $F4 $C2 $20 $AB
-.db $60 $E2 $20 $AD $61 $07 $CD $62
-.db $07 $D0 $08 $C9 $0B $D0 $04 $A9
-.db $02 $80 $29 $AD $61 $07 $C9 $14
-.db $90 $20 $C9 $18 $90 $18 $C9 $1C
-.db $F0 $14 $C9 $2D $90 $14 $C9 $30
-.db $90 $0C $C9 $66 $F0 $08 $C9 $6E
-.db $F0 $08 $C9 $85 $D0 $04 $A9 $05
-.db $80 $02 $A9 $00 $C2 $20 $29 $FF
-.db $00 $0A $0A $0A $0A $69 $33 $D7
-.db $8D $24 $10 $60 $29 $FF $00 $0A
-.db $0A $0A $0A $69 $33 $D7 $8D $24
-.db $10 $6B $08 $E2 $20 $A5 $02 $48
-.db $A5 $01 $48 $A5 $00 $48 $C2 $10
-.db $AD $11 $42 $AD $03 $10 $89 $02
-.db $F0 $03 $4C $7E $F6 $AD $00 $10
-.db $89 $04 $F0 $03 $4C $3B $F6 $AD
-.db $03 $10 $89 $01 $F0 $03 $4C $3B
-.db $F6 $AD $12 $42 $89 $40 $D0 $F9
-.db $AD $12 $42 $89 $40 $F0 $F9 $A5
-.db $7A $09 $80 $8D $00 $21 $9C $05
-.db $21 $A9 $11 $8D $0B $21 $A9 $1C
-.db $8D $07 $21 $A9 $06 $8D $0E $21
-.db $9C $0E $21 $8D $10 $21 $9C $10
-.db $21 $AD $0C $10 $8D $23 $21 $AD
-.db $0A $10 $8D $26 $21 $AD $0B $10
-.db $8D $27 $21 $9C $21 $21 $9C $22
-.db $21 $9C $22 $21 $A9 $20 $8D $21
-.db $21 $A2 $00 $00 $BD $00 $1C $8D
-.db $22 $21 $E8 $E0 $18 $00 $90 $F4
-.db $A9 $00 $8D $01 $21 $AD $00 $10
-.db $89 $01 $D0 $0B $A5 $A0 $29 $E3
-.db $09 $03 $8D $2C $21 $80 $09 $A5
-.db $A0 $29 $E3 $09 $13 $8D $2C $21
-.db $4C $AC $F6 $AD $12 $42 $89 $40
-.db $D0 $F9 $AD $12 $42 $89 $40 $F0
-.db $F9 $A5 $7A $09 $80 $8D $00 $21
-.db $A9 $01 $8D $05 $21 $A5 $A0 $29
-.db $F4 $09 $14 $8D $2C $21 $A5 $7B
-.db $49 $01 $8D $01 $21 $9C $11 $21
-.db $AD $03 $10 $89 $01 $F0 $0D $A5
-.db $85 $29 $F0 $09 $03 $8D $0C $21
-.db $A9 $17 $85 $A0 $80 $2E $AD $12
-.db $42 $89 $40 $D0 $F9 $AD $12 $42
-.db $89 $40 $F0 $F9 $A5 $7A $09 $80
-.db $8D $00 $21 $C2 $20 $20 $2A $CF
-.db $20 $2D $CD $E2 $30 $A5 $91 $8D
-.db $11 $21 $9C $11 $21 $22 $2E $89
-.db $80 $4C $DF $F6 $9C $31 $21 $9C
-.db $06 $21 $AD $04 $10 $89 $08 $F0
-.db $10 $AD $12 $42 $89 $40 $D0 $F9
-.db $AD $12 $42 $89 $40 $F0 $F9 $80
-.db $16 $AD $12 $42 $89 $40 $D0 $F9
-.db $AD $12 $42 $89 $40 $F0 $F9 $AD
-.db $50 $10 $29 $7F $8D $00 $21 $AD
-.db $00 $10 $09 $40 $8D $00 $10 $68
-.db $85 $00 $68 $85 $01 $68 $85 $02
-.db $28 $6B
+
+L86F280:
+.ACCU 16
+    and #$00FF
+    sta $2D
+    lda #$0004
+    sta $2F
+    jsl L808D1E
+    lda $31
+    rts
+
+L86F291:
+    lda $075D
+    and #$00FF
+    cmp #$00FF
+    beq L86F2A6
+    jsl L8087EA
+    jsr $F2B8
+    jsr $F306
+L86F2A6:
+    lda $075E
+    and #$00FF
+    cmp #$00FF
+    beq L86F2B7
+    jsr $F2DF
+    jsr $F353
+L86F2B7:
+    rts
+
+L86F2B8:
+.ACCU 16
+    lda #$7AFE
+    sta $03
+    jsr $9022
+    jsr $F3C3
+    lda $1001
+    bit #$0020
+    beq L86F2D3
+    lda $07B7
+    bit #$0010
+    bne L86F2D9
+L86F2D3:
+    lda #$0000
+    jmp $F3ED
+
+L86F2D9:
+    lda #$0000
+    jmp $F486
+
+L86F2DF:
+    lda #$89FE
+    sta $03
+    jsr $9039
+    jsr $F3C3
+    lda $1001
+    bit #$0020
+    beq L86F2FA
+    lda $07B7
+    bit #$0010
+    beq L86F300
+L86F2FA:
+    lda #$0008
+    jmp $F486
+
+L86F300:
+    lda #$0008
+    jmp $F3ED
+
+L86F306:
+    lda #$98FE
+    sta $03
+    lda $075F
+    jsr $90B9
+    cmp #$0009
+    bne L86F31B
+    lda #$004F
+    bra L86F345
+
+L86F31B:
+    cmp #$004F
+    bne L86F330
+    lda $1001
+    and #$00FF
+    bit #$0020
+    beq L86F352
+    lda #$0050
+    bra L86F345
+
+L86F330:
+    cmp #$0029
+    beq L86F33F
+    cmp #$0040
+    beq L86F33F
+    cmp #$002D
+    bne L86F352
+L86F33F:
+    lda $075F
+    and #$00FF
+L86F345:
+    sec
+    sbc #$0029
+    jsr $F3D6
+    lda #$0000
+    jsr $F3ED
+L86F352:
+    rts
+
+L86F353:
+    lda #$ACFE
+    sta $03
+    lda $075E
+    and #$00FF
+    cmp #$002A
+    bne L86F368
+    lda #$0051
+    bra L86F3A2
+
+L86F368:
+    lda $0760
+    jsr $90B9
+    cmp #$0009
+    bne L86F378
+    lda #$004F
+    bra L86F3A2
+
+L86F378:
+    cmp #$004F
+    bne L86F38D
+    lda $1001
+    and #$00FF
+    bit #$0020
+    beq L86F3C2
+    lda #$0050
+    bra L86F3A2
+
+L86F38D:
+    cmp #$0029
+    beq L86F39C
+    cmp #$0040
+    beq L86F39C
+    cmp #$002D
+    bne L86F3C2
+L86F39C:
+    lda $0760
+    and #$00FF
+L86F3A2:
+    sec
+    sbc #$0029
+    jsr $F3D6
+    lda $075E
+    and #$00FF
+    cmp #$002A
+    bne L86F3BC
+    lda #$0008
+    jsr $F3ED
+    bra L86F3C2
+
+L86F3BC:
+    lda #$0008
+    jsr $F486
+L86F3C2:
+    rts
+
+L86F3C3:
+    sta $15
+    asl A
+    adc $15
+    tax
+    lda $958CEA,X
+    sta $72
+    lda $958CE9,X
+    sta $71
+    rts
+
+L86F3D6:
+    sta $15
+    asl A
+    adc $15
+    tax
+    lda $958A69,X
+    sta $72
+    lda $958A68,X
+    sta $71
+    rts
+
+L86F3E9:
+    jsr $F7E7
+    rts
+
+L86F3ED:
+    pha
+    jsr $F3E9
+    pla
+    sta $15
+    sep #$20
+    phb
+    lda #$7E
+    pha
+    plb
+    lda $4110
+    sta $27
+    rep #$20
+    lda $410E
+    sta $00
+    lda $27
+    and #$00FF
+    asl A
+    adc $00
+    pha
+    tax
+    ldy #$0000
+    sep #$20
+L86F416:
+    lda $40FE,Y
+    sta ($03),Y
+    iny
+    dex
+    bne L86F416
+    rep #$20
+    lda $00
+    clc
+    adc #$40FE
+    sta $00
+    sta $06
+    pla
+    clc
+    adc $03
+    tax
+    rep #$20
+    lda ($06)
+    tay
+    inc $06
+    inc $06
+    sep #$20
+    lda ($00),Y
+    sta $28
+    sta.w $0000,X
+    inx
+    iny
+L86F444:
+    lda #$08
+    sta $25
+    lda ($00),Y
+    sta.w $0000,X
+    inx
+    iny
+L86F44F:
+    lda ($00),Y
+    sta.w $0000,X
+    inx
+    iny
+    lda ($00),Y
+    sta.w $0000,X
+    inx
+    iny
+    lda ($00),Y
+    sta.w $0000,X
+    inx
+    iny
+    lda ($00),Y
+    and #$E7
+    ora #$20
+    ora $15
+    sta.w $0000,X
+    inx
+    iny
+    dec $28
+    beq L86F47B
+    dec $25
+    bne L86F44F
+    bra L86F444
+
+L86F47B:
+    dec $27
+    beq L86F482
+    jmp $F430
+
+L86F482:
+    rep #$20
+    plb
+    rts
+
+L86F486:
+    pha
+    jsr $F3E9
+    pla
+    sta $15
+    sep #$20
+    phb
+    lda #$7E
+    pha
+    plb
+    lda $4110
+    sta $27
+    rep #$20
+    lda $410E
+    sta $00
+    lda $27
+    and #$00FF
+    asl A
+    adc $00
+    pha
+    tax
+    ldy #$0000
+    sep #$20
+L86F4AF:
+    lda $40FE,Y
+    sta ($03),Y
+    iny
+    dex
+    bne L86F4AF
+    rep #$20
+    lda $00
+    clc
+    adc #$40FE
+    sta $00
+    sta $06
+    pla
+    clc
+    adc $03
+    tax
+    rep #$20
+    lda ($06)
+    tay
+    inc $06
+    inc $06
+    sep #$20
+    lda ($00),Y
+    sta $28
+    sta.w $0000,X
+    inx
+    iny
+L86F4DD:
+    lda #$08
+    sta $25
+    lda ($00),Y
+    sta $26
+    sta.w $0000,X
+    inx
+    iny
+L86F4EA:
+    lda ($00),Y
+    sta.w $0000,X
+    inx
+    iny
+    lda ($00),Y
+    eor #$FF
+    inc A
+    asl $26
+    bcc L86F4FE
+    sbc #$10
+    bra L86F501
+
+L86F4FE:
+    sec
+    sbc #$08
+L86F501:
+    sta.w $0000,X
+    inx
+    iny
+    lda ($00),Y
+    sta.w $0000,X
+    inx
+    iny
+    lda ($00),Y
+    eor #$40
+    and #$E7
+    ora #$20
+    ora $15
+    sta.w $0000,X
+    inx
+    iny
+    dec $28
+    beq L86F526
+    dec $25
+    bne L86F4EA
+    bra L86F4DD
+
+L86F526:
+    dec $27
+    beq L86F52D
+    jmp $F4C9
+
+L86F52D:
+    rep #$20
+    plb
+    rts
+
+L86F531:
+    sep #$20
+    lda $0761
+    cmp $0762
+    bne L86F543
+    cmp #$0B
+    bne L86F543
+    lda #$02
+    bra L86F56C
+
+L86F543:
+    lda $0761
+    cmp #$14
+    bcc L86F56A
+    cmp #$18
+    bcc L86F566
+    cmp #$1C
+    beq L86F566
+    cmp #$2D
+    bcc L86F56A
+    cmp #$30
+    bcc L86F566
+    cmp #$66
+    beq L86F566
+    cmp #$6E
+    beq L86F56A
+    cmp #$85
+    bne L86F56A
+L86F566:
+    lda #$05
+    bra L86F56C
+
+L86F56A:
+    lda #$00
+L86F56C:
+    rep #$20
+    and #$00FF
+    asl A
+    asl A
+    asl A
+    asl A
+    adc #$D733
+    sta $1024
+    rts
+
+L86F57C:
+    and #$00FF
+    asl A
+    asl A
+    asl A
+    asl A
+    adc #$D733
+    sta $1024
+    rtl
+
+L86F58A:
+    php
+    sep #$20
+    lda $02
+    pha
+    lda $01
+    pha
+    lda $00
+    pha
+    rep #$10
+    lda $4211
+    lda $1003
+    bit #$02
+    beq L86F5A5
+    jmp $F67E
+
+L86F5A5:
+    lda $1000
+    bit #$04
+    beq L86F5AF
+    jmp $F63B
+
+L86F5AF:
+    lda $1003
+    bit #$01
+    beq L86F5B9
+    jmp $F63B
+
+L86F5B9:
+    lda $4212
+    bit #$40
+    bne L86F5B9
+L86F5C0:
+    lda $4212
+    bit #$40
+    beq L86F5C0
+    lda $7A
+    ora #$80
+    sta $2100
+    stz $2105
+    lda #$11
+    sta $210B
+    lda #$1C
+    sta $2107
+    lda #$06
+    sta $210E
+    stz $210E
+    sta $2110
+    stz $2110
+    lda $100C
+    sta $2123
+    lda $100A
+    sta $2126
+    lda $100B
+    sta $2127
+    stz $2121
+    stz $2122
+    stz $2122
+    lda #$20
+    sta $2121
+    ldx #$0000
+L86F60C:
+    lda $1C00,X
+    sta $2122
+    inx
+    cpx #$0018
+    bcc L86F60C
+    lda #$00
+    sta $2101
+    lda $1000
+    bit #$01
+    bne L86F62F
+    lda $A0
+    and #$E3
+    ora #$03
+    sta $212C
+    bra L86F638
+
+L86F62F:
+    lda $A0
+    and #$E3
+    ora #$13
+    sta $212C
+L86F638:
+    jmp $F6AC
+
+L86F63B:
+    lda $4212
+    bit #$40
+    bne L86F63B
+L86F642:
+    lda $4212
+    bit #$40
+    beq L86F642
+    lda $7A
+    ora #$80
+    sta $2100
+    lda #$01
+    sta $2105
+    lda $A0
+    and #$F4
+    ora #$14
+    sta $212C
+    lda $7B
+    eor #$01
+    sta $2101
+    stz $2111
+    lda $1003
+    bit #$01
+    beq L86F67C
+    lda $85
+    and #$F0
+    ora #$03
+    sta $210C
+    lda #$17
+    sta $A0
+L86F67C:
+    bra L86F6AC
+
+L86F67E:
+    lda $4212
+    bit #$40
+    bne L86F67E
+L86F685:
+    lda $4212
+    bit #$40
+    beq L86F685
+    lda $7A
+    ora #$80
+    sta $2100
+    rep #$20
+    jsr $CF2A
+    jsr $CD2D
+    sep #$30
+    lda $91
+    sta $2111
+    stz $2111
+    jsl L80892E
+    jmp $F6DF
+
+L86F6AC:
+    stz $2131
+    stz $2106
+    lda $1004
+    bit #$08
+    beq L86F6C9
+L86F6B9:
+    lda $4212
+    bit #$40
+    bne L86F6B9
+L86F6C0:
+    lda $4212
+    bit #$40
+    beq L86F6C0
+    bra L86F6DF
+
+L86F6C9:
+    lda $4212
+    bit #$40
+    bne L86F6C9
+L86F6D0:
+    lda $4212
+    bit #$40
+    beq L86F6D0
+    lda $1050
+    and #$7F
+    sta $2100
+L86F6DF:
+    lda $1000
+    ora #$40
+    sta $1000
+    pla
+    sta $00
+    pla
+    sta $01
+    pla
+    sta $02
+    plp
+    rtl
 
 L86F6F2:
 	php

@@ -12,6 +12,7 @@ L878000:
 	jmp L8780F3
 
 L87800C:
+.INDEX 16
 	lda #$87
 	pha
 	pea $802D
@@ -48,6 +49,7 @@ L878045:
 .dw L8780C6
 
 L87804B:
+.INDEX 16
 	sep #$20
 	lda $074A
 	sta $0C17
@@ -1084,7 +1086,7 @@ L8788FF:
 	jsl L80AA09
 	stz $91
 	stz $93
-	jsl $86CA9B
+	jsl L86CA9B
 	jsl L80884A
 	jsl L80A61A
 	jsl L81D845
@@ -4716,7 +4718,7 @@ L87A86C:
 	jsl L80B4E3
 	jsl L93CC31
 	jsl L80AA09
-	jsl $86CA9B
+	jsl L86CA9B
 	jsl L93D55D
 	inc $0FA2
 	inc $0FA2
@@ -9875,7 +9877,7 @@ L87D9E1:
 	lda $1002
 	and #$02
 	beq L87D9F1
-	jsl $86C9D6
+	jsl L86C9D6
 	plp
 	rts
 

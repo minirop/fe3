@@ -4102,7 +4102,7 @@ L93D0B2:
     rep #$20
     lda #$01F0
     jsl L80B4E3
-    jsl $86CA9B
+    jsl L86CA9B
     lda $1001
     bit #$0080
     bne L93D13C
@@ -7048,7 +7048,7 @@ L93E83F:
     rep #$20
     lda #$FFFF
     sta $07C6
-    jsl $86CA9B
+    jsl L86CA9B
     rts
 
 L93E8A8:
@@ -7311,6 +7311,8 @@ L93EA54:
 
 L93EA67:
     jml $84FDF1
+
+L93EA6B:
     php
     sep #$30
     lda $701FFE

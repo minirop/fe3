@@ -2551,7 +2551,7 @@ L8DD9F9:
 
 L8DD9FB:
     php
-    jsl $86CA87
+    jsl L86CA87
     rep #$30
     cmp #$0001
     beq L8DDA10
@@ -2659,7 +2659,7 @@ L8DDAC5:
     ldx #$0076
     ldy #$01D4
     jsl L8DA000
-    jsl $93EA6B
+    jsl L93EA6B
     bcs L8DDAE4
     lda $701FFF
     bra L8DDAE7

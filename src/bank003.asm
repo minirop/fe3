@@ -2104,7 +2104,7 @@ L8394E1:
 	jsl L93CC31
 	jsl L83DBB7
 	jsl L80AA09
-	jsl $86CA9B
+	jsl L86CA9B
 	lda $075e
 	and #$00ff
 	cmp #$002a
@@ -2288,7 +2288,7 @@ L8396C5:
 	jsl L82D291
 	jsl L93CC31
 	jsl L80AA09
-	jsl $86CA9B
+	jsl L86CA9B
 	jsl L93D55D
 	lda $08ed
 	jsl L83DB34
@@ -7680,7 +7680,7 @@ L83C222:
 	jsl L82D291
 	jsl L93CC31
 	jsl L80AA09
-	jsl $86CA9B
+	jsl L86CA9B
 	jsl L93D55D
 	lda $08ED
 	jsl L83DB34

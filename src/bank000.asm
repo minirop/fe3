@@ -2316,7 +2316,7 @@ IRQ:
 	lda $4211
 	and #$80
 	beq L8090CC
-	jsl $86F58A
+	jsl L86F58A
 L8090CC:
 	rep #$30
 	ply
