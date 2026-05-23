@@ -9117,9 +9117,9 @@ L82CD67:
 	clc
 	adc $15
 	tax
-	lda $80BCD7,X
+	lda.l L80BCD7,X
 	sta $00
-	lda $80BCD8,X
+	lda.l (L80BCD7+1),X
 	sta $01
 	jsl L82D1FE
 	lda #$0002
@@ -12442,7 +12442,7 @@ L82E62C:
 	and #$00FF
 	asl A
 	tax
-	lda $80BE84,X
+	lda.l L80BE84,X
 	ldx $25
 	sta $08A1,X
 	pla
