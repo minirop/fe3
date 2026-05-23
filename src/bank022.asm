@@ -1809,7 +1809,7 @@ L96AC0F:
     and $F7
     sta $F7
     rep #$20
-    jmp $D937
+    jmp L96D937
 
 L96AC59:
     php
@@ -3392,32 +3392,89 @@ L96ADC3:
 .db $30 $D9 $85 $00 $22 $AD $8E $80
 .db $22 $26 $88 $80 $22 $A0 $88 $80
 .db $A9 $1E $00 $20 $A6 $95 $28 $60
-.db $01 $FE $40 $7E $00 $02 $00 $C2
-.db $30 $A9 $2F $80 $8D $76 $08 $E2
-.db $20 $A9 $15 $85 $A0 $A9 $1C $85
-.db $80 $A9 $78 $85 $82 $A9 $F8 $85
-.db $91 $A9 $01 $85 $92 $A9 $D0 $85
-.db $93 $A9 $01 $85 $94 $A9 $00 $85
-.db $84 $A9 $44 $85 $85 $22 $4A $88
-.db $80 $22 $38 $88 $80 $20 $73 $E2
-.db $22 $26 $88 $80 $22 $A0 $88 $80
-.db $A9 $B4 $20 $A6 $95 $C2 $30 $9C
-.db $24 $13 $A9 $87 $00 $20 $40 $DD
-.db $20 $74 $DE $20 $AD $DD $22 $4A
-.db $88 $80 $22 $38 $88 $80 $E2 $20
-.db $A9 $CE $8F $71 $00 $00 $A9 $EA
-.db $8F $72 $00 $00 $A9 $CE $8F $73
-.db $00 $00 $A9 $00 $8F $76 $00 $00
-.db $A9 $00 $8F $77 $00 $00 $22 $18
-.db $8F $80 $C2 $20 $A9 $00 $96 $85
-.db $01 $A9 $09 $DA $85 $00 $22 $AD
-.db $8E $80 $22 $26 $88 $80 $22 $A0
-.db $88 $80 $A9 $F0 $20 $22 $E3 $B4
-.db $80 $A9 $1E $00 $20 $A6 $95 $22
-.db $25 $EA $93 $90 $06 $20 $FD $F9
-.db $4C $14 $DA $20 $23 $DB $90 $06
-.db $20 $FD $F9 $4C $14 $DA $20 $18
-.db $DA $20 $A7 $DA $AB $28 $18 $6B
+.db $01 $FE $40 $7E $00 $02 $00
+
+L96D937:
+    rep #$30
+    lda #$802F
+    sta $0876
+    sep #$20
+    lda #$15
+    sta $A0
+    lda #$1C
+    sta $80
+    lda #$78
+    sta $82
+    lda #$F8
+    sta $91
+    lda #$01
+    sta $92
+    lda #$D0
+    sta $93
+    lda #$01
+    sta $94
+    lda #$00
+    sta $84
+    lda #$44
+    sta $85
+    jsl L80884A
+    jsl L808838
+    jsr $E273
+    jsl L808826
+    jsl L8088A0
+    lda #$B4
+    jsr $95A6
+    rep #$30
+    stz $1324
+    lda #$0087
+    jsr $DD40
+    jsr $DE74
+    jsr $DDAD
+    jsl L80884A
+    jsl L808838
+    sep #$20
+    lda #$CE
+    sta.l $000071
+    lda #$EA
+    sta.l $000072
+    lda #$CE
+    sta.l $000073
+    lda #$00
+    sta.l $000076
+    lda #$00
+    sta.l $000077
+    jsl L808F18
+    rep #$20
+    lda #$9600
+    sta $01
+    lda #$DA09
+    sta $00
+    jsl L808EAD
+    jsl L808826
+    jsl L8088A0
+    lda #$20F0
+    jsl L80B4E3
+    lda #$001E
+    jsr $95A6
+    jsl L93EA25
+    bcc L96D9EB
+    jsr $F9FD
+    jmp $DA14
+
+L96D9EB:
+    jsr $DB23
+    bcc L96D9F6
+    jsr $F9FD
+    jmp $DA14
+
+L96D9F6:
+    jsr $DA18
+    jsr $DAA7
+    plb
+    plp
+    clc
+    rtl
+
 .db $02 $00 $30 $7E $00 $08 $80 $00
 .db $78 $01 $FE $40 $7E $00 $02 $00
 .db $AB $28 $18 $6B $AB $28 $38 $6B

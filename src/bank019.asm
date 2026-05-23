@@ -7310,7 +7310,7 @@ L93EA54:
     rtl
 
 L93EA67:
-    jml $84FDF1
+    jml L84FDF1
 
 L93EA6B:
     php

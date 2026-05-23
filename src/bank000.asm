@@ -5239,7 +5239,7 @@ L80A72B:
 	rts
 
 L80A73A:
-	jml $868002
+	jml L868002
 
 L80A73E:
 	lda #$FFFF
