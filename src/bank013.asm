@@ -1805,13 +1805,13 @@ L8DA099:
 
 L8DC7B8:
     php
-    jsl $80884A
-    jsl $808838
+    jsl L80884A
+    jsl L808838
     jsr $C96D
     jsr $C8B3
-    jsl $80954E
-    jsl $808826
-    jsl $8088A0
+    jsl L80954E
+    jsl L808826
+    jsl L8088A0
     jsl L8DF744
     rep #$30
     lda #$0080
@@ -1821,7 +1821,7 @@ L8DC7DF:
     jsr $C866
     dec $1200
     beq L8DC7F0
-    jsl $8087EA
+    jsl L8087EA
     bra L8DC7DF
 
 L8DC7F0:
@@ -1832,7 +1832,7 @@ L8DC7F9:
     jsr $C866
     dec $1200
     beq L8DC807
-    jsl $8087EA
+    jsl L8087EA
     bra L8DC7F9
 
 L8DC807:
@@ -1851,10 +1851,10 @@ L8DC80D:
     sta $A6
     rep #$30
     lda #$001D
-    jsl $80B4BB
+    jsl L80B4BB
     sep #$30
 L8DC827:
-    jsl $8087EA
+    jsl L8087EA
     lda $0136
     and #$01
     bne L8DC827
@@ -1889,7 +1889,7 @@ L8DC864:
 
 L8DC866:
     php
-    jsl $80954E
+    jsl L80954E
     rep #$30
     stz $0430
     ldx $12C4
@@ -1929,13 +1929,13 @@ L8DC8B3:
     sta.l $000076
     lda #$00
     sta.l $000077
-    jsl $808F18
+    jsl DECOMPRESS_ASSET
     rep #$20
     lda #$8D00
     sta $01
     lda #$C954
     sta $00
-    jsl $808EAD
+    jsl L808EAD
     sep #$20
     lda #$39
     sta.l $000071
@@ -1947,13 +1947,13 @@ L8DC8B3:
     sta.l $000076
     lda #$00
     sta.l $000077
-    jsl $808F18
+    jsl DECOMPRESS_ASSET
     rep #$20
     lda #$8D00
     sta $01
     lda #$C95D
     sta $00
-    jsl $808EAD
+    jsl L808EAD
     sep #$20
     lda #$49
     sta.l $000071
@@ -1965,13 +1965,13 @@ L8DC8B3:
     sta.l $000076
     lda #$00
     sta.l $000077
-    jsl $808F18
+    jsl DECOMPRESS_ASSET
     rep #$20
     lda #$8D00
     sta $01
     lda #$C966
     sta $00
-    jsl $808EAD
+    jsl L808EAD
     plp
     rts
 
@@ -2527,14 +2527,14 @@ L8DD9A7:
 
 L8DD9BF:
     php
-    jsl $80884A
-    jsl $808838
+    jsl L80884A
+    jsl L808838
     jsr $DDB5
     jsr $DB4D
-    jsl $808826
-    jsl $8088A0
+    jsl L808826
+    jsl L8088A0
     lda #$803E
-    jsl $80AA3A
+    jsl L80AA3A
     jsr $DAC5
     jsl L8DF6F1
     lda $074B
@@ -2580,7 +2580,7 @@ L8DDA1F:
     dec $120A
     bne L8DDA69
     lda #$803F
-    jsl $80AA3A
+    jsl L80AA3A
     bra L8DDA69
 
 L8DDA36:
@@ -2619,21 +2619,21 @@ L8DDA6D:
     bne L8DDAB2
     jsl L8DF77A
     lda #$00E0
-    jsl $80B530
+    jsl L80B530
     lda #$0003
-    jsl $96941D
+    jsl L96941D
     bra L8DDABE
 
 L8DDA98:
     jsl L8DF77A
     lda #$0001
-    jsl $96941D
+    jsl L96941D
     bra L8DDABE
 
 L8DDAA5:
     jsl L8DF77A
     lda #$0002
-    jsl $96941D
+    jsl L96941D
     bra L8DDABE
 
 L8DDAB2:
@@ -2642,7 +2642,7 @@ L8DDAB2:
     lda #$96
     pha
     plb
-    jsl $96EEF7
+    jsl L96EEF7
     plb
 L8DDABE:
     lda #$04
@@ -2729,13 +2729,13 @@ L8DDB4D:
     sta.l $000076
     lda #$00
     sta.l $000077
-    jsl $808F18
+    jsl DECOMPRESS_ASSET
     rep #$20
     lda #$8D00
     sta $01
     lda #$DD81
     sta $00
-    jsl $808EAD
+    jsl L808EAD
     sep #$20
     lda #$A4
     sta.l $000071
@@ -2747,13 +2747,13 @@ L8DDB4D:
     sta.l $000076
     lda #$00
     sta.l $000077
-    jsl $808F18
+    jsl DECOMPRESS_ASSET
     rep #$20
     lda #$8D00
     sta $01
     lda #$DD8A
     sta $00
-    jsl $808EAD
+    jsl L808EAD
     lda #$007F
     sta $02
     lda #$A000
@@ -2770,13 +2770,13 @@ L8DDB4D:
     sta.l $000076
     lda #$00
     sta.l $000077
-    jsl $808F18
+    jsl DECOMPRESS_ASSET
     rep #$20
     lda #$8D00
     sta $01
     lda #$DDA5
     sta $00
-    jsl $808EAD
+    jsl L808EAD
     sep #$20
     lda #$24
     sta.l $000071
@@ -2788,18 +2788,18 @@ L8DDB4D:
     sta.l $000076
     lda #$00
     sta.l $000077
-    jsl $808F18
+    jsl DECOMPRESS_ASSET
     rep #$20
     lda #$8D00
     sta $01
     lda #$DD93
     sta $00
-    jsl $808EAD
+    jsl L808EAD
     lda #$8D00
     sta $01
     lda #$DD9C
     sta $00
-    jsl $808EAD
+    jsl L808EAD
     lda #$007F
     sta $02
     lda #$B000
@@ -2816,7 +2816,7 @@ L8DDB4D:
     sta.l $000076
     lda #$00
     sta.l $000077
-    jsl $808F18
+    jsl DECOMPRESS_ASSET
     rep #$20
     lda #$007F
     sta $02
@@ -2834,7 +2834,7 @@ L8DDB4D:
     sta.l $000076
     lda #$00
     sta.l $000077
-    jsl $808F18
+    jsl DECOMPRESS_ASSET
     rep #$20
     lda #$007F
     sta $02
@@ -2852,7 +2852,7 @@ L8DDB4D:
     sta.l $000076
     lda #$00
     sta.l $000077
-    jsl $808F18
+    jsl DECOMPRESS_ASSET
     rep #$20
     lda #$007F
     sta $02
@@ -2870,13 +2870,13 @@ L8DDB4D:
     sta.l $000076
     lda #$00
     sta.l $000077
-    jsl $808F18
+    jsl DECOMPRESS_ASSET
     rep #$20
     lda #$8D00
     sta $01
     lda #$DDAE
     sta $00
-    jsl $808EAD
+    jsl L808EAD
     jsl L8DE421
     jsl L8DE441
     ldx #$0000
@@ -2895,7 +2895,7 @@ L8DDB4D:
     sta.l $000076
     lda #$00
     sta.l $000077
-    jsl $808F18
+    jsl DECOMPRESS_ASSET
     rep #$20
     jsl L8DE421
     sep #$20
@@ -2909,7 +2909,7 @@ L8DDB4D:
     sta.l $000076
     lda #$00
     sta.l $000077
-    jsl $808F18
+    jsl DECOMPRESS_ASSET
     rep #$20
     plp
     rts
@@ -3063,7 +3063,7 @@ L8DE10A:
     jsr $F8AA
     jsr $E12E
     jsr $E2FB
-    jsl $8DE31E
+    jsl L8DE31E
     lda $074B
     cmp #$0004
     bne L8DE12C
@@ -3170,10 +3170,10 @@ L8DE1C0:
 
 L8DE1D3:
     lda #$10F0
-    jsl $80B4E3
+    jsl L80B4E3
     lda #$003C
     jsr $ED6C
-    jsl $8DF77A
+    jsl L8DF77A
     sep #$20
     lda #$04
     sta $074B
@@ -3181,8 +3181,8 @@ L8DE1D3:
 
 L8DE1ED:
     phx
-    jsl $80884A
-    jsl $808838
+    jsl L80884A
+    jsl L808838
     rep #$30
     sep #$20
     lda #$8E
@@ -3195,13 +3195,13 @@ L8DE1ED:
     sta.l $000076
     lda #$00
     sta.l $000077
-    jsl $808F18
+    jsl DECOMPRESS_ASSET
     rep #$20
     lda #$8D00
     sta $01
     lda #$E2E9
     sta $00
-    jsl $808EAD
+    jsl L808EAD
     sep #$20
     lda #$3A
     sta.l $000071
@@ -3213,13 +3213,13 @@ L8DE1ED:
     sta.l $000076
     lda #$00
     sta.l $000077
-    jsl $808F18
+    jsl DECOMPRESS_ASSET
     rep #$20
     lda #$8D00
     sta $01
     lda #$E2F2
     sta $00
-    jsl $808EAD
+    jsl L808EAD
     sep #$20
     lda #$7B
     sta.l $000071
@@ -3231,14 +3231,14 @@ L8DE1ED:
     sta.l $000076
     lda #$00
     sta.l $000077
-    jsl $808F18
+    jsl DECOMPRESS_ASSET
     rep #$20
     jsr $F029
-    jsl $8DE421
-    jsl $8DE441
+    jsl L8DE421
+    jsl L8DE441
     ldx #$0000
     ldy #$0100
-    jsl $8DE496
+    jsl L8DE496
     sep #$20
     lda #$11
     sta $84
@@ -3247,8 +3247,8 @@ L8DE1ED:
     lda #$12
     sta $A0
     rep #$30
-    jsl $808826
-    jsl $8088A0
+    jsl L808826
+    jsl L8088A0
     lda #$0038
     sta $1200
 L8DE2B9:
@@ -3258,10 +3258,10 @@ L8DE2B9:
     ldx #$0000
     ldy #$0040
     jsr $E3E9
-    jsl $8DE355
-    jsl $8DE38A
+    jsl L8DE355
+    jsl L8DE38A
 L8DE2D2:
-    jsl $8087EA
+    jsl L8087EA
     dec $1200
     bne L8DE2B9
     rep #$30
@@ -3358,7 +3358,7 @@ L8DE38A:
     sta $01
     lda #$E39B
     sta $00
-    jsl $808EAD
+    jsl L808EAD
     plp
     rtl
 
@@ -3370,7 +3370,7 @@ L8DE3A2:
     sta $01
     lda #$E3B3
     sta $00
-    jsl $808EAD
+    jsl L808EAD
     plp
     rtl
 
@@ -4092,12 +4092,12 @@ L8DEA4A:
 
 L8DEA92:
     php
-    jsl $80884A
-    jsl $808838
+    jsl L80884A
+    jsl L808838
     jsr $F36F
     jsr $F11B
-    jsl $808826
-    jsl $8088A0
+    jsl L808826
+    jsl L8088A0
     sep #$20
     lda #$0F
     sta $7A
@@ -4106,7 +4106,7 @@ L8DEA92:
     cmp #$000B
     beq L8DEB21
     lda #$808D
-    jsl $80AA3A
+    jsl L80AA3A
     sep #$20
     lda #$05
     sta $074B
@@ -4116,7 +4116,7 @@ L8DEA92:
     bne L8DEB21
     rep #$20
     lda #$8092
-    jsl $80AA3A
+    jsl L80AA3A
     jsr $EB6C
     lda $074B
     cmp #$0005
@@ -4161,7 +4161,7 @@ L8DEB2D:
     jsr $F00B
     dec $1228
     bne L8DEB59
-    jsl $8DF77A
+    jsl L8DF77A
     sep #$20
     lda $074B
     cmp #$0B
@@ -4182,7 +4182,7 @@ L8DEB59:
     lda $074B
     cmp #$0006
     beq L8DEB6A
-    jsl $8087EA
+    jsl L8087EA
     bra L8DEB2D
 
 L8DEB6A:
@@ -4461,14 +4461,14 @@ L8DEB6A:
 L8DF3C7:
     php
     rep #$30
-    jsl $80884A
-    jsl $808838
+    jsl L80884A
+    jsl L808838
     jsr $F618
     jsr $F438
-    jsl $808826
-    jsl $8088A0
+    jsl L808826
+    jsl L8088A0
     lda #$8092
-    jsl $80AA3A
+    jsl L80AA3A
     jsr $EFF2
     ldx #$0002
     jsr $F00B
@@ -4487,7 +4487,7 @@ L8DF3FE:
     sep #$20
     lda #$0A
     sta $074B
-    jsl $8DF77A
+    jsl L8DF77A
 L8DF417:
     lda $074B
     cmp #$0B
@@ -4502,7 +4502,7 @@ L8DF425:
     lda $074B
     cmp #$0006
     beq L8DF436
-    jsl $8087EA
+    jsl L8087EA
     bra L8DF3FE
 
 L8DF436:
@@ -4597,7 +4597,7 @@ L8DF668:
     sta $F7
     rep #$20
     lda #$002D
-    jsl $80B467
+    jsl L80B467
     lda #$80C2
     sta $0876
     sep #$20
@@ -4623,7 +4623,7 @@ L8DF6AA:
     and #$1000
     beq L8DF6CF
     lda #$002D
-    jsl $80B467
+    jsl L80B467
     lda #$80C2
     sta $0876
     sep #$20
@@ -4648,7 +4648,7 @@ L8DF6D1:
 
 L8DF6E0:
     php
-    jsl $80A581
+    jsl L80A581
     sep #$20
     lda #$01
     sta $A0
@@ -4674,7 +4674,7 @@ L8DF701:
     and #$1000
     bne L8DF733
     sep #$20
-    jsl $8087EA
+    jsl L8087EA
     dec $04B1
     bne L8DF701
     lda $7A
@@ -4699,7 +4699,7 @@ L8DF727:
 L8DF733:
 .ACCU 16
     lda #$002D
-    jsl $80B467
+    jsl L80B467
     sep #$20
     lda #$0B
     sta $074B
@@ -4719,7 +4719,7 @@ L8DF74F:
     lda #$08
     sta $04B1
 L8DF754:
-    jsl $8087EA
+    jsl L8087EA
     dec $04B1
     bne L8DF754
     lda $7A
@@ -4758,7 +4758,7 @@ L8DF78A:
     and #$1000
     bne L8DF7BA
     sep #$20
-    jsl $8087EA
+    jsl L8087EA
     dec $04B1
     bne L8DF78A
     lda $7A
@@ -4782,7 +4782,7 @@ L8DF7AE:
 L8DF7BA:
 .ACCU 16
     lda #$002D
-    jsl $80B467
+    jsl L80B467
     sep #$20
     lda #$0B
     sta $074B
@@ -4807,7 +4807,7 @@ L8DF7DB:
     and #$1000
     bne L8DF811
     sep #$20
-    jsl $8087EA
+    jsl L8087EA
     dec $04B1
     bne L8DF7DB
     lda $7A
@@ -4834,7 +4834,7 @@ L8DF7FF:
 L8DF811:
 .ACCU 16
     lda #$002D
-    jsl $80B467
+    jsl L80B467
     sep #$20
     lda #$00
     sta $7A
@@ -4851,7 +4851,7 @@ L8DF821:
     clc
     adc #$B000
     sta $00
-    jsl $87B860
+    jsl L87B860
     lda #$00C0
     tsb $0F05
     lda #$7E00
@@ -4884,7 +4884,7 @@ L8DF869:
     sta $01
     lda #$F898
     sta $00
-    jsl $808EAD
+    jsl L808EAD
     bra L8DF895
 
 L8DF887:
@@ -4892,7 +4892,7 @@ L8DF887:
     sta $01
     lda #$F8A1
     sta $00
-    jsl $808EAD
+    jsl L808EAD
 L8DF895:
     plb
     plp
