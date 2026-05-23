@@ -3884,8 +3884,8 @@ L82A64C:
 	inx
 	cpx #$0006
 	bcc L82A64C
-	jsr $B504
-	jsr $B55E
+	jsr L82B504
+	jsr L82B55E
 	plp
 	rts
 
@@ -3904,7 +3904,7 @@ L82A670:
 	sta $0D1C,X
 	lda #$0000
 	sta $0D1E,X
-	jsr $A6B8
+	jsr L82A6B8
 	stx $0D8A
 	plp
 	rts
@@ -3918,7 +3918,7 @@ L82A69A:
 	sta $0D1C,X
 	lda #$1400
 	sta $0D1E,X
-	jsr $A6B8
+	jsr L82A6B8
 	stx $0D8C
 	plp
 	rts
@@ -3961,18 +3961,18 @@ L82A6E7:
 	lda $07D3
 	and #$00FF
 	bne L82A701
-	jsr $B677
+	jsr L82B677
 	bra L82A704
 
 L82A701:
-	jsr $B6A0
+	jsr L82B6A0
 L82A704:
 	lda $074C
 	pha
 	and #$FFF0
 	sta $074C
 	phx
-	jsr $CD64
+	jsr L82CD64
 	jsl L80954E
 	jsl L8098F0
 	jsl L8087EA
@@ -3982,8 +3982,8 @@ L82A704:
 	lda $0D11,X
 	and #$00FF
 	plx
-	jsr $CF21
-	jsr $CF90
+	jsr L82CF21
+	jsr L82CF90
 	lda #$0001
 	sta $7EBD23,X
 	plp
@@ -4002,7 +4002,7 @@ L82A746:
 L82A749:
 	cmp #$23
 	bne L82A753
-	jsr $A756
+	jsr L82A756
 	plp
 	sec
 	rts
@@ -4020,7 +4020,7 @@ L82A756:
 	sta $0D02
 	stz $0DFE
 	rep #$20
-	jsr $B2A2
+	jsr L82B2A2
 	ldy #$0040
 	ldx #$0000
 L82A76D:
@@ -4031,33 +4031,33 @@ L82A76D:
 	inx
 	dey
 	bne L82A76D
-	jsr $E2EA
+	jsr L82E2EA
 	ldx #$0000
 	stx $0D80
-	jsr $B8EA
+	jsr L82B8EA
 	lda $0D13
 	and #$00FF
 	cmp #$0024
 	bne L82A7A4
-	jsr $B318
+	jsr L82B318
 	lda $1D
 	and #$00FF
 	asl A
 	tax
 	jsr ($B29C,X)
-	jsr $B2E8
+	jsr L82B2E8
 	bra L82A7BA
 
 L82A7A4:
-	jsr $B318
+	jsr L82B318
 	lda $1D
 	and #$00FF
 	asl A
 	tax
 	jsr ($B29C,X)
-	jsr $A892
-	jsr $A819
-	jsr $A7BD
+	jsr L82A892
+	jsr L82A819
+	jsr L82A7BD
 L82A7BA:
 	plx
 	plp
@@ -4065,7 +4065,7 @@ L82A7BA:
 
 L82A7BD:
 	php
-	jsr $A7DC
+	jsr L82A7DC
 	lsr A
 	sta $15
 	lda #$0040
@@ -4152,11 +4152,11 @@ L82A863:
 	jsl L82AB6C
 	pha
 	jsl L82AB28
-	jsr $A882
+	jsr L82A882
 	sta $0DF5
 	pla
 	jsl L82AAE5
-	jsr $A882
+	jsr L82A882
 	sta $0DF7
 	plp
 	rts
@@ -4189,16 +4189,19 @@ L82A896:
 	inx
 	cpx #$0004
 	bcc L82A896
-	jsr $B504
-	jsr $A8C2
+	jsr L82B504
+	jsr L82A8C2
 	plp
 	rts
 
 L82A8BA:
-	stx $FEB5
-	lda $1B,X
-	lda [$8B],Y
-	lda [$08],Y
+.dw L82B58E
+.dw L82B5FE
+.dw L82B71B
+.dw L82B78B
+
+L82A8C2:
+	php
 	ldx #$0000
 	stx $23
 L82A8C8:
@@ -4229,18 +4232,18 @@ L82A8F2:
 	lda $0D02
 	and #$00FF
 	beq L82A904
-	jsr $A000
-	jsr $A906
-	jsr $BE15
+	jsr L82A000
+	jsr L82A906
+	jsr L82BE15
 L82A904:
 	plp
 	rtl
 
 L82A906:
 	php
-	jsr $A912
-	jsr $AA39
-	jsr $A966
+	jsr L82A912
+	jsr L82AA39
+	jsr L82A966
 	plp
 	rts
 
@@ -4251,7 +4254,7 @@ L82A912:
 	bit #$20
 	beq L82A93A
 	rep #$20
-	jsr $A93C
+	jsr L82A93C
 	ldx $0D86
 	jsl L8096FA
 	sep #$20
@@ -4315,7 +4318,7 @@ L82A966:
 	bra L82A9DC
 
 L82A98D:
-	jsr $AA0A
+	jsr L82AA0A
 	sep #$20
 	lda $0DFD
 	cmp #$1C
@@ -4341,7 +4344,7 @@ L82A9B4:
 	lda #$02
 	sta $0D91
 	sta $0DFF
-	jsr $A9DE
+	jsr L82A9DE
 	bra L82A9DC
 
 L82A9C8:
@@ -4415,13 +4418,13 @@ L82AA39:
 	and #$00FF
 	beq L82AA62
 	ldx #$0000
-	jsr $AA8E
+	jsr L82AA8E
 	ldx $0D86
 	sta $04CE,X
 	ldx #$0002
-	jsr $AA8E
+	jsr L82AA8E
 	pha
-	jsr $AA64
+	jsr L82AA64
 	pla
 	sec
 	sbc $17

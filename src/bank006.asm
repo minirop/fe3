@@ -540,6 +540,7 @@ L868EEB:
     and #$DF
     sta $1003
     rep #$20
+L868EF7:
     jsr $F75D
     jsr $CF57
     jsr $D7A4
@@ -651,7 +652,7 @@ L868FEE:
     sep #$20
     inc $1005
     rep #$20
-    jmp $8EF7
+    jmp L868EF7
 
 L869003:
     lda $1003
@@ -772,18 +773,18 @@ L8690C8:
     pla
     cmp #$0020
     bne L8690D1
-    jmp $9184
+    jmp L869184
 
 L8690D1:
     cmp #$0017
     bne L8690DC
     lda #$0013
-    jmp $9184
+    jmp L869184
 
 L8690DC:
     cmp #$0013
     bne L8690E4
-    jmp $9184
+    jmp L869184
 
 L8690E4:
     cmp #$000F
@@ -791,7 +792,7 @@ L8690E4:
     cmp #$0018
     bcs L8690F4
     lda #$000F
-    jmp $9184
+    jmp L869184
 
 L8690F4:
     cmp #$0018
@@ -799,7 +800,7 @@ L8690F4:
     cmp #$001E
     bcs L869104
     lda #$0018
-    jmp $9184
+    jmp L869184
 
 L869104:
     cmp #$002D
@@ -820,7 +821,7 @@ L869113:
 L869122:
     cmp #$0009
     bne L86912A
-    jmp $9184
+    jmp L869184
 
 L86912A:
     cmp #$001E
@@ -1171,7 +1172,7 @@ L8693CE:
     sta $01
     pla
     sta $00
-    jmp $93E6
+    jmp L8693E6
 
 L8693DA:
     pha
@@ -1179,7 +1180,7 @@ L8693DA:
     sta $01
     pla
     sta $00
-    jmp $93E6
+    jmp L8693E6
 
 L8693E6:
     lda $101A
@@ -3584,7 +3585,7 @@ L86CD6C:
 
 L86CDC7:
     jsr $CDCD
-    jmp $CECD
+    jmp L86CECD
 
 L86CDCD:
     jsr $CE82
@@ -4945,11 +4946,11 @@ L86F2B8:
     bne L86F2D9
 L86F2D3:
     lda #$0000
-    jmp $F3ED
+    jmp L86F3ED
 
 L86F2D9:
     lda #$0000
-    jmp $F486
+    jmp L86F486
 
 L86F2DF:
     lda #$89FE
@@ -4964,11 +4965,11 @@ L86F2DF:
     beq L86F300
 L86F2FA:
     lda #$0008
-    jmp $F486
+    jmp L86F486
 
 L86F300:
     lda #$0008
-    jmp $F3ED
+    jmp L86F3ED
 
 L86F306:
     lda #$98FE
@@ -5130,6 +5131,7 @@ L86F416:
     clc
     adc $03
     tax
+L86F430:
     rep #$20
     lda ($06)
     tay
@@ -5177,7 +5179,7 @@ L86F44F:
 L86F47B:
     dec $27
     beq L86F482
-    jmp $F430
+    jmp L86F430
 
 L86F482:
     rep #$20
@@ -5223,6 +5225,7 @@ L86F4AF:
     clc
     adc $03
     tax
+L86F4C9:
     rep #$20
     lda ($06)
     tay
@@ -5283,7 +5286,7 @@ L86F501:
 L86F526:
     dec $27
     beq L86F52D
-    jmp $F4C9
+    jmp L86F4C9
 
 L86F52D:
     rep #$20
@@ -5359,19 +5362,19 @@ L86F58A:
     lda $1003
     bit #$02
     beq L86F5A5
-    jmp $F67E
+    jmp L86F67E
 
 L86F5A5:
     lda $1000
     bit #$04
     beq L86F5AF
-    jmp $F63B
+    jmp L86F63B
 
 L86F5AF:
     lda $1003
     bit #$01
     beq L86F5B9
-    jmp $F63B
+    jmp L86F63B
 
 L86F5B9:
     lda $4212
@@ -5429,7 +5432,7 @@ L86F62F:
     ora #$13
     sta $212C
 L86F638:
-    jmp $F6AC
+    jmp L86F6AC
 
 L86F63B:
     lda $4212
@@ -5483,7 +5486,7 @@ L86F685:
     sta $2111
     stz $2111
     jsl L80892E
-    jmp $F6DF
+    jmp L86F6DF
 
 L86F6AC:
     stz $2131

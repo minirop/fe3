@@ -3110,7 +3110,7 @@ L8DE131:
     bra L8DE131
 
 L8DE173:
-    jmp $E1ED
+    jmp L8DE1ED
 
 L8DE176:
     inc $1202
@@ -3155,7 +3155,7 @@ L8DE1AC:
     clc
     adc #$0006
     sta $1200
-    jmp $E131
+    jmp L8DE131
 
 L8DE1C0:
     lda $DE73,X
@@ -3166,7 +3166,7 @@ L8DE1C0:
     adc #$0006
     sta $1200
     jsr $E0A3
-    jmp $E131
+    jmp L8DE131
 
 L8DE1D3:
     lda #$10F0
@@ -3270,7 +3270,7 @@ L8DE2D2:
     clc
     adc #$0006
     sta $1200
-    jmp $E131
+    jmp L8DE131
 
 
 .db $02 $FE $40 $7E $00 $80 $80 $00 $10
@@ -3281,7 +3281,7 @@ L8DE2FB:
     rep #$30
     dec $1204
     beq L8DE306
-    jmp $E31C
+    jmp L8DE31C
 
 L8DE306:
     lda $1208
@@ -3294,6 +3294,7 @@ L8DE306:
     clc
     adc $1212
     sta $8D
+L8DE31C:
     plp
     rts
 
@@ -3681,7 +3682,7 @@ L8DE6B3:
     lda $0127
     and #$1000
     bne L8DE734
-    jmp $E760
+    jmp L8DE760
 
 L8DE6BE:
     jsr $E77E
@@ -3761,7 +3762,7 @@ L8DE734:
 
 L8DE760:
     jsl L8087EA
-    jmp $E672
+    jmp L8DE672
 
 L8DE767:
     php
@@ -3869,7 +3870,7 @@ L8DE811:
     clc
     adc #$0006
     sta $1200
-    jmp $E781
+    jmp L8DE781
 
 L8DE826:
     php

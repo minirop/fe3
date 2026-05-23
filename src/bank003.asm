@@ -1545,7 +1545,7 @@ L83901D:
 	jsl L83E06A
 	bcc L83901C
 	jsl L83FE6D
-	jmp $902E
+	jmp L83902E
 
 L83902E:
 	sep #$20
@@ -2489,12 +2489,12 @@ L839844:
 	lda $0919
 	and #$ff00
 	bne L83989D
-	jmp $98fb
+	jmp L8398FB
 L839892:
 	lda $0919
 	and #$00ff
 	bne L83989D
-	jmp $98fb
+	jmp L8398FB
 L83989D:
 	sep #$20
 	lda #$03
@@ -7784,7 +7784,7 @@ L83C34D:
 	beq L83C36B
 L83C366:
 	rep #$20
-	jmp $98E7
+	jmp L8398E7
 
 L83C36B:
 	jsl L93E35E
