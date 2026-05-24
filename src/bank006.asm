@@ -6880,7 +6880,7 @@ L86C03A:
     sta $01
     lda #$C057
     sta $00
-    jsl $808EAD
+    jsl L808EAD
     rts
 
 .db $01
@@ -13739,12 +13739,12 @@ L86FC1B:
     bit #$0080
     bne L86FC34
     pla
-    jsl $80B43E
+    jsl L80B43E
     bra L86FC45
 
 L86FC34:
     pla
-    jsl $80B44C
+    jsl L80B44C
     sep #$20
     lda $104C
     ora #$80
@@ -13762,12 +13762,12 @@ L86FC46:
     bit #$0080
     bne L86FC5F
     pla
-    jsl $80B48F
+    jsl L80B48F
     bra L86FC70
 
 L86FC5F:
     pla
-    jsl $80B49D
+    jsl L80B49D
     sep #$20
     lda $104C
     ora #$80
@@ -13785,12 +13785,12 @@ L86FC71:
     bit #$0080
     beq L86FC8A
     pla
-    jsl $80B48F
+    jsl L80B48F
     bra L86FC9B
 
 L86FC8A:
     pla
-    jsl $80B49D
+    jsl L80B49D
     sep #$20
     lda $104C
     ora #$80
