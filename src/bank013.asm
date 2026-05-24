@@ -598,10 +598,19 @@ L8DA099:
 .db $00 $1F $00 $20 $00 $21 $00 $22
 .db $00 $23 $00 $24 $00 $25 $00 $26
 .db $00 $27 $00 $28 $00 $29 $00 $2A
-.db $00 $2B $00 $2C $00 $2D $00 $2E
-.db $00 $2F $00 $30 $00 $31 $00 $32
-.db $00 $33 $00 $34 $00 $35 $00 $36
-.db $00 $37 $00 $38 $00 $39 $00 $3A
+.db $00 $2B $00 $2C $00 $2D $00
+
+L8DA21F:
+.db $2E $00 $2F $00 $30 $00 $31 $00
+
+L8DA227:
+.db $32 $00 $33 $00 $34 $00 $35 $00
+
+L8DA22F:
+.db $36 $00
+
+L8DA231:
+.db $37 $00 $38 $00 $39 $00 $3A
 .db $00 $3B $00 $3C $00 $3D $00 $3E
 .db $00 $3F $00 $40 $00 $41 $00 $42
 .db $00 $43 $00 $44 $00 $45 $00 $46
@@ -1982,7 +1991,7 @@ L8DC8B3:
 
 L8DC96D:
     php
-    jsr $F6E0
+    jsr L8DF6E0
     sep #$20
     lda #$01
     sta $80
@@ -2958,7 +2967,7 @@ L8DDB4D:
 
 L8DDDB5:
     php
-    jsr $F6E0
+    jsr L8DF6E0
     sep #$20
     lda #$01
     sta $80
@@ -4285,7 +4294,7 @@ L8DEB6F:
     beq L8DEB8E
 L8DEB7E:
     jsl L8087EA
-    jsr $F668
+    jsr L8DF668
     lda $074B
     cmp #$05
     bne L8DEB8E
@@ -4324,13 +4333,13 @@ L8DEC04:
 L8DEC10:
     jsl L80954E
     stz $0430
-    jsr $EC66
-    jsr $ECE5
-    jsr $ED41
+    jsr L8DEC66
+    jsr L8DECE5
+    jsr L8DED41
     lda $12EC
     cmp #$FFFF
     beq L8DEC39
-    jsr $F668
+    jsr L8DF668
     lda $074B
     cmp #$0005
     bne L8DEC39
@@ -4516,7 +4525,7 @@ L8DED6C:
 L8DED6F:
     pha
     jsl L8087EA
-    jsr $F668
+    jsr L8DF668
     lda $074B
     cmp #$000B
     beq L8DED85
@@ -4648,12 +4657,12 @@ L8DEE78:
     bne L8DEE90
     ldx #$0040
     ldy #$0010
-    jsr $E3E9
+    jsr L8DE3E9
     jsl L8DE355
-    jsr $F357
+    jsr L8DF357
 L8DEE90:
     jsl L8087EA
-    jsr $F668
+    jsr L8DF668
     lda $074B
     cmp #$0005
     bne L8DEEA1
@@ -4682,9 +4691,9 @@ L8DEEAF:
     lda #$0015
     sta $1200
 L8DEECA:
-    jsr $EFF2
+    jsr L8DEFF2
     ldx #$0002
-    jsr $F00B
+    jsr L8DF00B
     lda $12BC
     clc
     adc #$000C
@@ -4692,7 +4701,7 @@ L8DEECA:
     dec $1200
     beq L8DEEF3
     jsl L8087EA
-    jsr $F668
+    jsr L8DF668
     lda $074B
     cmp #$0006
     beq L8DEF1B
@@ -4711,9 +4720,9 @@ L8DEEFA:
     asl A
     tax
     phx
-    jsr $EFF2
+    jsr L8DEFF2
     plx
-    jsr $F00B
+    jsr L8DF00B
     inc $1200
     bra L8DEEFA
 
@@ -4752,17 +4761,17 @@ L8DEF73:
     bne L8DEF99
     ldx #$0000
     ldy #$0010
-    jsr $E3E9
+    jsr L8DE3E9
     ldx #$01A0
     ldy #$0010
-    jsr $E3E9
+    jsr L8DE3E9
     jsl L8DE355
-    jsr $F357
+    jsr L8DF357
     dec $1200
     beq L8DEFAA
 L8DEF99:
     jsl L8087EA
-    jsr $F668
+    jsr L8DF668
     lda $074B
     cmp #$0005
     bne L8DEFAA
@@ -4798,7 +4807,7 @@ L8DEFC5:
     dec $1200
 L8DEFDD:
     jsl L8087EA
-    jsr $F668
+    jsr L8DF668
     rep #$30
     lda $074B
     cmp #$0005
@@ -5135,10 +5144,10 @@ L8DF11B:
     sta.l $000077
     jsl L808F18
     rep #$20
-    jsr $F029
+    jsr L8DF029
     jsl L8DE421
     jsl L8DE441
-    jsr $F04D
+    jsr L8DF04D
     ldx #$0000
     ldy #$0010
     jsl L8DE496
@@ -5146,7 +5155,7 @@ L8DF11B:
     ldy #$0010
     jsl L8DE496
     jsl L8DE355
-    jsr $F357
+    jsr L8DF357
     plp
     rts
 
@@ -5173,7 +5182,7 @@ L8DF357:
 
 L8DF36F:
     php
-    jsr $F6E0
+    jsr L8DF6E0
     sep #$20
     lda #$00
     sta $7B
@@ -5440,7 +5449,7 @@ L8DF438:
 
 L8DF618:
     php
-    jsr $F6E0
+    jsr L8DF6E0
     sep #$20
     lda #$03
     sta $7B
@@ -5801,8 +5810,8 @@ L8DF895:
 .db $00 $6C
 
 L8DF8AA:
-    jsr $F8B5
-    jsr $F94F
+    jsr L8DF8B5
+    jsr L8DF94F
     jsl L87B932
     rts
 
@@ -5812,7 +5821,7 @@ L8DF8B5:
     beq L8DF8CC
     and #$00FF
     bne L8DF8CC
-    jsr $FAC9
+    jsr L8DFAC9
     inc $121E
     lda #$00F0
     sta $1220
@@ -5823,8 +5832,8 @@ L8DF8CC:
 L8DF8CE:
     php
     lda #$001F
-    jsr $F8F2
-    jsr $F8DA
+    jsr L8DF8F2
+    jsr L8DF8DA
     plp
     rts
 
@@ -5839,33 +5848,89 @@ L8DF8DA:
     rts
 
 .db $01 $F0 $10 $7F $08
-.db $00 $C0 $A9 $00 $00 $8F $F0 $10
-.db $7F $A9 $FD $7F $8F $F2 $10 $7F
-.db $A9 $05 $39 $8F $F4 $10 $7F $A9
-.db $90 $5E $8F $F6 $10 $7F $60 $00
-.db $00 $21 $04 $42 $08 $63 $0C $84
-.db $10 $A5 $14 $C6 $18 $E7 $1C $08
-.db $21 $29 $25 $4A $29 $6B $2D $8C
-.db $31 $AD $35 $CE $39 $EF $3D $10
-.db $42 $31 $46 $52 $4A $73 $4E $94
-.db $52 $B5 $56 $D6 $5A $F7 $5E $18
-.db $63 $39 $67 $5A $6B $7B $6F $9C
-.db $73 $BD $77 $DE $7B $FF $7F $AD
-.db $1E $12 $F0 $6F $EB $29 $FF $00
-.db $3A $0A $0A $0A $0A $0A $AA $A0
-.db $08 $00 $5A $BF $C4 $F9 $8D $29
-.db $FF $00 $F0 $32 $85 $56 $BF $C5
-.db $F9 $8D $38 $E9 $6D $00 $29 $FF
-.db $00 $18 $6D $20 $12 $C9 $F0 $FF
-.db $B0 $05 $C9 $F0 $00 $B0 $17 $29
-.db $FF $00 $85 $58 $BF $C6 $F9 $8D
-.db $29 $FF $00 $A8 $BF $C7 $F9 $8D
-.db $29 $FF $00 $20 $84 $FA $E8 $E8
-.db $E8 $E8 $7A $88 $D0 $BC $AD $22
-.db $12 $1A $8D $22 $12 $C9 $03 $00
-.db $90 $11 $9C $22 $12 $CE $20 $12
-.db $AD $20 $12 $C9 $20 $FF $D0 $03
-.db $9C $1E $12 $60 $30 $6D $0A $00
+.db $00 $C0
+
+L8DF8F2:
+    lda #$0000
+    sta $7F10F0
+    lda #$7FFD
+    sta $7F10F2
+    lda #$3905
+    sta $7F10F4
+    lda #$5E90
+    sta $7F10F6
+    rts
+
+.db $00 $00 $21 $04 $42 $08 $63 $0C
+.db $84 $10 $A5 $14 $C6 $18 $E7 $1C
+.db $08 $21 $29 $25 $4A $29 $6B $2D
+.db $8C $31 $AD $35 $CE $39 $EF $3D
+.db $10 $42 $31 $46 $52 $4A $73 $4E
+.db $94 $52 $B5 $56 $D6 $5A $F7 $5E
+.db $18 $63 $39 $67 $5A $6B $7B $6F
+.db $9C $73 $BD $77 $DE $7B $FF $7F
+
+L8DF94F:
+    lda $121E
+    beq L8DF9C3
+    xba
+    and #$00FF
+    dec A
+    asl A
+    asl A
+    asl A
+    asl A
+    asl A
+    tax
+    ldy #$0008
+L8DF962:
+    phy
+    lda $8DF9C4,X
+    and #$00FF
+    beq L8DF99E
+    sta $56
+    lda $8DF9C5,X
+    sec
+    sbc #$006D
+    and #$00FF
+    clc
+    adc $1220
+    cmp #$FFF0
+    bcs L8DF987
+    cmp #$00F0
+    bcs L8DF99E
+L8DF987:
+    and #$00FF
+    sta $58
+    lda $8DF9C6,X
+    and #$00FF
+    tay
+    lda $8DF9C7,X
+    and #$00FF
+    jsr $FA84
+L8DF99E:
+    inx
+    inx
+    inx
+    inx
+    ply
+    dey
+    bne L8DF962
+    lda $1222
+    inc A
+    sta $1222
+    cmp #$0003
+    bcc L8DF9C3
+    stz $1222
+    dec $1220
+    lda $1220
+    cmp #$FF20
+    bne L8DF9C3
+    stz $121E
+L8DF9C3:
+    rts
+
+.db $30 $6D $0A $00
 .db $30 $80 $09 $24 $40 $93 $07 $48
 .db $00 $6D $00 $00 $00 $6D $00 $00
 .db $00 $6D $00 $00 $00 $6D $00 $00
@@ -5898,20 +5963,51 @@ L8DF8DA:
 .db $02 $00 $89 $10 $00 $F0 $04 $18
 .db $69 $10 $00 $85 $17 $E8 $E8 $E8
 .db $E8 $88 $D0 $D1 $86 $50 $FA $28
-.db $60 $C2 $30 $C2 $20 $A9 $00 $8D
-.db $85 $01 $AD $1E $12 $EB $3A $29
-.db $FF $00 $0A $AA $BF $45 $FB $8D
-.db $85 $00 $22 $60 $B8 $87 $A9 $00
-.db $00 $8D $29 $0F $A9 $10 $20 $8D
-.db $25 $0F $A9 $00 $60 $8D $23 $0F
-.db $A9 $00 $7E $8D $21 $0F $A9 $00
-.db $30 $8D $20 $0F $AD $05 $0F $09
-.db $28 $00 $8D $05 $0F $A9 $00 $00
-.db $8D $12 $0F $A9 $01 $00 $8D $07
-.db $0F $A9 $00 $DC $8D $17 $0F $A9
-.db $00 $80 $8D $16 $0F $A9 $00 $8D
-.db $8D $1A $0F $A9 $84 $FC $8D $19
-.db $0F $20 $CE $F8 $60 $01 $12 $02
+.db $60
+
+L8DFAC9:
+    rep #$30
+    rep #$20
+    lda #$8D00
+    sta $01
+    lda $121E
+    xba
+    dec A
+    and #$00FF
+    asl A
+    tax
+    lda $8DFB45,X
+    sta $00
+    jsl L87B860
+    lda #$0000
+    sta $0F29
+    lda #$2010
+    sta $0F25
+    lda #$6000
+    sta $0F23
+    lda #$7E00
+    sta $0F21
+    lda #$3000
+    sta $0F20
+    lda $0F05
+    ora #$0028
+    sta $0F05
+    lda #$0000
+    sta $0F12
+    lda #$0001
+    sta $0F07
+    lda #$DC00
+    sta $0F17
+    lda #$8000
+    sta $0F16
+    lda #$8D00
+    sta $0F1A
+    lda #$FC84
+    sta $0F19
+    jsr $F8CE
+    rts
+
+.db $01 $12 $02
 .db $11 $01 $12 $01 $12 $02 $11 $01
 .db $12 $01 $12 $02 $11 $51 $FB $7B
 .db $FB $A5 $FB $FE $FB $1C $FC $5D

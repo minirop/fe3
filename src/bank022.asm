@@ -3,6 +3,7 @@
 
 .SECTION "Bank22" FORCE
 
+L968000:
 .db $42 $80 $3F $81 $38 $82 $2D $83
 .db $1A $84 $FF $84 $DC $85 $B1 $86
 .db $7E $87 $43 $88 $00 $89 $B5 $89
@@ -948,12 +949,20 @@ L969715:
     plp
     rts
 
-.db $02
-.db $00 $30 $7E $00 $04 $80 $00 $78
-.db $02 $00 $34 $7E $00 $04 $80 $00
-.db $7A $02 $00 $38 $7E $00 $04 $80
-.db $00 $7C $02 $00 $3C $7E $00 $04
-.db $80 $00 $7E $00 $00 $14 $00 $10
+L969717:
+.db $02 $00 $30 $7E $00 $04 $80 $00 $78
+.db $02 $00 $34 $7E $00 $04 $80 $00 $7A
+.db $02 $00 $38 $7E $00 $04 $80 $00 $7C
+.db $02 $00 $3C $7E $00 $04 $80 $00 $7E
+
+L96973B:
+.db $00 $00
+
+L96973D: ; change with "B+2"?
+.db $14 $00
+
+L96973F: ; change with "B+4"?
+.db $10
 .db $00 $00 $00 $16 $00 $9C $00 $00
 .db $00 $1A $00 $00 $00 $00 $00 $0E
 .db $00 $08 $00 $00 $00 $08 $00 $08
@@ -980,9 +989,18 @@ L969715:
 .db $00 $00 $00 $20 $00 $1A $00 $F0
 .db $00 $00 $00 $16 $00 $00 $00 $00
 .db $00 $0C $00 $20 $00 $00 $01 $FF
-.db $FF $FF $FF $56 $99 $C7 $99 $EC
-.db $99 $F7 $99 $1A $9A $2B $9A $36
-.db $9A $3F $9A $4A $9A
+.db $FF $FF $FF
+
+L969813:
+.dw L969956
+.dw L9699C7
+.dw L9699EC
+.dw L9699F7
+.dw L969A1A
+.dw L969A2B
+.dw L969A36
+.dw L969A3F
+.dw L969A4A
 
 L969825:
     php
@@ -990,10 +1008,10 @@ L969825:
 L969828:
     ldx $1200
     lda $1202
-    cmp $973B,X
+    cmp.w L96973B,X
     bne L969874
     stz $1202
-    lda $973D,X
+    lda.w L96973D,X
     beq L969899
     cmp #$0001
     beq L9698AC
@@ -1012,7 +1030,7 @@ L969828:
     cmp #$FFFF
     beq L969879
     tay
-    lda $973F,X
+    lda.w L96973F,X
     sta $1200,Y
     txa
     clc
@@ -1048,56 +1066,56 @@ L969896:
     jmp L9698E0
 
 L969899:
-    lda $973F,X
+    lda.w L96973F,X
     txy
     tax
     tya
     clc
     adc #$0006
     sta $1200
-    jsr ($9813,X)
+    jsr (L969813,X)
     jmp L969828
 
 L9698AC:
-    lda $973F,X
+    lda.w L96973F,X
     sta $8F
     jmp L9698FF
 
 L9698B4:
-    lda $973F,X
+    lda.w L96973F,X
     sta $93
     jmp L9698FF
 
 L9698BC:
     sep #$20
-    lda $973F,X
+    lda.w L96973F,X
     sta $80
     rep #$20
     jmp L9698FF
 
 L9698C8:
     sep #$20
-    lda $973F,X
+    lda.w L96973F,X
     sta $81
     rep #$20
     jmp L9698FF
 
 L9698D4:
     sep #$20
-    lda $973F,X
+    lda.w L96973F,X
     sta $82
     rep #$20
     jmp L9698FF
 
 L9698E0:
     sep #$20
-    lda $973F,X
+    lda.w L96973F,X
     sta $84
     rep #$20
     jmp L9698FF
 
 L9698EC:
-    lda $973F,X
+    lda.w L96973F,X
     txy
     tax
     tya
@@ -1114,15 +1132,21 @@ L9698FF:
     sta $1200
     jmp L969828
 
-.db $0D $99 $96 $02 $FE $42
-.db $7E $00 $04 $80 $00 $70
+L96990A:
+.db $0D $99
+L96990C:
+.db $96 $02
+.db $FE $42
+.db $7E $00
+.db $04 $80
+.db $00 $70
 
 L969916:
     php
     rep #$30
-    lda $990C,X
+    lda.w L96990C,X
     sta $02
-    lda $990A,X
+    lda.w L96990A,X
     sta $00
     jsl L808EAD
     plp
@@ -1336,7 +1360,7 @@ L969A96:
     lsr A
     lsr A
     tax
-    lda $968000,X
+    lda.l L968000,X
     sta $4342
     sep #$20
     lda $A6
@@ -1395,9 +1419,9 @@ L969AC2:
     lda $12DE
     asl A
     tax
-    lda $9FB4,X
+    lda.w L969FB4,X
     tax
-    lda $8DA21F,X
+    lda.l L8DA21F,X
     ldx #$0070
     pha
     lda #$0038
@@ -1902,28 +1926,39 @@ L969FA8:
     plp
     rtl
 
-.db $00 $00 $00 $00
-.db $00 $00 $00 $00 $00 $00 $02 $00
-.db $02 $00 $02 $00 $02 $00 $04 $00
-.db $04 $00 $04 $00 $04 $00 $04 $00
-.db $04 $00 $06 $00 $06 $00 $06 $00
-.db $06 $00 $06 $00 $3B $00 $60 $00
-.db $86 $00 $AF $00 $D6 $00 $01 $01
-.db $2D $01 $53 $01 $80 $01 $A7 $01
-.db $D0 $01 $F6 $01 $1C $02 $43 $02
-.db $6A $02 $91 $02 $BE $02 $EC $02
-.db $12 $03 $3F $03 $6D $03 $3C $00
-.db $68 $00 $95 $00 $C2 $00 $EC $00
-.db $1A $01 $44 $01 $6B $01 $94 $01
-.db $BD $01 $E3 $01 $0C $02 $36 $02
-.db $64 $02 $8D $02 $B8 $02 $E4 $02
-.db $0D $03 $3A $03 $5F $03 $8D $03
+L969FB4:
+.db $00 $00 $00 $00 $00 $00 $00 $00
+.db $00 $00 $02 $00 $02 $00 $02 $00
+.db $02 $00 $04 $00 $04 $00 $04 $00
+.db $04 $00 $04 $00 $04 $00 $06 $00
+.db $06 $00 $06 $00 $06 $00 $06 $00
+
+L969FDC:
+.db $3B $00 $60 $00 $86 $00 $AF $00
+.db $D6 $00 $01 $01 $2D $01 $53 $01
+.db $80 $01 $A7 $01 $D0 $01 $F6 $01
+.db $1C $02 $43 $02 $6A $02 $91 $02
+.db $BE $02 $EC $02 $12 $03 $3F $03
+.db $6D $03
+
+L96A006:
 .db $3C $00 $68 $00 $95 $00 $C2 $00
 .db $EC $00 $1A $01 $44 $01 $6B $01
 .db $94 $01 $BD $01 $E3 $01 $0C $02
 .db $36 $02 $64 $02 $8D $02 $B8 $02
 .db $E4 $02 $0D $03 $3A $03 $5F $03
-.db $84 $03 $AB $03 $D9 $03 $C4 $C4
+.db $8D $03
+
+L96A030:
+.db $3C $00 $68 $00 $95 $00 $C2 $00
+.db $EC $00 $1A $01 $44 $01 $6B $01
+.db $94 $01 $BD $01 $E3 $01 $0C $02
+.db $36 $02 $64 $02 $8D $02 $B8 $02
+.db $E4 $02 $0D $03 $3A $03 $5F $03
+.db $84 $03 $AB $03 $D9 $03
+
+L96A05E:
+.db $C4 $C4
 .db $C4 $C4 $C4 $C4 $C4 $5C $65 $78
 .db $55 $00 $13 $24 $00 $14 $43 $00
 .db $11 $60 $B9 $7D $00 $01 $00 $0A
@@ -2034,7 +2069,10 @@ L969FA8:
 .db $00 $13 $BF $00 $11 $60 $B9 $7D
 .db $00 $12 $34 $00 $11 $C4 $C4 $00
 .db $0F $01 $A0 $A0 $A0 $A0 $60 $B9
-.db $7D $00 $01 $00 $00 $C4 $C4 $C4
+.db $7D $00 $01 $00 $00
+
+L96A3D5:
+.db $C4 $C4 $C4
 .db $C4 $C4 $C4 $C4 $5C $65 $78 $55
 .db $00 $13 $24 $00 $14 $43 $00 $11
 .db $60 $B9 $7D $00 $01 $00 $0A $00
@@ -2149,7 +2187,10 @@ L969FA8:
 .db $00 $13 $BF $00 $11 $60 $B9 $7D
 .db $00 $12 $34 $00 $11 $C4 $00 $0F
 .db $01 $A0 $A0 $A0 $A0 $60 $B9 $7D
-.db $00 $01 $00 $00 $C4 $C4 $C4 $C4
+.db $00 $01 $00 $00
+
+L96A76C:
+.db $C4 $C4 $C4 $C4
 .db $C4 $C4 $C4 $5C $65 $78 $55 $00
 .db $13 $24 $00 $14 $43 $00 $11 $60
 .db $B9 $7D $00 $01 $00 $0A $00 $01
@@ -2415,7 +2456,7 @@ L96AC92:
     dec A
     asl A
     tax
-    lda $ACD0,X
+    lda.w L96ACD0,X
     cmp $93
     beq L96AC90
     lda $93
@@ -2434,13 +2475,10 @@ L96ACCB:
     bra L96AC92
 
 L96ACD0:
-    ldy #$8003
-    ora $80,S
-    ora $08,S
-    rep #$30
-    lda #$0400
-    ldx #$0000
-    ldy #$0400
+.db $A0 $03 $80 $03 $80 $03 $08 $C2
+.db $30 $A9 $00 $04 $A2 $00 $00 $A0
+.db $00 $04
+
 L96ACE2:
     sta $7E3000,X
     inx
@@ -2697,7 +2735,7 @@ L96AF41:
     ldx #$0000
     ldy #$01F2
 L96AF4A:
-    lda $96A76C,X
+    lda.l L96A76C,X
     sta $7F2000,X
     inx
     inx
@@ -2723,7 +2761,7 @@ L96AF4A:
     stz $1B
 L96AF81:
     ldx $17
-    lda $96A030,X
+    lda.l L96A030,X
     tay
     ldx $15
     lda $7F6520,X
@@ -2822,14 +2860,14 @@ L96B021:
 
 L96B023:
     ldx $17
-    lda $96A030,X
+    lda.l L96A030,X
     tay
     lda $1B
     jmp L96AF9F
 
 L96B02F:
     ldx $17
-    lda $96A030,X
+    lda.l L96A030,X
     tay
     ldx $15
     lda $7F6520,X
@@ -2859,7 +2897,7 @@ L96B065:
     ldx #$0000
     ldy #$01CC
 L96B06E:
-    lda $96A3D5,X
+    lda.l L96A3D5,X
     sta $7F2000,X
     inx
     inx
@@ -2885,7 +2923,7 @@ L96B06E:
     stz $1B
 L96B0A5:
     ldx $17
-    lda $96A006,X
+    lda.l L96A006,X
     tay
     ldx $15
     lda $7F6520,X
@@ -2982,7 +3020,7 @@ L96B140:
 
 L96B142:
     ldx $17
-    lda $96A006,X
+    lda.l L96A006,X
     tay
     lda $1B
     jmp L96B0C3
@@ -2993,7 +3031,7 @@ L96B14E:
     ldx #$0000
     ldy #$01BC
 L96B157:
-    lda $96A05E,X
+    lda.l L96A05E,X
     sta $7F2000,X
     inx
     inx
@@ -3019,7 +3057,7 @@ L96B157:
     stz $1B
 L96B18E:
     ldx $17
-    lda $969FDC,X
+    lda.l L969FDC,X
     tay
     ldx $15
     lda $7F6520,X
@@ -3116,7 +3154,7 @@ L96B229:
 
 L96B22B:
     ldx $17
-    lda $969FDC,X
+    lda.l L969FDC,X
     tay
     lda $1B
     jmp L96B1AC
@@ -3444,7 +3482,13 @@ L96B491:
     plp
     rts
 
-.db $35 $BC $13 $00 $48 $BC
+L96B56A:
+.db $35 $BC
+L96B56C:
+.db $13 $00
+L96B56E:
+.db $48 $BC
+L96B570:
 .db $54 $00 $9C $BC $11 $00 $AD $BC
 .db $3C $00 $E9 $BC $17 $00 $00 $BD
 .db $2C $00 $2C $BD $13 $00 $3F $BD
@@ -3535,7 +3579,10 @@ L96B491:
 .db $1D $00 $FD $D4 $14 $00 $11 $D5
 .db $25 $00 $36 $D5 $17 $00 $4D $D5
 .db $30 $00 $7D $D5 $13 $00 $90 $D5
-.db $49 $00 $3E $B9 $0F $00 $4D $B9
+.db $49 $00
+
+L96B842:
+.db $3E $B9 $0F $00 $4D $B9
 .db $0A $00 $57 $B9 $11 $00 $68 $B9
 .db $16 $00 $7E $B9 $13 $00 $91 $B9
 .db $15 $00 $A6 $B9 $10 $00 $B6 $B9
@@ -3559,10 +3606,49 @@ L96B491:
 .db $0E $00 $F2 $BB $0E $00 $F2 $BB
 .db $0E $00 $00 $01 $00 $01 $00 $01
 .db $00 $0F $0A $00 $13 $C3 $00 $11
-.db $EE $F7 $00 $14 $3B $00 $00 $00
-.db $13 $28 $00 $12 $90 $00 $11 $C4
-.db $00 $11 $A0 $A0 $A0 $00 $14 $3F
-.db $40 $41 $00 $00 $00 $01 $00 $01
+.db $EE $F7 $00 $14 $3B $00 $00
+
+L96B907:
+.db $00
+L96B908:
+.db $13
+L96B909:
+.db $28
+L96B90A:
+.db $00
+L96B90B:
+.db $12
+L96B90C:
+.db $90
+L96B90D:
+.db $00
+L96B90E:
+.db $11
+L96B90F:
+.db $C4
+
+.db $00 $11 $A0 $A0 $A0
+
+L96B915:
+.db $00
+L96B916:
+.db $14
+L96B917:
+.db $3F
+L96B918:
+.db $40
+L96B919:
+.db $41
+L96B91A:
+.db $00
+L96B91B:
+.db $00
+L96B91C:
+.db $00
+L96B91D:
+.db $01
+
+.db $00 $01
 .db $00 $01 $00 $0F $06 $00 $14 $42
 .db $00 $11 $00 $12 $30 $00 $11 $C4
 .db $C4 $F7 $00 $12 $E8 $00 $11 $00
@@ -4482,7 +4568,10 @@ L96B491:
 .db $01 $00 $13 $72 $00 $11 $0E $15
 .db $00 $12 $16 $13 $00 $11 $2D $00
 .db $14 $64 $00 $11 $29 $F9 $F9 $00
-.db $00 $45 $D7 $00 $00 $45 $D7 $00
+.db $00
+
+L96D5D9:
+.db $45 $D7 $00 $00 $45 $D7 $00
 .db $00 $45 $D7 $00 $00 $45 $D7 $00
 .db $00 $45 $D7 $00 $00 $45 $D7 $00
 .db $00 $45 $D7 $00 $00 $45 $D7 $00
@@ -4951,11 +5040,11 @@ L96DB90:
     lda $1226
     asl A
     tax
-    lda $DD3C,X
+    lda.w L96DD3C,X
     tay
-    lda $DD38,X
+    lda.w L96DD38,X
     tax
-    lda $8DA22F
+    lda.l L8DA22F
     jsl L8DA000
     lda $0430
     sta $52
@@ -4969,11 +5058,11 @@ L96DC46:
     lda $1226
     asl A
     tax
-    lda $DD3C,X
+    lda.w L96DD3C,X
     tay
-    lda $DD38,X
+    lda.w L96DD38,X
     tax
-    lda $8DA22F
+    lda.l L8DA22F
     jsl L8DA000
     lda $1226
     beq L96DC7D
@@ -5049,11 +5138,16 @@ L96DD15:
     clc
     rts
 
-.db $02 $FE $40 $7E $00 $20 $80 $00
-.db $20 $01 $FE $41 $7E $00 $01 $80
-.db $01 $FE $40 $7E $00 $02 $00 $02
-.db $00 $30 $7E $00 $08 $80 $00 $78
-.db $48 $00 $70 $00 $73 $00 $73 $00
+.db $02 $FE $40 $7E $00 $20 $80 $00 $20
+.db $01 $FE $41 $7E $00 $01 $80
+.db $01 $FE $40 $7E $00 $02 $00
+.db $02 $00 $30 $7E $00 $08 $80 $00 $78
+
+L96DD38:
+.db $48 $00 $70 $00
+
+L96DD3C:
+.db $73 $00 $73 $00
 
 L96DD40:
     php
@@ -5196,7 +5290,7 @@ L96DE75:
 
 L96DE85:
     tax
-    lda $E5B3,X
+    lda.w L96E5B3,X
     jsl L87A923
     bcc L96DE92
     jmp L96DF31
@@ -5208,7 +5302,7 @@ L96DE92:
     lda $1200
     asl A
     tax
-    lda $E4FD,X
+    lda.w L96E4FD,X
     ldx #$60B8
     jsl L87B3FD
     jsl L80884A
@@ -5275,7 +5369,7 @@ L96DF3F:
     php
     rep #$30
     ldx $1324
-    lda $E6BB,X
+    lda.w L96E6BB,X
     and #$00FF
     sta $1200
     inc $1324
@@ -5305,9 +5399,9 @@ L96DF6A:
     asl A
     asl A
     tax
-    lda $96B56A,X
+    lda.l L96B56A,X
     sta $00
-    lda $96B56C,X
+    lda.l L96B56C,X
     tay
     lda #$007F
     sta $05
@@ -5345,20 +5439,20 @@ L96DF9A:
     inc $03
     sep #$20
     ldx $1200
-    lda $E5B3,X
+    lda.w L96E5B3,X
     jsl L87A923
     lda $7F5346,X
     jsl L93E5A1
     lda $7F675C,X
     rep #$20
     jsr L96E4C7
-    lda $96B907
+    lda.l L96B907
     sta [$03]
     inc $03
-    lda $96B908
+    lda.l L96B908
     sta [$03]
     inc $03
-    lda $96B909
+    lda.l L96B909
     sta [$03]
     inc $03
     plp
@@ -5375,7 +5469,7 @@ L96DFF7:
     inc $03
     sep #$20
     ldx $1200
-    lda $E5B3,X
+    lda.w L96E5B3,X
     jsl L87A923
     lda $7F5346,X
     jsl L93E5A1
@@ -5397,22 +5491,22 @@ L96E037:
     rep #$20
     and #$00FF
     jsr L96E4C7
-    lda $96B90A
+    lda.l L96B90A
     sta [$03]
     inc $03
-    lda $96B90B
+    lda.l L96B90B
     sta [$03]
     inc $03
-    lda $96B90C
+    lda.l L96B90C
     sta [$03]
     inc $03
-    lda $96B90D
+    lda.l L96B90D
     sta [$03]
     inc $03
-    lda $96B90E
+    lda.l L96B90E
     sta [$03]
     inc $03
-    lda $96B90F
+    lda.l L96B90F
     sta [$03]
     inc $03
     plp
@@ -5447,31 +5541,31 @@ L96E071:
     clc
     adc $E669,X
     jsr L96E4C7
-    lda $96B915
+    lda.l L96B915
     sta [$03]
     inc $03
-    lda $96B916
+    lda.l L96B916
     sta [$03]
     inc $03
-    lda $96B917
+    lda.l L96B917
     sta [$03]
     inc $03
-    lda $96B918
+    lda.l L96B918
     sta [$03]
     inc $03
-    lda $96B919
+    lda.l L96B919
     sta [$03]
     inc $03
-    lda $96B91A
+    lda.l L96B91A
     sta [$03]
     inc $03
-    lda $96B91B
+    lda.l L96B91B
     sta [$03]
     inc $03
-    lda $96B91C
+    lda.l L96B91C
     sta [$03]
     inc $03
-    lda $96B91D
+    lda.l L96B91D
     sta [$03]
     inc $03
     lda #$0000
@@ -5508,9 +5602,9 @@ L96E10F:
     asl A
     asl A
     tax
-    lda $96B56E,X
+    lda.l L96B56E,X
     sta $00
-    lda $96B570,X
+    lda.l L96B570,X
     tay
     jmp L96E1A2
 
@@ -5519,9 +5613,9 @@ L96E159:
     asl A
     asl A
     tax
-    lda $96D5D9,X
+    lda.l L96D5D9,X
     sta $00
-    lda $96D5DB,X
+    lda.l (L96D5D9 + 2),X
     tay
     jmp L96E1A2
 
@@ -5536,9 +5630,9 @@ L96E16D:
     asl A
     asl A
     tax
-    lda $96B842,X
+    lda.l L96B842,X
     sta $00
-    lda $96B844,X
+    lda.l (L96B842 + 2),X
     tay
 L96E18B:
     sep #$20
@@ -5904,8 +5998,11 @@ L96E4E6:
     inc $03
     rts
 
-.db $E8
-.db $03 $64 $00 $0A $00 $00 $00 $01
+L96E4F7:
+.db $E8 $03 $64 $00 $0A $00
+
+L96E4FD:
+.db $00 $00 $01
 .db $00 $02 $00 $03 $00 $04 $00 $05
 .db $00 $06 $00 $0D $00 $09 $00 $0A
 .db $00 $0B $00 $0C $00 $10 $00 $0F
@@ -5928,7 +6025,10 @@ L96E4E6:
 .db $00 $20 $00 $1B $00 $61 $00 $84
 .db $00 $89 $00 $7E $00 $2B $00 $28
 .db $00 $25 $00 $26 $00 $8F $00 $2A
-.db $00 $32 $00 $00 $01 $02 $03 $04
+.db $00 $32 $00
+
+L96E5B3:
+.db $00 $01 $02 $03 $04
 .db $05 $06 $0D $09 $0A $0B $0C $10
 .db $0F $12 $11 $13 $14 $15 $16 $17
 .db $2C $29 $07 $18 $19 $1A $1C $2F
@@ -5961,7 +6061,10 @@ L96E4E6:
 .db $0A $F0 $0A $54 $0B $B8 $0B $1C
 .db $0C $80 $0C $E4 $0C $48 $0D $AC
 .db $0D $10 $0E $74 $0E $D8 $0E $3C
-.db $0F $A0 $0F $00 $01 $02 $03 $04
+.db $0F $A0 $0F
+
+L96E6BB:
+.db $00 $01 $02 $03 $04
 .db $05 $06 $07 $08 $09 $0A $0B $0C
 .db $0D $0E $0F $10 $11 $12 $13 $14
 .db $15 $16 $17 $18 $19 $1A $1E $1D
@@ -6116,14 +6219,20 @@ L96E4E6:
 .db $20 $09 $0E $00 $00 $00 $0F $0A
 .db $14 $0F $43 $02 $05 $43 $03 $0F
 .db $0E $14 $09 $0E $15 $05 $04 $00
-.db $00 $00 $02 $40 $00 $C8 $00 $D0
+.db $00
+
+L96EB91:
+.db $00 $02 $40 $00 $C8 $00 $D0
 .db $00 $00 $04 $44 $00 $C8 $00 $D0
 .db $00 $00 $06 $48 $00 $C8 $00 $D0
 .db $00 $00 $08 $4C $00 $C8 $00 $D0
 .db $00 $00 $0A $50 $00 $C8 $00 $D0
 .db $00 $00 $0C $54 $00 $C8 $00 $D0
 .db $00 $00 $0E $58 $00 $C8 $00 $D0
-.db $00 $00 $10 $FF $FF $00 $00 $18
+.db $00 $00 $10 $FF $FF
+
+L96EBCD:
+.db $00 $00 $18
 .db $E7 $00 $00 $C0 $00 $00 $01 $27
 .db $E7 $00 $00 $E0 $00 $00 $03 $5D
 .db $E7 $00 $00 $D0 $00 $00 $05 $7A
@@ -6133,7 +6242,10 @@ L96E4E6:
 .db $E8 $00 $00 $F0 $00 $00 $0D $63
 .db $E8 $00 $00 $E0 $00 $00 $0F $9C
 .db $E8 $00 $00 $D0 $00 $01 $10 $FF
-.db $FF $10 $00 $01 $00 $04 $00 $90
+.db $FF
+
+L96EC19:
+.db $10 $00 $01 $00 $04 $00 $90
 .db $00 $02 $00 $04 $00 $10 $01 $01
 .db $00 $04 $00 $F0 $01 $02 $00 $04
 .db $00 $10 $02 $01 $00 $01 $00 $F0
@@ -6194,15 +6306,15 @@ L96ED1F:
     rep #$30
     lda $1202
     ldx $130C
-    cmp $96EB91,X
+    cmp.l L96EB91,X
     bne L96ED4D
-    lda $96EB93,X
+    lda.l (L96EB91 + 2),X
     cmp #$FFFF
     beq L96ED4F
     sta $80
-    lda $96EB95,X
+    lda.l (L96EB91 + 4),X
     sta $89
-    lda $96EB97,X
+    lda.l (L96EB91 + 6),X
     sta $8B
     txa
     clc
@@ -6222,7 +6334,7 @@ L96ED54:
     rep #$30
     lda $1202
     ldx $130E
-    cmp $96EBCD,X
+    cmp.l L96EBCD,X
     bne L96ED9D
     txa
     clc
@@ -6231,11 +6343,11 @@ L96ED54:
     phx
     jsr L96DF53
     plx
-    lda $96EBD1,X
+    lda.l (L96EBCD + 4),X
     sta $91
-    lda $96EBD3,X
+    lda.l (L96EBCD + 6),X
     sta $93
-    lda $96EBCF,X
+    lda.l (L96EBCD + 2),X
     sta $00
     jsr L96F71D
 L96ED85:
@@ -6256,19 +6368,19 @@ L96ED9F:
     rep #$30
     lda $1202
     ldx $1310
-    cmp $96EC19,X
+    cmp.l L96EC19,X
     bne L96EDF3
     txa
     clc
     adc #$0006
     sta $1310
     sep #$20
-    lda $96EC1D,X
+    lda.l (L96EC19 + 4),X
     sta $A0
-    lda $96EC1E,X
+    lda.l (L96EC19 + 5),X
     sta $A1
     rep #$20
-    lda $96EC1B,X
+    lda.l (L96EC19 + 2),X
     cmp #$0001
     beq L96EDD6
     cmp #$0002
@@ -6659,7 +6771,7 @@ L96F10A:
 L96F11A:
     asl A
     tax
-    lda $8DA227,X
+    lda.l L8DA227,X
     ldx #$0080
     ldy #$FFE0
     jsl L8DA000
@@ -7312,7 +7424,7 @@ L96F863:
 L96F873:
     asl A
     tax
-    lda $8DA231,X
+    lda.l L8DA231,X
     ldx #$0078
     ldy #$0000
     jsl L8DA000
