@@ -1819,7 +1819,14 @@ L868D4D:
 L868D4F:
     rts
 
-.db $CC $D8 $6B $DB $35 $D9 $86 $DB
+L868D50:
+.dw L86D8CC
+.dw L86DB6B
+
+L868D54:
+.dw L86D935
+.dw L86DB86
+
 .db $90 $E8 $1C $90 $E8 $1C $90 $E8
 .db $1C $90 $E8 $1C $90 $E8 $1C $90
 .db $E8 $1C $90 $E8 $1C $90 $E8 $1C
@@ -6151,7 +6158,7 @@ L86AFD9:
     and #$00FF
     asl A
     tax
-    jsr ($BDB6,X)
+    jsr (L86BDB6,X)
     sep #$20
 L86AFEC:
     bra L86AF91
@@ -8146,25 +8153,79 @@ L86BDA4:
     inc $1039
     rts
 
-.db $9B $B7
-.db $BF $B7 $F1 $AF $F7 $AF $00 $B0
-.db $0F $B0 $1E $B0 $47 $B4 $62 $B4
-.db $77 $B6 $27 $B0 $30 $B0 $C4 $BC
-.db $9F $BA $56 $E0 $77 $BE $77 $BE
-.db $29 $92 $46 $92 $00 $92 $55 $C2
-.db $46 $93 $72 $93 $2C $B3 $66 $B3
-.db $7E $92 $C9 $92 $4D $DB $5C $DB
-.db $62 $D8 $9B $D6 $B9 $DB $C8 $DB
-.db $2E $B6 $63 $B0 $66 $B0 $6C $B0
-.db $FD $B3 $67 $BA $71 $BA $72 $B0
-.db $3F $BA $53 $BA $F6 $D5 $B6 $B3
-.db $C4 $B3 $54 $B7 $7B $BA $8D $BA
-.db $6E $B7 $84 $B0 $87 $B0 $6B $C1
-.db $9C $93 $3F $B0 $B5 $93 $7E $B0
-.db $D8 $BC $6B $BD $4E $B0 $32 $B4
-.db $33 $C2 $3A $C2 $41 $C2 $60 $D6
-.db $08 $CD $1D $CD $5A $B0 $92 $BD
-.db $A4 $BD $0B $D6 $FD $D5
+L86BDB6:
+.dw L86B79B
+.dw L86B7BF
+.dw L86AFF1
+.dw L86AFF7
+.dw L86B000
+.dw L86B00F
+.dw L86B01E
+.dw L86B447
+.dw L86B462
+.dw L86B677
+.dw L86B027
+.dw L86B030
+.dw L86BCC4
+.dw L86BA9F
+.dw L86E056
+.dw L86BE77
+.dw L86BE77
+.dw L869229
+.dw L869246
+.dw L869200
+.dw L86C255
+.dw L869346
+.dw L869372
+.dw L86B32C
+.dw L86B366
+.dw L86927E
+.dw L8692C9
+.dw L86DB4D
+.dw L86DB5C
+.dw L86D862
+.dw L86D69B
+.dw L86DBB9
+.dw L86DBC8
+.dw L86B62E
+.dw L86B063
+.dw L86B066
+.dw L86B06C
+.dw L86B3FD
+.dw L86BA67
+.dw L86BA71
+.dw L86B072
+.dw L86BA3F
+.dw L86BA53
+.dw L86D5F6
+.dw L86B3B6
+.dw L86B3C4
+.dw L86B754
+.dw L86BA7B
+.dw L86BA8D
+.dw L86B76E
+.dw L86B084
+.dw L86B087
+.dw L86C16B
+.dw L86939C
+.dw L86B03F
+.dw L8693B5
+.dw L86B07E
+.dw L86BCD8
+.dw L86BD6B
+.dw L86B04E
+.dw L86B432
+.dw L86C233
+.dw L86C23A
+.dw L86C241
+.dw L86D660
+.dw L86CD08
+.dw L86CD1D
+.dw L86B05A
+.dw L86BD92
+.dw L86BDA4
+.dw L86D60B
+.dw L86D5FD
 
 L86BE46:
     lda $1056
@@ -8189,9 +8250,14 @@ L86BE5F:
     rts
 
 L86BE70:
-.db $01 $5C $10 $00 $02 $00 $00 $AE
-.db $39 $10 $BD $B4 $1D $EE $39 $10
-.db $22 $85 $BE $86 $60
+.db $01 $5C $10 $00 $02 $00 $00
+
+L86BE77:
+    ldx $1039
+    lda $1DB4,X
+    inc $1039
+    jsl $86BE85
+    rts
 
 L86BE85:
     and #$00FF
@@ -8262,7 +8328,7 @@ L86BEEF:
     rep #$20
     and #$00FF
     tax
-    jsr ($BFB9,X)
+    jsr (L86BFB9,X)
     bra L86BF7A
 
 L86BF0A:
@@ -8357,7 +8423,7 @@ L86BFB6:
     lda $17
     rts
 
-
+L86BFB9:
 .dw L86BFBF
 .dw L86BFEF
 .dw L86BFF6
@@ -8405,7 +8471,7 @@ L86BFFD:
     and #$00FF
     asl A
     tax
-    jsr ($C00C,X)
+    jsr (L86C00C,X)
     plx
     rtl
 
@@ -11626,7 +11692,7 @@ L86D89B:
     and #$00FF
     asl A
     tax
-    jsr ($8D50,X)
+    jsr (L868D50,X)
     sep #$20
 L86D8B4:
     lda $1031
@@ -11637,7 +11703,7 @@ L86D8B4:
     and #$00FF
     asl A
     tax
-    jsr ($8D54,X)
+    jsr (L868D54,X)
 L86D8C9:
     rep #$20
     rts

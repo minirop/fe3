@@ -2180,7 +2180,7 @@ L8395AC:
 	and #$00ff
 	asl
 	tax
-	jsr ($95b8,X)
+	jsr (L8395B8,X)
 	rts
 
 L8395B8:
@@ -2334,8 +2334,10 @@ L839728:
 	rts
 
 L839734:
-.db $3C $97 $C5 $96
-.db $ED $96 $FC $96
+.dw L83973C
+.dw L8396C5
+.dw L8396ED
+.dw L8396FC
 
 L83973C:
 	sep #$20
@@ -4121,7 +4123,7 @@ L83A667:
 	and #$00FF
 	asl A
 	tax
-	jsr ($A673,X)
+	jsr (L83A673,X)
 	rts
 
 L83A673:
@@ -4234,7 +4236,7 @@ L83A748:
 	and #$00FF
 	asl A
 	tax
-	jsr ($A759,X)
+	jsr (L83A759,X)
 	rts
 
 L83A759:
@@ -4412,7 +4414,7 @@ L83A8C1:
 	and #$00FF
 	asl A
 	tax
-	jsr ($A8CD,X)
+	jsr (L83A8CD,X)
 	rts
 
 L83A8CD:
@@ -7941,7 +7943,7 @@ L83C482:
 	and #$00FF
 	asl A
 	tax
-	jsr ($C4DE,X)
+	jsr (L83C4DE,X)
 L83C4DC:
 	plp
 	rts
@@ -8052,7 +8054,7 @@ L83C59C:
 	and #$00FF
 	asl A
 	tax
-	jsr ($C5BE,X)
+	jsr (L83C5BE,X)
 	php
 	jsl L8098F0
 	jsl L8087EA
@@ -8061,6 +8063,7 @@ L83C59C:
 	bcc L83C59C
 	rts
 
+L83C5BE:
 .dw L83C5C4
 .dw L83C644
 .dw L83C673
@@ -8150,7 +8153,7 @@ L83C678:
 	and #$00FF
 	asl A
 	tax
-	jsr ($C698,X)
+	jsr (L83C698,X)
 	php
 	jsl L8098F0
 	jsl L8087EA
@@ -8160,10 +8163,13 @@ L83C678:
 	rts
 
 L83C698:
-	stz $5EC6,X
-	cmp [$8D]
-	cmp [$E2]
-	jsr $03A9
+.dw L83C69E
+.dw L83C75E
+.dw L83C78D
+
+L83C69E:
+	sep #$20
+	lda #$03
 	sta $08DF
 	rep #$20
 	lda $08DE
@@ -8235,6 +8241,8 @@ L83C72D:
 	lda #$12
 	sta $08DF
 	brl L83C6C2
+
+L83C75E:
 	sep #$20
 	inc $08D2
 	lda $08ED
@@ -8433,7 +8441,7 @@ L83C90C:
 	and #$00FF
 	asl A
 	tax
-	jsr ($C93A,X)
+	jsr (L83C93A,X)
 	php
 	jsl L8098F0
 	jsl L8087EA
@@ -8448,9 +8456,11 @@ L83C90C:
 	rts
 
 L83C93A:
-	rti
-	cmp #$C9A3
-	cmp $C9
+.dw L83C940
+.dw L83C9A3
+.dw L83C9C5
+
+L83C940:
 	lda $08ED
 	pha
 	lda $08F2
@@ -8495,6 +8505,8 @@ L83C99C:
 	pla
 	sta $08ED
 	brl L83CA4B
+
+L83C9A3:
 	phb
 	sep #$20
 	lda #$81
@@ -8640,7 +8652,7 @@ L83CAB0:
 	and #$00FF
 	asl A
 	tax
-	jsr ($CAD0,X)
+	jsr (L83CAD0,X)
 	php
 	jsl L8098F0
 	jsl L8087EA
@@ -8649,6 +8661,7 @@ L83CAB0:
 	bcc L83CAB0
 	rts
 
+L83CAD0:
 .dw L83CAD6
 .dw L83CBB3
 .dw L83CC0B
@@ -9018,7 +9031,7 @@ L83CE3A:
 	and #$00FF
 	asl A
 	tax
-	jsr ($CE5A,X)
+	jsr (L83CE5A,X)
 	php
 	jsl L8098F0
 	jsl L8087EA
@@ -9027,6 +9040,7 @@ L83CE3A:
 	bcc L83CE3A
 	rts
 
+L83CE5A:
 .dw L83CE5E
 .dw L83CEA8
 

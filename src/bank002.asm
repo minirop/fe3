@@ -4044,7 +4044,7 @@ L82A76D:
 	and #$00FF
 	asl A
 	tax
-	jsr ($B29C,X)
+	jsr (L82B29C,X)
 	jsr L82B2E8
 	bra L82A7BA
 
@@ -4054,7 +4054,7 @@ L82A7A4:
 	and #$00FF
 	asl A
 	tax
-	jsr ($B29C,X)
+	jsr (L82B29C,X)
 	jsr L82A892
 	jsr L82A819
 	jsr L82A7BD
@@ -4184,7 +4184,7 @@ L82A896:
 	and #$00FF
 	asl A
 	tax
-	jsr ($A8BA,X)
+	jsr (L82A8BA,X)
 	plx
 	inx
 	cpx #$0004
@@ -4759,10 +4759,11 @@ L82AD2E:
 	and #$00FF
 	asl A
 	tax
-	jsr ($AD41,X)
+	jsr (L82AD41,X)
 	plp
 	rts
 
+L82AD41:
 .dw L82B181
 .dw L82B181
 .dw L82B181
@@ -5428,7 +5429,7 @@ L82B2EC:
 	and #$00FF
 	asl A
 	tax
-	jsr ($B310,X)
+	jsr (L82B310,X)
 	plx
 	inx
 	cpx #$0004
@@ -6287,7 +6288,7 @@ L82B990:
 	and #$00FF
 	asl A
 	tax
-	jsr ($B9B5,X)
+	jsr (L82B9B5,X)
 	bcc L82B9AC
 	sep #$20
 	lda $0D94
@@ -6306,9 +6307,12 @@ L82B9AE:
 	rts
 
 L82B9B5:
-	ror $BDC5
-	lda $B9E0,Y
-	stx $BF,Y
+.dw L82C56E
+.dw L82B9BD
+.dw L82B9E0
+.dw L82BF96
+
+L82B9BD:
 	php
 	rep #$20
 	lda $0D91
@@ -6361,7 +6365,7 @@ L82B9FC:
 	and #$00FF
 	asl A
 	tax
-	jsr ($BA2B,X)
+	jsr (L82BA2B,X)
 	sep #$20
 	stz $070A
 	bcc L82BA22
@@ -6403,7 +6407,7 @@ L82BA3F:
 	and #$00FF
 	asl A
 	tax
-	jsr ($BA6E,X)
+	jsr (L82BA6E,X)
 	sep #$20
 	stz $070A
 	bcc L82BA65
@@ -6424,10 +6428,12 @@ L82BA67:
 	rts
 
 L82BA6E:
-	ror $28C5
-	dec $76
-	tsx
-	stx $BF,Y
+.dw L82C56E
+.dw L82C628
+.dw L82BA76
+.dw L82BF96
+
+L82BA76:
 	php
 L82BA77:
 	rep #$20
@@ -6538,7 +6544,7 @@ L82BB31:
 	and #$00FF
 	asl A
 	tax
-	jsr ($BB60,X)
+	jsr (L82BB60,X)
 	sep #$20
 	stz $070A
 	bcc L82BB57
@@ -6559,10 +6565,12 @@ L82BB59:
 	rts
 
 L82BB60:
-	ror $28C5
-	dec $6B
-	tyx
-	stx $BF,Y
+.dw L82C56E
+.dw L82C628
+.dw L82BB6B
+.dw L82BF96
+
+L82BB68:
 	php
 	plp
 	rts
@@ -6643,7 +6651,7 @@ L82BBEF:
 	and #$00FF
 	asl A
 	tax
-	jsr ($BC25,X)
+	jsr (L82BC25,X)
 	sep #$20
 	stz $070A
 	bcc L82BC15
@@ -6758,7 +6766,7 @@ L82BCC8:
 	and #$00FF
 	asl A
 	tax
-	jsr ($BCF7,X)
+	jsr (L82BCF7,X)
 	sep #$20
 	stz $070A
 	bcc L82BCEE
@@ -7367,11 +7375,12 @@ L82C102:
 	rts
 
 L82C122:
-	lda #$8D40
-	stx $C20D
-	jsr $1A20
-	dec $20,X
-	dec $C1
+.ACCU 8
+	lda #$40
+	sta $0D8E
+	rep #$20
+	jsr L82D61A
+	jsr L82C1C6
 	clc
 	rts
 
@@ -13554,7 +13563,7 @@ L82EDB0:
 	and #$00FF
 	asl A
 	tax
-	jsr ($EE04,X)
+	jsr (L82EE04,X)
 	ldx $27
 	lda $04CE,X
 	xba
@@ -13587,7 +13596,11 @@ L82EDFF:
 	clc
 	rts
 
-.db $0C $EE $26 $EE $40 $EE $5A $EE
+L82EE04:
+.dw L82EE0C
+.dw L82EE26
+.dw L82EE40
+.dw L82EE5A
 
 L82EE0C:
 .ACCU 16

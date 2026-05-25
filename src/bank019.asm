@@ -2271,17 +2271,17 @@ L93C1BC:
     php
     sep #$20
     lda #$28
-    jsr $C25C
+    jsr L93C25C
     lda #$97
-    jsr $C25C
+    jsr L93C25C
     lda #$30
-    jsr $C25C
+    jsr L93C25C
     lda #$98
-    jsr $C25C
+    jsr L93C25C
     lda #$18
-    jsr $C25C
+    jsr L93C25C
     lda #$92
-    jsr $C25C
+    jsr L93C25C
     jsl L83FA0C
     sep #$20
     lda #$1F
@@ -2320,7 +2320,7 @@ L93C242:
     sep #$20
     dec $08ED
     bpl L93C1E8
-    jsr $C275
+    jsr L93C275
     sep #$20
     lda $07F4
     and #$0C
@@ -2600,7 +2600,7 @@ L93C457:
     lda $06
     sta $03
     pha
-    jsr $C50D
+    jsr L93C50D
     pla
     pha
     clc
@@ -2627,7 +2627,7 @@ L93C485:
     lda #$80FE
     sta $00
     jsl L93C5E7
-    jsr $CB70
+    jsr L93CB70
     pla
     pha
     clc
@@ -2707,7 +2707,7 @@ L93C523:
     sta $00
     jsl L93C5E7
     inc $03
-    jsr $CAFC
+    jsr L93CAFC
     sep #$20
     lda $7F4404
     sta $7F4403
@@ -2882,7 +2882,7 @@ L93C698:
     inc A
     cmp #$0020
     bne L93C651
-    jsr $C275
+    jsr L93C275
     lda #$7F00
     sta $07
     lda #$1380
@@ -3139,7 +3139,7 @@ L93C8B1:
     brl L93C96D
 
 L93C8D0:
-    jsr $CAFC
+    jsr L93CAFC
     lda $7F4400
     and #$00FF
     asl A
@@ -3239,7 +3239,7 @@ L93C9A3:
     and #$00FF
     cmp #$00FF
     beq L93CA23
-    jsr $CAFC
+    jsr L93CAFC
     ldy #$0010
     ldx #$0000
 L93C9C8:
@@ -3271,7 +3271,7 @@ L93C9FA:
     inx
     dey
     bne L93C9FA
-    jsr $CAC6
+    jsr L93CAC6
     jsl L83DBED
     pha
     sec
@@ -3315,7 +3315,7 @@ L93CA4A:
     lda #$80FE
     sta $00
     jsl L93C5E7
-    jsr $CB70
+    jsr L93CB70
     ldy #$0050
     ldx #$0000
 L93CA72:
@@ -3924,7 +3924,7 @@ L93CF2C:
     and #$00FF
     asl A
     tax
-    jsr ($CF3C,X)
+    jsr (L93CF3C,X)
     plp
     rtl
 
@@ -3980,14 +3980,14 @@ L93CF8E:
     sbc $0F66
     sta $15
     lda $075D
-    jsr $D1E9
+    jsr L93D1E9
     sta $075F
     lda $0F66
     sec
     sbc #$02
     sta $15
     lda $075E
-    jsr $D1E9
+    jsr L93D1E9
     sta $0760
     lda #$FF
     sta $0777
@@ -4723,7 +4723,7 @@ L93D63F:
     jsl L83E061
     jsl L83E06A
     bcc L93D63F
-    jsr $D6AC
+    jsr L93D6AC
     pla
     tax
     pla
@@ -4930,7 +4930,7 @@ L93D796:
     sec
     sbc #$0008
     sta $58
-    jsr $D801
+    jsr L93D801
     sta $5A
     lda #$8300
     sta $63
@@ -5923,7 +5923,7 @@ L93DF5D:
     jsl L83D912
     lda $15
     and #$00FF
-    jsr $DFAE
+    jsr L93DFAE
     plx
 L93DF87:
     rep #$20
@@ -6019,44 +6019,44 @@ L93E032:
     stz $0ABB
     rep #$30
     lda #$003D
-    jsr $E164
+    jsr L93E164
     bcs L93E0A6
     lda #$003C
-    jsr $E164
+    jsr L93E164
     bcc L93E057
     lda #$0001
-    jsr $E09F
+    jsr L93E09F
 L93E057:
     lda #$006B
-    jsr $E164
+    jsr L93E164
     bcc L93E065
     lda #$0001
-    jsr $E09F
+    jsr L93E09F
 L93E065:
     lda #$003E
-    jsr $E164
+    jsr L93E164
     bcc L93E073
     lda #$0002
-    jsr $E09F
+    jsr L93E09F
 L93E073:
     lda #$006C
-    jsr $E164
+    jsr L93E164
     bcc L93E081
     lda #$0004
-    jsr $E09F
+    jsr L93E09F
 L93E081:
     lda #$007D
-    jsr $E164
+    jsr L93E164
     bcc L93E08F
     lda #$0008
-    jsr $E09F
+    jsr L93E09F
 L93E08F:
     lda #$007E
-    jsr $E164
+    jsr L93E164
     bcc L93E09D
     lda #$0010
 L93E09A:
-    jsr $E09F
+    jsr L93E09F
 L93E09D:
     plp
     rtl
@@ -6076,76 +6076,76 @@ L93E0AD:
     rep #$30
     stz $0ABC
     lda #$006E
-    jsr $E164
+    jsr L93E164
     bcc L93E0C1
     lda #$0001
-    jsr $E15D
+    jsr L93E15D
 L93E0C1:
     lda #$006F
-    jsr $E164
+    jsr L93E164
     bcc L93E0CF
     lda #$0002
-    jsr $E15D
+    jsr L93E15D
 L93E0CF:
     lda #$0070
-    jsr $E164
+    jsr L93E164
     bcc L93E0DD
     lda #$0004
-    jsr $E15D
+    jsr L93E15D
 L93E0DD:
     lda #$0071
-    jsr $E164
+    jsr L93E164
     bcc L93E0EB
     lda #$0008
-    jsr $E15D
+    jsr L93E15D
 L93E0EB:
     lda #$0072
-    jsr $E164
+    jsr L93E164
     bcc L93E0F9
     lda #$0010
-    jsr $E15D
+    jsr L93E15D
 L93E0F9:
     lda #$0073
-    jsr $E164
+    jsr L93E164
     bcc L93E107
     lda #$0020
-    jsr $E15D
+    jsr L93E15D
 L93E107:
     lda #$0074
-    jsr $E164
+    jsr L93E164
     bcc L93E115
     lda #$0040
-    jsr $E15D
+    jsr L93E15D
 L93E115:
     lda #$0075
-    jsr $E164
+    jsr L93E164
     bcc L93E123
     lda #$0080
-    jsr $E15D
+    jsr L93E15D
 L93E123:
     lda #$0076
-    jsr $E164
+    jsr L93E164
     bcc L93E131
     lda #$0100
-    jsr $E15D
+    jsr L93E15D
 L93E131:
     lda #$0077
-    jsr $E164
+    jsr L93E164
     bcc L93E13F
     lda #$0200
-    jsr $E15D
+    jsr L93E15D
 L93E13F:
     lda #$0078
-    jsr $E164
+    jsr L93E164
     bcc L93E14D
     lda #$0400
-    jsr $E15D
+    jsr L93E15D
 L93E14D:
     lda #$0079
-    jsr $E164
+    jsr L93E164
     bcc L93E15B
     lda #$0800
-    jsr $E15D
+    jsr L93E15D
 L93E15B:
     plp
     rtl
@@ -6203,7 +6203,7 @@ L93E1A8:
     lda $0127
     bit #$8000
     bne L93E1B9
-    jsr $E1C0
+    jsr L93E1C0
     bra L93E1BD
 
 L93E1B9:
@@ -6882,7 +6882,7 @@ L93E6F1:
     lda $7F4403
     and #$00FF
     bne L93E71E
-    jsr $E720
+    jsr L93E720
     jsl L93D55D
     jsl L83F312
 L93E71E:
@@ -6999,7 +6999,7 @@ L93E7F0:
     pla
     jsl L83D969
     jsl L83AF3F
-    jsr $E83F
+    jsr L93E83F
 L93E834:
     plx
     inx

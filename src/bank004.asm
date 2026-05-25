@@ -4568,7 +4568,7 @@ L84ABF3:
 	and #$00FF
 	asl A
 	tax
-	jsr ($AC03,X)
+	jsr (L84AC03,X)
 	plp
 	rts
 

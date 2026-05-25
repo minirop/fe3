@@ -5907,7 +5907,7 @@ L8DF987:
     tay
     lda $8DF9C7,X
     and #$00FF
-    jsr $FA84
+    jsr L8DFA84
 L8DF99E:
     inx
     inx
@@ -5954,16 +5954,48 @@ L8DF9C3:
 .db $40 $80 $08 $22 $38 $93 $09 $44
 .db $00 $6D $00 $00 $00 $6D $00 $00
 .db $00 $6D $00 $00 $00 $6D $00 $00
-.db $00 $6D $00 $00 $08 $DA $C2 $30
-.db $A2 $00 $38 $86 $19 $85 $17 $A6
-.db $50 $A5 $56 $85 $15 $A5 $15 $9D
-.db $10 $02 $18 $69 $10 $00 $85 $15
-.db $A5 $58 $9D $11 $02 $A5 $17 $05
-.db $19 $9D $12 $02 $A5 $17 $18 $69
-.db $02 $00 $89 $10 $00 $F0 $04 $18
-.db $69 $10 $00 $85 $17 $E8 $E8 $E8
-.db $E8 $88 $D0 $D1 $86 $50 $FA $28
-.db $60
+.db $00 $6D $00 $00
+
+L8DFA84:
+    php
+    phx
+    rep #$30
+    ldx #$3800
+    stx $19
+    sta $17
+    ldx $50
+    lda $56
+    sta $15
+L8DFA95:
+    lda $15
+    sta $0210,X
+    clc
+    adc #$0010
+    sta $15
+    lda $58
+    sta $0211,X
+    lda $17
+    ora $19
+    sta $0212,X
+    lda $17
+    clc
+    adc #$0002
+    bit #$0010
+    beq L8DFABB
+    clc
+    adc #$0010
+L8DFABB:
+    sta $17
+    inx
+    inx
+    inx
+    inx
+    dey
+    bne L8DFA95
+    stx $50
+    plx
+    plp
+    rts
 
 L8DFAC9:
     rep #$30
@@ -6004,7 +6036,7 @@ L8DFAC9:
     sta $0F1A
     lda #$FC84
     sta $0F19
-    jsr $F8CE
+    jsr L8DF8CE
     rts
 
 .db $01 $12 $02

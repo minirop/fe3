@@ -7585,7 +7585,7 @@ L96F9FD:
     jsr L96DF53
     lda #$9600
     sta $01
-    lda #$FA50
+    lda #L96FA50
     sta $00
     jsl L808EAD
     lda #$EB7D
@@ -7595,8 +7595,9 @@ L96FA43:
     jsl L8087EA
     lda $0125
     beq L96FA43
-    jml $808815
+    jml L808815
 
+L96FA50:
 .db $02 $00 $30 $7E $00 $08 $80 $00 $78
 
 L96FA59:
