@@ -2759,7 +2759,7 @@ L93C59F:
 	tax
 	lda [$03]
 	and #$00FF
-	and $93C5DE,X
+	and.l L93C5DE,X
 	ldx $15
 	beq L93C5B6
 L93C5B2:
@@ -2810,7 +2810,7 @@ L93C5F6:
 	and #$00FF
 	tax
 	pla
-	and $93C62B,X
+	and.l L93C62B,X
 	sta [$06]
 	lda [$00]
 	and #$00FF
@@ -3145,9 +3145,9 @@ L93C8D0:
 	asl A
 	tax
 	sep #$20
-	lda $93FD00,X
+	lda.l L93FD00,X
 	sta $7F4416
-	lda $93FD01,X
+	lda.l (L93FD00 + 1),X
 	sta $7F4417
 	cmp #$28
 	bne L93C902
@@ -3725,7 +3725,7 @@ L93CD45:
 	sbc #$0015
 	asl A
 	tax
-	lda $93CEE8,X
+	lda.l L93CEE8,X
 	sta $03
 	ldy #$0000
 	sep #$20
@@ -3907,6 +3907,7 @@ L93CE92:
 	plp
 	rtl
 
+L93CEE8:
 .db $18 $CF $18 $CF $18 $CF $18 $CF
 .db $18 $CF $19 $CF $18 $CF $18 $CF
 .db $18 $CF $18 $CF $18 $CF $18 $CF
@@ -4263,7 +4264,7 @@ L93D1F6:
 	clc
 	adc $15
 	tax
-	lda $93D215,X
+	lda.l L93D215,X
 	and #$00FF
 	plp
 	rts
@@ -4461,7 +4462,7 @@ L93D372:
 	ldy #$00E0
 	ldx #$0000
 L93D382:
-	lda $93D42F,X
+	lda.l L93D42F,X
 	sta $7E41FE,X
 	inx
 	dey
@@ -4540,6 +4541,7 @@ L93D3BC:
 	rep #$20
 	rtl
 
+L93D42F:
 .db $29 $49 $49 $49 $49 $49 $49 $49
 .db $49 $49 $49 $49 $49 $49 $49 $49
 .db $29 $49 $49 $49 $49 $49 $49 $49
@@ -5197,11 +5199,11 @@ L93D9D7:
 	phx
 	ldx #$0000
 L93D9DB:
-	lda $93FFE5,X
+	lda.l L93FFE5,X
 	cmp #$FF
 	beq L93D9F0
 	lda $7F4417
-	cmp $93FFE5,X
+	cmp.l L93FFE5,X
 	beq L93D9F5
 	inx
 	bra L93D9DB
@@ -6713,11 +6715,11 @@ L93E5A1:
 	ldx #$00
 L93E5A6:
 	pha
-	lda $93FE58,X
+	lda.l L93FE58,X
 	cmp #$FF
 	beq L93E5B9
 	pla
-	cmp $93FE58,X
+	cmp.l L93FE58,X
 	beq L93E5BD
 	inx
 	bra L93E5A6
@@ -6909,7 +6911,7 @@ L93E720:
 	ldx #$0000
 L93E75B:
 	phx
-	lda $93E8A8,X
+	lda.l L93E8A8,X
 	ldx #$0400
 	jsl L87A8F7
 	bcc L93E76C
@@ -6922,7 +6924,7 @@ L93E76C:
 	txa
 	asl A
 	tax
-	lda $93E8AC,X
+	lda.l L93E8AC,X
 	sta $07C8
 	pla
 	pha
@@ -7052,13 +7054,17 @@ L93E83F:
 	rts
 
 L93E8A8:
-	tay
-	tax
-	lda #$84A7
-	ora ($86,X)
-	ora ($85,X)
-	ora ($87,X)
-	ora ($08,X)
+.db $A8 $AA
+.db $A9 $A7
+
+L93E8AC:
+.db $84 $01
+.db $86 $01
+.db $85 $01
+.db $87 $01
+
+L93E8B4:
+	php
 	rep #$30
 	jsl L93CBFE
 	bcs L93E8DB
@@ -7246,7 +7252,7 @@ L93E9E7:
 	sta $15
 	ldx #$0000
 L93EA08:
-	lda $93FD00,X
+	lda.l L93FD00,X
 	and #$00FF
 	cmp $15
 	beq L93EA17
@@ -7824,6 +7830,7 @@ L93EE1C:
 .ORG $7D00
 .SECTION "Bank19-2" FORCE
 
+L93FD00:
 .db $00 $00 $01 $01 $02 $02 $03 $03
 .db $04 $04 $05 $05 $06 $06 $07 $07
 .db $FF $FF $09 $09 $0A $0A $0B $0B
@@ -7867,6 +7874,8 @@ L93EE1C:
 .db $1B $1B $FF $FF $FF $FF $FF $FF
 .db $FF $FF $FF $FF $FF $FF $86 $61
 .db $1D $1D $32 $32 $10 $10 $2F $2F
+
+L93FE58:
 .db $00 $01 $02 $03 $04 $05 $06 $07
 .db $09 $0A $0B $0C $0D $0F $10 $11
 .db $12 $13 $14 $15 $16 $17 $18 $19
@@ -7916,7 +7925,9 @@ L93EE1C:
 .db $0A $0A $0A $0A $32 $0A $0A $0A
 .db $0A $0A $32 $0A $0A $0A $0A $0A
 .db $32 $0A $0A $0A $0A $0A $32 $0A
-.db $0A $0A $0A $0A $32 $8C $01 $1B
-.db $1C $1E $92 $2A $2F $75
+.db $0A $0A $0A $0A $32
+
+L93FFE5:
+.db $8C $01 $1B $1C $1E $92 $2A $2F $75
 
 .ENDS

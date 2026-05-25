@@ -3,6 +3,7 @@
 
 .SECTION "Bank48" FORCE
 
+LB08000:
 .INCBIN "180000.bin"
 
 .db $8A $F0 $1E $08 $E2 $20

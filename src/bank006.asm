@@ -8256,7 +8256,7 @@ L86BE77:
 	ldx $1039
 	lda $1DB4,X
 	inc $1039
-	jsl $86BE85
+	jsl L86BE85
 	rts
 
 L86BE85:

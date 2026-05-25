@@ -1929,7 +1929,7 @@ L808E4D:
 	phk
 	plb
 	rep #$30
-	lda #$8000
+	lda #bank100(L808E64)
 	sta $01
 	lda #L808E64
 	sta $00
@@ -1947,7 +1947,7 @@ L808E6D:
 	phk
 	plb
 	rep #$30
-	lda #$8000
+	lda #bank100(L808E84)
 	sta $01
 	lda #L808E84
 	sta $00
@@ -1965,7 +1965,7 @@ L808E8D:
 	phk
 	plb
 	rep #$30
-	lda #$8000
+	lda #bank100(L808EA4)
 	sta $01
 	lda #L808EA4
 	sta $00
@@ -2959,13 +2959,13 @@ L80958D:
 
 L8095AF:
 	rep #$20
-	lda #$8000
+	lda #bank100(L8095E0)
 	sta.l $000703
-	lda #$95E0
+	lda #L8095E0
 	sta.l $000702
-	lda #$8000
+	lda #bank100(L8095E0)
 	sta.l $000706
-	lda #$95E0
+	lda #L8095E0
 	sta.l $000705
 	lda #$0000
 	ldy #$0200
@@ -2977,6 +2977,7 @@ L8095D6:
 	inx
 	dey
 	bne L8095D6
+L8095E0:
 	rtl
 
 L8095E1:
@@ -3023,9 +3024,9 @@ L809615:
 
 ; unsure if code or data
 L809626:
-	ldy #$8000
+	ldy #bank100(L809688)
 	sty $04
-	ldy #$9688
+	ldy #L809688
 	sty $03
 	ldy #$0000
 
@@ -3070,6 +3071,7 @@ L809676:
 	cpx #$0200
 	bne L809676
 	sec
+L809688:
 	rtl
 
 L809689:
@@ -3158,9 +3160,9 @@ L80972E:
 	and #$00ff
 	dec A
 	tay
-	lda #$8000
+	lda #bank100(L809688)
 	sta $04
-	lda #$9688
+	lda #L809688
 	sta $03
 	pla
 	jsl L809633
@@ -3543,9 +3545,9 @@ L809A49:
 	sta $00
 	lda.l $0004C7,X
 	sta $01
-	lda #$8000
+	lda #bank100(L809688)
 	sta $04
-	lda #$9688
+	lda #L809688
 	sta $03
 	sep #$20
 	lda.l $0004C9,X
@@ -3945,7 +3947,7 @@ L809D69:
 	sta $089D
 	phx
 	tyx
-	lda.l $809DCF,X
+	lda.l L809DCF,X
 	jsl L80B44D
 	bra L809D9A
 
@@ -3955,7 +3957,7 @@ L809D87:
 	sta $089F
 	phx
 	tyx
-	lda.l $809DD9,X
+	lda.l L809DD9,X
 	jsl L80B49E
 L809D9A:
 	plx
@@ -3988,11 +3990,14 @@ L809DCD:
 	plp
 	rts
 
+L809DCF:
 .dw $0031
 .dw $0032
 .dw $0033
 .dw $0034
 .dw $0035
+
+L809DD9:
 .dw $00B1
 .dw $00B2
 .dw $00B3
@@ -4036,6 +4041,7 @@ L809DCD:
 .dw $005F
 .dw $00F4
 
+L809E2D:
 .dw L809C2C
 .dw L809CFB
 .dw L809C98
@@ -4290,11 +4296,12 @@ L809FBD:
 	bra L809FE1
 
 L809FBF:
+.ACCU 16
 	asl
 	asl
 	asl
 	asl
-	and.w #$85C0
+	and #$85C0
 	ora $49,X
 	sbc $BD1785,X
 	ora $154502
@@ -4309,7 +4316,7 @@ L809FE1:
 	asl
 	asl
 	asl
-	and.w #$8530
+	and #$8530
 	ora $BD,X
 	ora $CF2902
 	ora $15
@@ -5102,27 +5109,30 @@ L80A61A:
 	phk
 	plb
 	rep #$30
-	lda #$8000
+	lda #bank100(L80A686)
 	sta $01
-	lda #$A686
+	lda #L80A686
 	sta $00
 	jsl L808EAD
-	lda #$8000
+	lda #bank100(L80A67D)
 	sta $01
-	lda #$A67D
+	lda #L80A67D
 	sta $00
 	jsl L808EAD
-	lda #$8000
+	lda #bank100(L80A674)
 	sta $01
-	lda #$A674
+	lda #L80A674
 	sta $00
 	jsl L808EAD
 	plb
 	plp
 	rtl
 
+L80A674:
 DMA_DATA $02 $7E2000 $0800 $80 $2800
+L80A67D:
 DMA_DATA $02 $7E2800 $0800 $80 $3800
+L80A686:
 DMA_DATA $02 $7E3000 $0800 $80 $4800
 
 L80A68F:
@@ -5153,9 +5163,9 @@ L80A6A7:
 	lsr
 	lsr
 	sta $5a
-	lda #$8000
+	lda #bank100(L8094BE)
 	sta $63
-	lda #$94be ; L8094BE
+	lda #L8094BE
 	sta $62
 	jsl L8093A2
 	lda $17
@@ -6939,9 +6949,9 @@ L80B3F3:
 	pha
 	lda $01
 	pha
-	lda #$b000
+	lda #bank100(LB08000)
 	sta $01
-	ldy #$8000
+	ldy #LB08000
 	stz $00
 	jsr L80BA79
 	ldx #$005e
@@ -7858,6 +7868,7 @@ L80BA79:
 	rep #$30
 	lda #$BBAA
 	bra L80BA87
+
 L80BA81:
 	ldx #$00FD
 	stx $2140
