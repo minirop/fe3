@@ -6260,6 +6260,7 @@ L87B468:
 	plp
 	rtl
 
+L87B4B8:
 .db $0B $0A $0B $0B $0B $0C $0A $0A
 .db $0B $0A $0A $0A $0B $0B $0A $0B
 .db $0A $0B $0B $0A $0C $0B $0C $0C
@@ -6418,13 +6419,13 @@ L87B8A5:
 	sta $0F21
 	lda #$3154
 	sta $0F20
-	lda #$D800
+	lda #bank100(LD88000)
 	sta $0F17
-	lda #$8000
+	lda #LD88000
 	sta $0F16
-	lda #$8700
+	lda #bank100(L87B4B8)
 	sta $0F1A
-	lda #$B4B8
+	lda #L87B4B8
 	sta $0F19
 	lda #$5000
 	sta $0F23
@@ -6928,6 +6929,7 @@ L87BC54:
 	ply
 	rts
 
+L87BCCA:
 .db $0B $0A $0B $0B $0B $0C $0A $0A
 .db $0B $0A $0A $0A $0B $0B $0A $0B
 .db $0A $0B $0B $0A $0C $0B $0C $0C
@@ -9577,9 +9579,9 @@ L87D676:
 	xba
 	tax
 	sep #$20
-	lda $D7FE,X
+	lda.w L87D7FE,X
 	sta $60
-	lda $D804,X
+	lda.w L87D804,X
 	sta $61
 	lda $4214
 	sta $54
@@ -9791,8 +9793,10 @@ L87D7EA:
 	jmp L87D75A
 
 L87D7FE:
-.db $F8 $F8 $F8 $F0 $F0 $E0 $F0 $E0
-.db $C0 $E0 $C0 $C0
+.db $F8 $F8 $F8 $F0 $F0 $E0
+
+L87D804:
+.db $F0 $E0 $C0 $E0 $C0 $C0
 
 L87D80A:
 	sep #$10
@@ -9808,68 +9812,70 @@ L87D80A:
 L87D81E:
 	ldx $54
 	lda $0410,X
-	and $D82F,Y
-	ora $D837,Y
+	and.w L87D82F,Y
+	ora.w L87D837,Y
 	sta $0410,X
 	rep #$10
 	rts
 
-.db $FE
-.db $FD $FB $F7 $EF $DF $BF $7F $01
-.db $02 $04 $08 $10 $20 $40 $80 $9F
-.db $D9 $9F $D9 $C0 $D9 $C0 $D9 $C0
-.db $D9 $C0 $D9 $C0 $D9 $C0 $D9 $C0
-.db $D9 $C0 $D9 $C0 $D9 $C0 $D9 $C0
-.db $D9 $C0 $D9 $C0 $D9 $C0 $D9 $C0
-.db $D9 $C0 $D9 $C0 $D9 $C0 $D9 $C0
-.db $D9 $C0 $D9 $C0 $D9 $C0 $D9 $C0
-.db $D9 $C0 $D9 $C0 $D9 $C0 $D9 $C0
-.db $D9 $C0 $D9 $C0 $D9 $C0 $D9 $C0
-.db $D9 $C0 $D9 $C0 $D9 $C0 $D9 $C0
-.db $D9 $C0 $D9 $C0 $D9 $C0 $D9 $C0
-.db $D9 $C0 $D9 $C0 $D9 $C0 $D9 $C0
-.db $D9 $C0 $D9 $C0 $D9 $C0 $D9 $C0
-.db $D9 $C0 $D9 $C0 $D9 $C0 $D9 $C0
-.db $D9 $C0 $D9 $C0 $D9 $C0 $D9 $C0
-.db $D9 $C0 $D9 $C0 $D9 $C0 $D9 $C0
-.db $D9 $C0 $D9 $C0 $D9 $C0 $D9 $C0
-.db $D9 $C0 $D9 $C0 $D9 $C0 $D9 $C0
-.db $D9 $C0 $D9 $C0 $D9 $C0 $D9 $C0
-.db $D9 $C0 $D9 $C0 $D9 $C0 $D9 $C0
-.db $D9 $C0 $D9 $C0 $D9 $C0 $D9 $C0
-.db $D9 $C0 $D9 $C0 $D9 $C0 $D9 $C0
-.db $D9 $C0 $D9 $C0 $D9 $C0 $D9 $C0
-.db $D9 $C0 $D9 $C0 $D9 $C0 $D9 $C0
-.db $D9 $C0 $D9 $C0 $D9 $C0 $D9 $C0
-.db $D9 $C0 $D9 $C0 $D9 $C0 $D9 $C0
-.db $D9 $C0 $D9 $C0 $D9 $C0 $D9 $C0
-.db $D9 $C0 $D9 $C0 $D9 $C0 $D9 $C0
-.db $D9 $C0 $D9 $C0 $D9 $C0 $D9 $C0
-.db $D9 $C0 $D9 $C0 $D9 $C0 $D9 $C0
-.db $D9 $C0 $D9 $C0 $D9 $C0 $D9 $C0
-.db $D9 $C0 $D9 $C0 $D9 $C0 $D9 $C0
-.db $D9 $C0 $D9 $C0 $D9 $C0 $D9 $C0
-.db $D9 $C0 $D9 $C0 $D9 $C0 $D9 $C0
-.db $D9 $C0 $D9 $C0 $D9 $C0 $D9 $C0
-.db $D9 $C0 $D9 $C0 $D9 $C0 $D9 $C0
-.db $D9 $C0 $D9 $C0 $D9 $C0 $D9 $C0
-.db $D9 $C0 $D9 $C0 $D9 $C0 $D9 $C0
-.db $D9 $C0 $D9 $C0 $D9 $C0 $D9 $C0
-.db $D9 $C0 $D9 $C0 $D9 $C0 $D9 $C0
-.db $D9 $C0 $D9 $C0 $D9 $C0 $D9 $C0
-.db $D9 $C0 $D9 $C0 $D9 $C0 $D9 $C0
-.db $D9 $C0 $D9 $C0 $D9 $C0 $D9 $C0
-.db $D9 $C0 $D9 $C0 $D9 $C0 $D9 $C0
-.db $D9 $C0 $D9 $C0 $D9 $C0 $D9 $03
-.db $0D $17 $02 $C0 $20 $10 $08 $32
-.db $20 $00 $06 $32 $02 $C0 $20 $10
-.db $0E $32 $20 $00 $0C $32 $02 $C0
-.db $20 $10 $2E $32 $20 $00 $2C $32
+L87D82F:
+.db $FE $FD $FB $F7 $EF $DF $BF $7F
+
+L87D837:
+.db $01 $02 $04 $08 $10 $20 $40 $80
+.db $9F $D9 $9F $D9 $C0 $D9 $C0 $D9
+.db $C0 $D9 $C0 $D9 $C0 $D9 $C0 $D9
+.db $C0 $D9 $C0 $D9 $C0 $D9 $C0 $D9
+.db $C0 $D9 $C0 $D9 $C0 $D9 $C0 $D9
+.db $C0 $D9 $C0 $D9 $C0 $D9 $C0 $D9
+.db $C0 $D9 $C0 $D9 $C0 $D9 $C0 $D9
+.db $C0 $D9 $C0 $D9 $C0 $D9 $C0 $D9
+.db $C0 $D9 $C0 $D9 $C0 $D9 $C0 $D9
+.db $C0 $D9 $C0 $D9 $C0 $D9 $C0 $D9
+.db $C0 $D9 $C0 $D9 $C0 $D9 $C0 $D9
+.db $C0 $D9 $C0 $D9 $C0 $D9 $C0 $D9
+.db $C0 $D9 $C0 $D9 $C0 $D9 $C0 $D9
+.db $C0 $D9 $C0 $D9 $C0 $D9 $C0 $D9
+.db $C0 $D9 $C0 $D9 $C0 $D9 $C0 $D9
+.db $C0 $D9 $C0 $D9 $C0 $D9 $C0 $D9
+.db $C0 $D9 $C0 $D9 $C0 $D9 $C0 $D9
+.db $C0 $D9 $C0 $D9 $C0 $D9 $C0 $D9
+.db $C0 $D9 $C0 $D9 $C0 $D9 $C0 $D9
+.db $C0 $D9 $C0 $D9 $C0 $D9 $C0 $D9
+.db $C0 $D9 $C0 $D9 $C0 $D9 $C0 $D9
+.db $C0 $D9 $C0 $D9 $C0 $D9 $C0 $D9
+.db $C0 $D9 $C0 $D9 $C0 $D9 $C0 $D9
+.db $C0 $D9 $C0 $D9 $C0 $D9 $C0 $D9
+.db $C0 $D9 $C0 $D9 $C0 $D9 $C0 $D9
+.db $C0 $D9 $C0 $D9 $C0 $D9 $C0 $D9
+.db $C0 $D9 $C0 $D9 $C0 $D9 $C0 $D9
+.db $C0 $D9 $C0 $D9 $C0 $D9 $C0 $D9
+.db $C0 $D9 $C0 $D9 $C0 $D9 $C0 $D9
+.db $C0 $D9 $C0 $D9 $C0 $D9 $C0 $D9
+.db $C0 $D9 $C0 $D9 $C0 $D9 $C0 $D9
+.db $C0 $D9 $C0 $D9 $C0 $D9 $C0 $D9
+.db $C0 $D9 $C0 $D9 $C0 $D9 $C0 $D9
+.db $C0 $D9 $C0 $D9 $C0 $D9 $C0 $D9
+.db $C0 $D9 $C0 $D9 $C0 $D9 $C0 $D9
+.db $C0 $D9 $C0 $D9 $C0 $D9 $C0 $D9
+.db $C0 $D9 $C0 $D9 $C0 $D9 $C0 $D9
+.db $C0 $D9 $C0 $D9 $C0 $D9 $C0 $D9
+.db $C0 $D9 $C0 $D9 $C0 $D9 $C0 $D9
+.db $C0 $D9 $C0 $D9 $C0 $D9 $C0 $D9
+.db $C0 $D9 $C0 $D9 $C0 $D9 $C0 $D9
+.db $C0 $D9 $C0 $D9 $C0 $D9 $C0 $D9
+.db $C0 $D9 $C0 $D9 $C0 $D9 $C0 $D9
+.db $C0 $D9 $C0 $D9 $C0 $D9 $C0 $D9
+.db $C0 $D9 $C0 $D9 $C0 $D9 $C0 $D9
 .db $03 $0D $17 $02 $C0 $20 $10 $08
 .db $32 $20 $00 $06 $32 $02 $C0 $20
 .db $10 $0E $32 $20 $00 $0C $32 $02
 .db $C0 $20 $10 $2E $32 $20 $00 $2C
-.db $32
+.db $32 $03 $0D $17 $02 $C0 $20 $10
+.db $08 $32 $20 $00 $06 $32 $02 $C0
+.db $20 $10 $0E $32 $20 $00 $0C $32
+.db $02 $C0 $20 $10 $2E $32 $20 $00
+.db $2C $32
 
 L87D9E1:
 	php

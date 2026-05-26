@@ -4532,22 +4532,22 @@ L81A688:
 	lda.l RDMPYL
 	sep #$20
 	tax
-	lda $88A6ED,X
+	lda.l L88A6ED,X
 	sta $15
-	lda $88A6EE,X
+	lda.l L88A6EE,X
 	sta $17
-	lda $88A6EC,X
+	lda.l L88A6EC,X
 	sta $19
-	lda $88A6EF,X
+	lda.l L88A6EF,X
 	sta $1B
 	rep #$20
 	lda #$8800
 	sta $01
-	lda $88A6F6,X
+	lda.l L88A6F6,X
 	and #$00FF
 	asl
 	tax
-	lda $88A633,X
+	lda.l L88A633,X
 	sta $00
 	lda [$00]
 L81A6CF:
@@ -8958,9 +8958,9 @@ L81CB9C:
 	sta $58
 	lda #$0050
 	sta $56
-	lda #$8300
+	lda #bank100(L838000)
 	sta $63
-	lda #$8000
+	lda #L838000
 	sta $62
 	jsl L8093A4
 	sep #$20
@@ -9643,16 +9643,16 @@ L81D174:
 	ply
 	tya
 	bne L81D197
-	lda #$8100
+	lda #bank100(L81D1A8)
 	sta $01
-	lda #$D1A8
+	lda #L81D1A8
 	sta $00
 	jsl L808EAD
 	bra L81D1A5
 L81D197:
-	lda #$8100
+	lda #bank100(L81D1AF)
 	sta $01
-	lda #$D1AF
+	lda #L81D1AF
 	sta $00
 	jsl L808EAD
 L81D1A5:
@@ -10012,9 +10012,9 @@ L81D430:
 	ldy #$0007
 	lda [$0f],Y
 	sta $5e
-	lda #$8300
+	lda #bank100(L838000)
 	sta $63
-	lda #$8000
+	lda #L838000
 	sta $62
 	jsl L8093A4
 	lda $50
@@ -10673,17 +10673,17 @@ L81D920:
 L81D957:
 	php
 	rep #$20
-	lda #$9400
+	lda #bank100(L94B800)
 	sta $01
-	lda #$B800
+	lda #L94B800
 	sta $00
 	ldx #$0C00
 	ldy #$6400
 	jsr L81D289
 	jsl L8087EA
-	lda #$9400
+	lda #bank100(L94C400)
 	sta $01
-	lda #$C400
+	lda #L94C400
 	sta $00
 	ldx #$0C00
 	ldy #$6A00
@@ -10793,9 +10793,9 @@ L81DA10:
 	jsl L81E21F
 	lda #$0060
 	sta $0B9E
-	lda #$8100
+	lda #bank100(L81D6D5)
 	sta $01
-	lda #$D6D5
+	lda #L81D6D5
 	sta $00
 	jsl L808EAD
 L81DA5D:
@@ -10809,9 +10809,9 @@ L81DA5D:
 	lda #$0001
 	jsl L81D35F
 	jsl L81D4EE
-	lda #$8100
+	lda #bank100(L81D6D5)
 	sta $01
-	lda #$D6D5
+	lda #L81D6D5
 	sta $00
 	jsl L808EAD
 	jsl L8087EA
@@ -12096,9 +12096,9 @@ L81E4E7:
 L81E501:
 	cmp #$00FF
 	bne L81E512
-	lda #$9400
+	lda #bank100(L94A820)
 	sta $01
-	lda #$A820
+	lda #L94A820
 	sta $00
 	bra L81E534
 L81E512:
@@ -12109,7 +12109,7 @@ L81E512:
 	ldy #$000E
 	jsl L81D733
 	tax
-	lda $88A6EA,X
+	lda.l L88A6EA,X
 	and #$00FF
 	asl A
 	asl A
@@ -12611,9 +12611,9 @@ L81E93E:
 	lda #$0003
 	sta $5A
 	stz $5C
-	lda #$8300
+	lda #bank100(L838000)
 	sta $63
-	lda #$8000
+	lda #L838000
 	sta $62
 	jsl L8093A2
 	ldx $50
@@ -12791,9 +12791,9 @@ L81EB23:
 	lda #$0003
 	sta $5A
 	stz $5C
-	lda #$8300
+	lda #bank100(L838000)
 	sta $63
-	lda #$8000
+	lda #L838000
 	sta $62
 	jsl L8093A2
 	lda $50

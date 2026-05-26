@@ -5318,16 +5318,16 @@ L80A7A6:
 	cmp #$15
 	bcc L80A7CB
 	rep #$20
-	lda #$8800
+	lda #bank100(L88883E)
 	sta $01
-	lda #$883E
+	lda #L88883E
 	sta $00
 	bra L80A7D7
 L80A7CB:
 	rep #$20
-	lda #$8800
+	lda #bank100(L888060)
 	sta $01
-	lda #$8060
+	lda #L888060
 	sta $00
 L80A7D7:
 	stz $15
@@ -7309,9 +7309,9 @@ L80B628:
 	pha
 	lda $01
 	pha
-	lda #$B100
+	lda #bank100(LB1D940)
 	sta $01
-	lda #$D940
+	lda #LB1D940
 	sta $00
 	ldx #$0000
 L80B644:

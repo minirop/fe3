@@ -280,9 +280,9 @@ L82824D:
 	lda $08ED
 	and #$00FF
 	jsl L83D912
-	lda #$8800
+	lda #bank100(L88C5E1)
 	sta $01
-	lda #$C5E1
+	lda #L88C5E1
 	sta $00
 	lda.l ActiveUnit.AI2
 	and #$00FF
@@ -715,9 +715,9 @@ L828596:
 	sep #$20
 	stz $0C9A
 	rep #$20
-	lda #$8800
+	lda #bank100(L88C46C)
 	sta $01
-	lda #$C46C
+	lda #L88C46C
 	sta $00
 	lda.l ActiveUnit.AI1
 	and #$00FF
@@ -1147,9 +1147,9 @@ L82896A:
 	rep #$20
 	pha
 	pha
-	lda #$8800
+	lda #bank100(L88C29E)
 	sta $01
-	lda #$C29E
+	lda #L88C29E
 	sta $00
 	pla
 	xba
@@ -2540,9 +2540,9 @@ L82953A:
 	rep #$20
 	and #$00FF
 	pha
-	lda #$8800
+	lda #bank100(L88C526)
 	sta $01
-	lda #$C526
+	lda #L88C526
 	sta $00
 	lda $0C8F
 	ora #$1100
@@ -2871,9 +2871,9 @@ L829806:
 	rep #$30
 	and #$00FF
 	pha
-	lda #$8800
+	lda #bank100(L88CB7A)
 	sta $01
-	lda #$CB7A
+	lda #L88CB7A
 	sta $00
 	pla
 	jsr L829834
@@ -2885,9 +2885,9 @@ L82981D:
 	rep #$30
 	and #$00FF
 	pha
-	lda #$8800
+	lda #bank100(L88CBD4)
 	sta $01
-	lda #$CBD4
+	lda #L88CBD4
 	sta $00
 	pla
 	jsr L829834
@@ -3131,14 +3131,14 @@ L82A05B:
 	dey
 	bne L82A05B
 	jsl L80A6DD
-	lda #$8200
+	lda #bank100(L82D9EA)
 	sta $01
-	lda #$D9EA
+	lda #L82D9EA
 	sta $00
 	jsl L808EAD
-	lda #$8200
+	lda #bank100(L82A0AD)
 	sta $01
-	lda #$A0AD
+	lda #L82A0AD
 	sta $00
 	jsl L808EAD
 	jsl L80954E
@@ -3231,15 +3231,15 @@ L82A117:
 	lda $07B7
 	sta $0D93
 	rep #$20
-	lda #$8200
+	lda #bank100(L82B293)
 	sta $01
-	lda #$B293
+	lda #L82B293
 	sta $00
 	jsl L808EAD
 	ldy #$0040
 	ldx #$0000
 L82A13E:
-	lda $D0F800,X
+	lda.l LD0F800,X
 	sta $7EBDE7,X
 	inx
 	dey
@@ -3250,9 +3250,9 @@ L82A13E:
 	lda #$FFFF
 	sta $7EBD11
 	sta $7EBD13
-	lda #$8200
+	lda #bank100(L82A043)
 	sta $04CC
-	lda #$A043
+	lda #L82A043
 	sta $04CB
 	ldx #$0000
 	stx $0D80
@@ -3365,13 +3365,13 @@ L82A24C:
 	rep #$20
 	ldy $0DF7
 	jsr L82B5FE
-	lda #$8200
+	lda #bank100(L82A012)
 	sta $04CC
-	lda #$A012
+	lda #L82A012
 	sta $04CB
-	lda #$8200
+	lda #bank100(L82A27E)
 	sta $04EC
-	lda #$A27E
+	lda #L82A27E
 	sta $04EB
 	plp
 	rts
@@ -3418,9 +3418,9 @@ L82A2CB:
 
 L82A2CD:
 	rep #$20
-	lda #$8200
+	lda #bank100(L82D0B2)
 	sta $01
-	lda #$D0B2
+	lda #L82D0B2
 	sta $00
 	sep #$20
 	jsl L808EAD
@@ -3466,15 +3466,15 @@ L82A30B:
 	lda #$03
 	sta $0D2D
 	rep #$20
-	lda #$8200
+	lda #bank100(L82B293)
 	sta $01
-	lda #$B293
+	lda #L82B293
 	sta $00
 	jsl L808EAD
 	ldy #$0040
 	ldx #$0000
 L82A337:
-	lda $D0F800,X
+	lda.l LD0F800,X
 	sta $7EBDE7,X
 	inx
 	dey
@@ -3484,9 +3484,9 @@ L82A337:
 	lda #$FFFF
 	sta $7EBD11
 	sta $7EBD13
-	lda #$8200
+	lda #bank100(L82A043)
 	sta $04CC
-	lda #$A043
+	lda #L82A043
 	sta $04CB
 	ldy #$0000
 	jsr L82B58E
@@ -3498,9 +3498,9 @@ L82A337:
 	ldy #$0020
 	jsr L82B5FE
 	rep #$20
-	lda #$8200
+	lda #bank100(L82A405)
 	sta $04EC
-	lda #$A405
+	lda #L82A405
 	sta $04EB
 	jsl L80954E
 	jsl L8098F0
@@ -4791,9 +4791,9 @@ L82AD64:
 	sta $0D02
 	rep #$20
 	jsr L82B2A2
-	lda #$8200
+	lda #bank100(L82A043)
 	sta $04CC
-	lda #$A043
+	lda #L82A043
 	sta $04CB
 	stx $0D80
 	jsr L82B8EA
@@ -4803,13 +4803,13 @@ L82AD64:
 	jsr L82B58E
 	ldy #$0000
 	jsr L82B6C9
-	lda #$8200
+	lda #bank100(L82A012)
 	sta $04CC
-	lda #$A012
+	lda #L82A012
 	sta $04CB
-	lda #$8200
+	lda #bank100(L82B129)
 	sta $04EC
-	lda #$B129
+	lda #L82B129
 	sta $04EB
 	plp
 	rts
@@ -4821,9 +4821,9 @@ L82ADAF:
 	sta $0D02
 	rep #$20
 	jsr L82B2A2
-	lda #$8200
+	lda #bank100(L82A043)
 	sta $04CC
-	lda #$A043
+	lda #L82A043
 	sta $04CB
 	ldx #$0000
 	stx $0D80
@@ -4835,17 +4835,17 @@ L82ADAF:
 	jsr L82B5FE
 	ldy #$0000
 	jsr L82B6C9
-	lda #$8200
+	lda #bank100(L82B163)
 	sta $050C
-	lda #$B163
+	lda #L82B163
 	sta $050B
-	lda #$8200
+	lda #bank100(L82A012)
 	sta $04CC
-	lda #$A012
+	lda #L82A012
 	sta $04CB
-	lda #$8200
+	lda #bank100(L82A043)
 	sta $04EC
-	lda #$A043
+	lda #L82A043
 	sta $04EB
 	plp
 	rts
@@ -4857,9 +4857,9 @@ L82AE0C:
 	sta $0D02
 	rep #$20
 	jsr L82B2A2
-	lda #$8200
+	lda #bank100(L82A043)
 	sta $04CC
-	lda #$A043
+	lda #L82A043
 	sta $04CB
 	ldx #$0000
 	stx $0D80
@@ -4871,13 +4871,13 @@ L82AE0C:
 	jsr L82B58E
 	ldy #$0000
 	jsr L82B6C9
-	lda #$8200
+	lda #bank100(L82A012)
 	sta $04CC
-	lda #$A012
+	lda #L82A012
 	sta $04CB
-	lda #$8200
+	lda #bank100(L82B163)
 	sta $04EC
-	lda #$B163
+	lda #L82B163
 	sta $04EB
 	plp
 	rts
@@ -4910,9 +4910,9 @@ L82AE82:
 	rep #$20
 	jsr L82B2A2
 	jsr L82B1EC
-	lda #$8200
+	lda #bank100(L82A043)
 	sta $04CC
-	lda #$A043
+	lda #L82A043
 	sta $04CB
 	ldx #$0000
 	stx $0D80
@@ -4926,13 +4926,13 @@ L82AE82:
 	jsr L82B58E
 	ldy #$0000
 	jsr L82B6C9
-	lda #$8200
+	lda #bank100(L82A012)
 	sta $04CC
-	lda #$A012
+	lda #L82A012
 	sta $04CB
-	lda #$8200
+	lda #bank100(L82B13F)
 	sta $04EC
-	lda #$B13F
+	lda #L82B13F
 	sta $04EB
 	plp
 	rts
@@ -4955,9 +4955,9 @@ L82AEE9:
 	sta $0D02
 	rep #$20
 	jsr L82B2A2
-	lda #$8200
+	lda #bank100(L82A043)
 	sta $04CC
-	lda #$A043
+	lda #L82A043
 	sta $04CB
 	ldx #$0000
 	stx $0D80
@@ -4971,13 +4971,13 @@ L82AEE9:
 	jsr L82B58E
 	ldy #$0000
 	jsr L82B6C9
-	lda #$8200
+	lda #bank100(L82A012)
 	sta $04CC
-	lda #$A012
+	lda #L82A012
 	sta $04CB
-	lda #$8200
+	lda #bank100(L82AF3D)
 	sta $04EC
-	lda #$AF3D
+	lda #L82AF3D
 	sta $04EB
 	plp
 	rts
@@ -4994,9 +4994,9 @@ L82AF45:
 	sta $0D02
 	rep #$20
 	jsr L82B2A2
-	lda #$8200
+	lda #L82A043
 	sta $04CC
-	lda #$A043
+	lda #L82A043
 	sta $04CB
 	ldx #$0000
 	stx $0D80
@@ -5009,13 +5009,13 @@ L82AF45:
 	jsr L82B58E
 	ldy #$0000
 	jsr L82B6C9
-	lda #$8200
+	lda #L82A012
 	sta $04CC
-	lda #$A012
+	lda #L82A012
 	sta $04CB
-	lda #$8200
+	lda #L82B133
 	sta $04EC
-	lda #$B133
+	lda #L82B133
 	sta $04EB
 	plp
 	rts
@@ -5027,9 +5027,9 @@ L82AF96:
 	sta $0D02
 	rep #$20
 	jsr L82B2A2
-	lda #$8200
+	lda #bank100(L82A043)
 	sta $04CC
-	lda #$A043
+	lda #L82A043
 	sta $04CB
 	ldx #$0000
 	stx $0D80
@@ -5043,13 +5043,13 @@ L82AF96:
 	jsr L82B58E
 	ldy #$0000
 	jsr L82B6C9
-	lda #$8200
+	lda #bank100(L82A012)
 	sta $04CC
-	lda #$A012
+	lda #L82A012
 	sta $04CB
-	lda #$8200
+	lda #bank100(L82B14B)
 	sta $04EC
-	lda #$B14B
+	lda #L82B14B
 	sta $04EB
 	plp
 	rts
@@ -5072,9 +5072,9 @@ L82AFFA:
 	sta $0D02
 	rep #$20
 	jsr L82B2A2
-	lda #$8200
+	lda #bank100(L82A043)
 	sta $04CC
-	lda #$A043
+	lda #L82A043
 	sta $04CB
 	ldx #$0000
 	stx $0D80
