@@ -6856,14 +6856,14 @@ L80B359:
 L80B35A:
 	jsl L80B3B3
 	tay
-	lda #$8800
+	lda #bank100(L88B383)
 	sta $01
 	lda.l $0008FF
 	and #$00FF
 	sta $15
 	asl
 	adc $15
-	adc #$B383
+	adc #L88B383
 	sta $00
 	lda [$00]
 	sta $00
@@ -6907,14 +6907,14 @@ L80B3B0:
 L80B3B3:
 	php
 	rep #$30
-	lda #$8A00
+	lda #bank100(L8A81F8)
 	sta $01
 	lda.l $0007D0
 	and #$00FF
 	sta $15
 	asl
 	adc $15
-	adc #$81F8
+	adc #L8A81F8
 	sta $00
 	lda [$00]
 	sta $00
@@ -8262,6 +8262,8 @@ L80BCD7:
 .dl LABE17D
 .dl LABEC77
 .dl LAC87A3
+
+L80BDE5:
 .dl LA786F6
 .dl LA795B4
 .dl LA7A5EE

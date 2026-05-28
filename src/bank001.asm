@@ -463,7 +463,7 @@ L818380:
 	and #$00ff
 	asl
 	tax
-	lda $89c45c,X
+	lda.l L89C45C,X
 	sta $00
 	lda [$00]
 	sep #$20
@@ -4532,18 +4532,18 @@ L81A688:
 	lda.l RDMPYL
 	sep #$20
 	tax
-	lda.l L88A6ED,X
+	lda.l (ITEMS_DATA + 4),X
 	sta $15
-	lda.l L88A6EE,X
+	lda.l (ITEMS_DATA + 5),X
 	sta $17
-	lda.l L88A6EC,X
+	lda.l (ITEMS_DATA + 3),X
 	sta $19
-	lda.l L88A6EF,X
+	lda.l (ITEMS_DATA + 6),X
 	sta $1B
 	rep #$20
 	lda #$8800
 	sta $01
-	lda.l L88A6F6,X
+	lda.l (ITEMS_DATA + 13),X
 	and #$00FF
 	asl
 	tax
@@ -9661,8 +9661,10 @@ L81D1A5:
 	rtl
 
 L81D1A8:
-.db $01 $50 $52 $7F $20 $00 $90 $01
-.db $70 $52 $7F $20 $00 $A0
+.db $01 $50 $52 $7F $20 $00 $90
+
+L81D1AF:
+.db $01 $70 $52 $7F $20 $00 $A0
 
 L81D1B6:
 	ldx #$7F00
@@ -12109,7 +12111,7 @@ L81E512:
 	ldy #$000E
 	jsl L81D733
 	tax
-	lda.l L88A6EA,X
+	lda.l (ITEMS_DATA + 1),X
 	and #$00FF
 	asl A
 	asl A

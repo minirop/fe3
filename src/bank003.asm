@@ -3,6 +3,7 @@
 
 .SECTION "Bank3" FORCE
 
+L838000:
 .dl L838063
 .dl L838075
 .dl L838087

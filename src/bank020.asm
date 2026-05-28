@@ -1287,6 +1287,8 @@
 .db $7F $7F $7F $7F $7F $7F $7F $7F
 .db $4F $0F $4F $0F $4F $0F $4F $0F
 .db $4F $0F $4F $0F $4F $0F $4F $0F
+
+L94A820:
 .db $FF $FF $FF $FF $FF $FF $FF $FF
 .db $FF $FF $FF $FF $FF $FF $FF $FF
 .db $FF $FF $FF $FF $FF $FF $FF $FF
@@ -1795,6 +1797,8 @@
 .db $00 $00 $00 $00 $00 $00 $00 $00
 .db $00 $00 $00 $00 $00 $00 $00 $00
 .db $00 $00 $00 $00 $00 $00 $00 $00
+
+L94B800:
 .db $F8 $FF $F1 $F8 $E7 $F1 $CE $F1
 .db $84 $CB $92 $ED $C8 $FF $C5 $EE
 .db $FF $F8 $FB $F4 $F6 $E8 $FE $C0
@@ -2179,6 +2183,8 @@
 .db $9F $BF $67 $9F $03 $EF $07 $FF
 .db $EF $07 $F7 $23 $BF $17 $7F $5F
 .db $7F $5F $FF $07 $FF $03 $FF $07
+
+L94C400:
 .db $F8 $FF $F3 $F8 $F2 $F9 $CC $F3
 .db $84 $DB $22 $8D $84 $DF $27 $DE
 .db $FF $F8 $FF $F0 $FA $F4 $FE $C0
@@ -2601,8 +2607,10 @@ PALETTES_94D000:
 .ORG $7FE0
 .SECTION "Bank20-2" FORCE
 
+L94FFE0:
 .db $00 $38 $99 $7F $91 $72 $A9 $65
 .db $A6 $7E $00 $7D $0F $00 $84 $10
 .db $9F $1B $BD $12 $D6 $63 $2C $43
 .db $DC $0D $FA $04 $19 $00 $6A $51
+
 .ENDS

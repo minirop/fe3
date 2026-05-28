@@ -2650,6 +2650,7 @@ L88A605:
 .db CLASS_DEMON_DRAGON
 .db TERMINATOR
 
+L88A633:
 .dw L88A6E7
 .dw L88A6E7
 .dw L88A6E7
@@ -4397,6 +4398,7 @@ L88C3CA:
 .db $00 $00 $00 $00 $00 $00 $00 $00
 .db $00 $00
 
+L88C46C:
 AI_1_POINTERS_TABLE:
 .dl L88C4D2
 .dl L88C4D7
@@ -4515,6 +4517,7 @@ L88C526:
 .db $0A $0F $00 $14 $00 $00 $00 $00
 .db $00
 
+L88C5E1:
 AI_2_POINTERS_TABLE:
 .dl L88C76D
 .dl L88C772
@@ -5101,10 +5104,13 @@ L88CB7A:
 .db $54 $65 $67 $69 $6B $6D $6F $71
 .db $73 $75 $77 $79 $7B $7D $7F $81
 .db $95 $9E $FF $59 $FF $57 $FF $00
-.db $FF $FF $00 $FF $13 $15 $14 $FF
-.db $16 $18 $FF $0F $1C $FF $19 $17
-.db $1A $FF $0A $09 $FF $07 $08 $FF
-.db $03 $FF $FF
+.db $FF $FF
+
+L88CBD4:
+.db $00 $FF $13 $15 $14 $FF $16 $18
+.db $FF $0F $1C $FF $19 $17 $1A $FF
+.db $0A $09 $FF $07 $08 $FF $03 $FF
+.db $FF
 
 L88CBED:
 .db $01 $01 $01 $01 $01 $FF $FF $FF
