@@ -174,9 +174,9 @@ L848638:
 	dec A
 	asl A
 	tax
-	lda #$DC00
+	lda #bank100(LDCB000)
 	sta $01
-	lda $DCB000,X
+	lda.l LDCB000,X
 	clc
 	adc #$B000
 	sta $00
@@ -226,9 +226,9 @@ L8486B9:
 	dec A
 	asl A
 	tax
-	lda #$DC00
+	lda #bank100(LDCB000)
 	sta $01
-	lda $DCB000,X
+	lda.l LDCB000,X
 	clc
 	adc #$B000
 	sta $00
@@ -1059,13 +1059,13 @@ L848CDA:
 	php
 	ldy #$0000
 	ldx #$fffe
-	lda #$af00
+	lda #bank100(LAFC000)
 	sta $01
-	lda #$c000
+	lda #LAFC000
 	sta $00
-	lda #$cb00
+	lda #bank100(LCBC000)
 	sta $04
-	lda #$c000
+	lda #LCBC000
 	sta $03
 	sep #$20
 L848CF7:
@@ -1092,9 +1092,9 @@ DMA_DATA $02 DecompressionLocation $8000 $80 $0000
 
 L848D26:
 	php
-	lda #$DB00
+	lda #bank100(LDBF7A5)
 	sta.l $000072
-	lda #$F7A5
+	lda #LDBF7A5
 	sta.l $000071
 	lda #$0000
 	sta.l $000076
@@ -1112,9 +1112,9 @@ L848D50:
 
 L848D59:
 	php
-	lda #$DB00
+	lda #bank100(LDBF5BC)
 	sta.l $000072
-	lda #$F5BC
+	lda #LDBF5BC
 	sta.l $000071
 	lda #$0000
 	sta.l $000076
@@ -1132,9 +1132,9 @@ L848D83:
 
 L848D8C:
 	php
-	lda #$DB00
+	lda #bank100(LDBF71F)
 	sta.l $000072
-	lda #$F71F
+	lda #LDBF71F
 	sta.l $000071
 	lda #$0000
 	sta.l $000076
@@ -1344,9 +1344,9 @@ L848F8D:
 	dey
 	bne L848F8D
 L848F9B:
-	lda #$8300
+	lda #bank100(L83897A)
 	sta $01
-	lda #$897A
+	lda #L83897A
 	sta $00
 	jsl L808EAD
 	plp
@@ -6984,9 +6984,9 @@ L84C0C5:
 	sta $0F12
 	lda #$0001
 	sta $0F07
-	lda #$8700
+	lda #bank100(L87BCCA)
 	sta $0F1A
-	lda #$BCCA
+	lda #L87BCCA
 	sta $0F19
 L84C122:
 	sep #$20
@@ -12823,9 +12823,9 @@ L84FA77:
 	sta $0F12
 	lda #$0001
 	sta $0F07
-	lda #$8700
+	lda #bank100(L87BCCA)
 	sta $0F1A
-	lda #$BCCA
+	lda #L87BCCA
 	sta $0F19
 	plp
 	rts

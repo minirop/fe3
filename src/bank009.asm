@@ -6657,7 +6657,7 @@ L89CB98:
 L89CB9C:
 .db $01 $00 $00 $FF
 
-; I have no ideas what I'm doing here.
+L89CBA0:
 .dl $008000
 .dl $008094
 .dl $0080C0

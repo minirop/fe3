@@ -961,6 +961,7 @@
 .ORG $3000
 .SECTION "Bank92-2" FORCE
 
+LDCB000:
 .db $5A $00 $CB $02 $98 $03 $E5 $04
 .db $C2 $06 $BC $07 $D6 $08 $8D $0A
 .db $CC $0C $CF $0D $89 $0F $9B $10

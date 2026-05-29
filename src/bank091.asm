@@ -25,8 +25,11 @@
 .INCBIN "2DE6B4.bin" ; vignette world map
 .INCBIN "2DEBDB.bin" ; vignette world map
 .INCBIN "2DF0C6.bin" ; vignette world map
+LDBF5BC:
 .INCBIN "2DF5BC.bin"
+LDBF71F:
 .INCBIN "2DF71F.bin"
+LDBF7A5:
 .INCBIN "2DF7A5.bin" ; scroll textbox world map
 
 .ENDS

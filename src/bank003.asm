@@ -279,14 +279,14 @@ L8384CC:
 	jsl L93E61A
 	jsl L93D867
 	jsl L80A6DD
-	lda #$8300
+	lda #bank100(L83F1A3)
 	sta $01
-	lda #$F1A3
+	lda #L83F1A3
 	sta $00
 	jsl L808EAD
-	lda #$8300
+	lda #bank100(L83F19A)
 	sta $01
-	lda #$F19A
+	lda #L83F19A
 	sta $00
 	jsl L808EAD
 	lda #$0000
@@ -438,14 +438,14 @@ L8386C0:
 	jsl L93E61A
 	jsl L93D81D
 	jsl L80A6DD
-	lda #$8300
+	lda #bank100(L83F1A3)
 	sta $01
-	lda #$F1A3
+	lda #L83F1A3
 	sta $00
 	jsl L808EAD
-	lda #$8300
+	lda #bank100(L83F19A)
 	sta $01
-	lda #$F19A
+	lda #L83F19A
 	sta $00
 	jsl L808EAD
 	jsl L93E453
@@ -593,21 +593,22 @@ L83878B:
 L838820:
 .ACCU 16
 	php
-	lda #$8300
+	lda #bank100(L83883F)
 	sta $01
-	lda #$883F
+	lda #L83883F
 	sta $00
 	jsl L808EAD
-	lda #$8300
+	lda #bank100(L838848)
 	sta $01
-	lda #$8848
+	lda #L838848
 	sta $00
 	jsl L808EAD
 	plp
 	rtl
 
-; data
+L83883F:
 .db $02 $00 $80 $94 $00 $20 $80 $00 $50
+L838848:
 .db $02 $00 $A8 $94 $00 $10 $80 $00 $78
 
 L838851:
@@ -732,7 +733,7 @@ L83893E:
 	ldy #$0020
 	ldx #$0000
 L838952:
-	lda $94D060,X
+	lda.l L94D060,X
 	sta $7F5310,X
 	inx
 	dey
@@ -741,14 +742,15 @@ L838952:
 	bne L838952
 	lda #$0000
 	sta $7F5130
-	lda #$8300
+	lda #bank100(L83897A)
 	sta $01
-	lda #$897A
+	lda #L83897A
 	sta $00
 	jsl L808EAD
 	jsl L93E007
 	rtl
 
+L83897A:
 .db $01 $30 $51 $7F $00 $02 $00 $01
 .db $E0 $FF $94 $20 $00 $F0 $01 $60
 .db $D0 $94 $20 $00 $F0 $01 $40 $F8
@@ -843,19 +845,19 @@ L8389FD:
 	rtl
 
 L838A73:
-	lda #$8300
+	lda #bank100(L838AD6)
 	sta $01
-	lda #$8AD6
+	lda #L838AD6
 	sta $00
 	jsl L808EAD
-	lda #$8300
+	lda #bank100(L838ADF)
 	sta $01
-	lda #$8ADF
+	lda #L838ADF
 	sta $00
 	jsl L808EAD
-	lda #$8300
+	lda #bank100(L838AE8)
 	sta $01
-	lda #$8AE8
+	lda #L838AE8
 	sta $00
 	jsl L808EAD
 	lda #$2700
@@ -880,8 +882,11 @@ L838A73:
 	jsl L93E664
 	rtl
 
+L838AD6:
 .db $02 $00 $80 $DA $00 $10 $80 $00 $20
+L838ADF:
 .db $02 $00 $98 $DA $00 $10 $80 $00 $30
+L838AE8:
 .db $02 $00 $B0 $DA $00 $10 $80 $00 $40
 
 L838AF1:
@@ -1510,9 +1515,9 @@ L838FBC:
 L838FC0:
 	rep #$20
 	jsl L80A6DD
-	lda #$8300
+	lda #bank100(L83F19A)
 	sta $01
-	lda #$F19A
+	lda #L83F19A
 	sta $00
 	jsl L808EAD
 	sep #$20
@@ -2012,9 +2017,9 @@ L8393EF:
 L8393FA:
 	jsl L8087EA
 	jsl L838851
-	lda #$8300
+	lda #bank100(L839599)
 	sta $01
-	lda #$9599
+	lda #L839599
 	sta $00
 	jsl L808EAD
 	lda $0aab
@@ -2061,9 +2066,9 @@ L83946C:
 	jsl L83DB34
 L83947F:
 	jsl L8087EA
-	lda #$8300
+	lda #bank100(L838848)
 	sta $01
-	lda #$8848
+	lda #L838848
 	sta $00
 	jsl L808EAD
 	sep #$20
@@ -2316,9 +2321,9 @@ L839705:
 	lda $08f2
 	jsl L83DB34
 	jsl L838851
-	lda #$8300
+	lda #bank100(L839599)
 	sta $01
-	lda #$9599
+	lda #L839599
 	sta $00
 	jsl L808EAD
 L83971E:
@@ -2618,9 +2623,9 @@ L83998B:
 	rts
 
 L8399A1:
-	lda #$8b00
+	lda #bank100(L8B89C6)
 	sta $04
-	lda #$89c6
+	lda #L8B89C6
 	sta $03
 L8399AB:
 	sep #$20
@@ -2984,9 +2989,9 @@ L839CD2:
 	stz $0acb
 	rep #$20
 	jsl L8087EA
-	lda #$8300
+	lda #bank100(L838848)
 	sta $01
-	lda #$8848
+	lda #L838848
 	sta $00
 	jsl L808EAD
 	jsl L82D291
@@ -3303,9 +3308,9 @@ L839F57:
 	bra L839F8F
 L839F7B:
 	jsl L80A6DD
-	lda #$8300
+	lda #bank100(L83F19A)
 	sta $01
-	lda #$f19a
+	lda #L83F19A
 	sta $00
 	jsl L808EAD
 	bra L839F8F
@@ -4622,9 +4627,9 @@ L83AA79:
 	jsl L80AA16
 L83AA80:
 	jsl L80A6DD
-	lda #$8300
+	lda #bank100(L83F19A)
 	sta $01
-	lda #$f19a
+	lda #L83F19A
 	sta $00
 	jsl L808EAD
 	sep #$20
@@ -6542,13 +6547,13 @@ L83B97C:
 	nop
 	lda.l $004216
 	tax
-	lda $88A6F6,X
+	lda.l (ITEMS_DATA + 13),X
 	and #$00FF
 	asl A
 	tax
-	lda #$8800
+	lda #bank100(L88A633)
 	sta $01
-	lda $88A633,X
+	lda.l L88A633,X
 	sta $00
 	pla
 	sep #$20
@@ -7157,9 +7162,9 @@ L83BE3B:
 	rep #$20
 	lda #$FFFF
 	sta $07C6
-	lda #$8B00
+	lda #bank100(L8B8D9A)
 	sta $04
-	lda #$8D9A
+	lda #L8B8D9A
 	sta $03
 L83BE53:
 	sep #$20
@@ -7673,9 +7678,9 @@ L83C1EA:
 	and #$00FF
 	bne L83C1EA
 	jsl L838851
-	lda #$8300
+	lda #bank100(L839599)
 	sta $01
-	lda #$9599
+	lda #L839599
 	sta $00
 	jsl L808EAD
 	lda $08F2
@@ -7839,9 +7844,9 @@ L83C3A5:
 	bra L83C366
 L83C3C0:
 	rep #$20
-	lda #$8300
+	lda #bank100(L838848)
 	sta $01
-	lda #$8848
+	lda #L838848
 	sta $00
 	jsl L808EAD
 	lda $08ED
@@ -9709,9 +9714,9 @@ L83D409:
 	ldx $19
 	jsl L83F63C
 	tay
-	lda #$8800
+	lda #bank100(L88B383)
 	sta $01
-	lda #$B383
+	lda #L88B383
 	sta $00
 	pla
 	pha
@@ -11181,9 +11186,9 @@ L83DF98:
 	php
 	rep #$30
 	pha
-	lda #$9300
+	lda #bank100(L93FED7)
 	sta $0D
-	lda #$FED7
+	lda #L93FED7
 	sta $0C
 	tya
 	clc
@@ -11766,9 +11771,9 @@ L83E408:
 L83E40F:
 	lda $08ED
 	jsl L83D912
-	lda #$8B00
+	lda #bank100(L8B89C6)
 	sta $04
-	lda #$89C6
+	lda #L8B89C6
 	sta $03
 L83E420:
 	sep #$20
@@ -11876,9 +11881,9 @@ L83E4D3:
 	beq L83E50C
 	cmp #$0028
 	beq L83E50C
-	lda #$8C00
+	lda #bank100(L8C9179)
 	sta $04
-	lda #$9179
+	lda #L8C9179
 	sta $03
 L83E504:
 	sep #$20
@@ -12011,7 +12016,7 @@ L83E5FA:
 	bcs L83E61E
 	lda #$9000
 	sta $090B
-	lda #$000D
+	lda #$000D ; L90000D???
 	jsr L83EB37
 L83E61E:
 	plx
@@ -12038,9 +12043,9 @@ L83E645:
 	lda $08ed
 	jsl L83D912
 L83E64C:
-	lda #$8c00
+	lda #bank100(L8C9AD0)
 	sta $04
-	lda #$9ad0
+	lda #L8C9AD0
 	sta $03
 	bra L83E65B
 	brl L83E6E6
@@ -12307,9 +12312,9 @@ L83E87C:
 	lda $08ed
 	jsl L83D912
 L83E883:
-	lda #$8c00
+	lda #bank100(L8C9AD0)
 	sta $04
-	lda #$9ad0
+	lda #L8C9AD0
 	sta $03
 L83E88D:
 	sep #$20
@@ -12416,9 +12421,9 @@ L83E956:
 	ldx $19
 	jsl L83F63C
 	tay
-	lda #$8800
+	lda #bank100(L88B383)
 	sta $01
-	lda #$b383
+	lda #L88B383
 	sta $00
 	lda.l ActiveUnit.MountedClassID
 	and #$00ff
@@ -12472,9 +12477,9 @@ L83E9CE:
 	ldx $19
 	jsl L83F63C
 	tay
-	lda #$8800
+	lda #bank100(L88B383)
 	sta $01
-	lda #$b383
+	lda #L88B383
 	sta $00
 	pla
 	jsl L80A89D
@@ -13474,15 +13479,15 @@ L83F142:
 	sta $a1
 	jsl L80A6DD
 	rep #$30
-	lda #$8300
+	lda #bank100(L83F1A3)
 	sta $01
-	lda #$f1a3
+	lda #L83F1A3
 	sta $00
 	jsl L808EAD
 	jsl L8087EA
-	lda #$8300
+	lda #bank100(L83F19A)
 	sta $01
-	lda #$f19a
+	lda #L83F19A
 	sta $00
 	jsl L808EAD
 	sep #$20
@@ -13506,7 +13511,9 @@ L83F142:
 	rtl
 
 ; $02 $7e3000 $800800 $4800???
+L83F19A:
 .db $02 $00 $30 $7E $00 $08 $80 $00 $48
+L83F1A3:
 .db $02 $00 $30 $7E $00 $08 $80 $00 $4C
 
 L83F1AC:
@@ -13570,11 +13577,11 @@ L83F20C:
 	pha
 	asl
 	tax
-	lda $83f2e2,X
+	lda.l L83F2E2,X
 	jsl L80AA24
-	lda #$8900
+	lda #bank100(L89CBA0)
 	sta $01
-	lda #$cba0
+	lda #L89CBA0
 	sta $00
 	pla
 	jsl L80A89D
@@ -14079,9 +14086,9 @@ L83F634:
 L83F63C:
 	php
 	rep #$30
-	lda #$8a00
+	lda #bank100(L8A81F8)
 	sta $01
-	lda #$81f8
+	lda #L8A81F8
 	sta $00
 	lda $07d0
 	and #$00ff
@@ -14302,9 +14309,9 @@ L83F7D5:
 	php
 	rep #$30
 	pha
-	lda #$8a00
+	lda #bank100(L8A81F8)
 	sta $01
-	lda #$81f8
+	lda #L8A81F8
 	sta $00
 	lda $07d0
 	and #$00ff
@@ -14951,9 +14958,9 @@ L83FCF7:
 	rep #$20
 	pha
 	pha
-	lda #$8800
+	lda #bank100(L88C29E)
 	sta $01
-	lda #$C29E
+	lda #L88C29E
 	sta $00
 	pla
 	xba
@@ -15273,9 +15280,9 @@ L83FF69:
 	rtl
 
 L83FF6F:
-	lda #$8c00
+	lda #bank100(L8C9AD0)
 	sta $04
-	lda #$9ad0
+	lda #L8C9AD0
 	sta $03
 L83FF79:
 	sep #$20
