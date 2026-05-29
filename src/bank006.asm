@@ -1001,12 +1001,12 @@ L868712:
 
 L868716:
 .ACCU 16
-	lda #$8600
+	lda #bank100(L868733)
 	sta $01
 	lda #L868733
 	sta $00
 	jsl L808EAD
-	lda #$8600
+	lda #bank100(L86873C)
 	sta $01
 	lda #L86873C
 	sta $00
@@ -1031,7 +1031,7 @@ L868743:
 	stz $2183
 	ldx #$0000
 L86875D:
-	lda $95EDDD,X
+	lda.l L95EDDD,X
 	sta $2180
 	stz $2180
 	inx
@@ -1880,12 +1880,12 @@ L868E40:
 	jsr L86E47A
 	jsr L86F291
 	jsl L8095AF
-	lda #$8600
+	lda #bank100(L86FD81)
 	sta $01
 	lda #L86FD81
 	sta $00
 	jsl L809606
-	lda #$8600
+	lda #bank100(L86FC9C)
 	sta $01
 	lda #L86FC9C
 	sta $00
@@ -2635,7 +2635,7 @@ L869438:
 	lda $1003
 	bit #$0001
 	beq L869461
-	lda #$8600
+	lda #bank100(L869502)
 	sta $01
 	lda #L869502
 	sta $00
@@ -2645,7 +2645,7 @@ L869438:
 L869461:
 	jsr L869531
 	jsr L86951B
-	lda #$8600
+	lda #bank100(L8694FB)
 	sta $01
 	lda #L8694FB
 	sta $00
@@ -2681,7 +2681,7 @@ L8694A0:
 	inx
 	dey
 	bne L8694A0
-	lda #$8600
+	lda #bank100(L869509)
 	sta $01
 	lda #L869509
 	sta $00
@@ -2694,7 +2694,7 @@ L8694BE:
 	ldy $15
 	ldx #$0000
 L8694C8:
-	lda $948000,X
+	lda.l L948000,X
 	sta $7E40FE,X
 	inx
 	dey
@@ -2710,7 +2710,7 @@ L8694C8:
 	lda #$1800
 	sta $76
 	jsl L808F18
-	lda #$8600
+	lda #bank100(L869512)
 	sta $01
 	lda #L869512
 	sta $00
@@ -2728,7 +2728,7 @@ L869512:
 .db $02 $FE $40 $7E $00 $1E $80 $00 $40
 
 L86951B:
-	lda #$8600
+	lda #bank100(L86952A)
 	sta $01
 	lda #L86952A
 	sta $00
@@ -2742,7 +2742,7 @@ L869531:
 	lda $1001
 	bit #$0014
 	bne L869549
-	lda #$8600
+	lda #bank100(L869558)
 	sta $01
 	lda #L869558
 	sta $00
@@ -2750,7 +2750,7 @@ L869531:
 	bra L869557
 
 L869549:
-	lda #$8600
+	lda #bank100(L86955F)
 	sta $01
 	lda #L86955F
 	sta $00
@@ -2852,7 +2852,7 @@ L869606:
 	rts
 
 L869626:
-	lda #$8600
+	lda #bank100(L8696CC)
 	sta $01
 	lda #L8696CC
 	sta $00
@@ -2860,7 +2860,7 @@ L869626:
 	rts
 
 L869635:
-	lda #$8600
+	lda #bank100(L8696E7)
 	sta $01
 	lda #L8696E7
 	sta $00
@@ -2877,7 +2877,7 @@ L869644:
 	lda $1004
 	bit #$0002
 	beq L86966B
-	lda #$8600
+	lda #bank100(L8696DE)
 	sta $01
 	lda #L8696DE
 	sta $00
@@ -2888,7 +2888,7 @@ L86966B:
 	lda $1002
 	bit #$0004
 	beq L869683
-	lda #$8600
+	lda #bank100(L8696F9)
 	sta $01
 	lda #L8696F9
 	sta $00
@@ -2896,7 +2896,7 @@ L86966B:
 	bra L869691
 
 L869683:
-	lda #$8600
+	lda #bank100(L869702)
 	sta $01
 	lda #L869702
 	sta $00
@@ -2914,12 +2914,12 @@ L86969C:
 	lda $1002
 	bit #$0004
 	bne L8696C9
-	lda #$8600
+	lda #bank100(L8696F0)
 	sta $01
 	lda #L8696F0
 	sta $00
 	jsl L808EAD
-	lda #$8600
+	lda #bank100(L8696D5)
 	sta $01
 	lda #L8696D5
 	sta $00
@@ -2945,7 +2945,7 @@ L869702:
 .db $02 $84 $2C $7E $F8 $00 $80 $42 $7E
 
 L86970B:
-	lda #$8600
+	lda #bank100(L86971A)
 	sta $01
 	lda #L86971A
 	sta $00
@@ -6276,9 +6276,9 @@ L86B09B:
 	rts
 
 L86B0BA:
-	lda #$8B00
+	lda #bank100(L8BD662)
 	sta $01
-	lda #$D662
+	lda #L8BD662
 	sta $00
 	lda #$2400
 	sta $06
@@ -6298,9 +6298,9 @@ L86B0E0:
 	lda #$2800
 	sta $06
 L86B0E5:
-	lda #$8B00
+	lda #bank100(L8BDF58)
 	sta $01
-	lda #$DF58
+	lda #L8BDF58
 	sta $00
 	ldx $1039
 	lda $1DB4,X
@@ -6310,9 +6310,9 @@ L86B0E5:
 	rts
 
 L86B0FF:
-	lda #$8B00
+	lda #bank100(L8BDD30)
 	sta $01
-	lda #$DD30
+	lda #L8BDD30
 	sta $00
 	lda #$2400
 	sta $06
@@ -6751,7 +6751,7 @@ L86B3FD:
 	stz $91
 	rep #$20
 	jsr L86B432
-	lda #$8600
+	lda #bank100(L86B42B)
 	sta $01
 	lda #L86B42B
 	sta $00
@@ -8242,7 +8242,7 @@ L86BE5A:
 	jsr L86BEEF
 L86BE5F:
 	rep #$20
-	lda #$8600
+	lda #bank100(L86BE70)
 	sta $01
 	lda #L86BE70
 	sta $00
@@ -8507,7 +8507,7 @@ L86C03A:
 	inx
 	cpx #$0018
 	bcc L86C03A
-	lda #$8600
+	lda #bank100(L86C057)
 	sta $01
 	lda #L86C057
 	sta $00
@@ -8917,24 +8917,24 @@ L86C319:
 	jsl L87B350
 	lda $1064
 	jsr L86C3C2
-	lda #$8600
+	lda #bank100(L86C37E)
 	sta $01
 	lda #L86C37E
 	sta $00
 	jsl L808EAD
 	lda $1064
 	jsr L86C3DC
-	lda #$8600
+	lda #bank100(L86C3A0)
 	sta $01
 	lda #L86C3A0
 	sta $00
 	jsl L808EAD
-	lda #$8600
+	lda #bank100(L86C390)
 	sta $01
 	lda #L86C390
 	sta $00
 	jsl L808EAD
-	lda #$8600
+	lda #bank100(L86C399)
 	sta $01
 	lda #L86C399
 	sta $00
@@ -9102,13 +9102,13 @@ L86C425:
 	rts
 
 L86C4D1:
-	lda #$8600
+	lda #bank100(L86C51A)
 L86C4D4:
 	sta $01
 	lda #L86C51A
 	sta $00
 	jsl L808EAD
-	lda #$8600
+	lda #bank100(L86C535)
 	sta $01
 	lda #L86C535
 	sta $00
@@ -9116,12 +9116,12 @@ L86C4D4:
 	rts
 
 L86C4EE:
-	lda #$8600
+	lda #bank100(L86C523)
 	sta $01
 	lda #L86C523
 	sta $00
 	jsl L808EAD
-	lda #$8600
+	lda #bank100(L86C53C)
 	sta $01
 	lda #L86C53C
 	sta $00
@@ -9129,7 +9129,7 @@ L86C4EE:
 	rts
 
 L86C50B:
-	lda #$8600
+	lda #bank100(L86C52C)
 	sta $01
 	lda #L86C52C
 	sta $00
@@ -9176,7 +9176,7 @@ L86C543:
 	rts
 
 L86C57D:
-	lda #$8600
+	lda #bank100(L86C58C)
 	sta $01
 	lda #L86C58C
 	sta $00
@@ -9187,7 +9187,7 @@ L86C58C:
 .db $02 $FE $40 $7E $C0 $02 $80 $00 $10
 
 L86C595:
-	lda #$8600
+	lda #bank100(L86C5A4)
 	sta $01
 	lda #L86C5A4
 	sta $00
@@ -9198,7 +9198,7 @@ L86C5A4:
 .db $02 $BE $43 $7E $C0 $02 $80 $60 $11
 
 L86C5AD:
-	lda #$8600
+	lda #bank100(L86C5BC)
 	sta $01
 	lda #L86C5BC
 	sta $00
@@ -9209,9 +9209,9 @@ L86C5BC:
 .db $02 $7E $46 $7E $80 $02 $80 $C0 $12
 
 L86C5C5:
-	lda #$8600
+	lda #bank100(L86C5D4)
 	sta $01
-	lda #$C5D4
+	lda #L86C5D4
 	sta $00
 	jsl L808EAD
 	rts
@@ -9220,9 +9220,9 @@ L86C5D4:
 .db $02 $FE $48 $7E $40 $02 $80 $00 $14
 
 L86C5DD:
-	lda #$8600
+	lda #bank100(L86C5EC)
 	sta $01
-	lda #$C5EC
+	lda #L86C5EC
 	sta $00
 	jsl L808EAD
 	rts
@@ -9231,9 +9231,9 @@ L86C5EC:
 .db $02 $3E $4B $7E $40 $02 $80 $20 $15
 
 L86C5F5:
-	lda #$8600
+	lda #bank100(L86C604)
 	sta $01
-	lda #$C604
+	lda #L86C604
 	sta $00
 	jsl L808EAD
 	rts
@@ -9245,7 +9245,7 @@ L86C60D:
 	lda $7B
 	bit #$0001
 	beq L86C624
-	lda #$8600
+	lda #bank100(L86C693)
 	sta $01
 	lda #L86C693
 	sta $00
@@ -9253,7 +9253,7 @@ L86C60D:
 	bra L86C67E
 
 L86C624:
-	lda #$8600
+	lda #bank100(L86C6AE)
 	sta $01
 	lda #L86C6AE
 	sta $00
@@ -9264,7 +9264,7 @@ L86C634:
 	lda $7B
 	bit #$0001
 	beq L86C64B
-	lda #$8600
+	lda #bank100(L86C69C)
 	sta $01
 	lda #L86C69C
 	sta $00
@@ -9272,7 +9272,7 @@ L86C634:
 	bra L86C67E
 
 L86C64B:
-	lda #$8600
+	lda #bank100(L86C6B7)
 	sta $01
 	lda #L86C6B7
 	sta $00
@@ -9280,7 +9280,7 @@ L86C64B:
 	lda $7B
 	bit #$0001
 	beq L86C670
-	lda #$8600
+	lda #bank100(L86C6A5)
 	sta $01
 	lda #L86C6A5
 	sta $00
@@ -9288,7 +9288,7 @@ L86C64B:
 	bra L86C67E
 
 L86C670:
-	lda #$8600
+	lda #bank100(L86C6C0)
 	sta $01
 	lda #L86C6C0
 	sta $00
@@ -9296,7 +9296,7 @@ L86C670:
 L86C67E:
 	lda $07C8
 	jsr L86C3DC
-	lda #$8600
+	lda #bank100(L86C6C9)
 	sta $01
 	lda #L86C6C9
 	sta $00
@@ -9322,7 +9322,7 @@ L86C6D0:
 	lda $7B
 	bit #$0001
 	beq L86C6E7
-	lda #$8600
+	lda #bank100(L86C704)
 	sta $01
 	lda #L86C704
 	sta $00
@@ -9330,13 +9330,13 @@ L86C6D0:
 	bra L86C6F5
 
 L86C6E7:
-	lda #$8600
+	lda #bank100(L86C70D)
 	sta $01
-	lda #$C70D
+	lda #L86C70D
 	sta $00
 	jsl L808EAD
 L86C6F5:
-	lda #$8600
+	lda #bank100(L86C716)
 	sta $01
 	lda #L86C716
 	sta $00
@@ -9483,14 +9483,14 @@ L86C812:
 	lda $1003
 	bit #$0020
 	bne L86C84B
-	lda #$9500
+	lda #bank100(L959658)
 	sta $01
 	lda $15
 	asl A
 	clc
 	adc $15
 	tax
-	lda $959658,X
+	lda.l L959658,X
 	sta $00
 	jsr L86C8DB
 	jsr L86C8CB
@@ -10253,9 +10253,9 @@ L86CDD1:
 	rts
 
 L86CE5C:
-	lda #$CA00
+	lda #bank100(LCAA242)
 	sta $72
-	lda #$A242
+	lda #LCAA242
 	sta $71
 	jsr L86F7E7
 	lda #$01A4
@@ -10358,7 +10358,7 @@ L86CF04:
 	rts
 
 L86CF12:
-	lda #$8600
+	lda #bank100(L86CF21)
 	sta $01
 	lda #L86CF21
 	sta $00
@@ -11072,7 +11072,7 @@ L86D415:
 	rts
 
 L86D42F:
-	lda #$8600
+	lda #bank100(L86D43E)
 	sta $01
 	lda #L86D43E
 	sta $00
@@ -13218,12 +13218,12 @@ L86E49D:
 	bit #$0020
 	bne L86E4DA
 L86E4BC:
-	lda #$8600
+	lda #bank100(L86E723)
 	sta $01
 	lda #L86E723
 	sta $00
 	jsl L808EAD
-	lda #$8600
+	lda #bank100(L86E723)
 	sta $01
 	lda #L86E723
 	sta $00
@@ -13231,7 +13231,7 @@ L86E4BC:
 	bra L86E4E8
 
 L86E4DA:
-	lda #$8600
+	lda #bank100(L86E72A)
 	sta $01
 	lda #L86E72A
 	sta $00
@@ -13260,7 +13260,7 @@ L86E511:
 	and #$00FF
 	cmp #$001D
 	bne L86E532
-	lda #$8600
+	lda #bank100(L86E73F)
 	sta $01
 	lda #L86E73F
 	sta $00
@@ -13268,7 +13268,7 @@ L86E511:
 	bra L86E56F
 
 L86E532:
-	lda #$8600
+	lda #bank100(L86E738)
 	sta $01
 	lda #L86E738
 	sta $00
@@ -13278,7 +13278,7 @@ L86E532:
 L86E542:
 	lda $075F
 	jsr L86E68D
-	lda #$8600
+	lda #bank100(L86E731)
 	sta $01
 	lda #L86E731
 	sta $00
@@ -13289,7 +13289,7 @@ L86E558:
 	lda $075F
 	ldx $075D
 	jsr L86E6BF
-	lda #$8600
+	lda #bank100(L86E746)
 	sta $01
 	lda #L86E746
 	sta $00
@@ -13317,7 +13317,7 @@ L86E570:
 	bit #$0020
 	bne L86E5B2
 L86E5A2:
-	lda #$8600
+	lda #bank100(L86E74D)
 	sta $01
 	lda #L86E74D
 	sta $00
@@ -13325,7 +13325,7 @@ L86E5A2:
 	bra L86E5C0
 
 L86E5B2:
-	lda #$8600
+	lda #bank100(L86E754)
 	sta $01
 	lda #L86E754
 	sta $00
@@ -13354,7 +13354,7 @@ L86E5E9:
 	and #$00FF
 	cmp #$001D
 	bne L86E60A
-	lda #$8600
+	lda #bank100(L86E769)
 	sta $01
 	lda #L86E769
 	sta $00
@@ -13362,7 +13362,7 @@ L86E5E9:
 	bra L86E647
 
 L86E60A:
-	lda #$8600
+	lda #bank100(L86E762)
 	sta $01
 	lda #L86E762
 	sta $00
@@ -13372,7 +13372,7 @@ L86E60A:
 L86E61A:
 	lda $0760
 	jsr L86E68D
-	lda #$8600
+	lda #bank100(L86E75B)
 	sta $01
 	lda #L86E75B
 	sta $00
@@ -13383,7 +13383,7 @@ L86E630:
 	lda $0760
 	ldx $075E
 	jsr L86E6BF
-	lda #$8600
+	lda #bank100(L86E770)
 	sta $01
 	lda #L86E770
 	sta $00
@@ -13466,7 +13466,7 @@ L86E6BF:
 	pla
 	lda #$0050
 	pha
-	lda #$8600
+	lda #bank100(L86E777)
 	sta $01
 	lda #L86E777
 	sta $00
@@ -13480,9 +13480,9 @@ L86E6DC:
 	asl A
 	adc $15
 	tax
-	lda $9589F1,X
+	lda.l (L9589F0 + 1),X
 	sta $72
-	lda $9589F0,X
+	lda.l L9589F0,X
 	sta $71
 	lda #$0008
 	jsr L86F834
@@ -13565,13 +13565,13 @@ L86E7B5:
 	clc
 	jsr L86ED2A
 	jsr L86F7DA
-	lda #$8600
+	lda #bank100(L86E925)
 	sta $01
 	lda #L86E925
 	sta $00
 	jsl L808EAD
 	jsr L86F7DA
-	lda #$8600
+	lda #bank100(L86E92E)
 	sta $01
 	lda #L86E92E
 	sta $00
@@ -13591,7 +13591,7 @@ L86E7F8:
 	lda $1012
 	jsr L86E991
 	jsr L86F7DA
-	lda #$8600
+	lda #bank100(L86E925)
 	sta $01
 	lda #L86E925
 	sta $00
@@ -13600,7 +13600,7 @@ L86E7F8:
 	ldx #$0800
 	jsr L86ECAB
 	jsr L86F7DA
-	lda #$8600
+	lda #bank100(L86E937)
 	sta $01
 	lda #L86E937
 	sta $00
@@ -13612,7 +13612,7 @@ L86E7F8:
 	lda $075F
 	jsr L86EC82
 	jsr L86F7DA
-	lda #$8600
+	lda #bank100(L86E952)
 	sta $01
 	lda #L86E952
 	sta $00
@@ -13653,13 +13653,13 @@ L86E88B:
 	sec
 	jsr L86ED2A
 	jsr L86F7DA
-	lda #$8600
+	lda #bank100(L86E95B)
 	sta $01
 	lda #L86E95B
 	sta $00
 	jsl L808EAD
 	jsr L86F7DA
-	lda #$8600
+	lda #bank100(L86E964)
 	sta $01
 	lda #L86E964
 	sta $00
@@ -13680,7 +13680,7 @@ L86E8CE:
 	lda $1013
 	jsr L86E991
 	jsr L86F7DA
-	lda #$8600
+	lda #bank100(L86E95B)
 	sta $01
 	lda #L86E95B
 	sta $00
@@ -13689,7 +13689,7 @@ L86E8CE:
 	ldx #$0800
 	jsr L86ECAB
 	jsr L86F7DA
-	lda #$8600
+	lda #bank100(L86E96D)
 	sta $01
 	lda #L86E96D
 	sta $00
@@ -13701,7 +13701,7 @@ L86E8CE:
 	lda $0760
 	jsr L86EC82
 	jsr L86F7DA
-	lda #$8600
+	lda #bank100(L86E988)
 	sta $01
 	lda #L86E988
 	sta $00
@@ -14070,12 +14070,12 @@ L86EC5C:
 	rts
 
 L86EC5D:
-	lda #$C900
+	lda #bank100(LC9EA25)
 	sta $72
-	lda #$EA25
+	lda #LC9EA25
 	sta $71
 	jsr L86F7E7
-	lda #$8600
+	lda #bank100(L86EC79)
 	sta $01
 	lda #L86EC79
 	sta $00
@@ -14230,7 +14230,7 @@ L86ED8C:
 	rts
 
 L86ED8D:
-	lda #$8600
+	lda #bank100(L86ED9C)
 	sta $01
 	lda #L86ED9C
 	sta $00
@@ -14242,7 +14242,7 @@ L86ED9C:
 
 L86EDA3:
 	jsr L86EDBE
-	lda #$8600
+	lda #bank100(L86EDB5)
 	sta $01
 	lda #L86EDB5
 	sta $00
@@ -14505,7 +14505,7 @@ L86EF80:
 .db $01 $FE $40 $7E $60 $00 $20
 
 L86EF87:
-	lda #$8600
+	lda #bank100(L86EFAB)
 	sta $01
 	lda #L86EFAB
 	sta $00
@@ -14513,7 +14513,7 @@ L86EF87:
 	lda $1003
 	bit $01
 	bne L86EFAA
-	lda #$8600
+	lda #bank100(L86EFB2)
 	sta $01
 	lda #L86EFB2
 	sta $00
@@ -14528,7 +14528,7 @@ L86EFB2:
 
 L86EFB9:
 	jsr L86F7DA
-	lda #$8600
+	lda #bank100(L86EFCB)
 	sta $01
 	lda #L86EFCB
 	sta $00
@@ -14540,7 +14540,7 @@ L86EFCB:
 
 L86EFD4:
 	jsr L86F7DA
-	lda #$8600
+	lda #bank100(L86EFE6)
 	sta $01
 	lda #L86EFE6
 	sta $00
@@ -14552,7 +14552,7 @@ L86EFE6:
 
 L86EFEF:
 	jsr L86F7DA
-	lda #$8600
+	lda #bank100(L86F001)
 	sta $01
 	lda #L86F001
 	sta $00
@@ -14620,7 +14620,7 @@ L86F063:
 	lda $959119,X
 	sta $71
 	jsr L86F0FB
-	lda #$8600
+	lda #bank100(L86F085)
 	sta $01
 	lda #L86F085
 	sta $00
@@ -14891,7 +14891,7 @@ L86F262:
 
 L86F265:
 	jsr L86F7DA
-	lda #$8600
+	lda #bank100(L86F277)
 	sta $01
 	lda #L86F277
 	sta $00
@@ -15546,7 +15546,7 @@ L86F70B:
 	lda $1003
 	bit #$0001
 	bne L86F721
-	lda #$8600
+	lda #bank100(L86F722)
 	sta $01
 	lda #L86F722
 	sta $00
@@ -15765,9 +15765,9 @@ L86F870:
 	and #$00FF
 	cmp #$0020
 	bne L86F89D
-	lda #$BF00
+	lda #bank100(LBFD5D6)
 	sta $72
-	lda #$D5D6
+	lda #LBFD5D6
 	sta $71
 	lda #$0020
 	jsr L86F834
@@ -15795,7 +15795,7 @@ L86F8BC:
 	dex
 	dex
 	bne L86F8A0
-	lda #$8600
+	lda #bank100(L86F8EE)
 	sta $01
 	lda #L86F8EE
 	sta $00

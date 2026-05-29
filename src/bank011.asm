@@ -35,6 +35,7 @@ L8B802B:
 L8B802C:
 .db $20 $00
 
+L8B802E:
 .dw L8B8190
 .dw L8B8190
 .dw L8B8190
@@ -312,6 +313,7 @@ L8B8190:
 .db $02 $05 $02 $0B $30 $08 $FF $FF
 .db $00 $21 $01 $0D $16 $44 $00 $00
 
+L8B85E0:
 .dw L8B8640
 .dw L8B8641
 .dw L8B86FA
@@ -789,6 +791,7 @@ TALK_EVENT_DATA:
 
 .db TERMINATOR
 
+L8B8A93:
 TALK_EVENT_SCRIPTS_TABLE:
 .dw L8B8AE1
 .dw L8B8AF2
@@ -2180,6 +2183,7 @@ L8B9901:
 L8B991F:
 .db $09 $2D $99 $00 $80 $00 $80 $00 $80 $0A $00 $0B $4E $00 $00 $4E $01 $00 $02 $03 $03 $0C $04 $FF $05 $20 $FF $02 $FF $FF
 
+L8B993D:
 .dw L8B999D
 .dw L8B999E
 .dw L8B999F
@@ -2238,7 +2242,10 @@ L8B999F:
 
 .db $00 $03 $10 $13 $02 $00 $00 $00
 .db $03 $05 $0B $03 $05 $0A $00 $0C
-.db $00 $0F $0C $00 $10 $00 $EE $99
+.db $00 $0F $0C $00 $10 $00
+
+L8B99B6:
+.db $EE $99
 .db $FF $99 $09 $9A $13 $9A $35 $9A
 .db $1F $9A $1F $9A $2A $9A $35 $9A
 .db $41 $9A $35 $9A $4D $9A $62 $9A
@@ -2266,7 +2273,10 @@ L8B999F:
 .db $1F $1A $10 $28 $FF $02 $13 $13
 .db $13 $1D $1E $11 $19 $03 $09 $FF
 .db $19 $02 $13 $13 $13 $13 $1D $1E
-.db $FF $FF $F6 $9A $EC $9A $EC $9A
+.db $FF $FF
+
+L8B9A92:
+.db $F6 $9A $EC $9A $EC $9A
 .db $EE $9A $F2 $9A $EC $9A $EC $9A
 .db $EE $9A $F2 $9A $EE $9A $F2 $9A
 .db $EE $9A $F2 $9A $EE $9A $F0 $9A
@@ -2733,6 +2743,7 @@ CHAPTERS_NAMES:
 
 .INCLUDE "textboxes.gen.asm"
 
+L8BD662:
 CHARACTERS_NAMES:
 .dw L_NAME_MARTH
 .dw L_NAME_CAEDA
@@ -2879,6 +2890,7 @@ CHARACTERS_NAMES:
 
 .INCLUDE "characters.gen.asm"
 
+L8BDD30:
 CLASSES_NAMES:
 .dw L_CLASS_LORD
 .dw L_CLASS_FIGHTER
@@ -2928,6 +2940,7 @@ CLASSES_NAMES:
 
 .INCLUDE "classes.gen.asm"
 
+L8BDF58:
 ITEMS_NAMES:
 .dw L_ITEM_IRON_SWORD
 .dw L_ITEM_STEEL_SWORD

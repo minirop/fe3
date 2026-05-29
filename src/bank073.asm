@@ -44,6 +44,7 @@
 .INCBIN "24CCB2.bin" ; graphics
 .INCBIN "24D90A.bin" ; graphics
 .INCBIN "24E508.bin" ; graphics
+LC9EA25:
 .INCBIN "24EA25.bin" READ 5595 ; graphics
 
 .ENDS

@@ -3,6 +3,7 @@
 
 .SECTION "Bank20" FORCE
 
+L948000:
 .db $FF $FF $FF $FF $FF $FF $FF $FF
 .db $DF $FF $DB $FF $87 $FB $DF $FF
 .db $FF $FF $FF $FF $FF $FF $FF $FF
