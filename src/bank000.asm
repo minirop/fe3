@@ -5765,13 +5765,13 @@ L80AADC:
 	asl
 	asl
 	tax
-	lda.w LDAC800,X
+	lda.l LDAC800,X
 	sta $099B,Y
-	lda.w (LDAC800 + 2),X
+	lda.l (LDAC800 + 2),X
 	sta $099D,Y
-	lda.w (LDAC800 + 4),X
+	lda.l (LDAC800 + 4),X
 	sta $09DB,Y
-	lda.w (LDAC800 + 6),X
+	lda.l (LDAC800 + 6),X
 	sta $09DD,Y
 	ply
 	inc $19
@@ -6192,7 +6192,7 @@ L80AE27:
 	cmp #$2000
 	bcc L80AE43
 	ldx $19
-	lda.w LDAA800,X
+	lda.l LDAA800,X
 	sta $099B,Y
 	bra L80AE4C
 L80AE43:

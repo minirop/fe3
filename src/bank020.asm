@@ -1028,6 +1028,8 @@ L948000:
 .db $B5 $FA $AE $F5 $FF $FF $FF $FF
 .db $D7 $FF $47 $FF $55 $FB $55 $EB
 .db $49 $BF $1D $FB $FF $FF $FF $FF
+
+L94A000:
 .db $FF $FF $C3 $FB $91 $DD $18 $DE
 .db $18 $DE $18 $DE $89 $ED $C3 $FB
 .db $FF $FF $E3 $FB $C3 $FB $E3 $FB
@@ -2605,6 +2607,7 @@ L94D080:
 .dw RGB(0, 0, 0) RGB(160, 56, 24) RGB(248, 240, 80) RGB(0, 24, 104)
 .dw RGB(0, 0, 0) RGB(232, 232, 232) RGB(24, 168, 32) RGB(0, 24, 104)
 
+L94D0E0:
 .db $EF $3D $F4 $0C $DF $2B $60 $34
 .db $EF $3D $A0 $25 $F8 $4F $60 $34
 

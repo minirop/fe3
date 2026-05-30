@@ -5720,10 +5720,10 @@ L96E1B3:
 	tax
 	ldy #$0010
 L96E1D1:
-	lda.w LD7E800,X
+	lda.l LD7E800,X
 	and #$001F
 	sta $15
-	lda.w LD7E800,X
+	lda.l LD7E800,X
 	and #$03E0
 	asl A
 	asl A
@@ -5732,7 +5732,7 @@ L96E1D1:
 	clc
 	adc $15
 	sta $15
-	lda.w LD7E800,X
+	lda.l LD7E800,X
 	and #$7C00
 	xba
 	lsr A

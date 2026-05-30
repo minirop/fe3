@@ -795,7 +795,7 @@ L828625:
 	nop
 	lda.l RDMPYL
 	tax
-	lda.w ITEMS_DATA,X
+	lda.l ITEMS_DATA,X
 	bit #$0018
 	beq L828655
 	lda $07F4
@@ -942,7 +942,7 @@ L828754:
 	nop
 	lda.l RDMPYL
 	tax
-	lda.w (ITEMS_DATA + 11),X
+	lda.l (ITEMS_DATA + 11),X
 	and #$0007
 	xba
 	lsr
@@ -1247,7 +1247,7 @@ L828A15:
 	nop
 	lda.l RDMPYL
 	tax
-	lda.w (ITEMS_DATA + 11),X
+	lda.l (ITEMS_DATA + 11),X
 	and #$0003
 	xba
 	lsr
@@ -1358,7 +1358,7 @@ L828B11:
 	nop
 	lda.l RDMPYL
 	tax
-	lda.w (ITEMS_DATA + 11),X
+	lda.l (ITEMS_DATA + 11),X
 	and #$0003
 	xba
 	lsr
@@ -2406,7 +2406,7 @@ L829428:
 	clc
 	adc $15
 	tax
-	lda.w L88C526,X
+	lda.l L88C526,X
 	ldy #$0003
 	jsr L82953A
 	cmp #$0014
@@ -2517,7 +2517,7 @@ L8294FE:
 	tax
 	tya
 	sep #$20
-	and.w (ITEMS_DATA + 11),X
+	and.l (ITEMS_DATA + 11),X
 	beq L829531
 	plp
 	clc
@@ -2580,7 +2580,7 @@ L829578:
 	nop
 	lda.l RDMPYL
 	tax
-	lda.w (ITEMS_DATA + 11),X
+	lda.l (ITEMS_DATA + 11),X
 	ldx #$0000
 	ldy #$000C
 	bit #$0001
@@ -2600,7 +2600,7 @@ L8295B0:
 	rep #$20
 	stz $15
 	stz $17
-	lda.w (L8383C3 + 1),X
+	lda.l (L8383C3 + 1),X
 	sep #$20
 	sta $15
 	bit #$80
@@ -2814,7 +2814,7 @@ L82974B:
 	nop
 	lda.l RDMPYL
 	tax
-	lda.w (ITEMS_DATA + 11),X
+	lda.l (ITEMS_DATA + 11),X
 	and #$0007
 	xba
 	lsr
@@ -3123,7 +3123,7 @@ L82A04A:
 	ldy #$0020
 	ldx #$0000
 L82A05B:
-	lda.w L94FFE0,X
+	lda.l L94FFE0,X
 	sta $7F5310,X
 	inx
 	dey
@@ -3610,7 +3610,7 @@ L82A44A:
 	ldy #$0040
 	ldx #$0000
 L82A465:
-	lda.w LD0F800,X
+	lda.l LD0F800,X
 	sta $7EBDE7,X
 	inx
 	dey
@@ -3837,14 +3837,14 @@ L82A602:
 	php
 	ldx #$0000
 L82A606:
-	lda.w L82A638,X
+	lda.l L82A638,X
 	cmp $1B
 	beq L82A612
 	inx
 	inx
 	bra L82A606
 L82A612:
-	lda.w L82A640,X
+	lda.l L82A640,X
 	pha
 	lda $0DFB
 	beq L82A626
@@ -4028,7 +4028,7 @@ L82A756:
 	ldy #$0040
 	ldx #$0000
 L82A76D:
-	lda.w LD0F800,X
+	lda.l LD0F800,X
 	sta $7EBDE7,X
 	inx
 	dey
@@ -4080,7 +4080,7 @@ L82A7BD:
 	rep #$20
 	asl A
 	tax
-	lda.w L82AC73,X
+	lda.l L82AC73,X
 	sta $0D08
 	plp
 	rts
@@ -4372,7 +4372,7 @@ L82A9DE:
 	rep #$20
 	and #$00FF
 	tax
-	lda.w L809DCF,X
+	lda.l L809DCF,X
 	jsl L80B467
 	sep #$20
 	lda $0D93
@@ -4456,7 +4456,7 @@ L82AA7E:
 	asl A
 	tax
 	rep #$20
-	lda.w L82AC73,X
+	lda.l L82AC73,X
 	sec
 	sbc $0D08
 	sta $17
@@ -4543,7 +4543,7 @@ L82AB11:
 	txa
 	asl A
 	tax
-	lda.w L82AC73,X
+	lda.l L82AC73,X
 	asl A
 	sta $15
 	lda $4214
@@ -4582,7 +4582,7 @@ L82AB54:
 	txa
 	asl A
 	tax
-	lda.w L82AC73,X
+	lda.l L82AC73,X
 	asl A
 	sta $15
 	lda $4214
@@ -4646,7 +4646,7 @@ L82ABA3:
 L82ABBB:
 	inx
 	inx
-	lda.w L82ABF1,X
+	lda.l L82ABF1,X
 	cmp $17
 	bcc L82ABBB
 	txa
@@ -5365,7 +5365,7 @@ L82B249:
 	ldy #$0040
 	ldx #$0000
 L82B25D:
-	lda.w LD0F800,X
+	lda.l LD0F800,X
 	sta $7EBDE7,X
 	inx
 	dey
@@ -5498,7 +5498,7 @@ L82B369:
 	php
 	ldx #$0000
 L82B36D:
-	lda.w L82B392,X
+	lda.l L82B392,X
 	cmp $0DF5
 	beq L82B37A
 	inx
@@ -6131,9 +6131,9 @@ L82B82B:
 	clc
 	adc $15
 	tax
-	lda.w L80BEE4,X
+	lda.l L80BEE4,X
 	sta $00
-	lda.w (L80BEE4 + 1),X
+	lda.l (L80BEE4 + 1),X
 	sta $01
 	ldx $17
 	jsl L82D21F
@@ -6179,9 +6179,9 @@ L82B8AF:
 	clc
 	adc $15
 	tax
-	lda.w (L80BDE5 + 1),X
+	lda.l (L80BDE5 + 1),X
 	sta $01
-	lda.w L80BDE5,X
+	lda.l L80BDE5,X
 	sta $00
 	ldx $0D80
 	jsl L82D23B
@@ -9072,7 +9072,7 @@ L82CCE0:
 	lda #$0004
 L82CD05:
 	tax
-	lda.w L809DD9,X
+	lda.l L809DD9,X
 	jsr L82CD2E
 	bra L82CD15
 
@@ -9217,9 +9217,9 @@ L82CE10:
 	phx
 	phy
 	ldx #$0000
-	lda.w L80BD5E
+	lda.l L80BD5E
 	sta $00
-	lda.w (L80BD5E + 1)
+	lda.l (L80BD5E + 1)
 	sta $01
 	ldx $0D80
 	lda $0D1E,X
@@ -9263,9 +9263,9 @@ L82CE53:
 	clc
 	adc $15
 	tax
-	lda.w L80BEE4,X
+	lda.l L80BEE4,X
 	sta $00
-	lda.w (L80BEE4 + 1),X
+	lda.l (L80BEE4 + 1),X
 	sta $01
 	ldx $17
 	jsl L82D21F
@@ -9308,9 +9308,9 @@ L82CEBA:
 	clc
 	adc $15
 	tax
-	lda.w L80BF11,X
+	lda.l L80BF11,X
 	sta $00
-	lda.w (L80BF11 + 1),X
+	lda.l (L80BF11 + 1),X
 	sta $01
 	ldx $17
 	jsl L82D21F
@@ -9642,9 +9642,9 @@ L82D12E:
 	clc
 	adc $15
 	tax
-	lda.w (L80BF41 + 1),X
+	lda.l (L80BF41 + 1),X
 	sta $01
-	lda.w L80BF41,X
+	lda.l L80BF41,X
 	sta $00
 	ldx $0D80
 	jsl L82D25A
@@ -9672,9 +9672,9 @@ L82D16E:
 	clc
 	adc $15
 	tax
-	lda.w (L80BF6E + 1),X
+	lda.l (L80BF6E + 1),X
 	sta $01
-	lda.w L80BF6E,X
+	lda.l L80BF6E,X
 	sta $00
 	ldx $0D80
 	jsl L82D25A
@@ -10523,49 +10523,49 @@ L82D7C1:
 	php
 	phx
 	ldx #$0000
-	lda.w L82D7AD,X
+	lda.l L82D7AD,X
 	ora $15
 	ldy #$0040
 	sta [$06],Y
 	inx
 	inx
-	lda.w L82D7AD,X
+	lda.l L82D7AD,X
 	ora $15
 	ldy #$0050
 	sta [$06],Y
 	inx
 	inx
-	lda.w L82D7AD,X
+	lda.l L82D7AD,X
 	ora $15
 	ldy #$0080
 	sta [$06],Y
 	inx
 	inx
-	lda.w L82D7AD,X
+	lda.l L82D7AD,X
 	ora $15
 	ldy #$0090
 	sta [$06],Y
 	inx
 	inx
-	lda.w L82D7AD,X
+	lda.l L82D7AD,X
 	ora $15
 	ldy #$0000
 	sta [$06],Y
 	inx
 	inx
-	lda.w L82D7AD,X
+	lda.l L82D7AD,X
 	ora $15
 	ldy #$0010
 	sta [$06],Y
 	inx
 	inx
-	lda.w L82D7AD,X
+	lda.l L82D7AD,X
 	ora $15
 	ldy #$00C0
 	sta [$06],Y
 	inx
 	inx
-	lda.w L82D7AD,X
+	lda.l L82D7AD,X
 	ora $15
 	ldy #$00D0
 	sta [$06],Y
@@ -10575,7 +10575,7 @@ L82D7C1:
 L82D831:
 	iny
 	iny
-	lda.w L82D7AD,X
+	lda.l L82D7AD,X
 	sta [$06],Y
 	cpy #$000E
 	bcc L82D831
@@ -10585,7 +10585,7 @@ L82D831:
 L82D843:
 	iny
 	iny
-	lda.w L82D7AD,X
+	lda.l L82D7AD,X
 	sta [$06],Y
 	cpy #$00CE
 	bcc L82D843
@@ -11641,7 +11641,7 @@ L82DF23:
 	ldy #$0020
 	ldx #$0000
 L82DF44:
-	lda.w L94FFE0,X
+	lda.l L94FFE0,X
 	sta $7F5310,X
 	inx
 	dey
@@ -11701,7 +11701,7 @@ L82DFC1:
 	ldy #$0020
 	ldx #$0000
 L82DFD7:
-	lda.w LD0E3C9,X
+	lda.l LD0E3C9,X
 	sta $7F5310,X
 	inx
 	dey
@@ -11930,7 +11930,7 @@ L82E1D6:
 	ldy #$0020
 	ldx #$0000
 L82E1DF:
-	lda.w L94FFE0,X
+	lda.l L94FFE0,X
 	sta $7F5310,X
 	inx
 	dey
@@ -12026,10 +12026,10 @@ L82E29C:
 	and #$00FF
 	bne L82E2C9
 L82E2A8:
-	lda.w LD0F800,X
+	lda.l LD0F800,X
 	sta $7EBDE7,X
 	sta $7EBDF7,X
-	lda.w LD0F820,X
+	lda.l LD0F820,X
 	sta $7EBE07,X
 	sta $7EBE17,X
 	inx
@@ -12039,10 +12039,10 @@ L82E2A8:
 	bra L82E2E8
 
 L82E2C9:
-	lda.w LD0F810,X
+	lda.l LD0F810,X
 	sta $7EBDE7,X
 	sta $7EBDF7,X
-	lda.w LD0F830,X
+	lda.l LD0F830,X
 	sta $7EBE07,X
 	sta $7EBE17,X
 	inx

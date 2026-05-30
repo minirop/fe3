@@ -6,6 +6,7 @@
 L8B8000:
 .db $FF $03 $FF $FF
 
+L8B8004:
 .dl L8B801F
 .dl L8B8020
 .dl L8B8021

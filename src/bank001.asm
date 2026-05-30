@@ -2786,7 +2786,7 @@ L819770:
 	lda.l $004216
 	sep #$20
 	tax
-	lda.w ITEMS_DATA,X
+	lda.l ITEMS_DATA,X
 	and $0C04
 	bne L819796
 	ply
@@ -3197,7 +3197,7 @@ L819ADB:
 	sta $0BD1
 L819B19:
 	ldx $0BD1
-	lda.w L819BCF,X
+	lda.l L819BCF,X
 	cmp #$FFFF
 	bne L819B2B
 	jsl L81E475
@@ -3207,12 +3207,12 @@ L819B2B:
 	sep #$20
 	lda #$01
 	sta $0AB9
-	lda.w (L819BD1 + 1),X
+	lda.l (L819BD1 + 1),X
 	jsl L93DB8F
 	lda #$01
 	sta $0C07
 	ldx $0BD1
-	lda.w L819BD1,X
+	lda.l L819BD1,X
 	sta $0C08
 	lda $0ABA
 	bne L819B52
@@ -3223,7 +3223,7 @@ L819B52:
 L819B54:
 	sta $0C09
 	rep #$20
-	lda.w L819BCF,X
+	lda.l L819BCF,X
 	clc
 	adc $0BB0
 	sta $0C05
@@ -3241,7 +3241,7 @@ L819B54:
 	sta $0C1B
 	jsl L81D5A8
 	ldx $0BD1
-	lda.w (L819BD1 + 1),X
+	lda.l (L819BD1 + 1),X
 	ldx $15
 	ldy #$DF58
 	jsl L81E21F
@@ -3325,7 +3325,7 @@ L819C59:
 	tax
 	lda $07DA,X
 	sta $0B61
-	lda.w L819CFA,X
+	lda.l L819CFA,X
 	pha
 	lda $0B62
 	inc A
@@ -8371,7 +8371,7 @@ L81C6EF:
 	lda.l $004216
 	sep #$20
 	tax
-	lda.w (ITEMS_DATA + 1),X
+	lda.l (ITEMS_DATA + 1),X
 	sta $0C08
 	jsl L81D77B
 L81C712:
@@ -8444,7 +8444,7 @@ L81C792:
 L81C794:
 	sta $0C09
 	ldx $0B9E
-	lda.w L81E5BB,X
+	lda.l L81E5BB,X
 	asl A
 	sta $0C08
 	rep #$20
@@ -8945,7 +8945,7 @@ L81CB9C:
 	lda $7F4417
 	and #$00FF
 	tax
-	lda.w L888E1C,X
+	lda.l L888E1C,X
 	and #$00FF
 	sta $5A
 	lda $0C1C
@@ -9348,12 +9348,12 @@ L81CE48:
 	lda.l $004216
 	sep #$20
 	tax
-	lda.w (ITEMS_DATA + 13),X
+	lda.l (ITEMS_DATA + 13),X
 	rep #$20
 	and #$00FF
 	asl A
 	tax
-	lda.w L88A633,X
+	lda.l L88A633,X
 	sta $00
 	sep #$20
 	ldy #$0000
@@ -9597,9 +9597,9 @@ L81D12B:
 	and #$00FF
 	jsl L87A9E8
 	tax
-	lda.w PORTRAITS,X
+	lda.l PORTRAITS,X
 	sta $00
-	lda.w (PORTRAITS + 1),X
+	lda.l (PORTRAITS + 1),X
 	sta $01
 	ldx #$0800
 	jsl L81D920
@@ -9633,7 +9633,7 @@ L81D16B:
 	sta $00
 	ldy #$0010
 L81D174:
-	lda.w LD7E800,X
+	lda.l LD7E800,X
 	sta [$00]
 	inc $00
 	inc $00
@@ -9719,7 +9719,7 @@ L81D207:
 	sep #$20
 	tax
 	rep #$20
-	lda.w (ITEMS_DATA + 1),X
+	lda.l (ITEMS_DATA + 1),X
 	and #$00FF
 	asl A
 	asl A
@@ -10965,7 +10965,7 @@ L81DBCC:
 	lda #$0080
 	sta $17
 L81DBD7:
-	lda.w (ITEMS_DATA + 8),X
+	lda.l (ITEMS_DATA + 8),X
 	and #$00ff
 	xba
 	sta $15
@@ -11743,9 +11743,9 @@ L81E24A:
 	asl A
 	asl A
 	tax
-	lda.w L8B9AF8,X
+	lda.l L8B9AF8,X
 	sta [$03]
-	lda.w (L8B9AF8 + 2),X
+	lda.l (L8B9AF8 + 2),X
 	cmp #$FFFF
 	beq L81E273
 	ldy #$0040
@@ -11790,7 +11790,7 @@ L81E2A0:
 	asl A
 	asl A
 	tax
-	lda.w (L8B9AF8 + 2),X
+	lda.l (L8B9AF8 + 2),X
 	cmp #$FFFF
 	bne L81E2C1
 	lda $17
@@ -12125,7 +12125,7 @@ L81E512:
 	sta $00
 L81E534:
 	ldy $0B34
-	lda $E5BB,Y
+	lda.w L81E5BB,Y
 	and #$00FF
 	asl A
 	asl A
@@ -12383,27 +12383,27 @@ L81E762:
 	lda #$0000
 	sta $15
 	ldx $0BA7
-	lda.w (ITEMS_DATA + 3),X
+	lda.l (ITEMS_DATA + 3),X
 	jsr L81E7E9
 	lda #$0080
 	sta $15
 	ldx $0BA7
-	lda.w (ITEMS_DATA + 4),X
+	lda.l (ITEMS_DATA + 4),X
 	jsr L81E7E9
 	lda #$0100
 	sta $15
 	ldx $0BA7
-	lda.w (ITEMS_DATA + 6),X
+	lda.l (ITEMS_DATA + 6),X
 	jsr L81E7E9
 	lda #$0180
 	sta $15
 	ldx $0BA7
-	lda.w (ITEMS_DATA + 5),X
+	lda.l (ITEMS_DATA + 5),X
 	jsr L81E7E9
 	lda #$0200
 	sta $15
 	ldx $0BA7
-	lda.w (ITEMS_DATA + 2),X
+	lda.l (ITEMS_DATA + 2),X
 	jsr L81E7E9
 	jmp L81E756
 
@@ -13160,22 +13160,22 @@ L81EEC2:
 	lda $0B6C
 	asl A
 	tax
-	lda.w L81EF49,X
+	lda.l L81EF49,X
 	sta $0B6C
 	lda $0B6A
 	asl A
 	tax
-	lda.w L81EF49,X
+	lda.l L81EF49,X
 	sta $0B6A
 	lda $0B68
 	asl A
 	tax
-	lda.w L81EF49,X
+	lda.l L81EF49,X
 	sta $0B68
 	lda $0B66
 	asl A
 	tax
-	lda.w L81EF49,X
+	lda.l L81EF49,X
 	sta $0B66
 	plx
 	lda $0B66

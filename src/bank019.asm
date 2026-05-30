@@ -3375,7 +3375,7 @@ L93CAC6:
 	lda.l $004216
 	sep #$20
 	tax
-	lda.w L889074,X
+	lda.l (CLASSES_INITIAL_STATS + 8),X
 	sta $7F4404
 L93CAEC:
 	lda $7F4416
@@ -4341,7 +4341,7 @@ L93D2B2:
 	sep #$30
 	ldx #$00
 L93D2B7:
-	cmp L8384A6,X
+	cmp.l L8384A6,X
 	beq L93D2D6
 	inx
 	cpx #$08
@@ -4354,7 +4354,7 @@ L93D2C4:
 	sep #$30
 	ldx #$00
 L93D2C9:
-	cmp L83849F,X
+	cmp.l L83849F,X
 	beq L93D2D6
 	inx
 	cpx #$08
@@ -4363,7 +4363,7 @@ L93D2D4:
 	bra L93D2D4
 
 L93D2D6:
-	lda.w L8384AD,X
+	lda.l L8384AD,X
 	cmp #$2C
 	bne L93D2EB
 	lda $07DF
@@ -4383,7 +4383,7 @@ L93D2ED:
 	sep #$30
 	ldx #$00
 L93D2F2:
-	cmp L83849F,X
+	cmp.l L83849F,X
 	beq L93D2FF
 	inx
 	cpx #$08
@@ -4392,7 +4392,7 @@ L93D2FD:
 	bra L93D2FD
 
 L93D2FF:
-	lda.w L8384A6,X
+	lda.l L8384A6,X
 	plp
 	rtl
 
@@ -4401,7 +4401,7 @@ L93D305:
 	sep #$30
 	ldx #$00
 L93D30A:
-	cmp L8384A6,X
+	cmp.l L8384A6,X
 	beq L93D317
 	inx
 	cpx #$08
@@ -4410,7 +4410,7 @@ L93D315:
 	bra L93D315
 
 L93D317:
-	lda.w L83849F,X
+	lda.l L83849F,X
 	plp
 	rtl
 
@@ -4420,7 +4420,7 @@ L93D31D:
 	and #$00FF
 	tax
 	sep #$20
-	lda.w L848C15,X
+	lda.l L848C15,X
 	sta $07CE
 	plp
 	rtl
@@ -5158,27 +5158,27 @@ L93D951:
 	sep #$20
 	lda $7F4408
 	clc
-	adc L88906F,X
+	adc.l (CLASSES_INITIAL_STATS + 3),X
 	sta $7F4408
 	lda $7F4409
 	clc
-	adc L88906C,X
+	adc.l CLASSES_INITIAL_STATS,X
 	sta $7F4409
 	lda $7F440A
 	clc
-	adc L88906D,X
+	adc.l (CLASSES_INITIAL_STATS + 1),X
 	sta $7F440A
 	lda $7F440B
 	clc
-	adc L88906E,X
+	adc.l (CLASSES_INITIAL_STATS + 2),X
 	sta $7F440B
 	lda $7F440C
 	clc
-	adc L889070,X
+	adc.l (CLASSES_INITIAL_STATS + 4),X
 	sta $7F440C
 	lda $7F440D
 	clc
-	adc L889071,X
+	adc.l (CLASSES_INITIAL_STATS + 5),X
 	sta $7F440D
 	plp
 	rtl
@@ -5247,27 +5247,27 @@ L93D9FF:
 	sep #$20
 	lda $7F4408
 	sec
-	sbc L88906F,X
+	sbc.l (CLASSES_INITIAL_STATS + 3),X
 	sta $7F4408
 	lda $7F4409
 	sec
-	sbc L88906C,X
+	sbc.l CLASSES_INITIAL_STATS,X
 	sta $7F4409
 	lda $7F440A
 	sec
-	sbc L88906D,X
+	sbc.l (CLASSES_INITIAL_STATS + 1),X
 	sta $7F440A
 	lda $7F440B
 	sec
-	sbc L88906E,X
+	sbc.l (CLASSES_INITIAL_STATS + 2),X
 	sta $7F440B
 	lda $7F440C
 	sec
-	sbc L889070,X
+	sbc.l (CLASSES_INITIAL_STATS + 4),X
 	sta $7F440C
 	lda $7F440D
 	sec
-	sbc L889071,X
+	sbc.l (CLASSES_INITIAL_STATS + 5),X
 	sta $7F440D
 	plp
 	rtl
@@ -5307,7 +5307,7 @@ L93DAA2:
 	nop
 	lda.l $004216
 	tax
-	lda.w (ITEMS_DATA + 4),X
+	lda.l (ITEMS_DATA + 4),X
 L93DABC:
 	sep #$20
 	sta $0798
@@ -6789,7 +6789,7 @@ L93E5C0:
 L93E61A:
 .INDEX 16
 	rep #$20
-	lda.w #bank(MAP_DATA) << 8
+	lda.w #bank100(MAP_DATA)
 	sta $01
 	lda.w #MAP_DATA
 	sta $00
@@ -7123,7 +7123,7 @@ L93E8F8:
 	lda.l $004216
 	sep #$20
 	tax
-	lda.w (ITEMS_DATA + 11),X
+	lda.l (ITEMS_DATA + 11),X
 	plx
 	bit #$80
 	beq L93E961
@@ -7188,7 +7188,7 @@ L93E96D:
 	lda.l $004216
 	sep #$20
 	tax
-	lda.w (ITEMS_DATA + 11),X
+	lda.l (ITEMS_DATA + 11),X
 	plx
 	bit #$80
 	beq L93E9D6
@@ -7413,7 +7413,7 @@ L93EB04:
 	nop
 	lda.l $004216
 	tax
-	lda.w (ITEMS_DATA + 11),X
+	lda.l (ITEMS_DATA + 11),X
 	and #$00FF
 	bit #$0002
 	beq L93EB2D
@@ -7429,7 +7429,7 @@ L93EB2D:
 	nop
 	lda.l $004216
 	tax
-	lda.w (ITEMS_DATA + 11),X
+	lda.l (ITEMS_DATA + 11),X
 	and #$00FF
 	bit #$0001
 	bne L93EB6D

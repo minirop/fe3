@@ -478,7 +478,7 @@ L8488D3:
 	lda #$01
 	sta $15B4
 	ldx $07DF
-	lda.w L84E5AF,X
+	lda.l L84E5AF,X
 	rep #$30
 	and #$00FF
 	clc
@@ -892,6 +892,7 @@ L848C01:
 	plp
 	rts
 
+L848C15:
 CHAPTERS_ID:
 .db CHAPTER_000_DEBUG
 .db CHAPTER_101_MARTH_EMBARKS
@@ -1240,7 +1241,7 @@ L848EC8:
 	ldy #$0200
 	ldx #$0000
 L848ED1:
-	lda.w L858000,X
+	lda.l L858000,X
 	sta $7F5130,X
 	inx
 	dey
@@ -1252,7 +1253,7 @@ L848ED1:
 	ldy #$0020
 	ldx #$0000
 L848EEC:
-	lda.w L8581E0,X
+	lda.l L8581E0,X
 	sta $7F52F0,X
 	inx
 	dey
@@ -1262,7 +1263,7 @@ L848EEC:
 	ldy #$0020
 	ldx #$0000
 L848F00:
-	lda.w L8581E0,X
+	lda.l L8581E0,X
 	sta $7F52D0,X
 	inx
 	dey
@@ -1272,7 +1273,7 @@ L848F00:
 	ldy #$0020
 	ldx #$0000
 L848F14:
-	lda.w L8581E0,X
+	lda.l L8581E0,X
 	sta $7F5290,X
 	inx
 	dey
@@ -1282,7 +1283,7 @@ L848F14:
 	ldy #$0020
 	ldx #$0000
 L848F28:
-	lda.w L8581E0,X
+	lda.l L8581E0,X
 	sta $7F5270,X
 	inx
 	dey
@@ -1310,7 +1311,7 @@ L848F5B:
 	ldy #$0020
 	ldx #$0000
 L848F61:
-	lda.w L858160,X
+	lda.l L858160,X
 	sta $7F5230,X
 	inx
 	dey
@@ -1323,7 +1324,7 @@ L848F71:
 	ldy #$0020
 	ldx #$0000
 L848F77:
-	lda.w L858180,X
+	lda.l L858180,X
 	sta $7F5230,X
 	inx
 	dey
@@ -1336,7 +1337,7 @@ L848F87:
 	ldy #$0020
 	ldx #$0000
 L848F8D:
-	lda.w L8581A0,X
+	lda.l L8581A0,X
 	sta $7F5230,X
 	inx
 	dey
@@ -7414,6 +7415,8 @@ L84C59F:
 L84C5AF:
 .db $00 $13 $06 $07 $00 $11 $2D $00
 .db $13 $0A $00 $11 $0D $C4 $00 $00
+
+L84C5BF:
 .db $C8 $C5 $84 $DC $C5 $84 $F0 $C5
 .db $84 $00 $13 $06 $07 $00 $11 $A1
 .db $1A $C4 $00 $13 $0A $00 $11 $0B
@@ -7422,7 +7425,10 @@ L84C5AF:
 .db $0A $00 $11 $0B $2A $1F $0D $00
 .db $00 $00 $13 $06 $07 $00 $11 $A3
 .db $1A $C4 $00 $13 $0A $00 $11 $0B
-.db $2A $1F $0D $00 $00 $0D $C6 $84
+.db $2A $1F $0D $00 $00
+
+L84C604:
+.db $0D $C6 $84
 .db $2A $C6 $84 $47 $C6 $84 $00 $12
 .db $42 $00 $13 $05 $00 $11 $F9 $00
 .db $13 $06 $07 $00 $11 $A1 $1A $C4
@@ -9781,7 +9787,7 @@ L84DD6B:
 	lda #$01
 	sta $15B4
 	ldx $07DF
-	lda.w L84E5AF,X
+	lda.l L84E5AF,X
 	rep #$30
 	and #$00FF
 	clc
@@ -10351,7 +10357,10 @@ L84E5AF:
 .db $07 $06 $06 $06 $05 $05 $06 $06
 .db $05 $05 $03 $03 $06 $04 $04 $04
 .db $04 $03 $05 $04 $04 $04 $03 $04
-.db $03 $03 $03 $00 $18 $18 $10 $08
+.db $03 $03 $03
+
+L84E5DA:
+.db $00 $18 $18 $10 $08
 .db $10 $18 $20 $08 $10 $10 $08 $10
 .db $18 $08 $08 $08 $10 $10 $10 $18
 .db $18 $10 $10 $18 $18 $28 $28 $10
@@ -11343,7 +11352,7 @@ L84EE5B:
 	bmi L84EEA2
 	sep #$30
 	ldx $07DF
-	lda.w L84E5DA,X
+	lda.l L84E5DA,X
 	rep #$30
 	and #$00FF
 	clc
@@ -11353,6 +11362,7 @@ L84EEA2:
 	plp
 	rts
 
+L84EEA4:
 .db $07 $07 $88 $00
 .db $00 $00 $00 $00 $00 $01 $00 $00
 .db $00 $00 $00 $00 $07 $06 $88 $00
@@ -13082,9 +13092,9 @@ L84FCDE:
 	adc $03
 	adc $03
 	tax
-	lda.w L84C5C0,X
+	lda.l (L84C5BF + 1),X
 	sta $04
-	lda.w L84C5BF,X
+	lda.l L84C5BF,X
 	sta $03
 	lda #$7F00
 	sta $01
@@ -13099,9 +13109,9 @@ L84FD0D:
 	adc $03
 	adc $03
 	tax
-	lda.w L84C605,X
+	lda.l (L84C604 + 1),X
 	sta $04
-	lda.w L84C604,X
+	lda.l L84C604,X
 	sta $03
 	lda #$7F00
 	sta $01

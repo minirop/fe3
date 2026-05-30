@@ -27,7 +27,7 @@ L868020:
 	beq L868043
 	ldx #$0000
 L868030:
-	lda.w L95ED53,X
+	lda.l L95ED53,X
 	sta.l $0010B8,X
 	inx
 	cpx #$003C
@@ -202,7 +202,7 @@ L868177:
 	tay
 	lsr A
 	tax
-	lda.w L95EDC3,X
+	lda.l L95EDC3,X
 	bne L86818B
 	lda $10B8,Y
 	inc A
@@ -211,7 +211,7 @@ L868177:
 L86818B:
 	lda $10B8,Y
 	inc A
-	cmp L95EDC3,X
+	cmp.l L95EDC3,X
 	bcc L868197
 	lda #$00
 L868197:
@@ -225,7 +225,7 @@ L86819D:
 	tay
 	lsr A
 	tax
-	lda.w L95EDC3,X
+	lda.l L95EDC3,X
 	bne L8681B3
 	lda $10B8,Y
 	clc
@@ -236,7 +236,7 @@ L8681B3:
 	lda $10B8,Y
 	clc
 	adc #$10
-	cmp L95EDC3,X
+	cmp.l L95EDC3,X
 	bcc L8681C1
 	lda #$00
 L8681C1:
@@ -250,7 +250,7 @@ L8681C7:
 	tay
 	lsr A
 	tax
-	lda.w L95EDC3,X
+	lda.l L95EDC3,X
 	bne L8681DA
 	lda $10B8,Y
 	bra L8681E8
@@ -258,9 +258,9 @@ L8681C7:
 L8681DA:
 	lda $10B8,Y
 	dec A
-	cmp L95EDC3,X
+	cmp.l L95EDC3,X
 	bcc L8681E9
-	lda.w L95EDC3,X
+	lda.l L95EDC3,X
 L8681E8:
 	dec A
 L8681E9:
@@ -274,7 +274,7 @@ L8681EF:
 	tay
 	lsr A
 	tax
-	lda.w L95EDC3,X
+	lda.l L95EDC3,X
 	bne L868205
 	lda $10B8,Y
 	sec
@@ -286,7 +286,7 @@ L868205:
 	sec
 	sbc #$10
 	bcs L868212
-	lda.w L95EDC3,X
+	lda.l L95EDC3,X
 	dec A
 L868212:
 	sta $10B8,Y
@@ -373,7 +373,7 @@ L8682A2:
 	and #$FE
 	tax
 	rep #$20
-	lda.w L95ED8F,X
+	lda.l L95ED8F,X
 	sta $15
 	rep #$10
 	cmp #$FFFF
@@ -396,7 +396,7 @@ L8682CB:
 	and #$FE
 	tax
 	rep #$20
-	lda.w L95EDC3,X
+	lda.l L95EDC3,X
 	sta $15
 	rts
 
@@ -593,7 +593,7 @@ L868434:
 	jsr L868638
 	tyx
 	ldy $10B2
-	lda.w L95EDD5,X
+	lda.l L95EDD5,X
 	bne L86844C
 	lda $10DC,Y
 	inc A
@@ -602,7 +602,7 @@ L868434:
 L86844C:
 	lda $10DC,Y
 	inc A
-	cmp L95EDD5,X
+	cmp.l L95EDD5,X
 	bcc L868458
 	lda #$00
 L868458:
@@ -616,7 +616,7 @@ L86845E:
 	jsr L868638
 	tyx
 	ldy $10B2
-	lda.w L95EDD5,X
+	lda.l L95EDD5,X
 	bne L868478
 	lda $10DC,Y
 	clc
@@ -627,7 +627,7 @@ L868478:
 	lda $10DC,Y
 	clc
 	adc #$0A
-	cmp L95EDD5,X
+	cmp.l L95EDD5,X
 	bcc L868486
 	lda #$00
 L868486:
@@ -641,7 +641,7 @@ L86848C:
 	jsr L868638
 	tyx
 	ldy $10B2
-	lda.w L95EDD5,X
+	lda.l L95EDD5,X
 	bne L8684A3
 	lda $10DC,Y
 	bra L8684B1
@@ -649,9 +649,9 @@ L86848C:
 L8684A3:
 	lda $10DC,Y
 	dec A
-	cmp L95EDD5,X
+	cmp.l L95EDD5,X
 	bcc L8684B2
-	lda.w L95EDD5,X
+	lda.l L95EDD5,X
 L8684B1:
 	dec A
 L8684B2:
@@ -665,7 +665,7 @@ L8684B8:
 	jsr L868638
 	tyx
 	ldy $10B2
-	lda.w L95EDD5,X
+	lda.l L95EDD5,X
 	bne L8684D2
 	lda $10DC,Y
 	sec
@@ -677,7 +677,7 @@ L8684D2:
 	sec
 	sbc #$0A
 	bcs L8684DF
-	lda.w L95EDD5,X
+	lda.l L95EDD5,X
 	dec A
 L8684DF:
 	sta $10DC,Y
@@ -758,7 +758,7 @@ L868569:
 	asl A
 	tax
 	rep #$20
-	lda.w L95EDB3,X
+	lda.l L95EDB3,X
 	sta $15
 	rep #$10
 	cmp #$FFFF
@@ -1473,7 +1473,7 @@ L868B09:
 	sep #$20
 	ldy #$0000
 L868B14:
-	lda.w L95DCCE,X
+	lda.l L95DCCE,X
 	sta $2180
 	lda #$00
 	sta $2180
@@ -1796,12 +1796,12 @@ L868D28:
 	ldx #$0000
 	ldy #$0000
 L868D30:
-	lda.w L958C36,X
+	lda.l L958C36,X
 	cmp #$FF
 	beq L868D49
 	cmp $15
 	bne L868D44
-	lda.w L958C37,X
+	lda.l (L958C36 + 1),X
 	cmp $17
 	beq L868D4D
 L868D44:
@@ -2131,7 +2131,7 @@ L86907E:
 	ldx #$0000
 	ldy #$0000
 L86908C:
-	lda.w L958C36,X
+	lda.l L958C36,X
 	cmp #$FF
 	beq L8690AF
 	cmp $15
@@ -2141,7 +2141,7 @@ L86908C:
 	beq L8690B4
 	cmp #$66
 	beq L8690B4
-	lda.w L958C37,X
+	lda.l (L958C36 + 1),X
 	cmp $17
 	beq L8690B4
 L8690AA:
@@ -2662,7 +2662,7 @@ L869476:
 	ldy $15
 	ldx #$0000
 L869488:
-	lda.w L948000,X
+	lda.l L948000,X
 	sta $7E40FE,X
 	inx
 	dey
@@ -2674,7 +2674,7 @@ L869488:
 	ldy $15
 	ldx #$0000
 L8694A0:
-	lda.w L94A000,X
+	lda.l L94A000,X
 	sta $7E54FE,X
 	inx
 	dey
@@ -2773,7 +2773,7 @@ L869567:
 	ldy $15
 	ldx #$0000
 L86957E:
-	lda.w L85F800,X
+	lda.l L85F800,X
 	sta $7E48FE,X
 	inx
 	dey
@@ -3051,7 +3051,7 @@ L86980A:
 	sta $15
 	ldx #$0000
 L869811:
-	lda.w L95D6D4,X
+	lda.l L95D6D4,X
 	cmp #$FF
 	beq L86982B
 	cmp $15
@@ -3082,7 +3082,7 @@ L86983A:
 	sta $15
 	ldx #$0000
 L869841:
-	lda.w L95D6DE,X
+	lda.l L95D6DE,X
 	cmp #$FF
 	beq L86985D
 	cmp $15
@@ -3229,9 +3229,9 @@ L86993C:
 	clc
 	adc $15
 	tax
-	lda.w L95D9D8,X
+	lda.l L95D9D8,X
 	sta $00
-	lda.w L95D9D9,X
+	lda.l (L95D9D8 + 1),X
 	sta $01
 	ldy #$0000
 	lda [$00],Y
@@ -3757,7 +3757,7 @@ L869D56:
 	rep #$20
 	and #$00FF
 	tax
-	lda.w L95DC92,X
+	lda.l L95DC92,X
 	sta $15
 	plx
 	lda #$9D77
@@ -3775,7 +3775,7 @@ L869D77:
 	rep #$20
 	and #$00FF
 	tax
-	lda.w L95DCB0,X
+	lda.l L95DCB0,X
 	sta $15
 	plx
 	lda #$9D96
@@ -4940,7 +4940,7 @@ L86A6D8:
 	lda $07
 	and #$00FF
 	tax
-	lda.w L95D6CC,X
+	lda.l L95D6CC,X
 	tax
 	sep #$20
 	inc $07
@@ -5871,7 +5871,7 @@ L86ADB1:
 	and #$00FF
 	tax
 	sep #$20
-	lda.w L959550,X
+	lda.l L959550,X
 	plx
 	jsr L86F789
 	lda $1006
@@ -5993,13 +5993,13 @@ L86AEB5:
 L86AEB8:
 	phx
 	tyx
-	lda.w L95D6C3,X
+	lda.l L95D6C3,X
 	sta $07
 	rep #$20
 	tya
 	asl A
 	tax
-	lda.w L95D6B1,X
+	lda.l L95D6B1,X
 	tax
 	sep #$20
 	lda $00,X
@@ -6371,12 +6371,12 @@ L86B175:
 	asl A
 	tax
 	ldy #$0000
-	lda.w L8B9AF8,X
+	lda.l L8B9AF8,X
 	and #$C3FF
 	ora $06
 	sta [$03],Y
 	ldy #$0040
-	lda.w (L8B9AF8 + 2),X
+	lda.l (L8B9AF8 + 2),X
 	and #$C3FF
 	ora $06
 	sta [$03],Y
@@ -7298,9 +7298,9 @@ L86B7E4:
 	asl A
 	adc $19
 	tax
-	lda.w L95D9ED,X
+	lda.l L95D9ED,X
 	sta $03
-	lda.w L95D9EE,X
+	lda.l (L95D9ED + 1),X
 	sta $04
 	lda $15
 	and #$FF00
@@ -8276,12 +8276,12 @@ L86BE9E:
 L86BE9F:
 	asl A
 	tax
-	lda.w L958000,X
+	lda.l L958000,X
 	sec
 	sbc #$8046
 	tax
 	sep #$20
-	lda.w L958046,X
+	lda.l L958046,X
 	cmp #$FE
 	bne L86BEBE
 	lda $1003
@@ -8301,7 +8301,7 @@ L86BECC:
 	lda $075E
 	cmp #$2A
 	beq L86BED9
-	lda.w L958046,X
+	lda.l L958046,X
 	sta $A5
 L86BED9:
 	lda $1001
@@ -8320,7 +8320,7 @@ L86BEE3:
 L86BEEF:
 	sep #$20
 	ldx $1056
-	lda.w L958046,X
+	lda.l L958046,X
 	cmp #$FC
 	bcc L86BF0A
 	eor #$FF
@@ -8346,7 +8346,7 @@ L86BF0A:
 	and #$00FF
 	cmp #$002A
 	beq L86BF5D
-	lda.w L958046,X
+	lda.l L958046,X
 	sta $A6
 	sep #$20
 	stz $A8
@@ -8356,7 +8356,7 @@ L86BF0A:
 
 L86BF41:
 	sep #$20
-	lda.w L958046,X
+	lda.l L958046,X
 	sta $15
 	lda $7A
 	and #$80
@@ -8366,15 +8366,15 @@ L86BF41:
 
 L86BF53:
 	sep #$20
-	lda.w L958046,X
+	lda.l L958046,X
 	sta $7F
 	bra L86BF77
 
 L86BF5D:
-	lda.w L958046,X
+	lda.l L958046,X
 	jsr L86BF7B
 	sta $105C
-	lda.w L958047,X
+	lda.l (L958046 + 1),X
 	jsr L86BF7B
 	ora $105C
 	sta $105C
@@ -8704,14 +8704,14 @@ L86C184:
 	cmp #$0A
 	bne L86C1BB
 L86C1AB:
-	lda.w L9586C5,X
+	lda.l L9586C5,X
 	sta $104A
-	lda.w L9586C6,X
+	lda.l (L9586C5 + 1),X
 	sta $104B
 	bra L86C1C2
 
 L86C1BB:
-	lda.w L9586C5,X
+	lda.l L9586C5,X
 	sta $104A
 L86C1C2:
 	rep #$20
@@ -8977,9 +8977,9 @@ L86C3C2:
 	asl A
 	adc $17
 	tax
-	lda.w (PORTRAITS + 1),X
+	lda.l (PORTRAITS + 1),X
 	sta $72
-	lda.w PORTRAITS,X
+	lda.l PORTRAITS,X
 	sta $71
 	jsl L808F18
 	rts
@@ -9439,7 +9439,7 @@ L86C7C2:
 L86C7C5:
 	ldy #$0000
 L86C7C8:
-	lda.w L95DA70,X
+	lda.l L95DA70,X
 	sta $0240,Y
 	inx
 	inx
@@ -9461,7 +9461,7 @@ L86C7EC:
 L86C7EF:
 	ldy #$0000
 L86C7F2:
-	lda.w L95DA90,X
+	lda.l L95DA90,X
 	sta $0210,Y
 	inx
 	inx
@@ -9513,9 +9513,9 @@ L86C84C:
 	clc
 	adc $15
 	tax
-	lda.w L8E9213,X
+	lda.l L8E9213,X
 	sta $00
-	lda.w L8E9214,X
+	lda.l (L8E9213 + 1),X
 	sta $01
 	jsr L86C951
 	jsr L86C8CB
@@ -9705,9 +9705,9 @@ L86C9EE:
 	asl A
 	tax
 	sep #$20
-	lda.w L95DAF0,X
+	lda.l L95DAF0,X
 	sta $0212
-	lda.w L95DAF1,X
+	lda.l (L95DAF0 + 1),X
 	sta $0216
 	lda $1067
 	inc A
@@ -9726,13 +9726,13 @@ L86CA16:
 	asl A
 	tax
 	sep #$20
-	lda.w L95DAF6,X
+	lda.l L95DAF6,X
 	sta $0212
-	lda.w L95DAF7,X
+	lda.l (L95DAF6 + 1),X
 	sta $0216
-	lda.w L95DAF8,X
+	lda.l (L95DAF6 + 2),X
 	sta $021A
-	lda.w L95DAF9,X
+	lda.l (L95DAF6 + 3),X
 	sta $021E
 	lda $1067
 	inc A
@@ -9936,20 +9936,20 @@ L86CBC0:
 	adc $15
 	tax
 	sep #$20
-	lda.w L95958C,X
+	lda.l L95958C,X
 	sta $075D
-	lda.w L95958D,X
+	lda.l (L95958C + 1),X
 	sta $075F
-	lda.w L95958E,X
+	lda.l (L95958C + 2),X
 	sta $0762
-	lda.w L95958F,X
+	lda.l (L95958C + 3),X
 	sta $0761
-	lda.w L959590,X
+	lda.l (L95958C + 4),X
 	sta $105F
-	lda.w L959591,X
+	lda.l (L95958C + 5),X
 	and #$3F
 	sta $1060
-	lda.w L959591,X
+	lda.l (L95958C + 5),X
 	and #$C0
 	lsr A
 	lsr A
@@ -10526,9 +10526,9 @@ L86D051:
 	asl A
 	tax
 	sep #$20
-	lda.w L959DEB,X
+	lda.l L959DEB,X
 	sta $15
-	lda.w L959DEC,X
+	lda.l (L959DEB + 1),X
 	sta $16
 	lda $075E
 	cmp #$2A
@@ -10603,13 +10603,13 @@ L86D0D5:
 	asl A
 	adc $15
 	tax
-	lda.w L959E03,X
+	lda.l L959E03,X
 	sta $109D
-	lda.w L959E04,X
+	lda.l (L959E03 + 1),X
 	sta $109E
-	lda.w L959E21,X
+	lda.l L959E21,X
 	sta $10A0
-	lda.w L959E22,X
+	lda.l (L959E21 + 1),X
 	sta $10A1
 	plx
 	rtl
@@ -10810,7 +10810,7 @@ L86D22F:
 L86D241:
 	lda $1081,Y
 	tax
-	lda.w L959D51,X
+	lda.l L959D51,X
 	and #$00FF
 	cmp #$00FF
 	bne L86D259
@@ -10843,7 +10843,7 @@ L86D266:
 	sta $06
 	lda $1087,Y
 	sta $07
-	lda.w L959D52,X
+	lda.l (L959D51 + 1),X
 	and #$00FF
 	sta $19
 	asl A
@@ -10897,15 +10897,15 @@ L86D2DC:
 	sbc #$9D51
 	tax
 	sta $1081,Y
-	lda.w L959D51,X
+	lda.l L959D51,X
 	sta $1086,Y
-	lda.w L959D52,X
+	lda.l (L959D51 + 1),X
 	sta $1087,Y
-	lda.w L959D54,X
+	lda.l (L959D51 + 3),X
 	sta $1089,Y
-	lda.w L959D56,X
+	lda.l (L959D51 + 5),X
 	sta $108B,Y
-	lda.w L959D58,X
+	lda.l (L959D51 + 7),X
 	sta $108D,Y
 	txa
 	clc
@@ -11029,7 +11029,7 @@ L86D3CE:
 	bcs L86D400
 	inc $1071,X
 	tax
-	lda.w L959D9B,X
+	lda.l L959D9B,X
 	and #$00FF
 	sta $15
 	and #$0038
@@ -11040,7 +11040,7 @@ L86D3CE:
 	and #$0007
 	tax
 	sep #$20
-	lda.w L959DDB,X
+	lda.l L959DDB,X
 	ora [$00],Y
 	sta [$00],Y
 	rep #$20
@@ -11144,7 +11144,7 @@ L86D4F4:
 	sbc #$0040
 	asl A
 	tax
-	lda.w L95DB96,X
+	lda.l L95DB96,X
 	jmp L86D5E9
 
 L86D50C:
@@ -11180,7 +11180,7 @@ L86D54B:
 	lda $0764
 	and #$00FF
 	tax
-	lda.w L95DAFE,X
+	lda.l L95DAFE,X
 	and #$00FF
 	sta $15
 	lda $07DF
@@ -11258,7 +11258,7 @@ L86D5DE:
 L86D5E3:
 	asl A
 	tax
-	lda.w L95DB8C,X
+	lda.l L95DB8C,X
 L86D5E9:
 	sta $0876
 L86D5EC:
@@ -11503,7 +11503,7 @@ L86D758:
 L86D75B:
 	ldx $102E
 	beq L86D7A3
-	lda.w L95D9B5,X
+	lda.l L95D9B5,X
 	cmp #$FFFF
 	bne L86D776
 	stz $102E
@@ -11717,7 +11717,7 @@ L86D8CC:
 	sbc #$0010
 	tax
 	sep #$20
-	lda.w L95D893,X
+	lda.l L95D893,X
 	sta $1040
 L86D8E6:
 	sep #$20
@@ -11769,7 +11769,7 @@ L86D935:
 	and #$00FF
 	cmp #$002A
 	bne L86D966
-	lda.w L95D8A3,X
+	lda.l L95D8A3,X
 	and #$00FF
 	asl A
 	asl A
@@ -11778,7 +11778,7 @@ L86D935:
 
 L86D966:
 	sep #$20
-	lda.w L95D8A3,X
+	lda.l L95D8A3,X
 	sta $1041
 L86D96F:
 	sep #$20
@@ -12041,7 +12041,7 @@ L86DB6B:
 	sbc #$0010
 	tax
 	sep #$20
-	lda.w L95D893,X
+	lda.l L95D893,X
 	sta $1040
 L86DB85:
 	rts
@@ -12058,7 +12058,7 @@ L86DB86:
 	and #$00FF
 	cmp #$002A
 	bne L86DBAF
-	lda.w L95D8A3,X
+	lda.l L95D8A3,X
 	and #$00FF
 	asl A
 	asl A
@@ -12067,7 +12067,7 @@ L86DB86:
 
 L86DBAF:
 	sep #$20
-	lda.w L95D8A3,X
+	lda.l L95D8A3,X
 	sta $1041
 L86DBB8:
 	rts
@@ -12183,7 +12183,7 @@ L86DC6E:
 	ldx #$0000
 	ldy #$0000
 L86DC81:
-	lda.w L95D9E5,X
+	lda.l L95D9E5,X
 	clc
 	adc $1D28,Y
 	bcc L86DC8D
@@ -12676,13 +12676,13 @@ L86E006:
 	lsr A
 	adc $00
 	tax
-	lda.w L95D793,X
+	lda.l L95D793,X
 	and #$00FF
 	beq L86E043
 	sta $8F
 	sta $8B
 L86E043:
-	lda.w L95D7A3,X
+	lda.l L95D7A3,X
 	and #$00FF
 	beq L86E055
 	sta $102C
@@ -13398,9 +13398,9 @@ L86E648:
 	asl A
 	adc $15
 	tax
-	lda.w L9587DF,X
+	lda.l (L9587DE + 1),X
 	sta $72
-	lda.w L9587DE,X
+	lda.l L9587DE,X
 	sta $71
 	lda #$0100
 	jsr L86F834
@@ -13413,7 +13413,7 @@ L86E667:
 	sta $15
 	ldx #$0000
 L86E671:
-	lda.w L9588A4,X
+	lda.l L9588A4,X
 	and #$00FF
 	cmp #$00FF
 	beq L86E68B
@@ -13448,9 +13448,9 @@ L86E6A2:
 	asl A
 	adc $15
 	tax
-	lda.w L9589F1,X
+	lda.l (L9589F0 + 1),X
 	sta $72
-	lda.w L9589F0,X
+	lda.l L9589F0,X
 	sta $71
 	lda #$0060
 	jsr L86F834
@@ -13493,15 +13493,15 @@ L86E6FD:
 	asl A
 	asl A
 	tax
-	lda.w L958B85,X
+	lda.l (L958B82 + 3),X
 	and #$00FF
 	sta $15
 	asl A
 	adc $15
 	tax
-	lda.w L958B50,X
+	lda.l (L958B4F + 1),X
 	sta $72
-	lda.w L958B4F,X
+	lda.l L958B4F,X
 	sta $71
 	lda #$0040
 	jsr L86F834
@@ -13538,7 +13538,7 @@ L86E77E:
 	lda $075D
 	and #$00FF
 	tax
-	lda.w L9587B1,X
+	lda.l L9587B1,X
 	and #$000F
 	cmp #$0007
 	beq L86E7F8
@@ -13626,7 +13626,7 @@ L86E84F:
 	cmp #$002A
 	beq L86E8B6
 	tax
-	lda.w L9587B1,X
+	lda.l L9587B1,X
 	and #$000F
 	cmp #$0007
 	beq L86E8CE
@@ -13741,9 +13741,9 @@ L86E991:
 	asl A
 	adc $17
 	tax
-	lda.w L9588B4,X
+	lda.l (L9588B3 + 1),X
 	sta $72
-	lda.w L9588B3,X
+	lda.l L9588B3,X
 	sta $71
 	jsr L86F7E7
 	rts
@@ -13783,17 +13783,17 @@ L86E9DF:
 	asl A
 	asl A
 	tax
-	lda.w L958B82,X
+	lda.l L958B82,X
 	sta $15
-	lda.w L958B84,X
+	lda.l (L958B82 + 2),X
 	and #$00FF
 	sta $17
 	asl A
 	adc $17
 	tax
-	lda.w L958AE4,X
+	lda.l (L958AE3 + 1),X
 	sta $72
-	lda.w L958AE3,X
+	lda.l L958AE3,X
 	sta $71
 	jsr L86F7E7
 	lda $15
@@ -13867,7 +13867,7 @@ L86EA94:
 	lda $0C
 	and #$00FF
 	tax
-	lda.w L9587B1,X
+	lda.l L9587B1,X
 	and #$000F
 	cmp #$0001
 	beq L86EAC8
@@ -14098,9 +14098,9 @@ L86EC82:
 	asl A
 	adc $17
 	tax
-	lda.w L95898B,X
+	lda.l (L95898A + 1),X
 	sta $72
-	lda.w L95898A,X
+	lda.l L95898A,X
 	sta $71
 	jsr L86F7E7
 L86ECAA:
@@ -14114,9 +14114,9 @@ L86ECAB:
 	asl A
 	adc $17
 	tax
-	lda.w L95896A,X
+	lda.l (L958969 + 1),X
 	sta $72
-	lda.w L958969,X
+	lda.l L958969,X
 	sta $71
 	jsr L86F7E7
 	rts
@@ -14158,12 +14158,12 @@ L86ECFE:
 	ldx #$0000
 	ldy #$0000
 L86ED08:
-	lda.w L958952,X
+	lda.l L958952,X
 	cmp #$FF
 	beq L86ED21
 	cmp $15
 	bne L86ED1C
-	lda.w L958953,X
+	lda.l (L958952 + 1),X
 	cmp $17
 	beq L86ED26
 L86ED1C:
@@ -14463,15 +14463,15 @@ L86EF23:
 L86EF32:
 	jsr L86F280
 	tax
-	lda.w L9591E5,X
+	lda.l L9591E5,X
 	and #$00FF
 	sta $15
 	asl A
 	adc $15
 	tax
-	lda.w L95911D,X
+	lda.l (L95911C + 1),X
 	sta $72
-	lda.w L95911C,X
+	lda.l L95911C,X
 	sta $71
 	jsr L86EF53
 	rts
@@ -14615,9 +14615,9 @@ L86F049:
 
 L86F063:
 	ldx #$0000
-	lda.w L95911A,X
+	lda.l (L959119 + 1),X
 	sta $72
-	lda.w L959119,X
+	lda.l L959119,X
 	sta $71
 	jsr L86F0FB
 	lda #bank100(L86F085)
@@ -14659,9 +14659,9 @@ L86F0B8:
 	asl A
 	adc $17
 	tax
-	lda.w L9590F0,X
+	lda.l (L9590EF + 1),X
 	sta $72
-	lda.w L9590EF,X
+	lda.l L9590EF,X
 	sta $71
 	lda #$0000
 	jsr L86F0FB
@@ -14672,7 +14672,7 @@ L86F0D1:
 	stx $03
 	jsr L86F280
 	tax
-	lda.w L9591E2,X
+	lda.l L9591E2,X
 	and #$00FF
 	sta $15
 	asl A
@@ -14680,9 +14680,9 @@ L86F0D1:
 	tax
 	lda $03
 	sta $15
-	lda.w L9590F6,X
+	lda.l (L9590F5 + 1),X
 	sta $72
-	lda.w L9590F5,X
+	lda.l L9590F5,X
 	sta $71
 	jsr L86F0FB
 	rts
@@ -14695,7 +14695,7 @@ L86F0FF:
 	pha
 	jsr L86F280
 	tax
-	lda.w L9591E3,X
+	lda.l (L9591E2 + 1),X
 	and #$00FF
 	cmp #$00FF
 	beq L86F117
@@ -14706,7 +14706,7 @@ L86F117:
 	pla
 	jsr L86F280
 	tax
-	lda.w L9591E4,X
+	lda.l (L9591E2 + 2),X
 	and #$00FF
 	cmp #$00FF
 	beq L86F12F
@@ -14720,7 +14720,7 @@ L86F130:
 	pha
 	jsr L86F280
 	tax
-	lda.w L9591E3,X
+	lda.l (L9591E2 + 1),X
 	and #$00FF
 	cmp #$00FF
 	beq L86F149
@@ -14732,7 +14732,7 @@ L86F149:
 	pla
 	jsr L86F280
 	tax
-	lda.w L9591E4,X
+	lda.l (L9591E2 + 2),X
 	and #$00FF
 	cmp #$00FF
 	beq L86F162
@@ -14748,9 +14748,9 @@ L86F163:
 	asl A
 	adc $15
 	tax
-	lda.w L958E62,X
+	lda.l (L958E61 + 1),X
 	sta $72
-	lda.w L958E61,X
+	lda.l L958E61,X
 	sta $71
 	jsr L86F179
 	rts
@@ -14764,18 +14764,18 @@ L86F17D:
 	ldy #$001E
 	ldx #$0000
 L86F185:
-	lda.w L9594C2,X
+	lda.l L9594C2,X
 	cmp $0762
 	bne L86F1AA
 	inx
-	lda.w L9594C2,X
+	lda.l L9594C2,X
 	cmp $0761
 	bne L86F1AB
 	inx
-	lda.w L9594C2,X
+	lda.l L9594C2,X
 	sta $0762
 	inx
-	lda.w L9594C2,X
+	lda.l L9594C2,X
 	sta $0761
 	bra L86F1B1
 
@@ -14795,7 +14795,7 @@ L86F1B4:
 	sep #$20
 	ldx #$0000
 L86F1B9:
-	lda.w L95953A,X
+	lda.l L95953A,X
 	cmp #$FF
 	beq L86F1D6
 	cmp $0762
@@ -15068,9 +15068,9 @@ L86F3C3:
 	asl A
 	adc $15
 	tax
-	lda.w L958CEA,X
+	lda.l (L958CE9 + 1),X
 	sta $72
-	lda.w L958CE9,X
+	lda.l L958CE9,X
 	sta $71
 	rts
 
@@ -15079,9 +15079,9 @@ L86F3D6:
 	asl A
 	adc $15
 	tax
-	lda.w L958A69,X
+	lda.l (L958A68 + 1),X
 	sta $72
-	lda.w L958A68,X
+	lda.l L958A68,X
 	sta $71
 	rts
 
@@ -15959,7 +15959,7 @@ L86F9FF:
 	jsr L86FC04
 	asl A
 	tax
-	lda.w L95DBB4,X
+	lda.l L95DBB4,X
 	sta $0876
 	plx
 	lda.l $0006FE
@@ -16051,7 +16051,7 @@ L86FB12:
 	sta $17
 	ldx #$0000
 L86FB17:
-	lda.w L958E4E,X
+	lda.l L958E4E,X
 	cmp #$FF
 	bne L86FB23
 	lda #$00
@@ -16065,7 +16065,7 @@ L86FB23:
 	bra L86FB17
 
 L86FB2B:
-	lda.w L958E4F,X
+	lda.l (L958E4E + 1),X
 L86FB2F:
 	rep #$20
 	and #$00FF
@@ -16101,10 +16101,10 @@ L86FB63:
 	and #$00FF
 	asl A
 	tax
-	lda.w L958DF4,X
+	lda.l L958DF4,X
 	and #$00FF
 	sta $17
-	lda.w L958DF5,X
+	lda.l (L958DF4 + 1),X
 	and #$00FF
 	sta $19
 	plx
