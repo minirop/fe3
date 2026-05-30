@@ -2786,7 +2786,7 @@ L819770:
 	lda.l $004216
 	sep #$20
 	tax
-	lda $88A6E9,X
+	lda.w ITEMS_DATA,X
 	and $0C04
 	bne L819796
 	ply
@@ -3197,7 +3197,7 @@ L819ADB:
 	sta $0BD1
 L819B19:
 	ldx $0BD1
-	lda $819BCF,X
+	lda.w L819BCF,X
 	cmp #$FFFF
 	bne L819B2B
 	jsl L81E475
@@ -3207,12 +3207,12 @@ L819B2B:
 	sep #$20
 	lda #$01
 	sta $0AB9
-	lda $819BD2,X
+	lda.w (L819BD1 + 1),X
 	jsl L93DB8F
 	lda #$01
 	sta $0C07
 	ldx $0BD1
-	lda $819BD1,X
+	lda.w L819BD1,X
 	sta $0C08
 	lda $0ABA
 	bne L819B52
@@ -3223,7 +3223,7 @@ L819B52:
 L819B54:
 	sta $0C09
 	rep #$20
-	lda $819BCF,X
+	lda.w L819BCF,X
 	clc
 	adc $0BB0
 	sta $0C05
@@ -3241,7 +3241,7 @@ L819B54:
 	sta $0C1B
 	jsl L81D5A8
 	ldx $0BD1
-	lda $819BD2,X
+	lda.w (L819BD1 + 1),X
 	ldx $15
 	ldy #$DF58
 	jsl L81E21F
@@ -3266,19 +3266,20 @@ L819BBF:
 	adc #$0004
 	sta $0BD1
 	brl L819B19
-	ora ($03,X)
-	rti
 
-L819BD2:
-.db $71 $0C $03 $42 $78 $01 $05 $44
-.db $72 $0C $05 $46 $74 $01 $07 $48
-.db $76 $0C $07 $4A $79 $01 $09 $4C
-.db $73 $0C $09 $4E $75 $01 $0B $60
-.db $6E $0C $0B $62 $70 $01 $0D $64
-.db $77 $0C $0D $66 $6F $01 $11 $68
-.db $7D $0C $11 $6A $6C $01 $13 $6C
-.db $7E $0C $13 $6E $3E $01 $15 $80
-.db $3C $FF $FF
+L819BCF:
+.db $01 $03
+
+L819BD1:
+.db $40 $71 $0C $03 $42 $78 $01 $05
+.db $44 $72 $0C $05 $46 $74 $01 $07
+.db $48 $76 $0C $07 $4A $79 $01 $09
+.db $4C $73 $0C $09 $4E $75 $01 $0B
+.db $60 $6E $0C $0B $62 $70 $01 $0D
+.db $64 $77 $0C $0D $66 $6F $01 $11
+.db $68 $7D $0C $11 $6A $6C $01 $13
+.db $6C $7E $0C $13 $6E $3E $01 $15
+.db $80 $3C $FF $FF
 
 L819C15:
 	sep #$20
@@ -3324,7 +3325,7 @@ L819C59:
 	tax
 	lda $07DA,X
 	sta $0B61
-	lda $819CFA,X
+	lda.w L819CFA,X
 	pha
 	lda $0B62
 	inc A
@@ -8370,7 +8371,7 @@ L81C6EF:
 	lda.l $004216
 	sep #$20
 	tax
-	lda $88A6EA,X
+	lda.w (ITEMS_DATA + 1),X
 	sta $0C08
 	jsl L81D77B
 L81C712:
@@ -8443,7 +8444,7 @@ L81C792:
 L81C794:
 	sta $0C09
 	ldx $0B9E
-	lda $81E5BB,X
+	lda.w L81E5BB,X
 	asl A
 	sta $0C08
 	rep #$20
@@ -8944,7 +8945,7 @@ L81CB9C:
 	lda $7F4417
 	and #$00FF
 	tax
-	lda $888E1C,X
+	lda.w L888E1C,X
 	and #$00FF
 	sta $5A
 	lda $0C1C
@@ -9347,12 +9348,12 @@ L81CE48:
 	lda.l $004216
 	sep #$20
 	tax
-	lda $88A6F6,X
+	lda.w (ITEMS_DATA + 13),X
 	rep #$20
 	and #$00FF
 	asl A
 	tax
-	lda $88A633,X
+	lda.w L88A633,X
 	sta $00
 	sep #$20
 	ldy #$0000
@@ -9596,9 +9597,9 @@ L81D12B:
 	and #$00FF
 	jsl L87A9E8
 	tax
-	lda $888EB0,X
+	lda.w PORTRAITS,X
 	sta $00
-	lda $888EB1,X
+	lda.w (PORTRAITS + 1),X
 	sta $01
 	ldx #$0800
 	jsl L81D920
@@ -9632,7 +9633,7 @@ L81D16B:
 	sta $00
 	ldy #$0010
 L81D174:
-	lda $D7E800,X
+	lda.w LD7E800,X
 	sta [$00]
 	inc $00
 	inc $00
@@ -9718,7 +9719,7 @@ L81D207:
 	sep #$20
 	tax
 	rep #$20
-	lda $88A6EA,X
+	lda.w (ITEMS_DATA + 1),X
 	and #$00FF
 	asl A
 	asl A
@@ -10964,7 +10965,7 @@ L81DBCC:
 	lda #$0080
 	sta $17
 L81DBD7:
-	lda $88a6f1,X
+	lda.w (ITEMS_DATA + 8),X
 	and #$00ff
 	xba
 	sta $15
@@ -11742,9 +11743,9 @@ L81E24A:
 	asl A
 	asl A
 	tax
-	lda $8B9AF8,X
+	lda.w L8B9AF8,X
 	sta [$03]
-	lda $8B9AFA,X
+	lda.w (L8B9AF8 + 2),X
 	cmp #$FFFF
 	beq L81E273
 	ldy #$0040
@@ -11789,7 +11790,7 @@ L81E2A0:
 	asl A
 	asl A
 	tax
-	lda $8B9AFA,X
+	lda.w (L8B9AF8 + 2),X
 	cmp #$FFFF
 	bne L81E2C1
 	lda $17
@@ -12382,27 +12383,27 @@ L81E762:
 	lda #$0000
 	sta $15
 	ldx $0BA7
-	lda $88A6EC,X
+	lda.w (ITEMS_DATA + 3),X
 	jsr L81E7E9
 	lda #$0080
 	sta $15
 	ldx $0BA7
-	lda $88A6ED,X
+	lda.w (ITEMS_DATA + 4),X
 	jsr L81E7E9
 	lda #$0100
 	sta $15
 	ldx $0BA7
-	lda $88A6EF,X
+	lda.w (ITEMS_DATA + 6),X
 	jsr L81E7E9
 	lda #$0180
 	sta $15
 	ldx $0BA7
-	lda $88A6EE,X
+	lda.w (ITEMS_DATA + 5),X
 	jsr L81E7E9
 	lda #$0200
 	sta $15
 	ldx $0BA7
-	lda $88A6EB,X
+	lda.w (ITEMS_DATA + 2),X
 	jsr L81E7E9
 	jmp L81E756
 
@@ -13159,22 +13160,22 @@ L81EEC2:
 	lda $0B6C
 	asl A
 	tax
-	lda $81EF49,X
+	lda.w L81EF49,X
 	sta $0B6C
 	lda $0B6A
 	asl A
 	tax
-	lda $81EF49,X
+	lda.w L81EF49,X
 	sta $0B6A
 	lda $0B68
 	asl A
 	tax
-	lda $81EF49,X
+	lda.w L81EF49,X
 	sta $0B68
 	lda $0B66
 	asl A
 	tax
-	lda $81EF49,X
+	lda.w L81EF49,X
 	sta $0B66
 	plx
 	lda $0B66
@@ -13201,6 +13202,7 @@ L81EF3C:
 	sta $7E3040,X
 	rts
 
+L81EF49:
 .db $00 $25 $01 $25 $02 $25 $03 $25
 .db $04 $25 $05 $25 $06 $25 $07 $25
 .db $08 $25 $09 $25 $49 $25 $C8 $25

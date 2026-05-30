@@ -144,9 +144,9 @@ L878110:
 	clc
 	adc $0FAB
 	tax
-	lda $8B8004,X
+	lda.w L8B8004,X
 	pha
-	lda $8B8006,X
+	lda.w L8B8006,X
 	plx
 	jsl L87816D
 
@@ -197,7 +197,7 @@ L87818E:
 	ldy #$0020
 	ldx #$0000
 L878194:
-	lda $94D060,X
+	lda.w L94D060,X
 	sta $7F5310,X
 	inx
 	dey
@@ -383,7 +383,7 @@ L8782E1:
 	ldy #$0020
 	ldx #$0000
 L878326:
-	lda $94D080,X
+	lda.w L94D080,X
 	sta $7F5130,X
 	inx
 	dey
@@ -393,7 +393,7 @@ L878326:
 	ldy #$0010
 	ldx #$0000
 L87833A:
-	lda $94D0E0,X
+	lda.w L94D0E0,X
 	sta $7F5140,X
 	inx
 	dey
@@ -460,7 +460,7 @@ L87838A:
 	ldy #$0020
 	ldx #$0000
 L8783E1:
-	lda $94D080,X
+	lda.w L94D080,X
 	sta $7F5130,X
 	inx
 	dey
@@ -669,7 +669,7 @@ L878590:
 	ldy #$0020
 	ldx #$0000
 L8785A5:
-	lda $94d060,X
+	lda.w L94d060,X
 	sta $7f5310,X
 	inx
 	dey
@@ -2014,7 +2014,7 @@ L8791A2:
 	jsl L81D733
 	tax
 	phx
-	lda $88A6F1,X
+	lda.w (ITEMS_DATA + 8),X
 	xba
 	sep #$20
 	ldy $0BD1
@@ -2036,7 +2036,7 @@ L8791D7:
 	pla
 	jsl L81C736
 	plx
-	lda $88A6F2,X
+	lda.w (ITEMS_DATA + 9),X
 	jsr L879323
 	lda $0BD5
 	clc
@@ -2132,12 +2132,12 @@ L8792AD:
 	ldy #$000E
 	jsl L81D733
 	tax
-	lda $88A6F1,X
+	lda.w (ITEMS_DATA + 8),X
 	xba
 	and #$FF00
 	ora $0F96
 	sta $0F96
-	lda $88A6F2,X
+	lda.w (ITEMS_DATA + 9),X
 	jsr L879323
 	sec
 L8792E6:
@@ -2423,7 +2423,7 @@ L87953D:
 	ldy #$000E
 	jsl L81D733
 	tax
-	lda $88A6F4,X
+	lda.w (ITEMS_DATA + 11),X
 	and #$0080
 	beq L87955A
 	plp
@@ -2431,9 +2431,9 @@ L87953D:
 	rts
 
 L87955A:
-	lda $88A6F2,X
+	lda.w (ITEMS_DATA + 9),X
 	tay
-	lda $88A6F1,X
+	lda.w (ITEMS_DATA + 8),X
 	and #$00FF
 	sta $17
 	jsl L81D718
@@ -4174,7 +4174,7 @@ L87A34E:
 	rep #$20
 	and #$00FF
 	tax
-	lda $87A3EA,X
+	lda.w L87A3EA,X
 	and #$00FF
 	clc
 	adc $0F84
@@ -4961,7 +4961,7 @@ L87A9FC:
 	phy
 	sep #$20
 	plx
-	lda $87AA20,X
+	lda.w L87AA20,X
 	sta $15
 	plx
 	lda $07E1,X
@@ -4990,7 +4990,7 @@ L87AA28:
 	phy
 	sep #$20
 	plx
-	lda $87AA20,X
+	lda.w L87AA20,X
 	sta $15
 	plx
 	lda $07E1,X
@@ -5009,7 +5009,7 @@ L87AA49:
 	phy
 	sep #$20
 	plx
-	lda $87AA20,X
+	lda.w L87AA20,X
 	eor #$FF
 	sta $15
 	plx
@@ -5212,7 +5212,7 @@ L87ABB4:
 	lda.l RDMPYL
 	sep #$20
 	tax
-	lda $88A6F1,X
+	lda.w (ITEMS_DATA + 8),X
 	sta $16
 	bra L87ABD9
 L87ABD4:

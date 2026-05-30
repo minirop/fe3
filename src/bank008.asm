@@ -1313,6 +1313,7 @@ L888DCE:
 L888E1B:
 .db TERMINATOR
 
+L888E1C:
 .db $0C $03 $03 $03
 .db $03 $03 $03 $03 $03 $03 $03 $03
 .db $03 $03 $03 $03 $03 $03 $03 $03
@@ -1537,9 +1538,8 @@ CLASSES_INITIAL_STATS: ; 9 bytes per class
 .db $06 $00 $00 $06 $0F $14 $32 $10
 .db $28
 
-CHARACTERS_INITIAL_STATS: ; 8 bytes
+CHARACTERS_INITIAL_STATS: ; 8 bytes (stats) + 9 bytes (growth rates)
 .db $02 $03 $03 $07 $01 $00 $12 $06
-CHARACTERS_GROWTH_RATES: ; 9 bytes
 ; first one looks like being "gender" since females have 1 and males 0
 ; except Samuel which has 1.
 .db $00 $32 $28 $32 $46 $14 $03 $5A $28
@@ -2317,6 +2317,7 @@ ARRAY_889D6D:
 .db $FF $FF $04 $01 $00 $FF
 
 ; Exclusive weapon setting data?
+L88A48E:
 TABLE_88A48E:
 .dw L88A49E
 .dw L88A4A0

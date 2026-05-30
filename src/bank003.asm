@@ -190,7 +190,10 @@ L838357:
 .db $08 $20 $81 $31 $28 $10 $81 $31
 .db $38 $10 $81 $31 $18 $10 $81 $31
 .db $08 $10 $81 $31 $C0 $38 $00 $80
-.db $31 $28 $00 $80 $31 $00 $FF $01
+.db $31 $28 $00 $80
+
+L8383C3:
+.db $31 $00 $FF $01
 .db $00 $00 $01 $FF $00 $00 $FE $01
 .db $FF $02 $00 $01 $01 $00 $02 $FF
 .db $01 $FE $00 $FF $FF $09 $00 $19
@@ -667,7 +670,7 @@ L8388A1:
 	ldy #$0060
 	ldx #$0000
 L8388B6:
-	lda $95F800,X
+	lda.l L95F800,X
 	sta $7F51D0,X
 	inx
 	dey
@@ -677,7 +680,7 @@ L8388B6:
 	ldy #$0020
 	ldx #$0000
 L8388CA:
-	lda $94D080,X
+	lda.l L94D080,X
 	sta $7F5130,X
 	inx
 	dey
@@ -721,7 +724,7 @@ L838906:
 	ldy #$0020
 	ldx #$0000
 L83892A:
-	lda $94D000,X
+	lda.l L94D000,X
 	sta $7F5230,X
 	inx
 	dey
@@ -731,7 +734,7 @@ L83892A:
 	ldy #$0020
 	ldx #$0000
 L83893E:
-	lda $94D020,X
+	lda.l L94D020,X
 	sta $7F5290,X
 	inx
 	dey
@@ -3123,7 +3126,7 @@ L839DD1:
 	lda	[$03],Y
 	cmp	#$ff
 	beq	L839DE4
-	jsl	$87aa9b
+	jsl L87AA9B
 	bcs	L839E05
 L839DE4:
 	lda	$08ed
@@ -3135,7 +3138,7 @@ L839DE4:
 	sta	$15
 	lda	#$64
 	sta	$23
-	jsl	$83f684
+	jsl L83F684
 	cmp	$15
 	bcc	L839E12
 L839E05:
@@ -3149,7 +3152,7 @@ L839E12:
 	rep	#$20
 	ldy	#$0005
 	lda	[$03],Y
-	jsl	$87aa28
+	jsl L87AA28
 	lda	#$80b2
 	sta	$0876
 	stz	$91
@@ -3162,11 +3165,11 @@ L839E12:
 	xba
 	pha
 	pha
-	jsl	$87b3c4
+	jsl L87B3C4
 	pla
-	jsl	$87adad
+	jsl	L87ADAD
 	pla
-	jsl	$83fbbe
+	jsl	L83FBBE
 	lda	$08ed
 	jsl	L83D969
 L839E49:
@@ -3844,7 +3847,7 @@ L83A3D8:
 	nop
 	lda.l RDMPYL
 	tax
-	lda $88a6f4,X
+	lda.l (ITEMS_DATA + 11),X
 	bit #$0004
 	bne L83A43A
 	lda $0909
@@ -4040,7 +4043,7 @@ L83A569:
 	nop
 	lda.l $004216
 	tax
-	lda $88A6F4,X
+	lda.l (ITEMS_DATA + 11),X
 	bit #$0004
 	bne L83A5D1
 	bit #$0007
@@ -5216,7 +5219,7 @@ L83AF50:
 	lda.l $004216
 	sep #$20
 	tax
-	lda $889209,X
+	lda.l (CHARACTERS_INITIAL_STATS + 8),X
 	sta $078B,Y
 	lda $7F440E
 	cmp #$FF
@@ -5370,7 +5373,7 @@ L83B0FC:
 	lda.l $004216
 	tax
 	sep #$20
-	lda $88A6E9,X
+	lda.l ITEMS_DATA,X
 	bit #$10
 	beq L83B148
 	rep #$20
@@ -5639,7 +5642,7 @@ L83B2FF:
 	sep #$20
 	rep #$10
 	tax
-	lda $88A6F4,X
+	lda.l (ITEMS_DATA + 11),X
 	sep #$10
 	bit #$04
 	bne L83B32C
@@ -5736,7 +5739,7 @@ L83B3AF:
 	tax
 	lda $077D,Y
 	sec
-	sbc $88A6EF,X
+	sbc.l (ITEMS_DATA + 6),X
 	bpl L83B3D5
 	lda #$00
 L83B3D5:
@@ -5769,7 +5772,7 @@ L83B3F0:
 	lda.l $004216
 	sep #$20
 	tax
-	lda $88A6E9,X
+	lda.l ITEMS_DATA,X
 	bit #$18
 	beq L83B412
 	jsr L83BA9D
@@ -5820,7 +5823,7 @@ L83B448:
 	lda.l $004216
 	sep #$20
 	tax
-	lda $88A6ED,X
+	lda.l (ITEMS_DATA + 4),X
 	clc
 	adc $07C4,Y
 	bcc L83B46F
@@ -5869,7 +5872,7 @@ L83B498:
 	lda.l $004216
 	sep #$20
 	tax
-	lda $88A6EC,X
+	lda.l (ITEMS_DATA + 3),X
 	bit #$80
 	beq L83B4C2
 	lda #$28
@@ -5877,7 +5880,7 @@ L83B498:
 L83B4C2:
 	lda $0779,Y
 	clc
-	adc $88A6EC,X
+	adc.l (ITEMS_DATA + 3),X
 	cmp #$28
 	bmi L83B4D0
 	lda #$28
@@ -5901,7 +5904,7 @@ L83B4DB:
 	lda.l $004216
 	sep #$20
 	tax
-	lda $88A6EC,X
+	lda.l (ITEMS_DATA + 3),X
 	bra L83B4D0
 
 L83B4F4:
@@ -5924,7 +5927,7 @@ L83B4F7:
 	lda.l $004216
 	sep #$20
 	tax
-	lda $88A6E9,X
+	lda.l ITEMS_DATA,X
 	bit #$80
 	bne L83B52F
 	bit #$18
@@ -5949,7 +5952,7 @@ L83B52F:
 	lda.l $004216
 	sep #$20
 	tax
-	lda $88A6E9,X
+	lda.l ITEMS_DATA,X
 	bit #$80
 	bne L83B525
 L83B551:
@@ -5992,7 +5995,7 @@ L83B578:
 	lda.l $004216
 	sep #$20
 	tax
-	lda $88A6EE,X
+	lda.l (ITEMS_DATA + 5),X
 	clc
 	adc $077B,Y
 	clc
@@ -6247,7 +6250,7 @@ L83B753:
 	lda.l $004216
 	sep #$20
 	tax
-	lda $88A6F4,X
+	lda.l (ITEMS_DATA + 11),X
 	sep #$10
 	and #$03
 	cmp #$03
@@ -6685,15 +6688,15 @@ L83BA70:
 	rep #$10
 	ldx #$0000
 L83BA78:
-	lda $88CD32,X
+	lda.l (SUPPORTS + 1),X
 	cmp #$FF
 	beq L83BA9B
 	cmp.w $0016
 	bne L83BA96
-	lda $88CD31,X
+	lda.l SUPPORTS,X
 	cmp $15
 	bne L83BA96
-	lda $88CD33,X
+	lda.l (SUPPORTS + 2),X
 	clc
 	adc $17
 	sta $17
@@ -6750,7 +6753,7 @@ L83BAE0:
 	stz $15
 	ldy #$0002
 	jsr L83BD60
-	lda $88920B,X
+	lda.l (CHARACTERS_INITIAL_STATS + 10),X
 	and #$00FF
 	clc
 	adc $15
@@ -6792,7 +6795,7 @@ L83BB30:
 	stz $15
 	ldy #$0003
 	jsr L83BD60
-	lda $88920C,X
+	lda.l (CHARACTERS_INITIAL_STATS + 11),X
 	and #$00FF
 	clc
 	adc $15
@@ -6834,7 +6837,7 @@ L83BB80:
 	stz $15
 	ldy #$0004
 	jsr L83BD60
-	lda $88920D,X
+	lda.l (CHARACTERS_INITIAL_STATS + 12),X
 	and #$00FF
 	clc
 	adc $15
@@ -6876,7 +6879,7 @@ L83BBD0:
 	stz $15
 	ldy #$0001
 	jsr L83BD60
-	lda $88920E,X
+	lda.l (CHARACTERS_INITIAL_STATS + 13),X
 	and #$00FF
 	clc
 	adc $15
@@ -6918,7 +6921,7 @@ L83BC20:
 	stz $15
 	ldy #$0005
 	jsr L83BD60
-	lda $88920F,X
+	lda.l (CHARACTERS_INITIAL_STATS + 14),X
 	and #$00FF
 	clc
 	adc $15
@@ -6960,7 +6963,7 @@ L83BC70:
 	stz $15
 	ldy #$0006
 	jsr L83BD60
-	lda $889210,X
+	lda.l (CHARACTERS_INITIAL_STATS + 15),X
 	and #$00FF
 	clc
 	adc $15
@@ -7002,7 +7005,7 @@ L83BCC0:
 	stz $15
 	ldy #$0007
 	jsr L83BD60
-	lda $889211,X
+	lda.l (CHARACTERS_INITIAL_STATS + 16),X
 	and #$00FF
 	clc
 	adc $15
@@ -7044,7 +7047,7 @@ L83BD10:
 	stz $15
 	ldy #$0000
 	jsr L83BD60
-	lda $88920A,X
+	lda.l (CHARACTERS_INITIAL_STATS + 9),X
 	and #$00FF
 	clc
 	adc $15
@@ -7461,7 +7464,7 @@ L83C03F:
 	lda.l $004216
 	tax
 	sep #$20
-	lda $88A6E9,X
+	lda.l ITEMS_DATA,X
 	bit #$01
 	bne L83C073
 	bit #$02
@@ -7936,7 +7939,7 @@ L83C482:
 	nop
 	lda.l $004216
 	tax
-	lda $88A6EC,X
+	lda.l (ITEMS_DATA + 3),X
 	and #$00FF
 	pha
 	lda $07D3
@@ -8591,7 +8594,7 @@ L83C9F5:
 	nop
 	lda.l $004216
 	tax
-	lda $88A6F1,X
+	lda.l (ITEMS_DATA + 8),X
 	and #$00FF
 	sep #$30
 	ldx $08F4
@@ -8643,14 +8646,14 @@ L83CA75:
 	nop
 	lda.l $004216
 	tax
-	lda $88A6F2,X
+	lda.l (ITEMS_DATA + 9),X
 	cmp #$FFFF
 	beq L83CAAD
 	pla
 	xba
 	and #$00FF
 	sep #$20
-	cmp $88A6F1,X
+	cmp.l (ITEMS_DATA + 8),X
 	bne L83CAA9
 	rep #$20
 	clc
@@ -9275,9 +9278,9 @@ L83D022:
 	lda.l $004216
 	sep #$20
 	tax
-	lda $889072,X
+	lda.l (CLASSES_INITIAL_STATS + 6),X
 	sta $7F4405
-	lda $889074,X
+	lda.l (CLASSES_INITIAL_STATS + 8),X
 	sta $7F4404
 	sta $7F4403
 L83D058:
@@ -10598,7 +10601,7 @@ L83DAEF:
 	ldy.w #$0007
 	sep #$20
 L83DAFC:
-	lda $DAC800,X
+	lda.l LDAC800,X
 	sta $099B,Y
 	dex
 	dey
@@ -11035,7 +11038,7 @@ L83DE33:
 	lda.l RDMPYL
 	sep #$20
 	tax
-	lda $88A6F1,X
+	lda.l (ITEMS_DATA + 8),X
 	plx
 	sta.l ActiveUnit.WeaponsUses,X
 L83DE5E:
@@ -11059,7 +11062,7 @@ L83DE64:
 	lda.l RDMPYL
 	sep #$20
 	tax
-	lda $88A6F1,X
+	lda.l (ITEMS_DATA + 8),X
 	plx
 	sta.l ActiveUnit.ItemsUses,X
 L83DE8F:
@@ -11071,7 +11074,7 @@ L83DE8F:
 	sta.l ActiveUnit.HasMoved
 	ldx #$0000
 L83DE9F:
-	lda $93FE95,X
+	lda.l L93FE95,X
 	cmp #$FF
 	bne L83DEAA
 	brl L83DF77
@@ -11178,7 +11181,7 @@ L83DF6F:
 L83DF77:
 	ldx #$0000
 L83DF7A:
-	lda $93FEB5,X
+	lda.l L93FEB5,X
 	cmp #$FF
 	beq L83DF96
 	cmp.l ActiveUnit.NameID
@@ -11951,7 +11954,7 @@ L83E546:
 	nop
 	lda.l RDMPYL
 	tax
-	lda $93D215,X
+	lda.l L93D215,X
 	and #$00FF
 	cmp #$00FF
 	bne L83E57E
@@ -12179,11 +12182,11 @@ L83E73D:
 	lda $08ef
 	sta $1f
 	dex
-	lda $8383c4,X
+	lda.l (L8383C3 + 1),X
 	clc
 	adc $1f
 	sta $1f
-	lda $8383c3,X
+	lda.l L8383C3,X
 	clc
 	adc $1d
 	sta $1d
@@ -12671,7 +12674,7 @@ L83EB55:
 	pla
 	and #$07
 	tax
-	lda $83EB71,X
+	lda.l L83EB71,X
 	eor #$FF
 	and $0C0B,Y
 	sta $0C0B,Y
@@ -12695,7 +12698,7 @@ L83EB79:
 	nop
 	lda.l RDMPYL
 	tax
-	lda $88a6e9,X
+	lda.l ITEMS_DATA,X
 	and.w #$0008
 	beq L83EBA2
 	clc
@@ -12735,7 +12738,7 @@ L83EBBE:
 	bcc L83EBBB
 	asl
 	tax
-	lda $93cee8,X
+	lda.l L93CEE8,X
 	sta $09
 	lda [$09]
 	and.w #$00ff
@@ -12959,10 +12962,10 @@ L83ED1B:
 	nop
 	lda.l RDMPYL
 	tax
-	lda $88a6e9,X
+	lda.l ITEMS_DATA,X
 	and #$0020
 	beq L83ED8A
-	lda $88a6ec,X
+	lda.l (ITEMS_DATA + 3),X
 	and #$00ff
 	cmp #$00ff
 	beq L83ED8A
@@ -13085,7 +13088,7 @@ L83EE2F:
 	nop
 	lda.l RDMPYL
 	tax
-	lda $88a6f4,X
+	lda.l (ITEMS_DATA + 11),X
 	and #$0080
 	bne L83EE52
 	pla
@@ -13153,7 +13156,7 @@ L83EE9B:
 	nop
 	lda.l RDMPYL
 	tax
-	lda $88a6f5,X
+	lda.l (ITEMS_DATA + 12),X
 	and #$00ff
 	asl
 	tax
@@ -13228,7 +13231,7 @@ L83EF3A:
 	lda.l RDMPYL
 	tax
 	sep #$20
-	lda $88a6eb,X
+	lda.l (ITEMS_DATA + 2),X
 	bit #$80
 	bne L83EF5F
 	dec A
@@ -13244,7 +13247,7 @@ L83EF5F:
 	and #$00ff
 	asl
 	tax
-	lda $88a48e,X
+	lda.l L88A48E,X
 	sta $00
 	sep #$20
 	lda #$88
@@ -13811,7 +13814,7 @@ L83F3F5:
 	plx
 	bra L83F41C
 L83F3F8:
-	lda $88a6ec,X
+	lda.l (ITEMS_DATA + 3),X
 	clc
 	adc.l ActiveUnit.Strength
 	lsr
@@ -13841,14 +13844,14 @@ L83F423:
 	sep #$20
 	lda.l ActiveUnit.YPosition
 	clc
-	adc $8383c4,X
+	adc.l (L8383C3 + 1),X
 	rep #$20
 	and #$00ff
 	sta $15
 	sep #$20
 	lda.l ActiveUnit.XPosition
 	clc
-	adc $8383c5,X
+	adc.l (L8383C3 + 2),X
 	rep #$20
 	and #$00ff
 	sta $17
@@ -14162,7 +14165,7 @@ L83F6A8:
 	nop
 	lda.l RDMPYL
 	tax
-	lda $88a6f4,X
+	lda.l (ITEMS_DATA + 11),X
 	and #$00ff
 	sta $1b
 	bit #$0004
@@ -14222,7 +14225,7 @@ L83F71D:
 	phx
 	stz $15
 	stz $17
-	lda $8383c4,X
+	lda.l (L8383C3 + 1),X
 	sep #$20
 	clc
 	adc $08ee
@@ -14349,7 +14352,7 @@ L83F801:
 	beq L83F82E
 	stz $15
 	stz $17
-	lda $8383c4,X
+	lda.l (L8383C3 + 1),X
 	sep #$20
 	clc
 	adc $08ee
@@ -14528,7 +14531,7 @@ L83F958:
 	nop
 	lda.l $004216
 	tax
-	lda $88A6F4,X
+	lda.l (ITEMS_DATA + 11),X
 	bit $17
 	beq L83F97D
 	clc
@@ -14537,7 +14540,7 @@ L83F97D:
 	lda $17
 	and #$2000
 	bne L83F990
-	lda $88A6F4,X
+	lda.l (ITEMS_DATA + 11),X
 	bit #$0007
 	bne L83F990
 	clc
@@ -14583,7 +14586,7 @@ L83F9C4:
 	nop
 	lda.l $004216
 	tax
-	lda $88A6F4,X
+	lda.l (ITEMS_DATA + 11),X
 	bit #$0001
 	beq L83F9F3
 	pha
@@ -14880,7 +14883,7 @@ L83FC34:
 	bne L83FC57
 	sep #$20
 	xba
-	lda $88A6F1,X
+	lda.l (ITEMS_DATA + 8),X
 	xba
 	rep #$20
 L83FC57:
@@ -14889,7 +14892,7 @@ L83FC57:
 	lda $08ED
 	cmp #$20
 	bpl L83FC77
-	lda $88A6E9,X
+	lda.l ITEMS_DATA,X
 	bit #$28
 	bne L83FC77
 	rep #$20
@@ -15024,7 +15027,7 @@ L83FD35:
 	lda.l $004216
 	tax
 	sep #$20
-	lda $889074,X
+	lda.l (CLASSES_INITIAL_STATS + 8),X
 	cmp $7F4404
 	bcc L83FD7F
 	pha
@@ -15034,7 +15037,7 @@ L83FD35:
 	pla
 	sta $7F4404
 L83FD7F:
-	lda $889073,X
+	lda.l (CLASSES_INITIAL_STATS + 7),X
 	cmp $7F440F
 	bcc L83FD97
 	pha

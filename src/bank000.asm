@@ -4296,15 +4296,16 @@ L809FBD:
 	bra L809FE1
 
 L809FBF:
-.ACCU 16
 	asl
 	asl
 	asl
 	asl
-	and #$85C0
-	ora $49,X
-	sbc $BD1785,X
-	ora $154502
+	and #$C0
+	sta $15
+	eor #$FF
+	sta $17
+	lda $020F,X
+	eor $15
 	and $15
 	sta $15
 	lda $020F,X
@@ -4316,9 +4317,10 @@ L809FE1:
 	asl
 	asl
 	asl
-	and #$8530
-	ora $BD,X
-	ora $CF2902
+	and #$30
+	sta $15
+	lda $020F,X
+	and #$CF
 	ora $15
 	sta $020F,X
 	jmp L809F51
@@ -5763,13 +5765,13 @@ L80AADC:
 	asl
 	asl
 	tax
-	lda $DAC800,X
+	lda.w LDAC800,X
 	sta $099B,Y
-	lda $DAC802,X
+	lda.w (LDAC800 + 2),X
 	sta $099D,Y
-	lda $DAC804,X
+	lda.w (LDAC800 + 4),X
 	sta $09DB,Y
-	lda $DAC806,X
+	lda.w (LDAC800 + 6),X
 	sta $09DD,Y
 	ply
 	inc $19
@@ -6190,7 +6192,7 @@ L80AE27:
 	cmp #$2000
 	bcc L80AE43
 	ldx $19
-	lda $DAA800,X
+	lda.w LDAA800,X
 	sta $099B,Y
 	bra L80AE4C
 L80AE43:
@@ -8217,6 +8219,8 @@ L80BCD7:
 .dl LAFA213
 .dl LAFA971
 .dl LAFB243
+
+L80BD5E:
 .dl LA78000
 .dl LA790E5
 .dl LA7A0D2
@@ -8388,6 +8392,8 @@ L80BEE4:
 .dl LD0B5B2
 .dl LD0B8D1
 .dl LD0BE5D
+
+L80BF11:
 .dl LD0C144
 .dl LD0C144
 .dl LD0C144
@@ -8404,6 +8410,8 @@ L80BEE4:
 .dl LD0D88F
 .dl LD0DABC
 .dl LD0DD5E
+
+L80BF41:
 .dl LD08181
 .dl LD0877C
 .dl LD08A26
@@ -8419,6 +8427,8 @@ L80BEE4:
 .dl LD0B791
 .dl LD0BC01
 .dl LD0C016
+
+L80BF6E:
 .dl LD0C3C8
 .dl LD0C3C8
 .dl LD0C3C8

@@ -3375,7 +3375,7 @@ L93CAC6:
 	lda.l $004216
 	sep #$20
 	tax
-	lda $889074,X
+	lda.w L889074,X
 	sta $7F4404
 L93CAEC:
 	lda $7F4416
@@ -4341,7 +4341,7 @@ L93D2B2:
 	sep #$30
 	ldx #$00
 L93D2B7:
-	cmp $8384A6,X
+	cmp L8384A6,X
 	beq L93D2D6
 	inx
 	cpx #$08
@@ -4354,7 +4354,7 @@ L93D2C4:
 	sep #$30
 	ldx #$00
 L93D2C9:
-	cmp $83849F,X
+	cmp L83849F,X
 	beq L93D2D6
 	inx
 	cpx #$08
@@ -4363,7 +4363,7 @@ L93D2D4:
 	bra L93D2D4
 
 L93D2D6:
-	lda $8384AD,X
+	lda.w L8384AD,X
 	cmp #$2C
 	bne L93D2EB
 	lda $07DF
@@ -4383,7 +4383,7 @@ L93D2ED:
 	sep #$30
 	ldx #$00
 L93D2F2:
-	cmp $83849F,X
+	cmp L83849F,X
 	beq L93D2FF
 	inx
 	cpx #$08
@@ -4392,7 +4392,7 @@ L93D2FD:
 	bra L93D2FD
 
 L93D2FF:
-	lda $8384A6,X
+	lda.w L8384A6,X
 	plp
 	rtl
 
@@ -4401,7 +4401,7 @@ L93D305:
 	sep #$30
 	ldx #$00
 L93D30A:
-	cmp $8384A6,X
+	cmp L8384A6,X
 	beq L93D317
 	inx
 	cpx #$08
@@ -4410,7 +4410,7 @@ L93D315:
 	bra L93D315
 
 L93D317:
-	lda $83849F,X
+	lda.w L83849F,X
 	plp
 	rtl
 
@@ -4420,7 +4420,7 @@ L93D31D:
 	and #$00FF
 	tax
 	sep #$20
-	lda $848C15,X
+	lda.w L848C15,X
 	sta $07CE
 	plp
 	rtl
@@ -5158,27 +5158,27 @@ L93D951:
 	sep #$20
 	lda $7F4408
 	clc
-	adc $88906F,X
+	adc L88906F,X
 	sta $7F4408
 	lda $7F4409
 	clc
-	adc $88906C,X
+	adc L88906C,X
 	sta $7F4409
 	lda $7F440A
 	clc
-	adc $88906D,X
+	adc L88906D,X
 	sta $7F440A
 	lda $7F440B
 	clc
-	adc $88906E,X
+	adc L88906E,X
 	sta $7F440B
 	lda $7F440C
 	clc
-	adc $889070,X
+	adc L889070,X
 	sta $7F440C
 	lda $7F440D
 	clc
-	adc $889071,X
+	adc L889071,X
 	sta $7F440D
 	plp
 	rtl
@@ -5247,27 +5247,27 @@ L93D9FF:
 	sep #$20
 	lda $7F4408
 	sec
-	sbc $88906F,X
+	sbc L88906F,X
 	sta $7F4408
 	lda $7F4409
 	sec
-	sbc $88906C,X
+	sbc L88906C,X
 	sta $7F4409
 	lda $7F440A
 	sec
-	sbc $88906D,X
+	sbc L88906D,X
 	sta $7F440A
 	lda $7F440B
 	sec
-	sbc $88906E,X
+	sbc L88906E,X
 	sta $7F440B
 	lda $7F440C
 	sec
-	sbc $889070,X
+	sbc L889070,X
 	sta $7F440C
 	lda $7F440D
 	sec
-	sbc $889071,X
+	sbc L889071,X
 	sta $7F440D
 	plp
 	rtl
@@ -5307,7 +5307,7 @@ L93DAA2:
 	nop
 	lda.l $004216
 	tax
-	lda $88A6ED,X
+	lda.w (ITEMS_DATA + 4),X
 L93DABC:
 	sep #$20
 	sta $0798
@@ -7123,7 +7123,7 @@ L93E8F8:
 	lda.l $004216
 	sep #$20
 	tax
-	lda $88A6F4,X
+	lda.w (ITEMS_DATA + 11),X
 	plx
 	bit #$80
 	beq L93E961
@@ -7188,7 +7188,7 @@ L93E96D:
 	lda.l $004216
 	sep #$20
 	tax
-	lda $88A6F4,X
+	lda.w (ITEMS_DATA + 11),X
 	plx
 	bit #$80
 	beq L93E9D6
@@ -7413,7 +7413,7 @@ L93EB04:
 	nop
 	lda.l $004216
 	tax
-	lda $88A6F4,X
+	lda.w (ITEMS_DATA + 11),X
 	and #$00FF
 	bit #$0002
 	beq L93EB2D
@@ -7429,7 +7429,7 @@ L93EB2D:
 	nop
 	lda.l $004216
 	tax
-	lda $88A6F4,X
+	lda.w (ITEMS_DATA + 11),X
 	and #$00FF
 	bit #$0001
 	bne L93EB6D
@@ -7889,15 +7889,20 @@ L93FE58:
 .db $22 $23 $24 $25 $26 $28 $29 $2A
 .db $2B $2C $2F $30 $31 $32 $61 $62
 .db $63 $64 $65 $69 $6A $6B $6E $70
-.db $72 $80 $86 $76 $FF $45 $5C $5D
-.db $5E $5F $60 $61 $62 $63 $64 $65
-.db $66 $67 $68 $69 $6A $4B $4C $4D
-.db $4E $4F $50 $51 $52 $53 $54 $55
-.db $56 $57 $58 $59 $FF $34 $37 $3A
-.db $3B $3C $3D $3E $40 $41 $44 $45
-.db $46 $48 $49 $4B $4C $4D $4E $4F
-.db $31 $67 $68 $6C $6F $73 $75 $76
-.db $7F $83 $80 $8A $13 $71 $FF
+.db $72 $80 $86 $76 $FF
+
+L93FE95:
+.db $45 $5C $5D $5E $5F $60 $61 $62
+.db $63 $64 $65 $66 $67 $68 $69 $6A
+.db $4B $4C $4D $4E $4F $50 $51 $52
+.db $53 $54 $55 $56 $57 $58 $59 $FF
+
+L93FEB5:
+.db $34 $37 $3A $3B $3C $3D $3E $40
+.db $41 $44 $45 $46 $48 $49 $4B $4C
+.db $4D $4E $4F $31 $67 $68 $6C $6F
+.db $73 $75 $76 $7F $83 $80 $8A $13
+.db $71 $FF
 
 L93FED7:
 .db $1E
