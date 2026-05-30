@@ -3,6 +3,7 @@
 
 .SECTION "Bank92" FORCE
 
+LDC8000:
 .db $FF $FF $FF $FB $FB $F4 $F8 $87
 .db $C3 $3C $FB $85 $FB $FC $F8 $C7
 .db $FF $FF $FF $FF $FF $7F $7F $1F
@@ -973,6 +974,8 @@ LDCB000:
 .db $7F $32 $51 $33 $60 $35 $53 $37
 .db $73 $38 $FA $3A $72 $3C $C5 $3D
 .db $E6 $3F $BE $40 $43 $42 $A2 $46
+
+LDCB058:
 .db $A2 $46 $8C $79 $B9 $51 $B6 $FF
 .db $16 $26 $4E $13 $00 $01 $00 $12
 .db $02 $00 $11 $FF $2D $00 $12 $BE

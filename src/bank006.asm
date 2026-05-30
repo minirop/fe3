@@ -6341,9 +6341,9 @@ L86B12E:
 	rts
 
 L86B141:
-	lda #$8800
+	lda #bank100(L88ADDB)
 	sta $01
-	lda #$ADDB
+	lda #L88ADDB
 	sta $00
 	lda #$3400
 	sta $06

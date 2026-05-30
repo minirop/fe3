@@ -3,6 +3,7 @@
 
 .SECTION "Bank76" FORCE
 
+LCC8000:
 .db $FF $FF $FF $FF $FF $FF $FF $FF
 .db $FF $FF $CF $B7 $B7 $FF $F7 $FF
 .db $FF $FF $FF $FF $FF $FF $FF $FF

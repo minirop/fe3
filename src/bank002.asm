@@ -146,12 +146,12 @@ L828106:
 L828113:
 	lda $08ED
 	jsl L83D912
-	lda #$8800
+	lda #bank100(L88CB72)
 	sta $01
 	lda.l ActiveUnit.AI3
 	and #$0007
 	asl
-	adc #$CB72
+	adc #L88CB72
 	sta $00
 	lda.l ActiveUnit.AI3
 	bit #$0080

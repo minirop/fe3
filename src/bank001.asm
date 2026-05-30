@@ -457,7 +457,7 @@ L818380:
 	ora #$0100
 	xba
 	sta $0c01
-	lda #$8900
+	lda #bank100(L89C45C)
 	sta $01
 	lda $07ce
 	and #$00ff
@@ -4541,7 +4541,7 @@ L81A688:
 	lda.l (ITEMS_DATA + 6),X
 	sta $1B
 	rep #$20
-	lda #$8800
+	lda #bank100(ITEMS_DATA)
 	sta $01
 	lda.l (ITEMS_DATA + 13),X
 	and #$00FF

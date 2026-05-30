@@ -2051,6 +2051,7 @@ L8C903F:
 EV_ARENA
 EV_STOP
 
+L8C9041:
 .db $00 $0F $13 $18 $1E $FE $FE $FE
 .db $00 $0F $18 $1E $1F $20 $FE $FE
 .db $00 $01 $0F $10 $13 $18 $FE $FE

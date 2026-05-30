@@ -2511,7 +2511,7 @@ L8795EF:
 L87961A:
 	rep #$20
 	pha
-	lda #$8E00
+	lda #bank100(L8E81C4)
 	sta $01
 	pla
 	clc
@@ -2521,7 +2521,7 @@ L87961A:
 	clc
 	adc $15
 	clc
-	adc #$81C4
+	adc #L8E81C4
 	sta $00
 	lda [$00]
 	pha
@@ -2873,7 +2873,7 @@ L8798F9:
 	ldx $0FA2
 	stx $0F
 	rep #$20
-	lda #$8C00
+	lda #bank100(L8C9041)
 	sta $0D
 	ldy #$0001
 	lda [$0F],Y
@@ -2882,7 +2882,7 @@ L8798F9:
 	asl A
 	asl A
 	clc
-	adc #$9041
+	adc #L8C9041
 	sta $0C
 	ldy #$0000
 	sep #$20
@@ -3509,7 +3509,7 @@ L879E0F:
 	lda #$0004
 	ldx #$0012
 	jsl L879EC9
-	lda #$8800
+	lda #bank100(L889D6D)
 	sta $01
 	lda $0F84
 	clc
@@ -3528,7 +3528,7 @@ L879E0F:
 	sep #$20
 	rep #$20
 	clc
-	adc #$9D6D
+	adc #L889D6D
 	sta $00
 	jsl L83DCBE
 	lda $0F84
@@ -3639,7 +3639,7 @@ L879F09:
 L879F12:
 	php
 	rep #$20
-	lda #$8800
+	lda #bank100(L889D6D)
 	sta $01
 	lda $0F84
 	clc
@@ -3658,7 +3658,7 @@ L879F12:
 	sep #$20
 	rep #$20
 	clc
-	adc #$9D6D
+	adc #L889D6D
 	sta $00
 	ldy #$0003
 	lda [$00],Y
@@ -5054,12 +5054,12 @@ L87AA9B:
 	rep #$20
 	and #$00FF
 	pha
-	lda #$8C00
+	lda #bank100(L8CA04C)
 	sta $01
 	pla
 	jsl L87A9E8
 	clc
-	adc #$A04C
+	adc #L8CA04C
 	sta $00
 	lda [$00]
 	sta $00
