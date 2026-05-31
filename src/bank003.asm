@@ -1546,18 +1546,22 @@ L838FC0:
 	lda $0A9F
 	inc A
 	sta $15
+L838FDC:
 	lda $15
 	jsl L83D912
 	lda.l ActiveUnit.HasMoved
-	and.w #$F001
-	ora $A5,X
-	ora $1A,X
-	and.w #$851F
-	ora $CD,X
-	sta $E6D00A,X
+	and #$01
+	beq L838FFF
+	lda $15
+	inc A
+	and #$1F
+	sta $15
+	cmp $0A9F
+	bne L838FDC
 	lda $0A9F
 	sta $15
 	jsl L83D912
+L838FFF:
 	lda $15
 	sta $0A9F
 	lda.l ActiveUnit.YPosition
@@ -1565,8 +1569,9 @@ L838FC0:
 	lda.l ActiveUnit.XPosition
 	sta $08E7
 	inc $08D4
-	lda.w #$8D12
-	cmp $20C208,X
+	lda #$12
+	sta $08DF
+	rep #$20
 L83901C:
 	rts
 

@@ -267,32 +267,72 @@ L9587B1:
 .db $16 $16 $16 $16 $16 $16
 
 L9587DE:
-.db $F1 $C5
-.db $C2 $F1 $C6 $C2 $F1 $C7 $C2 $F1
-.db $C8 $C2 $F1 $C9 $C2 $F1 $CA $C2
-.db $F1 $CB $C2 $F1 $CD $C2 $F1 $CE
-.db $C2 $F1 $CF $C2 $F1 $D1 $C2 $F1
-.db $D3 $C2 $F1 $D4 $C2 $F1 $D5 $C2
-.db $F1 $D6 $C2 $F1 $D7 $C2 $F1 $D8
-.db $C2 $F1 $DF $C2 $F1 $E0 $C2 $F1
-.db $E2 $C2 $F1 $E3 $C2 $F1 $E4 $C2
-.db $F1 $E7 $C2 $F1 $E6 $C2 $F1 $E5
-.db $C2 $F1 $E8 $C2 $F1 $E9 $C2 $F1
-.db $EA $C2 $F1 $EB $C2 $F1 $C6 $C2
-.db $F1 $EC $C2 $F1 $ED $C2 $F1 $EE
-.db $C2 $F1 $C8 $C2 $F1 $EF $C2 $F1
-.db $F0 $C2 $F1 $F1 $C2 $F1 $F2 $C2
-.db $F1 $D9 $C2 $F1 $D8 $C2 $F1 $DA
-.db $C2 $F1 $DB $C2 $F1 $D8 $C2 $F1
-.db $DE $C2 $F1 $DD $C2 $F1 $CC $C2
-.db $F1 $D0 $C2 $F1 $D2 $C2 $F1 $DC
-.db $C2 $F1 $E1 $C2 $F1 $E6 $C2 $F1
-.db $E4 $C2 $FA $88 $CA $FA $89 $CA
-.db $FA $8A $CA $FA $8B $CA $FA $8C
-.db $CA $FA $8D $CA $FA $8E $CA $FA
-.db $8F $CA $FA $90 $CA $FA $91 $CA
-.db $FA $92 $CA $FA $93 $CA $FA $94
-.db $CA $FA $95 $CA
+.dl LC2C5F1
+.dl LC2C6F1
+.dl LC2C7F1
+.dl LC2C8F1
+.dl LC2C9F1
+.dl LC2CAF1
+.dl LC2CBF1
+.dl LC2CDF1
+.dl LC2CEF1
+.dl LC2CFF1
+.dl LC2D1F1
+.dl LC2D3F1
+.dl LC2D4F1
+.dl LC2D5F1
+.dl LC2D6F1
+.dl LC2D7F1
+.dl LC2D8F1
+.dl LC2DFF1
+.dl LC2E0F1
+.dl LC2E2F1
+.dl LC2E3F1
+.dl LC2E4F1
+.dl LC2E7F1
+.dl LC2E6F1
+.dl LC2E5F1
+.dl LC2E8F1
+.dl LC2E9F1
+.dl LC2EAF1
+.dl LC2EBF1
+.dl LC2C6F1
+.dl LC2ECF1
+.dl LC2EDF1
+.dl LC2EEF1
+.dl LC2C8F1
+.dl LC2EFF1
+.dl LC2F0F1
+.dl LC2F1F1
+.dl LC2F2F1
+.dl LC2D9F1
+.dl LC2D8F1
+.dl LC2DAF1
+.dl LC2DBF1
+.dl LC2D8F1
+.dl LC2DEF1
+.dl LC2DDF1
+.dl LC2CCF1
+.dl LC2D0F1
+.dl LC2D2F1
+.dl LC2DCF1
+.dl LC2E1F1
+.dl LC2E6F1
+.dl LC2E4F1
+.dl LCA88FA
+.dl LCA89FA
+.dl LCA8AFA
+.dl LCA8BFA
+.dl LCA8CFA
+.dl LCA8DFA
+.dl LCA8EFA
+.dl LCA8FFA
+.dl LCA90FA
+.dl LCA91FA
+.dl LCA92FA
+.dl LCA93FA
+.dl LCA94FA
+.dl LCA95FA
 
 L9588A4:
 .db $3B $3C $40 $44
@@ -300,27 +340,59 @@ L9588A4:
 .db $67 $4C $FF
 
 L9588B3:
-.db $51 $FD $C2 $25 $A9
-.db $C3 $51 $B1 $C3 $BD $BE $C3 $C6
-.db $D5 $C3 $07 $EE $C3 $B8 $F9 $C3
-.db $65 $91 $C4 $34 $A2 $C4 $90 $B5
-.db $C4 $D9 $F7 $C4 $3E $B9 $C5 $4D
-.db $C1 $C5 $02 $C8 $C5 $6B $CF $C5
-.db $CF $DC $C5 $47 $DF $C5 $15 $B8
-.db $C6 $19 $C1 $C6 $13 $DD $C6 $0A
-.db $E3 $C6 $E6 $EC $C6 $04 $A7 $C7
-.db $45 $90 $C7 $5D $89 $C7 $4D $AB
-.db $C7 $7A $B6 $C7 $30 $BF $C7 $ED
-.db $C9 $C7 $25 $A9 $C3 $C0 $D0 $C7
-.db $DA $D8 $C7 $19 $C1 $C6 $BD $BE
-.db $C3 $7A $B6 $C7 $7F $E1 $C7 $9A
-.db $E6 $C7 $34 $A2 $C4 $C6 $EF $C5
-.db $47 $DF $C5 $48 $FC $C5 $32 $94
-.db $C6 $47 $DF $C5 $47 $DF $C5 $C6
-.db $EF $C5 $E5 $84 $C4 $93 $D6 $C4
-.db $E8 $97 $C5 $F1 $AC $C6 $6E $D1
-.db $C6 $63 $95 $C7 $FC $FA $C6 $38
-.db $95 $C3
+.dl LC2FD51
+.dl LC3A925
+.dl LC3B151
+.dl LC3BEBD
+.dl LC3D5C6
+.dl LC3EE07
+.dl LC3F9B8
+.dl LC49165
+.dl LC4A234
+.dl LC4B590
+.dl LC4F7D9
+.dl LC5B93E
+.dl LC5C14D
+.dl LC5C802
+.dl LC5CF6B
+.dl LC5DCCF
+.dl LC5DF47
+.dl LC6B815
+.dl LC6C119
+.dl LC6DD13
+.dl LC6E30A
+.dl LC6ECE6
+.dl LC7A704
+.dl LC79045
+.dl LC7895D
+.dl LC7AB4D
+.dl LC7B67A
+.dl LC7BF30
+.dl LC7C9ED
+.dl LC3A925
+.dl LC7D0C0
+.dl LC7D8DA
+.dl LC6C119
+.dl LC3BEBD
+.dl LC7B67A
+.dl LC7E17F
+.dl LC7E69A
+.dl LC4A234
+.dl LC5EFC6
+.dl LC5DF47
+.dl LC5FC48
+.dl LC69432
+.dl LC5DF47
+.dl LC5DF47
+.dl LC5EFC6
+.dl LC484E5
+.dl LC4D693
+.dl LC597E8
+.dl LC6ACF1
+.dl LC6D16E
+.dl LC79563
+.dl LC6FAFC
+.dl LC39538
 
 L958952:
 .db $16 $01 $17 $00 $32 $00
@@ -329,88 +401,195 @@ L958952:
 .db $FF
 
 L958969:
-.db $9A $A9 $C7 $62 $9C $C7 $3F
-.db $A1 $C7 $FE $8C $C7 $FE $8C $C7
-.db $B0 $B1 $C7 $3F $BB $C7 $3F $BB
-.db $C7 $7C $C6 $C7 $7C $C6 $C7 $3F
-.db $BB $C7
+.dl LC7A99A
+.dl LC79C62
+.dl LC7A13F
+.dl LC78CFE
+.dl LC78CFE
+.dl LC7B1B0
+.dl LC7BB3F
+.dl LC7BB3F
+.dl LC7C67C
+.dl LC7C67C
+.dl LC7BB3F
 
 L95898A:
-.db $D2 $FA $C7 $C8 $FD $C7
-.db $A9 $82 $C8 $7C $8F $C8 $6C $88
-.db $C8 $AC $96 $C8 $93 $9D $C8 $2D
-.db $A3 $C8 $34 $B0 $C8 $59 $B4 $C8
-.db $ED $DC $C8 $90 $BE $C8 $45 $C4
-.db $C8 $4F $D1 $C8 $3A $DC $C8 $D2
-.db $FA $C7 $D2 $FA $C7 $D2 $FA $C7
-.db $D2 $FA $C7 $6E $EA $C8 $6E $EA
-.db $C8 $6E $EA $C8 $6E $EA $C8 $25
-.db $ED $C8 $F9 $FB $C8 $6E $EA $C8
-.db $6E $EA $C8 $4A $FC $C8 $25 $ED
-.db $C8 $1C $FE $C8 $D5 $86 $C9 $C0
-.db $87 $C9 $C1 $8D $C9 $FB $90 $C9
-
+.dl LC7FAD2
+.dl LC7FDC8
+.dl LC882A9
+.dl LC88F7C
+.dl LC8886C
+.dl LC896AC
+.dl LC89D93
+.dl LC8A32D
+.dl LC8B034
+.dl LC8B459
+.dl LC8DCED
+.dl LC8BE90
+.dl LC8C445
+.dl LC8D14F
+.dl LC8DC3A
+.dl LC7FAD2
+.dl LC7FAD2
+.dl LC7FAD2
+.dl LC7FAD2
+.dl LC8EA6E
+.dl LC8EA6E
+.dl LC8EA6E
+.dl LC8EA6E
+.dl LC8ED25
+.dl LC8FBF9
+.dl LC8EA6E
+.dl LC8EA6E
+.dl LC8FC4A
+.dl LC8ED25
+.dl LC8FE1C
+.dl LC986D5
+.dl LC987C0
+.dl LC98DC1
+.dl LC990FB
 
 L9589F0:
-.db $72 $88 $CA $82 $88 $CA $7A $88
-.db $CA $8A $88 $CA $F1 $F3 $C2 $51
-.db $F4 $C2 $B1 $F4 $C2 $11 $F5 $C2
-.db $71 $F5 $C2 $D1 $F5 $C2 $31 $F6
-.db $C2 $91 $F6 $C2 $F1 $F6 $C2 $51
-.db $F7 $C2 $31 $F9 $C2 $B1 $F7 $C2
-.db $11 $F8 $C2 $71 $F8 $C2 $D1 $F8
-.db $C2 $F1 $F3 $C2 $F1 $F3 $C2 $F1
-.db $F3 $C2 $F1 $F3 $C2 $91 $F9 $C2
-.db $91 $F9 $C2 $91 $F9 $C2 $91 $F9
-.db $C2 $F1 $F9 $C2 $51 $FA $C2 $B1
-.db $FA $C2 $91 $F9 $C2 $11 $FB $C2
-.db $F1 $F9 $C2 $71 $FB $C2 $D1 $FB
-.db $C2 $31 $FC $C2 $91 $FC $C2 $F1
-.db $FC $C2 $32 $86 $CA $F2 $88 $CA
+.dl LCA8872
+.dl LCA8882
+.dl LCA887A
+.dl LCA888A
+.dl LC2F3F1
+.dl LC2F451
+.dl LC2F4B1
+.dl LC2F511
+.dl LC2F571
+.dl LC2F5D1
+.dl LC2F631
+.dl LC2F691
+.dl LC2F6F1
+.dl LC2F751
+.dl LC2F931
+.dl LC2F7B1
+.dl LC2F811
+.dl LC2F871
+.dl LC2F8D1
+.dl LC2F3F1
+.dl LC2F3F1
+.dl LC2F3F1
+.dl LC2F3F1
+.dl LC2F991
+.dl LC2F991
+.dl LC2F991
+.dl LC2F991
+.dl LC2F9F1
+.dl LC2FA51
+.dl LC2FAB1
+.dl LC2F991
+.dl LC2FB11
+.dl LC2F9F1
+.dl LC2FB71
+.dl LC2FBD1
+.dl LC2FC31
+.dl LC2FC91
+.dl LC2FCF1
+.dl LCA8632
+.dl LCA88F2
 
 L958A68:
-.db $C7 $BF $C2 $9B $C0 $C2 $2C $C0
-.db $C2 $F2 $C0 $C2 $26 $DF $C1 $C5
-.db $E0 $C1 $0B $E3 $C1 $3C $E6 $C1
-.db $EC $E7 $C1 $DA $ED $C1 $5E $F3
-.db $C1 $C0 $F6 $C1 $49 $FA $C1 $08
-.db $81 $C2 $E7 $94 $C2 $BA $88 $C2
-.db $C2 $8B $C2 $AC $8D $C2 $82 $92
-.db $C2 $26 $DF $C1 $26 $DF $C1 $26
-.db $DF $C1 $26 $DF $C1 $33 $A2 $C2
-.db $33 $A2 $C2 $33 $A2 $C2 $33 $A2
-.db $C2 $07 $A6 $C2 $94 $AA $C2 $1E
-.db $A4 $C2 $E8 $AB $C2 $6F $AE $C2
-.db $24 $B1 $C2 $92 $B5 $C2 $E4 $B9
-.db $C2 $05 $BB $C2 $E1 $BD $C2 $33
-.db $BF $C2 $5B $9A $CA $5C $9C $CA
-.db $60 $C1 $C2
+.dl LC2BFC7
+.dl LC2C09B
+.dl LC2C02C
+.dl LC2C0F2
+.dl LC1DF26
+.dl LC1E0C5
+.dl LC1E30B
+.dl LC1E63C
+.dl LC1E7EC
+.dl LC1EDDA
+.dl LC1F35E
+.dl LC1F6C0
+.dl LC1FA49
+.dl LC28108
+.dl LC294E7
+.dl LC288BA
+.dl LC28BC2
+.dl LC28DAC
+.dl LC29282
+.dl LC1DF26
+.dl LC1DF26
+.dl LC1DF26
+.dl LC1DF26
+.dl LC2A233
+.dl LC2A233
+.dl LC2A233
+.dl LC2A233
+.dl LC2A607
+.dl LC2AA94
+.dl LC2A41E
+.dl LC2ABE8
+.dl LC2AE6F
+.dl LC2B124
+.dl LC2B592
+.dl LC2B9E4
+.dl LC2BB05
+.dl LC2BDE1
+.dl LC2BF33
+.dl LCA9A5B
+.dl LCA9C5C
+.dl LC2C160
 
 L958AE3:
-.db $75 $91 $C9 $F5 $91
-.db $C9 $5E $92 $C9 $D1 $92 $C9 $63
-.db $93 $C9 $F4 $93 $C9 $8F $94 $C9
-.db $1C $95 $C9 $B0 $95 $C9 $45 $96
-.db $C9 $49 $98 $C9 $DD $98 $C9 $5F
-.db $99 $C9 $2D $9A $C9 $F2 $9A $C9
-.db $B4 $9B $C9 $C2 $9C $C9 $BE $9D
-.db $C9 $DC $9E $C9 $0A $A0 $C9 $D8
-.db $A0 $C9 $48 $A4 $C9 $10 $A6 $C9
-.db $D8 $A7 $C9 $A0 $A9 $C9 $68 $AB
-.db $C9 $3D $AC $C9 $63 $AD $C9 $6F
-.db $B2 $C9 $E0 $B7 $C9 $2A $BC $C9
-.db $FB $C0 $C9 $F8 $C2 $C9 $B2 $CC
-.db $C9 $0A $D9 $C9 $08 $E5 $C9
+.dl LC99175
+.dl LC991F5
+.dl LC9925E
+.dl LC992D1
+.dl LC99363
+.dl LC993F4
+.dl LC9948F
+.dl LC9951C
+.dl LC995B0
+.dl LC99645
+.dl LC99849
+.dl LC998DD
+.dl LC9995F
+.dl LC99A2D
+.dl LC99AF2
+.dl LC99BB4
+.dl LC99CC2
+.dl LC99DBE
+.dl LC99EDC
+.dl LC9A00A
+.dl LC9A0D8
+.dl LC9A448
+.dl LC9A610
+.dl LC9A7D8
+.dl LC9A9A0
+.dl LC9AB68
+.dl LC9AC3D
+.dl LC9AD63
+.dl LC9B26F
+.dl LC9B7E0
+.dl LC9BC2A
+.dl LC9C0FB
+.dl LC9C2F8
+.dl LC9CCB2
+.dl LC9D90A
+.dl LC9E508
 
 L958B4F:
-.db $D2
-.db $85 $CA $F2 $85 $CA $12 $86 $CA
-.db $92 $86 $CA $B2 $86 $CA $D2 $86
-.db $CA $F2 $86 $CA $12 $87 $CA $32
-.db $87 $CA $52 $87 $CA $72 $87 $CA
-.db $B2 $87 $CA $D2 $87 $CA $F2 $87
-.db $CA $12 $88 $CA $32 $88 $CA $52
-.db $88 $CA
+.dl LCA85D2
+.dl LCA85F2
+.dl LCA8612
+.dl LCA8692
+.dl LCA86B2
+.dl LCA86D2
+.dl LCA86F2
+.dl LCA8712
+.dl LCA8732
+.dl LCA8752
+.dl LCA8772
+.dl LCA87B2
+.dl LCA87D2
+.dl LCA87F2
+.dl LCA8812
+.dl LCA8832
+.dl LCA8852
 
 L958B82:
 .db $00 $02 $00 $00 $00 $02
