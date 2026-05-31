@@ -87,7 +87,7 @@ L80809B:
 	bpl L8080AA
 	and.b #$7f
 	eor.b #$ff
-	inc A
+	ina
 	sta $0453,X
 	bra L8080AC
 L8080AA:
@@ -171,7 +171,7 @@ L808143:
 	and #$00ff
 	sta $3d
 	eor #$ffff
-	inc A
+	ina
 	sta $3f
 	lda $0453,X
 	and #$00ff
@@ -187,7 +187,7 @@ L808164:
 	and #$00ff
 	sta $41
 	eor #$ffff
-	inc A
+	ina
 	sta $43
 	lda $0455,X
 	and #$00ff
@@ -302,7 +302,7 @@ L80824B:
 
 L80824C:
 	lda $07de
-	inc A
+	ina
 	sta $044e,X
 	ldx.b #$01
 L808255:
@@ -751,28 +751,28 @@ L808468:
 	sta $D2
 	rep #$20
 	lda $8B
-	dec A
+	dea
 	sep #$20
 	sta $210E
 	xba
 	sta $210E
 	rep #$20
 	lda $8F
-	dec A
+	dea
 	sep #$20
 	sta $2110
 	xba
 	sta $2110
 	rep #$20
 	lda $93
-	dec A
+	dea
 	sep #$20
 	sta $2112
 	xba
 	sta $2112
 	rep #$20
 	lda $97
-	dec A
+	dea
 	sep #$20
 	sta $2114
 	xba
@@ -1175,15 +1175,15 @@ L808940:
 	bcs L808940
 	lda $0140,Y
 	beq L80895B
-	dec A
+	dea
 	bne L80894D
 	jmp L80895C
 L80894D:
-	dec A
+	dea
 	bne L808953
 	jmp L808995
 L808953:
-	dec A
+	dea
 	bne L808959
 	jmp L8089DC
 L808959:
@@ -1500,7 +1500,7 @@ L808BCC:
 	beq L808BE0
 	ldy $15
 	lda $17
-	dec A
+	dea
 	asl
 	tax
 	lda $0410,Y
@@ -1553,7 +1553,7 @@ L808C27:
 	beq L808C42
 	ldx $15
 	lda $17
-	dec A
+	dea
 	asl
 	tay
 	lda $8c47,Y
@@ -1986,7 +1986,7 @@ L808EAD:
 	lda [$00],Y
 	iny
 	sta $0140,X
-	dec A
+	dea
 	beq L808EE7
 	stz $0149,X
 	rep #$20
@@ -2183,7 +2183,7 @@ L808FF8:
 	ply
 L808FFB:
 	sta.l DecompressionLocation,X
-	inc A
+	ina
 	inx
 	dey
 	bne L808FFB
@@ -2264,7 +2264,7 @@ L80907B:
 	pha
 	phb
 	pla
-	inc A
+	ina
 	pha
 	plb
 	pla
@@ -2995,7 +2995,7 @@ L8095E7:
 	lda #$0000
 	sta $04BE,X
 	pla
-	inc A
+	ina
 	cmp #$0010
 	bne L8095E7
 	plp
@@ -3157,7 +3157,7 @@ L80972E:
 	dey
 	lda [$03],Y
 	and #$00ff
-	dec A
+	dea
 	tay
 	lda #bank100(L809688)
 	sta $04
@@ -3243,7 +3243,7 @@ L8097DE:
 	lda #$9ACA
 	sta.l $0004C0,X
 	pla
-	dec A
+	dea
 	jsr L8097F2
 	lda $00
 	sta.l $0004C2,X
@@ -3297,7 +3297,7 @@ L809821:
 	bcc L809866
 	sep #$20
 	eor #$FF
-	inc A
+	ina
 	sta.l $0004D4,X
 	lda #$FF
 	sta.l $0004D5,X
@@ -3339,7 +3339,7 @@ L809895:
 	and #$00FF
 	cmp #$00FE
 	beq L8098EF
-	dec A
+	dea
 	sep #$20
 	sta $5A
 	lda.l $0004CA,X
@@ -3377,7 +3377,7 @@ L8098FB:
 	cmp #$0001
 	beq L80993A
 	lda.l $000700
-	inc A
+	ina
 	sta.l $000700
 	lda #$0000
 	sta.l $0006FE
@@ -3438,7 +3438,7 @@ L80997C:
 	lda.l $0004D5,X
 	cmp #$FF
 	beq L8099C7
-	dec A
+	dea
 	sta.l $0004D5,X
 	bne L8099C7
 	lda.l $0004C8,X
@@ -3483,8 +3483,8 @@ L8099DA:
 	sta $01
 	lda.l $0004BE,X
 	xba
-	inc A
-	inc A
+	ina
+	ina
 	sta $00
 	xba
 	sta.l $0004BE,X
@@ -3619,7 +3619,7 @@ L809ACA:
 	beq L809AF9
 	pla
 	eor #$FF
-	inc A
+	ina
 	clc
 	adc.l $0004CE,X
 	bra L809AFF
@@ -3636,7 +3636,7 @@ L809AFF:
 	beq L809B18
 	pla
 	eor #$FF
-	inc A
+	ina
 	clc
 	adc.l $0004D0,X
 	bra L809B1E
@@ -3662,7 +3662,7 @@ L809B36:
 	beq L809B49
 	cmp #$01
 	beq L809B22
-	dec A
+	dea
 	sta.l $0004D7,X
 	bra L809B64
 L809B49:
@@ -3702,7 +3702,7 @@ L809B66:
 	beq L809B95
 	pla
 	eor #$ff
-	inc A
+	ina
 	clc
 	adc.l $0004ce,X
 	bra L809B9B
@@ -3719,7 +3719,7 @@ L809B9B:
 	beq L809BB4
 	pla
 	eor #$ff
-	inc A
+	ina
 	clc
 	adc.l $0004d0,X
 	bra L809BBA
@@ -3745,7 +3745,7 @@ L809BD2:
 	beq L809BE5
 	cmp #$01
 	beq L809BBE
-	dec A
+	dea
 	sta.l $0004d7,X
 	bra L809C00
 L809BE5:
@@ -3771,7 +3771,7 @@ L809C01:
 	adc #$01
 	sta.l $0004ce,X
 	lda.l $0004d7,X
-	inc A
+	ina
 	sta.l $0004d7,X
 	cmp #$40
 	bcc L809C2B
@@ -4233,16 +4233,16 @@ L809F6D:
 	lda $27
 	cmp #$80
 	lda #00
-	rol A
+	rol
 	tax
 	lda [$03],Y
 	bpl L809F7E
-	dec A
+	dea
 	eor #$FF
 	bra L809F81
 L809F7E:
 	eor #$FF
-	inc A
+	ina
 L809F81:
 	clc
 	adc $60,X
@@ -4253,16 +4253,16 @@ L809F87:
 	lda $27
 	cmp #$80
 	lda #$00
-	rol A
+	rol
 	tax
 	lda [$03],Y
 	bpl L809F98
-	dec A
+	dea
 	eor #$FF
 	bra L809F9B
 L809F98:
 	eor #$FF
-	inc A
+	ina
 L809F9B:
 	clc
 	adc $60,X
@@ -4373,9 +4373,9 @@ L80A04B:
 	cmp #$01
 	beq L80A06D
 	lda.l $0004DB,X
-	dec A
+	dea
 	sta.l $0004DB,X
-	dec A
+	dea
 	rep #$20
 	and #$00FF
 	tax
@@ -4584,12 +4584,12 @@ L80A1DE:
 	tax
 	lda [$03],Y
 	bpl L80A1EF
-	dec A
+	dea
 	eor #$ff
 	bra L80A1F2
 L80A1EF:
 	eor #$ff
-	inc A
+	ina
 L80A1F2:
 	clc
 	adc $60,X
@@ -4602,12 +4602,12 @@ L80A1F8:
 	tax
 	lda [$03],Y
 	bpl L80A209
-	dec A
+	dea
 	eor #$ff
 	bra L80A20C
 L80A209:
 	eor #$ff
-	inc A
+	ina
 L80A20C:
 	clc
 	adc $60,X
@@ -4776,7 +4776,7 @@ L80A377:
 	sta $03
 	sep #$20
 	lda $25
-	dec A
+	dea
 	sta $25
 	rep #$20
 	lda $25
@@ -4811,7 +4811,7 @@ L80A3B8:
 	sta $03
 	sep #$20
 	lda $26
-	dec A
+	dea
 	sta $26
 	rep #$20
 	lda $25
@@ -5425,7 +5425,7 @@ L80A877:
 	sec
 	rtl
 L80A886:
-	inc A
+	ina
 	plp
 	clc
 	rtl
@@ -5442,7 +5442,7 @@ L80A88A:
 	rtl
 
 L80A899:
-	dec A
+	dea
 	plp
 	clc
 	rtl
@@ -5471,11 +5471,11 @@ L80A8B8:
 	lda $0137
 	and #$0007
 	beq L80A8D7
-	dec A
+	dea
 	beq L80A929
-	dec A
+	dea
 	beq L80A8D4
-	dec A
+	dea
 	bne L80A924
 	brl L80A9B4
 L80A8D4:
@@ -5900,7 +5900,7 @@ L80ABB4:
 	jsr L80AC6C
 L80AC29:
 	lda $08E2
-	inc A
+	ina
 	and #$00FF
 	jsl L80909D
 	jsl L80954E
@@ -5985,9 +5985,9 @@ L80ACB6:
 	lda $08E9
 	and #$00FF
 	beq L80AD00
-	dec A
+	dea
 	beq L80ACF8
-	dec A
+	dea
 	beq L80ACCE
 	lda $08EA
 	and #$00FF
@@ -5996,7 +5996,7 @@ L80ACCE:
 	lda $08EA
 	and #$00FF
 	eor #$FFFF
-	inc A
+	ina
 L80ACD8:
 	clc
 	adc $8B
@@ -6026,7 +6026,7 @@ L80AD00:
 	lda $08EA
 	and #$00FF
 	eor #$FFFF
-	inc A
+	ina
 L80AD0A:
 	clc
 	adc $89
@@ -6121,10 +6121,10 @@ L80ADAE:
 	sta $17
 	lda $08E9
 	and #$00FF
-	dec A
+	dea
 	beq L80ADD9
-	dec A
-	dec A
+	dea
+	dea
 	beq L80ADCC
 	rts
 
@@ -6282,9 +6282,9 @@ L80AED6:
 	lda $08E9
 	and #$00FF
 	beq L80AF13
-	dec A
+	dea
 	beq L80AEF9
-	dec A
+	dea
 	beq L80AF06
 	lda $8B
 	clc
@@ -6500,9 +6500,9 @@ L80B089:
 	lda $07db
 	and #$00ff
 	beq L80B09C
-	dec A
+	dea
 	beq L80B0A5
-	dec A
+	dea
 	beq L80B0C2
 L80B09A:
 	bra L80B09A
@@ -6601,7 +6601,7 @@ L80B134:
 	sta $3800,X
 	lda #$0000
 	sta $4000
-	dec A
+	dea
 	sta $4003
 	lda.l $0008fa
 	sta $4001
@@ -7406,7 +7406,7 @@ L80B6E2:
 	jsr L80B7A3
 	tax
 	bne L80B6ED
-	dec A
+	dea
 	tay
 	brl L80B79A
 L80B6ED:
@@ -7758,7 +7758,7 @@ L80B992:
 	sta $2140
 	stz $2142
 	txa
-	dec A
+	dea
 	asl
 	tax
 	lda.l LB1D800,X
@@ -7774,7 +7774,7 @@ L80B9A9:
 	sta $01
 	stz $00
 	lda.l (LB1DB00 + 3),X
-	inc A
+	ina
 	lsr
 	sta $088A
 	lda.l (LB1DB00 + 5),X
@@ -7891,7 +7891,7 @@ L80BA9A:
 L80BA9F:
 	cmp $2140
 	bne L80BA9F
-	inc A
+	ina
 L80BAA5:
 	rep #$20
 	sta $2140
@@ -8008,48 +8008,48 @@ L80BB7C:
 L80BB88:
 	and #$00FF
 	beq L80BBDF
-	dec A
-	dec A
+	dea
+	dea
 	tax
 	lda.l LB1FB80,X
 	brl L80BBDF
 L80BB97:
 	and #$00FF
 	beq L80BBDF
-	dec A
-	dec A
+	dea
+	dea
 	tax
 	lda.l LB1FBC0,X
 	brl L80BBDF
 L80BBA6:
 	and #$00FF
 	beq L80BBDF
-	dec A
-	dec A
+	dea
+	dea
 	tax
 	lda.l LB1FC00,X
 	brl L80BBDF
 L80BBB5:
 	and #$00FF
 	beq L80BBDF
-	dec A
-	dec A
+	dea
+	dea
 	tax
 	lda.l LB1FC40,X
 	bra L80BBDF
 L80BBC3:
 	and #$00FF
 	beq L80BBDF
-	dec A
-	dec A
+	dea
+	dea
 	tax
 	lda.l LB1FC80,X
 	bra L80BBDF
 L80BBD1:
 	and #$00FF
 	beq L80BBDF
-	dec A
-	dec A
+	dea
+	dea
 	tax
 	lda.l LB1FCC0,X
 	bra L80BBDF

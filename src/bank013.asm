@@ -467,7 +467,7 @@ L8DA000:
 	rep #$30
 	sty $15
 	stx $17
-	asl A
+	asl
 	tax
 	lda $A267,X
 	tay
@@ -491,7 +491,7 @@ L8DA01C:
 	beq L8DA04E
 	txa
 	sta $1F
-	lsr A
+	lsr
 	phy
 	tay
 	and #$000E
@@ -509,7 +509,7 @@ L8DA04E:
 	beq L8DA070
 	txa
 	sta $1F
-	lsr A
+	lsr
 	phy
 	tay
 	and #$000E
@@ -2551,7 +2551,7 @@ L8DD992:
 	jsr L8DF668
 	lda $074B
 	and #$00FF
-	asl A
+	asl
 	tax
 	jsr (L8DD9A7,X)
 	plb
@@ -2634,7 +2634,7 @@ L8DDA36:
 	jsr L8DE2FB
 	jsr L8DF8AA
 	lda $1206
-	inc A
+	ina
 	cmp $120E
 	bne L8DDA59
 	ldx #$0100
@@ -3434,15 +3434,15 @@ L8DE35C:
 	and #$001F
 	sta $15
 	lda $7F0600,X
-	lsr A
-	lsr A
-	lsr A
+	lsr
+	lsr
+	lsr
 	and #$03E0
 	ora $15
 	sta $15
 	lda $7F0800,X
-	asl A
-	asl A
+	asl
+	asl
 	and #$7C00
 	ora $15
 	sta $7F0000,X
@@ -3564,30 +3564,30 @@ L8DE451:
 	xba
 	sta $7F0400,X
 	xba
-	asl A
-	asl A
-	asl A
+	asl
+	asl
+	asl
 	sta $7F0A00,X
 	lda $15
 	and #$03E0
-	asl A
-	asl A
-	asl A
+	asl
+	asl
+	asl
 	sta $7F0600,X
 	xba
-	asl A
-	asl A
-	asl A
+	asl
+	asl
+	asl
 	sta $7F0C00,X
 	lda $15
 	and #$7C00
-	lsr A
-	lsr A
+	lsr
+	lsr
 	sta $7F0800,X
 	xba
-	asl A
-	asl A
-	asl A
+	asl
+	asl
+	asl
 	sta $7F0E00,X
 	inx
 	inx
@@ -4496,7 +4496,7 @@ L8DED18:
 	pha
 	lda $12F9,X
 	and #$00FF
-	asl A
+	asl
 	tax
 	lda $A1DB,X
 	plx
@@ -4548,7 +4548,7 @@ L8DED6F:
 	cmp #$000B
 	beq L8DED85
 	pla
-	dec A
+	dea
 	bne L8DED6F
 	plp
 	rts
@@ -4735,7 +4735,7 @@ L8DEEFA:
 	and #$00FF
 	cmp #$00FF
 	beq L8DEF1B
-	asl A
+	asl
 	tax
 	phx
 	jsr L8DEFF2
@@ -4910,32 +4910,32 @@ L8DF05D:
 	lda $15
 	sec
 	sbc $17
-	asl A
-	asl A
-	asl A
+	asl
+	asl
+	asl
 	eor #$FFFF
-	inc A
+	ina
 	sta $7F0A00,X
 	bra L8DF098
 
 L8DF08B:
 	sec
 	sbc $15
-	asl A
-	asl A
-	asl A
+	asl
+	asl
+	asl
 	sta $7F0A00,X
 	lda #$0000
 L8DF098:
 	lda $7F0200,X
 	and #$03E0
-	asl A
-	asl A
-	asl A
+	asl
+	asl
+	asl
 	sta $7F0600,X
-	lsr A
-	lsr A
-	lsr A
+	lsr
+	lsr
+	lsr
 	sta $15
 	lda $7F0220,X
 	and #$03E0
@@ -4945,28 +4945,28 @@ L8DF098:
 	lda $15
 	sec
 	sbc $17
-	lsr A
-	lsr A
+	lsr
+	lsr
 	eor #$FFFF
-	inc A
+	ina
 	sta $7F0C00,X
 	bra L8DF0D5
 
 L8DF0C9:
 	sec
 	sbc $15
-	lsr A
-	lsr A
+	lsr
+	lsr
 	sta $7F0C00,X
 	lda #$0000
 L8DF0D5:
 	lda $7F0200,X
 	and #$7C00
-	lsr A
-	lsr A
+	lsr
+	lsr
 	sta $7F0800,X
-	asl A
-	asl A
+	asl
+	asl
 	sta $15
 	lda $7F0220,X
 	and #$7C00
@@ -4976,17 +4976,17 @@ L8DF0D5:
 	lda $15
 	sec
 	sbc $17
-	asl A
+	asl
 	xba
 	eor #$FFFF
-	inc A
+	ina
 	sta $7F0E00,X
 	bra L8DF110
 
 L8DF104:
 	sec
 	sbc $15
-	asl A
+	asl
 	xba
 	sta $7F0E00,X
 	lda #$0000
@@ -5904,12 +5904,12 @@ L8DF94F:
 	beq L8DF9C3
 	xba
 	and #$00FF
-	dec A
-	asl A
-	asl A
-	asl A
-	asl A
-	asl A
+	dea
+	asl
+	asl
+	asl
+	asl
+	asl
 	tax
 	ldy #$0008
 L8DF962:
@@ -5946,7 +5946,7 @@ L8DF99E:
 	dey
 	bne L8DF962
 	lda $1222
-	inc A
+	ina
 	sta $1222
 	cmp #$0003
 	bcc L8DF9C3
@@ -6057,9 +6057,9 @@ L8DFAC9:
 	sta $01
 	lda $121E
 	xba
-	dec A
+	dea
 	and #$00FF
-	asl A
+	asl
 	tax
 	lda.l L8DFB45,X
 	sta $00

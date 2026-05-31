@@ -246,7 +246,7 @@ L8384B4:
 .ACCU 16
 	lda $08D0
 	and #$00FF
-	asl A
+	asl
 	tax
 	jsr (L8384C0,X)
 	rtl
@@ -469,19 +469,19 @@ L8386C0:
 	jsl L93E453
 	lda $0860
 	and #$00FF
-	asl A
-	asl A
-	asl A
-	asl A
+	asl
+	asl
+	asl
+	asl
 	sta $89
 	sta $8D
 	sta $91
 	lda $0861
 	and #$00FF
-	asl A
-	asl A
-	asl A
-	asl A
+	asl
+	asl
+	asl
+	asl
 	and #$00FF
 	sta $8B
 	sta $8F
@@ -501,8 +501,8 @@ L8386C0:
 	lda #$01
 	sta $08DE
 	lda $07DE
-	inc A
-	asl A
+	ina
+	asl
 	sta $08EA
 	lda #$05
 	sta $08D0
@@ -949,9 +949,9 @@ L838B36:
 	rep #$20
 	lda $09
 	beq L838B4C
-	dec A
+	dea
 	beq L838B51
-	dec A
+	dea
 	beq L838B47
 	jsl L83D7E9
 	rts
@@ -983,7 +983,7 @@ L838B56:
 	stz $08D4
 	stz $08E8
 	lda $07DE
-	inc A
+	ina
 	asl
 	sta $08EA
 	lda $07DF
@@ -1544,7 +1544,7 @@ L838FC0:
 	jsl L808EAD
 	sep #$20
 	lda $0A9F
-	inc A
+	ina
 	sta $15
 L838FDC:
 	lda $15
@@ -1553,7 +1553,7 @@ L838FDC:
 	and #$01
 	beq L838FFF
 	lda $15
-	inc A
+	ina
 	and #$1F
 	sta $15
 	cmp $0A9F
@@ -3113,7 +3113,7 @@ L839DA6:
 	sbc	$08ee
 	bcs	L839DB4
 	eor	#$ff
-	inc A
+	ina
 L839DB4:
 	cmp	#$02
 	bcs	L839E05
@@ -3126,7 +3126,7 @@ L839DB4:
 	sbc	$08ef
 	bcs	L839DCB
 	eor	#$ff
-	inc A
+	ina
 L839DCB:
 	cmp	$15
 	beq	L839DD1
@@ -3313,7 +3313,7 @@ L839F35:
 L839F45:
 	sep #$20
 	lda $07de
-	inc A
+	ina
 	asl
 	sta $08ea
 	lda $08f8
@@ -4119,9 +4119,9 @@ L83A60C:
 	cmp #$0400
 	bmi L83A651
 	and #$0020
-	asl A
-	asl A
-	asl A
+	asl
+	asl
+	asl
 	xba
 	sep #$20
 	cmp $07D3
@@ -4156,7 +4156,7 @@ L83A663:
 L83A667:
 	lda $08D4
 	and #$00FF
-	asl A
+	asl
 	tax
 	jsr (L83A673,X)
 	rts
@@ -4269,7 +4269,7 @@ L83A748:
 	stz $0C0C
 	lda $08D6
 	and #$00FF
-	asl A
+	asl
 	tax
 	jsr (L83A759,X)
 	rts
@@ -4447,7 +4447,7 @@ L83A8A5:
 L83A8C1:
 	lda $08D6
 	and #$00FF
-	asl A
+	asl
 	tax
 	jsr (L83A8CD,X)
 	rts
@@ -5186,7 +5186,7 @@ L83AF3F:
 L83AF50:
 	phy
 	tya
-	asl A
+	asl
 	tay
 	stz $15
 	stz $17
@@ -5392,7 +5392,7 @@ L83B0FC:
 	lda $16
 	and #$00FF
 	sep #$20
-	asl A
+	asl
 	tax
 	lda $07B7,X
 	and #$10
@@ -5412,7 +5412,7 @@ L83B149:
 	cmp #$2B
 	bne L83B15B
 	lda $0769
-	lsr A
+	lsr
 	sta $0769
 	bra L83B169
 L83B15B:
@@ -5420,7 +5420,7 @@ L83B15B:
 	cmp #$2B
 	bne L83B169
 	lda $076A
-	lsr A
+	lsr
 	sta $076A
 L83B169:
 	rts
@@ -5429,7 +5429,7 @@ L83B16A:
 	sep #$30
 	ldy #$00
 	lda $16
-	asl A
+	asl
 	tax
 	lda $07B7,X
 	and #$10
@@ -5450,7 +5450,7 @@ L83B18D:
 L83B18E:
 	sep #$10
 	lda $16
-	asl A
+	asl
 	tax
 	lda $07B7,X
 	and #$10
@@ -5576,7 +5576,7 @@ L83B276:
 	lda $16
 	and #$00FF
 	sep #$20
-	asl A
+	asl
 	tax
 	lda $07B7,X
 	and #$10
@@ -5593,7 +5593,7 @@ L83B2A5:
 	sep #$10
 	ldy #$00
 	lda $16
-	asl A
+	asl
 	tax
 	lda $07B7,X
 	and #$10
@@ -5617,7 +5617,7 @@ L83B2CE:
 	sep #$10
 	ldy #$00
 	lda $16
-	asl A
+	asl
 	tax
 	lda $07B7,X
 	and #$10
@@ -5625,9 +5625,9 @@ L83B2CE:
 	iny
 L83B2DE:
 	lda $08F3
-	dec A
+	dea
 	beq L83B2FF
-	dec A
+	dea
 	beq L83B33D
 	lda $078F,Y
 	and #$02
@@ -5843,7 +5843,7 @@ L83B448:
 L83B46F:
 	sta $1A
 	lda $077B,Y
-	asl A
+	asl
 	clc
 	adc $1A
 	cmp #$8C
@@ -6143,7 +6143,7 @@ L83B6A7:
 	bra L83B6D2
 L83B6B8:
 	eor #$FF
-	inc A
+	ina
 	cmp #$03
 	bmi L83B701
 	lda #$02
@@ -6204,7 +6204,7 @@ L83B717:
 	php
 	sep #$20
 	lda $16
-	asl A
+	asl
 	tax
 	lda $07B7,X
 	ora $17
@@ -6219,7 +6219,7 @@ L83B728:
 	eor #$FF
 	sta $17
 	lda $16
-	asl A
+	asl
 	tax
 	lda $07B7,X
 	and $17
@@ -6231,8 +6231,8 @@ L83B73F:
 	php
 	sep #$30
 	lda $16
-	asl A
-	inc A
+	asl
+	ina
 	tax
 	lda $15
 	sta $07B7,X
@@ -6331,7 +6331,7 @@ L83B7D1:
 	bit #$02
 	bne L83B816
 	lda $0795,Y
-	dec A
+	dea
 	sta $0795,Y
 	lda $0777,Y
 	clc
@@ -6362,7 +6362,7 @@ L83B816:
 	beq L83B843
 L83B828:
 	lda $0795,Y
-	inc A
+	ina
 	sta $0795,Y
 	lda #$04
 	sta $17
@@ -6396,11 +6396,11 @@ L83B85E:
 	lda $076F,Y
 	clc
 	adc $07A2,Y
-	dec A
+	dea
 	ply
 L83B86B:
 	eor #$FF
-	inc A
+	ina
 	sta $15
 	beq L83B87C
 	lda $078F,Y
@@ -6413,7 +6413,7 @@ L83B87C:
 	beq L83B89B
 	lda $15
 	eor #$FF
-	inc A
+	ina
 	sta $15
 	cmp #$22
 	bcc L83B890
@@ -6424,7 +6424,7 @@ L83B890:
 	clc
 	adc $15
 	eor #$FF
-	inc A
+	ina
 	sta $15
 L83B89B:
 	lda $07B6
@@ -6454,7 +6454,7 @@ L83B8B7:
 	sec
 	sbc $15
 	eor #$FF
-	inc A
+	ina
 	sta $15
 L83B8D6:
 	jsr L83BA9D
@@ -6497,7 +6497,7 @@ L83B918:
 	bne L83B92D
 	lda $15
 	eor #$FF
-	inc A
+	ina
 	clc
 	adc $0798,Y
 	cmp #$0A
@@ -6518,7 +6518,7 @@ L83B92E:
 	jsr L83B717
 	lda $15
 	eor #$FF
-	inc A
+	ina
 	sta $15
 	cmp #$22
 	bcc L83B94D
@@ -6529,7 +6529,7 @@ L83B94D:
 	clc
 	adc $15
 	eor #$FF
-	inc A
+	ina
 	sta $15
 L83B958:
 	rts
@@ -6576,7 +6576,7 @@ L83B97C:
 	tax
 	lda.l (ITEMS_DATA + 13),X
 	and #$00FF
-	asl A
+	asl
 	tax
 	lda #bank100(L88A633)
 	sta $01
@@ -7110,9 +7110,9 @@ L83BD67:
 	sbc #$006E
 	bcc L83BDA2
 	phx
-	asl A
-	asl A
-	asl A
+	asl
+	asl
+	asl
 	sta $17
 	tya
 	adc $17
@@ -7282,7 +7282,7 @@ L83BEFB:
 	inc $07CB
 	rep #$20
 L83BF06:
-	asl A
+	asl
 	tax
 	lda $BF5F,X
 	sta $03
@@ -7366,7 +7366,7 @@ L83BF86:
 	lda $701F00,X
 	cmp #$FF
 	beq L83BF96
-	inc A
+	ina
 	sta $701F00,X
 L83BF96:
 	plp
@@ -7385,7 +7385,7 @@ L83BF98:
 	lda $7F675C,X
 	cmp #$FF
 	beq L83BFB9
-	inc A
+	ina
 	sta $7F675C,X
 L83BFB9:
 	plp
@@ -7537,7 +7537,7 @@ L83C093:
 	bne L83C0C5
 	pla
 	eor #$FF
-	inc A
+	ina
 	clc
 	adc $0798
 	sta $0798
@@ -7550,7 +7550,7 @@ L83C0C5:
 	lda $7F679C,X
 	cmp #$FF
 	beq L83C0DB
-	inc A
+	ina
 	sta $7F679C,X
 L83C0DB:
 	pla
@@ -7574,7 +7574,7 @@ L83C0ED:
 	bne L83C109
 L83C0FC:
 	lda $0798
-	asl A
+	asl
 	cmp #$64
 	bcc L83C106
 	lda #$63
@@ -7660,7 +7660,7 @@ L83C180:
 	and #$00FF
 	sec
 	sbc #$0040
-	asl A
+	asl
 	sep #$20
 	clc
 	adc $07D3
@@ -7669,17 +7669,17 @@ L83C180:
 	lda $C27C,X
 	and #$00FF
 	beq L83C1DA
-	dec A
+	dea
 	beq L83C222
-	dec A
+	dea
 	beq L83C1C9
-	dec A
+	dea
 	beq L83C1D7
 	lda $08ED
 	jsl L83D912
 	lda $7F4412
 	and #$0006
-	lsr A
+	lsr
 	and #$00FF
 	beq L83C1DA
 	brl L83C222
@@ -7773,7 +7773,7 @@ L83C2D4:
 	lda $7F4424,X
 	cmp #$FF
 	beq L83C30A
-	dec A
+	dea
 	bne L83C30A
 	lda $7F4420,X
 	cmp #$6B
@@ -7976,7 +7976,7 @@ L83C482:
 	sta $15
 	lda $15
 	and #$00FF
-	asl A
+	asl
 	tax
 	jsr (L83C4DE,X)
 L83C4DC:
@@ -8087,7 +8087,7 @@ L83C59C:
 	jsl L83E061
 	lda $08D2
 	and #$00FF
-	asl A
+	asl
 	tax
 	jsr (L83C5BE,X)
 	php
@@ -8186,7 +8186,7 @@ L83C678:
 	jsl L83E061
 	lda $08D2
 	and #$00FF
-	asl A
+	asl
 	tax
 	jsr (L83C698,X)
 	php
@@ -8474,7 +8474,7 @@ L83C90B:
 L83C90C:
 	lda $08D2
 	and #$00FF
-	asl A
+	asl
 	tax
 	jsr (L83C93A,X)
 	php
@@ -8685,7 +8685,7 @@ L83CAB0:
 	jsl L83E061
 	lda $08D2
 	and #$00FF
-	asl A
+	asl
 	tax
 	jsr (L83CAD0,X)
 	php
@@ -9064,7 +9064,7 @@ L83CE3A:
 	jsl L83E061
 	lda $08D2
 	and #$00FF
-	asl A
+	asl
 	tax
 	jsr (L83CE5A,X)
 	php
@@ -9253,8 +9253,8 @@ L83CFE2:
 	bne L83D002
 	lda $7F440E
 	and #$00FF
-	lsr A
-	inc A
+	lsr
+	ina
 	sta $23
 	jsl L83F684
 	clc
@@ -9263,14 +9263,14 @@ L83D002:
 	sep #$20
 	sta $7F4415
 	lda $7F4404
-	asl A
+	asl
 	cmp #$34
 	bmi L83D013
 	lda #$34
 L83D013:
 	sta $7F4404
 	lda $7F4403
-	asl A
+	asl
 	cmp #$34
 	bmi L83D022
 	lda #$34
@@ -9339,7 +9339,7 @@ L83D0C2:
 	lda $08F1
 	jsl L83C536
 	lda $7F4424,X
-	dec A
+	dea
 	beq L83D0D8
 	lda $07B7
 	ora #$04
@@ -9955,9 +9955,9 @@ L83D619:
 	sec
 	sbc #$0015
 	eor #$FFFF
-	inc A
-	lsr A
-	inc A
+	ina
+	lsr
+	ina
 	sta $23
 	jsl L83F684
 	clc
@@ -10084,7 +10084,7 @@ L83D740:
 L83D74E:
 	lda $19
 L83D750:
-	asl A
+	asl
 	tax
 	sep #$20
 	lda $D7C3,X
@@ -10213,7 +10213,7 @@ L83D834:
 	lda #$03
 	sta $0AC6
 	lda $07D2
-	dec A
+	dea
 	cmp $085F
 	beq L83D862
 	sec
@@ -10261,7 +10261,7 @@ L83D88B:
 	lda #$01
 	sta $0AC6
 	lda $07D1
-	dec A
+	dea
 	cmp $085E
 	beq L83D8B9
 	sec
@@ -10454,7 +10454,7 @@ L83D9D0:
 	phx
 	txa
 	pha
-	inc A
+	ina
 	and #$00FF
 	ora #$2000
 	sta.l WRMPYA
@@ -10495,7 +10495,7 @@ L83DA00:
 	jsl L83D8F7
 	ldx $19
 	lda $7F2800,X
-	dec A
+	dea
 	sta $7F2800,X
 L83DA38:
 	ply
@@ -10509,7 +10509,7 @@ L83DA3A:
 	plx
 	txa
 	pha
-	inc A
+	ina
 	and #$00FF
 	ora #$1000
 	sta.l WRMPYA
@@ -11124,7 +11124,7 @@ L83DEE3:
 L83DEE5:
 	clc
 	adc.l ActiveUnit.Level
-	dec A
+	dea
 	ldy #$0000
 	pha
 	clc
@@ -11262,7 +11262,7 @@ L83DF98:
 	cmp #$0032
 	bcc L83DFFF
 	pla
-	inc A
+	ina
 	pha
 L83DFFF:
 	pla
@@ -11281,11 +11281,11 @@ L83E002:
 	sep #$20
 	lda $0AC6
 	beq L83E043
-	dec A
+	dea
 	beq L83E04A
-	dec A
+	dea
 	beq L83E051
-	dec A
+	dea
 	beq L83E058
 L83E027:
 	rep #$20
@@ -11361,7 +11361,7 @@ L83E098:
 
 L83E0A0:
 	lda $07DE
-	inc A
+	ina
 	asl
 	sta $08EA
 	plp
@@ -13246,7 +13246,7 @@ L83EF3A:
 	lda.l (ITEMS_DATA + 2),X
 	bit #$80
 	bne L83EF5F
-	dec A
+	dea
 	cmp $19
 	bcc L83EF8C
 	lda #$01
@@ -14387,7 +14387,7 @@ L83F82E:
 L83F830:
 	sep #$20
 	lda $0902
-	inc A
+	ina
 	cmp #$0c
 	bne L83F83C
 	lda #$00
@@ -14420,7 +14420,7 @@ L83F83C:
 L83F878:
 	sep #$20
 	lda $0902
-	dec A
+	dea
 	bpl L83F882
 	lda #$0b
 L83F882:
@@ -14647,7 +14647,7 @@ L83FA20:
 	beq L83FA79
 L83FA46:
 	lda $7F4445,X
-	dec A
+	dea
 	sta $7F4445,X
 	bne L83FA79
 	lda $7F4446,X
@@ -14684,9 +14684,9 @@ L83FA79:
 L83FA88:
 	rep #$20
 	txa
-	asl A
-	asl A
-	asl A
+	asl
+	asl
+	asl
 	xba
 	pha
 	jsl L83D912
@@ -14701,9 +14701,9 @@ L83FA88:
 L83FAA8:
 	rep #$20
 	txa
-	asl A
-	asl A
-	asl A
+	asl
+	asl
+	asl
 	xba
 	pha
 	jsl L83D912
@@ -14789,10 +14789,10 @@ L83FB6A:
 	lda #$FF
 	sta $7F4414
 	lda $7F4404
-	lsr A
+	lsr
 	sta $7F4404
 	lda $7F4403
-	lsr A
+	lsr
 	bne L83FB86
 	lda #$01
 L83FB86:
@@ -15102,10 +15102,10 @@ L83FDFC:
 	dey
 	bne L83FDFC
 	pla
-	lsr A
+	lsr
 	tax
 	lda $23
-	lsr A
+	lsr
 	tay
 L83FE11:
 	lda $7F58E0,X
@@ -15157,11 +15157,11 @@ L83FE50:
 	bne L83FE50
 L83FE65:
 	txa
-	lsr A
-	lsr A
-	lsr A
-	lsr A
-	lsr A
+	lsr
+	lsr
+	lsr
+	lsr
+	lsr
 	plp
 	rtl
 
@@ -15203,7 +15203,7 @@ L83FEAF:
 	pla
 	jsl L83D969
 	pla
-	inc A
+	ina
 	cmp #$20
 	bne L83FE8B
 	lda #$00
@@ -15226,7 +15226,7 @@ L83FEE0:
 	pla
 	jsl L81D8AE
 	pla
-	inc A
+	ina
 	cmp #$2d
 	bne L83FEBC
 	plp

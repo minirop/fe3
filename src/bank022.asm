@@ -816,7 +816,7 @@ L9695A9:
 	pha
 	jsl L8087EA
 	pla
-	dec A
+	dea
 	bne L9695A9
 	plp
 	rts
@@ -837,8 +837,8 @@ L9695C8:
 	rep #$30
 	lda $12E0
 	beq L9695FB
-	dec A
-	asl A
+	dea
+	asl
 	tax
 	lda $95FD,X
 	sta $12E3
@@ -1362,8 +1362,8 @@ L969A96:
 	bne L969A82
 	lda $12C0
 	and #$FFF8
-	lsr A
-	lsr A
+	lsr
+	lsr
 	tax
 	lda.l L968000,X
 	sta $4342
@@ -1371,7 +1371,7 @@ L969A96:
 	lda $A6
 	cmp #$FF
 	beq L969AB6
-	inc A
+	ina
 	sta $A6
 L969AB6:
 	rep #$20
@@ -1422,7 +1422,7 @@ L969AC2:
 	lda #$0004
 	jsl L8DA000
 	lda $12DE
-	asl A
+	asl
 	tax
 	lda.w L969FB4,X
 	tax
@@ -2463,8 +2463,8 @@ L96AC92:
 	and #$0FFF
 	sta $0F27
 	lda $1316
-	dec A
-	asl A
+	dea
+	asl
 	tax
 	lda.w L96ACD0,X
 	cmp $93
@@ -2806,7 +2806,7 @@ L96AF9F:
 	sbc #$03E8
 	pha
 	lda [$09],Y
-	inc A
+	ina
 	sta [$09],Y
 	pla
 	bra L96AF9F
@@ -2818,7 +2818,7 @@ L96AFB1:
 	sbc #$0064
 	pha
 	lda [$00],Y
-	inc A
+	ina
 	sta [$00],Y
 	pla
 	bra L96AFB1
@@ -2830,7 +2830,7 @@ L96AFC3:
 	sbc #$000A
 	pha
 	lda [$03],Y
-	inc A
+	ina
 	sta [$03],Y
 	pla
 	bra L96AFC3
@@ -2838,10 +2838,10 @@ L96AFC3:
 L96AFD5:
 	cmp #$0001
 	bmi L96AFE4
-	dec A
+	dea
 	pha
 	lda [$06],Y
-	inc A
+	ina
 	sta [$06],Y
 	pla
 	bra L96AFD5
@@ -2968,7 +2968,7 @@ L96B0C3:
 	sbc #$03E8
 	pha
 	lda [$09],Y
-	inc A
+	ina
 	sta [$09],Y
 	pla
 	bra L96B0C3
@@ -2980,7 +2980,7 @@ L96B0D5:
 	sbc #$0064
 	pha
 	lda [$00],Y
-	inc A
+	ina
 	sta [$00],Y
 	pla
 	bra L96B0D5
@@ -2992,7 +2992,7 @@ L96B0E7:
 	sbc #$000A
 	pha
 	lda [$03],Y
-	inc A
+	ina
 	sta [$03],Y
 	pla
 	bra L96B0E7
@@ -3000,10 +3000,10 @@ L96B0E7:
 L96B0F9:
 	cmp #$0001
 	bmi L96B108
-	dec A
+	dea
 	pha
 	lda [$06],Y
-	inc A
+	ina
 	sta [$06],Y
 	pla
 	bra L96B0F9
@@ -3102,7 +3102,7 @@ L96B1AC:
 	sbc #$03E8
 	pha
 	lda [$09],Y
-	inc A
+	ina
 	sta [$09],Y
 	pla
 	bra L96B1AC
@@ -3114,7 +3114,7 @@ L96B1BE:
 	sbc #$0064
 	pha
 	lda [$00],Y
-	inc A
+	ina
 	sta [$00],Y
 	pla
 	bra L96B1BE
@@ -3126,7 +3126,7 @@ L96B1D0:
 	sbc #$000A
 	pha
 	lda [$03],Y
-	inc A
+	ina
 	sta [$03],Y
 	pla
 	bra L96B1D0
@@ -3134,10 +3134,10 @@ L96B1D0:
 L96B1E2:
 	cmp #$0001
 	bmi L96B1F1
-	dec A
+	dea
 	pha
 	lda [$06],Y
-	inc A
+	ina
 	sta [$06],Y
 	pla
 	bra L96B1E2
@@ -5075,7 +5075,7 @@ L96DB90:
 	jsl L80954E
 	stz $0430
 	lda $1226
-	asl A
+	asl
 	tax
 	lda.w L96DD3C,X
 	tay
@@ -5093,7 +5093,7 @@ L96DC46:
 	jsl L80954E
 	stz $0430
 	lda $1226
-	asl A
+	asl
 	tax
 	lda.w L96DD3C,X
 	tay
@@ -5342,7 +5342,7 @@ L96DE92:
 	stz $52
 	jsl L80954E
 	lda $1200
-	asl A
+	asl
 	tax
 	lda.w L96E4FD,X
 	ldx #$60B8
@@ -5438,9 +5438,9 @@ L96DF6A:
 	php
 	rep #$30
 	lda $1200
-	asl A
-	asl A
-	asl A
+	asl
+	asl
+	asl
 	tax
 	lda.l L96B56A,X
 	sta $00
@@ -5576,7 +5576,7 @@ L96E071:
 	lda $7F5346,X
 	jsl L93E5A1
 	lda $7F679C,X
-	asl A
+	asl
 	tax
 	rep #$20
 	lda $19
@@ -5641,9 +5641,9 @@ L96E10F:
 	and #$0080
 	bne L96E159
 	lda $1200
-	asl A
-	asl A
-	asl A
+	asl
+	asl
+	asl
 	tax
 	lda.l L96B56E,X
 	sta $00
@@ -5653,8 +5653,8 @@ L96E10F:
 
 L96E159:
 	lda $1200
-	asl A
-	asl A
+	asl
+	asl
 	tax
 	lda.l L96D5D9,X
 	sta $00
@@ -5669,9 +5669,9 @@ L96E16D:
 	inc $1314
 	lda $7F5340,X
 	and #$00FF
-	dec A
-	asl A
-	asl A
+	dea
+	asl
+	asl
 	tax
 	lda.l L96B842,X
 	sta $00
@@ -5709,14 +5709,14 @@ L96E1B3:
 	lda #$0000
 	sta $00
 	lda $1200
-	asl A
+	asl
 	tax
 	lda $E4FD,X
-	asl A
-	asl A
-	asl A
-	asl A
-	asl A
+	asl
+	asl
+	asl
+	asl
+	asl
 	tax
 	ldy #$0010
 L96E1D1:
@@ -5725,9 +5725,9 @@ L96E1D1:
 	sta $15
 	lda.l LD7E800,X
 	and #$03E0
-	asl A
-	asl A
-	asl A
+	asl
+	asl
+	asl
 	xba
 	clc
 	adc $15
@@ -5735,8 +5735,8 @@ L96E1D1:
 	lda.l LD7E800,X
 	and #$7C00
 	xba
-	lsr A
-	lsr A
+	lsr
+	lsr
 	clc
 	adc $15
 	sta $4204
@@ -5749,7 +5749,7 @@ L96E1D1:
 	pha
 	pla
 	lda $4214
-	asl A
+	asl
 	phx
 	tax
 	lda $E233,X
@@ -6723,7 +6723,7 @@ L96F055:
 	jsr L96F150
 	jsl L8087EA
 	pla
-	dec A
+	dea
 	bne L96F055
 	plp
 	rts
@@ -6817,7 +6817,7 @@ L96F10A:
 	bra L96F10A
 
 L96F11A:
-	asl A
+	asl
 	tax
 	lda.l L8DA227,X
 	ldx #$0080
@@ -7496,7 +7496,7 @@ L96F863:
 	bra L96F863
 
 L96F873:
-	asl A
+	asl
 	tax
 	lda.l L8DA231,X
 	ldx #$0078

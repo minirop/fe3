@@ -200,17 +200,17 @@ L868177:
 	sep #$30
 	lda $10B2
 	tay
-	lsr A
+	lsr
 	tax
 	lda.l L95EDC3,X
 	bne L86818B
 	lda $10B8,Y
-	inc A
+	ina
 	bra L868197
 
 L86818B:
 	lda $10B8,Y
-	inc A
+	ina
 	cmp.l L95EDC3,X
 	bcc L868197
 	lda #$00
@@ -223,7 +223,7 @@ L86819D:
 	sep #$30
 	lda $10B2
 	tay
-	lsr A
+	lsr
 	tax
 	lda.l L95EDC3,X
 	bne L8681B3
@@ -248,7 +248,7 @@ L8681C7:
 	sep #$30
 	lda $10B2
 	tay
-	lsr A
+	lsr
 	tax
 	lda.l L95EDC3,X
 	bne L8681DA
@@ -257,12 +257,12 @@ L8681C7:
 
 L8681DA:
 	lda $10B8,Y
-	dec A
+	dea
 	cmp.l L95EDC3,X
 	bcc L8681E9
 	lda.l L95EDC3,X
 L8681E8:
-	dec A
+	dea
 L8681E9:
 	sta $10B8,Y
 	rep #$30
@@ -272,7 +272,7 @@ L8681EF:
 	sep #$30
 	lda $10B2
 	tay
-	lsr A
+	lsr
 	tax
 	lda.l L95EDC3,X
 	bne L868205
@@ -287,7 +287,7 @@ L868205:
 	sbc #$10
 	bcs L868212
 	lda.l L95EDC3,X
-	dec A
+	dea
 L868212:
 	sta $10B8,Y
 	rep #$30
@@ -322,7 +322,7 @@ L868232:
 	cpx #$24
 	bcs L86824B
 L86824A:
-	dec A
+	dea
 L86824B:
 	sta $10A6
 	rep #$30
@@ -361,7 +361,7 @@ L86827C:
 	adc #$07
 	sta $10A4
 	lda $10B2
-	lsr A
+	lsr
 	clc
 	adc #$01
 	sta $10A5
@@ -382,9 +382,9 @@ L8682A2:
 	lda $10A6
 	rep #$20
 	and #$00FF
-	asl A
-	asl A
-	asl A
+	asl
+	asl
+	asl
 	adc $15
 	sta $15
 L8682CA:
@@ -409,7 +409,7 @@ L8682DC:
 	nop
 	nop
 	lda $10A4
-	asl A
+	asl
 	rep #$20
 	and #$00FF
 	clc
@@ -535,7 +535,7 @@ L8683D4:
 	beq L8683EF
 	rep #$10
 	lda $10B2
-	dec A
+	dea
 	cmp #$FF
 	bne L8683EC
 	lda #$02
@@ -553,7 +553,7 @@ L8683F2:
 	beq L86840D
 	rep #$10
 	lda $10B2
-	inc A
+	ina
 	cmp #$03
 	bne L86840A
 	lda #$00
@@ -596,12 +596,12 @@ L868434:
 	lda.l L95EDD5,X
 	bne L86844C
 	lda $10DC,Y
-	inc A
+	ina
 	bra L868458
 
 L86844C:
 	lda $10DC,Y
-	inc A
+	ina
 	cmp.l L95EDD5,X
 	bcc L868458
 	lda #$00
@@ -648,12 +648,12 @@ L86848C:
 
 L8684A3:
 	lda $10DC,Y
-	dec A
+	dea
 	cmp.l L95EDD5,X
 	bcc L8684B2
 	lda.l L95EDD5,X
 L8684B1:
-	dec A
+	dea
 L8684B2:
 	sta $10DC,Y
 	rep #$30
@@ -678,7 +678,7 @@ L8684D2:
 	sbc #$0A
 	bcs L8684DF
 	lda.l L95EDD5,X
-	dec A
+	dea
 L8684DF:
 	sta $10DC,Y
 	rep #$30
@@ -755,7 +755,7 @@ L868569:
 	lda $10B2
 	jsr L868638
 	tya
-	asl A
+	asl
 	tax
 	rep #$20
 	lda.l L95EDB3,X
@@ -767,8 +767,8 @@ L868569:
 	lda $10A6
 	rep #$20
 	and #$00FF
-	asl A
-	asl A
+	asl
+	asl
 	adc $15
 	sta $15
 L868593:
@@ -908,10 +908,10 @@ L868671:
 	jsr L8682DC
 	sep #$20
 	lda $10A6
-	lsr A
-	lsr A
-	lsr A
-	lsr A
+	lsr
+	lsr
+	lsr
+	lsr
 	clc
 	adc #$60
 	sta $2180
@@ -931,7 +931,7 @@ L868697:
 	lda $10A6
 	bpl L8686AB
 	eor #$FF
-	inc A
+	ina
 	sta $10A6
 	lda #$3F
 	bra L8686AD
@@ -995,7 +995,7 @@ L868710:
 .ACCU 8
 	lda #$08
 L868712:
-	dec A
+	dea
 	bne L868712
 	rts
 
@@ -1090,16 +1090,16 @@ L8687AD:
 L8687D5:
 	sep #$30
 	lda $10B9
-	dec A
+	dea
 	sta $075D
 	lda $10B8
-	dec A
+	dea
 	sta $075E
 	lda $10BB
-	dec A
+	dea
 	sta $075F
 	lda $10BA
-	dec A
+	dea
 	sta $0760
 	lda $10BD
 	sta $0761
@@ -1148,33 +1148,33 @@ L8687D5:
 	lda $10D0
 	sta $07CC
 	lda $10D6
-	inc A
+	ina
 	sta $1006
 	lda $10D8
-	dec A
+	dea
 	sta $0791
 	lda $10D9
-	dec A
+	dea
 	sta $0792
 	lda $10DA
-	dec A
+	dea
 	sta $0793
 	lda $10DB
-	dec A
+	dea
 	sta $0794
 	stz $078F
 	lda $10D7
-	lsr A
+	lsr
 	rol $078F
 	lda $10D5
-	lsr A
+	lsr
 	rol $078F
 	stz $0790
 	lda $10D6
-	lsr A
+	lsr
 	rol $0790
 	lda $10D4
-	lsr A
+	lsr
 	rol $0790
 	lda $10DC
 	sta $07B8
@@ -1190,7 +1190,7 @@ L8688DC:
 	ldx #$00
 L8688DE:
 	lda $10DF,Y
-	lsr A
+	lsr
 	rol $15,X
 	iny
 	inx
@@ -1352,25 +1352,25 @@ L8689F8:
 	sta $0795
 	lda $1102
 	and #$01
-	asl A
-	asl A
+	asl
+	asl
 	sta $15
 	lda $1101
 	and #$01
 	ora $15
-	asl A
+	asl
 	sta $15
 	lda $1100
 	and #$01
 	ora $15
-	asl A
+	asl
 	sta $15
 	lda $10FF
 	and #$01
 	ora $15
-	asl A
-	asl A
-	asl A
+	asl
+	asl
+	asl
 	sta $15
 	lda $078F
 	and #$47
@@ -1410,7 +1410,7 @@ L868AA0:
 	beq L868ABF
 	sep #$20
 	lda $10F4,X
-	inc A
+	ina
 	cmp #$0A
 	bne L868AB8
 	lda #$F7
@@ -1422,7 +1422,7 @@ L868AB8:
 L868ABF:
 	sep #$20
 	lda $10F4,X
-	inc A
+	ina
 	cmp #$05
 	bcc L868ACB
 	lda #$00
@@ -1440,7 +1440,7 @@ L868AD1:
 	beq L868AF0
 	sep #$20
 	lda $10F4,X
-	dec A
+	dea
 	cmp #$F6
 	bne L868AE9
 	lda #$09
@@ -1452,7 +1452,7 @@ L868AE9:
 L868AF0:
 	sep #$20
 	lda $10F4,X
-	dec A
+	dea
 	cmp #$FF
 	bcc L868AFC
 	lda #$04
@@ -1483,7 +1483,7 @@ L868B14:
 	bcc L868B14
 	inc $10A5
 	pla
-	dec A
+	dea
 	bne L868B09
 	stz $10B2
 	rep #$20
@@ -1508,8 +1508,8 @@ L868B4C:
 	lda $10B2
 	and #$00FF
 	xba
-	lsr A
-	lsr A
+	lsr
+	lsr
 	adc #$01A0
 	tax
 	sep #$20
@@ -1523,8 +1523,8 @@ L868B68:
 	lda $10B2
 	and #$00FF
 	xba
-	lsr A
-	lsr A
+	lsr
+	lsr
 	adc #$01A0
 	tax
 	lda $10B2
@@ -1534,7 +1534,7 @@ L868B68:
 	lda $10F4,Y
 	bpl L868B8B
 	eor #$FF
-	inc A
+	ina
 	pha
 	lda #$3F
 	bra L868B8E
@@ -1609,7 +1609,7 @@ L868C02:
 
 L868C05:
 	bit #$D010
-	asl A
+	asl
 	lda $075D
 	sta $15
 	lda $075F
@@ -2295,7 +2295,7 @@ L8691A8:
 	lda $103D
 	bne L8691C5
 	lda.l $000708
-	inc A
+	ina
 	sta.l $000708
 	lda #$01
 	sta $103D
@@ -3225,7 +3225,7 @@ L86993B:
 
 L86993C:
 	sta $15
-	asl A
+	asl
 	clc
 	adc $15
 	tax
@@ -3236,12 +3236,12 @@ L86993C:
 	ldy #$0000
 	lda [$00],Y
 	and #$FF00
-	lsr A
-	lsr A
+	lsr
+	lsr
 	sta $15
 	lda [$00],Y
 	and #$00FF
-	asl A
+	asl
 	adc $15
 	tax
 	ldy #$0002
@@ -3313,7 +3313,7 @@ L8699C4:
 	bit #$0004
 	beq L869A21
 	lda $106D
-	lsr A
+	lsr
 	and #$0007
 	tax
 	lda.l L868E29,X
@@ -3753,7 +3753,7 @@ L869D56:
 	lda $075F
 	sec
 	sbc #$40
-	asl A
+	asl
 	rep #$20
 	and #$00FF
 	tax
@@ -3761,7 +3761,7 @@ L869D56:
 	sta $15
 	plx
 	lda #$9D77
-	dec A
+	dea
 	pha
 	sep #$20
 	jmp ($0015)
@@ -3771,7 +3771,7 @@ L869D77:
 	lda $075F
 	sec
 	sbc #$40
-	asl A
+	asl
 	rep #$20
 	and #$00FF
 	tax
@@ -3779,7 +3779,7 @@ L869D77:
 	sta $15
 	plx
 	lda #$9D96
-	dec A
+	dea
 	pha
 	sep #$20
 	jmp ($0015)
@@ -5134,7 +5134,7 @@ L86A855:
 	lda $0798
 	bpl L86A86D
 	eor #$FF
-	inc A
+	ina
 L86A86D:
 	jsr L86F789
 	lda $0798
@@ -5178,7 +5178,7 @@ L86A8B6:
 	jsr L86F789
 	jsr L86A90E
 	pla
-	dec A
+	dea
 	bne L86A8B6
 L86A8C8:
 	lda #$03
@@ -5606,7 +5606,7 @@ L86ABB6:
 	jsr L86F789
 	lda $22
 	and #$03
-	inc A
+	ina
 	sta $10
 	jsr L86F789
 	lda #$FE
@@ -5628,7 +5628,7 @@ L86ABDF:
 	jsr L86F789
 	lda $22
 	and #$03
-	inc A
+	ina
 	sta $10
 	jsr L86F789
 	lda $22
@@ -5713,7 +5713,7 @@ L86AC7D:
 	jsr L86F789
 	lda $101B
 	eor #$FF
-	inc A
+	ina
 	jsr L86F789
 L86AC97:
 	lda #$07
@@ -5741,7 +5741,7 @@ L86ACB4:
 	jsr L86F789
 	lda $101B
 	eor #$FF
-	inc A
+	ina
 	jsr L86F789
 	bra L86ACE1
 
@@ -5936,7 +5936,7 @@ L86AE3E:
 	jsr L86F789
 	lda $101B
 	eor #$FF
-	inc A
+	ina
 	jsr L86F789
 	lda #$08
 	jsr L86F789
@@ -5997,7 +5997,7 @@ L86AEB8:
 	sta $07
 	rep #$20
 	tya
-	asl A
+	asl
 	tax
 	lda.l L95D6B1,X
 	tax
@@ -6133,7 +6133,7 @@ L86AFAF:
 	bit #$80
 	beq L86AFCD
 	and #$7F
-	inc A
+	ina
 	sta $1037
 	lda $1003
 	bit #$20
@@ -6156,7 +6156,7 @@ L86AFD9:
 	sta $15
 	lda $15
 	and #$00FF
-	asl A
+	asl
 	tax
 	jsr (L86BDB6,X)
 	sep #$20
@@ -6367,8 +6367,8 @@ L86B160:
 L86B175:
 	phx
 	phy
-	asl A
-	asl A
+	asl
+	asl
 	tax
 	ldy #$0000
 	lda.l L8B9AF8,X
@@ -6413,7 +6413,7 @@ L86B1BB:
 	phb
 	sty $00
 	and #$00FF
-	asl A
+	asl
 	tay
 	lda [$00],Y
 	sta $00
@@ -6438,7 +6438,7 @@ L86B1E7:
 	php
 	phb
 	and #$00FF
-	asl A
+	asl
 	adc $00
 	sta $00
 	ldy #$0000
@@ -6461,7 +6461,7 @@ L86B20D:
 	php
 	phb
 	and #$00FF
-	asl A
+	asl
 	adc $00
 	sta $00
 	ldy #$0000
@@ -6485,7 +6485,7 @@ L86B233:
 	bit #$80
 	beq L86B23C
 	eor #$FF
-	inc A
+	ina
 L86B23C:
 	cmp #$64
 	bcc L86B242
@@ -6584,7 +6584,7 @@ L86B2E3:
 	bit #$80
 	beq L86B2ED
 	eor #$FF
-	inc A
+	ina
 L86B2ED:
 	cmp #$64
 	bcc L86B2F3
@@ -6841,7 +6841,7 @@ L86B4AD:
 	bra L86B4D3
 
 L86B4B9:
-	dec A
+	dea
 	sta $0770
 	inc $1014
 	cmp $0766
@@ -6849,7 +6849,7 @@ L86B4B9:
 	rep #$20
 	jsr L86B584
 	lda $7E35C4,X
-	dec A
+	dea
 	sta $7E35C4,X
 L86B4D3:
 	rep #$20
@@ -6863,7 +6863,7 @@ L86B4D6:
 	bra L86B4FC
 
 L86B4E2:
-	dec A
+	dea
 	sta $076F
 	inc $1015
 	cmp $0765
@@ -6871,7 +6871,7 @@ L86B4E2:
 	rep #$20
 	jsr L86B584
 	lda $7E35E2,X
-	dec A
+	dea
 	sta $7E35E2,X
 L86B4FC:
 	rep #$20
@@ -6889,7 +6889,7 @@ L86B4FF:
 	bra L86B53E
 
 L86B515:
-	inc A
+	ina
 	sta $0770
 	dec $1014
 	cmp $0766
@@ -6899,7 +6899,7 @@ L86B523:
 	rep #$20
 	jsr L86B583
 	lda $7E35C4,X
-	inc A
+	ina
 	sta $7E35C4,X
 	lda #$0040
 	sta $089F
@@ -6921,7 +6921,7 @@ L86B541:
 	bra L86B580
 
 L86B557:
-	inc A
+	ina
 	sta $076F
 	dec $1015
 	cmp $0765
@@ -6931,7 +6931,7 @@ L86B565:
 	rep #$20
 	jsr L86B583
 	lda $7E35E2,X
-	inc A
+	ina
 	sta $7E35E2,X
 	lda #$00C0
 	sta $089F
@@ -6942,7 +6942,7 @@ L86B580:
 	rts
 
 L86B583:
-	dec A
+	dea
 L86B584:
 	and #$00FE
 	cmp #$001A
@@ -7059,7 +7059,7 @@ L86B638:
 	adc #$001C
 	tax
 	pla
-	dec A
+	dea
 	bne L86B634
 	rts
 
@@ -7123,7 +7123,7 @@ L86B6B4:
 	lda $0798
 	bpl L86B6C0
 	eor #$FF
-	inc A
+	ina
 	ora #$80
 L86B6C0:
 	sta $1016
@@ -7142,7 +7142,7 @@ L86B6D4:
 	lda $1016
 	bmi L86B6E8
 	lda $0773
-	inc A
+	ina
 	cmp #$64
 	bcc L86B6E3
 	lda #$00
@@ -7152,7 +7152,7 @@ L86B6E3:
 
 L86B6E8:
 	lda $0773
-	dec A
+	dea
 	cmp #$FF
 	bne L86B6F2
 	lda #$63
@@ -7196,7 +7196,7 @@ L86B731:
 	clc
 	adc #$0009
 L86B73A:
-	asl A
+	asl
 	tay
 	lda [$00],Y
 	sta $7E3662,X
@@ -7248,7 +7248,7 @@ L86B784:
 	adc #$002C
 	tax
 	pla
-	dec A
+	dea
 	bne L86B780
 	rts
 
@@ -7295,7 +7295,7 @@ L86B7E4:
 	pla
 	and #$00FF
 	sta $19
-	asl A
+	asl
 	adc $19
 	tax
 	lda.l L95D9ED,X
@@ -7304,12 +7304,12 @@ L86B7E4:
 	sta $04
 	lda $15
 	and #$FF00
-	lsr A
-	lsr A
+	lsr
+	lsr
 	sta $19
 	lda $15
 	and #$00FF
-	asl A
+	asl
 	adc $19
 	sta $19
 	sta $1D
@@ -7360,7 +7360,7 @@ L86B855:
 	sta $1F
 	rep #$20
 	and #$00FF
-	asl A
+	asl
 	tay
 	lda [$03],Y
 	ora $1B
@@ -7371,7 +7371,7 @@ L86B855:
 	sty $19
 	sep #$20
 	pla
-	inc A
+	ina
 	cmp $17
 	bcc L86B879
 	beq L86B879
@@ -7382,7 +7382,7 @@ L86B879:
 
 L86B87C:
 	pla
-	inc A
+	ina
 	cmp $18
 	bcc L86B886
 	beq L86B886
@@ -7406,19 +7406,19 @@ L86B898:
 L86B89B:
 	and #$0007
 	xba
-	asl A
-	asl A
+	asl
+	asl
 	sta $1B
 	stx $15
 	sty $17
 	txa
 	and #$FF00
-	lsr A
-	lsr A
+	lsr
+	lsr
 	sta $19
 	lda $15
 	and #$00FF
-	asl A
+	asl
 	adc $19
 	sta $19
 	sta $1D
@@ -7499,7 +7499,7 @@ L86B920:
 	stx $19
 	sep #$20
 	pla
-	inc A
+	ina
 	cmp $17
 	bcc L86B942
 	beq L86B942
@@ -7510,7 +7510,7 @@ L86B942:
 
 L86B945:
 	pla
-	inc A
+	ina
 	cmp $18
 	bcc L86B94F
 	beq L86B94F
@@ -7573,13 +7573,13 @@ L86B9AE:
 	sta $17
 	txa
 	and #$FF00
-	lsr A
-	lsr A
+	lsr
+	lsr
 	sta $19
 	lda $17
 	and #$00FF
-	dec A
-	asl A
+	dea
+	asl
 	adc $19
 	sta $19
 	sta $1D
@@ -7705,7 +7705,7 @@ L86BAAE:
 	and #$7F
 	sta $15
 	stz $16
-	inc A
+	ina
 	cmp #$0D
 	bne L86BAD2
 	inc $0708
@@ -7732,7 +7732,7 @@ L86BAE3:
 	bcc L86BAEE
 	lda $15
 	eor #$FF
-	inc A
+	ina
 	bra L86BAF0
 
 L86BAEE:
@@ -7790,14 +7790,14 @@ L86BB26:
 	sep #$20
 	pla
 L86BB46:
-	dec A
+	dea
 	bne L86BB51
 	inc $0708
 	stz $1051
 	bra L86BB92
 
 L86BB51:
-	dec A
+	dea
 	sta $15
 	stz $16
 	ldx #$0000
@@ -7807,7 +7807,7 @@ L86BB5C:
 	bcc L86BB67
 	lda $15
 	eor #$FF
-	inc A
+	ina
 	bra L86BB69
 
 L86BB67:
@@ -7848,7 +7848,7 @@ L86BB95:
 	and #$7F
 	sta $15
 	stz $16
-	inc A
+	ina
 	cmp #$11
 	bne L86BBAA
 	inc $0708
@@ -7863,7 +7863,7 @@ L86BBB0:
 	bcc L86BBBB
 	lda $15
 	eor #$FF
-	inc A
+	ina
 	bra L86BBBD
 
 L86BBBB:
@@ -7913,14 +7913,14 @@ L86BBF5:
 
 L86BBFD:
 	beq L86BC4B
-	dec A
+	dea
 	bne L86BC0A
 	inc $0708
 	stz $1051
 	bra L86BC4B
 
 L86BC0A:
-	dec A
+	dea
 	sta $15
 	stz $16
 	ldx #$0000
@@ -7930,7 +7930,7 @@ L86BC15:
 	bcc L86BC20
 	lda $15
 	eor #$FF
-	inc A
+	ina
 	bra L86BC22
 
 L86BC20:
@@ -7976,7 +7976,7 @@ L86BC4E:
 L86BC5A:
 	lda $1051
 	beq L86BCC1
-	dec A
+	dea
 	bne L86BC7E
 	inc $0708
 	stz $1051
@@ -8012,7 +8012,7 @@ L86BC94:
 	adc #$0018
 	tax
 	pla
-	dec A
+	dea
 	bne L86BC90
 	ldy #$0014
 L86BCAE:
@@ -8032,10 +8032,10 @@ L86BCC4:
 	jsr L86BD79
 	sep #$20
 	lda $1007
-	asl A
-	asl A
-	asl A
-	asl A
+	asl
+	asl
+	asl
+	asl
 	clc
 	adc #$60
 	sta $1008
@@ -8090,7 +8090,7 @@ L86BD28:
 	jsr L86BD79
 L86BD38:
 	lda $0F42
-	inc A
+	ina
 	cmp #$0020
 	bcc L86BD44
 	lda #$0000
@@ -8274,7 +8274,7 @@ L86BE85:
 L86BE9E:
 	pla
 L86BE9F:
-	asl A
+	asl
 	tax
 	lda.l L958000,X
 	sec
@@ -8324,7 +8324,7 @@ L86BEEF:
 	cmp #$FC
 	bcc L86BF0A
 	eor #$FF
-	asl A
+	asl
 	rep #$20
 	and #$00FF
 	tax
@@ -8396,11 +8396,11 @@ L86BF7B:
 	sta $17
 L86BF8E:
 	lda $15
-	asl A
-	asl A
-	asl A
-	asl A
-	asl A
+	asl
+	asl
+	asl
+	asl
+	asl
 	sta $15
 	bit #$0800
 	beq L86BFA3
@@ -8411,11 +8411,11 @@ L86BFA3:
 	lda $15
 	bit #$1000
 	beq L86BFB6
-	asl A
-	asl A
-	asl A
-	asl A
-	asl A
+	asl
+	asl
+	asl
+	asl
+	asl
 	and #$7C00
 	ora $17
 	sta $17
@@ -8469,7 +8469,7 @@ L86BFFD:
 	sta $15
 	lda $15
 	and #$00FF
-	asl A
+	asl
 	tax
 	jsr (L86C00C,X)
 	plx
@@ -8544,8 +8544,8 @@ L86C07E:
 	lda #$80
 	sta $100A
 	lda $105B
-	asl A
-	asl A
+	asl
+	asl
 	clc
 	adc #$7F
 	sta $100B
@@ -8557,8 +8557,8 @@ L86C09C:
 	sta $100B
 	lda $105B
 	and #$7F
-	asl A
-	asl A
+	asl
+	asl
 	sta $100A
 	lda $105B
 	cmp #$81
@@ -8695,7 +8695,7 @@ L86C184:
 	dec $105A
 	rep #$20
 	and #$00FF
-	asl A
+	asl
 	tax
 	sep #$20
 	lda $075D
@@ -8752,7 +8752,7 @@ L86C1DE:
 L86C208:
 	cmp #$0100
 	bne L86C20E
-	inc A
+	ina
 L86C20E:
 	bcs L86C219
 	sep #$20
@@ -8763,7 +8763,7 @@ L86C20E:
 L86C219:
 	stx $00
 	lda #$C223
-	dec A
+	dea
 	pha
 	jmp ($0000)
 
@@ -8974,7 +8974,7 @@ L86C3BF:
 L86C3C2:
 	and #$00FF
 	sta $17
-	asl A
+	asl
 	adc $17
 	tax
 	lda.l (PORTRAITS + 1),X
@@ -8994,11 +8994,11 @@ L86C3DC:
 	lda #$E800
 	sta $00
 	pla
-	asl A
-	asl A
-	asl A
-	asl A
-	asl A
+	asl
+	asl
+	asl
+	asl
+	asl
 	clc
 	adc $00
 	sta $00
@@ -9486,7 +9486,7 @@ L86C812:
 	lda #bank100(L959658)
 	sta $01
 	lda $15
-	asl A
+	asl
 	clc
 	adc $15
 	tax
@@ -9509,7 +9509,7 @@ L86C84B:
 L86C84C:
 	sta $15
 	lda $15
-	asl A
+	asl
 	clc
 	adc $15
 	tax
@@ -9702,7 +9702,7 @@ L86C9EC:
 L86C9EE:
 	lda $1067
 	and #$00FF
-	asl A
+	asl
 	tax
 	sep #$20
 	lda.l L95DAF0,X
@@ -9710,7 +9710,7 @@ L86C9EE:
 	lda.l (L95DAF0 + 1),X
 	sta $0216
 	lda $1067
-	inc A
+	ina
 	cmp #$03
 	bcc L86CA10
 	lda #$00
@@ -9722,8 +9722,8 @@ L86CA10:
 L86CA16:
 	lda $1067
 	and #$00FF
-	asl A
-	asl A
+	asl
+	asl
 	tax
 	sep #$20
 	lda.l L95DAF6,X
@@ -9735,7 +9735,7 @@ L86CA16:
 	lda.l (L95DAF6 + 3),X
 	sta $021E
 	lda $1067
-	inc A
+	ina
 	cmp #$02
 	bcc L86CA47
 	lda #$00
@@ -9894,7 +9894,7 @@ L86CB6D:
 	sta $1061
 	rep #$20
 	pla
-	inc A
+	ina
 	cmp #$0016
 	bcc L86CB46
 	bra L86CB9C
@@ -9929,9 +9929,9 @@ L86CBB9:
 	rts
 
 L86CBC0:
-	asl A
+	asl
 	sta $15
-	asl A
+	asl
 	clc
 	adc $15
 	tax
@@ -9951,9 +9951,9 @@ L86CBC0:
 	sta $1060
 	lda.l (L95958C + 5),X
 	and #$C0
-	lsr A
-	lsr A
-	lsr A
+	lsr
+	lsr
+	lsr
 	rep #$20
 	and #$00FF
 	sta $15
@@ -10101,7 +10101,7 @@ L86CD2D:
 	bit #$80
 	beq L86CD5E
 	and #$3F
-	inc A
+	ina
 	cmp #$0F
 	bcs L86CD47
 	bcs L86CD6C
@@ -10127,18 +10127,18 @@ L86CD5E:
 	bit #$40
 	beq L86CD6C
 	and #$3F
-	dec A
+	dea
 	beq L86CD69
 	ora #$40
 L86CD69:
 	sta $105E
 L86CD6C:
 	lda $105E
-	asl A
-	asl A
-	asl A
+	asl
+	asl
+	asl
 	eor #$FF
-	inc A
+	ina
 	sta $91
 	ldx #$0000
 	lda #$08
@@ -10150,9 +10150,9 @@ L86CD6C:
 	lda #$70
 	sta $1D2B,X
 	lda $105E
-	asl A
-	asl A
-	asl A
+	asl
+	asl
+	asl
 	clc
 	adc #$80
 	sta $1D2C,X
@@ -10210,9 +10210,9 @@ L86CDD1:
 	lda $075D
 	and #$00FF
 	sta $15
-	asl A
-	asl A
-	asl A
+	asl
+	asl
+	asl
 	clc
 	adc $15
 	tay
@@ -10292,14 +10292,14 @@ L86CE99:
 	iny
 	iny
 	pla
-	dec A
+	dea
 	bne L86CE99
 	txa
 	clc
 	adc #$0022
 	tax
 	pla
-	dec A
+	dea
 	bne L86CE95
 	rts
 
@@ -10330,7 +10330,7 @@ L86CECD:
 	rts
 
 L86CEE7:
-	asl A
+	asl
 	tay
 	lda $01
 	sta $04
@@ -10372,7 +10372,7 @@ L86CF2A:
 	sep #$20
 	lda $1061
 	beq L86CF54
-	dec A
+	dea
 	sta $1061
 	cmp #$10
 	bne L86CF40
@@ -10384,10 +10384,10 @@ L86CF40:
 	bit #$F010
 	ora $49,S
 	sbc $0F291A,X
-	asl A
-	asl A
-	asl A
-	asl A
+	asl
+	asl
+	asl
+	asl
 	ora #$8504
 	adc $21068D,X
 L86CF54:
@@ -10523,7 +10523,7 @@ L86D04E:
 L86D051:
 	phx
 	and #$000F
-	asl A
+	asl
 	tax
 	sep #$20
 	lda.l L959DEB,X
@@ -10538,7 +10538,7 @@ L86D051:
 	bne L86D07A
 	lda $15
 	eor #$FF
-	inc A
+	ina
 	sta $15
 L86D07A:
 	lda #$00
@@ -10600,7 +10600,7 @@ L86D0D5:
 	pla
 	and #$000F
 	sta $15
-	asl A
+	asl
 	adc $15
 	tax
 	lda.l L959E03,X
@@ -10617,7 +10617,7 @@ L86D0D5:
 L86D101:
 	phb
 	and #$00FF
-	asl A
+	asl
 	tay
 	lda $10A0
 	sta $00
@@ -10652,14 +10652,14 @@ L86D140:
 	beq L86D164
 	lda ($00),Y
 	and #$FF00
-	lsr A
-	lsr A
+	lsr
+	lsr
 	sta $17
 	lda ($00),Y
 	and #$00FF
 	iny
 	iny
-	asl A
+	asl
 	adc $17
 	tax
 	lda ($00),Y
@@ -10684,8 +10684,8 @@ L86D171:
 	beq L86D1A0
 	lda ($00),Y
 	and #$FF00
-	lsr A
-	lsr A
+	lsr
+	lsr
 	sta $17
 	lda ($00),Y
 	and #$00FF
@@ -10695,7 +10695,7 @@ L86D171:
 	lda #$001C
 	sec
 	sbc $15
-	asl A
+	asl
 	adc $17
 	tax
 	lda ($00),Y
@@ -10721,14 +10721,14 @@ L86D1AD:
 	beq L86D1D1
 	lda ($00),Y
 	and #$FF00
-	lsr A
-	lsr A
+	lsr
+	lsr
 	sta $17
 	lda ($00),Y
 	and #$00FF
 	iny
 	iny
-	asl A
+	asl
 	adc $17
 	tax
 	lda ($00),Y
@@ -10802,7 +10802,7 @@ L86D22F:
 	and #$00FF
 	beq L86D241
 	sep #$20
-	dec A
+	dea
 	sta $1085,Y
 	rep #$20
 	bra L86D2B0
@@ -10846,7 +10846,7 @@ L86D266:
 	lda.l (L959D51 + 1),X
 	and #$00FF
 	sta $19
-	asl A
+	asl
 	clc
 	adc $19
 	tay
@@ -10944,12 +10944,12 @@ L86D33F:
 	phy
 	lda $15
 	and #$FF00
-	lsr A
-	lsr A
+	lsr
+	lsr
 	sta $19
 	lda $15
 	and #$00FF
-	asl A
+	asl
 	clc
 	adc $19
 	clc
@@ -10959,7 +10959,7 @@ L86D33F:
 	lda #$20
 	sec
 	sbc $17
-	asl A
+	asl
 	rep #$20
 	and #$00FF
 	sta $19
@@ -11033,8 +11033,8 @@ L86D3CE:
 	and #$00FF
 	sta $15
 	and #$0038
-	lsr A
-	lsr A
+	lsr
+	lsr
 	tay
 	lda $15
 	and #$0007
@@ -11050,7 +11050,7 @@ L86D400:
 	adc #$0010
 	sta $00
 	pla
-	inc A
+	ina
 	cmp #$0010
 	bcc L86D3CE
 	jsr L86D42F
@@ -11142,7 +11142,7 @@ L86D4F4:
 	and #$00FF
 	sec
 	sbc #$0040
-	asl A
+	asl
 	tax
 	lda.l L95DB96,X
 	jmp L86D5E9
@@ -11201,10 +11201,10 @@ L86D575:
 	and #$00F0
 	cmp #$00F0
 	beq L86D585
-	lsr A
-	lsr A
-	lsr A
-	lsr A
+	lsr
+	lsr
+	lsr
+	lsr
 	bra L86D5E3
 
 L86D585:
@@ -11256,7 +11256,7 @@ L86D5DE:
 	bra L86D5E9
 
 L86D5E3:
-	asl A
+	asl
 	tax
 	lda.l L95DB8C,X
 L86D5E9:
@@ -11524,8 +11524,8 @@ L86D776:
 	sta $2132
 	rep #$20
 	lda $00
-	lsr A
-	lsr A
+	lsr
+	lsr
 	sta $00
 	sep #$20
 	xba
@@ -11533,9 +11533,9 @@ L86D776:
 	ora #$80
 	sta $2132
 	lda $00
-	lsr A
-	lsr A
-	lsr A
+	lsr
+	lsr
+	lsr
 	ora #$40
 	sta $A6
 	rep #$20
@@ -11554,7 +11554,7 @@ L86D7B4:
 	lda $1034
 	beq L86D807
 	bmi L86D7D4
-	dec A
+	dea
 	sta $15
 	lda $1050
 	and #$80
@@ -11690,7 +11690,7 @@ L86D89B:
 	lda $1032
 	rep #$20
 	and #$00FF
-	asl A
+	asl
 	tax
 	jsr (L868D50,X)
 	sep #$20
@@ -11701,7 +11701,7 @@ L86D8B4:
 	lda $1033
 	rep #$20
 	and #$00FF
-	asl A
+	asl
 	tax
 	jsr (L868D54,X)
 L86D8C9:
@@ -11771,8 +11771,8 @@ L86D935:
 	bne L86D966
 	lda.l L95D8A3,X
 	and #$00FF
-	asl A
-	asl A
+	asl
+	asl
 	sta $89
 	bra L86D96F
 
@@ -11954,13 +11954,13 @@ L86DAE4:
 	sta $17
 	xba
 	pha
-	asl A
-	asl A
+	asl
+	asl
 	sta $1B
 	pla
-	lsr A
-	lsr A
-	lsr A
+	lsr
+	lsr
+	lsr
 	sta $19
 	lda #$0000
 L86DAF7:
@@ -12000,7 +12000,7 @@ L86DB2C:
 	inx
 	inx
 	lda $1F
-	inc A
+	ina
 	cmp #$0030
 	bcc L86DAF7
 	tya
@@ -12008,7 +12008,7 @@ L86DB2C:
 	sbc #$0060
 	tay
 	lda $1D
-	inc A
+	ina
 	cmp #$0020
 	bcc L86DAE4
 	plb
@@ -12060,8 +12060,8 @@ L86DB86:
 	bne L86DBAF
 	lda.l L95D8A3,X
 	and #$00FF
-	asl A
-	asl A
+	asl
+	asl
 	sta $89
 	bra L86DBB8
 
@@ -12118,15 +12118,15 @@ L86DC0B:
 	and #$001F
 	sta $17
 	lda $15
-	asl A
-	asl A
-	asl A
+	asl
+	asl
+	asl
 	xba
 	and #$001F
 	sta $19
 	lda $15
-	lsr A
-	lsr A
+	lsr
+	lsr
 	xba
 	and #$001F
 	cmp $19
@@ -12141,22 +12141,22 @@ L86DC35:
 	lda #$0020
 	sec
 	sbc $15
-	lsr A
-	lsr A
+	lsr
+	lsr
 	clc
 	adc $15
 	sta $15
-	asl A
-	asl A
-	asl A
-	asl A
-	asl A
+	asl
+	asl
+	asl
+	asl
+	asl
 	ora $15
-	asl A
-	asl A
-	asl A
-	asl A
-	asl A
+	asl
+	asl
+	asl
+	asl
+	asl
 	ora $15
 	sta $7E6EFE,X
 	inx
@@ -12252,7 +12252,7 @@ L86DCF3:
 
 L86DCFE:
 	eor #$FF
-	inc A
+	ina
 	pha
 	sta $1D28,X
 	inx
@@ -12277,8 +12277,8 @@ L86DD13:
 	bne L86DD49
 	lda $89
 	beq L86DD49
-	lsr A
-	lsr A
+	lsr
+	lsr
 L86DD30:
 	eor #$FF
 	bmi L86DD3E
@@ -12288,7 +12288,7 @@ L86DD30:
 	bra L86DD53
 
 L86DD3E:
-	inc A
+	ina
 	sta $1D28,X
 	lda #$FF
 	sta $1D29,X
@@ -12353,10 +12353,10 @@ L86DDAA:
 	bne L86DDCF
 	rep #$20
 	lda $89
-	dec A
+	dea
 	sta $89
 	lda $8D
-	inc A
+	ina
 	sta $8D
 	lda #$0010
 	clc
@@ -12374,11 +12374,11 @@ L86DDCF:
 	and #$0001
 	bne L86DDE2
 	lda $89
-	inc A
+	ina
 	sta $89
 L86DDE2:
 	lda $8D
-	inc A
+	ina
 	sta $8D
 	lda #$0040
 	clc
@@ -12396,7 +12396,7 @@ L86DE00:
 	bne L86DE24
 	rep #$20
 	lda $8D
-	dec A
+	dea
 	sta $8D
 	lda #$0040
 	clc
@@ -12441,13 +12441,13 @@ L86DE51:
 	beq L86DE68
 	pla
 	eor #$FFFF
-	inc A
+	ina
 	bra L86DE69
 
 L86DE68:
 	pla
 L86DE69:
-	asl A
+	asl
 	clc
 	adc $1CB4,X
 	sta $1CB4,X
@@ -12458,8 +12458,8 @@ L86DE69:
 	sta $1CD8,Y
 	rep #$20
 	lda $8D
-	lsr A
-	lsr A
+	lsr
+	lsr
 	sep #$20
 	clc
 	adc $1CD8,Y
@@ -12485,13 +12485,13 @@ L86DEA4:
 	inc $1023
 L86DEAA:
 	and #$1E
-	lsr A
+	lsr
 	rep #$30
 	and #$00FF
 	tay
 	lda $89
-	lsr A
-	lsr A
+	lsr
+	lsr
 	sta $15
 	lda #$9500
 	sta $01
@@ -12564,8 +12564,8 @@ L86DF42:
 	and #$00FF
 	tay
 	lda $8D
-	lsr A
-	lsr A
+	lsr
+	lsr
 	sta $15
 	lda #$9500
 	sta $01
@@ -12591,13 +12591,13 @@ L86DF60:
 	bcc L86DF60
 	lda $1023
 	and #$001E
-	lsr A
+	lsr
 	rep #$30
 	and #$00FF
 	tay
 	lda $89
-	lsr A
-	lsr A
+	lsr
+	lsr
 	sta $15
 	lda #$9500
 	sta $01
@@ -12671,9 +12671,9 @@ L86E006:
 	lda $102B
 	and #$00FF
 	xba
-	lsr A
-	lsr A
-	lsr A
+	lsr
+	lsr
+	lsr
 	adc $00
 	tax
 	lda.l L95D793,X
@@ -12753,7 +12753,7 @@ L86E0AD:
 	rep #$20
 	rep #$10
 	lda $8F
-	dec A
+	dea
 	sta $1CB2
 	lda $1000
 	bit #$0008
@@ -13395,7 +13395,7 @@ L86E648:
 	jsr L86E667
 	and #$00FF
 	sta $15
-	asl A
+	asl
 	adc $15
 	tax
 	lda.l (L9587DE + 1),X
@@ -13445,7 +13445,7 @@ L86E6A2:
 	sec
 	sbc #$0029
 	sta $15
-	asl A
+	asl
 	adc $15
 	tax
 	lda.l (L9589F0 + 1),X
@@ -13477,7 +13477,7 @@ L86E6DC:
 	sec
 	sbc #$0029
 	sta $15
-	asl A
+	asl
 	adc $15
 	tax
 	lda.l (L9589F0 + 1),X
@@ -13490,13 +13490,13 @@ L86E6DC:
 
 L86E6FD:
 	and #$00FF
-	asl A
-	asl A
+	asl
+	asl
 	tax
 	lda.l (L958B82 + 3),X
 	and #$00FF
 	sta $15
-	asl A
+	asl
 	adc $15
 	tax
 	lda.l (L958B4F + 1),X
@@ -13738,7 +13738,7 @@ L86E991:
 	stx $15
 	and #$00FF
 	sta $17
-	asl A
+	asl
 	adc $17
 	tax
 	lda.l (L9588B3 + 1),X
@@ -13780,15 +13780,15 @@ L86E9DC:
 
 L86E9DF:
 	lda $15
-	asl A
-	asl A
+	asl
+	asl
 	tax
 	lda.l L958B82,X
 	sta $15
 	lda.l (L958B82 + 2),X
 	and #$00FF
 	sta $17
-	asl A
+	asl
 	adc $17
 	tax
 	lda.l (L958AE3 + 1),X
@@ -13798,7 +13798,7 @@ L86E9DF:
 	jsr L86F7E7
 	lda $15
 	tax
-	lsr A
+	lsr
 	sta $15
 	lda $09
 	sec
@@ -14095,7 +14095,7 @@ L86EC82:
 	sec
 	sbc #$002D
 	sta $17
-	asl A
+	asl
 	adc $17
 	tax
 	lda.l (L95898A + 1),X
@@ -14111,7 +14111,7 @@ L86ECAB:
 	and #$00FF
 	sec
 	sta $17
-	asl A
+	asl
 	adc $17
 	tax
 	lda.l (L958969 + 1),X
@@ -14298,7 +14298,7 @@ L86EDED:
 	sta $00
 	lda $27
 	and #$00FF
-	asl A
+	asl
 	adc $00
 	pha
 	tax
@@ -14347,7 +14347,7 @@ L86EE4D:
 	iny
 	lda ($00),Y
 	eor #$FF
-	inc A
+	ina
 	asl $26
 	bcc L86EE61
 	sbc #$10
@@ -14466,7 +14466,7 @@ L86EF32:
 	lda.l L9591E5,X
 	and #$00FF
 	sta $15
-	asl A
+	asl
 	adc $15
 	tax
 	lda.l (L95911C + 1),X
@@ -14656,7 +14656,7 @@ L86F0B5:
 	lda #$0000
 L86F0B8:
 	sta $17
-	asl A
+	asl
 	adc $17
 	tax
 	lda.l (L9590EF + 1),X
@@ -14675,7 +14675,7 @@ L86F0D1:
 	lda.l L9591E2,X
 	and #$00FF
 	sta $15
-	asl A
+	asl
 	adc $15
 	tax
 	lda $03
@@ -14699,7 +14699,7 @@ L86F0FF:
 	and #$00FF
 	cmp #$00FF
 	beq L86F117
-	asl A
+	asl
 	jsr L86F163
 	jsr L86F00A
 L86F117:
@@ -14710,7 +14710,7 @@ L86F117:
 	and #$00FF
 	cmp #$00FF
 	beq L86F12F
-	asl A
+	asl
 	jsr L86F163
 	jsr L86F017
 L86F12F:
@@ -14724,8 +14724,8 @@ L86F130:
 	and #$00FF
 	cmp #$00FF
 	beq L86F149
-	asl A
-	inc A
+	asl
+	ina
 	jsr L86F163
 	jsr L86F024
 L86F149:
@@ -14736,8 +14736,8 @@ L86F149:
 	and #$00FF
 	cmp #$00FF
 	beq L86F162
-	asl A
-	inc A
+	asl
+	ina
 	jsr L86F163
 	jsr L86F031
 L86F162:
@@ -14745,7 +14745,7 @@ L86F162:
 
 L86F163:
 	sta $15
-	asl A
+	asl
 	adc $15
 	tax
 	lda.l (L958E61 + 1),X
@@ -15065,7 +15065,7 @@ L86F3C2:
 
 L86F3C3:
 	sta $15
-	asl A
+	asl
 	adc $15
 	tax
 	lda.l (L958CE9 + 1),X
@@ -15076,7 +15076,7 @@ L86F3C3:
 
 L86F3D6:
 	sta $15
-	asl A
+	asl
 	adc $15
 	tax
 	lda.l (L958A68 + 1),X
@@ -15106,7 +15106,7 @@ L86F3ED:
 	sta $00
 	lda $27
 	and #$00FF
-	asl A
+	asl
 	adc $00
 	pha
 	tax
@@ -15200,7 +15200,7 @@ L86F486:
 	sta $00
 	lda $27
 	and #$00FF
-	asl A
+	asl
 	adc $00
 	pha
 	tax
@@ -15249,7 +15249,7 @@ L86F4EA:
 	iny
 	lda ($00),Y
 	eor #$FF
-	inc A
+	ina
 	asl $26
 	bcc L86F4FE
 	sbc #$10
@@ -15327,20 +15327,20 @@ L86F56A:
 L86F56C:
 	rep #$20
 	and #$00FF
-	asl A
-	asl A
-	asl A
-	asl A
+	asl
+	asl
+	asl
+	asl
 	adc #$D733
 	sta $1024
 	rts
 
 L86F57C:
 	and #$00FF
-	asl A
-	asl A
-	asl A
-	asl A
+	asl
+	asl
+	asl
+	asl
 	adc #$D733
 	sta $1024
 	rtl
@@ -15620,9 +15620,9 @@ L86F789:
 L86F78E:
 .ACCU 8
 	lda $1007
-	asl A
-	asl A
-	asl A
+	asl
+	asl
+	asl
 	clc
 	adc #$10
 	ora #$80
@@ -15635,9 +15635,9 @@ L86F78E:
 L86F7A3:
 	lda $1007
 	beq L86F7B6
-	asl A
-	asl A
-	asl A
+	asl
+	asl
+	asl
 	ora #$80
 	sta $1DB4,X
 	inx
@@ -15789,7 +15789,7 @@ L86F8AD:
 L86F8B6:
 	bit #$001F
 	beq L86F8BC
-	dec A
+	dea
 L86F8BC:
 	sta $7E40FC,X
 	dex
@@ -15835,7 +15835,7 @@ L86F8F5:
 L86F90D:
 	sep #$20
 	lda.l $000708
-	inc A
+	ina
 	sta.l $000708
 	rep #$20
 	lda.l $0006FE
@@ -15869,7 +15869,7 @@ L86F93D:
 L86F952:
 	rep #$20
 	jsr L86FC04
-	asl A
+	asl
 	sep #$20
 	sta $104C
 	rep #$20
@@ -15909,7 +15909,7 @@ L86F9A8:
 	bra L86F9BE
 
 L86F9B7:
-	asl A
+	asl
 	phx
 	tax
 	jsr (L86F9CA,X)
@@ -15957,7 +15957,7 @@ L86F9EC:
 L86F9FF:
 	phx
 	jsr L86FC04
-	asl A
+	asl
 	tax
 	lda.l L95DBB4,X
 	sta $0876
@@ -15984,7 +15984,7 @@ L86FA19:
 L86FA35:
 	pla
 L86FA36:
-	asl A
+	asl
 	sep #$20
 	stz $104C
 	rep #$20
@@ -16099,7 +16099,7 @@ L86FB63:
 	phx
 	lda $075E
 	and #$00FF
-	asl A
+	asl
 	tax
 	lda.l L958DF4,X
 	and #$00FF
@@ -16150,7 +16150,7 @@ L86FBC3:
 	cmp #$0027
 	bcs L86FBE3
 	jsr L86FC04
-	asl A
+	asl
 	phx
 	tax
 	lda.l L86FBEF,X
@@ -16278,9 +16278,9 @@ L86FCB6:
 	cmp #$51
 	beq L86FCD9
 	lda.l $0004DB,X
-	dec A
+	dea
 	sta.l $0004DB,X
-	dec A
+	dea
 	rep #$20
 	and #$00FF
 	tax
@@ -16383,7 +16383,7 @@ L86FDF1:
 	lda $62
 	sta $00
 	lda $5A
-	asl A
+	asl
 	tay
 	lda ($00),Y
 	clc
@@ -16399,20 +16399,20 @@ L86FE0E:
 	sta $26
 	rep #$20
 	and #$00FF
-	asl A
-	asl A
+	asl
+	asl
 	sta $15
 	lda $1046
 	sec
 	sbc $15
 	sta $1046
 	sta $1044
-	lsr A
+	lsr
 	sta $15
-	lsr A
-	lsr A
+	lsr
+	lsr
 	sep #$20
-	lsr A
+	lsr
 	sta $1048
 	lda $15
 	and #$06
@@ -16466,11 +16466,11 @@ L86FE8C:
 L86FE90:
 	lda $103E
 	eor #$01
-	asl A
+	asl
 	ora $103F
-	asl A
-	asl A
-	asl A
+	asl
+	asl
+	asl
 	ora $103E
 	sta $7B
 L86FEA1:
@@ -16552,8 +16552,8 @@ L86FF2B:
 	plx
 	asl $27
 	lda $1049
-	inc A
-	inc A
+	ina
+	ina
 	sta $1049
 	cmp #$08
 	bcc L86FF43

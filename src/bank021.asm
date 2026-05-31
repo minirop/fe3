@@ -975,7 +975,7 @@ L9590EF:
 .dl LBB8000
 .dl LBB8C00
 
-L9590F5:
+L9590F5: ; combat backgrounds
 .dl LBB9A25
 .dl LBBB0FF
 .dl LBBC875
