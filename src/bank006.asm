@@ -2663,7 +2663,7 @@ L869476:
 	ldx #$0000
 L869488:
 	lda.l L948000,X
-	sta $7E40FE,X
+	sta.l DecompressionLocation,X
 	inx
 	dey
 	inx
@@ -2695,7 +2695,7 @@ L8694BE:
 	ldx #$0000
 L8694C8:
 	lda.l L948000,X
-	sta $7E40FE,X
+	sta.l DecompressionLocation,X
 	inx
 	dey
 	inx
@@ -2836,7 +2836,7 @@ L869606:
 	lda [$00],Y
 	ora $15
 	and #$DFFF
-	sta $7E40FE,X
+	sta.l DecompressionLocation,X
 	inx
 	inx
 	iny
@@ -2962,7 +2962,7 @@ L869723:
 	jsr L869567
 	ldx #$0000
 L869731:
-	lda $7E40FE,X
+	lda.l DecompressionLocation,X
 	sta $7E3440,X
 	inx
 	inx
@@ -3173,10 +3173,10 @@ L8698D8:
 	clc
 	adc $101C
 	sta $101A
-	lda $7E40FE,X
+	lda.l DecompressionLocation,X
 	and #$FE00
 	ora $101A
-	sta $7E40FE,X
+	sta.l DecompressionLocation,X
 	ldy $15
 	beq L8698F9
 	clc
@@ -10263,7 +10263,7 @@ L86CE5C:
 	ldy $15
 	ldx #$0000
 L86CE73:
-	lda $7E40FE,X
+	lda.l DecompressionLocation,X
 	sta $7E3800,X
 	inx
 	dey
@@ -12113,7 +12113,7 @@ L86DBD7:
 	rep #$20
 	ldx #$0000
 L86DC0B:
-	lda $7E40FE,X
+	lda.l DecompressionLocation,X
 	sta $15
 	and #$001F
 	sta $17
@@ -13863,7 +13863,7 @@ L86EA57:
 L86EA94:
 	lda #$0000
 	ldx #$0000
-	sta $7E40FE,X
+	sta.l DecompressionLocation,X
 	lda $0C
 	and #$00FF
 	tax
@@ -14597,7 +14597,7 @@ L86F044:
 	lda #$0010
 	sta $03
 L86F049:
-	lda $7E40FE,X
+	lda.l DecompressionLocation,X
 	sta [$00],Y
 	iny
 	iny
@@ -15707,7 +15707,7 @@ L86F80A:
 L86F817:
 	ldy #$0000
 	lda [$00],Y
-	sta $7E40FE,X
+	sta.l DecompressionLocation,X
 	inx
 	ldy $00
 	iny
@@ -15740,7 +15740,7 @@ L86F846:
 L86F853:
 	ldy #$0000
 	lda [$00],Y
-	sta $7E40FE,X
+	sta.l DecompressionLocation,X
 	inx
 	ldy $00
 	iny

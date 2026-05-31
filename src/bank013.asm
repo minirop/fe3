@@ -3537,7 +3537,7 @@ L8DE421:
 	ldy #$0100
 	ldx #$0000
 L8DE431:
-	lda $7E40FE,X
+	lda.l DecompressionLocation,X
 	sta $7F0200,X
 	inx
 	inx
@@ -3682,7 +3682,11 @@ L8DE4F4:
 	plp
 	rts
 
-.db $00 $00 $14 $00
+L8DE52C:
+.db $00 $00
+L8DE52E:
+.db $14 $00
+L8DE530:
 .db $40 $00 $00 $00 $16 $00 $10 $00
 .db $00 $00 $1A $00 $00 $00 $00 $00
 .db $0E $00 $08 $00 $00 $00 $0C $00
@@ -3887,10 +3891,10 @@ L8DE77E:
 L8DE781:
 	ldx $1200
 	lda $1202
-	cmp $E52C,X
+	cmp.w L8DE52C,X
 	bne L8DE7BC
 	stz $1202
-	lda $E52E,X
+	lda.w L8DE52E,X
 	cmp #$0002
 	beq L8DE7C1
 	cmp #$0003
@@ -3902,7 +3906,7 @@ L8DE781:
 	cmp #$FFFF
 	beq L8DE7FA
 	tay
-	lda $E530,X
+	lda.w L8DE530,X
 	sta $1200,Y
 	txa
 	clc
@@ -3917,7 +3921,7 @@ L8DE7BC:
 
 L8DE7C1:
 	sep #$20
-	lda $E530,X
+	lda.w L8DE530,X
 	sta $80
 	rep #$20
 	txa
@@ -3928,7 +3932,7 @@ L8DE7C1:
 
 L8DE7D4:
 	sep #$20
-	lda $E530,X
+	lda.w L8DE530,X
 	sta $81
 	rep #$20
 	txa
@@ -3939,7 +3943,7 @@ L8DE7D4:
 
 L8DE7E7:
 	sep #$20
-	lda $E530,X
+	lda.w L8DE530,X
 	sta $84
 	rep #$20
 	txa
@@ -4322,7 +4326,9 @@ L8DEB8E:
 	plp
 	rts
 
+L8DEB90:
 .db $00 $00 $12 $00 $3A $00 $5A $00
+L8DEB98:
 .db $03 $0B $03 $0C $03 $0D $07 $0E
 .db $03 $0F $02 $0E $01 $0F $02 $10
 .db $FF $FF
@@ -4375,7 +4381,11 @@ L8DEC39:
 	plp
 	rts
 
-.db $00 $00 $00 $00
+L8DEC4E:
+.db $00 $00
+L8DEC50:
+.db $00 $00
+L8DEC52:
 .db $50 $00 $50 $00
 .db $02 $00 $A0 $00
 .db $60 $00 $04 $00
@@ -4388,10 +4398,10 @@ L8DEC66:
 L8DEC69:
 	ldx $1200
 	lda $1202
-	cmp $EC4E,X
+	cmp.w L8DEC4E,X
 	bne L8DECCC
 	stz $1202
-	lda $EC50,X
+	lda.w L8DEC50,X
 	cmp #$0001
 	beq L8DECD5
 	cmp #$FFFF
@@ -4402,7 +4412,7 @@ L8DEC69:
 	pla
 	phx
 	tax
-	lda $EB90,X
+	lda.w L8DEB90,X
 	plx
 	pha
 	phx
@@ -4424,12 +4434,12 @@ L8DECA9:
 	sta $12EE,X
 	phx
 	tax
-	lda $EB98,X
+	lda.w L8DEB98,X
 	plx
 	sta $12F8,X
 	phx
 	tyx
-	lda $EC52,X
+	lda.w L8DEC52,X
 	txy
 	plx
 	sta $1302,X
@@ -4478,7 +4488,7 @@ L8DECEE:
 	phx
 	lda $12EE,X
 	tax
-	lda $EB98,X
+	lda.w L8DEB98,X
 	plx
 	cmp #$FFFF
 	beq L8DED3A
@@ -4731,7 +4741,7 @@ L8DEEF3:
 L8DEEFA:
 	jsl L8087EA
 	ldx $1200
-	lda $EF1D,X
+	lda.w L8DEF1D,X
 	and #$00FF
 	cmp #$00FF
 	beq L8DEF1B
@@ -4748,14 +4758,14 @@ L8DEF1B:
 	plp
 	rts
 
-.db $01 $01 $01
-.db $01 $01 $01 $01 $01 $01 $02 $02
-.db $02 $02 $02 $02 $03 $03 $03 $04
+L8DEF1D:
+.db $01 $01 $01 $01 $01 $01 $01 $01
+.db $01 $02 $02 $02 $02 $02 $02 $03
+.db $03 $03 $04 $04 $04 $04 $04 $04
 .db $04 $04 $04 $04 $04 $04 $04 $04
 .db $04 $04 $04 $04 $04 $04 $04 $04
-.db $04 $04 $04 $04 $04 $04 $04 $04
-.db $04 $04 $04 $05 $05 $05 $05 $05
-.db $05 $05 $05 $FF
+.db $04 $04 $04 $04 $04 $04 $05 $05
+.db $05 $05 $05 $05 $05 $05 $FF
 
 L8DEF54:
 	php
@@ -4874,10 +4884,10 @@ L8DF029:
 L8DF032:
 	lda $7E411E,X
 	sta $15
-	lda $7E40FE,X
+	lda.l DecompressionLocation,X
 	sta $7E411E,X
 	lda $15
-	sta $7E40FE,X
+	sta.l DecompressionLocation,X
 	inx
 	inx
 	dey

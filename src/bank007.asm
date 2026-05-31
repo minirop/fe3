@@ -976,12 +976,12 @@ L8787F5:
 	jsl L87875B
 	sep #$20
 	lda #$00
-	sta $7F4405
+	sta.l ActiveUnit.EXP
 	rep #$20
 	lda $0F84
-	sta $7F4410
+	sta.l ActiveUnit.XPosition
 	lda $0F86
-	sta $7F4403
+	sta.l ActiveUnit.HP
 	jsl L83DBE5
 	pha
 	jsl L83D969
@@ -1179,7 +1179,7 @@ L8789A4:
 	ldx #$0000
 	jsl L81D10F
 	jsl L8087EA
-	lda $7F4417
+	lda.l ActiveUnit.PortraitID
 	ldy #$6800
 	jsl L81D12B
 	ldy #$0001
@@ -1199,7 +1199,7 @@ L8789A4:
 	ldx #$0000
 	stx $0F30
 	rep #$20
-	lda $7F4410
+	lda.l ActiveUnit.XPosition
 	xba
 	sec
 	sbc $0860
@@ -1250,7 +1250,7 @@ L878AA2:
 	jmp L878E00
 
 L878AB0:
-	lda $7F4400
+	lda.l ActiveUnit.UnitID
 	and #$00FF
 	cmp #$0000
 	beq L878AC1
@@ -1359,7 +1359,7 @@ L878B86:
 	jsl L81D4EE
 	jsl L87B0E5
 	jsl L809374
-	lda $7F4410
+	lda.l ActiveUnit.XPosition
 	xba
 	sec
 	sbc $0860
@@ -1544,7 +1544,7 @@ L878D0B:
 	rtl
 
 L878D5E:
-	lda $7F4416
+	lda.l ActiveUnit.NameID
 	and #$00FF
 	sta $0F49
 	lda #$0007
@@ -1613,7 +1613,7 @@ L878DEA:
 	jmp L878B48
 
 L878E00:
-	lda $7F4400
+	lda.l ActiveUnit.UnitID
 	and #$00FF
 	cmp #$0000
 	beq L878E11
@@ -1629,14 +1629,14 @@ L878E11:
 
 L878E23:
 	stz $15
-	lda $7F4420
+	lda.l ActiveUnit.Weapon1
 	and #$00FF
 	cmp #$00FF
 	beq L878E36
 	lda #$FFFF
 	sta $15
 L878E36:
-	lda $7F4428
+	lda.l ActiveUnit.Item1
 	and #$00FF
 	cmp #$00FF
 	beq L878E58
@@ -1791,11 +1791,11 @@ L878F40:
 	jmp L878FB8
 
 L878F82:
-	lda $7F4420
+	lda.l ActiveUnit.Weapon1
 	and #$00FF
 	cmp #$00FF
 	bne L878FA9
-	lda $7F4428
+	lda.l ActiveUnit.Item1
 	and #$00FF
 	cmp #$00FF
 	bne L878FA9
@@ -2911,7 +2911,7 @@ L87993C:
 	jsl L80954E
 	jsl L81D853
 	jsl L8087EA
-	lda $7F4417
+	lda.l ActiveUnit.PortraitID
 	ldy #$6800
 	jsl L81D12B
 	ldy #$0001
@@ -3246,16 +3246,16 @@ L879C15:
 	ldy #$0001
 	lda [$0F],Y
 	and #$00FF
-	sta $7F4418
+	sta.l ActiveUnit.AI1
 	iny
 	lda [$0F],Y
 	and #$00FF
-	sta $7F441A
+	sta.l ActiveUnit.AI2
 	iny
 	lda [$0F],Y
 	and #$00FF
 	xba
-	sta $7F441B
+	sta.l (ActiveUnit.AI2 + 1)
 	pla
 	jsl L83D969
 	rts
@@ -3537,12 +3537,12 @@ L879E0F:
 	tay
 	lda [$0F],Y
 	xba
-	sta $7F4410
+	sta.l ActiveUnit.XPosition
 	jsr L879E99
 	jsl L83D8F7
 	ldx $19
 	lda $7F2800,X
-	sta $7F4406
+	sta.l ActiveUnit.Terrain
 	jsl L83DBED
 	pha
 	jsl L83D969
@@ -3835,7 +3835,7 @@ L87A077:
 	jsl L83D912
 	ldy #$0004
 	lda [$0F],Y
-	sta $7F4406
+	sta.l ActiveUnit.Terrain
 	lda $15
 	jsl L83D969
 	ldx $19
@@ -3993,7 +3993,7 @@ L87A1ED:
 	ldy #$0020
 	ldx #$0000
 L87A216:
-	sta $7F4400,X
+	sta.l ActiveUnit.UnitID,X
 	inx
 	dey
 	inx
@@ -4003,7 +4003,7 @@ L87A216:
 	ldy #$0010
 	ldx #$0000
 L87A229:
-	sta $7F4420,X
+	sta.l ActiveUnit.Weapon1,X
 	inx
 	dey
 	inx
@@ -4011,25 +4011,25 @@ L87A229:
 	bne L87A229
 	sep #$20
 	lda $0B6F
-	sta $7F4401
+	sta.l ActiveUnit.ClassID
 	lda $0B70
-	sta $7F4402
+	sta.l ActiveUnit.Level
 	lda #$58
-	sta $7F4416
+	sta.l ActiveUnit.NameID
 	lda #$45
-	sta $7F4400
+	sta.l ActiveUnit.UnitID
 	lda #$74
-	sta $7F4417
+	sta.l ActiveUnit.PortraitID
 	jsl L83DD66
-	lda $7F4409
+	lda.l ActiveUnit.Strength
 	clc
-	adc $7F440C
+	adc.l ActiveUnit.Defense
 	clc
-	adc $7F440A
+	adc.l ActiveUnit.Skill
 	clc
-	adc $7F440B
+	adc.l ActiveUnit.Speed
 	clc
-	adc $7F440D
+	adc.l ActiveUnit.Resistance
 	sta $15
 	lda $0B77
 	clc
@@ -4083,7 +4083,7 @@ L87A2BE:
 	ldy #$0020
 	ldx #$0000
 L87A2CC:
-	sta $7F4400,X
+	sta.l ActiveUnit.UnitID,X
 	inx
 	dey
 	inx
@@ -4093,7 +4093,7 @@ L87A2CC:
 	ldy #$0010
 	ldx #$0000
 L87A2DF:
-	sta $7F4420,X
+	sta.l ActiveUnit.Weapon1,X
 	inx
 	dey
 	inx
@@ -4121,38 +4121,38 @@ L87A30C:
 	tay
 	lda [$00],Y
 	sep #$20
-	sta $7F4401
+	sta.l ActiveUnit.ClassID
 	sep #$20
 	ldx #$0005
 	stx $23
 	jsl L83F684
 	clc
 	adc $0B70
-	sta $7F4402
+	sta.l ActiveUnit.Level
 	lda #$58
-	sta $7F4416
+	sta.l ActiveUnit.NameID
 	lda #$45
-	sta $7F4400
+	sta.l ActiveUnit.UnitID
 	lda #$74
-	sta $7F4417
+	sta.l ActiveUnit.PortraitID
 	jsl L83DD66
-	lda $7F4402
+	lda.l ActiveUnit.Level
 	cmp #$15
 	bcc L87A34E
 	lda #$14
 L87A34E:
-	sta $7F4402
+	sta.l ActiveUnit.Level
 	rep #$20
 	lda #bank100(L8B9A92)
 	sta $01
-	lda $7F4401
+	lda.l ActiveUnit.ClassID
 	and #$00FF
 	asl
 	tax
 	lda.l L8B9A92,X
 	sta $00
 	sep #$20
-	lda $7F4402
+	lda.l ActiveUnit.Level
 	dea
 	xba
 	lda #$01
@@ -4168,7 +4168,7 @@ L87A34E:
 	adc [$00]
 	sta $0F84
 	sep #$20
-	lda $7F4402
+	lda.l ActiveUnit.Level
 	sec
 	sbc $0B70
 	rep #$20
@@ -4229,10 +4229,10 @@ L87A3F0:
 L87A419:
 	sta $07F1
 	jsr L87935C
-	lda $7F4401
+	lda.l ActiveUnit.ClassID
 	and #$00FF
 	sta $0F49
-	lda $7F4402
+	lda.l ActiveUnit.Level
 	and #$00FF
 	sta $0F4F
 	lda $0F84
@@ -5029,14 +5029,14 @@ L87AA6C:
 	ldx #$0003
 	sep #$20
 L87AA7C:
-	lda $7F4420,X
+	lda.l ActiveUnit.Weapon1,X
 	cmp $15
 	beq L87AA98
 	dex
 	bpl L87AA7C
 	ldx #$0003
 L87AA8A:
-	lda $7F4428,X
+	lda.l ActiveUnit.Item1,X
 	cmp $15
 	beq L87AA98
 	dex
@@ -5130,7 +5130,7 @@ L87AB22:
 	brl L87AAD9
 L87AB25:
 	jsl L81D86F
-	lda $7F4412
+	lda.l ActiveUnit.HasMoved
 	bit #$80
 	bne L87AB22
 L87AB31:
@@ -5145,14 +5145,14 @@ L87AB3A:
 	ldy #$0001
 	ldx #$0003
 L87AB49:
-	lda $7F4420,X
+	lda.l ActiveUnit.Weapon1,X
 	cmp [$00],Y
 	beq L87AB65
 	dex
 	bpl L87AB49
 	ldx #$0003
 L87AB57:
-	lda $7F4428,X
+	lda.l ActiveUnit.Item1,X
 	cmp [$00],Y
 	beq L87AB65
 	dex
@@ -5352,7 +5352,7 @@ L87AC90:
 	tay
 	sep #$20
 	lda $0410,X
-	and $ADA9,Y
+	and.w L87ADA9,Y
 	sta $0410,X
 	plb
 	rep #$20
@@ -9807,7 +9807,7 @@ L87D80A:
 	bcs L87D81E
 	ldx $54
 	lda $0410,X
-	and $D82F,Y
+	and.w L87D82F,Y
 	sta $0410,X
 	rep #$10
 	rts

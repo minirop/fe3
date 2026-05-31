@@ -59,7 +59,7 @@ L808061:
 
 L808070:
 	lda $044d
-	ora $808e,X
+	ora.w L80808E,X
 	sta $044d
 	ldy #$10
 L80807B:
@@ -1506,7 +1506,7 @@ L808BCC:
 	asl
 	tax
 	lda $0410,Y
-	and $8c47,X
+	and.w L808C47,X
 	sta $0410,Y
 L808BE0:
 	ldy $67
@@ -1558,7 +1558,7 @@ L808C27:
 	dea
 	asl
 	tay
-	lda $8c47,Y
+	lda.w L808C47,Y
 	eor #$ffff
 	sta $19
 	lda $0410,X
@@ -2928,7 +2928,7 @@ L809564:
 	lsr
 	tay
 	lda $0410,X
-	and $959F,Y
+	and.w L80959F,Y
 	pha
 	lda $15
 	lsr
@@ -2949,6 +2949,7 @@ L80958D:
 	plp
 	rtl
 
+L80959F:
 .dw $0000
 .dw $0003
 .dw $000F

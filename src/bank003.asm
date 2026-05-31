@@ -446,7 +446,7 @@ L83863F:
 L8386B1:
 	jsl L83D912
 	sep #$20
-	lda $7F4401
+	lda.l ActiveUnit.ClassID
 	sta $0A9B
 	rep #$20
 L8386C0:
@@ -2612,7 +2612,7 @@ L83991C:
 	cmp #$10
 	bne L839951
 	lda #$ff
-	sta.l $7f4414
+	sta.l ActiveUnit.MountedClassID
 L839951:
 	lda #$01
 	sta $08d1
@@ -3079,115 +3079,115 @@ L839D5B:
 .dw L839EDC
 
 L839D65:
-	sep	#$20
-	lda	$08ed
-	jsl	L83D912
-	lda	$7f4411
-	sta	$08ee
-	lda	$7f4410
-	sta	$08ef
-	rep	#$20
-	lda	$07d3
-	and	#$00ff
-	beq	L839D89
-	brl	L839E49
+	sep #$20
+	lda $08ed
+	jsl L83D912
+	lda.l ActiveUnit.YPosition
+	sta $08ee
+	lda.l ActiveUnit.XPosition
+	sta $08ef
+	rep #$20
+	lda $07d3
+	and #$00ff
+	beq L839D89
+	brl L839E49
 L839D89:
-	lda	#$8c00
-	sta	$04
-	lda	#$9fdb
-	sta	$03
+	lda #$8c00
+	sta $04
+	lda #$9fdb
+	sta $03
 L839D93:
-	sep	#$20
-	lda	[$03]
-	cmp	#$ff
-	bne	L839D9E
-	brl	L839E49
+	sep #$20
+	lda [$03]
+	cmp #$ff
+	bne L839D9E
+	brl L839E49
 L839D9E:
-	cmp	$07ce
-	beq	L839DA6
-	brl	L839E05
+	cmp $07ce
+	beq L839DA6
+	brl L839E05
 L839DA6:
-	ldy	#$0001
-	lda	[$03],Y
+	ldy #$0001
+	lda [$03],Y
 	sec
-	sbc	$08ee
-	bcs	L839DB4
-	eor	#$ff
+	sbc $08ee
+	bcs L839DB4
+	eor #$ff
 	ina
 L839DB4:
-	cmp	#$02
-	bcs	L839E05
-	eor	#$01
+	cmp #$02
+	bcs L839E05
+	eor #$01
 	asl
-	sta	$15
-	ldy	#$0002
-	lda	[$03],Y
+	sta $15
+	ldy #$0002
+	lda [$03],Y
 	sec
-	sbc	$08ef
-	bcs	L839DCB
-	eor	#$ff
+	sbc $08ef
+	bcs L839DCB
+	eor #$ff
 	ina
 L839DCB:
-	cmp	$15
-	beq	L839DD1
-	bcs	L839E05
+	cmp $15
+	beq L839DD1
+	bcs L839E05
 L839DD1:
-	cmp	#$02
-	beq	L839E05
-	ldy	#$0003
-	lda	[$03],Y
-	cmp	#$ff
-	beq	L839DE4
+	cmp #$02
+	beq L839E05
+	ldy #$0003
+	lda [$03],Y
+	cmp #$ff
+	beq L839DE4
 	jsl L87AA9B
-	bcs	L839E05
+	bcs L839E05
 L839DE4:
-	lda	$08ed
-	jsl	L83D912
-	lda	$7f4401
-	cmp	#$13
-	beq	L839E12
-	lda	$7f440e
-	sta	$15
-	lda	#$64
-	sta	$23
+	lda $08ed
+	jsl L83D912
+	lda.l ActiveUnit.ClassID
+	cmp #$13
+	beq L839E12
+	lda.l ActiveUnit.Luck
+	sta $15
+	lda #$64
+	sta $23
 	jsl L83F684
-	cmp	$15
-	bcc	L839E12
+	cmp $15
+	bcc L839E12
 L839E05:
-	rep	#$20
-	lda	$03
+	rep #$20
+	lda $03
 	clc
-	adc	#$0007
-	sta	$03
-	brl	L839D93
+	adc #$0007
+	sta $03
+	brl L839D93
 L839E12:
-	rep	#$20
-	ldy	#$0005
-	lda	[$03],Y
+	rep #$20
+	ldy #$0005
+	lda [$03],Y
 	jsl L87AA28
-	lda	#$80b2
-	sta	$0876
-	stz	$91
-	stz	$93
-	sep	#$20
-	ldy	#$0004
-	lda	[$03],Y
+	lda #$80b2
+	sta $0876
+	stz $91
+	stz $93
+	sep #$20
+	ldy #$0004
+	lda [$03],Y
 	xba
-	lda	#$00
+	lda #$00
 	xba
 	pha
 	pha
 	jsl L87B3C4
 	pla
-	jsl	L87ADAD
+	jsl L87ADAD
 	pla
-	jsl	L83FBBE
-	lda	$08ed
-	jsl	L83D969
+	jsl L83FBBE
+	lda $08ed
+	jsl L83D969
 L839E49:
-	sep	#$20
-	inc	$08d4
-	rep	#$20
+	sep #$20
+	inc $08d4
+	rep #$20
 	rts
 
 L839E51:
@@ -4044,7 +4044,7 @@ L83A569:
 	rep #$20
 	pla
 	tax
-	lda $7F4428,X
+	lda.l ActiveUnit.Item1,X
 	and #$00FF
 	cmp #$0046
 	beq L83A5D9
@@ -4892,7 +4892,7 @@ L83ACB0:
 	lda #$004F
 	jsl L93D52E
 	jsl L83D912
-	lda $7F4403
+	lda.l ActiveUnit.HP
 	and #$00FF
 	bne L83ACE7
 	lda #$0200
@@ -4917,11 +4917,11 @@ L83ACF5:
 	lda $08ED
 	jsl L83D912
 	ply
-	lda $7F4416
+	lda.l ActiveUnit.NameID
 	and #$00FF
 	cmp #$0028
 	bne L83AD1F
-	lda $7F4401
+	lda.l ActiveUnit.ClassID
 	and #$00FF
 	cmp #$0014
 	beq L83AD1F
@@ -4949,15 +4949,15 @@ L83AD1F:
 	cmp #$01
 	bpl L83AD5C
 	phy
-	lda $7F4420
+	lda.l ActiveUnit.Weapon1
 	jsr L83C03F
-	sta $7F4420
+	sta.l ActiveUnit.Weapon1
 	xba
-	sta $7F4424
+	sta.l ActiveUnit.Weapon1Uses
 	ply
 	bra L83AD60
 L83AD5C:
-	sta $7F4424
+	sta.l ActiveUnit.Weapon1Uses
 L83AD60:
 	phy
 	rep #$20
@@ -4975,7 +4975,7 @@ L83AD60:
 	sta $07A2,Y
 	lda $0765,Y
 L83AD82:
-	sta $7F4403
+	sta.l ActiveUnit.HP
 	tya
 	bne L83AD8D
 	jsl L83C083
@@ -5023,7 +5023,7 @@ L83ADE7:
 	and #$FE
 	sta $0790
 	lda #$00
-	sta $7F4403
+	sta.l ActiveUnit.HP
 	rep #$20
 	lda $08ED
 	and #$00FF
@@ -5031,19 +5031,19 @@ L83ADE7:
 	rtl
 
 L83AE04:
-	lda $7F4428
+	lda.l ActiveUnit.Item1
 	sta $0791
-	lda $7F442A
+	lda.l ActiveUnit.Item3
 	sta $0793
-	lda $7F441E
+	lda.l ActiveUnit.Money
 	sta $07A4
 	brl L83AEF6
 L83AE1C:
 	sep #$20
 	lda #$FF
-	sta $7F4428,X
-	lda $7F4404
-	sta $7F4403
+	sta.l ActiveUnit.Item1,X
+	lda.l ActiveUnit.MaxHP
+	sta.l ActiveUnit.HP
 	rep #$20
 	lda #$7F00
 	sta $01
@@ -5061,13 +5061,13 @@ L83AE47:
 	stz $0798
 	ldx #$0000
 L83AE52:
-	lda $7F4428,X
+	lda.l ActiveUnit.Item1,X
 	cmp #$7A
 	beq L83AE1C
 	inx
 	cpx #$0004
 	bne L83AE52
-	lda $7F4401
+	lda.l ActiveUnit.ClassID
 	cmp #$10
 	beq L83AE78
 	cmp #$2B
@@ -5082,7 +5082,7 @@ L83AE78:
 	jsr L83AF0A
 	bra L83AE88
 L83AE7D:
-	lda $7F4416
+	lda.l ActiveUnit.NameID
 	cmp #$28
 	bne L83AE88
 	jsr L83AF18
@@ -5091,7 +5091,7 @@ L83AE88:
 	ldy #$0010
 	ldx #$0000
 L83AE90:
-	lda $7F4420,X
+	lda.l ActiveUnit.Weapon1,X
 	sta.l $0007A6,X
 	inx
 	dey
@@ -5102,7 +5102,7 @@ L83AE90:
 	ldy #$0010
 	ldx #$0000
 L83AEA7:
-	sta.l $7F4420,X
+	sta.l ActiveUnit.Weapon1,X
 	inx
 	dey
 	inx
@@ -5110,23 +5110,23 @@ L83AEA7:
 	bne L83AEA7
 	sep #$20
 	stz $0ADF
-	lda $7F4416
+	lda.l ActiveUnit.NameID
 	cmp #$00
 	bne L83AEC3
 	lda #$01
 	sta $0ADF
 L83AEC3:
-	lda $7F4412
+	lda.l ActiveUnit.HasMoved
 	ora #$80
 	and #$F7
-	sta $7F4412
-	lda $7F4404
-	sta $7F4403
+	sta.l ActiveUnit.HasMoved
+	lda.l ActiveUnit.MaxHP
+	sta.l ActiveUnit.HP
 	lda $07DF
-	sta $7F4410
+	sta.l ActiveUnit.XPosition
 	lda #$00
-	sta $7F4411
-	lda $7F4400
+	sta.l ActiveUnit.YPosition
+	lda.l ActiveUnit.UnitID
 	rep #$20
 	jsl L83FDE4
 	jsl L83FE47
@@ -5191,36 +5191,36 @@ L83AF50:
 	stz $15
 	stz $17
 	stz $19
-	lda $7F4406
+	lda.l ActiveUnit.Terrain
 	sta $07C0,Y
 	ply
 	sep #$20
-	lda $7F4401
+	lda.l ActiveUnit.ClassID
 	sta $075D,Y
-	lda $7F4416
+	lda.l ActiveUnit.NameID
 	sta $0763,Y
-	lda $7F4404
+	lda.l ActiveUnit.MaxHP
 	jsr L83B09A
 	sta $0765,Y
-	lda $7F4403
+	lda.l ActiveUnit.HP
 	jsr L83B09A
 	sta $076F,Y
-	lda $7F4402
+	lda.l ActiveUnit.Level
 	sta $0771,Y
-	lda $7F4405
+	lda.l ActiveUnit.EXP
 	sta $0773,Y
-	lda $7F4409
+	lda.l ActiveUnit.Strength
 	jsr L83B091
 	sta $0779,Y
-	lda $7F440A
+	lda.l ActiveUnit.Skill
 	jsr L83B091
 	sta $077B,Y
-	lda $7F440B
+	lda.l ActiveUnit.Speed
 	jsr L83B091
 	sta $077D,Y
-	lda $7F4414
+	lda.l ActiveUnit.MountedClassID
 	sta $078D,Y
-	lda $7F4400
+	lda.l ActiveUnit.UnitID
 	xba
 	lda #$11
 	rep #$20
@@ -5233,23 +5233,23 @@ L83AF50:
 	tax
 	lda.l (CHARACTERS_INITIAL_STATS + 8),X
 	sta $078B,Y
-	lda $7F440E
+	lda.l ActiveUnit.Luck
 	cmp #$FF
 	bne L83AFE1
 	lda #$00
 L83AFE1:
 	jsr L83B091
 	sta $077F,Y
-	lda $7F440C
+	lda.l ActiveUnit.Defense
 	jsr L83B091
 	sta $0781,Y
-	lda $7F440D
+	lda.l ActiveUnit.Resistance
 	jsr L83B091
 	sta $0783,Y
-	lda $7F4411
+	lda.l ActiveUnit.YPosition
 	sta $0787,Y
 	sta $15
-	lda $7F4410
+	lda.l ActiveUnit.XPosition
 	sta $0789,Y
 	sta $17
 	phy
@@ -5264,7 +5264,7 @@ L83AFE1:
 L83B023:
 	phx
 	phy
-	lda $7F4420,X
+	lda.l ActiveUnit.Weapon1,X
 	and #$00FF
 	cmp #$00FF
 	beq L83B03E
@@ -5309,9 +5309,9 @@ L83B07C:
 	ply
 	plx
 	sep #$20
-	lda $7F4420,X
+	lda.l ActiveUnit.Weapon1,X
 	sta $075F,Y
-	lda $7F4424,X
+	lda.l ActiveUnit.Weapon1Uses,X
 	sta $0777,Y
 L83B08E:
 	rep #$20
@@ -5551,7 +5551,7 @@ L83B245:
 	cmp #$0400
 	bmi L83B275
 	jsl L83D912
-	lda $7F4416
+	lda.l ActiveUnit.NameID
 	and #$00FF
 	cmp #$002F
 	beq L83B273
@@ -6613,12 +6613,12 @@ L83B9CC:
 	php
 	pha
 	jsl L83D912
-	lda $7F4416
+	lda.l ActiveUnit.NameID
 	pha
 	sep #$20
-	lda $7F4411
+	lda.l ActiveUnit.YPosition
 	sta $08FA
-	lda $7F4410
+	lda.l ActiveUnit.XPosition
 	sta $08FB
 	lda #$2E
 	sta $08FF
@@ -6653,12 +6653,12 @@ L83BA0C:
 	and #$20
 	cmp $19
 	bne L83BA3D
-	lda $7F4400
+	lda.l ActiveUnit.UnitID
 	cmp $16
 	beq L83BA3D
 	jsr L83BA4F
 L83BA3D:
-	lda $7F4416
+	lda.l ActiveUnit.NameID
 	sta $15
 	rep #$20
 	jsr L83BA70
@@ -6676,7 +6676,7 @@ L83BA4F:
 	phx
 	ldx #$00
 L83BA55:
-	lda $7F4428,X
+	lda.l ActiveUnit.Item1,X
 	cmp #$6B
 	beq L83BA61
 	cmp #$3C
@@ -6736,7 +6736,7 @@ L83BA9D:
 L83BAAC:
 	php
 	sep #$20
-	lda $7F4400
+	lda.l ActiveUnit.UnitID
 	xba
 	lda #$11
 	rep #$20
@@ -6779,7 +6779,7 @@ L83BAFB:
 	sep #$20
 	sta $079A
 	clc
-	adc $7F440A
+	adc.l ActiveUnit.Skill
 	cmp #$15
 	bcc L83BB29
 	sec
@@ -6792,9 +6792,9 @@ L83BAFB:
 	lda #$00
 L83BB22:
 	sta $079A
-	lda $7F440A
+	lda.l ActiveUnit.Skill
 L83BB29:
-	sta $7F440A
+	sta.l ActiveUnit.Skill
 L83BB2D:
 	plx
 	plp
@@ -6821,7 +6821,7 @@ L83BB4B:
 	sep #$20
 	sta $079B
 	clc
-	adc $7F440B
+	adc.l ActiveUnit.Speed
 	cmp #$15
 	bcc L83BB79
 	sec
@@ -6834,9 +6834,9 @@ L83BB4B:
 	lda #$00
 L83BB72:
 	sta $079B
-	lda $7F440B
+	lda.l ActiveUnit.Speed
 L83BB79:
-	sta $7F440B
+	sta.l ActiveUnit.Speed
 L83BB7D:
 	plx
 	plp
@@ -6863,7 +6863,7 @@ L83BB9B:
 	sep #$20
 	sta $079F
 	clc
-	adc $7F440E
+	adc.l ActiveUnit.Luck
 	cmp #$15
 	bcc L83BBC9
 	sec
@@ -6876,9 +6876,9 @@ L83BB9B:
 	lda #$00
 L83BBC2:
 	sta $079F
-	lda $7F440E
+	lda.l ActiveUnit.Luck
 L83BBC9:
-	sta $7F440E
+	sta.l ActiveUnit.Luck
 L83BBCD:
 	plx
 	plp
@@ -6905,7 +6905,7 @@ L83BBEB:
 	sep #$20
 	sta $079D
 	clc
-	adc $7F440C
+	adc.l ActiveUnit.Defense
 	cmp #$15
 	bcc L83BC19
 	sec
@@ -6918,9 +6918,9 @@ L83BBEB:
 	lda #$00
 L83BC12:
 	sta $079D
-	lda $7F440C
+	lda.l ActiveUnit.Defense
 L83BC19:
-	sta $7F440C
+	sta.l ActiveUnit.Defense
 L83BC1D:
 	plx
 	plp
@@ -6947,7 +6947,7 @@ L83BC3B:
 	sep #$20
 	sta $079E
 	clc
-	adc $7F440D
+	adc.l ActiveUnit.Resistance
 	cmp #$15
 	bcc L83BC69
 	sec
@@ -6960,9 +6960,9 @@ L83BC3B:
 	lda #$00
 L83BC62:
 	sta $079E
-	lda $7F440D
+	lda.l ActiveUnit.Resistance
 L83BC69:
-	sta $7F440D
+	sta.l ActiveUnit.Resistance
 L83BC6D:
 	plx
 	plp
@@ -6989,7 +6989,7 @@ L83BC8B:
 	sep #$20
 	sta $07A1
 	clc
-	adc $7F4404
+	adc.l ActiveUnit.MaxHP
 	cmp #$35
 	bcc L83BCB9
 	sec
@@ -7002,9 +7002,9 @@ L83BC8B:
 	lda #$00
 L83BCB2:
 	sta $07A1
-	lda $7F4404
+	lda.l ActiveUnit.MaxHP
 L83BCB9:
-	sta $7F4404
+	sta.l ActiveUnit.MaxHP
 L83BCBD:
 	plx
 	plp
@@ -7031,7 +7031,7 @@ L83BCDB:
 	sep #$20
 	sta $07A0
 	clc
-	adc $7F440F
+	adc.l ActiveUnit.WeaponLevel
 	cmp #$15
 	bcc L83BD09
 	sec
@@ -7044,9 +7044,9 @@ L83BCDB:
 	lda #$00
 L83BD02:
 	sta $07A0
-	lda $7F440F
+	lda.l ActiveUnit.WeaponLevel
 L83BD09:
-	sta $7F440F
+	sta.l ActiveUnit.WeaponLevel
 L83BD0D:
 	plx
 	plp
@@ -7073,7 +7073,7 @@ L83BD2B:
 	sep #$20
 	sta $0799
 	clc
-	adc $7F4409
+	adc.l ActiveUnit.Strength
 	cmp #$15
 	bcc L83BD59
 	sec
@@ -7086,9 +7086,9 @@ L83BD2B:
 	lda #$00
 L83BD52:
 	sta $0799
-	lda $7F4409
+	lda.l ActiveUnit.Strength
 L83BD59:
-	sta $7F4409
+	sta.l ActiveUnit.Strength
 L83BD5D:
 	plx
 	plp
@@ -7100,7 +7100,7 @@ L83BD60:
 	phx
 	ldx #$0000
 L83BD67:
-	lda $7F4428,X
+	lda.l ActiveUnit.Item1,X
 	and #$00FF
 	cmp #$007E
 	beq L83BD97
@@ -7513,14 +7513,14 @@ L83C07F:
 L83C083:
 	php
 	sep #$20
-	lda $7F4402
+	lda.l ActiveUnit.Level
 	cmp #$14
 	bcc L83C093
 	stz $0798
 	bra L83C0EB
 L83C093:
 	jsr L83C0ED
-	lda $7F4405
+	lda.l ActiveUnit.EXP
 	clc
 	adc $0798
 	cmp #$64
@@ -7555,11 +7555,11 @@ L83C0C5:
 L83C0DB:
 	pla
 L83C0DC:
-	sta $7F4405
+	sta.l ActiveUnit.EXP
 	lda $0771
 	clc
 	adc $0797
-	sta $7F4402
+	sta.l ActiveUnit.Level
 L83C0EB:
 	plp
 	rtl
@@ -7677,7 +7677,7 @@ L83C180:
 	beq L83C1D7
 	lda $08ED
 	jsl L83D912
-	lda $7F4412
+	lda.l ActiveUnit.HasMoved
 	and #$0006
 	lsr
 	and #$00FF
@@ -7770,23 +7770,23 @@ L83C2D4:
 	lda $08F1
 	jsl L83C536
 	sep #$20
-	lda $7F4424,X
+	lda.l ActiveUnit.Weapon1Uses,X
 	cmp #$FF
 	beq L83C30A
 	dea
 	bne L83C30A
-	lda $7F4420,X
+	lda.l ActiveUnit.Weapon1,X
 	cmp #$6B
 	bne L83C304
 	lda #$3C
-	sta $7F4420,X
+	sta.l ActiveUnit.Weapon1,X
 	lda #$FF
 	bra L83C30A
 L83C304:
 	lda #$FF
-	sta $7F4420,X
+	sta.l ActiveUnit.Weapon1,X
 L83C30A:
-	sta $7F4424,X
+	sta.l ActiveUnit.Weapon1Uses,X
 	rep #$20
 	lda $08ED
 	jsl L83D969
@@ -7878,15 +7878,15 @@ L83C3C0:
 	jsl L808EAD
 	lda $08ED
 	jsl L83D912
-	lda $7F4410
+	lda.l ActiveUnit.XPosition
 	pha
 	sep #$20
 	lda $08F3
 	sta $08EE
-	sta $7F4411
+	sta.l ActiveUnit.YPosition
 	lda $08F4
 	sta $08EF
-	sta $7F4410
+	sta.l ActiveUnit.XPosition
 	rep #$20
 	lda $08ED
 	jsl L83D969
@@ -7894,11 +7894,11 @@ L83C3C0:
 	lda $08ED
 	jsl L83D912
 	pla
-	sta $7F4410
+	sta.l ActiveUnit.XPosition
 	sep #$20
-	lda $7F4411
+	lda.l ActiveUnit.YPosition
 	sta $08EE
-	lda $7F4410
+	lda.l ActiveUnit.XPosition
 	sta $08EF
 	rep #$20
 	lda $08ED
@@ -7942,7 +7942,7 @@ L83C482:
 	stz $93
 	lda $08F1
 	jsl L83C536
-	lda $7F4420,X
+	lda.l ActiveUnit.Weapon1,X
 	and #$00FF
 	ora #$0E00
 	sta.l $004202
@@ -8147,9 +8147,9 @@ L83C614:
 	inc $08D2
 	lda $08ED
 	jsl L83D912
-	lda $7F4411
+	lda.l ActiveUnit.YPosition
 	sta $08E6
-	lda $7F4410
+	lda.l ActiveUnit.XPosition
 	sta $08E7
 	lda #$12
 	sta $08DF
@@ -8160,13 +8160,13 @@ L83C644:
 	inc $08D2
 	lda $08ED
 	jsl L83D912
-	lda $7F4411
+	lda.l ActiveUnit.YPosition
 	sta $08E6
-	lda $7F4410
+	lda.l ActiveUnit.XPosition
 	sta $08E7
 	lda #$12
 	sta $08DF
-	lda $7F4412
+	lda.l ActiveUnit.HasMoved
 	and #$06
 	beq L83C66F
 	rep #$20
@@ -8269,9 +8269,9 @@ L83C72D:
 	inc $08D2
 	lda $08ED
 	jsl L83D912
-	lda $7F4411
+	lda.l ActiveUnit.YPosition
 	sta $08E6
-	lda $7F4410
+	lda.l ActiveUnit.XPosition
 	sta $08E7
 	lda #$12
 	sta $08DF
@@ -8282,13 +8282,13 @@ L83C75E:
 	inc $08D2
 	lda $08ED
 	jsl L83D912
-	lda $7F4411
+	lda.l ActiveUnit.YPosition
 	sta $08E6
-	lda $7F4410
+	lda.l ActiveUnit.XPosition
 	sta $08E7
 	lda #$12
 	sta $08DF
-	lda $7F4412
+	lda.l ActiveUnit.HasMoved
 	and #$06
 	beq L83C789
 	rep #$20
@@ -8308,18 +8308,18 @@ L83C792:
 	lda $08ED
 	jsl L83D912
 	sep #$20
-	lda $7F4403
+	lda.l ActiveUnit.HP
 	adc #$0A
-	cmp $7F4404
+	cmp.l ActiveUnit.MaxHP
 	bmi L83C7AB
-	lda $7F4404
+	lda.l ActiveUnit.MaxHP
 L83C7AB:
-	sta $7F4403
+	sta.l ActiveUnit.HP
 	rep #$20
 	lda $08ED
 	jsl L83D969
 	sep #$20
-	lda $7F4403
+	lda.l ActiveUnit.HP
 	sec
 	sbc $076F
 	sta $07A2
@@ -8506,9 +8506,9 @@ L83C940:
 	ldx #$0003
 L83C958:
 	sep #$20
-	lda $7F4420,X
+	lda.l ActiveUnit.Weapon1,X
 	xba
-	lda $7F4424,X
+	lda.l ActiveUnit.Weapon1Uses,X
 	xba
 	phx
 	jsr L83CA75
@@ -8593,9 +8593,9 @@ L83C9F5:
 	jsl L83D912
 	sep #$30
 	ldx $08F4
-	lda $7F4420,X
+	lda.l ActiveUnit.Weapon1,X
 	jsr L83CA54
-	sta $7F4420,X
+	sta.l ActiveUnit.Weapon1,X
 	sta $0760
 	rep #$30
 	and #$00FF
@@ -8610,7 +8610,7 @@ L83C9F5:
 	and #$00FF
 	sep #$30
 	ldx $08F4
-	sta $7F4424,X
+	sta.l ActiveUnit.Weapon1Uses,X
 	rep #$30
 	lda $08F2
 	jsl L83D969
@@ -8638,7 +8638,7 @@ L83CA54:
 	cmp #$06
 	bne L83CA71
 L83CA6B:
-	lda $7F4424,X
+	lda.l ActiveUnit.Weapon1Uses,X
 	and #$3F
 L83CA71:
 	rep #$30
@@ -8747,7 +8747,7 @@ L83CB10:
 	sep #$20
 	lda $08F2
 	jsl L83D912
-	lda $7F4401
+	lda.l ActiveUnit.ClassID
 	sta $08FF
 	rep #$20
 	plx
@@ -8781,9 +8781,9 @@ L83CB83:
 	inc $08D2
 	lda $08ED
 	jsl L83D912
-	lda $7F4411
+	lda.l ActiveUnit.YPosition
 	sta $08E6
-	lda $7F4410
+	lda.l ActiveUnit.XPosition
 	sta $08E7
 	lda #$12
 	sta $08DF
@@ -8799,22 +8799,22 @@ L83CBB3:
 	lda $08F2
 	jsl L83D912
 	lda $08F3
-	sta $7F4411
+	sta.l ActiveUnit.YPosition
 	sta $08EE
 	lda $08F4
-	sta $7F4410
+	sta.l ActiveUnit.XPosition
 	sta $08EF
 	lda $08F2
 	jsl L83D969
 	lda $08ED
 	jsl L83D912
-	lda $7F4411
+	lda.l ActiveUnit.YPosition
 	sta $08E6
-	lda $7F4410
+	lda.l ActiveUnit.XPosition
 	sta $08E7
 	lda #$12
 	sta $08DF
-	lda $7F4412
+	lda.l ActiveUnit.HasMoved
 	and #$06
 	beq L83CC07
 	rep #$20
@@ -8834,13 +8834,13 @@ L83CC10:
 	sep #$20
 	lda $08F2
 	jsl L83D912
-	lda $7F4401
+	lda.l ActiveUnit.ClassID
 	sta $08FF
 	lda $08ED
 	jsl L83D912
-	lda $7F4411
+	lda.l ActiveUnit.YPosition
 	sta $08FA
-	lda $7F4410
+	lda.l ActiveUnit.XPosition
 	sta $08FB
 	lda #$00
 	sta $08FC
@@ -8892,9 +8892,9 @@ L83CC8B:
 	inc $08D4
 	lda $08ED
 	jsl L83D912
-	lda $7F4411
+	lda.l ActiveUnit.YPosition
 	sta $08E6
-	lda $7F4410
+	lda.l ActiveUnit.XPosition
 	sta $08E7
 	lda #$12
 	sta $08DF
@@ -8914,10 +8914,10 @@ L83CCCD:
 	jsl L83D912
 	pla
 	sep #$20
-	sta $7F4410
+	sta.l ActiveUnit.XPosition
 	sta $08F4
 	xba
-	sta $7F4411
+	sta.l ActiveUnit.YPosition
 	sta $08F3
 	rep #$20
 	lda $08F2
@@ -8935,12 +8935,12 @@ L83CD0A:
 	jsl L83D912
 	lda #$07
 	sec
-	sbc $7F4413
+	sbc.l ActiveUnit.ResBoostTimer
 	clc
-	adc $7F440D
-	sta $7F440D
+	adc.l ActiveUnit.Resistance
+	sta.l ActiveUnit.Resistance
 	lda #$07
-	sta $7F4413
+	sta.l ActiveUnit.ResBoostTimer
 	lda $08F2
 	jsl L83D969
 	rep #$20
@@ -8954,7 +8954,7 @@ L83CD0A:
 L83CD45:
 	lda $08ED
 	jsl L83D912
-	lda $7F4409
+	lda.l ActiveUnit.Strength
 	clc
 	adc #$000A
 	sta $15
@@ -8980,7 +8980,7 @@ L83CD45:
 	ldy #$0020
 L83CD82:
 	sep #$20
-	lda $7F4400
+	lda.l ActiveUnit.UnitID
 	cmp #$FF
 	beq L83CDB7
 	lda #$00
@@ -9019,7 +9019,7 @@ L83CDB7:
 	ldy #$0020
 L83CDDD:
 	sep #$20
-	lda $7F4400
+	lda.l ActiveUnit.UnitID
 	cmp #$FF
 	beq L83CDED
 	lda #$00
@@ -9044,7 +9044,7 @@ L83CDED:
 L83CE11:
 	lda $08F2
 	jsl L83D912
-	lda $7F4404
+	lda.l ActiveUnit.MaxHP
 	sta $15
 	jsr L83CEC5
 	rts
@@ -9052,7 +9052,7 @@ L83CE11:
 L83CE22:
 	lda $08ED
 	jsl L83D912
-	lda $7F4409
+	lda.l ActiveUnit.Strength
 	and #$00FF
 	clc
 	adc #$0014
@@ -9085,23 +9085,23 @@ L83CE5E:
 	cmp #$20
 	bpl L83CE79
 	jsl L83D912
-	lda $7F4411
+	lda.l ActiveUnit.YPosition
 	sta $08EE
-	lda $7F4410
+	lda.l ActiveUnit.XPosition
 	sta $08EF
 L83CE79:
 	lda #$12
 	sta $08DF
 	lda $08ED
 	jsl L83D912
-	lda $7F4411
+	lda.l ActiveUnit.YPosition
 	sta $08E6
-	lda $7F4410
+	lda.l ActiveUnit.XPosition
 	sta $08E7
 	inc $08D2
 	rep #$20
 	jsr L83CEAD
-	lda $7F4412
+	lda.l ActiveUnit.HasMoved
 	and #$0006
 	beq L83CEA6
 	sec
@@ -9118,7 +9118,7 @@ L83CEA8:
 L83CEAD:
 	lda $08ED
 	jsl L83D912
-	lda $7F4409
+	lda.l ActiveUnit.Strength
 	and #$00FF
 	clc
 	adc #$000A
@@ -9138,18 +9138,18 @@ L83CEC5:
 	rep #$10
 	lda $08F2
 	jsl L83D912
-	lda $7F4403
+	lda.l ActiveUnit.HP
 	clc
 	adc $15
-	cmp $7F4404
+	cmp.l ActiveUnit.MaxHP
 	bmi L83CEF9
-	lda $7F4404
+	lda.l ActiveUnit.MaxHP
 	sec
-	sbc $7F4403
+	sbc.l ActiveUnit.HP
 	sta $07A3
-	lda $7F4404
+	lda.l ActiveUnit.MaxHP
 L83CEF9:
-	sta $7F4403
+	sta.l ActiveUnit.HP
 	lda $08F2
 	jsl L83D969
 	lda $08ED
@@ -9204,28 +9204,28 @@ L83CF5D:
 	phx
 	jsl L83AF3F
 	plx
-	lda $7F4420,X
+	lda.l ActiveUnit.Weapon1,X
 	sta $0760
 	phx
 	jsl L93D2B2
 	plx
-	sta $7F4420,X
-	lda $7F4417
+	sta.l ActiveUnit.Weapon1,X
+	lda.l ActiveUnit.PortraitID
 	cmp #$5B
 	bne L83CF9B
 	lda #$5C
-	sta $7F4417
+	sta.l ActiveUnit.PortraitID
 L83CF9B:
 	bra L83CFAA
 L83CF9D:
 	phx
 	jsl L83AF1C
 	plx
-	lda $7F4420,X
+	lda.l ActiveUnit.Weapon1,X
 	sta $075F
 L83CFAA:
 	jsl L93D9FF
-	lda $7F4401
+	lda.l ActiveUnit.ClassID
 	ldy #$00
 	lda $08ED
 	cmp #$20
@@ -9234,15 +9234,15 @@ L83CFAA:
 L83CFBC:
 	lda $075F,Y
 	jsl L93D305
-	sta $7F4401
+	sta.l ActiveUnit.ClassID
 	jsl L93D951
-	lda $7F4400
+	lda.l ActiveUnit.UnitID
 	cmp #$30
 	beq L83CFD7
 	cmp #$98
 	bne L83CFE2
 L83CFD7:
-	lda $7F4401
+	lda.l ActiveUnit.ClassID
 	sta $0A9B
 	jsl L83FBA4
 L83CFE2:
@@ -9251,7 +9251,7 @@ L83CFE2:
 	and #$00FF
 	cmp #$00FF
 	bne L83D002
-	lda $7F440E
+	lda.l ActiveUnit.Luck
 	and #$00FF
 	lsr
 	ina
@@ -9261,25 +9261,25 @@ L83CFE2:
 	adc #$0005
 L83D002:
 	sep #$20
-	sta $7F4415
-	lda $7F4404
+	sta.l ActiveUnit.TransformTimer
+	lda.l ActiveUnit.MaxHP
 	asl
 	cmp #$34
 	bmi L83D013
 	lda #$34
 L83D013:
-	sta $7F4404
-	lda $7F4403
+	sta.l ActiveUnit.MaxHP
+	lda.l ActiveUnit.HP
 	asl
 	cmp #$34
 	bmi L83D022
 	lda #$34
 L83D022:
-	sta $7F4403
+	sta.l ActiveUnit.HP
 	lda $08ED
 	bit #$20
 	beq L83D058
-	lda $7F4401
+	lda.l ActiveUnit.ClassID
 	xba
 	lda #$09
 	rep #$20
@@ -9291,10 +9291,10 @@ L83D022:
 	sep #$20
 	tax
 	lda.l (CLASSES_INITIAL_STATS + 6),X
-	sta $7F4405
+	sta.l ActiveUnit.EXP
 	lda.l (CLASSES_INITIAL_STATS + 8),X
-	sta $7F4404
-	sta $7F4403
+	sta.l ActiveUnit.MaxHP
+	sta.l ActiveUnit.HP
 L83D058:
 	rep #$20
 	lda $08ED
@@ -9338,7 +9338,7 @@ L83D076:
 L83D0C2:
 	lda $08F1
 	jsl L83C536
-	lda $7F4424,X
+	lda.l ActiveUnit.Weapon1Uses,X
 	dea
 	beq L83D0D8
 	lda $07B7
@@ -9352,24 +9352,24 @@ L83D0DB:
 	sep #$20
 	lda $08ED
 	jsl L83D912
-	lda $7F4409
+	lda.l ActiveUnit.Strength
 	pha
 	clc
 	adc #$04
 	cmp #$15
 	bmi L83D0FA
-	lda $7F4409
+	lda.l ActiveUnit.Strength
 	cmp #$14
 	bpl L83D0FA
 	lda #$14
 L83D0FA:
-	sta $7F4409
+	sta.l ActiveUnit.Strength
 	lda $08ED
 	jsl L83D969
 	pla
 	eor #$FF
 	sec
-	adc $7F4409
+	adc.l ActiveUnit.Strength
 	ora #$80
 	sta $0ABF
 	lda #$5C
@@ -9381,24 +9381,24 @@ L83D11A:
 	sep #$20
 	lda $08ED
 	jsl L83D912
-	lda $7F440C
+	lda.l ActiveUnit.Defense
 	pha
 	clc
 	adc #$03
 	cmp #$15
 	bmi L83D139
-	lda $7F440C
+	lda.l ActiveUnit.Defense
 	cmp #$14
 	bpl L83D139
 	lda #$14
 L83D139:
-	sta $7F440C
+	sta.l ActiveUnit.Defense
 	lda $08ED
 	jsl L83D969
 	pla
 	eor #$FF
 	sec
-	adc $7F440C
+	adc.l ActiveUnit.Defense
 	ora #$80
 	sta $0ABF
 	lda #$5D
@@ -9410,24 +9410,24 @@ L83D159:
 	sep #$20
 	lda $08ED
 	jsl L83D912
-	lda $7F440A
+	lda.l ActiveUnit.Skill
 	pha
 	clc
 	adc #$05
 	cmp #$15
 	bmi L83D178
-	lda $7F440A
+	lda.l ActiveUnit.Skill
 	cmp #$14
 	bpl L83D178
 	lda #$14
 L83D178:
-	sta $7F440A
+	sta.l ActiveUnit.Skill
 	lda $08ED
 	jsl L83D969
 	pla
 	eor #$FF
 	sec
-	adc $7F440A
+	adc.l ActiveUnit.Skill
 	ora #$80
 	sta $0ABF
 	lda #$5E
@@ -9439,24 +9439,24 @@ L83D198:
 	sep #$20
 	lda $08ED
 	jsl L83D912
-	lda $7F440B
+	lda.l ActiveUnit.Speed
 	pha
 	clc
 	adc #$05
 	cmp #$15
 	bmi L83D1B7
-	lda $7F440B
+	lda.l ActiveUnit.Speed
 	cmp #$14
 	bpl L83D1B7
 	lda #$14
 L83D1B7:
-	sta $7F440B
+	sta.l ActiveUnit.Speed
 	lda $08ED
 	jsl L83D969
 	pla
 	eor #$FF
 	sec
-	adc $7F440B
+	adc.l ActiveUnit.Speed
 	ora #$80
 	sta $0ABF
 	lda #$5F
@@ -9468,24 +9468,24 @@ L83D1D7:
 	sep #$20
 	lda $08ED
 	jsl L83D912
-	lda $7F440D
+	lda.l ActiveUnit.Resistance
 	pha
 	clc
 	adc #$03
 	cmp #$15
 	bmi L83D1F6
-	lda $7F440D
+	lda.l ActiveUnit.Resistance
 	cmp #$14
 	bpl L83D1F6
 	lda #$14
 L83D1F6:
-	sta $7F440D
+	sta.l ActiveUnit.Resistance
 	lda $08ED
 	jsl L83D969
 	pla
 	eor #$FF
 	sec
-	adc $7F440D
+	adc.l ActiveUnit.Resistance
 	ora #$80
 	sta $0ABF
 	lda #$60
@@ -9497,7 +9497,7 @@ L83D216:
 	sep #$20
 	lda $08ED
 	jsl L83D912
-	lda $7F4404
+	lda.l ActiveUnit.MaxHP
 	pha
 	jsr L83D243
 	lda $08ED
@@ -9505,7 +9505,7 @@ L83D216:
 	pla
 	eor #$FF
 	sec
-	adc $7F4404
+	adc.l ActiveUnit.MaxHP
 	ora #$80
 	sta $0ABF
 	lda #$61
@@ -9516,34 +9516,34 @@ L83D216:
 L83D243:
 	php
 	sep #$20
-	lda $7F4401
+	lda.l ActiveUnit.ClassID
 	cmp #$0F
 	beq L83D252
 	cmp #$1C
 	bne L83D269
 L83D252:
-	lda $7F4404
+	lda.l ActiveUnit.MaxHP
 	clc
 	adc #$07
 	cmp #$1B
 	bmi L83D27E
-	lda $7F4404
+	lda.l ActiveUnit.MaxHP
 	cmp #$1A
 	bpl L83D27E
 	lda #$1A
 	bra L83D27E
 L83D269:
-	lda $7F4404
+	lda.l ActiveUnit.MaxHP
 	clc
 	adc #$07
 	cmp #$35
 	bmi L83D27E
-	lda $7F4404
+	lda.l ActiveUnit.MaxHP
 	cmp #$34
 	bpl L83D27E
 	lda #$34
 L83D27E:
-	sta $7F4404
+	sta.l ActiveUnit.MaxHP
 	plp
 	rts
 
@@ -9551,24 +9551,24 @@ L83D284:
 	sep #$20
 	lda $08ED
 	jsl L83D912
-	lda $7F440E
+	lda.l ActiveUnit.Luck
 	pha
 	clc
 	adc #$05
 	cmp #$15
 	bmi L83D2A3
-	lda $7F440E
+	lda.l ActiveUnit.Luck
 	cmp #$14
 	bpl L83D2A3
 	lda #$14
 L83D2A3:
-	sta $7F440E
+	sta.l ActiveUnit.Luck
 	lda $08ED
 	jsl L83D969
 	pla
 	eor #$FF
 	sec
-	adc $7F440E
+	adc.l ActiveUnit.Luck
 	ora #$80
 	sta $0ABF
 	lda #$62
@@ -9580,24 +9580,24 @@ L83D2C3:
 	sep #$20
 	lda $08ED
 	jsl L83D912
-	lda $7F440F
+	lda.l ActiveUnit.WeaponLevel
 	pha
 	clc
 	adc #$05
 	cmp #$15
 	bmi L83D2E2
-	lda $7F440F
+	lda.l ActiveUnit.WeaponLevel
 	cmp #$14
 	bpl L83D2E2
 	lda #$14
 L83D2E2:
-	sta $7F440F
+	sta.l ActiveUnit.WeaponLevel
 	lda $08ED
 	jsl L83D969
 	pla
 	eor #$FF
 	sec
-	adc $7F440F
+	adc.l ActiveUnit.WeaponLevel
 	ora #$80
 	sta $0ABF
 	lda #$63
@@ -9609,24 +9609,24 @@ L83D302:
 	sep #$20
 	lda $08ED
 	jsl L83D912
-	lda $7F4408
+	lda.l ActiveUnit.Movement
 	pha
 	clc
 	adc #$04
 	cmp #$0D
 	bmi L83D321
-	lda $7F4408
+	lda.l ActiveUnit.Movement
 	cmp #$0C
 	bpl L83D321
 	lda #$0C
 L83D321:
-	sta $7F4408
+	sta.l ActiveUnit.Movement
 	lda $08ED
 	jsl L83D969
 	pla
 	eor #$FF
 	sec
-	adc $7F4408
+	adc.l ActiveUnit.Movement
 	ora #$80
 	sta $0ABF
 	lda #$64
@@ -9639,22 +9639,22 @@ L83D341:
 	stz $0ABF
 	lda $08ED
 	jsl L83D912
-	lda $7F440D
+	lda.l ActiveUnit.Resistance
 	pha
 	lda #$07
 	sec
-	sbc $7F4413
+	sbc.l ActiveUnit.ResBoostTimer
 	clc
-	adc $7F440D
-	sta $7F440D
+	adc.l ActiveUnit.Resistance
+	sta.l ActiveUnit.Resistance
 	lda #$07
-	sta $7F4413
+	sta.l ActiveUnit.ResBoostTimer
 	lda $08ED
 	jsl L83D969
 	rep #$20
 	lda $08F1
 	jsl L83C536
-	lda $7F4424,X
+	lda.l ActiveUnit.Weapon1Uses,X
 	and #$00FF
 	cmp #$0001
 	bne L83D38B
@@ -9666,7 +9666,7 @@ L83D38B:
 	pla
 	eor #$FF
 	sec
-	adc $7F440D
+	adc.l ActiveUnit.Resistance
 	ora $0ABF
 	sta $0ABF
 	lda #$65
@@ -9679,18 +9679,18 @@ L83D3A3:
 	rep #$20
 	lda $08ED
 	jsl L83D912
-	lda $7F4416
+	lda.l ActiveUnit.NameID
 	and #$00FF
 	cmp #$0011
 	bne L83D3DF
 	jsr L83D4D8
 	jsl L93D9FF
 	lda #$001B
-	sta $7F4401
+	sta.l ActiveUnit.ClassID
 	jsl L93D951
 	sep #$20
 	lda #$01
-	sta $7F4402
+	sta.l ActiveUnit.Level
 	rep #$20
 	jsl L83AF3F
 	jsr L83D514
@@ -9698,10 +9698,10 @@ L83D3A3:
 L83D3DF:
 	sep #$20
 	stz $1B
-	lda $7F4401
+	lda.l ActiveUnit.ClassID
 	cmp #$0B
 	beq L83D405
-	lda $7F4414
+	lda.l ActiveUnit.MountedClassID
 	cmp #$03
 	beq L83D3F7
 	cmp #$09
@@ -9710,7 +9710,7 @@ L83D3F7:
 	pha
 	jsl L93D9FF
 	pla
-	sta $7F4401
+	sta.l ActiveUnit.ClassID
 	jsl L93D951
 L83D405:
 	lda #$01
@@ -9723,8 +9723,8 @@ L83D409:
 	jsr L83D514
 	lda $1B
 	beq L83D494
-	lda $7F4401
-	sta $7F4414
+	lda.l ActiveUnit.ClassID
+	sta.l ActiveUnit.MountedClassID
 	cmp #$0E
 	bne L83D47B
 	rep #$20
@@ -9761,7 +9761,7 @@ L83D409:
 	bra L83D47B
 L83D473:
 	lda #$FF
-	sta $7F4414
+	sta.l ActiveUnit.MountedClassID
 	bra L83D491
 L83D47B:
 	jsl L93D9BD
@@ -9769,7 +9769,7 @@ L83D47B:
 	pha
 	jsl L93D9FF
 	pla
-	sta $7F4401
+	sta.l ActiveUnit.ClassID
 	jsl L93D951
 	bra L83D494
 L83D491:
@@ -9781,7 +9781,7 @@ L83D494:
 	jsl L83D969
 	lda $08F1
 	jsl L83C536
-	lda $7F4420,X
+	lda.l ActiveUnit.Weapon1,X
 	sta $075F
 	lda #$FF
 	sta $0760
@@ -9804,19 +9804,19 @@ L83D494:
 L83D4D8:
 	php
 	sep #$20
-	lda $7F4409
+	lda.l ActiveUnit.Strength
 	sta $0799
-	lda $7F440A
+	lda.l ActiveUnit.Skill
 	sta $079A
-	lda $7F440B
+	lda.l ActiveUnit.Speed
 	sta $079B
-	lda $7F440E
+	lda.l ActiveUnit.Luck
 	sta $079F
-	lda $7F440C
+	lda.l ActiveUnit.Defense
 	sta $079D
-	lda $7F440D
+	lda.l ActiveUnit.Resistance
 	sta $079E
-	lda $7F4408
+	lda.l ActiveUnit.Movement
 	sta $079C
 	stz $07A0
 	stz $07A1
@@ -9826,92 +9826,92 @@ L83D4D8:
 L83D514:
 	php
 	sep #$20
-	lda $7F4409
+	lda.l ActiveUnit.Strength
 	sec
 	sbc $0799
 	sta $0799
 	beq L83D534
 	lda #$14
 	sec
-	sbc $7F4409
+	sbc.l ActiveUnit.Strength
 	bcs L83D534
 	clc
 	adc $0799
 	sta $0799
 L83D534:
-	lda $7F440A
+	lda.l ActiveUnit.Skill
 	sec
 	sbc $079A
 	sta $079A
 	beq L83D551
 	lda #$14
 	sec
-	sbc $7F440A
+	sbc.l ActiveUnit.Skill
 	bcs L83D551
 	clc
 	adc $079A
 	sta $079A
 L83D551:
-	lda $7F440B
+	lda.l ActiveUnit.Speed
 	sec
 	sbc $079B
 	sta $079B
 	beq L83D56E
 	lda #$14
 	sec
-	sbc $7F440B
+	sbc.l ActiveUnit.Speed
 	bcs L83D56E
 	clc
 	adc $079B
 	sta $079B
 L83D56E:
-	lda $7F440E
+	lda.l ActiveUnit.Luck
 	sec
 	sbc $079F
 	sta $079F
 	beq L83D58B
 	lda #$14
 	sec
-	sbc $7F440E
+	sbc.l ActiveUnit.Luck
 	bcs L83D58B
 	clc
 	adc $079F
 	sta $079F
 L83D58B:
-	lda $7F440C
+	lda.l ActiveUnit.Defense
 	sec
 	sbc $079D
 	sta $079D
 	beq L83D5A8
 	lda #$14
 	sec
-	sbc $7F440C
+	sbc.l ActiveUnit.Defense
 	bcs L83D5A8
 	clc
 	adc $079D
 	sta $079D
 L83D5A8:
-	lda $7F440D
+	lda.l ActiveUnit.Resistance
 	sec
 	sbc $079E
 	sta $079E
 	beq L83D5C5
 	lda #$14
 	sec
-	sbc $7F440D
+	sbc.l ActiveUnit.Resistance
 	bcs L83D5C5
 	clc
 	adc $079E
 	sta $079E
 L83D5C5:
-	lda $7F4408
+	lda.l ActiveUnit.Movement
 	sec
 	sbc $079C
 	sta $079C
 	beq L83D5E2
 	lda #$0C
 	sec
-	sbc $7F4408
+	sbc.l ActiveUnit.Movement
 	bcs L83D5E2
 	clc
 	adc $079C
@@ -9995,7 +9995,7 @@ L83D655:
 	jsl L83D912
 	lda $08F1
 	jsl L83C536
-	lda $7F4424,X
+	lda.l ActiveUnit.Weapon1Uses,X
 	and #$00FF
 	cmp #$0001
 	bne L83D68D
@@ -10034,20 +10034,20 @@ L83D6B7:
 	sta $075F
 	lda $08F1
 	jsl L83C536
-	lda $7F4424,X
+	lda.l ActiveUnit.Weapon1Uses,X
 	and #$00FF
 	sta $19
 	pla
 	jsl L81D86F
 	sep #$20
 	jsr L83D740
-	lda $7F4412
+	lda.l ActiveUnit.HasMoved
 	and #$7F
-	sta $7F4412
+	sta.l ActiveUnit.HasMoved
 	lda #$00
-	sta $7F4415
-	lda $7F4404
-	sta $7F4403
+	sta.l ActiveUnit.TransformTimer
+	lda.l ActiveUnit.MaxHP
+	sta.l ActiveUnit.HP
 	rep #$20
 	pla
 	jsl L81D8AE
@@ -10055,7 +10055,7 @@ L83D6B7:
 	pha
 	jsl L83D969
 	jsr L83D764
-	lda $7F4400
+	lda.l ActiveUnit.UnitID
 	jsl L83FDE4
 	pla
 	sep #$20
@@ -10088,9 +10088,9 @@ L83D750:
 	tax
 	sep #$20
 	lda $D7C3,X
-	sta $7F4411
+	sta.l ActiveUnit.YPosition
 	lda $D7C4,X
-	sta $7F4410
+	sta.l ActiveUnit.XPosition
 	plp
 	rts
 
@@ -10100,7 +10100,7 @@ L83D764:
 	and #$00FF
 	cmp #$0015
 	bcs L83D784
-	lda $7F4416
+	lda.l ActiveUnit.NameID
 	and #$00FF
 	cmp #$0001
 	beq L83D79B
@@ -10108,7 +10108,7 @@ L83D764:
 	beq L83D7AB
 	bra L83D79A
 L83D784:
-	lda $7F4416
+	lda.l ActiveUnit.NameID
 	and #$00FF
 	cmp #$0001
 	beq L83D7A3
@@ -12089,7 +12089,7 @@ L83E666:
 	lda [$03],Y
 	cmp #$ff
 	beq L83E67A
-	cmp $7F4416
+	cmp.l ActiveUnit.NameID
 	bne L83E6D9
 L83E67A:
 	jsr L83E737
@@ -14712,16 +14712,16 @@ L83FAA8:
 	bit #$0020
 	beq L83FAE1
 	sep #$20
-	lda $7F4401
+	lda.l ActiveUnit.ClassID
 	jsl L93D2ED
-	sta $7F4420
+	sta.l ActiveUnit.Weapon1
 	lda #$5B
-	sta $7F4417
+	sta.l ActiveUnit.PortraitID
 	lda #$0A
-	sta $7F4405
+	sta.l ActiveUnit.EXP
 	lda #$20
-	sta $7F4403
-	sta $7F4404
+	sta.l ActiveUnit.HP
+	sta.l ActiveUnit.MaxHP
 	rep #$20
 L83FAE1:
 	jsl L83FB4F
@@ -14736,37 +14736,37 @@ L83FAE1:
 L83FAF7:
 	php
 	rep #$30
-	lda $7F4401
+	lda.l ActiveUnit.ClassID
 	and #$00FF
 	cmp #$0014
 	beq L83FB43
-	lda $7F4406
+	lda.l ActiveUnit.Terrain
 	sta $15
-	lda $7F4410
+	lda.l ActiveUnit.XPosition
 	sta $17
-	lda $7F4403
+	lda.l ActiveUnit.HP
 	sta $19
 	ldx #$001E
 L83FB1B:
 	lda $7F5BA0,X
-	sta $7F4400,X
+	sta.l ActiveUnit.UnitID,X
 	dex
 	dex
 	bpl L83FB1B
 	sep #$20
 	lda #$28
-	sta $7F4417
+	sta.l ActiveUnit.PortraitID
 	rep #$20
 	lda $15
-	sta $7F4406
+	sta.l ActiveUnit.Terrain
 	lda $17
-	sta $7F4410
+	sta.l ActiveUnit.XPosition
 	lda $19
-	sta $7F4403
+	sta.l ActiveUnit.HP
 L83FB43:
 	sep #$20
 	lda #$FF
-	sta $7F4415
+	sta.l ActiveUnit.TransformTimer
 	rep #$20
 	plp
 	rts
@@ -14776,8 +14776,8 @@ L83FB4F:
 	sep #$20
 	jsl L93D9FF
 	lda #$FF
-	sta $7F4415
-	lda $7F4416
+	sta.l ActiveUnit.TransformTimer
+	lda.l ActiveUnit.NameID
 	cmp #$30
 	beq L83FB68
 	lda #$0F
@@ -14785,19 +14785,19 @@ L83FB4F:
 L83FB68:
 	lda #$1C
 L83FB6A:
-	sta $7F4401
+	sta.l ActiveUnit.ClassID
 	lda #$FF
-	sta $7F4414
-	lda $7F4404
+	sta.l ActiveUnit.MountedClassID
+	lda.l ActiveUnit.MaxHP
 	lsr
-	sta $7F4404
-	lda $7F4403
+	sta.l ActiveUnit.MaxHP
+	lda.l ActiveUnit.HP
 	lsr
 	bne L83FB86
 	lda #$01
 L83FB86:
-	sta $7F4403
-	lda $7F4401
+	sta.l ActiveUnit.HP
+	lda.l ActiveUnit.ClassID
 	cmp #$1C
 	bne L83FB9E
 	sta $0A9B
@@ -14842,17 +14842,17 @@ L83FBD7:
 	and #$F3
 	ora #$04
 	sta $07F4
-	lda $7F4428
+	lda.l ActiveUnit.Item1
 	xba
-	lda $7F442C
+	lda.l ActiveUnit.Item1Uses
 	xba
 	rep #$20
 	pha
 	sep #$20
 	lda #$3F
-	sta $7F4428
+	sta.l ActiveUnit.Item1
 	lda #$FF
-	sta $7F442C
+	sta.l ActiveUnit.Item1Uses
 	rep #$20
 	pla
 	bra L83FC34
@@ -14864,9 +14864,9 @@ L83FC04:
 	ora #$08
 	sta $07F4
 	lda #$3D
-	sta $7F4428
+	sta.l ActiveUnit.Item1
 	lda #$FF
-	sta $7F442C
+	sta.l ActiveUnit.Item1Uses
 	rep #$20
 	brl L83FC9F
 L83FC22:
@@ -15013,7 +15013,7 @@ L83FD24:
 	cmp #$FF
 L83FD29:
 	beq L83FD29
-	cmp $7F4401
+	cmp.l ActiveUnit.ClassID
 	beq L83FD35
 	inx
 	inx
@@ -15024,12 +15024,12 @@ L83FD35:
 	plx
 	inx
 	lda $FDD1,X
-	sta $7F4401
+	sta.l ActiveUnit.ClassID
 	jsl L93D951
 	lda #$01
-	sta $7F4402
+	sta.l ActiveUnit.Level
 	rep #$20
-	lda $7F4401
+	lda.l ActiveUnit.ClassID
 	and #$00FF
 	ora #$0900
 	sta.l $004202
@@ -15040,39 +15040,39 @@ L83FD35:
 	tax
 	sep #$20
 	lda.l (CLASSES_INITIAL_STATS + 8),X
-	cmp $7F4404
+	cmp.l ActiveUnit.MaxHP
 	bcc L83FD7F
 	pha
 	sec
-	sbc $7F4404
+	sbc.l ActiveUnit.MaxHP
 	sta $07A1
 	pla
-	sta $7F4404
+	sta.l ActiveUnit.MaxHP
 L83FD7F:
 	lda.l (CLASSES_INITIAL_STATS + 7),X
-	cmp $7F440F
+	cmp.l ActiveUnit.WeaponLevel
 	bcc L83FD97
 	pha
 	sec
-	sbc $7F440F
+	sbc.l ActiveUnit.WeaponLevel
 	sta $07A0
 	pla
-	sta $7F440F
+	sta.l ActiveUnit.WeaponLevel
 L83FD97:
-	lda $7F4409
-	sta $7F4409
-	lda $7F440A
-	sta $7F440A
-	lda $7F440B
-	sta $7F440B
-	lda $7F440C
-	sta $7F440C
-	lda $7F440D
-	sta $7F440D
-	lda $7F440E
-	sta $7F440E
-	lda $7F440F
-	sta $7F440F
+	lda.l ActiveUnit.Strength
+	sta.l ActiveUnit.Strength
+	lda.l ActiveUnit.Skill
+	sta.l ActiveUnit.Skill
+	lda.l ActiveUnit.Speed
+	sta.l ActiveUnit.Speed
+	lda.l ActiveUnit.Defense
+	sta.l ActiveUnit.Defense
+	lda.l ActiveUnit.Resistance
+	sta.l ActiveUnit.Resistance
+	lda.l ActiveUnit.Luck
+	sta.l ActiveUnit.Luck
+	lda.l ActiveUnit.WeaponLevel
+	sta.l ActiveUnit.WeaponLevel
 	plp
 	rts
 

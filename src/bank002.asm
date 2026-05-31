@@ -289,7 +289,7 @@ L82824D:
 	jsl L80A89D
 	lda [$00]
 	sta $00
-	lda $7F441B
+	lda.l (ActiveUnit.AI2 + 1)
 	and #$00FF
 	tay
 	lda [$00],Y
@@ -724,7 +724,7 @@ L828596:
 	jsl L80A89D
 	lda [$00]
 	sta $00
-	lda $7F4419
+	lda.l (ActiveUnit.AI1 + 1)
 	and #$00FF
 	tay
 	lda [$00],Y
@@ -904,12 +904,12 @@ L828711:
 	and #$00FF
 	jsl L83D912
 	sep #$20
-	lda $7F4419
+	lda.l (ActiveUnit.AI1 + 1)
 	ina
 	ina
 	ina
 	ina
-	sta $7F4419
+	sta.l (ActiveUnit.AI1 + 1)
 	rep #$20
 	lda $08ED
 	and #$00FF
@@ -1053,10 +1053,10 @@ L82887B:
 	and #$00FF
 	jsl L83D912
 	sep #$20
-	lda $7F4419
+	lda.l (ActiveUnit.AI1 + 1)
 	ina
 	ina
-	sta $7F4419
+	sta.l (ActiveUnit.AI1 + 1)
 	rep #$20
 	lda $08ED
 	and #$00FF
@@ -1513,7 +1513,7 @@ L828C63:
 	jsl L80A89D
 	lda [$00]
 	sta $00
-	lda $7F441B
+	lda.l (ActiveUnit.AI2 + 1)
 	and.w #$00FF
 	tay
 	lda [$00],Y
@@ -1585,9 +1585,9 @@ L828D0B:
 	lda #$0D
 	sta $08F0
 L828D18:
-	lda $7F441B
+	lda.l (ActiveUnit.AI2 + 1)
 	ina
-	sta $7F441B
+	sta.l (ActiveUnit.AI2 + 1)
 L828D21:
 	rep #$20
 	lda $08ED
@@ -1691,11 +1691,11 @@ L828E12:
 	and #$00FF
 	jsl L83D912
 	sep #$20
-	lda $7F441B
+	lda.l (ActiveUnit.AI2 + 1)
 	ina
 	ina
 	ina
-	sta $7F441B
+	sta.l (ActiveUnit.AI2 + 1)
 	rep #$20
 	lda $08ED
 	and #$FF
@@ -1919,7 +1919,7 @@ L829013:
 	lda $08ED
 	and #$00FF
 	jsl L83D912
-	lda $7F441B
+	lda.l (ActiveUnit.AI2 + 1)
 	and #$00FF
 	sec
 	sbc $0C80
@@ -1927,7 +1927,7 @@ L829013:
 	lda #$0000
 L82902D:
 	and #$00FF
-	sta $7F441B
+	sta.l (ActiveUnit.AI2 + 1)
 	lda $08ED
 	and #$00FF
 	jsl L83D969
@@ -1948,12 +1948,12 @@ L829040:
 	cmp.l ActiveUnit.YPosition
 	bne L82907D
 	sep #$20
-	lda $7F441B
+	lda.l (ActiveUnit.AI2 + 1)
 	ina
 	ina
 	ina
 	ina
-	sta $7F441B
+	sta.l (ActiveUnit.AI2 + 1)
 	rep #$20
 	lda $08ED
 	jsl L83D969
@@ -1976,11 +1976,11 @@ L829096:
 	jsl L93D52E
 	bcc L8290BA
 	sep #$20
-	lda $7F441B
+	lda.l (ActiveUnit.AI2 + 1)
 	ina
 	ina
 	ina
-	sta $7F441B
+	sta.l (ActiveUnit.AI2 + 1)
 	rep #$20
 	lda $08ED
 	and #$00FF
@@ -2079,11 +2079,11 @@ L829186:
 	and #$00FF
 	jsl L83D912
 	sep #$20
-	lda $7F441B
+	lda.l (ActiveUnit.AI2 + 1)
 	ina
 	ina
 	ina
-	sta $7F441B
+	sta.l (ActiveUnit.AI2 + 1)
 	rep #$20
 	lda $08ED
 	and #$00FF
@@ -2156,11 +2156,11 @@ L829248:
 	and #$00FF
 	jsl L83D912
 	sep #$20
-	lda $7F441B
+	lda.l (ActiveUnit.AI2 + 1)
 	ina
 	ina
 	ina
-	sta $7F441B
+	sta.l (ActiveUnit.AI2 + 1)
 	rep #$20
 	lda $08ED
 	and #$00FF
@@ -2183,12 +2183,12 @@ L82926D:
 	lda.w #$8D18
 	beq L82929D
 	stz $0C99
-	lda.l $7F441B
+	lda.l (ActiveUnit.AI2 + 1)
 	ina
 L82929D:
 	ina
 	ina
-	sta $7F441B
+	sta.l (ActiveUnit.AI2 + 1)
 	rep #$20
 	lda $08ED
 	and #$00FF
@@ -3729,9 +3729,9 @@ L82A545:
 	pla
 	sep #$20
 	jsr L82A5A0
-	lda $7F4411
+	lda.l ActiveUnit.YPosition
 	sta $0DF6
-	lda $7F4410
+	lda.l ActiveUnit.XPosition
 	sta $0DF8
 L82A568:
 	rep #$20
@@ -3790,11 +3790,11 @@ L82A5AB:
 .db $00 $80 $03 $A2 $40 $00
 
 L82A5B1:
-	lda $7F4401
+	lda.l ActiveUnit.ClassID
 	sta $0D11,X
-	lda $7F4411
+	lda.l ActiveUnit.YPosition
 	sta $0D08,X
-	lda $7F4410
+	lda.l ActiveUnit.XPosition
 	sta $0D09,X
 	pla
 	sta $0D12,X
@@ -6452,11 +6452,11 @@ L82BA77:
 	lda $0D96
 	and #$00FF
 	jsl L83D912
-	lda $7F4400
+	lda.l ActiveUnit.UnitID
 	and #$00FF
 	cmp #$00FF
 	beq L82BAE9
-	lda $7F441D
+	lda.l (ActiveUnit.AI3 + 1)
 	and #$00FF
 	bne L82BAA8
 	lda $0D96
@@ -6506,7 +6506,7 @@ L82BAE9:
 L82BAEC:
 	php
 	sep #$20
-	lda $7F4411
+	lda.l ActiveUnit.YPosition
 	sec
 	sbc $0860
 	cmp #$01
@@ -6518,7 +6518,7 @@ L82BAEC:
 	asl
 	asl
 	sta $04CE,X
-	lda $7F4410
+	lda.l ActiveUnit.XPosition
 	sec
 	sbc $0861
 	cmp #$01
@@ -6594,11 +6594,11 @@ L82BB6C:
 	lda $0D96
 	and #$00FF
 	jsl L83D912
-	lda $7F4400
+	lda.l ActiveUnit.UnitID
 	and #$00FF
 	cmp #$00FF
 	beq L82BBDE
-	lda $7F4412
+	lda.l ActiveUnit.HasMoved
 	and #$0001
 	bne L82BB9D
 	sep #$20
@@ -6696,11 +6696,11 @@ L82BC2A:
 	lda $0D96
 	and #$00FF
 	jsl L83D912
-	lda $7F4400
+	lda.l ActiveUnit.UnitID
 	and #$00FF
 	cmp #$00FF
 	beq L82BCA6
-	lda $7F441D
+	lda.l (ActiveUnit.AI3 + 1)
 	and #$00FF
 	bne L82BC5B
 	sep #$20
@@ -6813,11 +6813,11 @@ L82BD08:
 	and #$00FF
 	jsl L83D912
 	ply
-	lda $7F4400
+	lda.l ActiveUnit.UnitID
 	and #$00FF
 	cmp #$00FF
 	beq L82BD9A
-	lda $7F4401
+	lda.l ActiveUnit.ClassID
 	and #$00FF
 	cmp #$0016
 	bcc L82BD43
@@ -9233,7 +9233,7 @@ L82CE10:
 L82CE35:
 	ldy #$0000
 	lda [$00],Y
-	sta $7E40FE,X
+	sta.l DecompressionLocation,X
 	inx
 	ldy $00
 	iny
@@ -12697,7 +12697,7 @@ L82E787:
 	jsl L83D912
 	plx
 	sep #$20
-	lda $7F4401
+	lda.l ActiveUnit.ClassID
 	sta $0D11,X
 	ply
 	plp
@@ -12724,7 +12724,7 @@ L82E7CD:
 
 L82E7CF:
 	php
-	lda $7F440B
+	lda.l ActiveUnit.Speed
 	and #$00FF
 	cmp #$0006
 	bcc L82E7E6
@@ -13046,9 +13046,9 @@ L82E9F7:
 	sta $0D16,X
 	jsr L82EA8D
 	sep #$20
-	lda $7F4410
+	lda.l ActiveUnit.XPosition
 	sta $0D09,X
-	lda $7F4411
+	lda.l ActiveUnit.YPosition
 	sta $0D08,X
 	lda $0D12,X
 	cmp #$20
@@ -13061,7 +13061,7 @@ L82EA1E:
 L82EA20:
 	sta $0D10,X
 	rep #$20
-	lda $7F4401
+	lda.l ActiveUnit.ClassID
 	jsr L82CF21
 	jsr L82EA79
 	jsr L82EA57
@@ -13131,7 +13131,7 @@ L82EA8D:
 	jsl L83D912
 	ldx $0D80
 	sep #$20
-	lda $7F4401
+	lda.l ActiveUnit.ClassID
 	sta $0D11,X
 	cmp #$29
 	beq L82EAB8
@@ -13354,9 +13354,9 @@ L82EC24:
 	plx
 	sep #$20
 	lda $0D09,X
-	sta $7F4410
+	sta.l ActiveUnit.XPosition
 	lda $0D08,X
-	sta $7F4411
+	sta.l ActiveUnit.YPosition
 	phx
 	lda $0D12,X
 	and #$00FF
