@@ -825,81 +825,94 @@ LCA9C5C:
 LCAA242:
 .INCBIN "252242.bin"
 
-.db $07
-.db $0D $08 $0D $09 $0D $0A $0D $0B
-.db $0D $0C $0D $0D $0D $0E $0D $0F
-.db $0D $17 $0D $18 $0D $19 $0D $1A
-.db $0D $1B $0D $1C $0D $1D $0D $1E
-.db $0D $1F $0D $27 $0D $28 $0D $29
-.db $0D $2A $0D $2B $0D $2C $0D $2D
-.db $0D $2E $0D $2F $0D $37 $0D $38
-.db $0D $39 $0D $3A $0D $3B $0D $3C
-.db $0D $3D $0D $3E $0D $3F $0D $47
-.db $0D $48 $0D $49 $0D $4A $0D $4B
-.db $0D $4C $0D $4D $0D $4E $0D $4F
-.db $0D $57 $0D $58 $0D $59 $0D $5A
-.db $0D $5B $0D $5C $0D $5D $0D $5E
-.db $0D $5F $0D $67 $0D $68 $0D $69
-.db $0D $6A $0D $6B $0D $6C $0D $6D
-.db $0D $6E $0D $6F $0D $77 $0D $78
-.db $0D $79 $0D $7A $0D $7B $0D $7C
-.db $0D $7D $0D $7E $0D $7F $0D $87
-.db $0D $88 $0D $89 $0D $8A $0D $8B
-.db $0D $8C $0D $8D $0D $8E $0D $8F
-.db $0D $97 $0D $98 $0D $99 $0D $9A
-.db $0D $9B $0D $9C $0D $9D $0D $9E
-.db $0D $9F $0D $A7 $0D $A8 $0D $A9
-.db $0D $AA $0D $AB $0D $AC $0D $AD
-.db $0D $AE $0D $AF $0D $07 $0D $08
-.db $0D $09 $0D $0A $0D $0B $0D $0C
-.db $0D $0D $0D $0E $0D $0F $0D $17
-.db $0D $18 $0D $19 $0D $1A $0D $1B
-.db $0D $1C $0D $1D $0D $1E $0D $1F
-.db $0D $B7 $0D $B8 $0D $B9 $0D $BA
-.db $0D $BB $0D $BC $0D $BD $0D $BE
-.db $0D $BF $0D $C7 $0D $C8 $0D $C9
-.db $0D $CA $0D $CB $0D $CC $0D $CD
-.db $0D $CE $0D $CF $0D $D7 $0D $D8
-.db $0D $D9 $0D $DA $0D $DB $0D $DC
-.db $0D $DD $0D $DE $0D $DF $0D $E7
-.db $0D $E8 $0D $E9 $0D $EA $0D $EB
-.db $0D $EC $0D $ED $0D $EE $0D $EF
-.db $0D $F7 $0D $F8 $0D $F9 $0D $FA
-.db $0D $FB $0D $FC $0D $FD $0D $FE
-.db $0D $FF $0D $0E $0C $0F $0C $00
-.db $0D $01 $0D $02 $0D $03 $0D $04
-.db $0D $05 $0D $06 $0D $87 $0D $88
-.db $0D $89 $0D $8A $0D $8B $0D $8C
-.db $0D $8D $0D $8E $0D $8F $0D $97
-.db $0D $98 $0D $99 $0D $9A $0D $9B
-.db $0D $9C $0D $9D $0D $9E $0D $9F
-.db $0D $A7 $0D $A8 $0D $A9 $0D $AA
-.db $0D $AB $0D $AC $0D $AD $0D $AE
-.db $0D $AF $0D $56 $0C $57 $0C $58
-.db $0C $59 $0C $5A $0C $5B $0C $5C
-.db $0C $5D $0C $5E $0C $66 $0C $67
-.db $0C $68 $0C $69 $0C $6A $0C $6B
-.db $0C $6C $0C $6D $0C $6E $0C $76
-.db $0C $77 $0C $78 $0C $79 $0C $7A
-.db $0C $7B $0C $7C $0C $7D $0C $7E
-.db $0C $86 $0C $87 $0C $88 $0C $89
-.db $0C $8A $0C $8B $0C $8C $0C $8D
-.db $0C $8E $0C $96 $0C $97 $0C $98
-.db $0C $99 $0C $9A $0C $9B $0C $9C
-.db $0C $9D $0C $9E $0C $A6 $0C $A7
-.db $0C $A8 $0C $A9 $0C $AA $0C $AB
-.db $0C $AC $0C $AD $0C $AE $0C $B6
-.db $0C $B7 $0C $B8 $0C $B9 $0C $BA
-.db $0C $BB $0C $BC $0C $BD $0C $BE
-.db $0C $C6 $0C $C7 $0C $C8 $0C $C9
-.db $0C $CA $0C $CB $0C $CC $0C $CD
-.db $0C $CE $0C $D6 $0C $D7 $0C $D8
-.db $0C $D9 $0C $DA $0C $DB $0C $DC
-.db $0C $DD $0C $DE $0C $E6 $0C $E7
-.db $0C $E8 $0C $E9 $0C $EA $0C $EB
-.db $0C $EC $0C $ED $0C $EE $0C $F6
-.db $0C $F7 $0C $F8 $0C $F9 $0C $FA
-.db $0C $FB $0C $FC $0C $FD $0C $FE
-.db $0C $47 $0C $48 $0C $25 $0D $26
-.db $0D $15 $0D $16 $0D $FF
+LCAA34F:
+.db $07 $0D $08 $0D $09 $0D $0A $0D
+.db $0B $0D $0C $0D $0D $0D $0E $0D
+.db $0F $0D $17 $0D $18 $0D $19 $0D
+.db $1A $0D $1B $0D $1C $0D $1D $0D
+.db $1E $0D $1F $0D $27 $0D $28 $0D
+.db $29 $0D $2A $0D $2B $0D $2C $0D
+.db $2D $0D $2E $0D $2F $0D $37 $0D
+.db $38 $0D $39 $0D $3A $0D $3B $0D
+.db $3C $0D $3D $0D $3E $0D $3F $0D
+.db $47 $0D $48 $0D $49 $0D $4A $0D
+.db $4B $0D $4C $0D $4D $0D $4E $0D
+.db $4F $0D $57 $0D $58 $0D $59 $0D
+.db $5A $0D $5B $0D $5C $0D $5D $0D
+.db $5E $0D $5F $0D $67 $0D $68 $0D
+.db $69 $0D $6A $0D $6B $0D $6C $0D
+.db $6D $0D $6E $0D $6F $0D $77 $0D
+.db $78 $0D $79 $0D $7A $0D $7B $0D
+.db $7C $0D $7D $0D $7E $0D $7F $0D
+.db $87 $0D $88 $0D $89 $0D $8A $0D
+.db $8B $0D $8C $0D $8D $0D $8E $0D
+.db $8F $0D $97 $0D $98 $0D $99 $0D
+.db $9A $0D $9B $0D $9C $0D $9D $0D
+.db $9E $0D $9F $0D $A7 $0D $A8 $0D
+.db $A9 $0D $AA $0D $AB $0D $AC $0D
+.db $AD $0D $AE $0D $AF $0D
+
+LCAA415:
+.db $07 $0D $08 $0D $09 $0D $0A $0D
+.db $0B $0D $0C $0D $0D $0D $0E $0D
+.db $0F $0D $17 $0D $18 $0D $19 $0D
+.db $1A $0D $1B $0D $1C $0D $1D $0D
+.db $1E $0D $1F $0D $B7 $0D $B8 $0D
+.db $B9 $0D $BA $0D $BB $0D $BC $0D
+.db $BD $0D $BE $0D $BF $0D $C7 $0D
+.db $C8 $0D $C9 $0D $CA $0D $CB $0D
+.db $CC $0D $CD $0D $CE $0D $CF $0D
+.db $D7 $0D $D8 $0D $D9 $0D $DA $0D
+.db $DB $0D $DC $0D $DD $0D $DE $0D
+.db $DF $0D $E7 $0D $E8 $0D $E9 $0D
+.db $EA $0D $EB $0D $EC $0D $ED $0D
+.db $EE $0D $EF $0D $F7 $0D $F8 $0D
+.db $F9 $0D $FA $0D $FB $0D $FC $0D
+.db $FD $0D $FE $0D $FF $0D $0E $0C
+.db $0F $0C $00 $0D $01 $0D $02 $0D
+.db $03 $0D $04 $0D $05 $0D $06 $0D
+.db $87 $0D $88 $0D $89 $0D $8A $0D
+.db $8B $0D $8C $0D $8D $0D $8E $0D
+.db $8F $0D $97 $0D $98 $0D $99 $0D
+.db $9A $0D $9B $0D $9C $0D $9D $0D
+.db $9E $0D $9F $0D $A7 $0D $A8 $0D
+.db $A9 $0D $AA $0D $AB $0D $AC $0D
+.db $AD $0D $AE $0D $AF $0D
+
+LCAA4DB:
+.db $56 $0C $57 $0C $58 $0C $59 $0C
+.db $5A $0C $5B $0C $5C $0C $5D $0C
+.db $5E $0C $66 $0C $67 $0C $68 $0C
+.db $69 $0C $6A $0C $6B $0C $6C $0C
+.db $6D $0C $6E $0C $76 $0C $77 $0C
+.db $78 $0C $79 $0C $7A $0C $7B $0C
+.db $7C $0C $7D $0C $7E $0C $86 $0C
+.db $87 $0C $88 $0C $89 $0C $8A $0C
+.db $8B $0C $8C $0C $8D $0C $8E $0C
+.db $96 $0C $97 $0C $98 $0C $99 $0C
+.db $9A $0C $9B $0C $9C $0C $9D $0C
+.db $9E $0C $A6 $0C $A7 $0C $A8 $0C
+.db $A9 $0C $AA $0C $AB $0C $AC $0C
+.db $AD $0C $AE $0C $B6 $0C $B7 $0C
+.db $B8 $0C $B9 $0C $BA $0C $BB $0C
+.db $BC $0C $BD $0C $BE $0C $C6 $0C
+.db $C7 $0C $C8 $0C $C9 $0C $CA $0C
+.db $CB $0C $CC $0C $CD $0C $CE $0C
+.db $D6 $0C $D7 $0C $D8 $0C $D9 $0C
+.db $DA $0C $DB $0C $DC $0C $DD $0C
+.db $DE $0C $E6 $0C $E7 $0C $E8 $0C
+.db $E9 $0C $EA $0C $EB $0C $EC $0C
+.db $ED $0C $EE $0C $F6 $0C $F7 $0C
+.db $F8 $0C $F9 $0C $FA $0C $FB $0C
+.db $FC $0C $FD $0C $FE $0C
+
+LCAA5A1:
+.db $47 $0C $48 $0C
+
+LCAA5A5:
+.db $25 $0D $26 $0D
+
+LCAA5A9:
+.db $15 $0D $16 $0D
+
 .ENDS

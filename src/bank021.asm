@@ -335,9 +335,8 @@ L9587DE:
 .dl LCA95FA
 
 L9588A4:
-.db $3B $3C $40 $44
-.db $46 $4A $71 $7F $80 $3A $3E $4B
-.db $67 $4C $FF
+.db $3B $3C $40 $44 $46 $4A $71 $7F
+.db $80 $3A $3E $4B $67 $4C $FF
 
 L9588B3:
 .dl LC2FD51
@@ -643,40 +642,95 @@ L958C36:
 .db $FF
 
 L958CE9:
-.db $05 $84 $C0 $00 $80 $C0 $E0
-.db $88 $C0 $F2 $89 $C0 $A0 $90 $C0
-.db $D0 $93 $C0 $C2 $95 $C0 $91 $9A
-.db $C0 $E0 $9D $C0 $0D $A4 $C0 $8C
-.db $A7 $C0 $64 $AD $C0 $E3 $B1 $C0
-.db $11 $B5 $C0 $F3 $B5 $C0 $37 $B9
-.db $C0 $70 $BD $C0 $A3 $C4 $C0 $9A
-.db $C8 $C0 $5B $D1 $C0 $EB $D6 $C0
-.db $82 $DF $C0 $40 $E8 $C0 $CC $EF
-.db $C0 $CC $F7 $C0 $F7 $FC $C0 $C2
-.db $81 $C1 $D1 $86 $C1 $B0 $8C $C1
-.db $B1 $8D $C1 $6E $9E $C1 $A2 $A1
-.db $C1 $7B $A2 $C1 $0F $AA $C1 $47
-.db $B4 $C1 $2A $B7 $C1 $2D $B8 $C1
-.db $56 $BB $C1 $E2 $BD $C1 $E2 $BD
-.db $C1 $9E $C4 $C1 $DD $CA $C1 $60
-.db $C7 $C1 $95 $C5 $C1 $95 $C5 $C1
-.db $39 $CC $C1 $1C $CE $C1 $1C $CE
-.db $C1 $D8 $CF $C1 $D8 $CF $C1 $E5
-.db $D1 $C1 $A0 $90 $C0 $D0 $93 $C0
-.db $A0 $90 $C0 $D0 $93 $C0 $A0 $90
-.db $C0 $D0 $93 $C0 $7B $A2 $C1 $0F
-.db $AA $C1 $E0 $9D $C0 $0D $A4 $C0
-.db $1C $CE $C1 $9F $D3 $C1 $6F $D5
-.db $C1 $D5 $D7 $C1 $05 $DA $C1 $3C
-.db $DC $C1 $9A $C8 $C0 $5B $D1 $C0
-.db $9A $C8 $C0 $5B $D1 $C0 $33 $90
-.db $C1 $B1 $8D $C1 $F4 $91 $C1 $C1
-.db $96 $C1 $DD $9D $C1 $5B $9B $C1
-.db $33 $90 $C1 $42 $BA $C0 $11 $B5
-.db $C0 $EB $D6 $C0 $82 $DF $C0 $40
-.db $E8 $C0 $CC $EF $C0 $AB $99 $C1
-.db $6D $AC $C1 $5D $B1 $C1 $22 $C9
-.db $C1 $06 $C2 $C1
+.dl LC08405
+.dl LC08000
+.dl LC088E0
+.dl LC089F2
+.dl LC090A0
+.dl LC093D0
+.dl LC095C2
+.dl LC09A91
+.dl LC09DE0
+.dl LC0A40D
+.dl LC0A78C
+.dl LC0AD64
+.dl LC0B1E3
+.dl LC0B511
+.dl LC0B5F3
+.dl LC0B937
+.dl LC0BD70
+.dl LC0C4A3
+.dl LC0C89A
+.dl LC0D15B
+.dl LC0D6EB
+.dl LC0DF82
+.dl LC0E840
+.dl LC0EFCC
+.dl LC0F7CC
+.dl LC0FCF7
+.dl LC181C2
+.dl LC186D1
+.dl LC18CB0
+.dl LC18DB1
+.dl LC19E6E
+.dl LC1A1A2
+.dl LC1A27B
+.dl LC1AA0F
+.dl LC1B447
+.dl LC1B72A
+.dl LC1B82D
+.dl LC1BB56
+.dl LC1BDE2
+.dl LC1BDE2
+.dl LC1C49E
+.dl LC1CADD
+.dl LC1C760
+.dl LC1C595
+.dl LC1C595
+.dl LC1CC39
+.dl LC1CE1C
+.dl LC1CE1C
+.dl LC1CFD8
+.dl LC1CFD8
+.dl LC1D1E5
+.dl LC090A0
+.dl LC093D0
+.dl LC090A0
+.dl LC093D0
+.dl LC090A0
+.dl LC093D0
+.dl LC1A27B
+.dl LC1AA0F
+.dl LC09DE0
+.dl LC0A40D
+.dl LC1CE1C
+.dl LC1D39F
+.dl LC1D56F
+.dl LC1D7D5
+.dl LC1DA05
+.dl LC1DC3C
+.dl LC0C89A
+.dl LC0D15B
+.dl LC0C89A
+.dl LC0D15B
+.dl LC19033
+.dl LC18DB1
+.dl LC191F4
+.dl LC196C1
+.dl LC19DDD
+.dl LC19B5B
+.dl LC19033
+.dl LC0BA42
+.dl LC0B511
+.dl LC0D6EB
+.dl LC0DF82
+.dl LC0E840
+.dl LC0EFCC
+.dl LC199AB
+.dl LC1AC6D
+.dl LC1B15D
+.dl LC1C922
+.dl LC1C206
 
 L958DF4:
 .db $00 $00 $06 $04
@@ -698,131 +752,313 @@ L958E4E:
 .db $20 $28 $FF
 
 L958E61:
-.db $A8 $D5 $BD $7E $D7 $BD $57
-.db $D9 $BD $2D $DB $BD $06 $DD $BD
-.db $C3 $DE $BD $78 $E0 $BD $EA $E0
-.db $BD $76 $E1 $BD $33 $E3 $BD $E8
-.db $E4 $BD $6E $E5 $BD $F8 $E5 $BD
-.db $B4 $E6 $BD $5A $E7 $BD $F0 $E7
-.db $BD $78 $E8 $BD $0E $E9 $BD $98
-.db $E9 $BD $DB $EA $BD $12 $EC $BD
-.db $67 $ED $BD $98 $EE $BD $0E $F0
-.db $BD $61 $F1 $BD $0B $F2 $BD $6B
-.db $F2 $BD $EC $F2 $BD $46 $F3 $BD
-.db $C1 $F3 $BD $00 $F4 $BD $3D $F5
-.db $BD $9E $F6 $BD $D6 $F7 $BD $33
-.db $F9 $BD $3F $FA $BD $52 $FB $BD
-.db $AB $FC $BD $0C $FE $BD $24 $FF
-.db $BD $44 $80 $BE $A4 $81 $BE $20
-.db $83 $BE $84 $84 $BE $EE $85 $BE
-.db $47 $87 $BE $A1 $88 $BE $1C $89
-.db $BE $6C $89 $BE $F8 $89 $BE $46
-.db $8A $BE $D3 $8A $BE $1F $8B $BE
-.db $F9 $8B $BE $B5 $8C $BE $F9 $8D
-.db $BE $31 $8F $BE $3F $90 $BE $1A
-.db $91 $BE $2C $92 $BE $E2 $92 $BE
-.db $E7 $93 $BE $9D $94 $BE $B3 $95
-.db $BE $69 $96 $BE $71 $97 $BE $23
-.db $98 $BE $13 $99 $BE $CC $99 $BE
-.db $8D $9A $BE $32 $9B $BE $53 $9C
-.db $BE $77 $9D $BE $CE $9E $BE $1D
-.db $A0 $BE $91 $A1 $BE $F2 $A2 $BE
-.db $76 $A4 $BE $E7 $A5 $BE $49 $A7
-.db $BE $A5 $A8 $BE $F1 $A9 $BE $49
-.db $AB $BE $94 $AC $BE $D9 $AD $BE
-.db $53 $AE $BE $CC $AE $BE $0F $B0
-.db $BE $4E $B1 $BE $69 $B2 $BE $7B
-.db $B3 $BE $7B $B4 $BE $80 $B5 $BE
-.db $CC $B6 $BE $02 $B8 $BE $48 $B9
-.db $BE $91 $BA $BE $F6 $BB $BE $49
-.db $BD $BE $61 $BE $BE $30 $BF $BE
-.db $71 $C0 $BE $9A $C1 $BE $DB $C2
-.db $BE $14 $C4 $BE $D0 $C4 $BE $7B
-.db $C5 $BE $48 $C6 $BE $11 $C7 $BE
-.db $0C $C8 $BE $D3 $C8 $BE $6F $C9
-.db $BE $08 $CA $BE $E5 $CA $BE $AA
-.db $CB $BE $4F $CC $BE $F4 $CC $BE
-.db $CC $CD $BE $A1 $CE $BE $0E $D0
-.db $BE $90 $D1 $BE $20 $D3 $BE $C2
-.db $D4 $BE $05 $D6 $BE $5F $D7 $BE
-.db $A1 $D8 $BE $E8 $D9 $BE $33 $DB
-.db $BE $84 $DC $BE $E1 $DD $BE $3F
-.db $DF $BE $81 $E0 $BE $E1 $E1 $BE
-.db $41 $E3 $BE $97 $E4 $BE $E0 $E5
-.db $BE $27 $E7 $BE $91 $E8 $BE $06
-.db $EA $BE $61 $EB $BE $E1 $EC $BE
-.db $70 $EE $BE $06 $F0 $BE $14 $F1
-.db $BE $20 $F2 $BE $32 $F3 $BE $58
-.db $F4 $BE $8C $F5 $BE $C2 $F6 $BE
-.db $9D $F7 $BE $82 $F8 $BE $23 $F9
-.db $BE $C4 $F9 $BE $89 $FA $BE $33
-.db $FB $BE $B8 $FB $BE $50 $FC $BE
-.db $3F $FD $BE $2F $FE $BE $E1 $FE
-.db $BE $80 $FF $BE $38 $80 $BF $C6
-.db $80 $BF $4E $81 $BF $D3 $81 $BF
-.db $5E $82 $BF $ED $82 $BF $7C $83
-.db $BF $13 $84 $BF $A9 $84 $BF $3F
-.db $85 $BF $D4 $86 $BF $69 $88 $BF
-.db $42 $89 $BF $0C $8A $BF $3D $8B
-.db $BF $71 $8C $BF $8D $8D $BF $AD
-.db $8E $BF $ED $8F $BF $2A $91 $BF
-.db $6C $92 $BF $B1 $93 $BF $99 $94
-.db $BF $C6 $95 $BF $F3 $96 $BF $1F
-.db $98 $BF $69 $99 $BF $B2 $9A $BF
-.db $E9 $9B $BF $21 $9D $BF $5D $9E
-.db $BF $95 $9F $BF $1E $A1 $BF $93
-.db $A2 $BF $EF $A2 $BF $4C $A3 $BF
-.db $09 $A4 $BF $84 $A4 $BF $87 $A6
-.db $BF $83 $A8 $BF $03 $AA $BF $C1
-.db $AB $BF $C4 $AD $BF $BF $AF $BF
-.db $C3 $B1 $BF $BE $B3 $BF $CB $B4
-.db $BF $B7 $B5 $BF $3D $B6 $BF $C1
-.db $B6 $BF $FF $B6 $BF $35 $B7 $BF
-.db $56 $B8 $BF $73 $B9 $BF $76 $BB
-.db $BF $80 $BC $BF $FB $BC $BF
+.dl LBDD5A8
+.dl LBDD77E
+.dl LBDD957
+.dl LBDDB2D
+.dl LBDDD06
+.dl LBDDEC3
+.dl LBDE078
+.dl LBDE0EA
+.dl LBDE176
+.dl LBDE333
+.dl LBDE4E8
+.dl LBDE56E
+.dl LBDE5F8
+.dl LBDE6B4
+.dl LBDE75A
+.dl LBDE7F0
+.dl LBDE878
+.dl LBDE90E
+.dl LBDE998
+.dl LBDEADB
+.dl LBDEC12
+.dl LBDED67
+.dl LBDEE98
+.dl LBDF00E
+.dl LBDF161
+.dl LBDF20B
+.dl LBDF26B
+.dl LBDF2EC
+.dl LBDF346
+.dl LBDF3C1
+.dl LBDF400
+.dl LBDF53D
+.dl LBDF69E
+.dl LBDF7D6
+.dl LBDF933
+.dl LBDFA3F
+.dl LBDFB52
+.dl LBDFCAB
+.dl LBDFE0C
+.dl LBDFF24
+.dl LBE8044
+.dl LBE81A4
+.dl LBE8320
+.dl LBE8484
+.dl LBE85EE
+.dl LBE8747
+.dl LBE88A1
+.dl LBE891C
+.dl LBE896C
+.dl LBE89F8
+.dl LBE8A46
+.dl LBE8AD3
+.dl LBE8B1F
+.dl LBE8BF9
+.dl LBE8CB5
+.dl LBE8DF9
+.dl LBE8F31
+.dl LBE903F
+.dl LBE911A
+.dl LBE922C
+.dl LBE92E2
+.dl LBE93E7
+.dl LBE949D
+.dl LBE95B3
+.dl LBE9669
+.dl LBE9771
+.dl LBE9823
+.dl LBE9913
+.dl LBE99CC
+.dl LBE9A8D
+.dl LBE9B32
+.dl LBE9C53
+.dl LBE9D77
+.dl LBE9ECE
+.dl LBEA01D
+.dl LBEA191
+.dl LBEA2F2
+.dl LBEA476
+.dl LBEA5E7
+.dl LBEA749
+.dl LBEA8A5
+.dl LBEA9F1
+.dl LBEAB49
+.dl LBEAC94
+.dl LBEADD9
+.dl LBEAE53
+.dl LBEAECC
+.dl LBEB00F
+.dl LBEB14E
+.dl LBEB269
+.dl LBEB37B
+.dl LBEB47B
+.dl LBEB580
+.dl LBEB6CC
+.dl LBEB802
+.dl LBEB948
+.dl LBEBA91
+.dl LBEBBF6
+.dl LBEBD49
+.dl LBEBE61
+.dl LBEBF30
+.dl LBEC071
+.dl LBEC19A
+.dl LBEC2DB
+.dl LBEC414
+.dl LBEC4D0
+.dl LBEC57B
+.dl LBEC648
+.dl LBEC711
+.dl LBEC80C
+.dl LBEC8D3
+.dl LBEC96F
+.dl LBECA08
+.dl LBECAE5
+.dl LBECBAA
+.dl LBECC4F
+.dl LBECCF4
+.dl LBECDCC
+.dl LBECEA1
+.dl LBED00E
+.dl LBED190
+.dl LBED320
+.dl LBED4C2
+.dl LBED605
+.dl LBED75F
+.dl LBED8A1
+.dl LBED9E8
+.dl LBEDB33
+.dl LBEDC84
+.dl LBEDDE1
+.dl LBEDF3F
+.dl LBEE081
+.dl LBEE1E1
+.dl LBEE341
+.dl LBEE497
+.dl LBEE5E0
+.dl LBEE727
+.dl LBEE891
+.dl LBEEA06
+.dl LBEEB61
+.dl LBEECE1
+.dl LBEEE70
+.dl LBEF006
+.dl LBEF114
+.dl LBEF220
+.dl LBEF332
+.dl LBEF458
+.dl LBEF58C
+.dl LBEF6C2
+.dl LBEF79D
+.dl LBEF882
+.dl LBEF923
+.dl LBEF9C4
+.dl LBEFA89
+.dl LBEFB33
+.dl LBEFBB8
+.dl LBEFC50
+.dl LBEFD3F
+.dl LBEFE2F
+.dl LBEFEE1
+.dl LBEFF80
+.dl LBF8038
+.dl LBF80C6
+.dl LBF814E
+.dl LBF81D3
+.dl LBF825E
+.dl LBF82ED
+.dl LBF837C
+.dl LBF8413
+.dl LBF84A9
+.dl LBF853F
+.dl LBF86D4
+.dl LBF8869
+.dl LBF8942
+.dl LBF8A0C
+.dl LBF8B3D
+.dl LBF8C71
+.dl LBF8D8D
+.dl LBF8EAD
+.dl LBF8FED
+.dl LBF912A
+.dl LBF926C
+.dl LBF93B1
+.dl LBF9499
+.dl LBF95C6
+.dl LBF96F3
+.dl LBF981F
+.dl LBF9969
+.dl LBF9AB2
+.dl LBF9BE9
+.dl LBF9D21
+.dl LBF9E5D
+.dl LBF9F95
+.dl LBFA11E
+.dl LBFA293
+.dl LBFA2EF
+.dl LBFA34C
+.dl LBFA409
+.dl LBFA484
+.dl LBFA687
+.dl LBFA883
+.dl LBFAA03
+.dl LBFABC1
+.dl LBFADC4
+.dl LBFAFBF
+.dl LBFB1C3
+.dl LBFB3BE
+.dl LBFB4CB
+.dl LBFB5B7
+.dl LBFB63D
+.dl LBFB6C1
+.dl LBFB6FF
+.dl LBFB735
+.dl LBFB856
+.dl LBFB973
+.dl LBFBB76
+.dl LBFBC80
+.dl LBFBCFB
 
 L9590EF:
-.db $00
-.db $80 $BB $00 $8C $BB
+.dl LBB8000
+.dl LBB8C00
 
 L9590F5:
-.db $25 $9A $BB
-.db $FF $B0 $BB $75 $C8 $BB $A5 $E0
-.db $BB $43 $F9 $BB $AE $8F $BC $D9
-.db $A4 $BC $04 $BB $BC $A2 $D1 $BC
-.db $D5 $E5 $BC $3E $81 $BD $56 $94
-.db $BD
+.dl LBB9A25
+.dl LBBB0FF
+.dl LBBC875
+.dl LBBE0A5
+.dl LBBF943
+.dl LBC8FAE
+.dl LBCA4D9
+.dl LBCBB04
+.dl LBCD1A2
+.dl LBCE5D5
+.dl LBD813E
+.dl LBD9456
 
 L959119:
-.db $76 $A6 $BD
+.dl LBDA676
 
 L95911C:
-.db $76 $BD $BF $D6
-.db $BD $BF $36 $BE $BF $96 $BE $BF
-.db $F6 $BE $BF $56 $BF $BF $B6 $BF
-.db $BF $16 $C0 $BF $76 $C0 $BF $D6
-.db $C0 $BF $36 $C1 $BF $96 $C1 $BF
-.db $F6 $C1 $BF $56 $C2 $BF $B6 $C2
-.db $BF $16 $C3 $BF $76 $C3 $BF $D6
-.db $C3 $BF $36 $C4 $BF $96 $C4 $BF
-.db $F6 $C4 $BF $56 $C5 $BF $B6 $C5
-.db $BF $16 $C6 $BF $76 $C6 $BF $D6
-.db $C6 $BF $36 $C7 $BF $96 $C7 $BF
-.db $F6 $C7 $BF $56 $C8 $BF $B6 $C8
-.db $BF $16 $C9 $BF $76 $C9 $BF $D6
-.db $C9 $BF $36 $CA $BF $96 $CA $BF
-.db $F6 $CA $BF $56 $CB $BF $B6 $CB
-.db $BF $16 $CC $BF $76 $CC $BF $D6
-.db $CC $BF $36 $CD $BF $96 $CD $BF
-.db $F6 $CD $BF $56 $CE $BF $B6 $CE
-.db $BF $16 $CF $BF $76 $CF $BF $D6
-.db $CF $BF $36 $D0 $BF $96 $D0 $BF
-.db $F6 $D0 $BF $56 $D1 $BF $B6 $D1
-.db $BF $16 $D2 $BF $76 $D2 $BF $D6
-.db $D2 $BF $36 $D3 $BF $96 $D3 $BF
-.db $F6 $D3 $BF $56 $D4 $BF $B6 $D4
-.db $BF $16 $D5 $BF $76 $D5 $BF $D6
-.db $D5 $BF
+.dl LBFBD76
+.dl LBFBDD6
+.dl LBFBE36
+.dl LBFBE96
+.dl LBFBEF6
+.dl LBFBF56
+.dl LBFBFB6
+.dl LBFC016
+.dl LBFC076
+.dl LBFC0D6
+.dl LBFC136
+.dl LBFC196
+.dl LBFC1F6
+.dl LBFC256
+.dl LBFC2B6
+.dl LBFC316
+.dl LBFC376
+.dl LBFC3D6
+.dl LBFC436
+.dl LBFC496
+.dl LBFC4F6
+.dl LBFC556
+.dl LBFC5B6
+.dl LBFC616
+.dl LBFC676
+.dl LBFC6D6
+.dl LBFC736
+.dl LBFC796
+.dl LBFC7F6
+.dl LBFC856
+.dl LBFC8B6
+.dl LBFC916
+.dl LBFC976
+.dl LBFC9D6
+.dl LBFCA36
+.dl LBFCA96
+.dl LBFCAF6
+.dl LBFCB56
+.dl LBFCBB6
+.dl LBFCC16
+.dl LBFCC76
+.dl LBFCCD6
+.dl LBFCD36
+.dl LBFCD96
+.dl LBFCDF6
+.dl LBFCE56
+.dl LBFCEB6
+.dl LBFCF16
+.dl LBFCF76
+.dl LBFCFD6
+.dl LBFD036
+.dl LBFD096
+.dl LBFD0F6
+.dl LBFD156
+.dl LBFD1B6
+.dl LBFD216
+.dl LBFD276
+.dl LBFD2D6
+.dl LBFD336
+.dl LBFD396
+.dl LBFD3F6
+.dl LBFD456
+.dl LBFD4B6
+.dl LBFD516
+.dl LBFD576
+.dl LBFD5D6
 
 L9591E2:
 .db $00 $FF $00
@@ -1089,10 +1325,14 @@ L959D51:
 .db $18 $01 $01 $02 $FF
 
 L959D89:
-.db $4F $A3 $CA $15 $A4 $CA $DB $A4 $CA
+.dl LCAA34F
+.dl LCAA415
+.dl LCAA4DB
 
 L959D92:
-.db $A1 $A5 $CA $A5 $A5 $CA $A9 $A5 $CA
+.dl LCAA5A1
+.dl LCAA5A5
+.dl LCAA5A9
 
 L959D9B:
 .db $0E $06 $21 $34 $0B

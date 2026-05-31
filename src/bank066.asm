@@ -51,7 +51,7 @@ LC2C0F2:
 LC2C160:
 .INCBIN "214160.bin"
 
-LC2C5F1:
+LC2C5F1: ; put into .bin files?
 .db $00 $38 $80 $71 $00 $6A $C0 $7E
 .db $4E $21 $7D $2A $5F $3F $BA $77
 .db $77 $00 $60 $7E $FE $3B $21 $59
