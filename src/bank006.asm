@@ -2709,7 +2709,7 @@ L8694C8:
 	sta $71
 	lda #$1800
 	sta $76
-	jsl L808F18
+	jsl DECOMPRESS_ASSET
 	lda #bank100(L869512)
 	sta $01
 	lda #L869512
@@ -6276,9 +6276,9 @@ L86B09B:
 	rts
 
 L86B0BA:
-	lda #bank100(L8BD662)
+	lda #bank100(CHARACTERS_NAMES)
 	sta $01
-	lda #L8BD662
+	lda #CHARACTERS_NAMES
 	sta $00
 	lda #$2400
 	sta $06
@@ -6298,9 +6298,9 @@ L86B0E0:
 	lda #$2800
 	sta $06
 L86B0E5:
-	lda #bank100(L8BDF58)
+	lda #bank100(ITEMS_NAMES)
 	sta $01
-	lda #L8BDF58
+	lda #ITEMS_NAMES
 	sta $00
 	ldx $1039
 	lda $1DB4,X
@@ -6310,9 +6310,9 @@ L86B0E5:
 	rts
 
 L86B0FF:
-	lda #bank100(L8BDD30)
+	lda #bank100(CLASSES_NAMES)
 	sta $01
-	lda #L8BDD30
+	lda #CLASSES_NAMES
 	sta $00
 	lda #$2400
 	sta $06
@@ -8981,7 +8981,7 @@ L86C3C2:
 	sta $72
 	lda.l PORTRAITS,X
 	sta $71
-	jsl L808F18
+	jsl DECOMPRESS_ASSET
 	rts
 
 L86C3DC:
@@ -9024,7 +9024,7 @@ L86C40E:
 	sta $71
 	lda #$2100
 	sta $76
-	jsl L808F18
+	jsl DECOMPRESS_ASSET
 	rts
 
 L86C425:
@@ -9513,9 +9513,9 @@ L86C84C:
 	clc
 	adc $15
 	tax
-	lda.l L8E9213,X
+	lda.l DIALOGUES_POINTER_TABLE,X
 	sta $00
-	lda.l (L8E9213 + 1),X
+	lda.l (DIALOGUES_POINTER_TABLE + 1),X
 	sta $01
 	jsr L86C951
 	jsr L86C8CB
@@ -15689,7 +15689,7 @@ L86F7F7:
 	lda $03
 	pha
 	stz $76
-	jsl L808F18
+	jsl DECOMPRESS_ASSET
 	pla
 	sta $03
 	pla

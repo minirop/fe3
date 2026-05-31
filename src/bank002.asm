@@ -146,12 +146,12 @@ L828106:
 L828113:
 	lda $08ED
 	jsl L83D912
-	lda #bank100(L88CB72)
+	lda #bank100(AI_3_TABLE)
 	sta $01
 	lda.l ActiveUnit.AI3
 	and #$0007
 	asl
-	adc #L88CB72
+	adc #AI_3_TABLE
 	sta $00
 	lda.l ActiveUnit.AI3
 	bit #$0080
@@ -280,9 +280,9 @@ L82824D:
 	lda $08ED
 	and #$00FF
 	jsl L83D912
-	lda #bank100(L88C5E1)
+	lda #bank100(AI_2_POINTERS_TABLE)
 	sta $01
-	lda #L88C5E1
+	lda #AI_2_POINTERS_TABLE
 	sta $00
 	lda.l ActiveUnit.AI2
 	and #$00FF
@@ -715,9 +715,9 @@ L828596:
 	sep #$20
 	stz $0C9A
 	rep #$20
-	lda #bank100(L88C46C)
+	lda #bank100(AI_1_POINTERS_TABLE)
 	sta $01
-	lda #L88C46C
+	lda #AI_1_POINTERS_TABLE
 	sta $00
 	lda.l ActiveUnit.AI1
 	and #$00FF

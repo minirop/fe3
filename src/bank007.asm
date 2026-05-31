@@ -892,13 +892,13 @@ L878746:
 	rtl
 
 L87875B:
-	lda #bank100(L888000)
+	lda #bank100(CHAPTERS_UNITS)
 	sta $01
 	lda $07CE
 	and #$00FF
 	asl A
 	tax
-	lda.l L888000,X
+	lda.l CHAPTERS_UNITS,X
 	sta $00
 	ldy #$0002
 	lda [$0F],Y
@@ -1137,12 +1137,12 @@ L8788FF:
 
 L87898E:
 	rep #$20
-	lda #bank100(L8C8004)
+	lda #bank100(TABLE_8C8004)
 	sta $0FA3
 	lda $08F1
 	asl A
 	tax
-	lda.l L8C8004,X
+	lda.l TABLE_8C8004,X
 	sta $0FA2
 	plp
 	rtl
@@ -3142,13 +3142,13 @@ L879B55:
 
 L879B66:
 	rep #$20
-	lda #bank100(L8CA119)
+	lda #bank100(TABLE_8CA119)
 	sta $01
 	lda $07CE
 	and #$00FF
 	asl A
 	tax
-	lda.l L8CA119,X
+	lda.l TABLE_8CA119,X
 	sta $00
 	ldy #$0000
 L879B7E:
@@ -3359,12 +3359,12 @@ L879CE5:
 
 L879CF7:
 	rep #$20
-	lda #bank100(L8B8A93)
+	lda #bank100(TALK_EVENT_SCRIPTS_TABLE)
 	sta $0FA3
 	lda $08F1
 	asl A
 	tax
-	lda.l L8B8A93,X
+	lda.l TALK_EVENT_SCRIPTS_TABLE,X
 	sta $0FA2
 	plp
 	rtl
@@ -3509,7 +3509,7 @@ L879E0F:
 	lda #$0004
 	ldx #$0012
 	jsl L879EC9
-	lda #bank100(L889D6D)
+	lda #bank100(ARRAY_889D6D)
 	sta $01
 	lda $0F84
 	clc
@@ -3528,7 +3528,7 @@ L879E0F:
 	sep #$20
 	rep #$20
 	clc
-	adc #L889D6D
+	adc #ARRAY_889D6D
 	sta $00
 	jsl L83DCBE
 	lda $0F84
@@ -3639,7 +3639,7 @@ L879F09:
 L879F12:
 	php
 	rep #$20
-	lda #bank100(L889D6D)
+	lda #bank100(ARRAY_889D6D)
 	sta $01
 	lda $0F84
 	clc
@@ -3658,7 +3658,7 @@ L879F12:
 	sep #$20
 	rep #$20
 	clc
-	adc #L889D6D
+	adc #ARRAY_889D6D
 	sta $00
 	ldy #$0003
 	lda [$00],Y
@@ -3677,13 +3677,13 @@ L879F12:
 	ldx #$0001
 	stx $0F86
 	rep #$20
-	lda #bank100(L8BD662)
+	lda #bank100(CHARACTERS_NAMES)
 	sta $01
 	lda $0F81
 	and #$00FF
 	asl A
 	tax
-	lda.l L8BD662,X
+	lda.l CHARACTERS_NAMES,X
 	sta $00
 	jsl L87B101
 	plp
@@ -4491,14 +4491,14 @@ L87A672:
 	ldx #$80B1
 	stx $0876
 	rep #$20
-	lda #bank100(L8BD662)
+	lda #bank100(CHARACTERS_NAMES)
 	sta $01
 	ldy #$0001
 	lda [$0F],Y
 	and #$00FF
 	asl A
 	tax
-	lda.l L8BD662,X
+	lda.l CHARACTERS_NAMES,X
 	sta $00
 	jsl L87B101
 	inc $0FA2
@@ -4962,7 +4962,7 @@ L87A9FC:
 	phy
 	sep #$20
 	plx
-	lda.l L87AA20,X
+	lda.l FLAGS_87AA20,X
 	sta $15
 	plx
 	lda $07E1,X
@@ -4977,7 +4977,6 @@ L87AA1D:
 	clc
 	rtl
 
-L87AA20:
 FLAGS_87AA20:
 .db FLAG_0 FLAG_1 FLAG_2 FLAG_3
 .db FLAG_4 FLAG_5 FLAG_6 FLAG_7
@@ -4992,7 +4991,7 @@ L87AA28:
 	phy
 	sep #$20
 	plx
-	lda.l L87AA20,X
+	lda.l FLAGS_87AA20,X
 	sta $15
 	plx
 	lda $07E1,X
@@ -5011,7 +5010,7 @@ L87AA49:
 	phy
 	sep #$20
 	plx
-	lda.l L87AA20,X
+	lda.l FLAGS_87AA20,X
 	eor #$FF
 	sta $15
 	plx
@@ -6092,13 +6091,13 @@ L87B350:
 	php
 	rep #$20
 	pha
-	lda #bank100(L8E9213)
+	lda #bank100(DIALOGUES_POINTER_TABLE)
 	sta $01
 	pla
 	ldy #$0003
 	jsl L81D733
 	clc
-	adc #L8E9213
+	adc #DIALOGUES_POINTER_TABLE
 	sta $00
 	lda [$00]
 	pha
@@ -6127,13 +6126,13 @@ L87B38B:
 	php
 	rep #$20
 	pha
-	lda #bank100(L8E9213)
+	lda #bank100(DIALOGUES_POINTER_TABLE)
 	sta $01
 	pla
 	ldy #$0003
 	jsl L81D733
 	clc
-	adc #L8E9213
+	adc #DIALOGUES_POINTER_TABLE
 	sta $00
 	lda [$00]
 	pha

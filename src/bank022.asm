@@ -1512,7 +1512,7 @@ L969BB6:
 	sta.l $000076
 	lda #$00
 	sta.l $000077
-	jsl L808F18
+	jsl DECOMPRESS_ASSET
 	rep #$20
 	lda #bank100(L969DB4)
 	sta $01
@@ -1530,7 +1530,7 @@ L969BB6:
 	sta.l $000076
 	lda #$00
 	sta.l $000077
-	jsl L808F18
+	jsl DECOMPRESS_ASSET
 	rep #$20
 	lda #bank100(L969DBD)
 	sta $01
@@ -1548,7 +1548,7 @@ L969BB6:
 	sta.l $000076
 	lda #$00
 	sta.l $000077
-	jsl L808F18
+	jsl DECOMPRESS_ASSET
 	rep #$20
 	lda #bank100(L969DC6)
 	sta $01
@@ -1566,7 +1566,7 @@ L969BB6:
 	sta.l $000076
 	lda #$00
 	sta.l $000077
-	jsl L808F18
+	jsl DECOMPRESS_ASSET
 	rep #$20
 	lda #bank100(L969DCF)
 	sta $01
@@ -1618,7 +1618,7 @@ L969CBD:
 	sta.l $000076
 	lda #$00
 	sta.l $000077
-	jsl L808F18
+	jsl DECOMPRESS_ASSET
 	rep #$20
 	jsl L8DE421
 	jsl L8DE441
@@ -1639,7 +1639,7 @@ L969CBD:
 	sta.l $000076
 	lda #$00
 	sta.l $000077
-	jsl L808F18
+	jsl DECOMPRESS_ASSET
 	rep #$20
 	sep #$20
 	lda #$72
@@ -1652,7 +1652,7 @@ L969CBD:
 	sta.l $000076
 	lda #$00
 	sta.l $000077
-	jsl L808F18
+	jsl DECOMPRESS_ASSET
 	rep #$20
 	sep #$20
 	lda #$DF
@@ -1665,7 +1665,7 @@ L969CBD:
 	sta.l $000076
 	lda #$10
 	sta.l $000077
-	jsl L808F18
+	jsl DECOMPRESS_ASSET
 	rep #$20
 	sep #$20
 	lda #$39
@@ -1678,7 +1678,7 @@ L969CBD:
 	sta.l $000076
 	lda #$02
 	sta.l $000077
-	jsl L808F18
+	jsl DECOMPRESS_ASSET
 	rep #$20
 	plp
 	rts
@@ -1740,7 +1740,7 @@ L969E0F:
 	sta.l $000076
 	lda #$00
 	sta.l $000077
-	jsl L808F18
+	jsl DECOMPRESS_ASSET
 	rep #$20
 	lda #bank100(L969E5E)
 	sta $01
@@ -3257,7 +3257,7 @@ L96B2BA:
 	sta.l $000076
 	lda #$00
 	sta.l $000077
-	jsl L808F18
+	jsl DECOMPRESS_ASSET
 	rep #$20
 	lda #bank100(L96B3B5)
 	sta $01
@@ -3275,7 +3275,7 @@ L96B2BA:
 	sta.l $000076
 	lda #$00
 	sta.l $000077
-	jsl L808F18
+	jsl DECOMPRESS_ASSET
 	rep #$20
 	lda #bank100(L96B3BE)
 	sta $01
@@ -3293,7 +3293,7 @@ L96B2BA:
 	sta.l $000076
 	lda #$00
 	sta.l $000077
-	jsl L808F18
+	jsl DECOMPRESS_ASSET
 	rep #$20
 	lda #bank100(L96B3C7)
 	sta $01
@@ -3311,7 +3311,7 @@ L96B2BA:
 	sta.l $000076
 	lda #$00
 	sta.l $000077
-	jsl L808F18
+	jsl DECOMPRESS_ASSET
 	rep #$20
 	lda #bank100(L96B3D0)
 	sta $01
@@ -3329,7 +3329,7 @@ L96B2BA:
 	sta.l $000076
 	lda #$00
 	sta.l $000077
-	jsl L808F18
+	jsl DECOMPRESS_ASSET
 	rep #$20
 	plp
 	rts
@@ -3357,7 +3357,7 @@ L96B3D7:
 	sta.l $000076
 	lda #$00
 	sta.l $000077
-	jsl L808F18
+	jsl DECOMPRESS_ASSET
 	rep #$20
 	lda #bank100(L96B478)
 	sta $01
@@ -3375,7 +3375,7 @@ L96B3D7:
 	sta.l $000076
 	lda #$00
 	sta.l $000077
-	jsl L808F18
+	jsl DECOMPRESS_ASSET
 	rep #$20
 	lda #bank100(L96B481)
 	sta $01
@@ -3393,7 +3393,7 @@ L96B3D7:
 	sta.l $000076
 	lda #$00
 	sta.l $000077
-	jsl L808F18
+	jsl DECOMPRESS_ASSET
 	rep #$20
 	lda #bank100(L96B48A)
 	sta $01
@@ -4751,7 +4751,7 @@ L96D888:
 	sta.l $000076
 	lda #$00
 	sta.l $000077
-	jsl L808F18
+	jsl DECOMPRESS_ASSET
 	rep #$20
 	lda #bank100(L96D930)
 	sta $01
@@ -4817,7 +4817,7 @@ L96D937:
 	sta.l $000076
 	lda #$00
 	sta.l $000077
-	jsl L808F18
+	jsl DECOMPRESS_ASSET
 	rep #$20
 	lda #bank100(L96DA09)
 	sta $01
@@ -5038,7 +5038,7 @@ L96DB90:
 	sta.l $000076
 	lda #$00
 	sta.l $000077
-	jsl L808F18
+	jsl DECOMPRESS_ASSET
 	rep #$20
 	lda #bank100(L96DD18)
 	sta $01
@@ -5056,7 +5056,7 @@ L96DB90:
 	sta.l $000076
 	lda #$00
 	sta.l $000077
-	jsl L808F18
+	jsl DECOMPRESS_ASSET
 	rep #$20
 	lda #bank100(L96DD21)
 	sta $01
@@ -5155,7 +5155,7 @@ L96DCBE:
 	sta.l $000076
 	lda #$00
 	sta.l $000077
-	jsl L808F18
+	jsl DECOMPRESS_ASSET
 	rep #$20
 	lda #bank100(L96DD28)
 	sta $01
@@ -5795,7 +5795,7 @@ L96E273:
 	sta.l $000076
 	lda #$00
 	sta.l $000077
-	jsl L808F18
+	jsl DECOMPRESS_ASSET
 	rep #$20
 	lda #bank100(L96E314)
 	sta $01
@@ -5813,7 +5813,7 @@ L96E273:
 	sta.l $000076
 	lda #$00
 	sta.l $000077
-	jsl L808F18
+	jsl DECOMPRESS_ASSET
 	rep #$20
 	lda #bank100(L96E31D)
 	sta $01
@@ -5831,7 +5831,7 @@ L96E273:
 	sta.l $000076
 	lda #$00
 	sta.l $000077
-	jsl L808F18
+	jsl DECOMPRESS_ASSET
 	rep #$20
 	lda #bank100(L96E326)
 	sta $01
@@ -5864,7 +5864,7 @@ L96E32D:
 	sta.l $000076
 	lda #$00
 	sta.l $000077
-	jsl L808F18
+	jsl DECOMPRESS_ASSET
 	rep #$20
 	lda #bank100(L96E376)
 	sta $01
@@ -5893,7 +5893,7 @@ L96E37F:
 	sta.l $000076
 	lda #$00
 	sta.l $000077
-	jsl L808F18
+	jsl DECOMPRESS_ASSET
 	rep #$20
 	lda #bank100(L96E3B8)
 	sta $01
@@ -6912,7 +6912,7 @@ L96F1EA:
 	sta.l $000076
 	lda #$00
 	sta.l $000077
-	jsl L808F18
+	jsl DECOMPRESS_ASSET
 	rep #$20
 	lda #bank100(L96F325)
 	sta $01
@@ -6930,7 +6930,7 @@ L96F1EA:
 	sta.l $000076
 	lda #$00
 	sta.l $000077
-	jsl L808F18
+	jsl DECOMPRESS_ASSET
 	rep #$20
 	lda #bank100(L96F32E)
 	sta $01
@@ -6948,7 +6948,7 @@ L96F1EA:
 	sta.l $000076
 	lda #$00
 	sta.l $000077
-	jsl L808F18
+	jsl DECOMPRESS_ASSET
 	rep #$20
 	lda #bank100(L96F337)
 	sta $01
@@ -6966,7 +6966,7 @@ L96F1EA:
 	sta.l $000076
 	lda #$00
 	sta.l $000077
-	jsl L808F18
+	jsl DECOMPRESS_ASSET
 	rep #$20
 	lda #bank100(L96F340)
 	sta $01
@@ -6984,7 +6984,7 @@ L96F1EA:
 	sta.l $000076
 	lda #$00
 	sta.l $000077
-	jsl L808F18
+	jsl DECOMPRESS_ASSET
 	rep #$20
 	lda #bank100(L96F349)
 	sta $01
@@ -7005,7 +7005,7 @@ L96F1EA:
 	sta.l $000076
 	lda #$00
 	sta.l $000077
-	jsl L808F18
+	jsl DECOMPRESS_ASSET
 	rep #$20
 	plp
 	rts
@@ -7067,7 +7067,7 @@ L96F38D:
 	sta.l $000076
 	lda #$00
 	sta.l $000077
-	jsl L808F18
+	jsl DECOMPRESS_ASSET
 	rep #$20
 	lda #bank100(L96F59A)
 	sta $01
@@ -7085,7 +7085,7 @@ L96F38D:
 	sta.l $000076
 	lda #$00
 	sta.l $000077
-	jsl L808F18
+	jsl DECOMPRESS_ASSET
 	rep #$20
 	lda #bank100(L96F5A3)
 	sta $01
@@ -7103,7 +7103,7 @@ L96F38D:
 	sta.l $000076
 	lda #$00
 	sta.l $000077
-	jsl L808F18
+	jsl DECOMPRESS_ASSET
 	rep #$20
 	lda #bank100(L96F5AC)
 	sta $01
@@ -7121,7 +7121,7 @@ L96F38D:
 	sta.l $000076
 	lda #$00
 	sta.l $000077
-	jsl L808F18
+	jsl DECOMPRESS_ASSET
 	rep #$20
 	lda #bank100(L96F5B5)
 	sta $01
@@ -7139,7 +7139,7 @@ L96F38D:
 	sta.l $000076
 	lda #$00
 	sta.l $000077
-	jsl L808F18
+	jsl DECOMPRESS_ASSET
 	rep #$20
 	lda #bank100(L96F5BE)
 	sta $01
@@ -7157,7 +7157,7 @@ L96F38D:
 	sta.l $000076
 	lda #$00
 	sta.l $000077
-	jsl L808F18
+	jsl DECOMPRESS_ASSET
 	rep #$20
 	lda #bank100(L96F5C7)
 	sta $01
@@ -7175,7 +7175,7 @@ L96F38D:
 	sta.l $000076
 	lda #$00
 	sta.l $000077
-	jsl L808F18
+	jsl DECOMPRESS_ASSET
 	rep #$20
 	lda #bank100(L96F5D0)
 	sta $01
@@ -7193,7 +7193,7 @@ L96F38D:
 	sta.l $000076
 	lda #$00
 	sta.l $000077
-	jsl L808F18
+	jsl DECOMPRESS_ASSET
 	rep #$20
 	lda #bank100(L96F5D9)
 	sta $01
@@ -7211,7 +7211,7 @@ L96F38D:
 	sta.l $000076
 	lda #$00
 	sta.l $000077
-	jsl L808F18
+	jsl DECOMPRESS_ASSET
 	rep #$20
 	lda #bank100(L96F5E2)
 	sta $01
@@ -7229,7 +7229,7 @@ L96F38D:
 	sta.l $000076
 	lda #$00
 	sta.l $000077
-	jsl L808F18
+	jsl DECOMPRESS_ASSET
 	rep #$20
 	lda #bank100(L96F5EB)
 	sta $01
@@ -7587,7 +7587,7 @@ L96F943:
 	sta.l $000076
 	lda #$00
 	sta.l $000077
-	jsl L808F18
+	jsl DECOMPRESS_ASSET
 	rep #$20
 	lda #bank100(L96F9E4)
 	sta $01
@@ -7605,7 +7605,7 @@ L96F943:
 	sta.l $000076
 	lda #$00
 	sta.l $000077
-	jsl L808F18
+	jsl DECOMPRESS_ASSET
 	rep #$20
 	lda #bank100(L96F9ED)
 	sta $01
@@ -7623,7 +7623,7 @@ L96F943:
 	sta.l $000076
 	lda #$00
 	sta.l $000077
-	jsl L808F18
+	jsl DECOMPRESS_ASSET
 	rep #$20
 	lda #bank100(L96F9F6)
 	sta $01

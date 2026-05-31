@@ -4420,7 +4420,7 @@ L93D31D:
 	and #$00FF
 	tax
 	sep #$20
-	lda.l L848C15,X
+	lda.l CHAPTERS_ID,X
 	sta $07CE
 	plp
 	rtl
@@ -6744,9 +6744,9 @@ L93E5BD:
 L93E5C0:
 	php
 	rep #$20
-	lda #bank100(L8A8000)
+	lda #bank100(CHAPTERS_INFORMATION)
 	sta $01
-	lda #L8A8000
+	lda #CHAPTERS_INFORMATION
 	sta $00
 	lda $07CE
 	and #$00FF

@@ -2036,7 +2036,6 @@ L808F16:
 	plp
 	rtl
 
-L808F18:
 DECOMPRESS_ASSET:
 	php
 	phb

@@ -677,7 +677,7 @@ L8388A1:
 	ldy #$0060
 	ldx #$0000
 L8388B6:
-	lda.l L95F800,X
+	lda.l PALETTES_95F800,X
 	sta $7F51D0,X
 	inx
 	dey
@@ -731,7 +731,7 @@ L838906:
 	ldy #$0020
 	ldx #$0000
 L83892A:
-	lda.l L94D000,X
+	lda.l PALETTES_94D000,X
 	sta $7F5230,X
 	inx
 	dey
@@ -2645,9 +2645,9 @@ L83998B:
 	rts
 
 L8399A1:
-	lda #bank100(L8B89C6)
+	lda #bank100(TALK_EVENT_DATA)
 	sta $04
-	lda #L8B89C6
+	lda #TALK_EVENT_DATA
 	sta $03
 L8399AB:
 	sep #$20
@@ -11793,9 +11793,9 @@ L83E408:
 L83E40F:
 	lda $08ED
 	jsl L83D912
-	lda #bank100(L8B89C6)
+	lda #bank100(TALK_EVENT_DATA)
 	sta $04
-	lda #L8B89C6
+	lda #TALK_EVENT_DATA
 	sta $03
 L83E420:
 	sep #$20
@@ -13254,7 +13254,7 @@ L83EF5F:
 	and #$00ff
 	asl
 	tax
-	lda.l L88A48E,X
+	lda.l TABLE_88A48E,X
 	sta $00
 	sep #$20
 	lda #$88
