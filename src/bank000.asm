@@ -21,8 +21,10 @@ L80801C:
 	rts
 
 L80801D:
+.ACCU 8
+.INDEX 8
 	lda $4212
-	and.b #$01
+	and #$01
 	bne L80801D
 	stz $044d
 	stz $0453
@@ -32,7 +34,7 @@ L80801D:
 	stz $045e
 	stz $045f
 	lda $4212
-	and.b #$01
+	and #$01
 	bne L80801D
 	stz $044d
 	stz $0453
@@ -41,15 +43,15 @@ L80801D:
 	stz $0456
 	stz $045e
 	stz $045f
-	ldx.b #$01
+	ldx #$01
 	lda $421a
 	jsr L808061
 	dex
 	lda $4218
 L808061:
 	sta $15
-	and.b #$0f
-	cmp.b #$01
+	and #$0f
+	cmp #$01
 	beq L808070
 	stz $0460,X
 	stz $0462,X
@@ -59,7 +61,7 @@ L808070:
 	lda $044d
 	ora $808e,X
 	sta $044d
-	ldy.b #$10
+	ldy #$10
 L80807B:
 	lsr $4016,X
 	rol $0453,X
@@ -85,13 +87,13 @@ L808090:
 L80809B:
 	lda $0453,X
 	bpl L8080AA
-	and.b #$7f
-	eor.b #$ff
+	and #$7f
+	eor #$ff
 	ina
 	sta $0453,X
 	bra L8080AC
 L8080AA:
-	and.b #$7f
+	and #$7f
 L8080AC:
 	sta $0453,X
 	rts
@@ -103,24 +105,24 @@ L8080B0:
 	asl
 	tay
 	lda $0115,Y
-	and.b #$80
+	and #$80
 	sta $0126,Y
 	lda $0115,Y
-	and.b #$40
+	and #$40
 	asl
 	sta $0125,Y
 	lda $0117,Y
-	and.b #$80
+	and #$80
 	sta $0128,Y
 	lda $0117,Y
-	and.b #$40
+	and #$40
 	asl
 	sta $0127,Y
 	lda $0119,Y
-	and.b #$80
+	and #$80
 	sta $012a,Y
 	lda $0119,Y
-	and.b #$40
+	and #$40
 	asl
 	sta $0129,Y
 	lda $0125,Y
@@ -133,17 +135,17 @@ L8080F5:
 	lda $0462,X
 	bne L808110
 	lda $0127,Y
-	and.b #$80
+	and #$80
 	beq L808143
 	sta $0460,X
-	lda.b #$00
+	lda #$00
 	sta $0127,Y
-	lda.b #$10
+	lda #$10
 	sta $0462,X
 	bra L808143
 L808110:
 	lda $0464,X
-	cmp.b #$07
+	cmp #$07
 	bcs L808137
 	lda $0453,X
 	ora $0455,X
@@ -151,7 +153,7 @@ L808110:
 	dec $0462,X
 	beq L808137
 	lda $0127,Y
-	and.b #$80
+	and #$80
 	and $0460,X
 	beq L808143
 	lsr
