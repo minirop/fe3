@@ -3566,6 +3566,7 @@ LD0E3E9:
 .ORG $7600
 .SECTION "Bank80-2" FORCE
 
+LD0F600:
 .db $FF $FF $FF $FF $55 $FF $55 $FF
 .db $55 $FF $55 $FF $55 $FF $FF $FF
 .db $FF $FF $FF $FF $57 $FF $57 $FF
@@ -3893,4 +3894,5 @@ LD0FC00:
 .db $00 $00 $00 $00 $00 $00 $00 $00
 .db $00 $00 $00 $00 $00 $00 $00 $00
 .db $00 $00 $00 $00 $00 $00 $00 $00
+
 .ENDS
