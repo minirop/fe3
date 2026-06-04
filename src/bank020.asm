@@ -3,6 +3,7 @@
 
 .SECTION "Bank20" FORCE
 
+; seems to be the "menu" font
 L948000:
 .db $FF $FF $FF $FF $FF $FF $FF $FF
 .db $DF $FF $DB $FF $87 $FB $DF $FF

@@ -3,6 +3,7 @@
 
 .SECTION "Bank92" FORCE
 
+; seems to be the "intro" font
 LDC8000:
 .db $FF $FF $FF $FB $FB $F4 $F8 $87
 .db $C3 $3C $FB $85 $FB $FC $F8 $C7

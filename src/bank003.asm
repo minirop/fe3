@@ -12428,7 +12428,7 @@ L83E928:
 	beq L83E99E
 	ldx #$0000
 L83E946:
-	lda $e9a1,X
+	lda.w L83E9A1,X
 	cmp #$ff
 	beq L83E99E
 	cmp.l ActiveUnit.ClassID
@@ -12467,6 +12467,7 @@ L83E99E:
 	rep #$20
 	rts
 
+L83E9A1:
 .db $05 $06 $0B $FF
 
 L83E9A5:
@@ -13271,7 +13272,7 @@ L83EF75:
 	rep #$20
 	inc $00
 	sep #$20
-	cmp #$ff
+	cmp #TERMINATOR
 	bne L83EF75
 	stz $0aa0
 	bra L83EF92

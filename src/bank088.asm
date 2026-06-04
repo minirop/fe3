@@ -3,6 +3,7 @@
 
 .SECTION "Bank88" FORCE
 
+; seems to be the "dialogue" font
 LD88000:
 .db $FF $FF $FF $FF $FF $FF $FF $FF
 .db $FB $FF $F8 $FF $C7 $FB $F7 $FF
