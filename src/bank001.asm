@@ -67,7 +67,7 @@ L818058:
 	sta $0c05
 	jsl L81D5A8
 	ldx $15
-	ldy #$9f64
+	ldy #L8B9F64
 	lda #$0000
 	jsl L81E21F
 	sep #$20
@@ -537,7 +537,7 @@ L818458:
 	php
 	sep #$20
 	ldx #$0042
-	ldy #$c638
+	ldy #L8BC638
 	lda $0b0e
 	ina
 	jsl L81E21F
@@ -557,7 +557,7 @@ L818470:
 	bra L81846E
 L818482:
 	ldx #$00a6
-	ldy #$c638
+	ldy #L8BC638
 	lda #$00
 	jsl L81E21F
 	ldx #$00a6
@@ -751,7 +751,7 @@ L818606:
 	pha
 	jsl L81D5A8
 	ldx $15
-	ldy #$d662
+	ldy #CHARACTERS_NAMES
 	pla
 	jsl L81E21F
 	rep #$20
@@ -1798,7 +1798,7 @@ L818EDA:
 	stx $0C1B
 	jsl L81D5A8
 	ldx $15
-	ldy #$C638
+	ldy #L8BC638
 	lda #$0005
 	jsl L81E21F
 	lda #$0C0D
@@ -2186,7 +2186,7 @@ L819215:
 	sta $0C1B
 	jsl L81D5A8
 	ldx $15
-	ldy #$D662
+	ldy #CHARACTERS_NAMES
 	pla
 	jsl L81E21F
 	txa
@@ -2199,7 +2199,7 @@ L819215:
 	sec
 	sbc #$0008
 	tax
-	ldy #$A9BC
+	ldy #L8BA9BC
 	lda #$0001
 	jsl L81E21F
 	bra L819277
@@ -2210,7 +2210,7 @@ L81925E:
 	sta $0C1B
 	jsl L81D5A8
 	ldx $15
-	ldy #$A9BC
+	ldy #L8BA9BC
 	lda #$0002
 	jsl L81E21F
 L819277:
@@ -2634,7 +2634,7 @@ L8195BB:
 	lda #$01
 	jsl L81C7D6
 	ldx #$02C6
-	ldy #$C638
+	ldy #L8BC638
 	lda #$04
 	jsl L81E21F
 	ldx #$3187
@@ -2731,7 +2731,7 @@ L8196F8:
 	sta $0C1B
 	jsl L81D5A8
 	ldx $15
-	ldy #$A9BC
+	ldy #L8BA9BC
 	lda #$0004
 	jsl L81E21F
 	lda $0C1B
@@ -2740,10 +2740,10 @@ L8196F8:
 	sta $0C1B
 	jsl L81D5A8
 	ldx $15
-	ldy #$DF58
+	ldy #ITEMS_NAMES
 	lda $0BA7
 	jsl L81E21F
-	ldy #$A9BC
+	ldy #L8BA9BC
 	lda #$0003
 	jsl L81E21F
 	lda $0C1B
@@ -3078,12 +3078,12 @@ L8199CF:
 	inc $0C1C
 	jsl L81D5A8
 	ldx $15
-	ldy #$9FEA
+	ldy #L8B9FEA
 	lda #$0003
 	jsl L81E21F
 	jsl L81D5A8
 	ldx $15
-	ldy #$C94E
+	ldy #CHAPTERS_NAMES
 	lda $07DF
 	jsl L81E21F
 	lda $07F1
@@ -3167,7 +3167,7 @@ L819AA5:
 	sta $0C1B
 	jsl L81D5A8
 	ldx $15
-	ldy #$D036
+	ldy #L8BD036
 	lda $07DF
 	jsl L81E21F
 	plp
@@ -3190,7 +3190,7 @@ L819ADB:
 	sta $0C1B
 	jsl L81D5A8
 	ldx $15
-	ldy #$B522
+	ldy #L8BB522
 	lda #$0013
 	jsl L81E21F
 	lda #$0000
@@ -3232,7 +3232,7 @@ L819B54:
 	sta $0C1B
 	jsl L81D5A8
 	ldx $15
-	ldy #$A9BC
+	ldy #L8BA9BC
 	lda #$0000
 	jsl L81E21F
 	lda $0C05
@@ -3243,7 +3243,7 @@ L819B54:
 	ldx $0BD1
 	lda.l (L819BD1 + 1),X
 	ldx $15
-	ldy #$DF58
+	ldy #ITEMS_NAMES
 	jsl L81E21F
 	lda $0C05
 	clc
@@ -4038,11 +4038,11 @@ L81A28A:
 	jsl L81D35F
 	jsl L81D4EE
 	ldx #$0084
-	ldy #$B46A
+	ldy #L8BB46A
 	lda #$0000
 	jsl L81E21F
 	ldx #$0096
-	ldy #$B46A
+	ldy #L8BB46A
 	lda $0BDF
 	and #$00FF
 	ina
@@ -4198,7 +4198,7 @@ L81A3C7:
 	jsl L81A370
 	lda.l ActiveUnit.ClassID
 	ldx $0BD5
-	ldy #$DD30
+	ldy #CLASSES_NAMES
 	jsl L81E21F
 	rep #$20
 	lda.l ActiveUnit.Weapon1
@@ -4210,7 +4210,7 @@ L81A3C7:
 	adc #$0010
 	tax
 	lda.l ActiveUnit.Weapon1
-	ldy #$DF58
+	ldy #ITEMS_NAMES
 	jsl L81E21F
 	lda $0BD5
 	clc
@@ -4748,7 +4748,7 @@ L81A862:
 	rep #$20
 	ldx $0bd1
 	lda $7f3816,X
-	ldy #$d662
+	ldy #CHARACTERS_NAMES
 	ldx $17
 	jsl L81E21F
 	lda $17
@@ -4767,7 +4767,7 @@ L81A862:
 	sbc #$0084
 	tax
 	lda #$0000
-	ldy #$a9bc
+	ldy #L8BA9BC
 	jsl L81E21F
 	lda $17
 	clc
@@ -4816,7 +4816,7 @@ L81A8EF:
 	sta $0C00
 	rep #$20
 	ldx #$0042
-	ldy #$9FEA
+	ldy #L8B9FEA
 	lda $0B08
 	and #$00FF
 	clc
@@ -4892,7 +4892,7 @@ L81A9B7:
 	sta $0BFF
 	jsr L81AD3E
 	ldx #$0350
-	ldy #$9FEA
+	ldy #L8B9FEA
 	lda #$05
 	jsl L81E21F
 	jsr L81D6C2
@@ -4922,7 +4922,7 @@ L81A9F6:
 	ldy #$0000
 	jsl L87A9A3
 	ldx #$02CA
-	ldy #$9FEA
+	ldy #L8B9FEA
 	lda #$0008
 	jsl L81E21F
 	jsr L81D6C2
@@ -5521,7 +5521,7 @@ L81AF5F:
 	php
 	sep #$20
 	ldx #$05A4
-	ldy #$C4BC
+	ldy #L8BC4BC
 	lda #$00
 	jsl L81E21F
 	ldx #$05A4
@@ -5935,7 +5935,7 @@ L81B282:
 	sta $0C1B
 	jsl L81D5A8
 	ldx $15
-	ldy #$A9BC
+	ldy #L8BA9BC
 	lda #$0004
 	jsl L81E21F
 	lda $0C1B
@@ -5944,10 +5944,10 @@ L81B282:
 	sta $0C1B
 	jsl L81D5A8
 	ldx $15
-	ldy #$DF58
+	ldy #ITEMS_NAMES
 	pla
 	jsl L81E21F
-	ldy #$A9BC
+	ldy #L8BA9BC
 	lda #$0003
 	jsl L81E21F
 	lda $0C1B
@@ -6832,7 +6832,7 @@ L81B9F8:
 	stx $0bb5
 	jsl L81D5A8
 	ldx $15
-	ldy #$aae6
+	ldy #L8BAAE6
 	lda #$16
 	jsl L81E21F
 	lda #$00
@@ -6859,7 +6859,7 @@ L81B9F8:
 	sta $0c1d
 	stz $0c0c
 	ldx $17
-	ldy #$aae6
+	ldy #L8BAAE6
 	lda #$17
 	jsl L81E21F
 	ldx #$3187
@@ -6900,7 +6900,7 @@ L81BA9A:
 	phx
 	ldx $17
 	lda $19
-	ldy #$AAE6
+	ldy #L8BAAE6
 	jsl L81E21F
 	plx
 	inc $19
@@ -6950,7 +6950,7 @@ L81BAFD:
 	jsl L81D5A8
 	rep #$20
 	ldx $15
-	ldy #$ACC6
+	ldy #L8BACC6
 	lda #$0004
 	jsl L81E21F
 	rep #$20
@@ -6974,7 +6974,7 @@ L81BB27:
 	ldx $17
 	lda $19
 	and #$00FF
-	ldy #$ACC6
+	ldy #L8BACC6
 	jsl L81E21F
 	plx
 	sep #$20
@@ -6995,7 +6995,7 @@ L81BB48:
 	sta $0C1D
 	rep #$20
 	ldx $17
-	ldy #$ACC6
+	ldy #L8BACC6
 	lda #$0005
 	jsl L81E21F
 	lda #$3187
@@ -7385,7 +7385,7 @@ L81BE97:
 	jsl L81D5A8
 	rep #$20
 	ldx $15
-	ldy #$AE94
+	ldy #L8BAE94
 	lda #$0000
 	jsl L81E21F
 	lda $17
@@ -7410,7 +7410,7 @@ L81BECB:
 	sec
 	sbc #$0004
 	tax
-	ldy #$AE94
+	ldy #L8BAE94
 	lda #$0003
 	jsl L81E21F
 	lda $17
@@ -7437,7 +7437,7 @@ L81BEF4:
 	sec
 	sbc #$0068
 	tax
-	ldy #$AE94
+	ldy #L8BAE94
 	lda #$0002
 	jsl L81E21F
 	lda $17
@@ -7469,7 +7469,7 @@ L81BF3C:
 	jsl L81D5A8
 	rep #$20
 	ldx $15
-	ldy #$AE94
+	ldy #L8BAE94
 	lda #$0001
 	jsl L81E21F
 	lda $0C1B
@@ -7699,7 +7699,7 @@ L81C12A:
 	sta $0C1B
 	jsl L81D5A8
 	ldx $15
-	ldy #$B522
+	ldy #L8BB522
 	lda #$000A
 	jsl L81E21F
 	lda $0BA7
@@ -7763,7 +7763,7 @@ L81C1C0:
 	jsl L81D5A8
 	lda [$0C]
 	ldx $15
-	ldy #$E724
+	ldy #L8BE724
 	jsl L81E21F
 	plp
 	rts
@@ -7883,7 +7883,7 @@ L81C2F1:
 	lda #$01
 L81C2F3:
 	ldx $15
-	ldy #$D0FA
+	ldy #L8BD0FA
 	jsl L81E21F
 	stz $0C0A
 	jmp L81D6C2
@@ -8035,7 +8035,7 @@ L81C42A:
 	stx $0C1B
 	jsl L81D5A8
 	ldx $15
-	ldy #$C010
+	ldy #L8BC010
 	lda #$00
 	jsl L81E21F
 	lda #$FF
@@ -8218,7 +8218,7 @@ L81C5B0:
 	rep #$20
 	jsl L81D5A8
 	ldx $15
-	ldy #$B522
+	ldy #L8BB522
 	lda #$0009
 	jsl L81E21F
 	lda $0C1B
@@ -8227,11 +8227,11 @@ L81C5B0:
 	sta $0C1B
 	jsl L81D5A8
 	ldx $15
-	ldy #$D662
+	ldy #CHARACTERS_NAMES
 	lda.l ActiveUnit.NameID
 	jsl L81E21F
 	ldx $17
-	ldy #$DD30
+	ldy #CLASSES_NAMES
 	lda.l ActiveUnit.ClassID
 	jsl L81E21F
 	lda.l ActiveUnit.Weapon1
@@ -8239,7 +8239,7 @@ L81C5B0:
 	cmp #$00FF
 	beq L81C60C
 	ldx $17
-	ldy #$DF58
+	ldy #ITEMS_NAMES
 	lda.l ActiveUnit.Weapon1
 	jsl L81E21F
 	bra L81C614
@@ -8316,7 +8316,7 @@ L81C691:
 	rep #$20
 	sty $25
 	sta $27
-	ldy #$DF58
+	ldy #ITEMS_NAMES
 	jsl L81E21F
 	lda $17
 	sec
@@ -8377,7 +8377,7 @@ L81C6EF:
 L81C712:
 	sep #$20
 	plx
-	ldy #$A9BC
+	ldy #L8BA9BC
 	lda #$00
 	jsl L81E21F
 	rep #$20
@@ -8399,7 +8399,7 @@ L81C736:
 	rep #$20
 	sty $25
 	sta $27
-	ldy #$DF58
+	ldy #ITEMS_NAMES
 	jsl L81E21F
 	lda $17
 	sec
@@ -8456,7 +8456,7 @@ L81C794:
 L81C7B2:
 	sep #$20
 	plx
-	ldy #$A9BC
+	ldy #L8BA9BC
 	lda #$00
 	jsl L81E21F
 	rep #$20
@@ -8538,7 +8538,7 @@ L81C842:
 	rep #$20
 	jsl L81D5A8
 	ldx $15
-	ldy #$DF58
+	ldy #ITEMS_NAMES
 	lda $21
 	jsl L81E21F
 	lda $17
@@ -8617,7 +8617,7 @@ L81C8F6:
 	sta $0C1B
 	jsl L81D5A8
 	ldx $15
-	ldy #$B522
+	ldy #L8BB522
 	lda #$000F
 	jsl L81E21F
 	lda $0C1B
@@ -8764,7 +8764,7 @@ L81C9EF:
 	rts
 L81CA23:
 	rep #$20
-	ldy #$DF58
+	ldy #ITEMS_NAMES
 	jsl L81E21F
 	lda $17
 	sec
@@ -8816,7 +8816,7 @@ L81CA23:
 	jsl L81D77B
 	rep #$20
 	plx
-	ldy #$A9BC
+	ldy #L8BA9BC
 	lda #$0000
 	jsl L81E21F
 	lda $17
@@ -8904,15 +8904,15 @@ L81CB18:
 	inc $0C1C
 	jsl L81D5A8
 	ldx $15
-	ldy #$D662
+	ldy #CHARACTERS_NAMES
 	lda.l ActiveUnit.NameID
 	jsl L81E21F
 	ldx $17
-	ldy #$DD30
+	ldy #CLASSES_NAMES
 	lda.l ActiveUnit.ClassID
 	jsl L81E21F
 	ldx $17
-	ldy #$AD32
+	ldy #L8BAD32
 	lda #$0000
 	jsl L81E21F
 	lda $17
@@ -9274,7 +9274,7 @@ L81CE48:
 	inc $0C1C
 	jsl L81D5A8
 	ldx $15
-	ldy #$AD32
+	ldy #L8BAD32
 	lda #$01
 	jsl L81E21F
 	ldx $17
@@ -9369,7 +9369,7 @@ L81CF32:
 	clc
 	adc #$04
 	plx
-	ldy #$AD32
+	ldy #L8BAD32
 	jsl L81E21F
 	phx
 L81CF41:
@@ -9398,7 +9398,7 @@ L81CF58:
 	inc $0C1C
 	jsl L81D5A8
 	ldx $15
-	ldy #$AD32
+	ldy #L8BAD32
 	lda #$02
 	jsl L81E21F
 	lda $0C1B
@@ -9521,7 +9521,7 @@ L81D08C:
 	inc $0C1C
 	jsl L81D5A8
 	ldx $15
-	ldy #$AD32
+	ldy #L8BAD32
 	lda #$0003
 	jsl L81E21F
 	plx
@@ -9982,7 +9982,7 @@ L81D430:
 	ldy #$000c
 	jsl L81D733
 	clc
-	adc #$d4be
+	adc #L81D4BE
 	sta $0f
 	ldy #$0000
 	lda [$0f],Y
@@ -9993,7 +9993,7 @@ L81D430:
 	and #$00ff
 	pha
 	ldx $15
-	ldy #$c0b8
+	ldy #L8BC0B8
 	pla
 	jsl L81E21F
 	sep #$20
@@ -10034,6 +10034,7 @@ L81D430:
 	plp
 	rtl
 
+L81D4BE:
 .db $01 $01 $04 $10 $10 $0C $81 $00
 .db $00 $00 $08 $02 $01 $01 $05 $C0
 .db $10 $03 $81 $00 $00 $01 $16 $02
@@ -10787,11 +10788,11 @@ L81DA10:
 	ldy #$0001
 	pla
 	ldx #$0312
-	ldy #$DF58
+	ldy #ITEMS_NAMES
 	jsl L81E21F
 	lda #$0003
 	ldx #$0322
-	ldy #$B522
+	ldy #L8BB522
 	jsl L81E21F
 	lda #$0060
 	sta $0B9E
@@ -10890,14 +10891,14 @@ L81DB17:
 	sta $0C1C
 	jsl L81D5A8
 	ldx $15
-	ldy #$A9BC
+	ldy #L8BA9BC
 	lda #$05
 	jsl L81E21F
 	inc $0C1B
 	inc $0C1C
 	jsl L81D5A8
 	ldx $15
-	ldy #$DF58
+	ldy #ITEMS_NAMES
 	lda $0BA4
 	jsl L81E21F
 	jsr L81D6C2
@@ -11026,7 +11027,7 @@ L81DC20:
 	inc $0C1C
 	jsl L81D5A8
 	ldx $15
-	ldy #$F48E
+	ldy #L8BF48E
 	pla
 	jsl L81E21F
 	rep #$20
@@ -11038,7 +11039,7 @@ L81DC20:
 	sec
 	sbc #$0002
 	tax
-	ldy #$B522
+	ldy #L8BB522
 	lda #$0008
 	jsl L81E21F
 L81DC82:
@@ -11991,7 +11992,7 @@ L81E402:
 	stx $0C1B
 	ldx $15
 	rep #$20
-	ldy #$AE94
+	ldy #L8BAE94
 	pla
 	clc
 	adc #$0004
@@ -12343,7 +12344,7 @@ L81E717:
 	inc $0C1C
 	jsl L81D5A8
 	ldx $15
-	ldy #$E724
+	ldy #L8BE724
 	lda $0B2F
 	jsl L81E21F
 L81E756:
@@ -12376,7 +12377,7 @@ L81E762:
 	clc
 	adc #$000C
 	sta $0BA4
-	ldy #$E724
+	ldy #L8BE724
 	lda #$0000
 	jsl L81E21F
 	lda #$0000
@@ -12584,7 +12585,7 @@ L81E93E:
 	stx $0C1B
 	jsl L81D5A8
 	ldx $15
-	ldy #$9FEA
+	ldy #L8B9FEA
 	lda $0BB0
 	jsl L81E21F
 	rep #$20
@@ -12713,7 +12714,7 @@ L81EAAE:
 	sta $0C1B
 	jsl L81D5A8
 	ldx $15
-	ldy #$9FEA
+	ldy #L8B9FEA
 	lda #$000A
 	jsl L81E21F
 	lda #$002D
@@ -12768,7 +12769,7 @@ L81EB23:
 	stx $0C1B
 	jsl L81D5A8
 	ldx $15
-	ldy #$9FEA
+	ldy #L8B9FEA
 	lda #$000D
 	jsl L81E21F
 	lda #$040C
@@ -12908,7 +12909,7 @@ L81EC8E:
 	stx $0C1B
 	jsl L81D5A8
 	ldx $15
-	ldy #$D13A
+	ldy #L8BD13A
 	lda #$0D
 	jsl L81E21F
 	ldx #$0A05
@@ -12933,7 +12934,7 @@ L81ECC5:
 	stx $0C1B
 	jsl L81D5A8
 	ldx $15
-	ldy #$D13A
+	ldy #L8BD13A
 	lda $0BB0
 	and #$FF
 	sec
@@ -12960,7 +12961,7 @@ L81ED13:
 	stx $0C1B
 	jsl L81D5A8
 	ldx $15
-	ldy #$D13A
+	ldy #L8BD13A
 	lda #$02
 	jsl L81E21F
 L81ED28:
@@ -12979,7 +12980,7 @@ L81ED3E:
 	stx $0BAD
 	jsl L81D5A8
 	ldx $15
-	ldy #$D13A
+	ldy #L8BD13A
 	lda #$0001
 	jsl L81E21F
 	lda $0BAD
@@ -12988,7 +12989,7 @@ L81ED3E:
 	sta $0C1B
 	jsl L81D5A8
 	ldx $15
-	ldy #$DF58
+	ldy #ITEMS_NAMES
 	lda $0BB0
 	jsl L81E21F
 	lda $0BAD
@@ -13008,14 +13009,14 @@ L81ED87:
 	stx $0C1B
 	jsl L81D5A8
 	ldx $15
-	ldy #$D13A
+	ldy #L8BD13A
 	lda #$00
 	jsl L81E21F
 	ldx #$0A0B
 	stx $0C1B
 	jsl L81D5A8
 	ldx $15
-	ldy #$DF58
+	ldy #ITEMS_NAMES
 	lda $0BB0
 	jsl L81E21F
 	ldx #$0A09
@@ -13077,7 +13078,7 @@ L81EE0F:
 	sta $0C1B
 	jsl L81D5A8
 	ldx $15
-	ldy #$B522
+	ldy #L8BB522
 	lda #$0002
 	jsl L81E21F
 	lda $0C07

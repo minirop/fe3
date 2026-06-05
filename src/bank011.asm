@@ -175,6 +175,7 @@ L8B817F:
 L8B8190:
 .db TERMINATOR
 
+; TODO
 .db $00 $1F $48 $01 $9A $81 $14
 .db $BE $81 $13 $01 $00 $BE $81 $11
 .db $01 $00 $1C $00 $06 $64 $01 $13
@@ -2239,6 +2240,7 @@ L8B999E:
 L8B999F:
 .db UNDEFINED
 
+; TODO
 .db $00 $03 $10 $13 $02 $00 $00 $00
 .db $03 $05 $0B $03 $05 $0A $00 $0C
 .db $00 $0F $0C $00 $10 $00
@@ -2275,19 +2277,64 @@ L8B99B6:
 .db $FF $FF
 
 L8B9A92:
-.db $F6 $9A $EC $9A $EC $9A
-.db $EE $9A $F2 $9A $EC $9A $EC $9A
-.db $EE $9A $F2 $9A $EE $9A $F2 $9A
-.db $EE $9A $F2 $9A $EE $9A $F0 $9A
-.db $F6 $9A $F4 $9A $EE $9A $F2 $9A
-.db $EC $9A $EC $9A $EC $9A $F6 $9A
-.db $F6 $9A $F6 $9A $EC $9A $F2 $9A
-.db $F6 $9A $F6 $9A $EC $9A $EC $9A
-.db $F2 $9A $F4 $9A $F4 $9A $F4 $9A
-.db $F4 $9A $F4 $9A $F4 $9A $F4 $9A
-.db $F4 $9A $F4 $9A $F4 $9A $F4 $9A
-.db $F4 $9A $F4 $9A $3C $00 $46 $00
-.db $50 $00 $5A $00 $64 $00 $00 $00
+.dw L8B9AF6
+.dw L8B9AEC
+.dw L8B9AEC
+.dw L8B9AEE
+.dw L8B9AF2
+.dw L8B9AEC
+.dw L8B9AEC
+.dw L8B9AEE
+.dw L8B9AF2
+.dw L8B9AEE
+.dw L8B9AF2
+.dw L8B9AEE
+.dw L8B9AF2
+.dw L8B9AEE
+.dw L8B9AF0
+.dw L8B9AF6
+.dw L8B9AF4
+.dw L8B9AEE
+.dw L8B9AF2
+.dw L8B9AEC
+.dw L8B9AEC
+.dw L8B9AEC
+.dw L8B9AF6
+.dw L8B9AF6
+.dw L8B9AF6
+.dw L8B9AEC
+.dw L8B9AF2
+.dw L8B9AF6
+.dw L8B9AF6
+.dw L8B9AEC
+.dw L8B9AEC
+.dw L8B9AF2
+.dw L8B9AF4
+.dw L8B9AF4
+.dw L8B9AF4
+.dw L8B9AF4
+.dw L8B9AF4
+.dw L8B9AF4
+.dw L8B9AF4
+.dw L8B9AF4
+.dw L8B9AF4
+.dw L8B9AF4
+.dw L8B9AF4
+.dw L8B9AF4
+.dw L8B9AF4
+
+L8B9AEC:
+.db $3C $00
+L8B9AEE:
+.db $46 $00
+L8B9AF0:
+.db $50 $00
+L8B9AF2:
+.db $5A $00
+L8B9AF4:
+.db $64 $00
+L8B9AF6
+.db $00 $00
 
 L8B9AF8:
 .db $00 $24 $10 $24 $01 $24 $11 $24
@@ -2433,10 +2480,12 @@ L8B9AF8:
 .db $DD $E0 $FF $FF $CE $20 $FF $FF
 .db $DD $A0 $FF $FF
 
+L8B9F64:
 .dw L_MENU_UNK
 
 .INCLUDE "menu_unk.gen.asm"
 
+L8B9FEA:
 .dw L_INGAME_MENU
 .dw L_EMPTY_MENU
 .dw L_CONFIRM_QUIT
@@ -2454,6 +2503,7 @@ L8B9AF8:
 
 .INCLUDE "menu_ingame.gen.asm"
 
+L8BA9BC:
 .dw L_EMPTY_TWO
 .dw L_INVENTORY
 .dw L_CONVOY_INVENTORY
@@ -2463,6 +2513,7 @@ L8B9AF8:
 
 .INCLUDE "menu_inventory.gen.asm"
 
+L8BAAE6:
 .dw L_ACTION_TALK
 .dw L_ACTION_ATTACK
 .dw L_ACTION_INFORMATION
@@ -2490,6 +2541,7 @@ L8B9AF8:
 
 .INCLUDE "menu_actions.gen.asm"
 
+L8BACC6:
 .dw L_ITEM_EQUIP
 .dw L_ITEM_USE
 .dw L_ITEM_TRADE
@@ -2499,6 +2551,7 @@ L8B9AF8:
 
 .INCLUDE "menu_items.gen.asm"
 
+L8BAD32:
 .dw L_UNIT_LVL_HP
 .dw L_UNIT_STATS_1
 .dw L_UNIT_STATS_2
@@ -2518,6 +2571,7 @@ L8B9AF8:
 
 .INCLUDE "menu_unit_profile.gen.asm"
 
+L8BAE94:
 .dw L_CONVOY_ERROR_TOP
 .dw L_CONVOY_ERROR_BOTTOM
 .dw L_CONVOY_ERROR_RIGHT
@@ -2534,6 +2588,7 @@ L8B9AF8:
 
 .INCLUDE "menu_convoy_errors.gen.asm"
 
+L8BB46A:
 .dw L_UNIT_MSG_1
 .dw L_UNIT_MSG_2
 .dw L_UNIT_MSG_3
@@ -2542,6 +2597,7 @@ L8B9AF8:
 
 .INCLUDE "units_msg.gen.asm"
 
+L8BB522:
 .dw L_UNIT_UNK_RECEIVED
 .dw L_UNIT_UNK_SEND_TO_CONVOY
 .dw L_UNIT_UNK_WANT_TO_SAVE
@@ -2570,6 +2626,7 @@ L8B9AF8:
 
 .INCLUDE "menu_unit_unk.gen.asm"
 
+; TODO
 .dw L_SMALL_MENU_MONEY
 .dw L_SMALL_MENU_BUY_SELL
 .dw L_SMALL_MENU_YES_NO
@@ -2578,6 +2635,7 @@ L8B9AF8:
 
 .INCLUDE "small_menus.gen.asm"
 
+; TODO
 .dw L_SETTINGS_ENTRIES
 .dw L_SETTINGS_ANIMATIONS
 .dw L_SETTINGS_SOUND
@@ -2587,11 +2645,13 @@ L8B9AF8:
 
 .INCLUDE "menu_settings.gen.asm"
 
+L8BC010:
 .dw L_BATTLE_ANIMATIONS_1
 .dw L_BATTLE_ANIMATIONS_2
 
 .INCLUDE "menu_battle_animations.gen.asm"
 
+L8BC0B8:
 .dw L_MENU_EMPTY_1
 .dw L_MENU_EMPTY_2
 .dw L_MENU_EMPTY_3
@@ -2601,10 +2661,12 @@ L8B9AF8:
 
 .INCLUDE "empty_menus.gen.asm"
 
+L8BC4BC:
 .dw L_RECEIVE_DEPOSIT_THROW_AWAY
 
 .INCLUDE "receive_deposit_throw_away.gen.asm"
 
+; TODO
 .dw L_DEBUG_NOTICE
 .dw L_DEBUG_OPTIONS
 .dw L_DEBUG_OFF
@@ -2614,6 +2676,7 @@ L8B9AF8:
 
 .INCLUDE "debug_strings.gen.asm"
 
+L8BC638:
 .dw L_PREPARATION_IS_THE_BEST
 .dw L_PREPARATION_HEADER
 .dw L_PREPARATION_SELECT_UNIT
@@ -2672,6 +2735,7 @@ CHAPTERS_NAMES:
 
 .INCLUDE "chapters.gen.asm"
 
+L8BD036:
 .dw L_DEBUG_OBJ_REMOVE_BUGS
 .dw L_DEBUG_OBJ_ENEMY_PRESSURE
 .dw L_DEBUG_OBJ_ENEMY_PRESSURE
@@ -2720,12 +2784,14 @@ CHAPTERS_NAMES:
 
 .INCLUDE "debug_objectives.gen.asm"
 
+L8BD0FA:
 .dw L_TEAM_PLAYER
 .dw L_TEAM_ENEMY
 .dw L_TEAM_REINFORCEMENT
 
 .INCLUDE "teams.gen.asm"
 
+L8BD13A:
 .dw L_TEXTBOX_X_USED
 .dw L_TEXTBOX_IS_GONE
 .dw L_TEXTBOX_BUT_NOTHING_HAPPENED
@@ -3070,6 +3136,7 @@ ITEMS_NAMES:
 
 .INCLUDE "items.gen.asm"
 
+L8BE724:
 .dw L_MESSAGE_8BE826
 .dw L_MESSAGE_8BE826
 .dw L_MESSAGE_8BE826
@@ -3202,6 +3269,7 @@ ITEMS_NAMES:
 
 .INCLUDE "messages.gen.asm"
 
+L8BF48E:
 .dw L_TERRAIN_MESSAGE_8BF5D2
 .dw L_TERRAIN_MESSAGE_8BF5EC
 .dw L_TERRAIN_MESSAGE_8BF602

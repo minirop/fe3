@@ -3,6 +3,7 @@
 
 .SECTION "Bank89" FORCE
 
+; TODO
 .db $FF $FF $FF $FF $FF $FF $80 $FF
 .db $BE $FF $80 $FF $BE $FF $80 $FF
 .db $FF $FF $FF $FF $FF $FF $FF $FF

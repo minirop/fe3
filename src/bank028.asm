@@ -3,6 +3,7 @@
 
 .SECTION "Bank28" FORCE
 
+; TODO
 .db $D6 $29 $35 $CE $CC $7B $D9 $27
 .db $FB $25 $FB $14 $17 $F8 $44 $BB
 .db $FF $00 $FF $00 $FF $00 $FF $00

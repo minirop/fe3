@@ -1908,411 +1908,391 @@ CHARACTERS_INITIAL_STATS: ; 8 bytes (stats) + 9 bytes (growth rates)
 
 ; Probably reinforcement parameters?
 ARRAY_889D6D:
-.db $45 $09 $03
-.db $5A $09 $0E $FF $47 $0F $FF $FF
-.db $FF $FF $FF $FF $FF $03 $01 $00
+.db $45 $09 $03 $5A $09 $0E $FF $47
+.db $0F $FF $FF $FF $FF $FF $FF $FF
+.db $03 $01 $00
 
 .db $45 $03 $01 $59 $09 $0E $FF $2D
 .db $0F $FF $FF $FF $FF $FF $FF $FF
 .db $03 $01 $00
 
-.db $45 $03 $03 $36 $09
-.db $0E $FF $2D $0F $FF $FF $FF $FF
-.db $FF $FF $FF $04 $01 $00
+.db $45 $03 $03 $36 $09 $0E $FF $2D
+.db $0F $FF $FF $FF $FF $FF $FF $FF
+.db $04 $01 $00
 
-.db $45 $07
-.db $03 $36 $09 $0E $FF $50 $0F $FF
-.db $FF $FF $FF $FF $FF $FF $04 $01
-.db $00
+.db $45 $07 $03 $36 $09 $0E $FF $50
+.db $0F $FF $FF $FF $FF $FF $FF $FF
+.db $04 $01 $00
 
-.db $45 $0E $01 $36 $09 $0E $FF
-.db $5F $18 $FF $FF $FF $FF $FF $FF
-.db $FF $0E $01 $00
+.db $45 $0E $01 $36 $09 $0E $FF $5F
+.db $18 $FF $FF $FF $FF $FF $FF $FF
+.db $0E $01 $00
 
-.db $45 $09 $05 $5A
-.db $09 $0E $FF $47 $10 $FF $FF $FF
-.db $FF $FF $FF $FF $04 $01 $00
+.db $45 $09 $05 $5A $09 $0E $FF $47
+.db $10 $FF $FF $FF $FF $FF $FF $FF
+.db $04 $01 $00
 
-.db $45
-.db $19 $01 $55 $09 $0E $FF $57 $2E
-.db $FF $FF $FF $FF $FF $FF $FF $1B
-.db $01 $00
+.db $45 $19 $01 $55 $09 $0E $FF $57
+.db $2E $FF $FF $FF $FF $FF $FF $FF
+.db $1B $01 $00
 
-.db $45 $07 $03 $36 $09 $0E
-.db $FF $50 $0F $FF $FF $FF $FF $FF
-.db $FF $FF $04 $01 $00
+.db $45 $07 $03 $36 $09 $0E $FF $50
+.db $0F $FF $FF $FF $FF $FF $FF $FF
+.db $04 $01 $00
 
-.db $45 $03 $03
-.db $36 $09 $0E $FF $2D $0F $FF $FF
-.db $FF $FF $FF $FF $FF $03 $01 $00
+.db $45 $03 $03 $36 $09 $0E $FF $2D
+.db $0F $FF $FF $FF $FF $FF $FF $FF
+.db $03 $01 $00
 
 .db $45 $0E $01 $36 $09 $0E $FF $5F
 .db $1A $FF $FF $FF $FF $FF $FF $FF
 .db $0E $01 $00
 
-.db $45 $03 $03 $36 $09
-.db $0E $FF $2D $0F $FF $FF $FF $FF
-.db $FF $FF $FF $03 $01 $00
+.db $45 $03 $03 $36 $09 $0E $FF $2D
+.db $0F $FF $FF $FF $FF $FF $FF $FF
+.db $03 $01 $00
 
-.db $45 $03
-.db $03 $36 $09 $0E $FF $2D $13 $FF
-.db $FF $FF $FF $FF $FF $FF $03 $01
-.db $00
+.db $45 $03 $03 $36 $09 $0E $FF $2D
+.db $13 $FF $FF $FF $FF $FF $FF $FF
+.db $03 $01 $00
 
-.db $45 $0E $01 $36 $09 $0E $FF
-.db $5F $18 $FF $FF $FF $FF $FF $FF
-.db $FF $0E $01 $00
+.db $45 $0E $01 $36 $09 $0E $FF $5F
+.db $18 $FF $FF $FF $FF $FF $FF $FF
+.db $0E $01 $00
 
-.db $45 $07 $05 $50
-.db $09 $0E $FF $50 $10 $FF $FF $FF
-.db $FF $FF $FF $FF $03 $01 $00
+.db $45 $07 $05 $50 $09 $0E $FF $50
+.db $10 $FF $FF $FF $FF $FF $FF $FF
+.db $03 $01 $00
 
-.db $45
-.db $07 $05 $50 $09 $0E $FF $50 $10
-.db $FF $FF $FF $FF $FF $FF $FF $03
-.db $01 $00
+.db $45 $07 $05 $50 $09 $0E $FF $50
+.db $10 $FF $FF $FF $FF $FF $FF $FF
+.db $03 $01 $00
 
-.db $45 $0D $07 $50 $09 $0E
-.db $FF $38 $1A $FF $FF $FF $FF $FF
-.db $FF $FF $0E $01 $00
+.db $45 $0D $07 $50 $09 $0E $FF $38
+.db $1A $FF $FF $FF $FF $FF $FF $FF
+.db $0E $01 $00
 
-.db $45 $0E $07
-.db $50 $09 $0E $FF $5F $1A $FF $FF
-.db $FF $FF $FF $FF $FF $0E $01 $00
+.db $45 $0E $07 $50 $09 $0E $FF $5F
+.db $1A $FF $FF $FF $FF $FF $FF $FF
+.db $0E $01 $00
 
 .db $45 $0D $0A $36 $09 $0E $FF $38
 .db $1A $FF $FF $FF $FF $FF $FF $FF
 .db $0E $01 $00
 
-.db $45 $07 $0A $36 $09
-.db $0E $FF $50 $10 $FF $FF $FF $FF
-.db $FF $FF $FF $03 $01 $00
+.db $45 $07 $0A $36 $09 $0E $FF $50
+.db $10 $FF $FF $FF $FF $FF $FF $FF
+.db $03 $01 $00
 
-.db $45 $07
-.db $09 $36 $09 $0E $FF $50 $12 $FF
-.db $FF $FF $FF $FF $FF $FF $03 $01
-.db $00
+.db $45 $07 $09 $36 $09 $0E $FF $50
+.db $12 $FF $FF $FF $FF $FF $FF $FF
+.db $03 $01 $00
 
-.db $45 $0D $0A $36 $09 $0E $FF
-.db $38 $1A $FF $FF $FF $FF $FF $FF
-.db $FF $0E $01 $00
+.db $45 $0D $0A $36 $09 $0E $FF $38
+.db $1A $FF $FF $FF $FF $FF $FF $FF
+.db $0E $01 $00
 
-.db $45 $03 $0A $36
-.db $09 $0E $FF $2D $10 $FF $FF $FF
-.db $FF $FF $FF $FF $03 $01 $00
+.db $45 $03 $0A $36 $09 $0E $FF $2D
+.db $10 $FF $FF $FF $FF $FF $FF $FF
+.db $03 $01 $00
 
-.db $45
-.db $0E $03 $36 $09 $0E $FF $5F $1A
-.db $FF $FF $FF $FF $FF $FF $FF $0E
-.db $01 $00
+.db $45 $0E $03 $36 $09 $0E $FF $5F
+.db $1A $FF $FF $FF $FF $FF $FF $FF
+.db $0E $01 $00
 
-.db $45 $03 $0A $36 $09 $0E
-.db $FF $2D $10 $FF $FF $FF $FF $FF
-.db $FF $FF $03 $01 $00
+.db $45 $03 $0A $36 $09 $0E $FF $2D
+.db $10 $FF $FF $FF $FF $FF $FF $FF
+.db $03 $01 $00
 
-.db $45 $03 $0A
-.db $36 $09 $0E $FF $2D $13 $FF $FF
-.db $FF $FF $FF $FF $FF $03 $01 $00
+.db $45 $03 $0A $36 $09 $0E $FF $2D
+.db $13 $FF $FF $FF $FF $FF $FF $FF
+.db $03 $01 $00
 
 .db $45 $0A $01 $57 $09 $0E $FF $2E
 .db $10 $FF $FF $FF $FF $FF $FF $FF
 .db $03 $01 $00
 
-.db $45 $09 $05 $5A $09
-.db $0E $FF $47 $12 $FF $FF $FF $FF
-.db $FF $FF $FF $04 $01 $00
+.db $45 $09 $05 $5A $09 $0E $FF $47
+.db $12 $FF $FF $FF $FF $FF $FF $FF
+.db $04 $01 $00
 
-.db $45 $1A
-.db $03 $59 $09 $0E $FF $59 $31 $FF
-.db $FF $FF $FF $FF $FF $FF $1B $01
-.db $00
+.db $45 $1A $03 $59 $09 $0E $FF $59
+.db $31 $FF $FF $FF $FF $FF $FF $FF
+.db $1B $01 $00
 
-.db $45 $03 $03 $59 $09 $0E $FF
-.db $5D $10 $FF $FF $FF $FF $FF $FF
-.db $FF $03 $01 $00
+.db $45 $03 $03 $59 $09 $0E $FF $5D
+.db $10 $FF $FF $FF $FF $FF $FF $FF
+.db $03 $01 $00
 
-.db $45 $0E $01 $59
-.db $09 $0E $FF $5F $1A $FF $FF $FF
-.db $FF $FF $FF $FF $0E $01 $00
+.db $45 $0E $01 $59 $09 $0E $FF $5F
+.db $1A $FF $FF $FF $FF $FF $FF $FF
+.db $0E $01 $00
 
-.db $45
-.db $1A $01 $5D $09 $0E $FF $59 $2F
-.db $FF $FF $FF $FF $FF $FF $FF $1B
-.db $01 $00
+.db $45 $1A $01 $5D $09 $0E $FF $59
+.db $2F $FF $FF $FF $FF $FF $FF $FF
+.db $1B $01 $00
 
-.db $45 $19 $03 $5D $09 $0E
-.db $FF $57 $2E $FF $FF $FF $FF $FF
-.db $FF $FF $1B $01 $00
+.db $45 $19 $03 $5D $09 $0E $FF $57
+.db $2E $FF $FF $FF $FF $FF $FF $FF
+.db $1B $01 $00
 
-.db $45 $19 $05
-.db $5D $09 $0E $FF $57 $2F $FF $FF
-.db $FF $FF $FF $FF $FF $1B $01 $00
+.db $45 $19 $05 $5D $09 $0E $FF $57
+.db $2F $FF $FF $FF $FF $FF $FF $FF
+.db $1B $01 $00
 
 .db $45 $0F $01 $50 $09 $0E $FF $5B
 .db $4F $FF $FF $FF $FF $FF $FF $FF
 .db $03 $0E $00
 
-.db $45 $0F $01 $50 $09
-.db $0E $FF $5B $4F $FF $FF $FF $FF
-.db $FF $FF $FF $03 $0E $00
+.db $45 $0F $01 $50 $09 $0E $FF $5B
+.db $4F $FF $FF $FF $FF $FF $FF $FF
+.db $03 $0E $00
 
-.db $45 $12
-.db $05 $50 $09 $0E $FF $55 $0C $FF
-.db $FF $FF $FF $FF $FF $FF $0F $01
-.db $00
+.db $45 $12 $05 $50 $09 $0E $FF $55
+.db $0C $FF $FF $FF $FF $FF $FF $FF
+.db $0F $01 $00
 
-.db $45 $0C $01 $50 $09 $0E $FF
-.db $3D $1B $FF $FF $FF $FF $FF $FF
-.db $FF $0E $01 $00
+.db $45 $0C $01 $50 $09 $0E $FF $3D
+.db $1B $FF $FF $FF $FF $FF $FF $FF
+.db $0E $01 $00
 
-.db $45 $09 $0A $50
-.db $09 $0E $FF $47 $12 $FF $FF $FF
-.db $FF $FF $FF $FF $10 $01 $00
+.db $45 $09 $0A $50 $09 $0E $FF $47
+.db $12 $FF $FF $FF $FF $FF $FF $FF
+.db $10 $01 $00
 
-.db $45
-.db $1A $03 $50 $09 $0E $FF $59 $2F
-.db $FF $FF $FF $FF $FF $FF $FF $1B
-.db $01 $00
+.db $45 $1A $03 $50 $09 $0E $FF $59
+.db $2F $FF $FF $FF $FF $FF $FF $FF
+.db $1B $01 $00
 
-.db $45 $2C $01 $8C $09 $0E
-.db $FF $5C $29 $FF $FF $FF $FF $FF
-.db $FF $FF $04 $01 $03
+.db $45 $2C $01 $8C $09 $0E $FF $5C
+.db $29 $FF $FF $FF $FF $FF $FF $FF
+.db $04 $01 $03
 
-.db $45 $1A $0A
-.db $50 $09 $0E $FF $59 $42 $FF $FF
-.db $FF $FF $FF $FF $FF $02 $05 $03
+.db $45 $1A $0A $50 $09 $0E $FF $59
+.db $42 $FF $FF $FF $FF $FF $FF $FF
+.db $02 $05 $03
 
 .db $45 $07 $0A $50 $09 $0E $FF $50
 .db $10 $FF $FF $FF $FF $FF $FF $FF
 .db $03 $01 $03
 
-.db $45 $08 $05 $50 $09
-.db $0E $FF $52 $10 $FF $FF $FF $FF
-.db $FF $FF $FF $03 $01 $03
+.db $45 $08 $05 $50 $09 $0E $FF $52
+.db $10 $FF $FF $FF $FF $FF $FF $FF
+.db $03 $01 $03
 
-.db $45 $12
-.db $05 $50 $09 $0E $FF $55 $04 $FF
-.db $FF $FF $FF $FF $FF $FF $03 $01
-.db $03
+.db $45 $12 $05 $50 $09 $0E $FF $55
+.db $04 $FF $FF $FF $FF $FF $FF $FF
+.db $03 $01 $03
 
-.db $45 $0F $01 $50 $09 $0E $FF
-.db $5B $4F $FF $FF $FF $FF $FF $FF
-.db $FF $03 $0E $00
+.db $45 $0F $01 $50 $09 $0E $FF $5B
+.db $4F $FF $FF $FF $FF $FF $FF $FF
+.db $03 $0E $00
 
-.db $45 $02 $05 $59
-.db $09 $0E $FF $27 $0F $FF $FF $FF
-.db $FF $FF $FF $FF $03 $01 $00
+.db $45 $02 $05 $59 $09 $0E $FF $27
+.db $0F $FF $FF $FF $FF $FF $FF $FF
+.db $03 $01 $00
 
-.db $45
-.db $02 $05 $36 $09 $0E $FF $27 $0F
-.db $FF $FF $FF $FF $FF $FF $FF $03
-.db $01 $00
+.db $45 $02 $05 $36 $09 $0E $FF $27
+.db $0F $FF $FF $FF $FF $FF $FF $FF
+.db $03 $01 $00
 
-.db $45 $1D $01 $7A $0C $11
-.db $FF $0E $1E $FF $FF $FF $FF $FF
-.db $FF $FF $04 $01 $00
+.db $45 $1D $01 $7A $0C $11 $FF $0E
+.db $1E $FF $FF $FF $FF $FF $FF $FF
+.db $04 $01 $00
 
-.db $45 $03 $04
-.db $59 $13 $14 $FF $2D $0F $FF $FF
-.db $FF $FF $FF $FF $FF $04 $01 $00
+.db $45 $03 $04 $59 $13 $14 $FF $2D
+.db $0F $FF $FF $FF $FF $FF $FF $FF
+.db $04 $01 $00
 
 .db $45 $0A $01 $59 $11 $18 $FF $2E
 .db $0F $FF $FF $FF $FF $FF $FF $FF
 .db $04 $01 $00
 
-.db $45 $1E $05 $6D $10
-.db $1C $FF $08 $20 $FF $FF $FF $FF
-.db $FF $FF $FF $04 $01 $00
+.db $45 $1E $05 $6D $10 $1C $FF $08
+.db $20 $FF $FF $FF $FF $FF $FF $FF
+.db $04 $01 $00
 
-.db $45 $0B
-.db $05 $6D $12 $1C $FF $36 $1A $FF
-.db $FF $FF $FF $FF $FF $FF $0E $01
-.db $00
+.db $45 $0B $05 $6D $12 $1C $FF $36
+.db $1A $FF $FF $FF $FF $FF $FF $FF
+.db $0E $01 $00
 
-.db $45 $02 $05 $84 $0E $06 $FF
-.db $27 $10 $FF $FF $FF $FF $FF $FF
-.db $FF $03 $01 $00
+.db $45 $02 $05 $84 $0E $06 $FF $27
+.db $10 $FF $FF $FF $FF $FF $FF $FF
+.db $03 $01 $00
 
-.db $45 $02 $05 $84
-.db $0E $06 $FF $27 $13 $FF $FF $FF
-.db $FF $FF $FF $FF $03 $01 $00
+.db $45 $02 $05 $84 $0E $06 $FF $27
+.db $13 $FF $FF $FF $FF $FF $FF $FF
+.db $03 $01 $00
 
-.db $45
-.db $0D $05 $84 $03 $0F $FF $38 $1A
-.db $FF $FF $FF $FF $FF $FF $FF $0E
-.db $01 $00
+.db $45 $0D $05 $84 $03 $0F $FF $38
+.db $1A $FF $FF $FF $FF $FF $FF $FF
+.db $0E $01 $00
 
-.db $45 $07 $05 $84 $03 $0F
-.db $FF $50 $10 $FF $FF $FF $FF $FF
-.db $FF $FF $04 $01 $00
+.db $45 $07 $05 $84 $03 $0F $FF $50
+.db $10 $FF $FF $FF $FF $FF $FF $FF
+.db $04 $01 $00
 
-.db $45 $13 $05
-.db $74 $0F $1C $FF $35 $01 $FF $FF
-.db $FF $FF $FF $FF $FF $04 $01 $00
+.db $45 $13 $05 $74 $0F $1C $FF $35
+.db $01 $FF $FF $FF $FF $FF $FF $FF
+.db $04 $01 $00
 
 .db $45 $1F $03 $88 $09 $0F $FF $42
 .db $20 $FF $FF $FF $FF $FF $FF $FF
 .db $03 $01 $00
 
-.db $45 $10 $01 $7C $04
-.db $1A $FF $5C $29 $FF $FF $FF $FF
-.db $FF $FF $FF $03 $01 $00
+.db $45 $10 $01 $7C $04 $1A $FF $5C
+.db $29 $FF $FF $FF $FF $FF $FF $FF
+.db $03 $01 $00
 
-.db $45 $1F
-.db $05 $88 $09 $0F $FF $42 $22 $FF
-.db $FF $FF $FF $FF $FF $FF $03 $01
-.db $00
+.db $45 $1F $05 $88 $09 $0F $FF $42
+.db $22 $FF $FF $FF $FF $FF $FF $FF
+.db $03 $01 $00
 
-.db $45 $0E $01 $84 $0E $1E $FF
-.db $5F $1A $FF $FF $FF $FF $FF $FF
-.db $FF $03 $01 $00
+.db $45 $0E $01 $84 $0E $1E $FF $5F
+.db $1A $FF $FF $FF $FF $FF $FF $FF
+.db $03 $01 $00
 
-.db $45 $03 $05 $84
-.db $0C $1D $FF $5D $10 $FF $FF $FF
-.db $FF $FF $FF $FF $03 $01 $00
+.db $45 $03 $05 $84 $0C $1D $FF $5D
+.db $10 $FF $FF $FF $FF $FF $FF $FF
+.db $03 $01 $00
 
-.db $45
-.db $19 $05 $84 $0F $17 $FF $57 $31
-.db $FF $FF $FF $FF $FF $FF $FF $1B
-.db $01 $00
+.db $45 $19 $05 $84 $0F $17 $FF $57
+.db $31 $FF $FF $FF $FF $FF $FF $FF
+.db $1B $01 $00
 
-.db $45 $03 $05 $84 $0C $1D
-.db $FF $5D $13 $FF $FF $FF $FF $FF
-.db $FF $FF $03 $01 $00
-
-.db $45 $13 $07
-.db $7B $1A $15 $FF $35 $00 $FF $FF
-.db $FF $FF $FF $14 $00 $02 $06 $00
+.db $45 $03 $05 $84 $0C $1D $FF $5D
+.db $13 $FF $FF $FF $FF $FF $FF $FF
+.db $03 $01 $00
 
 .db $45 $13 $07 $7B $1A $15 $FF $35
 .db $00 $FF $FF $FF $FF $FF $14 $00
 .db $02 $06 $00
 
-.db $45 $13 $01 $39 $1A
-.db $15 $FF $35 $00 $FF $FF $FF $FF
-.db $FF $FF $FF $02 $06 $00
+.db $45 $13 $07 $7B $1A $15 $FF $35
+.db $00 $FF $FF $FF $FF $FF $14 $00
+.db $02 $06 $00
 
-.db $45 $04
-.db $0A $84 $09 $0A $FF $5D $11 $FF
-.db $FF $FF $FF $FF $FF $FF $04 $01
-.db $00
+.db $45 $13 $01 $39 $1A $15 $FF $35
+.db $00 $FF $FF $FF $FF $FF $FF $FF
+.db $02 $06 $00
 
-.db $45 $04 $0A $84 $08 $0B $FF
-.db $5D $13 $FF $FF $FF $FF $FF $FF
-.db $FF $04 $01 $00
+.db $45 $04 $0A $84 $09 $0A $FF $5D
+.db $11 $FF $FF $FF $FF $FF $FF $FF
+.db $04 $01 $00
 
-.db $45 $04 $0A $84
-.db $07 $0A $FF $5D $12 $FF $FF $FF
-.db $FF $FF $FF $FF $04 $01 $00
+.db $45 $04 $0A $84 $08 $0B $FF $5D
+.db $13 $FF $FF $FF $FF $FF $FF $FF
+.db $04 $01 $00
 
-.db $45
-.db $19 $0A $84 $04 $0C $FF $57 $33
-.db $FF $FF $FF $FF $FF $FF $FF $1B
-.db $01 $00
+.db $45 $04 $0A $84 $07 $0A $FF $5D
+.db $12 $FF $FF $FF $FF $FF $FF $FF
+.db $04 $01 $00
 
-.db $45 $13 $0A $7B $09 $10
-.db $FF $35 $05 $FF $FF $FF $FF $FF
-.db $FF $FF $02 $06 $00
+.db $45 $19 $0A $84 $04 $0C $FF $57
+.db $33 $FF $FF $FF $FF $FF $FF $FF
+.db $1B $01 $00
 
-.db $45 $28 $01
-.db $77 $09 $0E $FF $5C $29 $FF $FF
-.db $FF $FF $FF $FF $FF $04 $01 $00
+.db $45 $13 $0A $7B $09 $10 $FF $35
+.db $05 $FF $FF $FF $FF $FF $FF $FF
+.db $02 $06 $00
+
+.db $45 $28 $01 $77 $09 $0E $FF $5C
+.db $29 $FF $FF $FF $FF $FF $FF $FF
+.db $04 $01 $00
 
 .db $45 $29 $01 $81 $06 $0F $0F $5C
 .db $2B $FF $FF $FF $FF $FF $FF $FF
 .db $04 $01 $00
 
-.db $45 $26 $01 $7D $04
-.db $1A $FF $5C $2A $FF $FF $FF $FF
-.db $FF $FF $FF $03 $01 $00
+.db $45 $26 $01 $7D $04 $1A $FF $5C
+.db $2A $FF $FF $FF $FF $FF $FF $FF
+.db $03 $01 $00
 
-.db $45 $13
-.db $05 $7B $0F $1C $FF $35 $01 $FF
-.db $FF $FF $FF $FF $FF $FF $02 $06
-.db $00
+.db $45 $13 $05 $7B $0F $1C $FF $35
+.db $01 $FF $FF $FF $FF $FF $FF $FF
+.db $02 $06 $00
 
-.db $45 $08 $01 $84 $0D $1A $FF
-.db $52 $11 $FF $FF $FF $FF $FF $FF
-.db $FF $04 $01 $00 $8F $12 $05 $2B
-.db $0F $08 $FF $2B $0A $FF $FF $FF
-.db $0A $FF $FF $FF $03 $01 $03
+.db $45 $08 $01 $84 $0D $1A $FF $52
+.db $11 $FF $FF $FF $FF $FF $FF $FF
+.db $04 $01 $00
 
-.db $45
-.db $12 $01 $84 $0D $1A $FF $55 $02
-.db $FF $FF $FF $FF $FF $FF $FF $04
-.db $01 $00
+.db $8F $12 $05 $2B $0F $08 $FF $2B
+.db $0A $FF $FF $FF $0A $FF $FF $FF
+.db $03 $01 $03
 
-.db $45 $0C $01 $84 $0D $1A
-.db $FF $3D $1B $FF $FF $FF $FF $FF
-.db $FF $FF $04 $01 $00
+.db $45 $12 $01 $84 $0D $1A $FF $55
+.db $02 $FF $FF $FF $FF $FF $FF $FF
+.db $04 $01 $00
 
-.db $45 $12 $0A
-.db $84 $0D $1A $FF $55 $02 $FF $FF
-.db $FF $FF $FF $FF $FF $04 $01 $00
+.db $45 $0C $01 $84 $0D $1A $FF $3D
+.db $1B $FF $FF $FF $FF $FF $FF $FF
+.db $04 $01 $00
+
+.db $45 $12 $0A $84 $0D $1A $FF $55
+.db $02 $FF $FF $FF $FF $FF $FF $FF
+.db $04 $01 $00
 
 .db $45 $0C $0A $84 $0D $1A $FF $3D
 .db $1B $FF $FF $FF $FF $FF $FF $FF
 .db $04 $01 $00
 
-.db $45 $2C $01 $8C $01
-.db $10 $FF $5C $29 $FF $FF $FF $FF
-.db $FF $FF $FF $04 $01 $00
+.db $45 $2C $01 $8C $01 $10 $FF $5C
+.db $29 $FF $FF $FF $FF $FF $FF $FF
+.db $04 $01 $00
 
-.db $45 $1F
-.db $14 $8B $17 $02 $FF $42 $22 $FF
-.db $FF $FF $FF $FF $FF $FF $04 $01
-.db $00
+.db $45 $1F $14 $8B $17 $02 $FF $42
+.db $22 $FF $FF $FF $FF $FF $FF $FF
+.db $04 $01 $00
 
-.db $45 $07 $05 $84 $03 $0F $FF
-.db $50 $13 $FF $FF $FF $FF $FF $FF
-.db $FF $04 $01 $00
+.db $45 $07 $05 $84 $03 $0F $FF $50
+.db $13 $FF $FF $FF $FF $FF $FF $FF
+.db $04 $01 $00
 
-.db $45 $0C $03 $84
-.db $0D $1A $FF $3D $1B $FF $FF $FF
-.db $FF $FF $FF $FF $04 $01 $00
+.db $45 $0C $03 $84 $0D $1A $FF $3D
+.db $1B $FF $FF $FF $FF $FF $FF $FF
+.db $04 $01 $00
 
-.db $45
-.db $0D $03 $36 $01 $0E $FF $38 $18
-.db $FF $FF $FF $FF $FF $FF $FF $0E
-.db $01 $03
+.db $45 $0D $03 $36 $01 $0E $FF $38
+.db $18 $FF $FF $FF $FF $FF $FF $FF
+.db $0E $01 $03
 
-.db $45 $13 $03 $7B $1A $15
-.db $FF $35 $01 $FF $FF $FF $FF $FF
-.db $FF $FF $02 $81 $03
+.db $45 $13 $03 $7B $1A $15 $FF $35
+.db $01 $FF $FF $FF $FF $FF $FF $FF
+.db $02 $81 $03
 
-.db $45 $19 $05
-.db $84 $08 $1B $FF $57 $31 $FF $FF
-.db $FF $FF $FF $FF $FF $1B $01 $03
+.db $45 $19 $05 $84 $08 $1B $FF $57
+.db $31 $FF $FF $FF $FF $FF $FF $FF
+.db $1B $01 $03
 
 .db $45 $07 $01 $84 $0E $06 $FF $50
 .db $10 $FF $FF $FF $FF $FF $FF $FF
 .db $04 $01 $03
 
-.db $45 $10 $01 $7C $04
-.db $1A $FF $5C $29 $FF $FF $FF $4F
-.db $FF $FF $FF $03 $01 $00
+.db $45 $10 $01 $7C $04 $1A $FF $5C
+.db $29 $FF $FF $FF $4F $FF $FF $FF
+.db $03 $01 $00
 
-.db $45 $13
-.db $01 $7B $09 $10 $FF $35 $00 $FF
-.db $FF $FF $7B $FF $FF $FF $03 $03
-.db $00
+.db $45 $13 $01 $7B $09 $10 $FF $35
+.db $00 $FF $FF $FF $7B $FF $FF $FF
+.db $03 $03 $00
 
-.db $45 $0A $0A $57 $11 $18 $FF
-.db $2E $11 $FF $FF $FF $FF $FF $FF
-.db $FF $04 $01 $00
+.db $45 $0A $0A $57 $11 $18 $FF $2E
+.db $11 $FF $FF $FF $FF $FF $FF $FF
+.db $04 $01 $00
 
-.db $45 $19 $0A $8D
-.db $04 $0C $FF $57 $33 $FF $FF $FF
-.db $FF $FF $FF $FF $1B $01 $00
+.db $45 $19 $0A $8D $04 $0C $FF $57
+.db $33 $FF $FF $FF $FF $FF $FF $FF
+.db $1B $01 $00
 
-.db $45
-.db $12 $0A $8D $0D $1A $FF $55 $02
-.db $FF $FF $FF $FF $FF $FF $FF $04
-.db $01 $00
+.db $45 $12 $0A $8D $0D $1A $FF $55
+.db $02 $FF $FF $FF $FF $FF $FF $FF
+.db $04 $01 $00
 
-.db $45 $0C $0A $8D $0D $1A
-.db $FF $3D $1B $FF $FF $FF $FF $FF
-.db $FF $FF $04 $01 $00 $FF
+.db $45 $0C $0A $8D $0D $1A $FF $3D
+.db $1B $FF $FF $FF $FF $FF $FF $FF
+.db $04 $01 $00
+
+.db TERMINATOR
 
 ; Exclusive weapon setting data?
 TABLE_88A48E:

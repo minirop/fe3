@@ -3,6 +3,7 @@
 
 .SECTION "Bank19" FORCE
 
+; TODO
 .db $FF $FF $FF $FF $FE $FF $FE $FF
 .db $FF $FF $FF $FF $FF $FF $FF $FF
 .db $FF $FF $FF $FF $FF $FE $FF $FE
@@ -4571,6 +4572,7 @@ L93D42F:
 .db $29 $29 $29 $29 $29 $29 $29 $29
 .db $29 $29 $29 $29 $29 $29 $29 $49
 
+; TODO
 .db $BF $FE $40
 .db $BF $3E $41
 .db $BF $7E $41
@@ -6516,6 +6518,7 @@ L93E3D1:
 	plp
 	rtl
 
+; TODO
 .db $81 $01 $7F $FE $5F $FE $81 $01 $00
 
 L93E40A:

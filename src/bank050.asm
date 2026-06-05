@@ -3,6 +3,7 @@
 
 .SECTION "Bank50" FORCE
 
+; TODO
 .db $02 $00 $00 $00 $00 $00 $00 $00
 .db $00 $9A $03 $CD $E1 $32 $F0 $10
 .db $EF $12 $9A $0F $12 $0E $24 $0D

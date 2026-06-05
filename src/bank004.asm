@@ -6042,7 +6042,7 @@ L84B8F7:
 	rep #$30
 	asl
 	tax
-	lda $B91A,X
+	lda.w L84B91A,X
 	sta $7F5130
 	lda #bank100(L84B913)
 	sta $01
@@ -8046,7 +8046,7 @@ L84CE9A:
 	lda #$0001
 	sta $146A
 	lda #$0134
-	cmp $DF4D,X
+	cmp.w L84DF4D,X
 	bmi L84CEF1
 	bne L84CEF9
 L84CEF1:
@@ -8059,7 +8059,7 @@ L84CEF9:
 	sta $15B4
 L84CEFF:
 	lda #$0123
-	cmp $DFA3,X
+	cmp.w L84DFA3,X
 	bmi L84CF09
 	bne L84CF11
 L84CF09:
@@ -8358,124 +8358,124 @@ L84D15C:
 	cmp #$FFFF
 	beq L84D1A9
 	lda $1408
-	cmp $DF4D,X
+	cmp.w L84DF4D,X
 	beq L84D187
 	lda $1408
 	clc
 	adc $15B0
 	sta $1408
 	lda $1408
-	cmp $DF4D,X
+	cmp.w L84DF4D,X
 	bmi L84D187
-	lda $DF4D,X
+	lda.w L84DF4D,X
 	sta $1408
 L84D187:
 	lda $140C
-	cmp $DFF9,X
+	cmp.w L84DFF9,X
 	beq L84D1A7
 	lda $140C
 	clc
 	adc $15B0
 	sta $140C
 	lda $140C
-	cmp $DFF9,X
+	cmp.w L84DFF9,X
 	bmi L84D1A7
-	lda $DFF9,X
+	lda.w L84DFF9,X
 	sta $140C
 L84D1A7:
 	bra L84D1ED
 
 L84D1A9:
 	lda $1408
-	cmp $DF4D,X
+	cmp.w L84DF4D,X
 	beq L84D1CB
 	lda $1408
 	sec
 	sbc $15B0
 	sta $1408
 	lda $1408
-	cmp $DF4D,X
+	cmp.w L84DF4D,X
 	bmi L84D1C5
 	bne L84D1CB
 L84D1C5:
-	lda $DF4D,X
+	lda.w L84DF4D,X
 	sta $1408
 L84D1CB:
 	lda $140C
-	cmp $DFF9,X
+	cmp.w L84DFF9,X
 	beq L84D1ED
 	lda $140C
 	sec
 	sbc $15B0
 	sta $140C
 	lda $140C
-	cmp $DFF9,X
+	cmp.w L84DFF9,X
 	bmi L84D1E7
 	bne L84D1ED
 L84D1E7:
-	lda $DFF9,X
+	lda.w L84DFF9,X
 	sta $140C
 L84D1ED:
 	lda $15B2
 	cmp #$FFFF
 	beq L84D237
 	lda $140A
-	cmp $DFA3,X
+	cmp.w L84DFA3,X
 	beq L84D215
 	lda $140A
 	clc
 	adc $15B0
 	sta $140A
 	lda $140A
-	cmp $DFA3,X
+	cmp.w L84DFA3,X
 	bmi L84D215
-	lda $DFA3,X
+	lda.w L84DFA3,X
 	sta $140A
 L84D215:
 	lda $140E
-	cmp $E04F,X
+	cmp.w L84E04F,X
 	beq L84D235
 	lda $140E
 	clc
 	adc $15B0
 	sta $140E
 	lda $140E
-	cmp $E04F,X
+	cmp.w L84E04F,X
 	bmi L84D235
-	lda $E04F,X
+	lda.w L84E04F,X
 	sta $140E
 L84D235:
 	bra L84D27B
 
 L84D237:
 	lda $140A
-	cmp $DFA3,X
+	cmp.w L84DFA3,X
 	beq L84D259
 	lda $140A
 	sec
 	sbc $15B0
 	sta $140A
 	lda $140A
-	cmp $DFA3,X
+	cmp.w L84DFA3,X
 	bmi L84D253
 	bne L84D259
 L84D253:
-	lda $DFA3,X
+	lda.w L84DFA3,X
 	sta $140A
 L84D259:
 	lda $140E
-	cmp $E04F,X
+	cmp.w L84E04F,X
 	beq L84D27B
 	lda $140E
 	sec
 	sbc $15B0
 	sta $140E
 	lda $140E
-	cmp $E04F,X
+	cmp.w L84E04F,X
 	bmi L84D275
 	bne L84D27B
 L84D275:
-	lda $E04F,X
+	lda.w L84E04F,X
 	sta $140E
 L84D27B:
 	plp
@@ -8495,7 +8495,7 @@ L84D27D:
 	and #$00FF
 	asl
 	tax
-	lda $E1FD,X
+	lda.w L84E1FD,X
 	cmp #$FFFF
 	beq L84D2A7
 	lda #$0000
@@ -8508,13 +8508,13 @@ L84D2A7:
 L84D2AD:
 	rep #$30
 	phx
-	lda $DF4D,X
+	lda.w L84DF4D,X
 	sta $1408
-	lda $DFA3,X
+	lda.w L84DFA3,X
 	sta $140A
-	lda $DFF9,X
+	lda.w L84DFF9,X
 	sta $140C
-	lda $E04F,X
+	lda.w L84E04F,X
 	sta $140E
 	lda #$0000
 	sta $1410
@@ -8707,10 +8707,10 @@ L84D427:
 	sta $146A
 L84D43C:
 	lda $1408
-	cmp $E0A5,X
+	cmp.w L84E0A5,X
 	beq L84D4B1
 	sep #$20
-	lda $DEF7,X
+	lda.w L84DEF7,X
 	cmp #$FF
 	beq L84D481
 	rep #$30
@@ -8723,12 +8723,12 @@ L84D43C:
 	adc $15B2
 	sta $140C
 	lda $1408
-	cmp $E0A5,X
+	cmp.w L84E0A5,X
 	bmi L84D4B1
 	beq L84D4B1
-	lda $E0A5,X
+	lda.w L84E0A5,X
 	sta $1408
-	lda $E151,X
+	lda.w L84E151,X
 	sta $140C
 	lda #$0000
 	sta $15B2
@@ -8745,21 +8745,21 @@ L84D481:
 	sbc $15B2
 	sta $140C
 	lda $1408
-	cmp $E0A5,X
+	cmp.w L84E0A5,X
 	bpl L84D4B1
-	lda $E0A5,X
+	lda.w L84E0A5,X
 	sta $1408
-	lda $E151,X
+	lda.w L84E151,X
 	sta $140C
 	lda #$0000
 	sta $15B2
 L84D4B1:
 	rep #$30
 	lda $140A
-	cmp $E0FB,X
+	cmp.w L84E0FB,X
 	beq L84D528
 	sep #$20
-	lda $DEF8,X
+	lda.w (L84DEF7 + 1),X
 	cmp #$FF
 	beq L84D4F8
 	rep #$30
@@ -8772,12 +8772,12 @@ L84D4B1:
 	adc $15B0
 	sta $140E
 	lda $140A
-	cmp $E0FB,X
+	cmp.w L84E0FB,X
 	bmi L84D528
 	beq L84D528
-	lda $E0FB,X
+	lda.w L84E0FB,X
 	sta $140A
-	lda $E1A7,X
+	lda.w L84E1A7,X
 	sta $140E
 	lda #$0000
 	sta $15B0
@@ -8794,11 +8794,11 @@ L84D4F8:
 	sbc $15B0
 	sta $140E
 	lda $140A
-	cmp $E0FB,X
+	cmp.w L84E0FB,X
 	bpl L84D528
-	lda $E0FB,X
+	lda.w L84E0FB,X
 	sta $140A
-	lda $E1A7,X
+	lda.w L84E1A7,X
 	sta $140E
 	lda #$0000
 	sta $15B0
@@ -8850,7 +8850,7 @@ L84D57B:
 	bne L84D577
 L84D584:
 	lda $1408
-	cmp $E0A5,X
+	cmp.w L84E0A5,X
 	bne L84D58E
 	bra L84D591
 
@@ -8859,7 +8859,7 @@ L84D58E:
 
 L84D591:
 	lda $140A
-	cmp $E0FB,X
+	cmp.w L84E0FB,X
 	bne L84D59B
 	bra L84D59E
 
@@ -9011,13 +9011,13 @@ L84D69F:
 	asl
 	tax
 	phx
-	lda $DF4D,X
+	lda.w L84DF4D,X
 	sta $1408
-	lda $DFA3,X
+	lda.w L84DFA3,X
 	sta $140A
-	lda $DFF9,X
+	lda.w L84DFF9,X
 	sta $140C
-	lda $E04F,X
+	lda.w L84E04F,X
 	sta $140E
 	lda #$0000
 	sta $1410
@@ -9240,7 +9240,7 @@ L84D87D:
 	lda $17
 	cmp #$0001
 	bne L84D8A9
-	lda $D9D7,Y
+	lda.w L84D9D7,Y
 	sta $19
 	bmi L84D895
 	lsr $19
@@ -9262,7 +9262,7 @@ L84D8A9:
 	lda $17
 	cmp #$0002
 	bne L84D8D3
-	lda $D9D7,Y
+	lda.w L84D9D7,Y
 	sta $19
 	bmi L84D8BD
 	lsr $19
@@ -9286,7 +9286,7 @@ L84D8D3:
 	lda $17
 	cmp #$0003
 	bne L84D905
-	lda $D9D7,Y
+	lda.w L84D9D7,Y
 	sta $19
 	bmi L84D8EB
 	lsr $19
@@ -9311,7 +9311,7 @@ L84D8EB:
 	bra L84D90A
 
 L84D905:
-	lda $D9D7,Y
+	lda.w L84D9D7,Y
 	sta $19
 L84D90A:
 	lda $19
@@ -9335,7 +9335,7 @@ L84D926:
 	lda $17
 	cmp #$01
 	bne L84D93C
-	lda $DB3F,Y
+	lda.w L84DB3F,Y
 	sta $19
 	lsr $19
 	lda #$0F
@@ -9348,7 +9348,7 @@ L84D93C:
 	lda $17
 	cmp #$02
 	bne L84D954
-	lda $DB3F,Y
+	lda.w L84DB3F,Y
 	sta $19
 	lsr $19
 	lsr $19
@@ -9362,7 +9362,7 @@ L84D954:
 	lda $17
 	cmp #$03
 	bne L84D970
-	lda $DB3F,Y
+	lda.w L84DB3F,Y
 	sta $19
 	lsr $19
 	lsr $19
@@ -9375,7 +9375,7 @@ L84D954:
 	bra L84D975
 
 L84D970:
-	lda $DB3F,Y
+	lda.w L84DB3F,Y
 	sta $19
 L84D975:
 	lda $19
@@ -9427,6 +9427,7 @@ L84D9D2:
 	plp
 	rts
 
+L84D9D7:
 .db $00 $00 $03 $00 $06 $00 $0A $00
 .db $0D $00 $11 $00 $14 $00 $17 $00
 .db $1A $00 $1D $00 $20 $00 $22 $00
@@ -9472,6 +9473,8 @@ L84D9D2:
 .db $DB $FF $DE $FF $E0 $FF $E3 $FF
 .db $E6 $FF $E9 $FF $EC $FF $EF $FF
 .db $F3 $FF $F6 $FF $FA $FF $FD $FF
+
+L84DB3F:
 .db $0F $0F $0E $0D $0C $0B $0A $09
 .db $08 $08 $08 $08 $09 $0A $0B $0C
 .db $0D $0E $0F $0F $0F $0F $0E $0D
@@ -9886,7 +9889,7 @@ L84DE3E:
 	and #$00FF
 	asl
 	tax
-	lda $DEA1,X
+	lda.w L84DEA1,X
 	sta $0876
 L84DE58:
 	plp
@@ -9926,6 +9929,7 @@ L84DE78:
 	plp
 	rts
 
+L84DEA1:
 .db $00 $00 $1C $80 $1C $80 $1C $80
 .db $1C $80 $1C $80 $1C $80 $1C $80
 .db $1C $80 $1C $80 $1C $80 $1C $80
@@ -9936,7 +9940,10 @@ L84DE78:
 .db $31 $80 $33 $80 $33 $80 $33 $80
 .db $33 $80 $33 $80 $33 $80 $35 $80
 .db $35 $80 $35 $80 $35 $80 $35 $80
-.db $35 $80 $36 $80 $36 $80 $00 $00
+.db $35 $80 $36 $80 $36 $80
+
+L84DEF7:
+.db $00 $00
 .db $00 $FF $FF $00 $FF $00 $FF $FF
 .db $FF $FF $00 $00 $00 $00 $FF $00
 .db $FF $FF $FF $FF $FF $FF $FF $FF
@@ -9947,7 +9954,10 @@ L84DE78:
 .db $00 $00 $00 $FF $FF $FF $00 $FF
 .db $00 $FF $FF $FF $FF $00 $FF $FF
 .db $00 $00 $00 $FF $00 $00 $FF $FF
-.db $FF $00 $FF $FF $00 $00 $F0 $00
+.db $FF $00 $FF $FF
+
+L84DF4D:
+.db $00 $00 $F0 $00
 .db $EA $01 $90 $01 $68 $01 $38 $01
 .db $36 $01 $66 $01 $E0 $01 $98 $01
 .db $82 $01 $80 $01 $20 $01 $FC $00
@@ -9958,7 +9968,10 @@ L84DE78:
 .db $F4 $00 $F4 $00 $D6 $00 $8A $01
 .db $B8 $01 $B8 $01 $F0 $00 $EF $00
 .db $20 $01 $54 $01 $82 $01 $7E $01
-.db $0E $01 $00 $00 $31 $01 $27 $01
+.db $0E $01
+
+L84DFA3:
+.db $00 $00 $31 $01 $27 $01
 .db $2B $01 $2B $01 $03 $01 $F5 $00
 .db $49 $01 $71 $01 $A3 $01 $87 $01
 .db $7D $01 $4D $01 $0D $01 $35 $01
@@ -9969,6 +9982,8 @@ L84DE78:
 .db $0D $01 $C9 $00 $A5 $00 $6B $00
 .db $6D $00 $35 $01 $2D $01 $4D $01
 .db $41 $01 $85 $01 $7B $01 $A9 $01
+
+L84DFF9:
 .db $00 $00 $74 $00 $6E $01 $14 $01
 .db $EC $00 $BC $00 $BA $00 $EA $00
 .db $64 $01 $1C $01 $06 $01 $04 $01
@@ -9979,7 +9994,10 @@ L84DE78:
 .db $38 $00 $48 $00 $78 $00 $78 $00
 .db $5A $00 $0E $01 $3E $01 $3E $01
 .db $76 $00 $74 $00 $A4 $00 $D8 $00
-.db $06 $01 $02 $01 $92 $00 $00 $00
+.db $06 $01 $02 $01 $92 $00
+
+L84E04F:
+.db $00 $00
 .db $C2 $00 $BC $00 $BE $00 $BE $00
 .db $96 $00 $88 $00 $DE $00 $06 $01
 .db $36 $01 $1A $01 $12 $01 $E0 $00
@@ -9990,7 +10008,10 @@ L84DE78:
 .db $92 $00 $A6 $00 $A2 $00 $5E $00
 .db $38 $00 $02 $00 $02 $00 $C8 $00
 .db $C0 $00 $E0 $00 $D4 $00 $18 $01
-.db $08 $01 $36 $01 $00 $00 $08 $02
+.db $08 $01 $36 $01
+
+L84E0A5:
+.db $00 $00 $08 $02
 .db $B6 $01 $74 $01 $44 $01 $36 $01
 .db $66 $01 $C8 $01 $A8 $01 $8A $01
 .db $80 $01 $28 $01 $02 $01 $F2 $00
@@ -10001,7 +10022,10 @@ L84DE78:
 .db $F4 $00 $D4 $00 $8A $01 $BA $01
 .db $B6 $01 $F2 $00 $EE $00 $28 $01
 .db $54 $01 $8A $01 $7E $01 $0E $01
-.db $F8 $00 $00 $00 $23 $01 $31 $01
+.db $F8 $00
+
+L84E0FB:
+.db $00 $00 $23 $01 $31 $01
 .db $2F $01 $F7 $00 $F5 $00 $49 $01
 .db $91 $01 $9D $01 $87 $01 $7D $01
 .db $43 $01 $13 $01 $29 $01 $2D $01
@@ -10012,6 +10036,8 @@ L84DE78:
 .db $E1 $00 $A5 $00 $79 $00 $65 $00
 .db $29 $01 $2D $01 $43 $01 $41 $01
 .db $87 $01 $7B $01 $A9 $01 $9D $01
+
+L84E151:
 .db $00 $00 $8C $01 $3C $01 $FA $00
 .db $C8 $00 $BA $00 $EC $00 $4C $01
 .db $2C $01 $10 $01 $04 $01 $AC $00
@@ -10022,7 +10048,10 @@ L84DE78:
 .db $46 $00 $88 $00 $78 $00 $58 $00
 .db $0E $01 $3E $01 $3C $01 $76 $00
 .db $74 $00 $AE $00 $D8 $00 $0E $01
-.db $02 $01 $92 $00 $7C $00 $00 $00
+.db $02 $01 $92 $00 $7C $00
+
+L84E1A7:
+.db $00 $00
 .db $B8 $00 $C6 $00 $C4 $00 $8A $00
 .db $88 $00 $DA $00 $26 $01 $30 $01
 .db $1C $01 $10 $01 $D8 $00 $A8 $00
@@ -10033,7 +10062,10 @@ L84DE78:
 .db $A8 $00 $A2 $00 $72 $00 $38 $00
 .db $0C $00 $FA $FF $B8 $00 $C0 $00
 .db $D6 $00 $D4 $00 $1A $01 $08 $01
-.db $36 $01 $2A $01 $00 $00 $00 $00
+.db $36 $01 $2A $01
+
+L84E1FD:
+.db $00 $00 $00 $00
 .db $00 $00 $00 $00 $00 $00 $FF $FF
 .db $00 $00 $00 $00 $00 $00 $00 $00
 .db $FF $FF $00 $00 $00 $00 $00 $00
@@ -10162,7 +10194,7 @@ L84E34E:
 	tya
 	asl
 	tay
-	lda $E39E,Y
+	lda.w L84E39E,Y
 	bra L84E39C
 
 L84E35E:
@@ -10174,7 +10206,7 @@ L84E35E:
 	sbc $15
 	asl
 	tay
-	lda $E39E,Y
+	lda.w L84E39E,Y
 	bra L84E39C
 
 L84E372:
@@ -10187,7 +10219,7 @@ L84E372:
 	sbc $15
 	asl
 	tay
-	lda $E39E,Y
+	lda.w L84E39E,Y
 	eor #$FFFF
 	ina
 	bra L84E39C
@@ -10199,13 +10231,14 @@ L84E38B:
 	sbc $15
 	asl
 	tay
-	lda $E39E,Y
+	lda.w L84E39E,Y
 	eor #$FFFF
 	ina
 L84E39C:
 	plp
 	rts
 
+L84E39E:
 .db $00 $00 $04 $00 $08 $00 $0D $00
 .db $11 $00 $16 $00 $1A $00 $1F $00
 .db $23 $00 $28 $00 $2C $00 $30 $00
@@ -10238,7 +10271,7 @@ L84E454:
 	tya
 	asl
 	tay
-	lda $E4A4,Y
+	lda.w L84E4A4,Y
 	bra L84E4A2
 
 L84E464:
@@ -10250,7 +10283,7 @@ L84E464:
 	sbc $15
 	asl
 	tay
-	lda $E4A4,Y
+	lda.w L84E4A4,Y
 	eor #$FFFF
 	ina
 	bra L84E4A2
@@ -10265,7 +10298,7 @@ L84E47C:
 	sbc $15
 	asl
 	tay
-	lda $E4A4,Y
+	lda.w L84E4A4,Y
 	eor #$FFFF
 	ina
 	bra L84E4A2
@@ -10277,11 +10310,12 @@ L84E495:
 	sbc $15
 	asl
 	tay
-	lda $E4A4,Y
+	lda.w L84E4A4,Y
 L84E4A2:
 	plp
 	rts
 
+L84E4A4:
 .db $00 $01 $FF $00
 .db $FF $00 $FF $00 $FF $00 $FF $00
 .db $FE $00 $FE $00 $FD $00 $FC $00
@@ -10336,12 +10370,12 @@ L84E587:
 	cmp #$02
 	beq L84E5AD
 	ldx $07DF
-	lda $E5AF,X
+	lda.w L84E5AF,X
 	rep #$30
 	and #$00FF
 	tay
 	sep #$30
-	lda $E5DA,X
+	lda.w L84E5DA,X
 	rep #$30
 	and #$00FF
 	sta $1586
@@ -11333,18 +11367,18 @@ L84EE5B:
 	tax
 	lda #$0000
 	sta $15AC
-	lda $EEA4,X
+	lda.w L84EEA4,X
 	sta $15AE
-	lda $EEA6,X
+	lda.w L84EEA6,X
 	sta $15B0
-	lda $EEA8,X
+	lda.w L84EEA8,X
 	sta $15B2
 	stx $27
 	tya
 	clc
 	adc $27
 	tax
-	lda $EEAA,X
+	lda.w L84EEAA,X
 	sta $15B4
 	pla
 	cmp #$0008
@@ -11362,8 +11396,16 @@ L84EEA2:
 	rts
 
 L84EEA4:
-.db $07 $07 $88 $00
-.db $00 $00 $00 $00 $00 $01 $00 $00
+.db $07 $07
+
+L84EEA6:
+.db $88 $00
+
+L84EEA8:
+.db $00 $00
+
+L84EEAA:
+.db $00 $00 $00 $01 $00 $00
 .db $00 $00 $00 $00 $07 $06 $88 $00
 .db $00 $00 $00 $00 $00 $01 $00 $00
 .db $00 $00 $00 $00 $07 $04 $88 $00
@@ -12769,17 +12811,17 @@ L84F9D3:
 	clc
 	adc $17
 	tax
-	lda $FA17,X
+	lda.w L84FA17,X
 	sta $158D
-	lda $FA19,X
+	lda.w L84FA19,X
 	sta $158F
-	lda $FA1B,X
+	lda.w L84FA1B,X
 	sta $1591
-	lda $FA1D,X
+	lda.w L84FA1D,X
 	sta $1593
-	lda $FA1F,X
+	lda.w L84FA1F,X
 	sta $1595
-	lda $FA21,X
+	lda.w L84FA21,X
 	sta $1597
 	lda #$0000
 	sta $158B
@@ -12790,9 +12832,23 @@ L84F9D3:
 	plp
 	rts
 
-.db $01
-.db $00 $02 $00 $03 $00 $04 $00 $05
-.db $00 $00 $00 $06 $00 $07 $00 $08
+L84FA17:
+.db $01 $00
+
+L84FA19:
+.db $02 $00
+
+L84FA1B:
+.db $03 $00
+
+L84FA1D:
+.db $04 $00
+
+L84FA1F:
+.db $05 $00
+
+L84FA21:
+.db $00 $00 $06 $00 $07 $00 $08
 .db $00 $09 $00 $00 $00 $00 $00 $01
 .db $00 $0A $00 $00 $00 $00 $00 $00
 .db $00 $00 $00 $0B $00 $00 $00 $00
