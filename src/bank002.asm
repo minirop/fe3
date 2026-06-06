@@ -453,9 +453,9 @@ L8283A8:
 	sta $0C80
 	lda.l ActiveUnit.NameID
 	and #$00FF
-	cmp #$001D
+	cmp #NAME_MARIA
 	beq L8283CB
-	cmp #$0032
+	cmp #NAME_ELICE
 	bne L8283D1
 L8283CB:
 	lda #$0014
@@ -491,9 +491,9 @@ L828404:
 	jsl L83D912
 	lda.l ActiveUnit.NameID
 	and #$00FF
-	cmp #$001D
+	cmp #NAME_MARIA
 	beq L82841C
-	cmp #$0032
+	cmp #NAME_ELICE
 	bne L82841F
 L82841C:
 	brl L828439
@@ -1571,9 +1571,9 @@ L828CE2:
 	jsr L82970F
 	sep #$20
 	lda.l ActiveUnit.ClassID
-	cmp #$0F
+	cmp #CLASS_MANAKETE_MALE
 	beq L828D0B
-	cmp #$1C
+	cmp #CLASS_MANAKETE_FEMALE
 	beq L828D0B
 	lda #$01
 	sta.l ActiveUnit.TransformTimer
@@ -1780,9 +1780,9 @@ L828EC9:
 	sta $0C80
 	lda.l ActiveUnit.NameID
 	and #$00FF
-	cmp #$001D
+	cmp #NAME_MARIA
 	beq L828EEC
-	cmp #$0032
+	cmp #NAME_ELICE
 	bne L828EF2
 L828EEC:
 	lda #$0014
@@ -1819,9 +1819,9 @@ L828F28:
 	jsl L83D912
 	lda.l ActiveUnit.NameID
 	and #$00FF
-	cmp #$001D
+	cmp #NAME_MARIA
 	beq L828F40
-	cmp #$0032
+	cmp #NAME_ELICE
 	bne L828F43
 L828F40:
 	brl L828FBB
@@ -6818,7 +6818,7 @@ L82BD08:
 	beq L82BD9A
 	lda.l ActiveUnit.ClassID
 	and #$00FF
-	cmp #$0016
+	cmp #CLASS_SISTER
 	bcc L82BD43
 	cmp #$001C
 	bcs L82BD3E

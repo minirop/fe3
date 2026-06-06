@@ -8995,7 +8995,7 @@ L81CC0B:
 	jsl L81D35F
 	jsl L81D4EE
 	lda.l ActiveUnit.NameID
-	cmp #$00
+	cmp #NAME_MARTH
 	bne L81CC48
 	lda #$05
 	sta $0C1B
@@ -9063,7 +9063,7 @@ L81CCA3:
 	lda #$01
 	sta $0C07
 	lda.l ActiveUnit.NameID
-	cmp #$00
+	cmp #NAME_MARTH
 	bne L81CCC3
 	lda $07F4
 	bit #$04
@@ -9094,7 +9094,7 @@ L81CCD9:
 	lda #$81
 	sta $5C
 	lda.l ActiveUnit.ClassID
-	cmp #$16
+	cmp #CLASS_SISTER
 	beq L81CCF4
 	lda #$00
 	bra L81CCF6
@@ -9147,7 +9147,7 @@ L81CD45:
 	lda #$81
 	sta $5C
 	lda.l ActiveUnit.ClassID
-	cmp #$16
+	cmp #CLASS_SISTER
 	beq L81CD60
 	lda #$00
 	bra L81CD62
@@ -9167,7 +9167,7 @@ L81CD62:
 	stx $52
 	lda.l ActiveUnit.ClassID
 	and #$00FF
-	cmp #$0016
+	cmp #CLASS_SISTER
 	beq L81CD9F
 	ldx #$06E0
 	ldy #$000F
@@ -9193,7 +9193,7 @@ L81CDAB:
 	jsl L8087EA
 	lda.l ActiveUnit.ClassID
 	and #$00FF
-	cmp #$0016
+	cmp #CLASS_SISTER
 	beq L81CDC7
 	lda #$0000
 	jsl L81D1B6
@@ -9215,7 +9215,7 @@ L81CDDA:
 	jsl L8087EA
 	lda.l ActiveUnit.ClassID
 	and #$00FF
-	cmp #$0016
+	cmp #CLASS_SISTER
 	beq L81CE00
 	lda #$0001
 	ldx #$7F00

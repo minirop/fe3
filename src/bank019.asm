@@ -3153,7 +3153,7 @@ L93C8D0:
 	cmp #$28
 	bne L93C902
 	lda.l ActiveUnit.ClassID
-	cmp #$14
+	cmp #CLASS_FREELANCER
 	beq L93C902
 	lda $7F5BB7
 	sta.l ActiveUnit.PortraitID
@@ -3364,7 +3364,7 @@ L93CAC6:
 	php
 	sep #$20
 	lda.l ActiveUnit.ClassID
-	cmp #$2B
+	cmp #CLASS_DIVINE_DRAGON
 	bne L93CAEC
 	xba
 	lda #$09
@@ -3380,7 +3380,7 @@ L93CAC6:
 	sta.l ActiveUnit.MaxHP
 L93CAEC:
 	lda.l ActiveUnit.NameID
-	cmp #$4F
+	cmp #NAME_MEDEUS
 	bne L93CAFA
 	lda #$34
 	sta.l ActiveUnit.MaxHP
@@ -5066,7 +5066,7 @@ L93D8A3:
 	sep #$20
 	ldx #$0000
 L93D8B2:
-	lda $E9A1,X ; ???
+	lda.w L83E9A1,X ; should have been .l ???
 	cmp #$FF
 	beq L93D8E0
 	cmp.l ActiveUnit.ClassID
@@ -5187,15 +5187,15 @@ L93D951:
 L93D9BD:
 	php
 	sep #$20
-	cmp #$0E
+	cmp #CLASS_HORSEMAN
 	beq L93D9FA
-	cmp #$03
+	cmp #CLASS_CAVALIER
 	beq L93D9D7
-	cmp #$04
+	cmp #CLASS_PALADIN
 	beq L93D9D7
-	cmp #$09
+	cmp #CLASS_PEGASUS_KNIGHT
 	beq L93D9D7
-	cmp #$0A
+	cmp #CLASS_DRACOKNIGHT
 	beq L93D9D7
 	plp
 	sec
@@ -5216,16 +5216,16 @@ L93D9DB:
 
 L93D9F0:
 	plx
-	lda #$05
+	lda #CLASS_DISMOUNTED_KNIGHT_MALE
 	bra L93D9FC
 
 L93D9F5:
 	plx
-	lda #$06
+	lda #CLASS_DISMOUNTED_KNIGHT_FEMALE
 	bra L93D9FC
 
 L93D9FA:
-	lda #$0B
+	lda #CLASS_HUNTER
 L93D9FC:
 	plp
 	clc
@@ -5293,7 +5293,7 @@ L93DA90:
 	plx
 	lda.l ActiveUnit.NameID
 	and #$00FF
-	cmp #$0028
+	cmp #NAME_XANE
 	bne L93DAA2
 	lda #$0000
 	bra L93DABC

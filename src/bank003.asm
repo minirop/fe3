@@ -3151,7 +3151,7 @@ L839DE4:
 	lda $08ed
 	jsl L83D912
 	lda.l ActiveUnit.ClassID
-	cmp #$13
+	cmp #CLASS_THIEF
 	beq L839E12
 	lda.l ActiveUnit.Luck
 	sta $15
@@ -4926,11 +4926,11 @@ L83ACF5:
 	ply
 	lda.l ActiveUnit.NameID
 	and #$00FF
-	cmp #$0028
+	cmp #NAME_XANE
 	bne L83AD1F
 	lda.l ActiveUnit.ClassID
 	and #$00FF
-	cmp #$0014
+	cmp #CLASS_FREELANCER
 	beq L83AD1F
 	sep #$20
 	lda #$00
@@ -5075,22 +5075,22 @@ L83AE52:
 	cpx #$0004
 	bne L83AE52
 	lda.l ActiveUnit.ClassID
-	cmp #$10
+	cmp #CLASS_FIRE_DRAGON
 	beq L83AE78
-	cmp #$2B
+	cmp #CLASS_DIVINE_DRAGON
 	beq L83AE78
-	cmp #$2C
+	cmp #CLASS_DEMON_DRAGON
 	beq L83AE78
-	cmp #$26
+	cmp #CLASS_ICE_DRAGON
 	beq L83AE78
-	cmp #$28
+	cmp #CLASS_FLYING_DRAGON
 	bne L83AE7D
 L83AE78:
 	jsr L83AF0A
 	bra L83AE88
 L83AE7D:
 	lda.l ActiveUnit.NameID
-	cmp #$28
+	cmp #NAME_XANE
 	bne L83AE88
 	jsr L83AF18
 L83AE88:
@@ -5560,11 +5560,11 @@ L83B245:
 	jsl L83D912
 	lda.l ActiveUnit.NameID
 	and #$00FF
-	cmp #$002F
+	cmp #NAME_PALLA
 	beq L83B273
-	cmp #$001C
+	cmp #NAME_CATRIA
 	beq L83B273
-	cmp #$002A
+	cmp #NAME_EST
 	bne L83B275
 L83B273:
 	inc $15
@@ -9527,9 +9527,9 @@ L83D243:
 	php
 	sep #$20
 	lda.l ActiveUnit.ClassID
-	cmp #$0F
+	cmp #CLASS_MANAKETE_MALE
 	beq L83D252
-	cmp #$1C
+	cmp #CLASS_MANAKETE_FEMALE
 	bne L83D269
 L83D252:
 	lda.l ActiveUnit.MaxHP
@@ -9691,7 +9691,7 @@ L83D3A3:
 	jsl L83D912
 	lda.l ActiveUnit.NameID
 	and #$00FF
-	cmp #$0011
+	cmp #NAME_MERRIC
 	bne L83D3DF
 	jsr L83D4D8
 	jsl L93D9FF
@@ -9709,12 +9709,12 @@ L83D3DF:
 	sep #$20
 	stz $1B
 	lda.l ActiveUnit.ClassID
-	cmp #$0B
+	cmp #CLASS_HUNTER
 	beq L83D405
 	lda.l ActiveUnit.MountedClassID
-	cmp #$03
+	cmp #CLASS_CAVALIER
 	beq L83D3F7
-	cmp #$09
+	cmp #CLASS_PEGASUS_KNIGHT
 	bne L83D409
 L83D3F7:
 	pha
@@ -9735,7 +9735,7 @@ L83D409:
 	beq L83D494
 	lda.l ActiveUnit.ClassID
 	sta.l ActiveUnit.MountedClassID
-	cmp #$0E
+	cmp #CLASS_HORSEMAN
 	bne L83D47B
 	rep #$20
 	and #$00FF
@@ -10120,11 +10120,11 @@ L83D764:
 L83D784:
 	lda.l ActiveUnit.NameID
 	and #$00FF
-	cmp #$0001
+	cmp #NAME_CAEDA
 	beq L83D7A3
-	cmp #$0030
+	cmp #NAME_TIKI
 	beq L83D7B3
-	cmp #$006E
+	cmp #NAME_MARISHA
 	beq L83D7BB
 L83D79A:
 	rts
@@ -11610,7 +11610,7 @@ L83E270:
 	jsl L83D912
 	lda.l ActiveUnit.NameID
 	and #$00FF
-	cmp #$0000
+	cmp #NAME_MARTH
 	beq L83E2B2
 	ldx #$0000
 	ldy #$0004
@@ -11913,15 +11913,15 @@ L83E4D3:
 	jsl L83D912
 	lda.l ActiveUnit.ClassID
 	and #$00FF
-	cmp #$0010
+	cmp #CLASS_FIRE_DRAGON
 	beq L83E50C
-	cmp #$002B
+	cmp #CLASS_DIVINE_DRAGON
 	beq L83E50C
-	cmp #$002C
+	cmp #CLASS_DEMON_DRAGON
 	beq L83E50C
-	cmp #$0026
+	cmp #CLASS_ICE_DRAGON
 	beq L83E50C
-	cmp #$0028
+	cmp #CLASS_FLYING_DRAGON
 	beq L83E50C
 	lda #bank100(L8C9179)
 	sta $04
@@ -12043,7 +12043,7 @@ L83E5DF:
 	jsl L83D912
 	lda.l ActiveUnit.NameID
 	and #$00FF
-	cmp #$0028
+	cmp #NAME_XANE
 	beq L83E622
 	ldx #$0003
 L83E5FA:
@@ -12072,7 +12072,7 @@ L83E623:
 	jsl L83D912
 	lda.l ActiveUnit.NameID
 	and #$00ff
-	cmp #$0028
+	cmp #NAME_XANE
 	beq L83E642
 	lda $090d
 	bne L83E642
@@ -12160,7 +12160,7 @@ L83E6E9:
 	jsl L83D912
 	lda.l ActiveUnit.ClassID
 	and #$00ff
-	cmp #$0013
+	cmp #CLASS_THIEF
 	beq L83E6FE
 	sec
 	rts
@@ -12241,7 +12241,7 @@ L83E773:
 	jsl L83D912
 	lda.l ActiveUnit.NameID
 	and.w #$00ff
-	cmp.w #$0028
+	cmp.w #NAME_XANE
 	beq L83E792
 	lda $090d
 	bne L83E792
@@ -12332,7 +12332,7 @@ L83E83E:
 	jsl L83D912
 	lda.l ActiveUnit.NameID
 	and #$00ff
-	cmp #$0028
+	cmp #NAME_XANE
 	beq L83E879
 	lda $090d
 	bne L83E879
@@ -12342,7 +12342,7 @@ L83E83E:
 	jsl L83D912
 	lda.l ActiveUnit.ClassID
 	and #$00ff
-	cmp #$0000
+	cmp #CLASS_LORD
 	bne L83E879
 	ldx #$0003
 	lda $07f4
@@ -12436,7 +12436,7 @@ L83E928:
 	jsl L83D912
 	lda.l ActiveUnit.NameID
 	and #$ff
-	cmp #$28
+	cmp #NAME_XANE
 	beq L83E99E
 	lda.l ActiveUnit.MountedClassID
 	cmp #$ff
@@ -12483,14 +12483,14 @@ L83E99E:
 	rts
 
 L83E9A1:
-.db $05 $06 $0B $FF
+.db CLASS_DISMOUNTED_KNIGHT_MALE CLASS_DISMOUNTED_KNIGHT_FEMALE CLASS_HUNTER TERMINATOR
 
 L83E9A5:
 	lda $08ed
 	jsl L83D912
 	lda.l ActiveUnit.NameID
 	and #$00ff
-	cmp #$0028
+	cmp #NAME_XANE
 	beq L83EA18
 	sep #$20
 	ldx #$0000
@@ -12553,7 +12553,7 @@ L83EA26:
 	jsl L83D912
 	lda.l ActiveUnit.ClassID
 	and #$00ff
-	cmp #$0014
+	cmp #CLASS_FREELANCER
 	bne L83EA8F
 	ldx #$0000
 	ldy #$0004
@@ -12570,9 +12570,9 @@ L83EA50:
 	jsl L83D912
 	lda.l ActiveUnit.NameID
 	and #$00ff
-	cmp #$0018
+	cmp #NAME_BANTU
 	beq L83EA6F
-	cmp #$0030
+	cmp #NAME_TIKI
 	bne L83EA7A
 L83EA6F:
 	pla
@@ -12603,11 +12603,11 @@ L83EA90:
 	jsl L83D912
 	lda.l ActiveUnit.NameID
 	and #$00ff
-	cmp #$0028
+	cmp #NAME_XANE
 	beq L83EAFE
 	lda.l ActiveUnit.ClassID
 	and #$00ff
-	cmp #$0015
+	cmp #CLASS_DANCER
 	bne L83EAFE
 	ldx #$0000
 	ldy #$0004
@@ -13329,7 +13329,7 @@ L83EFA0:
 L83EFB6:
 	lda.l ActiveUnit.NameID
 	and #$00ff
-	cmp #$0028
+	cmp #NAME_XANE
 	beq L83EFC4
 	clc
 	rts
@@ -13341,17 +13341,17 @@ L83EFC4:
 L83EFC6:
 	lda.l ActiveUnit.NameID
 	and #$00ff
-	cmp #$0028
+	cmp #NAME_XANE
 	beq L83EFED
 	lda.l ActiveUnit.ClassID
 	and #$00ff
-	cmp #$0003
+	cmp #CLASS_CAVALIER
 	beq L83EFFB
-	cmp #$0007
+	cmp #CLASS_ARMOR_KNIGHT
 	beq L83EFFB
-	cmp #$0006
+	cmp #CLASS_DISMOUNTED_KNIGHT_FEMALE
 	beq L83EFEF
-	cmp #$0005
+	cmp #CLASS_DISMOUNTED_KNIGHT_MALE
 	beq L83EFEF
 L83EFED:
 	sec
@@ -13369,15 +13369,15 @@ L83EFFB:
 L83EFFD:
 	lda.l ActiveUnit.NameID
 	and #$00ff
-	cmp #$0028
+	cmp #NAME_XANE
 	beq L83F01F
 	lda.l ActiveUnit.ClassID
 	and #$00ff
-	cmp #$0009
+	cmp #CLASS_PEGASUS_KNIGHT
 	beq L83F02D
-	cmp #$0006
+	cmp #CLASS_DISMOUNTED_KNIGHT_FEMALE
 	beq L83F021
-	cmp #$0005
+	cmp #CLASS_DISMOUNTED_KNIGHT_MALE
 	beq L83F021
 L83F01F:
 	sec
@@ -13395,11 +13395,11 @@ L83F02D:
 L83F02F:
 	lda.l ActiveUnit.NameID
 	and #$00ff
-	cmp #$0028
+	cmp #NAME_XANE
 	beq L83F053
 	lda.l ActiveUnit.ClassID
 	and #$00ff
-	cmp #$000b
+	cmp #CLASS_HUNTER
 	bne L83F055
 	lda.l ActiveUnit.MountedClassID
 	and #$00ff
@@ -13570,7 +13570,7 @@ L83F1AC:
 	tax
 	lda.l ActiveUnit.NameID
 	and #$00ff
-	cmp #$0030
+	cmp #NAME_TIKI
 	beq L83F1D4
 	txa
 	ldx #$0000
@@ -14758,7 +14758,7 @@ L83FAF7:
 	rep #$30
 	lda.l ActiveUnit.ClassID
 	and #$00FF
-	cmp #$0014
+	cmp #CLASS_FREELANCER
 	beq L83FB43
 	lda.l ActiveUnit.Terrain
 	sta $15
@@ -14798,7 +14798,7 @@ L83FB4F:
 	lda #$FF
 	sta.l ActiveUnit.TransformTimer
 	lda.l ActiveUnit.NameID
-	cmp #$30
+	cmp #NAME_TIKI
 	beq L83FB68
 	lda #$0F
 	bra L83FB6A
@@ -14818,7 +14818,7 @@ L83FB6A:
 L83FB86:
 	sta.l ActiveUnit.HP
 	lda.l ActiveUnit.ClassID
-	cmp #$1C
+	cmp #CLASS_MANAKETE_FEMALE
 	bne L83FB9E
 	sta $0A9B
 	lda $0AC8
