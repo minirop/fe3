@@ -196,7 +196,13 @@ L8383C3:
 .db $31 $00 $FF $01
 .db $00 $00 $01 $FF $00 $00 $FE $01
 .db $FF $02 $00 $01 $01 $00 $02 $FF
-.db $01 $FE $00 $FF $FF $09 $00 $19
+.db $01 $FE $00 $FF $FF
+
+L8383DC:
+.db $09 $00
+
+L8383DE:
+.db $19
 .db $00 $08 $00 $18 $00 $07 $00 $17
 .db $00 $07 $00 $17 $00 $FF $FF $FF
 .db $FF $0B $00 $1B $00
@@ -938,7 +944,7 @@ L838AF1:
 L838B26:
 	lda $0860,X
 	clc
-	adc $8BBA,X
+	adc.w L838BBA,X
 	cmp $07D1,X
 	bcc L838B36
 L838B32:
@@ -1015,7 +1021,7 @@ L838BA9:
 	rep #$20
 	brl L838D93
 
-; TODO
+L838BBA:
 .db $0F $0D
 
 L838BBC:
@@ -2734,7 +2740,7 @@ L839A2D:
 	asl
 	tay
 	ldx $19
-	lda $83de,Y
+	lda.w L8383DE,Y
 	sta $7f2800,X
 	pha
 	phx
@@ -2744,7 +2750,7 @@ L839A2D:
 	sbc #$0040
 	tax
 	pla
-	lda $83dc,Y
+	lda.w L8383DC,Y
 	sta $7f2800,X
 	jsl L83FF49
 	jsl L83F1D9
@@ -7119,7 +7125,7 @@ L83BD67:
 	adc $17
 	tax
 	sep #$20
-	lda $BDB7,X
+	lda.w L83BDB7,X
 	clc
 	adc $15
 	sta $15
@@ -7147,7 +7153,7 @@ L83BDB4:
 	plp
 	rts
 
-; TODO
+L83BDB7:
 .db $0A $00 $0A $0A $00 $00 $00 $0A
 .db $00 $0A $00 $00 $0A $0A $0A $00
 .db $00 $00 $00 $00 $28 $00 $00 $00
@@ -7286,7 +7292,7 @@ L83BEFB:
 L83BF06:
 	asl
 	tax
-	lda $BF5F,X
+	lda.w L83BF5F,X
 	sta $03
 	sep #$20
 	lda #$8B
@@ -7341,7 +7347,7 @@ L83BF5D:
 	plp
 	rtl
 
-; TODO
+L83BF5F:
 .db $85 $8F $FA $90
 
 L83BF63:
@@ -7669,7 +7675,7 @@ L83C180:
 	adc $07D3
 	rep #$20
 	tax
-	lda $C27C,X
+	lda.w L83C27C,X
 	and #$00FF
 	beq L83C1DA
 	dea
@@ -7753,7 +7759,7 @@ L83C26D:
 	rep #$20
 	rts
 
-; TODO
+L83C27C:
 .db $FF $00 $FF $00 $FF $00 $FF $00
 .db $FF $03 $FF $03 $FF $03 $FF $00
 .db $FF $03 $FF $03 $01 $01 $FF $03
@@ -10091,9 +10097,9 @@ L83D750:
 	asl
 	tax
 	sep #$20
-	lda $D7C3,X
+	lda.w L83D7C3,X
 	sta.l ActiveUnit.YPosition
-	lda $D7C4,X
+	lda.w (L83D7C3 + 1),X
 	sta.l ActiveUnit.XPosition
 	plp
 	rts
@@ -10148,9 +10154,13 @@ L83D7BB:
 	jsl L87AA49
 	rts
 
-; TODO
-.db $0F $16 $0D $09 $0D $05 $10 $04
-.db $13 $05 $13 $09
+L83D7C3:
+.db $0F $16
+.db $0D $09
+.db $0D $05
+.db $10 $04
+.db $13 $05
+.db $13 $09
 
 L83D7CF:
 	php
@@ -11707,7 +11717,7 @@ L83E34D:
 	pha
 	asl
 	tax
-	lda $F7BB,X
+	lda.w L83F7BB,X
 	ora $23
 	sta $23
 	lda #$0001
@@ -11737,7 +11747,7 @@ L83E388:
 	pha
 	asl
 	tax
-	lda $F7BB,X
+	lda.w L83F7BB,X
 	ora $23
 	sta $23
 	lda #$0002
@@ -11787,7 +11797,7 @@ L83E3E5:
 	pha
 	asl
 	tax
-	lda $F7BB,X
+	lda.w L83F7BB,X
 	ora $23
 	sta $23
 	lda #$0008
@@ -11891,7 +11901,7 @@ L83E4AE:
 	txa
 	asl
 	tax
-	lda $F7BB,X
+	lda.w L83F7BB,X
 	ora $0907
 	sta $0907
 	lda #$0000
@@ -12485,7 +12495,7 @@ L83E9A5:
 	sep #$20
 	ldx #$0000
 L83E9BD:
-	lda $ea1b,X
+	lda.w L83EA1B,X
 	cmp #$ff
 	beq L83EA18
 	cmp.l ActiveUnit.ClassID
@@ -12496,7 +12506,7 @@ L83E9BD:
 L83E9CE:
 	inx
 	rep #$20
-	lda $ea1b,X
+	lda.w L83EA1B,X
 	and #$00ff
 	pha
 	lda $08ee
@@ -12528,9 +12538,13 @@ L83EA18:
 	rep #$20
 	rts
 
-; TODO
-.db $03 $05 $04 $05 $09 $06 $0A $06
-.db $0E $0B $FF
+L83EA1B:
+.db $03 $05
+.db $04 $05
+.db $09 $06
+.db $0A $06
+.db $0E $0B
+.db $FF
 
 L83EA26:
 	lda $090b
@@ -12566,7 +12580,7 @@ L83EA6F:
 	asl
 	tax
 	lda $1f
-	eor $f7bb,X
+	eor.w L83F7BB,X
 	sta $1f
 L83EA7A:
 	plx
@@ -12618,7 +12632,7 @@ L83EACB:
 	txa
 	asl
 	tax
-	lda $f7bb,X
+	lda.w L83F7BB,X
 	ora $090b
 	sta $090b
 	lda #$000f
@@ -12892,7 +12906,7 @@ L83ECAC:
 	asl
 	tax
 	lda $1f
-	eor $f7bb,X
+	eor.w L83F7BB,X
 	sta $1f
 L83ECCF:
 	rep #$20
@@ -13407,12 +13421,12 @@ L83F057:
 	asl
 	tay
 	sep #$20
-	lda $83c4,Y
+	lda.w (L8383C3 + 1),Y
 	clc
 	adc.l ActiveUnit.YPosition
 	sta $085e
 	iny
-	lda $83c4,Y
+	lda.w (L8383C3 + 1),Y
 	clc
 	adc.l ActiveUnit.XPosition
 	sta $085f
@@ -13545,7 +13559,6 @@ L83F142:
 	plp
 	rtl
 
-; $02 $7e3000 $800800 $4800???
 L83F19A:
 DMA_DATA $7E3000 $0800 $80 $4800
 L83F1A3:
@@ -14076,7 +14089,7 @@ L83F5ED:
 	pha
 	asl
 	tax
-	lda $f634,X
+	lda.w L83F634,X
 	clc
 	adc $19
 	sta $19
@@ -14303,7 +14316,7 @@ L83F75F:
 	bcs L83F79B
 L83F793:
 	tyx
-	lda $f7bb,X
+	lda.w L83F7BB,X
 	ora $1d
 	sta $1d
 L83F79B:
@@ -14437,7 +14450,7 @@ L83F882:
 	asl
 	tax
 	lda $0903
-	bit $f7bb,X
+	bit.w L83F7BB,X
 	beq L83F878
 	sta $1f
 	lda $0902
@@ -15016,7 +15029,7 @@ L83FD1C:
 	ldx #$0000
 	sep #$20
 L83FD24:
-	lda $FDD1,X
+	lda.w L83FDD1,X
 	cmp #$FF
 L83FD29:
 	beq L83FD29
@@ -15030,7 +15043,7 @@ L83FD35:
 	jsl L93D9FF
 	plx
 	inx
-	lda $FDD1,X
+	lda.w L83FDD1,X
 	sta.l ActiveUnit.ClassID
 	jsl L93D951
 	lda #$01
@@ -15083,7 +15096,7 @@ L83FD97:
 	plp
 	rts
 
-; TODO
+L83FDD1:
 .db $03 $04 $07 $08 $09 $0A $19 $1A
 .db $17 $18 $16 $18 $0D $0C $0B $0E
 .db $11 $12 $FF

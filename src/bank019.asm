@@ -4475,11 +4475,11 @@ L93D382:
 	sta $4330
 	lda #$07
 	sta $4331
-	lda #$0F
+	lda #lobyte(L93D50F)
 	sta $4332
-	lda #$D5
+	lda #hibyte(L93D50F)
 	sta $4333
-	lda #$93
+	lda #bankbyte(L93D50F)
 	sta $4334
 	lda #$7E
 	sta $4337
@@ -4572,7 +4572,7 @@ L93D42F:
 .db $29 $29 $29 $29 $29 $29 $29 $29
 .db $29 $29 $29 $29 $29 $29 $29 $49
 
-; TODO
+L93D50F:
 .db $BF $FE $40
 .db $BF $3E $41
 .db $BF $7E $41
@@ -5066,7 +5066,7 @@ L93D8A3:
 	sep #$20
 	ldx #$0000
 L93D8B2:
-	lda $E9A1,X
+	lda $E9A1,X ; ???
 	cmp #$FF
 	beq L93D8E0
 	cmp.l ActiveUnit.ClassID
@@ -6449,11 +6449,11 @@ L93E35E:
 	sta $4330
 	lda #$27
 	sta $4331
-	lda #$01
+	lda #lobyte(L93E401)
 	sta $4332
-	lda #$E4
+	lda #hibyte(L93E401)
 	sta $4333
-	lda #$93
+	lda #bankbyte(L93E401)
 	sta $4334
 	rep #$30
 	ldx #$0100
@@ -6518,7 +6518,7 @@ L93E3D1:
 	plp
 	rtl
 
-; TODO
+L93E401:
 .db $81 $01 $7F $FE $5F $FE $81 $01 $00
 
 L93E40A:

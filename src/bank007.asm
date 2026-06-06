@@ -13,7 +13,7 @@ L878000:
 
 L87800C:
 .INDEX 16
-	lda #$87
+	lda #bankbyte(L878030)
 	pha
 	pea $802D
 	rep #$20
@@ -59,8 +59,8 @@ L87804B:
 	stx $91
 	stx $93
 	inc $0FA9
-	lda #$87
-	ldx #$806C
+	lda #bankbyte(L87806C)
+	ldx #L87806C
 	jsl L87816D
 	rts
 
@@ -1175,7 +1175,7 @@ L8789A4:
 	and #$00FF
 	asl
 	tax
-	lda $90ED,X
+	lda.w L8790ED,X
 	ldx #$0000
 	jsl L81D10F
 	jsl L8087EA
@@ -1191,7 +1191,7 @@ L8789A4:
 	and #$00FF
 	asl
 	tax
-	lda $90ED,X
+	lda.w L8790ED,X
 	sep #$20
 	sta $0F2D
 	ldx #$0202
@@ -9550,7 +9550,7 @@ L87D667:
 L87D66D:
 	rtl
 
-; TODO
+L87D66E:
 .db $D4 $D5 $D3 $D5 $08 $8B $4B $AB
 
 L87D676:

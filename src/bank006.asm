@@ -1837,8 +1837,11 @@ L868D58:
 .db $90 $E8 $1C
 .db $90 $E8 $1C
 .db $01 $B0 $1C
+
+L868D73:
 .db $00
 
+L868D74:
 .db $90 $08 $1D
 .db $90 $08 $1D
 .db $90 $08 $1D
@@ -1850,6 +1853,7 @@ L868D58:
 .db $01 $B0 $1C
 .db $00
 
+L868D90:
 .db $09 $08 $1D
 .db $10 $0A $1D
 .db $08 $0E $1D
@@ -1865,11 +1869,13 @@ L868D58:
 .db $01 $B0 $1C
 .db $00
 
+L868DB8:
 .db $C0 $80 $1B
 .db $C0 $C0 $1B
 .db $01 $B0 $1C
 .db $00
 
+L868DC2:
 .db $64 $B0 $1C
 .db $1C $B0 $1C
 .db $88 $28 $1D
@@ -1885,34 +1891,40 @@ L868D58:
 .db $88 $28 $1D
 .db $00
 
+L868DEA:
 .db $40 $B2 $1C
 .db $4A $B2 $1C
 .db $01 $52 $10
 .db $00
 
+L868DF4:
 .db $40 $B2 $1C
 .db $4A $B2 $1C
 .db $A0 $42 $1D
 .db $08 $62 $1D
 .db $00
 
+L868E01:
 .db $40 $B2 $1C
 .db $7A $B2 $1C
 .db $98 $42 $1D
 .db $00
 
+L868E0B:
 .db $19 $B0 $1C
 .db $A0 $42 $1D
 .db $08 $62 $1D
 .db $01 $B0 $1C
 .db $00
 
+L868E18:
 .db $C0 $00 $1B
 .db $B8 $40 $1B
 .db $00 $08 $8F
 .db $01 $0F $00
 .db $00
 
+L868E25:
 .db $01 $04 $00
 .db $00
 
@@ -2666,9 +2678,9 @@ L86940E:
 	rts
 
 L869411:
-	ldx #$8600
+	ldx #bank100(L869420)
 	stx $04
-	ldx #$9420
+	ldx #L869420
 	stx $03
 	jsl L809633
 	rtl
@@ -3393,11 +3405,11 @@ L8699F8:
 	sta $4330
 	lda #$2C
 	sta $4331
-	lda #$18
+	lda #lobyte(L868E18)
 	sta $4332
-	lda #$8E
+	lda #hibyte(L868E18)
 	sta $4333
-	lda #$86
+	lda #bankbyte(L868E18)
 	sta $4334
 	lda #$00
 	sta $4337
@@ -10087,11 +10099,11 @@ L86CC99:
 	sta $4360
 	lda #$14
 	sta $4361
-	lda #$73
+	lda #lobyte(L868D73)
 	sta $4362
-	lda #$8D
+	lda #hibyte(L868D73)
 	sta $4363
-	lda #$86
+	lda #bankbyte(L868D73)
 	sta $4364
 	rep #$20
 	sep #$20
@@ -10099,11 +10111,11 @@ L86CC99:
 	sta $4370
 	lda #$14
 	sta $4371
-	lda #$73
+	lda #lobyte(L868D73)
 	sta $4372
-	lda #$8D
+	lda #hibyte(L868D73)
 	sta $4373
-	lda #$86
+	lda #bankbyte(L868D73)
 	sta $4374
 	rep #$20
 	rts
@@ -11143,7 +11155,7 @@ L86D42F:
 L86D43E:
 DMA_DATA $7E40FE $0100 $80 $7000
 
-; TODO
+L86E548:
 .db $A5
 .db $A0 $29 $F9 $00 $85 $A0 $A9 $07
 .db $00 $85 $85 $A9 $00 $38 $A2 $00
@@ -12585,9 +12597,9 @@ L86DEC8:
 	sta $4360
 	lda #$0D
 	sta $4361
-	lda #<L868D58
+	lda #lobyte(L868D58)
 	sta $4362
-	lda #>L868D58
+	lda #hibyte(L868D58)
 	sta $4363
 	lda #bankbyte(L868D58)
 	sta $4364
@@ -12599,11 +12611,11 @@ L86DEC8:
 	sta $4370
 	lda #$0F
 	sta $4371
-	lda #$90
+	lda #lobyte(L868D90)
 	sta $4372
-	lda #$8D
+	lda #hibyte(L868D90)
 	sta $4373
-	lda #$86
+	lda #bankbyte(L868D90)
 	sta $4374
 	lda #$00
 	sta $4377
@@ -12691,11 +12703,11 @@ L86DF9E:
 	sta $4360
 	lda #$0D
 	sta $4361
-	lda #$58
+	lda #lobyte(L868D58)
 	sta $4362
-	lda #$8D
+	lda #hibyte(L868D58)
 	sta $4363
-	lda #$86
+	lda #bankbyte(L868D58)
 	sta $4364
 	lda #$00
 	sta $4367
@@ -12705,11 +12717,11 @@ L86DF9E:
 	sta $4370
 	lda #$0F
 	sta $4371
-	lda #$74
+	lda #lobyte(L868D74)
 	sta $4372
-	lda #$8D
+	lda #hibyte(L868D74)
 	sta $4373
-	lda #$86
+	lda #bankbyte(L868D74)
 	sta $4374
 	lda #$00
 	sta $4377
@@ -12830,11 +12842,11 @@ L86E0AD:
 	sta $4320
 	lda #$10
 	sta $4321
-	lda #$F4
+	lda #lobyte(L868DF4)
 	sta $4322
-	lda #$8D
+	lda #hibyte(L868DF4)
 	sta $4323
-	lda #$86
+	lda #bankbyte(L868DF4)
 	sta $4324
 	lda #$00
 	sta $4327
@@ -12847,11 +12859,11 @@ L86E0FE:
 	sta $4320
 	lda #$10
 	sta $4321
-	lda #$EA
+	lda #lobyte(L868DEA)
 	sta $4322
-	lda #$8D
+	lda #hibyte(L868DEA)
 	sta $4323
-	lda #$86
+	lda #bankbyte(L868DEA)
 	sta $4324
 	lda #$00
 	sta $4327
@@ -12864,11 +12876,11 @@ L86E122:
 	sta $4320
 	lda #$12
 	sta $4321
-	lda #$0B
+	lda #lobyte(L868E0B)
 	sta $4322
-	lda #$8E
+	lda #hibyte(L868E0B)
 	sta $4323
-	lda #$86
+	lda #bankbyte(L868E0B)
 	sta $4324
 	lda #$00
 	sta $4327
@@ -12881,11 +12893,11 @@ L86E146:
 	sta $4320
 	lda #$10
 	sta $4321
-	lda #$01
+	lda #lobyte(L868E01)
 	sta $4322
-	lda #$8E
+	lda #hibyte(L868E01)
 	sta $4323
-	lda #$86
+	lda #bankbyte(L868E01)
 	sta $4324
 	lda #$00
 	sta $4327
@@ -12896,11 +12908,11 @@ L86E168:
 	sta $4340
 	lda #$32
 	sta $4341
-	lda #$B8
+	lda #lobyte(L868DB8)
 	sta $4342
-	lda #$8D
+	lda #hibyte(L868DB8)
 	sta $4343
-	lda #$86
+	lda #bankbyte(L868DB8)
 	sta $4344
 	lda #$00
 	sta $4347
@@ -12914,11 +12926,11 @@ L86E168:
 	sta $4350
 	lda #$29
 	sta $4351
-	lda #$C2
+	lda #lobyte(L868DC2)
 	sta $4352
-	lda #$8D
+	lda #hibyte(L868DC2)
 	sta $4353
-	lda #$86
+	lda #bankbyte(L868DC2)
 	sta $4354
 	lda #$00
 	sta $4357

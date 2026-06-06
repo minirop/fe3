@@ -6800,7 +6800,7 @@ L82BCF0:
 L82BCF7:
 	ror $28C5
 	dec $FF
-	ldy $BF96,X
+	ldy.w L82BF96,X ; ???
 	php
 	ldy #$0000
 	lda $0D86
@@ -9381,13 +9381,12 @@ L82CF21:
 	rts
 
 L82CF7D:
-	lda #$00
-	ror $E78F,X
-	asl $00
+.ACCU 16
+	lda #$7E00
+	sta.l $0006E7
 	lda $0D1E,X
 	clc
-	adc #$FE
-	rti
+	adc #$40FE
 	sta.l $0006E6
 	rts
 
@@ -9714,18 +9713,16 @@ L82D1AE:
 	rts
 
 L82D1D1:
-	lda #$00
-	ror $E78F,X
-	asl $00
-	lda #$FE
-	rti
+.ACCU 16
+	lda #$7E00
+	sta.l $0006E7
+	lda #$40FE
 	clc
 	adc $17
 	sta.l $0006E6
 	rts
 
 L82D1E3:
-.ACCU 16
 	txa
 	bne L82D1EB
 	lda #$0180
@@ -12677,17 +12674,20 @@ L82E785:
 	rts
 
 L82E787:
+.ACCU 8
 	php
 	phy
 	phx
 	xba
-	bit #$F080
-	tsb $7F29
+	bit #$80
+	beq L82E79B
+	and #$7f
 	phx
 	rep #$20
 	jsl L87A8F4
 	sep #$20
 	plx
+L82E79B:
 	sta $0D12,X
 	sta $15
 	rep #$20

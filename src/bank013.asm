@@ -470,7 +470,7 @@ L8DA000:
 	stx $17
 	asl
 	tax
-	lda $A267,X
+	lda.w L8DA267,X
 	tay
 	lda $0000,Y
 	iny
@@ -497,9 +497,9 @@ L8DA01C:
 	tay
 	and #$000E
 	tax
-	lda $A0C3,Y
+	lda.w L8DA0C3,Y
 	tay
-	lda $A0A3,X
+	lda.w L8DA0A3,X
 	ora $0410,Y
 	sta $0410,Y
 	ply
@@ -515,9 +515,9 @@ L8DA04E:
 	tay
 	and #$000E
 	tax
-	lda $A0C3,Y
+	lda.w L8DA0C3,Y
 	tay
-	lda $A0B3,X
+	lda.w L8DA0B3,X
 	ora $0410,Y
 	sta $0410,Y
 	ply
@@ -552,12 +552,16 @@ L8DA099:
 	plp
 	rtl
 
-; TODO
-.db $02 $00 $08 $00 $20
-.db $00 $80 $00 $00 $02 $00 $08 $00
-.db $20 $00 $80 $01 $00 $04 $00 $10
-.db $00 $40 $00 $00 $01 $00 $04 $00
-.db $10 $00 $40 $00 $00 $00 $00 $00
+L8DA0A3:
+.db $02 $00 $08 $00 $20 $00 $80 $00
+.db $00 $02 $00 $08 $00 $20 $00 $80
+
+L8DA0B3:
+.db $01 $00 $04 $00 $10 $00 $40 $00
+.db $00 $01 $00 $04 $00 $10 $00 $40
+
+L8DA0C3:
+.db $00 $00 $00 $00 $00
 .db $00 $00 $00 $00 $00 $00 $00 $00
 .db $00 $00 $00 $02 $00 $02 $00 $02
 .db $00 $02 $00 $02 $00 $02 $00 $02
@@ -590,9 +594,18 @@ L8DA099:
 .db $00 $1C $00 $1E $00 $1E $00 $1E
 .db $00 $1E $00 $1E $00 $1E $00 $1E
 .db $00 $1E $00 $00 $00 $01 $00 $02
-.db $00 $03 $00 $04 $00 $05 $00 $06
-.db $00 $07 $00 $08 $00 $09 $00 $0A
-.db $00 $0B $00 $0C $00 $0D $00 $0E
+.db $00 $03 $00 $04 $00 $05 $00
+
+L8DA1CF:
+.db $06 $00
+.db $07 $00
+.db $08 $00
+.db $09 $00
+.db $0A $00
+.db $0B $00
+
+L8DA1DB:
+.db $0C $00 $0D $00 $0E
 .db $00 $0F $00 $10 $00 $11 $00 $12
 .db $00 $13 $00 $14 $00 $15 $00 $16
 .db $00 $17 $00 $18 $00 $19 $00 $1A
@@ -618,7 +631,10 @@ L8DA231:
 .db $00 $43 $00 $44 $00 $45 $00 $46
 .db $00 $47 $00 $48 $00 $49 $00 $4A
 .db $00 $4B $00 $4C $00 $4D $00 $4E
-.db $00 $4F $00 $50 $00 $51 $00 $0B
+.db $00 $4F $00 $50 $00 $51 $00
+
+L8DA267:
+.db $0B
 .db $A3 $12 $A3 $19 $A3 $20 $A3 $27
 .db $A3 $2E $A3 $76 $A3 $E1 $A3 $4C
 .db $A4 $B7 $A4 $22 $A5 $8D $A5 $F8
@@ -3028,17 +3044,24 @@ L8DDE2D:
 	plp
 	rts
 
-; TODO
+L8DDE2F:
 .db $18
 .db $90 $7F $01 $31 $01 $01 $90 $00
+
+L8DDE38:
 .db $98 $FF $FF $FF $FF $FD $FB $F9
 .db $F7 $F5 $F3 $F1 $EF $ED $EB $EA
 .db $E9 $E8 $E7 $E6 $E5 $E4 $E3 $E2
 .db $E1 $7F $E0 $31 $E0 $98 $E1 $E2
 .db $E3 $E4 $E5 $E6 $E7 $E8 $E9 $EA
 .db $EB $ED $EF $F1 $F3 $F5 $F7 $F9
-.db $FB $FD $FF $FF $FF $FF $00 $00
-.db $00 $00 $00 $80 $FF $00 $00 $08
+.db $FB $FD $FF $FF $FF $FF $00
+
+L8DDE6F:
+.db $00 $00 $00 $00
+
+L8DDE73:
+.db $80 $FF $00 $00 $08
 .db $00 $05 $00 $00 $00 $0E $00 $08
 .db $00 $00 $00 $10 $00 $01 $00 $00
 .db $00 $12 $00 $00 $00 $00 $00 $16
@@ -3087,35 +3110,59 @@ L8DDE2D:
 .db $00 $00 $06 $08 $00 $05 $00 $00
 .db $00 $38 $00 $1C $00 $00 $02 $C0
 .db $00 $1C $00 $00 $04 $D0 $00 $FF
-.db $FF $FF $FF $25 $E0 $8D $2E $E0
-.db $8D $37 $E0 $8D $40 $E0 $8D $49
-.db $E0 $8D $52 $E0 $8D $5B $E0 $8D
-.db $64 $E0 $8D $6D $E0 $8D $76 $E0
-.db $8D $7F $E0 $8D $88 $E0 $8D $91
-.db $E0 $8D $9A $E0 $8D $02 $00 $A0
-.db $7F $00 $08 $80 $00 $00 $02 $00
-.db $A8 $7F $00 $08 $80 $00 $04 $02
-.db $00 $B0 $7F $00 $08 $80 $00 $08
-.db $02 $00 $B8 $7F $00 $08 $80 $00
-.db $0C $02 $00 $C0 $7F $00 $08 $80
-.db $00 $00 $02 $00 $C8 $7F $00 $08
-.db $80 $00 $04 $02 $00 $D0 $7F $00
-.db $08 $80 $00 $08 $02 $00 $D8 $7F
-.db $00 $08 $80 $00 $0C $02 $00 $E0
-.db $7F $00 $08 $80 $00 $00 $02 $00
-.db $E8 $7F $00 $08 $80 $00 $04 $02
-.db $FE $40 $7E $00 $08 $80 $00 $50
-.db $02 $FE $48 $7E $00 $08 $80 $00
-.db $54 $02 $FE $50 $7E $00 $08 $80
-.db $00 $58 $02 $FE $58 $7E $00 $08
-.db $80 $00 $5C
+.db $FF $FF $FF
+
+L8DDFFB:
+.dl L8DE025
+.dl L8DE02E
+.dl L8DE037
+.dl L8DE040
+.dl L8DE049
+.dl L8DE052
+.dl L8DE05B
+.dl L8DE064
+.dl L8DE06D
+.dl L8DE076
+.dl L8DE07F
+.dl L8DE088
+.dl L8DE091
+.dl L8DE09A
+
+L8DE025:
+DMA_DATA $7FA000 $0800 $80 $0000
+L8DE02E:
+DMA_DATA $7FA800 $0800 $80 $0400
+L8DE037:
+DMA_DATA $7FB000 $0800 $80 $0800
+L8DE040:
+DMA_DATA $7FB800 $0800 $80 $0C00
+L8DE049:
+DMA_DATA $7FC000 $0800 $80 $0000
+L8DE052:
+DMA_DATA $7FC800 $0800 $80 $0400
+L8DE05B:
+DMA_DATA $7FD000 $0800 $80 $0800
+L8DE064:
+DMA_DATA $7FD800 $0800 $80 $0C00
+L8DE06D:
+DMA_DATA $7FE000 $0800 $80 $0000
+L8DE076:
+DMA_DATA $7FE800 $0800 $80 $0400
+L8DE07F:
+DMA_DATA $7E40FE $0800 $80 $5000
+L8DE088:
+DMA_DATA $7E48FE $0800 $80 $5400
+L8DE091:
+DMA_DATA $7E50FE $0800 $80 $5800
+L8DE09A:
+DMA_DATA $7E58FE $0800 $80 $5C00
 
 L8DE0A3:
 	php
 	rep #$30
-	lda $DFFD,X
+	lda.w (L8DDFFB + 2),X
 	sta $02
-	lda $DFFB,X
+	lda.w L8DDFFB,X
 	sta $00
 	jsl L808EAD
 	plp
@@ -3130,11 +3177,11 @@ L8DE0B6:
 	sta $4350
 	lda #$31
 	sta $4351
-	lda #$2F
+	lda #lobyte(L8DDE2F)
 	sta $4352
-	lda #$DE
+	lda #hibyte(L8DDE2F)
 	sta $4353
-	lda #$8D
+	lda #bankbyte(L8DDE2F)
 	sta $4354
 	rep #$20
 	sep #$20
@@ -3142,11 +3189,11 @@ L8DE0B6:
 	sta $4360
 	lda #$32
 	sta $4361
-	lda #$38
+	lda #lobyte(L8DDE38)
 	sta $4362
-	lda #$DE
+	lda #hibyte(L8DDE38)
 	sta $4363
-	lda #$8D
+	lda #bankbyte(L8DDE38)
 	sta $4364
 	rep #$20
 	sep #$20
@@ -3186,10 +3233,10 @@ L8DE12E:
 L8DE131:
 	ldx $1200
 	lda $1202
-	cmp $DE6F,X
+	cmp.w L8DDE6F,X
 	bne L8DE176
 	stz $1202
-	lda $DE71,X
+	lda.w (L8DDE6F + 2),X
 	beq L8DE17B
 	cmp #$0001
 	beq L8DE18A
@@ -3204,7 +3251,7 @@ L8DE131:
 	cmp #$FFFF
 	beq L8DE1D3
 	tay
-	lda $DE73,X
+	lda.w L8DDE73,X
 	sta $1200,Y
 	txa
 	clc
@@ -3221,7 +3268,7 @@ L8DE176:
 	rts
 
 L8DE17B:
-	lda $DE73,X
+	lda.w L8DDE73,X
 	sta $89
 	txa
 	clc
@@ -3230,7 +3277,7 @@ L8DE17B:
 	bra L8DE131
 
 L8DE18A:
-	lda $DE73,X
+	lda.w L8DDE73,X
 	sta $8D
 	txa
 	clc
@@ -3240,7 +3287,7 @@ L8DE18A:
 
 L8DE199:
 	sep #$20
-	lda $DE73,X
+	lda.w L8DDE73,X
 	sta $80
 	rep #$20
 	txa
@@ -3251,7 +3298,7 @@ L8DE199:
 
 L8DE1AC:
 	sep #$20
-	lda $DE73,X
+	lda.w L8DDE73,X
 	sta $81
 	rep #$20
 	txa
@@ -3261,7 +3308,7 @@ L8DE1AC:
 	jmp L8DE131
 
 L8DE1C0:
-	lda $DE73,X
+	lda.w L8DDE73,X
 	txy
 	tax
 	tya
@@ -3709,7 +3756,13 @@ L8DE530:
 .db $20 $00 $00 $06 $16 $00 $00 $00
 .db $00 $00 $18 $00 $A0 $00 $00 $00
 .db $0C $00 $20 $00 $00 $F0 $FF $FF
-.db $FF $FF $68 $03 $01 $07 $00 $68
+.db $FF $FF
+
+L8DE5C2:
+.db $68 $03 $01 $07 $00
+
+L8DE5C7:
+.db $68
 .db $0F $02 $00 $02 $01 $02 $02 $02
 .db $03 $02 $04 $02 $05 $02 $06 $02
 .db $07 $02 $08 $02 $09 $02 $0A $02
@@ -3735,11 +3788,11 @@ L8DE608:
 	sta $4370
 	lda #$00
 	sta $4371
-	lda #$C7
+	lda #lobyte(L8DE5C7)
 	sta $4372
-	lda #$E5
+	lda #hibyte(L8DE5C7)
 	sta $4373
-	lda #$8D
+	lda #bankbyte(L8DE5C7)
 	sta $4374
 	rep #$20
 	sep #$20
@@ -3747,11 +3800,11 @@ L8DE608:
 	sta $4360
 	lda #$2C
 	sta $4361
-	lda #$C2
+	lda #lobyte(L8DE5C2)
 	sta $4362
-	lda #$E5
+	lda #hibyte(L8DE5C2)
 	sta $4363
-	lda #$8D
+	lda #bankbyte(L8DE5C2)
 	sta $4364
 	rep #$20
 	sep #$20
@@ -4514,7 +4567,7 @@ L8DED18:
 	and #$00FF
 	asl
 	tax
-	lda $A1DB,X
+	lda.w L8DA1DB,X
 	plx
 	jsl L8DA000
 	ply
@@ -4574,9 +4627,12 @@ L8DED85:
 	plp
 	rts
 
-; TODO
+L8DED88:
 .db $58 $30 $32 $30 $01 $C0 $30 $30
-.db $00 $67 $8B $00 $C7 $2C $12 $01
+.db $00
+
+L8DED91:
+.db $67 $8B $00 $C7 $2C $12 $01
 .db $8B $00 $00
 
 L8DED9B:
@@ -4596,11 +4652,11 @@ L8DEDA7:
 	sta $4370
 	lda #$30
 	sta $4371
-	lda #$88
+	lda #lobyte(L8DED88)
 	sta $4372
-	lda #$ED
+	lda #hibyte(L8DED88)
 	sta $4373
-	lda #$8D
+	lda #bankbyte(L8DED88)
 	sta $4374
 	rep #$20
 	sep #$20
@@ -4608,11 +4664,11 @@ L8DEDA7:
 	sta $4360
 	lda #$0E
 	sta $4361
-	lda #$91
+	lda #lobyte(L8DED91)
 	sta $4362
-	lda #$ED
+	lda #hibyte(L8DED91)
 	sta $4363
-	lda #$8D
+	lda #bankbyte(L8DED91)
 	sta $4364
 	lda #$8D
 	sta $4367
@@ -4868,7 +4924,7 @@ L8DEFF2:
 L8DF00B:
 	php
 	rep #$30
-	lda $A1CF,X
+	lda.w L8DA1CF,X
 	pha
 	lda $12BC
 	sec
