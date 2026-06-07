@@ -41,7 +41,7 @@ DIALOGUE_515:
 .INCBIN "dialogue515.bin"
 DIALOGUE_516:
 .INCBIN "dialogue516.bin"
-; WTF they are?
+; WTF they are? they spell "（ガトー）"
 .db $C2 $7E $64 $B9 $C3
 DIALOGUE_517:
 .INCBIN "dialogue517.bin"
