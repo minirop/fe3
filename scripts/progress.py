@@ -4,9 +4,22 @@ import glob, os
 
 banksize = 0x8000
 
+# allow to ignore banks whose last unknown bytes
+# are not really relevant ATM
+ignored_banks = [0, 1, 18]
+
 counter = 0
 files = []
 for file in glob.glob("../src/bank*.asm"):
+	ignored = False
+	for ib in ignored_banks:
+		if file.endswith(f'bank{ib:03}.asm'):
+			ignored = True
+			break
+
+	if ignored:
+		continue
+
 	with open(file) as f:
 		local_counter = 0
 		for line in f.readlines():
