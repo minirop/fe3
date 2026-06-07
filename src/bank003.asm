@@ -636,34 +636,34 @@ L838848:
 DMA_DATA L94A800 $1000 $80 $7800
 
 L838851:
-	lda #$CA4E
+	lda.w #TABLE_89CA4E
 	sta $00
 	sep #$20
 	lda $07D0
 	jsl L80A89D
-	lda #$89
+	lda #bankbyte(TABLE_89CA4E)
 	sta $02
 	rep #$20
 	inc $00
 	lda [$00]
 	clc
-	adc #$CB00
+	adc.w #bank100(LCB8000)
 	sta $0759
 	dec $00
 	lda [$00]
 	sta $0758
-	lda #$C9EB
+	lda.w #TABLE_89C9EB
 	sta $00
 	sep #$20
 	lda $07D0
 	jsl L80A89D
-	lda #$89
+	lda #bankbyte(TABLE_89C9EB)
 	sta $02
 	rep #$20
 	inc $00
 	lda [$00]
 	clc
-	adc #$CB00
+	adc.w #bank100(LCB8000)
 	sta $04
 	dec $00
 	lda [$00]
@@ -775,9 +775,13 @@ L838952:
 	rtl
 
 L83897A:
-.db $01 $30 $51 $7F $00 $02 $00 $01
-.db $E0 $FF $94 $20 $00 $F0 $01 $60
-.db $D0 $94 $20 $00 $F0
+DMA_DATA $7F5130 $0200 $00
+
+L838981:
+DMA_DATA L94FFE0 $0020 $F0
+
+L838988:
+DMA_DATA L94D060 $0020 $F0
 
 L83898F:
 DMA_DATA L95F840 $0020 $70
@@ -797,7 +801,7 @@ L83899D: ; load_map?
 	inc $00
 	lda [$00]
 	clc
-	adc #$9700
+	adc #bank100(L978000)
 	sta $0756
 	dec $00
 	lda [$00]
@@ -814,13 +818,13 @@ L83899D: ; load_map?
 	inc $00
 	lda [$00]
 	clc
-	adc #$A200
-	sta.l $72
+	adc #bank100(LA28000)
+	sta.l $000072
 	dec $00
 	lda [$00]
-	sta.l $71
+	sta.l $000071
 	lda #$0000
-	sta.l $76
+	sta.l $000076
 	jsl DECOMPRESS_ASSET
 	ldy #$2000
 	ldx #$0000
@@ -832,18 +836,18 @@ L8389FD:
 	inx
 	dey
 	bne L8389FD
-	lda #$C9A3
+	lda.w #CHAPTERS_TILESETS_POINTER_DATA
 	sta $00
 	sep #$20
 	lda $07CF
 	jsl L80A89D
-	lda #$89
+	lda #bankbyte(CHAPTERS_TILESETS_POINTER_DATA)
 	sta $02
 	rep #$20
 	inc $00
 	lda [$00]
 	clc
-	adc #$9D00
+	adc #bank100(L9D8000)
 	sta.l $72
 	dec $00
 	lda [$00]
@@ -851,9 +855,9 @@ L8389FD:
 	lda #$0000
 	sta.l $76
 	jsl DECOMPRESS_ASSET
-	lda #$7E00
+	lda #bank100(DecompressionLocation)
 	sta $0743
-	lda #$40FE
+	lda #DecompressionLocation
 	sta $0742
 	lda #$4000
 	sta $0745

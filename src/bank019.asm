@@ -4580,10 +4580,10 @@ L93D50F:
 .db $00
 
 L93D51C:
-DMA_DATA_3 $7E40FE $1000 $80 $2800
+DMA_DATA_3 DecompressionLocation $1000 $80 $2800
 
 L93D525:
-DMA_DATA $7E40FE $1000 $80 $4800
+DMA_DATA DecompressionLocation $1000 $80 $4800
 
 L93D52E:
 	ldx #$0000
@@ -6801,7 +6801,7 @@ L93E61A:
 	inc $00
 	lda [$00]
 	clc
-	adc #$A400
+	adc.w #bank100(LA48000)
 	sta.l $72
 	dec $00
 	lda [$00]

@@ -4,7 +4,9 @@
 .SECTION "Bank30" FORCE
 
 .INCBIN "0EEBFF.bin" SKIP 5121 ; tileset
+L9EA151:
 .INCBIN "0F2151.bin" ; tileset
+L9ED709:
 .INCBIN "0F5709.bin" READ 10487 ; tileset
 
 .ENDS

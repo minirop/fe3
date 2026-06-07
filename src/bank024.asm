@@ -3,7 +3,7 @@
 
 .SECTION "Bank24" FORCE
 
-; TODO
+L988000:
 .db $FF $B0 $FF $12 $FF $7D $FF $C8
 .db $FF $9C $FF $80 $E1 $5E $F8 $27
 .db $FF $01 $FF $04 $FF $00 $FF $07
@@ -2052,6 +2052,8 @@
 .db $A9 $E9 $D9 $D9 $F3 $F3 $F3 $F7
 .db $E9 $3E $FA $3D $F2 $7D $EF $70
 .db $ED $D2 $D9 $E6 $F3 $8C $F7 $88
+
+L98C000:
 .db $FF $A1 $FF $00 $FF $40 $FF $C1
 .db $FC $27 $FC $67 $F8 $0F $F8 $0C
 .db $FF $00 $FF $00 $FF $00 $FF $00
@@ -4100,4 +4102,5 @@
 .db $FB $8B $FF $9F $7F $7F $FB $FF
 .db $C0 $00 $81 $06 $81 $06 $07 $08
 .db $0F $00 $0F $10 $5F $A0 $FF $00
+
 .ENDS

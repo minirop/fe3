@@ -4,7 +4,9 @@
 .SECTION "Bank32" FORCE
 
 .INCBIN "0FEE34.bin" SKIP 4556 ; tileset map
+LA0A034:
 .INCBIN "102034.bin" ; tileset map
+LA0D461:
 .INCBIN "105461.bin" READ 11167 ; tileset map
 
 .ENDS

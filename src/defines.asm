@@ -215,3 +215,7 @@
 .ENDM
 
 .FUNCTION bank100(addr) (bankbyte(addr) * $100)
+
+.MACRO REMOVE_BANK
+.dl \2 - (\1 * $10000)
+.ENDM

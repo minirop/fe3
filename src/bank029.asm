@@ -3,8 +3,11 @@
 
 .SECTION "Bank29" FORCE
 
+L9D8000:
 .INCBIN "0E8000.bin" ; tileset
+L9DB53E:
 .INCBIN "0EB53E.bin" ; tileset
+L9DEBFF:
 .INCBIN "0EEBFF.bin" READ 5121 ; tileset
 
 .ENDS
