@@ -5030,9 +5030,9 @@ L93D867:
 	php
 	rep #$20
 	stz $19
-	lda #bank100(L8A8007)
+	lda #bank100(CHAPTERS_INFORMATION + 7)
 	sta $01
-	lda #L8A8007
+	lda #(CHAPTERS_INFORMATION + 7)
 	sta $00
 	lda $07CE
 	and #$00FF
