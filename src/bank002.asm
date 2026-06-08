@@ -172,9 +172,9 @@ L828137:
 	and #$00FF
 	tax
 	pla
-	sta $4204
+	sta.w WRDIVL
 	sep #$10
-	stx $4206
+	stx.w WRDIVB
 	nop
 	nop
 	nop
@@ -182,9 +182,9 @@ L828137:
 	nop
 	nop
 	nop
-	lda $4214
+	lda.w RDDIVL
 	rep #$10
-	ldx $4216
+	ldx.w RDMPYL
 	rep #$10
 	sep #$20
 	cmp [$00]
@@ -342,29 +342,29 @@ L8282C4:
 	jsl L83D912
 	lda.l ActiveUnit.Weapon1
 	and #$00FF
-	cmp #$0040
+	cmp #ITEM_HEAL
 	beq L828312
-	cmp #$0041
+	cmp #ITEM_RECOVER
 	beq L828312
-	cmp #$0042
+	cmp #ITEM_PHYSIC
 	beq L828312
-	cmp #$0043
+	cmp #ITEM_MEND
 	beq L828312
-	cmp #$0047
+	cmp #ITEM_FORTIFY
 	beq L828312
-	cmp #$0024
+	cmp #ITEM_THUNDERBOLT
 	beq L828311
-	cmp #$0025
+	cmp #ITEM_QUICK_RAIN
 	beq L828311
-	cmp #$0026
+	cmp #ITEM_STONE_HEDGE
 	beq L828311
-	cmp #$0027
+	cmp #ITEM_FIRE_GUN
 	beq L828311
-	cmp #$0028
+	cmp #ITEM_ELEPHANT
 	beq L828311
-	cmp #$003A
+	cmp #ITEM_METEOR
 	beq L828311
-	cmp #$003B
+	cmp #ITEM_WORM
 	beq L828311
 	jsr L828316
 L828311:
@@ -2278,9 +2278,9 @@ L829344:
 	nop
 	lda.l RDMPYL
 	ldx #$0064
-	sta $4204
+	sta.w WRDIVL
 	sep #$10
-	stx $4206
+	stx.w WRDIVB
 	nop
 	nop
 	nop
@@ -2288,9 +2288,9 @@ L829344:
 	nop
 	nop
 	nop
-	lda $4214
+	lda.w RDDIVL
 	rep #$10
-	ldx $4216
+	ldx.w RDMPYL
 	rep #$10
 	ldy #$0005
 	jsr L82953A
@@ -2328,9 +2328,9 @@ L8293A7:
 	nop
 	lda.l RDMPYL
 	ldx #$0064
-	sta $4204
+	sta.w WRDIVL
 	sep #$10
-	stx $4206
+	stx.w WRDIVB
 	nop
 	nop
 	nop
@@ -2338,9 +2338,9 @@ L8293A7:
 	nop
 	nop
 	nop
-	lda $4214
+	lda.w RDDIVL
 	rep #$10
-	ldx $4216
+	ldx.w RDMPYL
 	rep #$10
 	asl
 	asl
@@ -4518,10 +4518,10 @@ L82AAD8:
 L82AAE5:
 	rep #$30
 	ldy #$0000
-	sta $4204
+	sta.w WRDIVL
 	sep #$20
 	lda #$40
-	sta $4206
+	sta.w WRDIVB
 	nop
 	nop
 	nop
@@ -4530,9 +4530,9 @@ L82AAE5:
 	nop
 	nop
 	rep #$20
-	ldx $4216
+	ldx.w RDMPYL
 	stx $15
-	lda $4214
+	lda.w RDDIVL
 	bit #$0001
 	beq L82AB11
 	lda #$003F
@@ -4546,7 +4546,7 @@ L82AB11:
 	lda.l L82AC73,X
 	asl
 	sta $15
-	lda $4214
+	lda.w RDDIVL
 	and #$0002
 	lsr
 	lsr
@@ -4557,10 +4557,10 @@ L82AB11:
 L82AB28:
 	rep #$30
 	ldy #$0000
-	sta $4204
+	sta.w WRDIVL
 	sep #$20
 	lda #$40
-	sta $4206
+	sta.w WRDIVB
 	nop
 	nop
 	nop
@@ -4569,9 +4569,9 @@ L82AB28:
 	nop
 	nop
 	rep #$20
-	ldx $4216
+	ldx.w RDMPYL
 	stx $15
-	lda $4214
+	lda.w RDDIVL
 	bit #$0001
 	bne L82AB54
 	lda #$0040
@@ -4585,7 +4585,7 @@ L82AB54:
 	lda.l L82AC73,X
 	asl
 	sta $15
-	lda $4214
+	lda.w RDDIVL
 	ina
 	and #$0002
 	lsr
@@ -4623,7 +4623,7 @@ L82AB84:
 L82AB94:
 	bcs L82AB94
 	xba
-	sta $4204
+	sta.w WRDIVL
 	txa
 	and #$7FFF
 	beq L82ABE6
@@ -4631,7 +4631,7 @@ L82AB94:
 L82ABA3:
 	bcs L82ABA3
 	sep #$20
-	sta $4206
+	sta.w WRDIVB
 	nop
 	nop
 	nop
@@ -4640,7 +4640,7 @@ L82ABA3:
 	nop
 	nop
 	rep #$20
-	lda $4214
+	lda.w RDDIVL
 	sta $17
 	ldx #$0000
 L82ABBB:
@@ -8754,9 +8754,9 @@ L82CADC:
 	lda #$001F
 	sec
 	sbc $1D
-	sta $4204
+	sta.w WRDIVL
 	sep #$10
-	stx $4206
+	stx.w WRDIVB
 	nop
 	nop
 	nop
@@ -8764,9 +8764,9 @@ L82CADC:
 	nop
 	nop
 	nop
-	lda $4214
+	lda.w RDDIVL
 	rep #$10
-	ldx $4216
+	ldx.w RDMPYL
 	rep #$10
 	xba
 	sep #$20
@@ -8789,9 +8789,9 @@ L82CB1A:
 	lda #$001F
 	sec
 	sbc $1D
-	sta $4204
+	sta.w WRDIVL
 	sep #$10
-	stx $4206
+	stx.w WRDIVB
 	nop
 	nop
 	nop
@@ -8799,9 +8799,9 @@ L82CB1A:
 	nop
 	nop
 	nop
-	lda $4214
+	lda.w RDDIVL
 	rep #$10
-	ldx $4216
+	ldx.w RDMPYL
 	rep #$10
 	xba
 	sep #$20
@@ -10716,9 +10716,9 @@ L82D91F:
 	xba
 	ldx #$0004
 	rep #$20
-	sta $4204
+	sta.w WRDIVL
 	sep #$10
-	stx $4206
+	stx.w WRDIVB
 	nop
 	nop
 	nop
@@ -10726,9 +10726,9 @@ L82D91F:
 	nop
 	nop
 	nop
-	lda $4214
+	lda.w RDDIVL
 	rep #$10
-	ldx $4216
+	ldx.w RDMPYL
 	sep #$20
 	rep #$10
 	cmp #$00
@@ -10905,9 +10905,9 @@ L82DA7C:
 	xba
 	ldx #$0004
 	rep #$20
-	sta $4204
+	sta.w WRDIVL
 	sep #$10
-	stx $4206
+	stx.w WRDIVB
 	nop
 	nop
 	nop
@@ -10915,9 +10915,9 @@ L82DA7C:
 	nop
 	nop
 	nop
-	lda $4214
+	lda.w RDDIVL
 	rep #$10
-	ldx $4216
+	ldx.w RDMPYL
 	sep #$20
 	rep #$10
 	sta $1D
@@ -11542,16 +11542,16 @@ L82DEBE:
 	asl
 	sta $0D97,X
 	xba
-	sta $4202
+	sta.w WRMPYA
 	lda #$40
-	sta $4203
+	sta.w WRMPYB
 	nop
 	nop
-	lda $4216
+	lda.w RDMPYL
 	clc
 	adc $0D97,X
 	sta $0D97,X
-	lda $4217
+	lda.w RDMPYH
 	sta $0D98,X
 	plp
 	rts

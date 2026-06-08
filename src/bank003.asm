@@ -11262,9 +11262,9 @@ L83DF98:
 	sep #$20
 	rep #$20
 	ldx #$0064
-	sta $4204
+	sta.w WRDIVL
 	sep #$10
-	stx $4206
+	stx.w WRDIVB
 	nop
 	nop
 	nop
@@ -11272,9 +11272,9 @@ L83DF98:
 	nop
 	nop
 	nop
-	lda $4214
+	lda.w RDDIVL
 	rep #$10
-	ldx $4216
+	ldx.w RDMPYL
 	rep #$10
 	pha
 	txa

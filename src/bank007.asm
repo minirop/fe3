@@ -2179,9 +2179,9 @@ L879323:
 	bcs L879354
 	pla
 	ldx #$0002
-	sta $4204
+	sta.w WRDIVL
 	sep #$10
-	stx $4206
+	stx.w WRDIVB
 	nop
 	nop
 	nop
@@ -2189,9 +2189,9 @@ L879323:
 	nop
 	nop
 	nop
-	lda $4214
+	lda.w RDDIVL
 	rep #$10
-	ldx $4216
+	ldx.w RDMPYL
 	rep #$10
 	sta $0F9A
 	bra L879358
@@ -7755,10 +7755,10 @@ L87C870:
 	bne L87C8C9
 	lda $0F29,X
 	lsr
-	sta $4204
+	sta.w WRDIVL
 	sep #$20
 	lda $0F25,X
-	sta $4206
+	sta.w WRDIVB
 	nop
 	nop
 	nop
@@ -7767,7 +7767,7 @@ L87C870:
 	nop
 	nop
 	nop
-	lda $4214
+	lda.w RDDIVL
 	ina
 	cmp $0F26,X
 	bcc L87C8B2
@@ -8523,9 +8523,9 @@ L87CDE7:
 	rts
 
 L87CDF1:
-	sta $4204
+	sta.w WRDIVL
 	sep #$10
-	stx $4206
+	stx.w WRDIVB
 	nop
 	nop
 	nop
@@ -8533,9 +8533,9 @@ L87CDF1:
 	nop
 	nop
 	nop
-	lda $4214
+	lda.w RDDIVL
 	rep #$10
-	ldx $4216
+	ldx.w RDMPYL
 	rep #$10
 	rts
 
@@ -9558,10 +9558,10 @@ L87D676:
 	lda $50
 	lsr
 	lsr
-	sta $4204
+	sta.w WRDIVL
 	sep #$20
 	lda #$04
-	sta $4206
+	sta.w WRDIVB
 	rep #$20
 	lda $63
 	sta $01
@@ -9587,9 +9587,9 @@ L87D676:
 	sta $60
 	lda.w L87D804,X
 	sta $61
-	lda $4214
+	lda.w RDDIVL
 	sta $54
-	lda $4216
+	lda.w RDMPYL
 	asl
 	sta $55
 	ldy #$0000

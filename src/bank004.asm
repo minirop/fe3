@@ -1013,16 +1013,16 @@ L848C96:
 	php
 	sep #$20
 	stz $08
-	sta $4202
+	sta.w WRMPYA
 	ldy #$0000
 L848CA1:
 	lda [$00],Y
-	sta $4203
+	sta.w WRMPYB
 	nop
 	nop
 	nop
 	rep #$20
-	lda $4216
+	lda.w RDMPYL
 	lsr
 	lsr
 	lsr
@@ -1032,12 +1032,12 @@ L848CA1:
 	sep #$20
 	iny
 	lda [$00],Y
-	sta $4203
+	sta.w WRMPYB
 	nop
 	nop
 	nop
 	rep #$20
-	lda $4216
+	lda.w RDMPYL
 	xba
 	lsr
 	lsr

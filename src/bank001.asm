@@ -8786,10 +8786,10 @@ L81CA23:
 	dex
 	phx
 	txa
-	sta $4204
+	sta.w WRDIVL
 	sep #$20
 	lda #$40
-	sta $4206
+	sta.w WRDIVB
 	nop
 	nop
 	nop
@@ -8798,9 +8798,9 @@ L81CA23:
 	nop
 	nop
 	nop
-	lda $4214
+	lda.w RDDIVL
 	sta $0C06
-	lda $4216
+	lda.w RDMPYL
 	lsr
 	sta $0C05
 	lda #$01
@@ -10346,8 +10346,8 @@ L81D70C:
 L81D718:
 	php
 	sep #$20
-	sty $4204
-	sta $4206
+	sty.w WRDIVL
+	sta.w WRDIVB
 	nop
 	nop
 	nop
@@ -10357,8 +10357,8 @@ L81D718:
 	nop
 	nop
 	rep #$20
-	lda $4214
-	ldy $4216
+	lda.w RDDIVL
+	ldy.w RDMPYL
 	plp
 	rtl
 
@@ -10370,14 +10370,14 @@ L81D733:
 	cpy #$0100
 	bcs L81D753
 	sep #$30
-	sta $4202
-	sty $4203
+	sta.w WRMPYA
+	sty.w WRMPYB
 	nop
 	nop
 	nop
 	nop
 	rep #$30
-	lda $4216
+	lda.w RDMPYL
 	plp
 	rtl
 

@@ -350,13 +350,13 @@ L86827C:
 	sep #$20
 	lda $10B2
 	and #$01
-	sta $4202
+	sta.w WRMPYA
 	lda #$0D
-	sta $4203
+	sta.w WRMPYB
 	nop
 	nop
 	nop
-	lda $4216
+	lda.w RDMPYL
 	clc
 	adc #$07
 	sta $10A4
@@ -403,9 +403,9 @@ L8682CB:
 L8682DC:
 	sep #$20
 	lda $10A5
-	sta $4202
+	sta.w WRMPYA
 	lda #$40
-	sta $4203
+	sta.w WRMPYB
 	nop
 	nop
 	lda $10A4
@@ -413,7 +413,7 @@ L8682DC:
 	rep #$20
 	and #$00FF
 	clc
-	adc $4216
+	adc.w RDMPYL
 	adc #$3000
 	sta $2181
 	rts
@@ -729,13 +729,13 @@ L868539:
 	sep #$30
 	lda $10B2
 	jsr L868638
-	sta $4202
+	sta.w WRMPYA
 	lda #$06
-	sta $4203
+	sta.w WRMPYB
 	nop
 	nop
 	nop
-	lda $4216
+	lda.w RDMPYL
 	clc
 	adc #$0A
 	sta $10A4
@@ -869,13 +869,13 @@ L86862C:
 	rts
 
 L868638:
-	sta $4204
-	stz $4205
+	sta.w WRDIVL
+	stz.w WRDIVH
 	lda #$8D03
 	asl $42
 	jsr L868710
-	ldy $4214
-	lda $4216
+	ldy.w RDDIVL
+	lda.w RDMPYL
 	rts
 
 L86864D:
@@ -952,7 +952,7 @@ L8686AD:
 	bra L8686CD
 
 L8686C7:
-	lda $4214
+	lda.w RDDIVL
 	clc
 	adc #$60
 L8686CD:
@@ -960,7 +960,7 @@ L8686CD:
 	stz $2180
 	lda #$0A
 	xba
-	lda $4216
+	lda.w RDMPYL
 	jsr L868702
 	lda $10A6
 	cmp #$0A
@@ -969,13 +969,13 @@ L8686CD:
 	bra L8686ED
 
 L8686E7:
-	lda $4214
+	lda.w RDDIVL
 	clc
 	adc #$60
 L8686ED:
 	sta $2180
 	stz $2180
-	lda $4216
+	lda.w RDMPYL
 	clc
 	adc #$60
 	sta $2180
@@ -984,10 +984,10 @@ L8686ED:
 	rts
 
 L868702:
-	sta $4204
-	stz $4205
+	sta.w WRDIVL
+	stz.w WRDIVH
 	xba
-	sta $4206
+	sta.w WRDIVB
 	jsr L868710
 	rts
 
@@ -6603,9 +6603,9 @@ L86B27B:
 	tay
 	ldx #$0006
 L86B282:
-	sty $4204
+	sty.w WRDIVL
 	lda #$0A
-	sta $4206
+	sta.w WRDIVB
 	nop
 	nop
 	nop
@@ -6614,9 +6614,9 @@ L86B282:
 	nop
 	nop
 	nop
-	lda $4216
+	lda.w RDMPYL
 	sta $1D93,X
-	ldy $4214
+	ldy.w RDDIVL
 	dex
 	bne L86B282
 	plx
@@ -9122,7 +9122,7 @@ L86C425:
 	rep #$20
 	sep #$20
 	lda #$01
-	sta $420B
+	sta.w MDMAEN
 	rep #$20
 	sep #$20
 	lda #$B0
@@ -9146,7 +9146,7 @@ L86C425:
 	rep #$20
 	sep #$20
 	lda #$01
-	sta $420B
+	sta.w MDMAEN
 	rep #$20
 	sep #$20
 	lda #$F0
@@ -9170,7 +9170,7 @@ L86C425:
 	rep #$20
 	sep #$20
 	lda #$01
-	sta $420B
+	sta.w MDMAEN
 	rep #$20
 	rts
 
@@ -9244,7 +9244,7 @@ L86C543:
 	rep #$20
 	sep #$20
 	lda #$01
-	sta $420B
+	sta.w MDMAEN
 	rep #$20
 	rts
 
@@ -10062,7 +10062,7 @@ L86CC3D:
 	stz $106F
 	stz $1070
 	lda #$81
-	sta $4200
+	sta.w NMITIMEN
 	sta $F2
 	stz $1034
 	stz $1061
@@ -11798,13 +11798,13 @@ L86D8E6:
 	lda #$7E
 	sta $02
 	lda $1030
-	sta $4202
+	sta.w WRMPYA
 	lda #$60
-	sta $4203
+	sta.w WRMPYB
 	rep #$20
 	lda #$62FE
 	clc
-	adc $4216
+	adc.w RDMPYL
 	sta $00
 	sep #$20
 	lda #$01
@@ -11859,9 +11859,9 @@ L86D96F:
 	lda #$7E
 	sta $02
 	lda $1031
-	sta $4202
+	sta.w WRMPYA
 	lda #$60
-	sta $4203
+	sta.w WRMPYB
 	rep #$20
 	lda $075E
 	and #$00FF
@@ -11869,7 +11869,7 @@ L86D96F:
 	bne L86D9B8
 	lda #$6F1E
 	clc
-	adc $4216
+	adc.w RDMPYL
 	sta $00
 	sep #$20
 	lda #$01
@@ -11890,7 +11890,7 @@ L86D9B8:
 	rep #$20
 	lda #$6EFE
 	clc
-	adc $4216
+	adc.w RDMPYL
 	sta $00
 	sep #$20
 	lda #$01
@@ -11946,7 +11946,7 @@ L86DA04:
 	rep #$20
 	sep #$20
 	lda #$01
-	sta $420B
+	sta.w MDMAEN
 	rep #$20
 	ldx #$62FE
 	ldy #$40FE
@@ -11977,7 +11977,7 @@ L86DA04:
 	rep #$20
 	sep #$20
 	lda #$01
-	sta $420B
+	sta.w MDMAEN
 	rep #$20
 	ldx #$6EFE
 	ldy #$40FE
@@ -12007,7 +12007,7 @@ L86DA95:
 	rep #$20
 	sep #$20
 	lda #$01
-	sta $420B
+	sta.w MDMAEN
 	rep #$20
 	ldx #$6EFE
 	ldy #$40FE
@@ -12183,7 +12183,7 @@ L86DBD7:
 	lda #$00
 	sta $4306
 	lda #$01
-	sta $420B
+	sta.w MDMAEN
 	rep #$20
 	ldx #$0000
 L86DC0B:
@@ -13026,10 +13026,10 @@ L86E203:
 	stz $8F
 	stz $93
 	lda #$0000
-	sta $4207
+	sta.w HTIMEL
 	sta $F5
 	lda #$007F
-	sta $4209
+	sta.w VTIMEL
 	sta $F3
 	lda #$0000
 	ldx #$2000
@@ -13983,7 +13983,7 @@ L86EAC8:
 	rep #$20
 	sep #$20
 	lda #$01
-	sta $420B
+	sta.w MDMAEN
 	rep #$20
 	pla
 	clc
@@ -14007,7 +14007,7 @@ L86EAC8:
 	rep #$20
 	sep #$20
 	lda #$01
-	sta $420B
+	sta.w MDMAEN
 	rep #$20
 	jmp L86EC5C
 
@@ -14034,7 +14034,7 @@ L86EB3C:
 	rep #$20
 	sep #$20
 	lda #$01
-	sta $420B
+	sta.w MDMAEN
 	rep #$20
 	jmp L86EC5C
 
@@ -14062,7 +14062,7 @@ L86EB78:
 	rep #$20
 	sep #$20
 	lda #$01
-	sta $420B
+	sta.w MDMAEN
 	rep #$20
 	pla
 	clc
@@ -14086,7 +14086,7 @@ L86EB78:
 	rep #$20
 	sep #$20
 	lda #$01
-	sta $420B
+	sta.w MDMAEN
 	rep #$20
 	bra L86EC5C
 
@@ -14114,7 +14114,7 @@ L86EBEB:
 	rep #$20
 	sep #$20
 	lda #$01
-	sta $420B
+	sta.w MDMAEN
 	rep #$20
 	pla
 	clc
@@ -14138,7 +14138,7 @@ L86EBEB:
 	rep #$20
 	sep #$20
 	lda #$01
-	sta $420B
+	sta.w MDMAEN
 	rep #$20
 L86EC5C:
 	rts
@@ -15429,7 +15429,7 @@ L86F58A:
 	lda $00
 	pha
 	rep #$10
-	lda $4211
+	lda.w TIMEUP
 	lda $1003
 	bit #$02
 	beq L86F5A5
@@ -15448,11 +15448,11 @@ L86F5AF:
 	jmp L86F63B
 
 L86F5B9:
-	lda $4212
+	lda.w HVBJOY
 	bit #$40
 	bne L86F5B9
 L86F5C0:
-	lda $4212
+	lda.w HVBJOY
 	bit #$40
 	beq L86F5C0
 	lda $7A
@@ -15506,11 +15506,11 @@ L86F638:
 	jmp L86F6AC
 
 L86F63B:
-	lda $4212
+	lda.w HVBJOY
 	bit #$40
 	bne L86F63B
 L86F642:
-	lda $4212
+	lda.w HVBJOY
 	bit #$40
 	beq L86F642
 	lda $7A
@@ -15539,11 +15539,11 @@ L86F67C:
 	bra L86F6AC
 
 L86F67E:
-	lda $4212
+	lda.w HVBJOY
 	bit #$40
 	bne L86F67E
 L86F685:
-	lda $4212
+	lda.w HVBJOY
 	bit #$40
 	beq L86F685
 	lda $7A
@@ -15566,21 +15566,21 @@ L86F6AC:
 	bit #$08
 	beq L86F6C9
 L86F6B9:
-	lda $4212
+	lda.w HVBJOY
 	bit #$40
 	bne L86F6B9
 L86F6C0:
-	lda $4212
+	lda.w HVBJOY
 	bit #$40
 	beq L86F6C0
 	bra L86F6DF
 
 L86F6C9:
-	lda $4212
+	lda.w HVBJOY
 	bit #$40
 	bne L86F6C9
 L86F6D0:
-	lda $4212
+	lda.w HVBJOY
 	bit #$40
 	beq L86F6D0
 	lda $1050
@@ -15666,7 +15666,7 @@ L86F75D:
 	lda $F2
 	ora #$30
 	sta $F2
-	sta $4200
+	sta.w NMITIMEN
 	rep #$20
 	lda #$0000
 	sta $F5
@@ -15682,7 +15682,7 @@ L86F77A:
 	lda $F2
 	and #$CF
 	sta $F2
-	sta $4200
+	sta.w NMITIMEN
 	rep #$20
 	rts
 

@@ -5861,16 +5861,16 @@ L96E1D1:
 	lsr
 	clc
 	adc $15
-	sta $4204
+	sta.w WRDIVL
 	sep #$20
 	lda #$03
-	sta $4206
+	sta.w WRDIVB
 	rep #$20
 	pha
 	pla
 	pha
 	pla
-	lda $4214
+	lda.w RDDIVL
 	asl
 	phx
 	tax

@@ -23,7 +23,7 @@ L80801C:
 L80801D:
 .ACCU 8
 .INDEX 8
-	lda $4212
+	lda.w HVBJOY
 	and #$01
 	bne L80801D
 	stz $044d
@@ -33,7 +33,7 @@ L80801D:
 	stz $0456
 	stz $045e
 	stz $045f
-	lda $4212
+	lda.w HVBJOY
 	and #$01
 	bne L80801D
 	stz $044d
@@ -44,10 +44,10 @@ L80801D:
 	stz $045e
 	stz $045f
 	ldx #$01
-	lda $421a
+	lda.w JOY2L
 	jsr L808061
 	dex
-	lda $4218
+	lda.w JOY1L
 L808061:
 	sta $15
 	and #$0f
@@ -541,13 +541,13 @@ L8083FA:
 	bra L808424
 L808402:
 	lda $2a
-	sta $4202
+	sta.w WRMPYA
 	lda $04bc
-	sta $4203
+	sta.w WRMPYB
 	nop
 	nop
 	nop
-	lda $4216
+	lda.w RDMPYL
 	clc
 	adc $04b4
 	tax
@@ -564,13 +564,13 @@ L808429:
 	dec $29
 	bmi L808466
 	lda $29
-	sta $4202
+	sta.w WRMPYA
 	lda $04bb
-	sta $4203
+	sta.w WRMPYB
 	nop
 	nop
 	nop
-	lda $4216
+	lda.w RDMPYL
 	clc
 	adc $04b3
 	tax
@@ -581,13 +581,13 @@ L808429:
 	cpx $2b
 	bcs L808429
 	lda $2a
-	sta $4202
+	sta.w WRMPYA
 	lda $04b9
-	sta $4203
+	sta.w WRMPYB
 	nop
 	nop
 	nop
-	lda $4216
+	lda.w RDMPYL
 	clc
 	adc $29
 	sta $04bd
@@ -1000,7 +1000,7 @@ L808826:
 	sep #$20
 	lda $F2
 	ora #$80
-	sta $4200
+	sta.w NMITIMEN
 	sta $F2
 	plb
 	plp
@@ -1014,7 +1014,7 @@ L808838:
 	sep #$20
 	lda $F2
 	and #$7F
-	sta $4200
+	sta.w NMITIMEN
 	sta $F2
 	plb
 	plp
@@ -1093,7 +1093,7 @@ L8088B3:
 	lda $f2
 	ora #$10
 	sta $f2
-	sta $4200
+	sta.w NMITIMEN
 	plb
 	plp
 	rtl
@@ -1106,7 +1106,7 @@ L8088C5:
 	sep #$20
 	lda $f2
 	and #$ef
-	sta $4200
+	sta.w NMITIMEN
 	sta $f2
 	plb
 	plp
@@ -1120,7 +1120,7 @@ L8088D7:
 	sep #$20
 	lda $f2
 	ora #$20
-	sta $4200
+	sta.w NMITIMEN
 	sta $f2
 	plb
 	plp
@@ -1134,7 +1134,7 @@ L8088E9:
 	sep #$20
 	lda $f2
 	and #$df
-	sta $4200
+	sta.w NMITIMEN
 	sta $f2
 	plb
 	plp
@@ -1156,7 +1156,7 @@ L8088FB:
 	lda #$02
 	sta $4306
 	lda #$01
-	sta $420B
+	sta.w MDMAEN
 	lda $7D
 	sta $2103
 	lda $7C
@@ -1210,7 +1210,7 @@ L80895C:
 	lda #$22
 	sta $4311
 	lda #$02
-	sta $420B
+	sta.w MDMAEN
 	tya
 	clc
 	adc #$07
@@ -1238,7 +1238,7 @@ L808995:
 	lda #$18
 	sta $4311
 	lda #$02
-	sta $420B
+	sta.w MDMAEN
 	tya
 	clc
 	adc #$09
@@ -1270,7 +1270,7 @@ L8089DC:
 	lda $2139
 	lda $213a
 	lda #$02
-	sta $420b
+	sta.w MDMAEN
 	tya
 	clc
 	adc #$09
@@ -1327,7 +1327,7 @@ L808A6D:
 	sta $2117
 L808A89:
 	lda #$02
-	sta $420b
+	sta.w MDMAEN
 	bra L808A32
 L808A90:
 	sep #$10
@@ -1390,7 +1390,7 @@ L808AF0:
 
 L808AF3:
 	php
-	lda $4212
+	lda.w HVBJOY
 	and #$01
 	bne L808AF3
 	rep #$30
@@ -1418,10 +1418,10 @@ L808B2F:
 	and #$00FF
 	beq L808B45
 	ldy #$0000
-	lda $4218,X
+	lda.w JOY1L,X
 	and #$000F
 	bne L808B45
-	ldy $4218,X
+	ldy.w JOY1L,X
 L808B45:
 	tya
 	sta $3D
@@ -1472,11 +1472,11 @@ L808B9B:
 	lda $65
 	lsr
 	lsr
-	sta $4204
+	sta.w WRDIVL
 	xba
 	and #$00ff
 	ora #$0800
-	sta $4205
+	sta.w WRDIVH
 	nop
 	nop
 	nop
@@ -1484,10 +1484,10 @@ L808B9B:
 	nop
 	nop
 	nop
-	lda $4214
+	lda.w RDDIVL
 	asl
 	sta $15
-	lda $4216
+	lda.w RDMPYL
 	sta $17
 	ldx #$0000
 L808BC1:
@@ -1525,11 +1525,11 @@ L808BF6:
 	lda $67
 	lsr
 	lsr
-	sta $4204
+	sta.w WRDIVL
 	xba
 	and #$00ff
 	ora #$0800
-	sta $4205
+	sta.w WRDIVH
 	nop
 	nop
 	nop
@@ -1537,10 +1537,10 @@ L808BF6:
 	nop
 	nop
 	nop
-	lda $4214
+	lda.w RDDIVL
 	asl
 	sta $15
-	lda $4216
+	lda.w RDMPYL
 	sta $17
 	ldx $15
 L808C1B:
@@ -1740,48 +1740,48 @@ L808D1E:
 	rep #$20
 	sep #$10
 	ldx $2D
-	stx $4202
+	stx.w WRMPYA
 	ldx $2F
-	stx $4203
+	stx.w WRMPYB
 	nop
 	nop
 	nop
-	lda $4216
+	lda.w RDMPYL
 	sta $31
 	ldx $2E
-	stx $4202
+	stx.w WRMPYA
 	ldx $30
-	stx $4203
+	stx.w WRMPYB
 	nop
 	nop
 	nop
-	ldx $4216
+	ldx.w RDMPYL
 	stx $33
-	ldy $4217
+	ldy.w RDMPYH
 	ldx $2E
-	stx $4202
+	stx.w WRMPYA
 	ldx $2F
-	stx $4203
+	stx.w WRMPYB
 	nop
 	nop
 	nop
 	lda $32
 	clc
-	adc $4216
+	adc.w RDMPYL
 	sta $32
 	bcc L808D68
 	iny
 L808D68:
 	ldx $2D
-	stx $4202
+	stx.w WRMPYA
 	ldx $30
-	stx $4203
+	stx.w WRMPYB
 	nop
 	nop
 	nop
 	lda $32
 	clc
-	adc $4216
+	adc.w RDMPYL
 	sta $32
 	bcc L808D80
 	iny
@@ -2314,7 +2314,7 @@ IRQ:
 	phx
 	phy
 	sep #$30
-	lda $4211
+	lda.w TIMEUP
 	and #$80
 	beq L8090CC
 	jsl L86F58A
@@ -2344,7 +2344,7 @@ L8090D9:
 	pha
 	pld
 	sep #$30
-	lda $4210
+	lda.w RDNMI
 	sta $0740
 	lda $1003
 	bit #$02
@@ -2699,10 +2699,10 @@ L8093C2:
 	lda $50
 	lsr
 	lsr
-	sta $4204
+	sta.w WRDIVL
 	sep #$20
 	lda #$04
-	sta $4206
+	sta.w WRDIVB
 	nop
 	nop
 	nop
@@ -2710,9 +2710,9 @@ L8093C2:
 	nop
 	nop
 	nop
-	lda $4214
+	lda.w RDDIVL
 	sta $54
-	lda $4216
+	lda.w RDMPYL
 	asl
 	sta $55
 	ldy #$0000
@@ -4081,10 +4081,10 @@ L809E5C:
 	lda $50
 	lsr
 	lsr
-	sta $4204
+	sta.w WRDIVL
 	sep #$20
 	lda #$04
-	sta $4206
+	sta.w WRDIVB
 	rep #$20
 	lda $63
 	sta $01
@@ -4110,9 +4110,9 @@ L809E5C:
 	sta $60
 	lda.w L809FFB,X
 	sta $61
-	lda $4214
+	lda.w RDDIVL
 	sta $54
-	lda $4216
+	lda.w RDMPYL
 	asl
 	sta $55
 	ldy #$0000
@@ -4444,10 +4444,10 @@ L80A0DD:
 	lda $50
 	lsr
 	lsr
-	sta $4204
+	sta.w WRDIVL
 	sep #$20
 	lda #$04
-	sta $4206
+	sta.w WRDIVB
 	rep #$20
 	lda $63
 	sta $01
@@ -4473,9 +4473,9 @@ L80A0DD:
 	sta $60
 	lda.w L80A26C,X
 	sta $61
-	lda $4214
+	lda.w RDDIVL
 	sta $54
-	lda $4216
+	lda.w RDMPYL
 	asl
 	sta $55
 	ldy #$0000
@@ -4873,7 +4873,7 @@ L80A42F:
 	inx
 	bne L80A42F
 	sep #$30
-	stz $4200
+	stz.w NMITIMEN
 	stz $f2
 	lda #$8f
 	sta $2100
@@ -4996,27 +4996,27 @@ L80A540:
 	php
 	sep #$30
 	lda #$01
-	sta $4200
+	sta.w NMITIMEN
 	sta $F2
-	stz $4201
-	stz $4202
-	stz $4203
-	stz $4204
-	stz $4205
-	stz $4206
-	stz $4207
+	stz.w WRIO
+	stz.w WRMPYA
+	stz.w WRMPYB
+	stz.w WRDIVL
+	stz.w WRDIVH
+	stz.w WRDIVB
+	stz.w HTIMEL
 	stz $F5
-	stz $4208
+	stz.w HTIMEH
 	stz $F6
-	stz $4209
+	stz.w VTIMEL
 	stz $F3
-	stz $420A
+	stz.w VTIMEH
 	stz $F4
-	stz $420B
-	stz $420C
+	stz.w MDMAEN
+	stz.w HDMAEN
 	stz $F7
 	lda #$01
-	sta $420D
+	sta.w MEMSEL
 	sta $F8
 	plp
 	rts
@@ -5580,7 +5580,7 @@ L80A957:
 	lda #$18
 	sta $4321
 	lda #$04
-	sta $420B
+	sta.w MDMAEN
 	rep #$20
 L80A9B0:
 	rep #$30
@@ -6656,7 +6656,7 @@ L80B1BA:
 	ldx #$0000
 L80B1C9:
 	rep #$20
-	lda $4200,X
+	lda.w NMITIMEN,X
 	sta $4000,X
 	inx
 	inx
@@ -6683,11 +6683,11 @@ L80B1E5:
 	lda ($12),Y
 	iny
 	iny
-	sta $4200,X
+	sta.w NMITIMEN,X
 	lda ($12),Y
 	iny
 	iny
-	sta $4202,X
+	sta.w WRMPYA,X
 	txa
 	clc
 	adc #$0004
@@ -6844,9 +6844,9 @@ L80B312:
 L80B330:
 	pha
 	ldx $8CE1
-	sta $4200,X
+	sta.w NMITIMEN,X
 	lda $25
-	sta $4203,X
+	sta.w WRMPYB,X
 	ldx $1B
 	pla
 	sta $3800,X
@@ -6855,7 +6855,7 @@ L80B330:
 	rep #$20
 	lda $21
 	ldx $8CE1
-	sta $4201,X
+	sta.w WRIO,X
 	txa
 	clc
 	adc #$0004
