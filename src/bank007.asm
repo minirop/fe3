@@ -231,29 +231,29 @@ L8781C9:
 	jmp (TALK_EVENT_SCRIPT_CALLBACKS,X)
 
 TALK_EVENT_SCRIPT_CALLBACKS:
-.dw L878245
-.dw L87826B
-.dw L8782CD
+.dw L878245 ; EV_STOP
+.dw L87826B ; EV_TURN_SCREEN_OFF_THEN_MOVE
+.dw L8782CD ; EV_DIALOGUE
 .dw L87842B ; EV_MOVE_CAMERA
 .dw L878536
 .dw L878576
-.dw L878590
+.dw L878590 ; EV_EXPLOSION
 .dw L8785D3
-.dw L8785FB
-.dw L878630
+.dw L8785FB ; EV_CHANGE_MUSIC
+.dw L878630 ; EV_RESTORE_MUSIC_FIELD
 .dw L8786B8
-.dw L8786F4
-.dw L878722 ; EV_SET_UNIT_ENEMY
-.dw L8787A7
+.dw L8786F4 ; EV_DEL_UNIT
+.dw L878722 ; EV_SET_UNIT_ALLY/ENEMY
+.dw L8787A7 ; EV_SET_ALLY
 .dw L87883E
 .dw L87898E
-.dw L8789A4
-.dw L8799EB
-.dw L879A01
-.dw L879A17
+.dw L8789A4 ; EV_SHOP
+.dw L8799EB ; EV_SET_FLAG
+.dw L879A01 ; EV_UNSET_FLAG
+.dw L879A17 ; EV_BRANCH_IF
 .dw L879A3F
-.dw L879A4B
-.dw L879AF3
+.dw L879A4B ; EV_GET_MONEY
+.dw L879AF3 ; EV_GET_ITEM
 .dw L879B66
 .dw L879BBE
 .dw L879C41
@@ -262,21 +262,21 @@ TALK_EVENT_SCRIPT_CALLBACKS:
 .dw L879D6F
 .dw L879DB0
 .dw L879F86
-.dw L87A012
+.dw L87A012 ; EV_BRANCH_IF_UNIT_EXISTS
 .dw L87A061
 .dw L87A077
-.dw L87A0EA
+.dw L87A0EA ; EV_REMOVE_ITEM
 .dw L87A105
 .dw L87A15B
 .dw L87A18C
 .dw L87A1A0
-.dw L87A1ED
+.dw L87A1ED ; EV_ARENA
 .dw L87A672
-.dw L87A6C0
+.dw L87A6C0 ; EV_ITEM_NOT_OWNED
 .dw L87A6FA
-.dw L87A765
+.dw L87A765 ; EV_BOOK1/2/BAD_END
 .dw L87A7D9
-.dw L87A861
+.dw L87A861 ; EV_SHAKE_SCREEN
 .dw L87A86C
 .dw L87A8B2
 .dw L87A8C8
@@ -2215,7 +2215,7 @@ L87935C:
 	jsl L81D35F
 	jsl L81D4EE
 	ldx #$0304
-	ldy #$BCCA
+	ldy #L8BBCCA
 	lda #$0000
 	jsl L81E21F
 	lda $07F1
@@ -2542,7 +2542,7 @@ L879641:
 	ldy #$0000
 	jsl L87A9A3
 	ldx #$02D2
-	ldy #$BCCA
+	ldy #L8BBCCA
 	pla
 	ina
 	jsl L81E21F
@@ -2932,7 +2932,7 @@ L879986:
 	rep #$20
 	jsr L87971B
 	ldx #$00CC
-	ldy #$B522
+	ldy #L8BB522
 	lda #$0001
 	jsl L81E21F
 	ldx #$0D0F
@@ -3059,7 +3059,7 @@ L879A96:
 	php
 	rep #$20
 	ldx #$028E
-	ldy #$B522
+	ldy #L8BB522
 	lda #$0017
 	jsl L81E21F
 	ldx #$0350
@@ -3071,7 +3071,7 @@ L879A96:
 	cmp #$03E8
 	bcs L879AC9
 	ldx #$028E
-	ldy #$B522
+	ldy #L8BB522
 	lda #$0018
 	jsl L81E21F
 L879AC9:
@@ -3957,7 +3957,7 @@ L87A1A0:
 	ldy #$0001
 	lda [$0F],Y
 	ldx $15
-	ldy #$F936
+	ldy #L8BF936
 	jsl L81E21F
 	ldy #$0004
 	lda [$0F],Y
@@ -5511,13 +5511,13 @@ L87AE15:
 L87AE2F:
 	lda #$00
 L87AE31:
-	ldy #$B522
+	ldy #L8BB522
 	jsl L81E21F
 	ldx #$0C0A
 	stx $0C1B
 	jsl L81D5A8
 	ldx $15
-	ldy #$DF58
+	ldy #ITEMS_NAMES
 	lda $0BB0
 	jsl L81E21F
 	ldx #$0C08
@@ -5605,7 +5605,7 @@ L87AEA9:
 L87AEF9:
 	jsl L81D5A8
 	ldx $15
-	ldy #$C0B8
+	ldy #L8BC0B8
 	pla
 	jsl L81E21F
 	plx
@@ -5663,7 +5663,7 @@ L87AF71:
 L87AF76:
 	jsl L81D5A8
 	ldx $15
-	ldy #$C0B8
+	ldy #L8BC0B8
 	lda #$01
 	jsl L81E21F
 	inc $0C1B
@@ -5682,7 +5682,7 @@ L87AF9B:
 L87AFA0:
 	jsl L81D5A8
 	ldx $15
-	ldy #$C0B8
+	ldy #L8BC0B8
 	lda #$02
 	jsl L81E21F
 	dec $0C1B
@@ -5753,7 +5753,7 @@ L87B02F:
 L87B034:
 	jsl L81D5A8
 	ldx $15
-	ldy #$C0B8
+	ldy #L8BC0B8
 	lda #$01
 	jsl L81E21F
 	dec $0C1B
@@ -5772,7 +5772,7 @@ L87B059:
 L87B05E:
 	jsl L81D5A8
 	ldx $15
-	ldy #$C0B8
+	ldy #L8BC0B8
 	lda #$02
 	jsl L81E21F
 	inc $0C1B
@@ -6011,7 +6011,7 @@ L87B27D:
 	sta $0C1B
 	jsl L81D5A8
 	ldx $15
-	ldy #$B522
+	ldy #L8BB522
 	lda #$0012
 	jsl L81E21F
 	sep #$20
@@ -6163,7 +6163,7 @@ L87B3C4:
 	stx $0C1B
 	jsl L81D5A8
 	ldx $15
-	ldy #$D13A
+	ldy #L8BD13A
 	lda #$0E
 	jsl L81E21F
 	ldx #$0E0F

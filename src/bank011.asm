@@ -2626,7 +2626,7 @@ L8BB522:
 
 .INCLUDE "menu_unit_unk.gen.asm"
 
-; TODO
+L8BBCCA:
 .dw L_SMALL_MENU_MONEY
 .dw L_SMALL_MENU_BUY_SELL
 .dw L_SMALL_MENU_YES_NO
@@ -2635,7 +2635,7 @@ L8BB522:
 
 .INCLUDE "small_menus.gen.asm"
 
-; TODO
+L8BBDD6:
 .dw L_SETTINGS_ENTRIES
 .dw L_SETTINGS_ANIMATIONS
 .dw L_SETTINGS_SOUND
@@ -3435,6 +3435,7 @@ L8BF48E:
 
 .INCLUDE "terrain_messages.gen.asm"
 
+L8BF936:
 .dw L_THE_DOOR_OPENED
 
 .INCLUDE "the_door_opened.gen.asm"

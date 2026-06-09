@@ -61,12 +61,10 @@
 .db $0B \1
 .ENDM
 
-; create unit?
 .MACRO EV_SET_UNIT_ALLY
 .db $0C $00 \1
 .ENDM
 
-; create unit?
 .MACRO EV_SET_UNIT_ENEMY
 .db $0C $01 \1
 .ENDM

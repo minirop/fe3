@@ -2898,7 +2898,7 @@ L81984C:
 	ldx #$0202
 L81984F:
 	stx $0C1B
-	ldy #$9FEA
+	ldy #L8B9FEA
 	ldx #$0000
 	lda #$06
 	stz $0C10
@@ -3299,7 +3299,7 @@ L819C31:
 L819C34:
 	stx $0C1B
 	lda #$05
-	ldy #$BDD6
+	ldy #L8BBDD6
 	ldx #$0000
 	jsl L81E2CC
 	lda $0B62
@@ -3332,7 +3332,7 @@ L819C59:
 	tax
 	lda #$0E
 	sta $0C1C
-	ldy #$BDD6
+	ldy #L8BBDD6
 	pla
 	jsl L81E2CC
 	lda $0B62
@@ -8053,7 +8053,7 @@ L81C42A:
 	lsr
 	sta $0B61
 	ldx #$0001
-	ldy #$C010
+	ldy #L8BC010
 	lda #$03
 	jsl L81E2CC
 	lda $0B62
@@ -11712,7 +11712,7 @@ L81E21F:
 	php
 	rep #$20
 	pha
-	lda #$8B00
+	lda #bank100(L8B8000)
 	sta $01
 	sty $00
 	pla
