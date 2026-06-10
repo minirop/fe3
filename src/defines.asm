@@ -166,6 +166,9 @@
 .DEFINE SISTERS_PERSUADED $12
 .DEFINE NO_RESTRICTIONS $FF
 
+.DEFINE MALE $00
+.DEFINE FEMALE $01
+
 .MACRO UNIT_WITH_POINTER
 .db \1
 .dl \2
@@ -191,6 +194,7 @@
 .DEFINE FLAG_7 $80
 
 .FUNCTION RGB(r, g, b) ((r / 8) + ((g / 8) * 32) + ((b / 8) * 1024))
+.FUNCTION RGBA(r, g, b) ((r / 8) + ((g / 8) * 32) + ((b / 8) * 1024) + $8000)
 
 .MACRO DMA_DATA
 .IF NARGS == 3
@@ -208,7 +212,7 @@
 .ENDM
 
 .MACRO DMA_DATA_3
-.db $03
+.db $03 ; unk
 .dl \1 ; A1B1/A1T1H/A1T1L
 .dw \2 ; DAS1H/DAS1L
 .db \3 ; WMAIN
@@ -219,4 +223,8 @@
 
 .MACRO REMOVE_BANK
 .dl \2 - (\1 * $10000)
+.ENDM
+
+.MACRO OFFSET
+.dw \2 - \1
 .ENDM

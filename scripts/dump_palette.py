@@ -19,4 +19,7 @@ for id in range(0, count):
 		red = colour & 0x1F
 		green = (colour >> 5) & 0x1F
 		blue = (colour >> 10) & 0x1F
-		print (" RGB({}, {}, {})".format(red*8, green*8, blue*8), end = '')
+		if colour & 0x8000 > 0:
+			print (" RGBA({}, {}, {})".format(red*8, green*8, blue*8), end = '')
+		else:
+			print (" RGB({}, {}, {})".format(red*8, green*8, blue*8), end = '')

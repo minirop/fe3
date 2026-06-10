@@ -178,7 +178,7 @@ L848638:
 	sta $01
 	lda.l LDCB000,X
 	clc
-	adc #$B000
+	adc #LDCB000
 	sta $00
 	jsl L87B860
 	lda $0F05
@@ -230,7 +230,7 @@ L8486B9:
 	sta $01
 	lda.l LDCB000,X
 	clc
-	adc #$B000
+	adc #LDCB000
 	sta $00
 	jsl L87B860
 	lda $0F05
@@ -956,6 +956,8 @@ CHAPTERS_ID:
 .db CHAPTER_UNKNOWN_60
 .db CHAPTER_UNKNOWN_61
 .db CHAPTER_UNKNOWN_62
+; seems those bytes aren't in the table
+; since CHAPTERS_INFORMATION has 63 lines
 .db CHAPTER_000_DEBUG
 .db CHAPTER_000_DEBUG
 .db CHAPTER_000_DEBUG

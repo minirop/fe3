@@ -7833,7 +7833,7 @@ L80BA21:
 	bne L80BA21
 L80BA26:
 	ldy $0888
-	lda #$B100
+	lda #bank100(LB18000)
 	sta $01
 	stz $00
 	lda [$00],Y
