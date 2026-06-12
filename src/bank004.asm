@@ -9124,13 +9124,13 @@ L84D786:
 	phx
 	phy
 	lda #$146E
-	sta $2181
+	sta.w WMADDL
 	sep #$20
 	lda #$00
-	sta $2183
+	sta.w WMADDH
 	ldy #$000A
 L84D79C:
-	stz $2180
+	stz.w WMDATA
 	dey
 	cpy #$0000
 	bne L84D79C
@@ -9166,13 +9166,13 @@ L84D79C:
 	sta $4327
 	rep #$30
 	lda #$152C
-	sta $2181
+	sta.w WMADDL
 	sep #$20
 	lda #$00
-	sta $2183
+	sta.w WMADDH
 	ldy #$0025
 L84D802:
-	stz $2180
+	stz.w WMDATA
 	dey
 	cpy #$0000
 	bne L84D802
@@ -10804,13 +10804,13 @@ L84E9D0:
 	sta $157F
 	rep #$30
 	lda #$156B
-	sta $2181
+	sta.w WMADDL
 	sep #$20
 	lda #$00
-	sta $2183
+	sta.w WMADDH
 	ldy #$000D
 L84EA21:
-	stz $2180
+	stz.w WMDATA
 	dey
 	cpy #$0000
 	bne L84EA21

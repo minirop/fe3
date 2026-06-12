@@ -3048,886 +3048,1770 @@ LB1D940:
 .db $20 $80 $B1 $E2 $20 $A9 $00 $8D
 
 LB1DB00:
+; offset from $B00000
+; byte count
+; unk
+; zero
 .dl $000000
-.db $00 $00 $00 $00 $00
+.dw 0
+.dw $0000
+.db 0
 REMOVE_BANK $B0 LB18030
-.db $A6 $05 $D0 $93 $00
+.dw 1446
+.dw $93D0
+.db 0
 REMOVE_BANK $B0 LB185D6
-.db $7D $06 $D0 $93 $00
+.dw 1661
+.dw $93D0
+.db 0
 REMOVE_BANK $B0 LB18C53
-.db $E0 $01 $D0 $93 $00
+.dw 480
+.dw $93D0
+.db 0
 REMOVE_BANK $B0 LB18E33
-.db $EA $0A $00 $B0 $00
+.dw 2794
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB1991D
-.db $9E $08 $00 $B0 $00
+.dw 2206
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB78E71
-.db $56 $0A $00 $B0 $00
+.dw 2646
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB798C7
-.db $1F $08 $00 $B0 $00
+.dw 2079
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB1A1BB
-.db $5D $09 $00 $B0 $00
+.dw 2397
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB7A0E6
-.db $BA $06 $00 $B0 $00
+.dw 1722
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB7A7A0
-.db $B7 $06 $00 $B0 $00
+.dw 1719
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB89F8E
-.db $8C $09 $00 $B0 $00
+.dw 2444
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB1AB18
-.db $49 $03 $00 $B0 $00
+.dw 841
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB1AE61
-.db $74 $06 $00 $B0 $00
+.dw 1652
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB1B4D5
-.db $EA $05 $00 $B0 $00
+.dw 1514
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB1BABF
-.db $E8 $08 $00 $B0 $00
+.dw 2280
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB7B417
-.db $12 $06 $00 $B0 $00
+.dw 1554
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB5F04A
-.db $E2 $03 $00 $B0 $00
+.dw 994
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB483B1
-.db $7B $04 $00 $B0 $00
+.dw 1147
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LBAE22B
-.db $32 $06 $00 $B0 $00
+.dw 1586
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB4882C
-.db $D6 $06 $00 $B0 $00
+.dw 1750
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB48F02
-.db $A9 $07 $00 $B0 $00
+.dw 1961
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB8B780
-.db $34 $01 $00 $B0 $00
+.dw 308
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LBA87DC
-.db $4D $01 $00 $B0 $00
+.dw 333
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB88998
-.db $83 $02 $00 $B0 $00
+.dw 643
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB1D6E9
-.db $FA $00 $00 $B0 $00
+.dw 250
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB8A91A
-.db $15 $06 $00 $B0 $00
+.dw 1557
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB1C3A7
-.db $19 $13 $00 $B0 $00
+.dw 4889
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB7AFB7
-.db $60 $04 $00 $B0 $00
+.dw 1120
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB4B121
-.db $3A $02 $00 $B0 $00
+.dw 570
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB7AE57
-.db $60 $01 $00 $B0 $00
+.dw 352
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB48000
-.db $B1 $03 $00 $B0 $00
+.dw 945
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB7CE38
-.db $99 $04 $00 $B0 $00
+.dw 1177
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB7D2D1
-.db $31 $04 $00 $B0 $00
+.dw 1073
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB7D702
-.db $0C $05 $00 $B0 $00
+.dw 1292
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB896B1
-.db $6B $04 $00 $B0 $00
+.dw 1131
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB78000
-.db $B9 $03 $00 $B0 $00
+.dw 953
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB496AB
-.db $CA $02 $00 $B0 $00
+.dw 714
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB49975
-.db $50 $0A $00 $B0 $00
+.dw 2640
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB4A3C5
-.db $C3 $02 $00 $B0 $00
+.dw 707
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB7C924
-.db $14 $05 $00 $B0 $00
+.dw 1300
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB4A688
-.db $4C $02 $00 $B0 $00
+.dw 588
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB4A8D4
-.db $ED $05 $00 $B0 $00
+.dw 1517
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB7BA29
-.db $B9 $08 $00 $B0 $00
+.dw 2233
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB7C2E2
-.db $42 $06 $00 $B0 $00
+.dw 1602
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB89B1C
-.db $BD $02 $00 $B0 $00
+.dw 701
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB89DD9
-.db $B4 $00 $00 $B0 $00
+.dw 180
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB89E8D
-.db $01 $01 $00 $B0 $00
+.dw 257
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB7DC0E
-.db $FB $07 $00 $B0 $00
+.dw 2043
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB7E409
-.db $23 $03 $00 $B0 $00
+.dw 803
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB88750
-.db $48 $02 $00 $B0 $00
+.dw 584
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB88C1B
-.db $3B $03 $00 $B0 $00
+.dw 827
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB88F56
-.db $5B $07 $00 $B0 $00
+.dw 1883
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB5F42C
-.db $64 $03 $00 $B0 $00
+.dw 868
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB4AEC1
-.db $60 $02 $00 $B0 $00
+.dw 608
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB5F790
-.db $19 $01 $00 $B0 $00
+.dw 281
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB8853B
-.db $15 $02 $00 $B0 $00
+.dw 533
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB5F8A9
-.db $F0 $00 $00 $B0 $00
+.dw 240
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB5F999
-.db $6E $01 $00 $B0 $00
+.dw 366
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB5FB07
-.db $AC $01 $00 $B0 $00
+.dw 428
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB4B35B
-.db $F2 $01 $00 $B0 $00
+.dw 498
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB4B54D
-.db $48 $02 $00 $B0 $00
+.dw 584
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB9F37D
-.db $AB $06 $00 $B0 $00
+.dw 1707
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LBA8000
-.db $DC $07 $00 $B0 $00
+.dw 2012
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB8AF2F
-.db $51 $08 $00 $B0 $00
+.dw 2129
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB9FA28
-.db $67 $05 $00 $B0 $00
+.dw 1383
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB38000
-.db $EC $0A $00 $B0 $00
+.dw 2796
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB38AEC
-.db $69 $08 $00 $B0 $00
+.dw 2153
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB39355
-.db $55 $05 $00 $B0 $00
+.dw 1365
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB398AA
-.db $C6 $06 $00 $B0 $00
+.dw 1734
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB39F70
-.db $35 $05 $00 $B0 $00
+.dw 1333
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB3A4A5
-.db $1A $02 $00 $B0 $00
+.dw 538
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB3A6BF
-.db $2A $03 $00 $B0 $00
+.dw 810
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB3A9E9
-.db $D5 $01 $00 $B0 $00
+.dw 469
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB3ABBE
-.db $0C $02 $00 $B0 $00
+.dw 524
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB3ADCA
-.db $AE $04 $00 $B0 $00
+.dw 1198
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB3B278
-.db $21 $05 $00 $B0 $00
+.dw 1313
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB3B799
-.db $F2 $01 $00 $B0 $00
+.dw 498
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB3B98B
-.db $37 $01 $00 $B0 $00
+.dw 311
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB3BAC2
-.db $B6 $01 $00 $B0 $00
+.dw 438
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB3BC78
-.db $0C $03 $00 $B0 $00
+.dw 780
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB3BF84
-.db $C5 $02 $00 $B0 $00
+.dw 709
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB3C249
-.db $45 $03 $00 $B0 $00
+.dw 837
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB3C58E
-.db $E2 $01 $00 $B0 $00
+.dw 482
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB3C770
-.db $C4 $01 $00 $B0 $00
+.dw 452
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB3C934
-.db $91 $01 $00 $B0 $00
+.dw 401
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB3CAC5
-.db $C2 $01 $00 $B0 $00
+.dw 450
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB3CC87
-.db $FC $00 $00 $B0 $00
+.dw 252
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB88000
-.db $7F $01 $00 $B0 $00
+.dw 383
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB8817F
-.db $BC $03 $00 $B0 $00
+.dw 956
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB3CD83
-.db $76 $05 $00 $B0 $00
+.dw 1398
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB3D2F9
-.db $FC $06 $00 $B0 $00
+.dw 1788
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB783B9
-.db $B8 $0A $00 $B0 $00
+.dw 2744
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB3D9F5
-.db $7F $01 $00 $B0 $00
+.dw 383
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB3DB74
-.db $65 $02 $00 $B0 $00
+.dw 613
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LB1D6C0
-.db $29 $00 $00 $B0 $00
+.dw 41
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LBA8929
-.db $08 $21 $00 $B0 $00
+.dw 8456
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LBAAA31
-.db $CD $34 $00 $B0 $00
+.dw 13517
+.dw $B000
+.db 0
 REMOVE_BANK $B0 LBADEFE
-.db $2D $03 $D0 $93 $00
+.dw 813
+.dw $93D0
+.db 0
 REMOVE_BANK $B0 LB2E5AC
-.db $48 $00 $7C $1A $00
+.dw 72
+.dw $1A7C
+.db 0
 REMOVE_BANK $B0 LB2E5F4
-.db $48 $00 $7C $1A $00
+.dw 72
+.dw $1A7C
+.db 0
 REMOVE_BANK $B0 LB2E63C
-.db $48 $00 $7C $1A $00
+.dw 72
+.dw $1A7C
+.db 0
 REMOVE_BANK $B0 LBAE8D5
-.db $30 $00 $C8 $19 $00
+.dw 48
+.dw $19C8
+.db 0
 REMOVE_BANK $B0 LBAE8ED
-.db $30 $00 $C8 $19 $00
+.dw 48
+.dw $19C8
+.db 0
 REMOVE_BANK $B0 LB2E684
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2E6A8
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2E6CC
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2E6F0
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2E714
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2E738
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2E75C
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2E780
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2E7A4
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2E7C8
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2E7EC
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2E810
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2E834
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2E858
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2E87C
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2E8A0
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2E8C4
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2E8E8
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2E90C
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2E930
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2E954
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2E978
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2E99C
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2E9C0
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2E9E4
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2EA08
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2EA2C
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2EA50
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2EA74
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2EA98
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2EABC
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2EAE0
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2EB04
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2EB28
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2EB4C
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2EB70
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2EB94
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2EBB8
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2EBDC
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2EC00
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2EC24
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2ECB4
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2ECD8
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2ECFC
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2ED20
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2ED44
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2ED68
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2ED8C
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2EDB0
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2EDD4
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2EDF8
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2EE1C
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2EE40
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2EC48
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2EC6C
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2EC90
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2EE64
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2EE88
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2EEAC
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2EED0
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2EEF4
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2EF18
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2EF3C
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2EF60
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2EF84
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2EFA8
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2EFCC
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2EFF0
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2F014
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2F038
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2F05C
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2F080
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2F0A4
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2F0C8
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2F0EC
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2F110
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2F134
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2F158
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2F17C
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2F1A0
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2F1C4
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2F1E8
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2F20C
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2F230
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2F254
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2F278
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2F29C
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2F2C0
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2F2E4
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2F308
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2F32C
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LBAE85D
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LBAE899
-.db $24 $00 $DC $1A $00
+.dw 36
+.dw $1ADC
+.db 0
 REMOVE_BANK $B0 LB2F350
-.db $30 $00 $A8 $1B $00
+.dw 48
+.dw $1BA8
+.db 0
 REMOVE_BANK $B0 LB2F380
-.db $30 $00 $A8 $1B $00
+.dw 48
+.dw $1BA8
+.db 0
 REMOVE_BANK $B0 LB2F3B0
-.db $30 $00 $A8 $1B $00
+.dw 48
+.dw $1BA8
+.db 0
 REMOVE_BANK $B0 LBAE905
-.db $20 $00 $30 $1B $00
+.dw 32
+.dw $1B30
+.db 0
 REMOVE_BANK $B0 LBAE915
-.db $20 $00 $30 $1B $00
+.dw 32
+.dw $1B30
+.db 0
 REMOVE_BANK $B0 LB2F3E0
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F3F8
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F410
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F428
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F440
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F458
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F470
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F488
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F4A0
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F4B8
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F4D0
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F4E8
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F500
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F518
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F530
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F548
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F560
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F578
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F590
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F5A8
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F5C0
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F5D8
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F5F0
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F608
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F620
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F638
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F650
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F668
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F680
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F698
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F6B0
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F6C8
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F6E0
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F6F8
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F710
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F728
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F740
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F758
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F770
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F788
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F7A0
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F800
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F818
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F830
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F848
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F860
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F878
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F890
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F8A8
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F8C0
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F8D8
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F8F0
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F908
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F7B8
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F7D0
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F7E8
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F920
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F938
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F950
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F968
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F980
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F998
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F9B0
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F9C8
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F9E0
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2F9F8
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2FA10
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2FA28
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2FA40
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2FA58
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2FA70
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2FA88
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2FAA0
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2FAB8
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2FAD0
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2FAE8
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2FB00
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2FB18
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2FB30
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2FB48
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2FB60
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2FB78
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2FB90
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2FBA8
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2FBC0
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2FBD8
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2FBF0
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2FC08
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2FC20
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2FC38
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB2FC50
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LBAE881
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LBAE8BD
-.db $18 $00 $E8 $1B $00
+.dw 24
+.dw $1BE8
+.db 0
 REMOVE_BANK $B0 LB58000
-.db $29 $25 $00 $6E $00
+.dw 9513
+.dw $6E00
+.db 0
 REMOVE_BANK $B0 LB5A529
-.db $C2 $25 $00 $6E $00
+.dw 9666
+.dw $6E00
+.db 0
 REMOVE_BANK $B0 LB5CAEB
-.db $3F $1B $10 $6E $00
+.dw 6975
+.dw $6E10
+.db 0
 REMOVE_BANK $B0 LB8C6BB
-.db $D5 $03 $00 $CB $00
+.dw 981
+.dw $CB00
+.db 0
 REMOVE_BANK $B0 LB28000
-.db $AD $0D $00 $BC $00
+.dw 3501
+.dw $BC00
+.db 0
 REMOVE_BANK $B0 LB28000
-.db $AD $0D $00 $C0 $00
+.dw 3501
+.dw $C000
+.db 0
 REMOVE_BANK $B0 LB4BE55
-.db $56 $13 $00 $BC $00
+.dw 4950
+.dw $BC00
+.db 0
 REMOVE_BANK $B0 LB4BE55
-.db $56 $13 $00 $C4 $00
+.dw 4950
+.dw $C400
+.db 0
 REMOVE_BANK $B0 LB4BE55
-.db $56 $13 $00 $35 $00
+.dw 4950
+.dw $3500
+.db 0
 REMOVE_BANK $B0 LB28DAD
-.db $63 $09 $00 $BC $00
+.dw 2403
+.dw $BC00
+.db 0
 REMOVE_BANK $B0 LB29710
-.db $7A $0A $70 $C5 $00
+.dw 2682
+.dw $C570
+.db 0
 REMOVE_BANK $B0 LB2A18A
-.db $08 $07 $00 $C0 $00
+.dw 1800
+.dw $C000
+.db 0
 REMOVE_BANK $B0 LB2A18A
-.db $08 $07 $B0 $C9 $00
+.dw 1800
+.dw $C9B0
+.db 0
 REMOVE_BANK $B0 LB3DDD9
-.db $09 $09 $00 $BC $00
+.dw 2313
+.dw $BC00
+.db 0
 REMOVE_BANK $B0 LB3DDD9
-.db $09 $09 $00 $C5 $00
+.dw 2313
+.dw $C500
+.db 0
 REMOVE_BANK $B0 LB3E6E2
-.db $76 $02 $00 $BC $00
+.dw 630
+.dw $BC00
+.db 0
 REMOVE_BANK $B0 LB2C4A9
-.db $54 $06 $00 $C0 $00
+.dw 1620
+.dw $C000
+.db 0
 REMOVE_BANK $B0 LB3E958
-.db $46 $05 $00 $BC $00
+.dw 1350
+.dw $BC00
+.db 0
 REMOVE_BANK $B0 LB2CAFD
-.db $CF $09 $00 $BC $00
+.dw 2511
+.dw $BC00
+.db 0
 REMOVE_BANK $B0 LB3EE9E
-.db $E9 $07 $D0 $C5 $00
+.dw 2025
+.dw $C5D0
+.db 0
 REMOVE_BANK $B0 LB2A892
-.db $17 $1C $00 $BC $00
+.dw 7191
+.dw $BC00
+.db 0
 REMOVE_BANK $B0 LB5E62A
-.db $C1 $08 $00 $D0 $00
+.dw 2241
+.dw $D000
+.db 0
 REMOVE_BANK $B0 LB5E62A
-.db $C1 $08 $00 $BC $00
+.dw 2241
+.dw $BC00
+.db 0
 REMOVE_BANK $B0 LB5EEEB
-.db $5F $01 $A0 $CE $00
+.dw 351
+.dw $CEA0
+.db 0
 REMOVE_BANK $B0 LB3F687
-.db $09 $09 $00 $BC $00
+.dw 2313
+.dw $BC00
+.db 0
 REMOVE_BANK $B0 LB4B795
-.db $C0 $06 $40 $B9 $00
+.dw 1728
+.dw $B940
+.db 0
 REMOVE_BANK $B0 LB7E72C
-.db $B9 $13 $00 $BC $00
+.dw 5049
+.dw $BC00
+.db 0
 REMOVE_BANK $B0 LB2E00C
-.db $A0 $05 $00 $BC $00
+.dw 1440
+.dw $BC00
+.db 0
 REMOVE_BANK $B0 LB2D4CC
-.db $40 $0B $A0 $C1 $00
+.dw 2880
+.dw $C1A0
+.db 0
 REMOVE_BANK $B0 LB6E8DB
-.db $D4 $13 $00 $BC $00
+.dw 5076
+.dw $BC00
+.db 0
 REMOVE_BANK $B0 LB6E8DB
-.db $D4 $13 $00 $B9 $00
+.dw 5076
+.dw $B900
+.db 0
 REMOVE_BANK $B0 LB8B8B4
-.db $07 $0E $50 $89 $00
+.dw 3591
+.dw $8950
+.db 0
 REMOVE_BANK $B0 LB5EEEB
-.db $5F $01 $60 $D7 $00
+.dw 351
+.dw $D760
+.db 0
 REMOVE_BANK $B0 LB2A18A
-.db $08 $07 $B0 $BE $00
+.dw 1800
+.dw $BEB0
+.db 0
 REMOVE_BANK $B0 LB2A18A
-.db $08 $07 $E0 $CC $00
+.dw 1800
+.dw $CCE0
+.db 0
 REMOVE_BANK $B0 LB3E958
-.db $46 $05 $70 $C5 $00
+.dw 1350
+.dw $C570
+.db 0
 REMOVE_BANK $B0 LB8C6BB
-.db $2F $04 $00 $BC $00
+.dw 1071
+.dw $BC00
+.db 0
 REMOVE_BANK $B0 LB8CAEA
-.db $CA $08 $80 $C5 $00
+.dw 2250
+.dw $C580
+.db 0
 REMOVE_BANK $B0 LB8D3B4
-.db $F5 $0D $50 $C1 $00
+.dw 3573
+.dw $C150
+.db 0
 REMOVE_BANK $B0 LB8E1A9
-.db $00 $09 $00 $BC $00
+.dw 2304
+.dw $BC00
+.db 0
 REMOVE_BANK $B0 LB8E1A9
-.db $00 $09 $00 $CB $00
+.dw 2304
+.dw $CB00
+.db 0
 REMOVE_BANK $B0 LB8E1A9
-.db $00 $09 $00 $B3 $00
+.dw 2304
+.dw $B300
+.db 0
 REMOVE_BANK $B0 LB8EAA9
-.db $46 $05 $30 $C0 $00
+.dw 1350
+.dw $C030
+.db 0
 REMOVE_BANK $B0 LB8EAA9
-.db $46 $05 $50 $C1 $00
+.dw 1350
+.dw $C150
+.db 0
 REMOVE_BANK $B0 LB8EAA9
-.db $46 $05 $10 $C5 $00
+.dw 1350
+.dw $C510
+.db 0
 REMOVE_BANK $B0 LB8EFEF
-.db $AC $02 $00 $BC $00
+.dw 684
+.dw $BC00
+.db 0
 REMOVE_BANK $B0 LB8F29B
-.db $69 $03 $00 $BC $00
+.dw 873
+.dw $BC00
+.db 0
 REMOVE_BANK $B0 LB8F604
-.db $0B $04 $00 $BC $00
+.dw 1035
+.dw $BC00
+.db 0
 REMOVE_BANK $B0 LB8FA0F
-.db $AD $04 $00 $BC $00
+.dw 1197
+.dw $BC00
+.db 0
 REMOVE_BANK $B0 LB5CAEB
-.db $3F $1B $00 $35 $00
+.dw 6975
+.dw $3500
+.db 0
 REMOVE_BANK $B0 LB6E8DB
-.db $D4 $13 $40 $50 $00
+.dw 5076
+.dw $5040
+.db 0
 REMOVE_BANK $B0 LB5E62A
-.db $C1 $08 $20 $64 $00
+.dw 2241
+.dw $6420
+.db 0
 REMOVE_BANK $B0 LB5EEEB
-.db $5F $01 $80 $E5 $00
+.dw 351
+.dw $E580
+.db 0
 REMOVE_BANK $B0 LB68000
-.db $14 $04 $00 $D0 $00
+.dw 1044
+.dw $D000
+.db 0
 REMOVE_BANK $B0 LB68414
-.db $8C $0A $00 $D0 $00
+.dw 2700
+.dw $D000
+.db 0
 REMOVE_BANK $B0 LB68EA0
-.db $56 $0A $00 $D0 $00
+.dw 2646
+.dw $D000
+.db 0
 REMOVE_BANK $B0 LB698F6
-.db $9A $02 $00 $D0 $00
+.dw 666
+.dw $D000
+.db 0
 REMOVE_BANK $B0 LB69B90
-.db $F8 $0A $00 $D0 $00
+.dw 2808
+.dw $D000
+.db 0
 REMOVE_BANK $B0 LB6A688
-.db $0A $0B $00 $D0 $00
+.dw 2826
+.dw $D000
+.db 0
 REMOVE_BANK $B0 LB6B192
-.db $E7 $03 $00 $D0 $00
+.dw 999
+.dw $D000
+.db 0
 REMOVE_BANK $B0 LB6B579
-.db $F2 $07 $A0 $D2 $00
+.dw 2034
+.dw $D2A0
+.db 0
 REMOVE_BANK $B0 LB6BD6B
-.db $26 $04 $00 $D0 $00
+.dw 1062
+.dw $D000
+.db 0
 REMOVE_BANK $B0 LB6C191
-.db $99 $09 $00 $D0 $00
+.dw 2457
+.dw $D000
+.db 0
 REMOVE_BANK $B0 LB6CB2A
-.db $13 $0B $00 $D0 $00
+.dw 2835
+.dw $D000
+.db 0
 REMOVE_BANK $B0 LB6DC5B
-.db $8C $0A $00 $D0 $00
+.dw 2700
+.dw $D000
+.db 0
 REMOVE_BANK $B0 LB68000
-.db $14 $04 $80 $DB $00
+.dw 1044
+.dw $DB80
+.db 0
 REMOVE_BANK $B0 LB68414
-.db $8C $0A $80 $DB $00
+.dw 2700
+.dw $DB80
+.db 0
 REMOVE_BANK $B0 LB68EA0
-.db $56 $0A $80 $DB $00
+.dw 2646
+.dw $DB80
+.db 0
 REMOVE_BANK $B0 LB698F6
-.db $9A $02 $80 $DB $00
+.dw 666
+.dw $DB80
+.db 0
 REMOVE_BANK $B0 LB69B90
-.db $F8 $0A $80 $DB $00
+.dw 2808
+.dw $DB80
+.db 0
 REMOVE_BANK $B0 LB6A688
-.db $0A $0B $80 $DB $00
+.dw 2826
+.dw $DB80
+.db 0
 REMOVE_BANK $B0 LB6B192
-.db $E7 $03 $80 $DB $00
+.dw 999
+.dw $DB80
+.db 0
 REMOVE_BANK $B0 LB6B579
-.db $F2 $07 $20 $DE $00
+.dw 2034
+.dw $DE20
+.db 0
 REMOVE_BANK $B0 LB6BD6B
-.db $26 $04 $80 $DB $00
+.dw 1062
+.dw $DB80
+.db 0
 REMOVE_BANK $B0 LB6C191
-.db $99 $09 $80 $DB $00
+.dw 2457
+.dw $DB80
+.db 0
 REMOVE_BANK $B0 LB6CB2A
-.db $13 $0B $80 $DB $00
+.dw 2835
+.dw $DB80
+.db 0
 REMOVE_BANK $B0 LB6DC5B
-.db $8C $0A $80 $DB $00
+.dw 2700
+.dw $DB80
+.db 0
 REMOVE_BANK $B0 LB6E6E7
-.db $0C $00 $C4 $1A $00
+.dw 12
+.dw $1AC4
+.db 0
 REMOVE_BANK $B0 LB6E6FF
-.db $0C $00 $C4 $1A $00
+.dw 12
+.dw $1AC4
+.db 0
 REMOVE_BANK $B0 LB6E717
-.db $0C $00 $C4 $1A $00
+.dw 12
+.dw $1AC4
+.db 0
 REMOVE_BANK $B0 LB6E72F
-.db $0C $00 $C4 $1A $00
+.dw 12
+.dw $1AC4
+.db 0
 REMOVE_BANK $B0 LB6E747
-.db $0C $00 $C4 $1A $00
+.dw 12
+.dw $1AC4
+.db 0
 REMOVE_BANK $B0 LB6E75F
-.db $0C $00 $C4 $1A $00
+.dw 12
+.dw $1AC4
+.db 0
 REMOVE_BANK $B0 LB6E777
-.db $0C $00 $C4 $1A $00
+.dw 12
+.dw $1AC4
+.db 0
 REMOVE_BANK $B0 LB6E78F
-.db $0C $00 $C4 $1A $00
+.dw 12
+.dw $1AC4
+.db 0
 REMOVE_BANK $B0 LB6E7A7
-.db $0C $00 $C4 $1A $00
+.dw 12
+.dw $1AC4
+.db 0
 REMOVE_BANK $B0 LB6E7BF
-.db $0C $00 $C4 $1A $00
+.dw 12
+.dw $1AC4
+.db 0
 REMOVE_BANK $B0 LB6E7D7
-.db $0C $00 $C4 $1A $00
+.dw 12
+.dw $1AC4
+.db 0
 REMOVE_BANK $B0 LB6E7EF
-.db $0C $00 $C4 $1A $00
+.dw 12
+.dw $1AC4
+.db 0
 REMOVE_BANK $B0 LB6E7EF
-.db $18 $00 $C4 $1A $00
+.dw 24
+.dw $1AC4
+.db 0
 REMOVE_BANK $B0 LB6E6F3
-.db $0C $00 $D0 $1A $00
+.dw 12
+.dw $1AD0
+.db 0
 REMOVE_BANK $B0 LB6E70B
-.db $0C $00 $D0 $1A $00
+.dw 12
+.dw $1AD0
+.db 0
 REMOVE_BANK $B0 LB6E723
-.db $0C $00 $D0 $1A $00
+.dw 12
+.dw $1AD0
+.db 0
 REMOVE_BANK $B0 LB6E73B
-.db $0C $00 $D0 $1A $00
+.dw 12
+.dw $1AD0
+.db 0
 REMOVE_BANK $B0 LB6E753
-.db $0C $00 $D0 $1A $00
+.dw 12
+.dw $1AD0
+.db 0
 REMOVE_BANK $B0 LB6E76B
-.db $0C $00 $D0 $1A $00
+.dw 12
+.dw $1AD0
+.db 0
 REMOVE_BANK $B0 LB6E783
-.db $0C $00 $D0 $1A $00
+.dw 12
+.dw $1AD0
+.db 0
 REMOVE_BANK $B0 LB6E79B
-.db $0C $00 $D0 $1A $00
+.dw 12
+.dw $1AD0
+.db 0
 REMOVE_BANK $B0 LB6E7B3
-.db $0C $00 $D0 $1A $00
+.dw 12
+.dw $1AD0
+.db 0
 REMOVE_BANK $B0 LB6E7CB
-.db $0C $00 $D0 $1A $00
+.dw 12
+.dw $1AD0
+.db 0
 REMOVE_BANK $B0 LB6E7E3
-.db $0C $00 $D0 $1A $00
+.dw 12
+.dw $1AD0
+.db 0
 REMOVE_BANK $B0 LB6E807
-.db $0C $00 $D0 $1A $00
+.dw 12
+.dw $1AD0
+.db 0
 REMOVE_BANK $B0 LB6E813
-.db $08 $00 $D8 $1B $00
+.dw 8
+.dw $1BD8
+.db 0
 REMOVE_BANK $B0 LB6E823
-.db $08 $00 $D8 $1B $00
+.dw 8
+.dw $1BD8
+.db 0
 REMOVE_BANK $B0 LB6E833
-.db $08 $00 $D8 $1B $00
+.dw 8
+.dw $1BD8
+.db 0
 REMOVE_BANK $B0 LB6E843
-.db $08 $00 $D8 $1B $00
+.dw 8
+.dw $1BD8
+.db 0
 REMOVE_BANK $B0 LB6E853
-.db $08 $00 $D8 $1B $00
+.dw 8
+.dw $1BD8
+.db 0
 REMOVE_BANK $B0 LB6E863
-.db $08 $00 $D8 $1B $00
+.dw 8
+.dw $1BD8
+.db 0
 REMOVE_BANK $B0 LB6E873
-.db $08 $00 $D8 $1B $00
+.dw 8
+.dw $1BD8
+.db 0
 REMOVE_BANK $B0 LB6E883
-.db $08 $00 $D8 $1B $00
+.dw 8
+.dw $1BD8
+.db 0
 REMOVE_BANK $B0 LB6E893
-.db $08 $00 $D8 $1B $00
+.dw 8
+.dw $1BD8
+.db 0
 REMOVE_BANK $B0 LB6E8A3
-.db $08 $00 $D8 $1B $00
+.dw 8
+.dw $1BD8
+.db 0
 REMOVE_BANK $B0 LB6E8B3
-.db $08 $00 $D8 $1B $00
+.dw 8
+.dw $1BD8
+.db 0
 REMOVE_BANK $B0 LB6E8C3
-.db $08 $00 $D8 $1B $00
+.dw 8
+.dw $1BD8
+.db 0
 REMOVE_BANK $B0 LB6E8C3
-.db $10 $00 $D8 $1B $00
+.dw 16
+.dw $1BD8
+.db 0
 REMOVE_BANK $B0 LB6E81B
-.db $08 $00 $E0 $1B $00
+.dw 8
+.dw $1BE0
+.db 0
 REMOVE_BANK $B0 LB6E82B
-.db $08 $00 $E0 $1B $00
+.dw 8
+.dw $1BE0
+.db 0
 REMOVE_BANK $B0 LB6E83B
-.db $08 $00 $E0 $1B $00
+.dw 8
+.dw $1BE0
+.db 0
 REMOVE_BANK $B0 LB6E84B
-.db $08 $00 $E0 $1B $00
+.dw 8
+.dw $1BE0
+.db 0
 REMOVE_BANK $B0 LB6E85B
-.db $08 $00 $E0 $1B $00
+.dw 8
+.dw $1BE0
+.db 0
 REMOVE_BANK $B0 LB6E86B
-.db $08 $00 $E0 $1B $00
+.dw 8
+.dw $1BE0
+.db 0
 REMOVE_BANK $B0 LB6E87B
-.db $08 $00 $E0 $1B $00
+.dw 8
+.dw $1BE0
+.db 0
 REMOVE_BANK $B0 LB6E88B
-.db $08 $00 $E0 $1B $00
+.dw 8
+.dw $1BE0
+.db 0
 REMOVE_BANK $B0 LB6E89B
-.db $08 $00 $E0 $1B $00
+.dw 8
+.dw $1BE0
+.db 0
 REMOVE_BANK $B0 LB6E8AB
-.db $08 $00 $E0 $1B $00
+.dw 8
+.dw $1BE0
+.db 0
 REMOVE_BANK $B0 LB6E8BB
-.db $08 $00 $E0 $1B $00
+.dw 8
+.dw $1BE0
+.db 0
 REMOVE_BANK $B0 LB6E8D3
-.db $08 $00 $E0 $1B $00
+.dw 8
+.dw $1BE0
+.db 0
 REMOVE_BANK $B0 LB4D1AB
-.db $92 $16 $00 $D0 $00
+.dw 5778
+.dw $D000
+.db 0
 REMOVE_BANK $B0 $B0FEFD ; (LB0FF00 - 3) ; LB0FEFD
-.db $24 $00 $B8 $1A $00
+.dw 36
+.dw $1AB8
+.db 0
 REMOVE_BANK $B0 LB0FF51
-.db $18 $00 $D0 $1B $00
+.dw 24
+.dw $1BD0
+.db 0
 REMOVE_BANK $B0 LB0C600
-.db $FD $38 $00 $35 $00
+.dw 14589
+.dw $3500
+.db 0
 REMOVE_BANK $B0 LB98000
-.db $40 $38 $00 $35 $00
+.dw 14400
+.dw $3500
+.db 0
 REMOVE_BANK $B0 LB9B840
-.db $6D $38 $00 $35 $00
+.dw 14445
+.dw $3500
+.db 0
 REMOVE_BANK $B0 LB9F0AD
-.db $8A $00 $C8 $19 $00
+.dw 138
+.dw $19C8
+.db 0
 REMOVE_BANK $B0 LB9F13D
-.db $8A $00 $C8 $19 $00
+.dw 138
+.dw $19C8
+.db 0
 REMOVE_BANK $B0 LB9F1CD
-.db $8A $00 $C8 $19 $00
+.dw 138
+.dw $19C8
+.db 0
 REMOVE_BANK $B0 LB9F25D
-.db $5C $00 $30 $1B $00
+.dw 92
+.dw $1B30
+.db 0
 REMOVE_BANK $B0 LB9F2BD
-.db $5C $00 $30 $1B $00
+.dw 92
+.dw $1B30
+.db 0
 REMOVE_BANK $B0 LB9F31D
-.db $5C $00 $30 $1B $00
+.dw 92
+.dw $1B30
+.db 0
 REMOVE_BANK $B0 LB6D63D
-.db $1E $06 $D0 $93 $00
+.dw 1566
+.dw $93D0
+.db 0
 REMOVE_BANK $B0 LB0FF21
-.db $18 $00 $C4 $1A $00
+.dw 24
+.dw $1AC4
+.db 0
 REMOVE_BANK $B0 LB0FF69
-.db $10 $00 $D8 $1B $00
+.dw 16
+.dw $1BD8
+.db 0
 REMOVE_BANK $B0 LB4E83D
-.db $26 $16 $00 $D0 $00
+.dw 5670
+.dw $D000
+.db 0
 REMOVE_BANK $B0 LB0FF39
-.db $18 $00 $C4 $1A $00
+.dw 24
+.dw $1AC4
+.db 0
 REMOVE_BANK $B0 LB0FF79
-.db $10 $00 $D8 $1B $00
+.dw 16
+.dw $1BD8
+.db 0
 
 LB1E8C0:
 .db $0B $18 $69 $05 $00 $8D $A7 $0B

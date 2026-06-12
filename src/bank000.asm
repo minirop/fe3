@@ -328,13 +328,13 @@ L808275:
 	sta $03
 L808279:
 	lda #$01
-	sta $4016
+	sta.w JOYOUT
 	lda $4016,X
-	stz $4016
+	stz.w JOYOUT
 	lda #$01
-	sta $4016
+	sta.w JOYOUT
 	lda #$00
-	sta $4016
+	sta.w JOYOUT
 	sta $06
 	ldy.b #$0a
 L808292:
@@ -7536,7 +7536,7 @@ L80B7A8:
 L80B7C3:
 	jsr L80B943
 	lda $0872
-	sta $2140
+	sta.w APUIO0
 	lda $0862
 	sta $0872
 	lda $0864
@@ -7547,7 +7547,7 @@ L80B7C3:
 	sta $0866
 	stz $0868
 	lda $0874
-	sta $2142
+	sta.w APUIO2
 	lda $086A
 	sta $0874
 	lda $086C
@@ -7745,13 +7745,13 @@ L80B960:
 	lda $0898
 	ldy #$1234
 L80B966:
-	cpy $2140
+	cpy.w APUIO0
 	bne L80B966
-	sta $2140
+	sta.w APUIO0
 	ldy #$007F
-	sty $2142
+	sty.w APUIO2
 L80B974:
-	cmp $2140
+	cmp.w APUIO0
 	bne L80B974
 	lda $089A
 	sta $00
@@ -7764,8 +7764,8 @@ L80B974:
 L80B98F:
 	lda #$00FE
 L80B992:
-	sta $2140
-	stz $2142
+	sta.w APUIO0
+	stz.w APUIO2
 	txa
 	dea
 	asl
@@ -7775,7 +7775,7 @@ L80B992:
 	ldx #$0000
 	brl L80BA26
 L80B9A9:
-	stx $2142
+	stx.w APUIO2
 	tax
 	lda.l (LB1DB00 + 1),X
 	clc
@@ -7789,14 +7789,14 @@ L80B9A9:
 	lda.l (LB1DB00 + 5),X
 	ldy #$1234
 L80B9C9:
-	cpy $2140
+	cpy.w APUIO0
 	bne L80B9C9
-	sta $2140
+	sta.w APUIO0
 	sta $0898
 	ldy #$007F
-	sty $2142
+	sty.w APUIO2
 L80B9DA:
-	cmp $2140
+	cmp.w APUIO0
 	bne L80B9DA
 	lda.l LB1DB00,X
 	tay
@@ -7805,11 +7805,11 @@ L80B9DA:
 	tax
 	lda #$007F
 L80B9ED:
-	cmp $2142
+	cmp.w APUIO2
 	bne L80B9ED
-	stx $2140
+	stx.w APUIO0
 	lda $088C
-	sta $2142
+	sta.w APUIO2
 	iny
 	iny
 	pha
@@ -7829,7 +7829,7 @@ L80BA19:
 	bne L80B9ED
 	ldx #$7FFF
 L80BA21:
-	cmp $2142
+	cmp.w APUIO2
 	bne L80BA21
 L80BA26:
 	ldy $0888
@@ -7853,14 +7853,14 @@ L80BA47:
 	stz $0890
 	lda #$00FF
 L80BA50:
-	sta $2142
+	sta.w APUIO2
 L80BA53:
-	lda $2140
+	lda.w APUIO0
 	bne L80BA53
-	lda $2142
+	lda.w APUIO2
 	bne L80BA53
-	sta $2142
-	sta $2140
+	sta.w APUIO2
+	sta.w APUIO0
 	rts
 
 L80BA64:
@@ -7881,9 +7881,9 @@ L80BA79:
 
 L80BA81:
 	ldx #$00FD
-	stx $2140
+	stx.w APUIO0
 L80BA87:
-	cmp $2140
+	cmp.w APUIO0
 	bne L80BA81
 	sep #$20
 	lda #$CC
@@ -7898,17 +7898,17 @@ L80BA9A:
 	jsr L80BAE5
 	xba
 L80BA9F:
-	cmp $2140
+	cmp.w APUIO0
 	bne L80BA9F
 	ina
 L80BAA5:
 	rep #$20
-	sta $2140
+	sta.w APUIO0
 	sep #$20
 	dex
 	bne L80BA9A
 L80BAAF:
-	cmp $2140
+	cmp.w APUIO0
 	bne L80BAAF
 L80BAB4:
 	adc #$03
@@ -7921,17 +7921,17 @@ L80BAB8:
 	tax
 	jsr L80BAE5
 	jsr L80BAE7
-	sta $2142
+	sta.w APUIO2
 	sep #$20
 	cpx #$0001
 	lda #$00
 	rol
-	sta $2141
+	sta.w APUIO1
 	adc #$7F
 	pla
-	sta $2140
+	sta.w APUIO0
 L80BADC:
-	cmp $2140
+	cmp.w APUIO0
 	bne L80BADC
 	bvs L80BA92
 	plp
@@ -8082,11 +8082,11 @@ L80BBEF:
 	brl L80BC92
 L80BBF9:
 	lda $0872
-	cmp $2140
+	cmp.w APUIO0
 	bne L80BC04
 	lda $0862
 L80BC04:
-	sta $2140
+	sta.w APUIO0
 	sta $0872
 	cmp $0862
 	bne L80BC14
@@ -8095,17 +8095,17 @@ L80BC04:
 L80BC14:
 	lda $0873
 L80BC17:
-	sta $2141
+	sta.w APUIO1
 	sta $0873
-	lda $2141
+	lda.w APUIO1
 	sta $0887
 	sta $08B7
 	lda $0874
-	cmp $2142
+	cmp.w APUIO2
 	bne L80BC31
 	lda $086A
 L80BC31:
-	sta $2142
+	sta.w APUIO2
 	sta $0874
 	cmp $086A
 	bne L80BC41
@@ -8114,9 +8114,9 @@ L80BC31:
 L80BC41:
 	lda $0875
 L80BC44:
-	sta $2143
+	sta.w APUIO3
 	sta $0875
-	lda $2143
+	lda.w APUIO3
 	sta $0886
 	sep #$20
 	lda $0872
@@ -8156,7 +8156,7 @@ L80BC95:
 	rep #$30
 	jsl L80B427
 L80BC9F:
-	lda $2143
+	lda.w APUIO3
 	and #$0002
 	beq L80BCB8
 	lda #$00E0
@@ -8165,7 +8165,7 @@ L80BC9F:
 	jsl L8087EA
 	bra L80BC9F
 L80BCB8:
-	lda $2143
+	lda.w APUIO3
 	and #$0001
 	beq L80BCD1
 	lda #$00F9

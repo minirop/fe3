@@ -415,7 +415,7 @@ L8682DC:
 	clc
 	adc.w RDMPYL
 	adc #$3000
-	sta $2181
+	sta.w WMADDL
 	rts
 
 L8682FF:
@@ -789,8 +789,8 @@ L8685A0:
 L8685AA:
 	ldy #$00
 L8685AC:
-	ldx $2180
-	sta $2180
+	ldx.w WMDATA
+	sta.w WMDATA
 	iny
 	cpy #$05
 	bcc L8685AC
@@ -812,8 +812,8 @@ L8685C6:
 L8685D0:
 	ldy #$00
 L8685D2:
-	ldx $2180
-	sta $2180
+	ldx.w WMDATA
+	sta.w WMDATA
 	iny
 	cpy #$0B
 	bcc L8685D2
@@ -856,13 +856,13 @@ L86861B:
 
 L86861E:
 	lda #$3000
-	sta $2181
+	sta.w WMADDL
 	sep #$20
-	stz $2183
+	stz.w WMADDH
 	ldx #$0400
 L86862C:
-	lda $2180
-	stz $2180
+	lda.w WMDATA
+	stz.w WMDATA
 	dex
 	bne L86862C
 	rep #$20
@@ -895,8 +895,8 @@ L868657:
 	ldy #$00
 L868660:
 	lda ($15),Y
-	sta $2180
-	stz $2180
+	sta.w WMDATA
+	stz.w WMDATA
 	iny
 	cpy $17
 	bcc L868660
@@ -914,14 +914,14 @@ L868671:
 	lsr
 	clc
 	adc #$60
-	sta $2180
-	stz $2180
+	sta.w WMDATA
+	stz.w WMDATA
 	lda $10A6
 	and #$0F
 	clc
 	adc #$60
-	sta $2180
-	stz $2180
+	sta.w WMDATA
+	stz.w WMDATA
 	rep #$20
 	rts
 
@@ -939,8 +939,8 @@ L868697:
 L8686AB:
 	lda #$FF
 L8686AD:
-	sta $2180
-	stz $2180
+	sta.w WMDATA
+	stz.w WMDATA
 	lda #$64
 	xba
 	lda $10A6
@@ -956,8 +956,8 @@ L8686C7:
 	clc
 	adc #$60
 L8686CD:
-	sta $2180
-	stz $2180
+	sta.w WMDATA
+	stz.w WMDATA
 	lda #$0A
 	xba
 	lda.w RDMPYL
@@ -973,13 +973,13 @@ L8686E7:
 	clc
 	adc #$60
 L8686ED:
-	sta $2180
-	stz $2180
+	sta.w WMDATA
+	stz.w WMDATA
 	lda.w RDMPYL
 	clc
 	adc #$60
-	sta $2180
-	stz $2180
+	sta.w WMDATA
+	stz.w WMDATA
 	rep #$20
 	rts
 
@@ -1027,13 +1027,13 @@ L868743:
 	rep #$20
 	sep #$20
 	ldx #$3000
-	stx $2181
-	stz $2183
+	stx.w WMADDL
+	stz.w WMADDH
 	ldx #$0000
 L86875D:
 	lda.l L95EDDD,X
-	sta $2180
-	stz $2180
+	sta.w WMDATA
+	stz.w WMDATA
 	inx
 	cpx #$03C0
 	bcc L86875D
@@ -1474,9 +1474,9 @@ L868B09:
 	ldy #$0000
 L868B14:
 	lda.l L95DCCE,X
-	sta $2180
+	sta.w WMDATA
 	lda #$00
-	sta $2180
+	sta.w WMDATA
 	inx
 	iny
 	cpy #$000D
