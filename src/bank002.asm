@@ -4221,11 +4221,11 @@ L82A8CF:
 	bcc L82A8C8
 	ldx $23
 	sep #$20
-	lda #$82
+	lda #bankbyte(L82A8F2)
 	sta.l $0004CD,X
-	lda #$A8
+	lda #hibyte(L82A8F2)
 	sta.l $0004CC,X
-	lda #$F2
+	lda #lobyte(L82A8F2)
 	sta.l $0004CB,X
 	plp
 	rts

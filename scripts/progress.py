@@ -36,4 +36,4 @@ for (name, count) in files:
 
 fsize = os.path.getsize("../fe3.sfc")
 progress = 100 * (fsize - counter) / fsize
-print("%d/%d: %.2f%%" % (counter, fsize, progress))
+print("%d/%d: %.2f%%" % (fsize - counter, fsize, progress))

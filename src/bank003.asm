@@ -7298,7 +7298,7 @@ L83BF06:
 	lda.w L83BF5F,X
 	sta $03
 	sep #$20
-	lda #$8B
+	lda #bankbyte(L8B8000)
 	sta $05
 	plx
 	ldy #$0000
@@ -7351,7 +7351,8 @@ L83BF5D:
 	rtl
 
 L83BF5F:
-.db $85 $8F $FA $90
+.dw L8B8F85
+.dw L8B90FA
 
 L83BF63:
 	php
