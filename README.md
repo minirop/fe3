@@ -26,7 +26,8 @@ Just type `make`.
 
 ## See also
 
-* [**StanHash/fe1**](https://github.com/StanHash/fe1), a disassembly of Fire Emblem: Ankoku Ryu to Hikari no Tsurugi
+* [**StanHash/fe1**](https://github.com/StanHash/fe1), a disassembly of Fire Emblem: Ankoku Ryū to Hikari no Tsurugi
+* [**minirop/fe2**](https://github.com/minirop/fe2), a disassembly of Fire Emblem Gaiden
 * [**ZaneAvernathy/FireEmblem5**](https://github.com/ZaneAvernathy/FireEmblem5), a disassembly of Fire Emblem: Thracia 776
 * [**FireEmblemUniverse/fireemblem6j**](https://github.com/FireEmblemUniverse/fireemblem6j), a decompilation of Fire Emblem: Fūin no Tsurugi
 * [**MokhaLeee/FireEmblem7J**](https://github.com/MokhaLeee/FireEmblem7J), a decompilation of Fire Emblem: Rekka no Ken

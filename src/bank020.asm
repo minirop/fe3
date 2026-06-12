@@ -647,6 +647,8 @@ L949000:
 .db $39 $FF $03 $FF $FF $FF $FF $FF
 .db $AF $FF $81 $FF $6F $FF $83 $FF
 .db $EF $FF $01 $FF $FF $FF $FF $FF
+
+L949400:
 .db $FF $FF $FF $FF $FF $FF $F1 $FF
 .db $F7 $FF $F7 $FF $F7 $FF $F7 $FF
 .db $FF $FF $FF $FF $FF $FF $FF $FF
@@ -1115,6 +1117,8 @@ L94A000:
 .db $B5 $FF $1F $FF $11 $FF $BB $FF
 .db $FF $FF $55 $FF $55 $FF $55 $FF
 .db $55 $FF $55 $FF $FF $FF $FF $FF
+
+L94A290:
 .db $FF $FF $5F $FF $5F $FF $5F $FF
 .db $5F $FF $5F $FF $FF $FF $FF $FF
 .db $60 $BF $BB $7F $A0 $DF $DB $BF

@@ -1537,7 +1537,12 @@ CLASSES_INITIAL_STATS: ; 9 bytes per class
 .db $06 $00 $00 $06 $0F $14 $32 $10
 .db $28
 
-CHARACTERS_INITIAL_STATS: ; 8 bytes (stats) + sex + 8 bytes (growth rates)
+CHARACTERS_INITIAL_STATS:
+; 8 bytes (stats?) + sex + 8 bytes (growth rates)
+; ? ? ? lck ? ? HP W.lvl
+; sex
+; str skl spd lck def res MaxHP W.lvl
+
 ; MARTH
 .db 2 3 3 7 1 0 18 6
 .db MALE
