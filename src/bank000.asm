@@ -1142,19 +1142,19 @@ L8088E9:
 
 L8088FB:
 	lda #$00
-	sta $4300
+	sta.w DMAP0
 	lda #$04
-	sta $4301
+	sta.w BBAD0
 	lda #$10
-	sta $4302
+	sta.w A1T0L
 	lda #$02
-	sta $4303
+	sta.w A1T0H
 	lda #$00
-	sta $4304
+	sta.w A1B0
 	lda #$20
-	sta $4305
+	sta.w DAS0L
 	lda #$02
-	sta $4306
+	sta.w DAS0H
 	lda #$01
 	sta.w MDMAEN
 	lda $7D
@@ -1195,20 +1195,20 @@ L80895B:
 
 L80895C:
 	lda $0141,Y
-	sta $4312
+	sta.w A1T1L
 	lda $0142,Y
-	sta $4313
+	sta.w A1T1H
 	lda $0143,Y
-	sta $4314
+	sta.w A1B1
 	lda $0144,Y
-	sta $4315
+	sta.w DAS1L
 	lda $0145,Y
-	sta $4316
+	sta.w DAS1H
 	lda $0146,Y
 	sta $2121
-	stz $4310
+	stz.w DMAP1
 	lda #$22
-	sta $4311
+	sta.w BBAD1
 	lda #$02
 	sta.w MDMAEN
 	tya
@@ -1218,15 +1218,15 @@ L80895C:
 	jmp L80893E
 L808995:
 	lda $0141,Y
-	sta $4312
+	sta.w A1T1L
 	lda $0142,Y
-	sta $4313
+	sta.w A1T1H
 	lda $0143,Y
-	sta $4314
+	sta.w A1B1
 	lda $0144,Y
-	sta $4315
+	sta.w DAS1L
 	lda $0145,Y
-	sta $4316
+	sta.w DAS1H
 	lda $0146,Y
 	sta $2115
 	lda $0147,Y
@@ -1234,9 +1234,9 @@ L808995:
 	lda $0148,Y
 	sta $2117
 	lda #$01
-	sta $4310
+	sta.w DMAP1
 	lda #$18
-	sta $4311
+	sta.w BBAD1
 	lda #$02
 	sta.w MDMAEN
 	tya
@@ -1247,15 +1247,15 @@ L808995:
 
 L8089DC:
 	lda $0141,Y
-	sta $4312
+	sta.w A1T1L
 	lda $0142,Y
-	sta $4313
+	sta.w A1T1H
 	lda $0143,Y
-	sta $4314
+	sta.w A1B1
 	lda $0144,Y
-	sta $4315
+	sta.w DAS1L
 	lda $0145,Y
-	sta $4316
+	sta.w DAS1H
 	lda $0146,Y
 	sta $2115
 	lda $0147,Y
@@ -1263,9 +1263,9 @@ L8089DC:
 	lda $0148,Y
 	sta $2117
 	lda #$81
-	sta $4310
+	sta.w DMAP1
 	lda #$39
-	sta $4311
+	sta.w BBAD1
 	; bug?
 	lda $2139
 	lda $213a
@@ -1287,35 +1287,35 @@ L808A32:
 	sta $15
 	iny
 	lda ($00),Y
-	sta $4312
+	sta.w A1T1L
 	iny
 	lda ($00),Y
-	sta $4313
+	sta.w A1T1H
 	iny
 	lda ($00),Y
-	sta $4314
+	sta.w A1B1
 	iny
 	lda ($00),Y
-	sta $4315
+	sta.w DAS1L
 	iny
 	lda ($00),Y
-	sta $4316
+	sta.w DAS1H
 	iny
 	lda $15
 	and #$01
 	beq L808A6D
-	stz $4310
+	stz.w DMAP1
 	lda #$22
-	sta $4311
+	sta.w BBAD1
 	lda ($00),Y
 	iny
 	sta $2121
 	bra L808A89
 L808A6D:
 	lda #$01
-	sta $4310
+	sta.w DMAP1
 	lda #$18
-	sta $4311
+	sta.w BBAD1
 	lda ($00),Y
 	iny
 	sta $2115
@@ -5560,15 +5560,15 @@ L80A957:
 	sta $4D
 	sep #$20
 	lda $4D
-	sta $4322
+	sta.w A1T2L
 	lda $4E
-	sta $4323
+	sta.w A1T2H
 	lda $0757
-	sta $4324
+	sta.w A1B2
 	lda #$00
-	sta $4325
+	sta.w DAS2L
 	lda #$08
-	sta $4326
+	sta.w DAS2H
 	lda #$80
 	sta $2115
 	lda #$00
@@ -5576,9 +5576,9 @@ L80A957:
 	lda #$1C
 	sta $2117
 	lda #$01
-	sta $4320
+	sta.w DMAP2
 	lda #$18
-	sta $4321
+	sta.w BBAD2
 	lda #$04
 	sta.w MDMAEN
 	rep #$20

@@ -3405,17 +3405,17 @@ L8699C4:
 L8699F8:
 	sep #$20
 	lda #$40
-	sta $4330
+	sta.w DMAP3
 	lda #$2C
-	sta $4331
+	sta.w BBAD3
 	lda #lobyte(L868E18)
-	sta $4332
+	sta.w A1T3L
 	lda #hibyte(L868E18)
-	sta $4333
+	sta.w A1T3H
 	lda #bankbyte(L868E18)
-	sta $4334
+	sta.w A1B3
 	lda #$00
-	sta $4337
+	sta.w DASB3
 	rep #$20
 	lda $F7
 	ora #$0008
@@ -9109,19 +9109,19 @@ L86C425:
 	lda $2139
 	sep #$20
 	lda #$81
-	sta $4300
+	sta.w DMAP0
 	lda #$39
-	sta $4301
+	sta.w BBAD0
 	lda #$FE
-	sta $4302
+	sta.w A1T0L
 	lda #$58
-	sta $4303
+	sta.w A1T0H
 	lda #$7E
-	sta $4304
+	sta.w A1B0
 	lda #$80
-	sta $4305
+	sta.w DAS0L
 	lda #$08
-	sta $4306
+	sta.w DAS0H
 	rep #$20
 	sep #$20
 	lda #$01
@@ -9133,19 +9133,19 @@ L86C425:
 	rep #$20
 	sep #$20
 	lda #$82
-	sta $4300
+	sta.w DMAP0
 	lda #$3B
-	sta $4301
+	sta.w BBAD0
 	lda #$BE
-	sta $4302
+	sta.w A1T0L
 	lda #$50
-	sta $4303
+	sta.w A1T0H
 	lda #$7E
-	sta $4304
+	sta.w A1B0
 	lda #$20
-	sta $4305
+	sta.w DAS0L
 	lda #$00
-	sta $4306
+	sta.w DAS0H
 	rep #$20
 	sep #$20
 	lda #$01
@@ -9157,19 +9157,19 @@ L86C425:
 	rep #$20
 	sep #$20
 	lda #$82
-	sta $4300
+	sta.w DMAP0
 	lda #$3B
-	sta $4301
+	sta.w BBAD0
 	lda #$DE
-	sta $4302
+	sta.w A1T0L
 	lda #$50
-	sta $4303
+	sta.w A1T0H
 	lda #$7E
-	sta $4304
+	sta.w A1B0
 	lda #$20
-	sta $4305
+	sta.w DAS0L
 	lda #$00
-	sta $4306
+	sta.w DAS0H
 	rep #$20
 	sep #$20
 	lda #$01
@@ -9231,19 +9231,19 @@ L86C543:
 	lda $2139
 	sep #$20
 	lda #$81
-	sta $4300
+	sta.w DMAP0
 	lda #$39
-	sta $4301
+	sta.w BBAD0
 	lda #$FE
-	sta $4302
+	sta.w A1T0L
 	lda #$40
-	sta $4303
+	sta.w A1T0H
 	lda #$7E
-	sta $4304
+	sta.w A1B0
 	lda #$00
-	sta $4305
+	sta.w DAS0L
 	lda #$0F
-	sta $4306
+	sta.w DAS0H
 	rep #$20
 	sep #$20
 	lda #$01
@@ -10099,27 +10099,27 @@ L86CC99:
 	jsl L8087EA
 	sep #$20
 	lda #$00
-	sta $4360
+	sta.w DMAP6
 	lda #$14
-	sta $4361
+	sta.w BBAD6
 	lda #lobyte(L868D73)
-	sta $4362
+	sta.w A1T6L
 	lda #hibyte(L868D73)
-	sta $4363
+	sta.w A1T6H
 	lda #bankbyte(L868D73)
-	sta $4364
+	sta.w A1B6
 	rep #$20
 	sep #$20
 	lda #$00
-	sta $4370
+	sta.w DMAP7
 	lda #$14
-	sta $4371
+	sta.w BBAD7
 	lda #lobyte(L868D73)
-	sta $4372
+	sta.w A1T7L
 	lda #hibyte(L868D73)
-	sta $4373
+	sta.w A1T7H
 	lda #bankbyte(L868D73)
-	sta $4374
+	sta.w A1B7
 	rep #$20
 	rts
 
@@ -10457,15 +10457,20 @@ L86CF2A:
 	bra L86CF54
 
 L86CF40:
-	bit #$F010
-	ora $49,S
-	sbc $0F291A,X
+.ACCU 8
+	bit #$10
+	beq L86CF47
+	eor #$FF
+	ina
+L86CF47:
+	and #$0F
 	asl
 	asl
 	asl
 	asl
-	ora #$8504
-	adc $21068D,X
+	ora #$04
+	sta $7F
+	sta $2106
 L86CF54:
 	rep #$20
 	rts
@@ -11966,19 +11971,19 @@ L86DA04:
 	rep #$20
 	sep #$20
 	lda #$82
-	sta $4300
+	sta.w DMAP0
 	lda #$3B
-	sta $4301
+	sta.w BBAD0
 	lda #$FE
-	sta $4302
+	sta.w A1T0L
 	lda #$40
-	sta $4303
+	sta.w A1T0H
 	lda #$7E
-	sta $4304
+	sta.w A1B0
 	lda #$60
-	sta $4305
+	sta.w DAS0L
 	lda #$00
-	sta $4306
+	sta.w DAS0H
 	rep #$20
 	sep #$20
 	lda #$01
@@ -11997,19 +12002,19 @@ L86DA04:
 	rep #$20
 	sep #$20
 	lda #$82
-	sta $4300
+	sta.w DMAP0
 	lda #$3B
-	sta $4301
+	sta.w BBAD0
 	lda #$FE
-	sta $4302
+	sta.w A1T0L
 	lda #$40
-	sta $4303
+	sta.w A1T0H
 	lda #$7E
-	sta $4304
+	sta.w A1B0
 	lda #$60
-	sta $4305
+	sta.w DAS0L
 	lda #$00
-	sta $4306
+	sta.w DAS0H
 	rep #$20
 	sep #$20
 	lda #$01
@@ -12027,19 +12032,19 @@ L86DA95:
 	rep #$20
 	sep #$20
 	lda #$82
-	sta $4300
+	sta.w DMAP0
 	lda #$3B
-	sta $4301
+	sta.w BBAD0
 	lda #$FE
-	sta $4302
+	sta.w A1T0L
 	lda #$40
-	sta $4303
+	sta.w A1T0H
 	lda #$7E
-	sta $4304
+	sta.w A1B0
 	lda #$60
-	sta $4305
+	sta.w DAS0L
 	lda #$00
-	sta $4306
+	sta.w DAS0H
 	rep #$20
 	sep #$20
 	lda #$01
@@ -12205,19 +12210,19 @@ L86DBD7:
 	lda #$20
 	sta $2121
 	lda #$82
-	sta $4300
+	sta.w DMAP0
 	lda #$3B
-	sta $4301
+	sta.w BBAD0
 	lda #$FE
-	sta $4302
+	sta.w A1T0L
 	lda #$40
-	sta $4303
+	sta.w A1T0H
 	lda #$7E
-	sta $4304
+	sta.w A1B0
 	lda #$C0
-	sta $4305
+	sta.w DAS0L
 	lda #$00
-	sta $4306
+	sta.w DAS0H
 	lda #$01
 	sta.w MDMAEN
 	rep #$20
@@ -12630,31 +12635,31 @@ L86DEC8:
 	rep #$20
 	sep #$20
 	lda #$42
-	sta $4360
+	sta.w DMAP6
 	lda #$0D
-	sta $4361
+	sta.w BBAD6
 	lda #lobyte(L868D58)
-	sta $4362
+	sta.w A1T6L
 	lda #hibyte(L868D58)
-	sta $4363
+	sta.w A1T6H
 	lda #bankbyte(L868D58)
-	sta $4364
+	sta.w A1B6
 	lda #$00
-	sta $4367
+	sta.w DASB6
 	rep #$20
 	sep #$20
 	lda #$42
-	sta $4370
+	sta.w DMAP7
 	lda #$0F
-	sta $4371
+	sta.w BBAD7
 	lda #lobyte(L868D90)
-	sta $4372
+	sta.w A1T7L
 	lda #hibyte(L868D90)
-	sta $4373
+	sta.w A1T7H
 	lda #bankbyte(L868D90)
-	sta $4374
+	sta.w A1B7
 	lda #$00
-	sta $4377
+	sta.w DASB7
 	rep #$20
 	rts
 
@@ -12736,31 +12741,31 @@ L86DF9E:
 	rep #$20
 	sep #$20
 	lda #$42
-	sta $4360
+	sta.w DMAP6
 	lda #$0D
-	sta $4361
+	sta.w BBAD6
 	lda #lobyte(L868D58)
-	sta $4362
+	sta.w A1T6L
 	lda #hibyte(L868D58)
-	sta $4363
+	sta.w A1T6H
 	lda #bankbyte(L868D58)
-	sta $4364
+	sta.w A1B6
 	lda #$00
-	sta $4367
+	sta.w DASB6
 	rep #$20
 	sep #$20
 	lda #$42
-	sta $4370
+	sta.w DMAP7
 	lda #$0F
-	sta $4371
+	sta.w BBAD7
 	lda #lobyte(L868D74)
-	sta $4372
+	sta.w A1T7L
 	lda #hibyte(L868D74)
-	sta $4373
+	sta.w A1T7H
 	lda #bankbyte(L868D74)
-	sta $4374
+	sta.w A1B7
 	lda #$00
-	sta $4377
+	sta.w DASB7
 	rep #$20
 	rts
 
@@ -12875,83 +12880,83 @@ L86E0AD:
 	bne L86E122
 	sep #$20
 	lda #$42
-	sta $4320
+	sta.w DMAP2
 	lda #$10
-	sta $4321
+	sta.w BBAD2
 	lda #lobyte(L868DF4)
-	sta $4322
+	sta.w A1T2L
 	lda #hibyte(L868DF4)
-	sta $4323
+	sta.w A1T2H
 	lda #bankbyte(L868DF4)
-	sta $4324
+	sta.w A1B2
 	lda #$00
-	sta $4327
+	sta.w DASB2
 	rep #$20
 	jmp L86E168
 
 L86E0FE:
 	sep #$20
 	lda #$42
-	sta $4320
+	sta.w DMAP2
 	lda #$10
-	sta $4321
+	sta.w BBAD2
 	lda #lobyte(L868DEA)
-	sta $4322
+	sta.w A1T2L
 	lda #hibyte(L868DEA)
-	sta $4323
+	sta.w A1T2H
 	lda #bankbyte(L868DEA)
-	sta $4324
+	sta.w A1B2
 	lda #$00
-	sta $4327
+	sta.w DASB2
 	rep #$20
 	bra L86E168
 
 L86E122:
 	sep #$20
 	lda #$42
-	sta $4320
+	sta.w DMAP2
 	lda #$12
-	sta $4321
+	sta.w BBAD2
 	lda #lobyte(L868E0B)
-	sta $4322
+	sta.w A1T2L
 	lda #hibyte(L868E0B)
-	sta $4323
+	sta.w A1T2H
 	lda #bankbyte(L868E0B)
-	sta $4324
+	sta.w A1B2
 	lda #$00
-	sta $4327
+	sta.w DASB2
 	rep #$20
 	bra L86E168
 
 L86E146:
 	sep #$20
 	lda #$42
-	sta $4320
+	sta.w DMAP2
 	lda #$10
-	sta $4321
+	sta.w BBAD2
 	lda #lobyte(L868E01)
-	sta $4322
+	sta.w A1T2L
 	lda #hibyte(L868E01)
-	sta $4323
+	sta.w A1T2H
 	lda #bankbyte(L868E01)
-	sta $4324
+	sta.w A1B2
 	lda #$00
-	sta $4327
+	sta.w DASB2
 	rep #$20
 L86E168:
 	sep #$20
 	lda #$40
-	sta $4340
+	sta.w DMAP4
 	lda #$32
-	sta $4341
+	sta.w BBAD4
 	lda #lobyte(L868DB8)
-	sta $4342
+	sta.w A1T4L
 	lda #hibyte(L868DB8)
-	sta $4343
+	sta.w A1T4H
 	lda #bankbyte(L868DB8)
-	sta $4344
+	sta.w A1B4
 	lda #$00
-	sta $4347
+	sta.w DASB4
 	rep #$20
 	lda $1009
 	and #$00FF
@@ -12959,17 +12964,17 @@ L86E168:
 	bcs L86E1B9
 	sep #$20
 	lda #$40
-	sta $4350
+	sta.w DMAP5
 	lda #$29
-	sta $4351
+	sta.w BBAD5
 	lda #lobyte(L868DC2)
-	sta $4352
+	sta.w A1T5L
 	lda #hibyte(L868DC2)
-	sta $4353
+	sta.w A1T5H
 	lda #bankbyte(L868DC2)
-	sta $4354
+	sta.w A1B5
 	lda #$00
-	sta $4357
+	sta.w DASB5
 	rep #$20
 	bra L86E1E9
 
@@ -12985,15 +12990,15 @@ L86E1BE:
 	rep #$20
 	sep #$20
 	lda #$01
-	sta $4350
+	sta.w DMAP5
 	lda #$28
-	sta $4351
+	sta.w BBAD5
 	lda #$35
-	sta $4352
+	sta.w A1T5L
 	lda #$1D
-	sta $4353
+	sta.w A1T5H
 	lda #$00
-	sta $4354
+	sta.w A1B5
 	rep #$20
 L86E1E9:
 	sep #$20
@@ -14003,19 +14008,19 @@ L86EAC8:
 	pha
 	sep #$20
 	lda #$09
-	sta $4300
+	sta.w DMAP0
 	lda #$18
-	sta $4301
+	sta.w BBAD0
 	lda #$FE
-	sta $4302
+	sta.w A1T0L
 	lda #$40
-	sta $4303
+	sta.w A1T0H
 	lda #$7E
-	sta $4304
+	sta.w A1B0
 	lda #$00
-	sta $4305
+	sta.w DAS0L
 	lda #$02
-	sta $4306
+	sta.w DAS0H
 	rep #$20
 	sep #$20
 	lda #$01
@@ -14027,19 +14032,19 @@ L86EAC8:
 	sta $2116
 	sep #$20
 	lda #$09
-	sta $4300
+	sta.w DMAP0
 	lda #$18
-	sta $4301
+	sta.w BBAD0
 	lda #$FE
-	sta $4302
+	sta.w A1T0L
 	lda #$40
-	sta $4303
+	sta.w A1T0H
 	lda #$7E
-	sta $4304
+	sta.w A1B0
 	lda #$00
-	sta $4305
+	sta.w DAS0L
 	lda #$02
-	sta $4306
+	sta.w DAS0H
 	rep #$20
 	sep #$20
 	lda #$01
@@ -14054,19 +14059,19 @@ L86EB3C:
 	sta $2116
 	sep #$20
 	lda #$09
-	sta $4300
+	sta.w DMAP0
 	lda #$18
-	sta $4301
+	sta.w BBAD0
 	lda #$FE
-	sta $4302
+	sta.w A1T0L
 	lda #$40
-	sta $4303
+	sta.w A1T0H
 	lda #$7E
-	sta $4304
+	sta.w A1B0
 	lda #$00
-	sta $4305
+	sta.w DAS0L
 	lda #$04
-	sta $4306
+	sta.w DAS0H
 	rep #$20
 	sep #$20
 	lda #$01
@@ -14082,19 +14087,19 @@ L86EB78:
 	pha
 	sep #$20
 	lda #$09
-	sta $4300
+	sta.w DMAP0
 	lda #$18
-	sta $4301
+	sta.w BBAD0
 	lda #$FE
-	sta $4302
+	sta.w A1T0L
 	lda #$40
-	sta $4303
+	sta.w A1T0H
 	lda #$7E
-	sta $4304
+	sta.w A1B0
 	lda #$00
-	sta $4305
+	sta.w DAS0L
 	lda #$04
-	sta $4306
+	sta.w DAS0H
 	rep #$20
 	sep #$20
 	lda #$01
@@ -14106,19 +14111,19 @@ L86EB78:
 	sta $2116
 	sep #$20
 	lda #$09
-	sta $4300
+	sta.w DMAP0
 	lda #$18
-	sta $4301
+	sta.w BBAD0
 	lda #$FE
-	sta $4302
+	sta.w A1T0L
 	lda #$40
-	sta $4303
+	sta.w A1T0H
 	lda #$7E
-	sta $4304
+	sta.w A1B0
 	lda #$00
-	sta $4305
+	sta.w DAS0L
 	lda #$04
-	sta $4306
+	sta.w DAS0H
 	rep #$20
 	sep #$20
 	lda #$01
@@ -14134,19 +14139,19 @@ L86EBEB:
 	pha
 	sep #$20
 	lda #$09
-	sta $4300
+	sta.w DMAP0
 	lda #$18
-	sta $4301
+	sta.w BBAD0
 	lda #$FE
-	sta $4302
+	sta.w A1T0L
 	lda #$40
-	sta $4303
+	sta.w A1T0H
 	lda #$7E
-	sta $4304
+	sta.w A1B0
 	lda #$00
-	sta $4305
+	sta.w DAS0L
 	lda #$06
-	sta $4306
+	sta.w DAS0H
 	rep #$20
 	sep #$20
 	lda #$01
@@ -14158,19 +14163,19 @@ L86EBEB:
 	sta $2116
 	sep #$20
 	lda #$09
-	sta $4300
+	sta.w DMAP0
 	lda #$18
-	sta $4301
+	sta.w BBAD0
 	lda #$FE
-	sta $4302
+	sta.w A1T0L
 	lda #$40
-	sta $4303
+	sta.w A1T0H
 	lda #$7E
-	sta $4304
+	sta.w A1B0
 	lda #$00
-	sta $4305
+	sta.w DAS0L
 	lda #$06
-	sta $4306
+	sta.w DAS0H
 	rep #$20
 	sep #$20
 	lda #$01

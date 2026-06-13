@@ -4472,17 +4472,17 @@ L93D382:
 	bne L93D382
 	sep #$20
 	lda #$40
-	sta $4330
+	sta.w DMAP3
 	lda #$07
-	sta $4331
+	sta.w BBAD3
 	lda #lobyte(L93D50F)
-	sta $4332
+	sta.w A1T3L
 	lda #hibyte(L93D50F)
-	sta $4333
+	sta.w A1T3H
 	lda #bankbyte(L93D50F)
-	sta $4334
+	sta.w A1B3
 	lda #$7E
-	sta $4337
+	sta.w DASB3
 	rep #$20
 	ldy #$001E
 L93D3B5:
@@ -6446,15 +6446,15 @@ L93E35E:
 	lda #$00
 	sta $A3
 	lda #$00
-	sta $4330
+	sta.w DMAP3
 	lda #$27
-	sta $4331
+	sta.w BBAD3
 	lda #lobyte(L93E401)
-	sta $4332
+	sta.w A1T3L
 	lda #hibyte(L93E401)
-	sta $4333
+	sta.w A1T3H
 	lda #bankbyte(L93E401)
-	sta $4334
+	sta.w A1B3
 	rep #$30
 	ldx #$0100
 L93E3A0:

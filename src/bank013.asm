@@ -3180,27 +3180,27 @@ L8DE0B6:
 	jsr L8DE4BB
 	sep #$20
 	lda #$00
-	sta $4350
+	sta.w DMAP5
 	lda #$31
-	sta $4351
+	sta.w BBAD5
 	lda #lobyte(L8DDE2F)
-	sta $4352
+	sta.w A1T5L
 	lda #hibyte(L8DDE2F)
-	sta $4353
+	sta.w A1T5H
 	lda #bankbyte(L8DDE2F)
-	sta $4354
+	sta.w A1B5
 	rep #$20
 	sep #$20
 	lda #$00
-	sta $4360
+	sta.w DMAP6
 	lda #$32
-	sta $4361
+	sta.w BBAD6
 	lda #lobyte(L8DDE38)
-	sta $4362
+	sta.w A1T6L
 	lda #hibyte(L8DDE38)
-	sta $4363
+	sta.w A1T6H
 	lda #bankbyte(L8DDE38)
-	sta $4364
+	sta.w A1B6
 	rep #$20
 	sep #$20
 	lda $F7
@@ -3791,27 +3791,27 @@ L8DE608:
 	jsr L8DF821
 	sep #$20
 	lda #$00
-	sta $4370
+	sta.w DMAP7
 	lda #$00
-	sta $4371
+	sta.w BBAD7
 	lda #lobyte(L8DE5C7)
-	sta $4372
+	sta.w A1T7L
 	lda #hibyte(L8DE5C7)
-	sta $4373
+	sta.w A1T7H
 	lda #bankbyte(L8DE5C7)
-	sta $4374
+	sta.w A1B7
 	rep #$20
 	sep #$20
 	lda #$00
-	sta $4360
+	sta.w DMAP6
 	lda #$2C
-	sta $4361
+	sta.w BBAD6
 	lda #lobyte(L8DE5C2)
-	sta $4362
+	sta.w A1T6L
 	lda #hibyte(L8DE5C2)
-	sta $4363
+	sta.w A1T6H
 	lda #bankbyte(L8DE5C2)
-	sta $4364
+	sta.w A1B6
 	rep #$20
 	sep #$20
 	lda $F7
@@ -4655,29 +4655,29 @@ L8DEDA7:
 	bne L8DEDA7
 	sep #$20
 	lda #$00
-	sta $4370
+	sta.w DMAP7
 	lda #$30
-	sta $4371
+	sta.w BBAD7
 	lda #lobyte(L8DED88)
-	sta $4372
+	sta.w A1T7L
 	lda #hibyte(L8DED88)
-	sta $4373
+	sta.w A1T7H
 	lda #bankbyte(L8DED88)
-	sta $4374
+	sta.w A1B7
 	rep #$20
 	sep #$20
 	lda #$42
-	sta $4360
+	sta.w DMAP6
 	lda #$0E
-	sta $4361
+	sta.w BBAD6
 	lda #lobyte(L8DED91)
-	sta $4362
+	sta.w A1T6L
 	lda #hibyte(L8DED91)
-	sta $4363
+	sta.w A1T6H
 	lda #bankbyte(L8DED91)
-	sta $4364
+	sta.w A1B6
 	lda #$8D
-	sta $4367
+	sta.w DASB6
 	rep #$20
 	sep #$20
 	lda $F7

@@ -1197,17 +1197,32 @@ L848E0C:
 	plp
 	rts
 
-L848E25:
-.db $00 $80 $DB $64 $85 $DB $63 $8A
-.db $DB $45 $8F $DB $87 $94 $DB $1D
-.db $99 $DB $EC $9E $DB $7C $A5 $DB
-.db $3C $AB $DB $66 $B0 $DB $68 $B5
-.db $DB $DE $BA $DB $6A $C1 $DB $34
-.db $C7 $DB $EC $CC $DB $1E $D2 $DB
-.db $45 $D6 $DB $15 $DC $DB $5B $E1
-.db $DB $B4 $E6 $DB $DB $EB $DB $C6
-.db $F0 $DB $00 $80 $DB $00 $80 $DB
-.db $00 $80 $DB
+L848E25: ; world map vignettes
+.dl LDB8000
+.dl LDB8564
+.dl LDB8A63
+.dl LDB8F45
+.dl LDB9487
+.dl LDB991D
+.dl LDB9EEC
+.dl LDBA57C
+.dl LDBAB3C
+.dl LDBB066
+.dl LDBB568
+.dl LDBBADE
+.dl LDBC16A
+.dl LDBC734
+.dl LDBCCEC
+.dl LDBD21E
+.dl LDBD645
+.dl LDBDC15
+.dl LDBE15B
+.dl LDBE6B4
+.dl LDBEBDB
+.dl LDBF0C6
+.dl LDB8000
+.dl LDB8000
+.dl LDB8000
 
 L848E70:
 .dw L848E80
@@ -1470,14 +1485,14 @@ L8490A0:
 	php
 	sep #$20
 	lda #$00
-	sta $4360
+	sta.w DMAP6
 	lda #$32
-	sta $4361
+	sta.w BBAD6
 	rep #$20
 	lda #bank100(L848443)
-	sta $4363
+	sta.w A1T6H
 	lda #L848443
-	sta $4362
+	sta.w A1T6L
 	plp
 	rts
 
@@ -1533,31 +1548,31 @@ L8490E7:
 	jsr L848C79
 	sep #$20
 	lda #$42
-	sta $4340
+	sta.w DMAP4
 	lda #$1B
-	sta $4341
+	sta.w BBAD4
 	lda #$12
-	sta $4342
+	sta.w A1T4L
 	lda #$0E
-	sta $4343
+	sta.w A1T4H
 	lda #$00
-	sta $4344
+	sta.w A1B4
 	lda #$7E
-	sta $4347
+	sta.w DASB4
 	rep #$20
 	sep #$20
 	lda #$42
-	sta $4350
+	sta.w DMAP5
 	lda #$1E
-	sta $4351
+	sta.w BBAD5
 	lda #$1B
-	sta $4352
+	sta.w A1T5L
 	lda #$0E
-	sta $4353
+	sta.w A1T5H
 	lda #$00
-	sta $4354
+	sta.w A1B5
 	lda #$7E
-	sta $4357
+	sta.w DASB5
 	rep #$20
 	jsr L8490A0
 	jsl L808826
@@ -1627,31 +1642,31 @@ L8491DD:
 	jsr L848C79
 	sep #$20
 	lda #$42
-	sta $4340
+	sta.w DMAP4
 	lda #$1B
-	sta $4341
+	sta.w BBAD4
 	lda #$12
-	sta $4342
+	sta.w A1T4L
 	lda #$0E
-	sta $4343
+	sta.w A1T4H
 	lda #$00
-	sta $4344
+	sta.w A1B4
 	lda #$7E
-	sta $4347
+	sta.w DASB4
 	rep #$20
 	sep #$20
 	lda #$42
-	sta $4350
+	sta.w DMAP5
 	lda #$1E
-	sta $4351
+	sta.w BBAD5
 	lda #$1B
-	sta $4352
+	sta.w A1T5L
 	lda #$0E
-	sta $4353
+	sta.w A1T5H
 	lda #$00
-	sta $4354
+	sta.w A1B5
 	lda #$7E
-	sta $4357
+	sta.w DASB5
 	rep #$20
 	jsr L8490A0
 	jsl L808826
@@ -1723,31 +1738,31 @@ L8492CD:
 	jsr L848C79
 	sep #$20
 	lda #$42
-	sta $4340
+	sta.w DMAP4
 	lda #$1B
-	sta $4341
+	sta.w BBAD4
 	lda #$12
-	sta $4342
+	sta.w A1T4L
 	lda #$0E
-	sta $4343
+	sta.w A1T4H
 	lda #$00
-	sta $4344
+	sta.w A1B4
 	lda #$7E
-	sta $4347
+	sta.w DASB4
 	rep #$20
 	sep #$20
 	lda #$42
-	sta $4350
+	sta.w DMAP5
 	lda #$1E
-	sta $4351
+	sta.w BBAD5
 	lda #$1B
-	sta $4352
+	sta.w A1T5L
 	lda #$0E
-	sta $4353
+	sta.w A1T5H
 	lda #$00
-	sta $4354
+	sta.w A1B5
 	lda #$7E
-	sta $4357
+	sta.w DASB5
 	rep #$20
 	jsr L8490A0
 	jsl L808826
@@ -6034,10 +6049,22 @@ L84B8D0:
 DMA_DATA $7F52D8 $0002 $D4
 
 L84B8D7:
-.db $F7 $00 $F7 $00 $18 $01 $39 $01
-.db $5A $01 $BB $01 $DE $01 $5F $02
-.db $BF $02 $7F $02 $1F $02 $DE $01
-.db $5A $01 $39 $01 $18 $01 $F7 $00
+.dw $00F7
+.dw $00F7
+.dw $0118
+.dw $0139
+.dw $015A
+.dw $01BB
+.dw $01DE
+.dw $025F
+.dw $02BF
+.dw $027F
+.dw $021F
+.dw $01DE
+.dw $015A
+.dw $0139
+.dw $0118
+.dw $00F7
 
 L84B8F7:
 	php
@@ -9153,17 +9180,17 @@ L84D79C:
 	lda #$14
 	sta $1476
 	lda #$42
-	sta $4320
+	sta.w DMAP2
 	lda #$0D
-	sta $4321
+	sta.w BBAD2
 	lda #$6E
-	sta $4322
+	sta.w A1T2L
 	lda #$14
-	sta $4323
+	sta.w A1T2H
 	lda #$00
-	sta $4324
+	sta.w A1B2
 	lda #$00
-	sta $4327
+	sta.w DASB2
 	rep #$30
 	lda #$152C
 	sta.w WMADDL
@@ -9209,17 +9236,17 @@ L84D81C:
 	lda #$15
 	sta $154F
 	lda #$40
-	sta $4330
+	sta.w DMAP3
 	lda #$00
-	sta $4331
+	sta.w BBAD3
 	lda #$2C
-	sta $4332
+	sta.w A1T3L
 	lda #$15
-	sta $4333
+	sta.w A1T3H
 	lda #$00
-	sta $4334
+	sta.w A1B3
 	lda #$00
-	sta $4337
+	sta.w DASB3
 	rep #$30
 	ply
 	plx
@@ -10759,15 +10786,15 @@ L84E9B2:
 	php
 	sep #$20
 	lda #$01
-	sta $4310
+	sta.w DMAP1
 	lda #$26
-	sta $4311
+	sta.w BBAD1
 	lda #$6B
-	sta $4312
+	sta.w A1T1L
 	lda #$15
-	sta $4313
+	sta.w A1T1H
 	lda #$00
-	sta $4314
+	sta.w A1B1
 	plp
 	rts
 

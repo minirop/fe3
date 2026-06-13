@@ -865,43 +865,43 @@ L9694E7:
 	jsl L969F4A
 	sep #$20
 	lda #$40
-	sta $4370
+	sta.w DMAP7
 	lda #$32
-	sta $4371
+	sta.w BBAD7
 	lda #lobyte(L9693E5)
-	sta $4372
+	sta.w A1T7L
 	lda #hibyte(L9693E5)
-	sta $4373
+	sta.w A1T7H
 	lda #bankbyte(L9693E5)
-	sta $4374
+	sta.w A1B7
 	lda #$96
-	sta $4377
+	sta.w DASB7
 	rep #$20
 	sep #$20
 	lda #$40
-	sta $4360
+	sta.w DMAP6
 	lda #$2C
-	sta $4361
+	sta.w BBAD6
 	lda #lobyte(L9693DB)
-	sta $4362
+	sta.w A1T6L
 	lda #hibyte(L9693DB)
-	sta $4363
+	sta.w A1T6H
 	lda #bankbyte(L9693DB)
-	sta $4364
+	sta.w A1B6
 	lda #$96
-	sta $4367
+	sta.w DASB6
 	rep #$20
 	sep #$20
 	lda #$00
-	sta $4350
+	sta.w DMAP5
 	lda #$31
-	sta $4351
+	sta.w BBAD5
 	lda #lobyte(L969416)
-	sta $4352
+	sta.w A1T5L
 	lda #hibyte(L969416)
-	sta $4353
+	sta.w A1T5H
 	lda #bankbyte(L969416)
-	sta $4354
+	sta.w A1B5
 	rep #$20
 	sep #$20
 	lda $F7
@@ -1304,15 +1304,15 @@ L969956:
 	rep #$20
 	sep #$20
 	lda #$01
-	sta $4340
+	sta.w DMAP4
 	lda #$26
-	sta $4341
+	sta.w BBAD4
 	lda #lobyte(L968042)
-	sta $4342
+	sta.w A1T4L
 	lda #hibyte(L968042)
-	sta $4343
+	sta.w A1T4H
 	lda #bankbyte(L968042)
-	sta $4344
+	sta.w A1B4
 	rep #$20
 	lda $8D
 	sta $91
@@ -1482,7 +1482,7 @@ L969A96:
 	lsr
 	tax
 	lda.l L968000,X
-	sta $4342
+	sta.w A1T4L
 	sep #$20
 	lda $A6
 	cmp #$FF
@@ -3610,15 +3610,15 @@ L96B491:
 	lda #$00
 	sta $A9
 	lda #$00
-	sta $4360
+	sta.w DMAP6
 	lda #$2C
-	sta $4361
+	sta.w BBAD6
 	lda #lobyte(L96AB4F)
-	sta $4362
+	sta.w A1T6L
 	lda #hibyte(L96AB4F)
-	sta $4363
+	sta.w A1T6H
 	lda #bankbyte(L96AB4F)
-	sta $4364
+	sta.w A1B6
 	lda $F7
 	ora #$40
 	sta $F7

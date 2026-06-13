@@ -8541,15 +8541,15 @@ L87CDF1:
 L87CE0B:
 	sep #$20
 	lda #$03
-	sta $4330
+	sta.w DMAP3
 	lda #$11
-	sta $4331
+	sta.w BBAD3
 	lda #$00
-	sta $4332
+	sta.w A1T3L
 	lda #$1B
-	sta $4333
+	sta.w A1T3H
 	lda #$00
-	sta $4334
+	sta.w A1B3
 	rep #$20
 	rts
 
