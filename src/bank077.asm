@@ -4,13 +4,21 @@
 .SECTION "Bank77" FORCE
 
 .INCBIN "264500.bin" SKIP 15104
+LCDA163:
 .INCBIN "26A163.bin" ; graphics
+LCDB5DF:
 .INCBIN "26B5DF.bin" ; graphics
+LCDBAF7:
 .INCBIN "26BAF7.bin"
+LCDBEFF:
 .INCBIN "26BEFF.bin"
+LCDC137:
 .INCBIN "26C137.bin"
+LCDC272:
 .INCBIN "26C272.bin"
+LCDC3A6: ; missing
 .INCBIN "26C3A6.bin"
+LCDC4B4:
 .INCBIN "26C4B4.bin" READ 15180 ; cutscene/memories images?
 
 .ENDS

@@ -1618,11 +1618,11 @@ L969BB6:
 	php
 	rep #$30
 	sep #$20
-	lda #$00
+	lda #lobyte(LCCC500)
 	sta.l $000071
-	lda #$C5
+	lda #hibyte(LCCC500)
 	sta.l $000072
-	lda #$CC
+	lda #bankbyte(LCCC500)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -1636,11 +1636,11 @@ L969BB6:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$F7
+	lda #lobyte(LCDBAF7)
 	sta.l $000071
-	lda #$BA
+	lda #hibyte(LCDBAF7)
 	sta.l $000072
-	lda #$CD
+	lda #bankbyte(LCDBAF7)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -1654,11 +1654,11 @@ L969BB6:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$63
+	lda #lobyte(LCDA163)
 	sta.l $000071
-	lda #$A1
+	lda #hibyte(LCDA163)
 	sta.l $000072
-	lda #$CD
+	lda #bankbyte(LCDA163)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -1672,11 +1672,11 @@ L969BB6:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$FF
+	lda #lobyte(LCDBEFF)
 	sta.l $000071
-	lda #$BE
+	lda #hibyte(LCDBEFF)
 	sta.l $000072
-	lda #$CD
+	lda #bankbyte(LCDBEFF)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -1724,11 +1724,11 @@ L969CBD:
 	bne L969CBD
 	rep #$20
 	sep #$20
-	lda #$37
+	lda #lobyte(LCDC137)
 	sta.l $000071
-	lda #$C1
+	lda #hibyte(LCDC137)
 	sta.l $000072
-	lda #$CD
+	lda #bankbyte(LCDC137)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -1745,11 +1745,11 @@ L969CBD:
 	jsl L8DE38A
 	jsl L8DE3A2
 	sep #$20
-	lda #$00
+	lda #lobyte(LDD8000)
 	sta.l $000071
-	lda #$80
+	lda #hibyte(LDD8000)
 	sta.l $000072
-	lda #$DD
+	lda #bankbyte(LDD8000)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -1758,11 +1758,11 @@ L969CBD:
 	jsl DECOMPRESS_ASSET
 	rep #$20
 	sep #$20
-	lda #$72
+	lda #lobyte(LCDC272)
 	sta.l $000071
-	lda #$C2
+	lda #hibyte(LCDC272)
 	sta.l $000072
-	lda #$CD
+	lda #bankbyte(LCDC272)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -1771,11 +1771,11 @@ L969CBD:
 	jsl DECOMPRESS_ASSET
 	rep #$20
 	sep #$20
-	lda #$DF
+	lda #lobyte(LCDB5DF)
 	sta.l $000071
-	lda #$B5
+	lda #hibyte(LCDB5DF)
 	sta.l $000072
-	lda #$CD
+	lda #bankbyte(LCDB5DF)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -1784,11 +1784,11 @@ L969CBD:
 	jsl DECOMPRESS_ASSET
 	rep #$20
 	sep #$20
-	lda #$39
+	lda #lobyte(LDDE239)
 	sta.l $000071
-	lda #$E2
+	lda #hibyte(LDDE239)
 	sta.l $000072
-	lda #$DD
+	lda #bankbyte(LDDE239)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -1846,11 +1846,11 @@ L969E0F:
 	bne L969E0F
 	rep #$20
 	sep #$20
-	lda #$37
+	lda #lobyte(LCDC137)
 	sta.l $000071
-	lda #$C1
+	lda #hibyte(LCDC137)
 	sta.l $000072
-	lda #$CD
+	lda #bankbyte(LCDC137)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -3367,11 +3367,11 @@ L96B2BA:
 	php
 	rep #$30
 	sep #$20
-	lda #$9B
+	lda #lobyte(LCEAE9B)
 	sta.l $000071
-	lda #$AE
+	lda #hibyte(LCEAE9B)
 	sta.l $000072
-	lda #$CE
+	lda #bankbyte(LCEAE9B)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -3385,11 +3385,11 @@ L96B2BA:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$AB
+	lda #lobyte(LCEDFAB)
 	sta.l $000071
-	lda #$DF
+	lda #hibyte(LCEDFAB)
 	sta.l $000072
-	lda #$CE
+	lda #bankbyte(LCEDFAB)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -3403,11 +3403,11 @@ L96B2BA:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$18
+	lda #lobyte(LCEE218)
 	sta.l $000071
-	lda #$E2
+	lda #hibyte(LCEE218)
 	sta.l $000072
-	lda #$CE
+	lda #bankbyte(LCEE218)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -3421,11 +3421,11 @@ L96B2BA:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$CE
+	lda #lobyte(LCEEACE)
 	sta.l $000071
-	lda #$EA
+	lda #hibyte(LCEEACE)
 	sta.l $000072
-	lda #$CE
+	lda #bankbyte(LCEEACE)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -3439,11 +3439,11 @@ L96B2BA:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$C3
+	lda #lobyte(LCEE8C3)
 	sta.l $000071
-	lda #$E8
+	lda #hibyte(LCEE8C3)
 	sta.l $000072
-	lda #$CE
+	lda #bankbyte(LCEE8C3)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -3467,11 +3467,11 @@ L96B3D7:
 	php
 	rep #$30
 	sep #$20
-	lda #$8C
+	lda #lobyte(LCEEB8C)
 	sta.l $000071
-	lda #$EB
+	lda #hibyte(LCEEB8C)
 	sta.l $000072
-	lda #$CE
+	lda #bankbyte(LCEEB8C)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -3485,11 +3485,11 @@ L96B3D7:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$8E
+	lda #lobyte(LCF958E)
 	sta.l $000071
-	lda #$95
+	lda #hibyte(LCF958E)
 	sta.l $000072
-	lda #$CF
+	lda #bankbyte(LCF958E)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -3503,11 +3503,11 @@ L96B3D7:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$DA
+	lda #lobyte(LCF99DA)
 	sta.l $000071
-	lda #$99
+	lda #hibyte(LCF99DA)
 	sta.l $000072
-	lda #$CF
+	lda #bankbyte(LCF99DA)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -5754,11 +5754,11 @@ L96D888:
 	jsl L80884A
 	jsl L808838
 	sep #$20
-	lda #$CE
+	lda #lobyte(LCEEACE)
 	sta.l $000071
-	lda #$EA
+	lda #hibyte(LCEEACE)
 	sta.l $000072
-	lda #$CE
+	lda #bankbyte(LCEEACE)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -5820,11 +5820,11 @@ L96D937:
 	jsl L80884A
 	jsl L808838
 	sep #$20
-	lda #$CE
+	lda #lobyte(LCEEACE)
 	sta.l $000071
-	lda #$EA
+	lda #hibyte(LCEEACE)
 	sta.l $000072
-	lda #$CE
+	lda #bankbyte(LCEEACE)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -6041,11 +6041,11 @@ L96DB90:
 	jsr L96E273
 	jsr L96E37F
 	sep #$20
-	lda #$A0
+	lda #lobyte(LCFF8A0)
 	sta.l $000071
-	lda #$F8
+	lda #hibyte(LCFF8A0)
 	sta.l $000072
-	lda #$CF
+	lda #bankbyte(LCFF8A0)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -6059,11 +6059,11 @@ L96DB90:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$24
+	lda #lobyte(LCFF824)
 	sta.l $000071
-	lda #$F8
+	lda #hibyte(LCFF824)
 	sta.l $000072
-	lda #$CF
+	lda #bankbyte(LCFF824)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -6158,11 +6158,11 @@ L96DCBE:
 	jsl L80884A
 	jsl L808838
 	sep #$20
-	lda #$CE
+	lda #lobyte(LCEEACE)
 	sta.l $000071
-	lda #$EA
+	lda #hibyte(LCEEACE)
 	sta.l $000072
-	lda #$CE
+	lda #bankbyte(LCEEACE)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -6800,11 +6800,11 @@ L96E273:
 	php
 	rep #$30
 	sep #$20
-	lda #$A5
+	lda #lobyte(LDBF7A5)
 	sta.l $000071
-	lda #$F7
+	lda #hibyte(LDBF7A5)
 	sta.l $000072
-	lda #$DB
+	lda #bankbyte(LDBF7A5)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -6818,11 +6818,11 @@ L96E273:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$23
+	lda #lobyte(LCFF923)
 	sta.l $000071
-	lda #$F9
+	lda #hibyte(LCFF923)
 	sta.l $000072
-	lda #$CF
+	lda #bankbyte(LCFF923)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -6836,11 +6836,11 @@ L96E273:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$95
+	lda #lobyte(LCFFB95)
 	sta.l $000071
-	lda #$FB
+	lda #hibyte(LCFFB95)
 	sta.l $000072
-	lda #$CF
+	lda #bankbyte(LCFFB95)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -6869,11 +6869,11 @@ L96E32D:
 	jsl L808838
 	rep #$30
 	sep #$20
-	lda #$23
+	lda #lobyte(LCFF923)
 	sta.l $000071
-	lda #$F9
+	lda #hibyte(LCFF923)
 	sta.l $000072
-	lda #$CF
+	lda #bankbyte(LCFF923)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -6898,11 +6898,11 @@ L96E37F:
 	php
 	rep #$30
 	sep #$20
-	lda #$83
+	lda #lobyte(LCFFA83)
 	sta.l $000071
-	lda #$FA
+	lda #hibyte(LCFFA83)
 	sta.l $000072
-	lda #$CF
+	lda #bankbyte(LCFFA83)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -7947,11 +7947,11 @@ L96F1EA:
 	php
 	rep #$30
 	sep #$20
-	lda #$79
+	lda #lobyte(LCF9A79)
 	sta.l $000071
-	lda #$9A
+	lda #hibyte(LCF9A79)
 	sta.l $000072
-	lda #$CF
+	lda #bankbyte(LCF9A79)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -7965,11 +7965,11 @@ L96F1EA:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$27
+	lda #lobyte(LCFBE27)
 	sta.l $000071
-	lda #$BE
+	lda #hibyte(LCFBE27)
 	sta.l $000072
-	lda #$CF
+	lda #bankbyte(LCFBE27)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -7983,11 +7983,11 @@ L96F1EA:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$B2
+	lda #lobyte(LCFE6B2)
 	sta.l $000071
-	lda #$E6
+	lda #hibyte(LCFE6B2)
 	sta.l $000072
-	lda #$CF
+	lda #bankbyte(LCFE6B2)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -8001,11 +8001,11 @@ L96F1EA:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$65
+	lda #lobyte(LCFE765)
 	sta.l $000071
-	lda #$E7
+	lda #hibyte(LCFE765)
 	sta.l $000072
-	lda #$CF
+	lda #bankbyte(LCFE765)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -8019,11 +8019,11 @@ L96F1EA:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$E0
+	lda #lobyte(LCFF1E0)
 	sta.l $000071
-	lda #$F1
+	lda #hibyte(LCFF1E0)
 	sta.l $000072
-	lda #$CF
+	lda #bankbyte(LCFF1E0)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -8040,11 +8040,11 @@ L96F1EA:
 	jsl L8DE441
 	jsl L8DE355
 	sep #$20
-	lda #$64
+	lda #lobyte(LCFE864)
 	sta.l $000071
-	lda #$E8
+	lda #hibyte(LCFE864)
 	sta.l $000072
-	lda #$CF
+	lda #bankbyte(LCFE864)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -8102,11 +8102,11 @@ L96F38D:
 	php
 	rep #$30
 	sep #$20
-	lda #$B4
+	lda #lobyte(LCDC4B4)
 	sta.l $000071
-	lda #$C4
+	lda #hibyte(LCDC4B4)
 	sta.l $000072
-	lda #$CD
+	lda #bankbyte(LCDC4B4)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -8120,11 +8120,11 @@ L96F38D:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$DE
+	lda #lobyte(LCEA4DE)
 	sta.l $000071
-	lda #$A4
+	lda #hibyte(LCEA4DE)
 	sta.l $000072
-	lda #$CE
+	lda #bankbyte(LCEA4DE)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -8138,11 +8138,11 @@ L96F38D:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$08
+	lda #lobyte(LCEA608)
 	sta.l $000071
-	lda #$A6
+	lda #hibyte(LCEA608)
 	sta.l $000072
-	lda #$CE
+	lda #bankbyte(LCEA608)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -8156,11 +8156,11 @@ L96F38D:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$30
+	lda #lobyte(LCEA730)
 	sta.l $000071
-	lda #$A7
+	lda #hibyte(LCEA730)
 	sta.l $000072
-	lda #$CE
+	lda #bankbyte(LCEA730)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -8174,11 +8174,11 @@ L96F38D:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$5A
+	lda #lobyte(LCEA85A)
 	sta.l $000071
-	lda #$A8
+	lda #hibyte(LCEA85A)
 	sta.l $000072
-	lda #$CE
+	lda #bankbyte(LCEA85A)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -8192,11 +8192,11 @@ L96F38D:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$83
+	lda #lobyte(LCEA983)
 	sta.l $000071
-	lda #$A9
+	lda #hibyte(LCEA983)
 	sta.l $000072
-	lda #$CE
+	lda #bankbyte(LCEA983)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -8210,11 +8210,11 @@ L96F38D:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$AD
+	lda #lobyte(LCEAAAD)
 	sta.l $000071
-	lda #$AA
+	lda #hibyte(LCEAAAD)
 	sta.l $000072
-	lda #$CE
+	lda #bankbyte(LCEAAAD)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -8228,11 +8228,11 @@ L96F38D:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$D6
+	lda #lobyte(LCEABD6)
 	sta.l $000071
-	lda #$AB
+	lda #hibyte(LCEABD6)
 	sta.l $000072
-	lda #$CE
+	lda #bankbyte(LCEABD6)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -8246,11 +8246,11 @@ L96F38D:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$00
+	lda #lobyte(LCEAD00)
 	sta.l $000071
-	lda #$AD
+	lda #hibyte(LCEAD00)
 	sta.l $000072
-	lda #$CE
+	lda #bankbyte(LCEAD00)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -8264,11 +8264,11 @@ L96F38D:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$29
+	lda #lobyte(LCEAE29)
 	sta.l $000071
-	lda #$AE
+	lda #hibyte(LCEAE29)
 	sta.l $000072
-	lda #$CE
+	lda #bankbyte(LCEAE29)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -8622,11 +8622,11 @@ L96F943:
 	php
 	rep #$30
 	sep #$20
-	lda #$EC
+	lda #lobyte(LCFF3EC)
 	sta.l $000071
-	lda #$F3
+	lda #hibyte(LCFF3EC)
 	sta.l $000072
-	lda #$CF
+	lda #bankbyte(LCFF3EC)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -8640,11 +8640,11 @@ L96F943:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$E7
+	lda #lobyte(LCFF2E7)
 	sta.l $000071
-	lda #$F2
+	lda #hibyte(LCFF2E7)
 	sta.l $000072
-	lda #$CF
+	lda #bankbyte(LCFF2E7)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -8658,11 +8658,11 @@ L96F943:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$7D
+	lda #lobyte(LCFF37D)
 	sta.l $000071
-	lda #$F3
+	lda #hibyte(LCFF37D)
 	sta.l $000072
-	lda #$CF
+	lda #bankbyte(LCFF37D)
 	sta.l $000073
 	lda #$00
 	sta.l $000076

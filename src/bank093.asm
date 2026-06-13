@@ -3,10 +3,15 @@
 
 .SECTION "Bank93" FORCE
 
+LDD8000:
 .INCBIN "intro-tileset.bin"
+LDDE239:
 .INCBIN "2EE239.bin"
+LDDE449:
 .INCBIN "2EE449.bin"
+LDDE5B6:
 .INCBIN "2EE5B6.bin" ; intro Naga
+LDDF9A4:
 .INCBIN "2EF9A4.bin" READ 1628
 
 .ENDS

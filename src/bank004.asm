@@ -13283,11 +13283,11 @@ L84FDFA:
 	rep #$30
 	jsr L84FEDB
 	sep #$20
-	lda #$1B
+	lda #lobyte(L8D841B)
 	sta.l $000071
-	lda #$84
+	lda #hibyte(L8D841B)
 	sta.l $000072
-	lda #$8D
+	lda #bankbyte(L8D841B)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -13301,11 +13301,11 @@ L84FDFA:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$00
+	lda #lobyte(L8D8000)
 	sta.l $000071
-	lda #$80
+	lda #hibyte(L8D8000)
 	sta.l $000072
-	lda #$8D
+	lda #bankbyte(L8D8000)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -13319,11 +13319,11 @@ L84FDFA:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$B4
+	lda #lobyte(L8D83B4)
 	sta.l $000071
-	lda #$83
+	lda #hibyte(L8D83B4)
 	sta.l $000072
-	lda #$8D
+	lda #bankbyte(L8D83B4)
 	sta.l $000073
 	lda #$00
 	sta.l $000076

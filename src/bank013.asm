@@ -3,7 +3,7 @@
 
 .SECTION "Bank13" FORCE
 
-; TODO
+L8D8000:
 .db $E8 $59 $AE $00 $08 $20 $01 $EA
 .db $00 $0B $01 $07 $01 $02 $C2 $04
 .db $01 $00 $01 $E8 $31 $AE $00 $08
@@ -122,7 +122,10 @@
 .db $9A $00 $9B $00 $9C $00 $9D $00
 .db $9E $00 $9F $00 $B0 $00 $B1 $00
 .db $B2 $00 $B3 $00 $B4 $00 $B5 $E9
-.db $58 $00 $AE $FF $07 $00 $00 $E7
+.db $58 $00 $AE $FF
+
+L8D83B4:
+.db $07 $00 $00 $E7
 .db $1C $FE $7B $00 $00 $57 $FE $7B
 .db $01 $12 $42 $5D $FE $7B $01 $4C
 .db $19 $5D $FE $7B $01 $4C $19 $5D
@@ -135,7 +138,10 @@
 .db $FE $7B $01 $39 $67 $5D $FE $7B
 .db $01 $39 $67 $5D $FE $7B $01 $39
 .db $67 $5D $FE $7B $01 $39 $67 $5D
-.db $FE $7B $FF $27 $FF $07 $FE $BF
+.db $FE $7B $FF
+
+L8D841B:
+.db $27 $FF $07 $FE $BF
 .db $BE $FF $BF $FF $BC $FB $27 $FF
 .db $02 $BF $FF $BF $28 $FF $02 $FE
 .db $FF $FE $22 $FF $00 $C0 $28 $FF
@@ -1946,11 +1952,11 @@ L8DC8B3:
 	php
 	rep #$30
 	sep #$20
-	lda #$00
+	lda #lobyte(LDD8000)
 	sta.l $000071
-	lda #$80
+	lda #hibyte(LDD8000)
 	sta.l $000072
-	lda #$DD
+	lda #bankbyte(LDD8000)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -1964,11 +1970,11 @@ L8DC8B3:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$39
+	lda #lobyte(LDDE239)
 	sta.l $000071
-	lda #$E2
+	lda #hibyte(LDDE239)
 	sta.l $000072
-	lda #$DD
+	lda #bankbyte(LDDE239)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -1982,11 +1988,11 @@ L8DC8B3:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$49
+	lda #lobyte(LDDE449)
 	sta.l $000071
-	lda #$E4
+	lda #hibyte(LDDE449)
 	sta.l $000072
-	lda #$DD
+	lda #bankbyte(LDDE449)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -2784,11 +2790,11 @@ L8DDB4D:
 	php
 	rep #$30
 	sep #$20
-	lda #$00
+	lda #lobyte(LDD8000)
 	sta.l $000071
-	lda #$80
+	lda #hibyte(LDD8000)
 	sta.l $000072
-	lda #$DD
+	lda #bankbyte(LDD8000)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -2802,11 +2808,11 @@ L8DDB4D:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$A4
+	lda #lobyte(LDDF9A4)
 	sta.l $000071
-	lda #$F9
+	lda #hibyte(LDDF9A4)
 	sta.l $000072
-	lda #$DD
+	lda #bankbyte(LDDF9A4)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -2825,11 +2831,11 @@ L8DDB4D:
 	sta $00
 	jsr L8DE4D6
 	sep #$20
-	lda #$39
+	lda #lobyte(LDDE239)
 	sta.l $000071
-	lda #$E2
+	lda #hibyte(LDDE239)
 	sta.l $000072
-	lda #$DD
+	lda #bankbyte(LDDE239)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -2843,11 +2849,11 @@ L8DDB4D:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$24
+	lda #lobyte(LDE8024)
 	sta.l $000071
-	lda #$80
+	lda #hibyte(LDE8024)
 	sta.l $000072
-	lda #$DE
+	lda #bankbyte(LDE8024)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -2871,11 +2877,11 @@ L8DDB4D:
 	sta $00
 	jsr L8DE4D6
 	sep #$20
-	lda #$5D
+	lda #lobyte(LDE825D)
 	sta.l $000071
-	lda #$82
+	lda #hibyte(LDE825D)
 	sta.l $000072
-	lda #$DE
+	lda #bankbyte(LDE825D)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -2889,11 +2895,11 @@ L8DDB4D:
 	sta $00
 	jsr L8DE4D6
 	sep #$20
-	lda #$B1
+	lda #lobyte(LDE88B1)
 	sta.l $000071
-	lda #$88
+	lda #hibyte(LDE88B1)
 	sta.l $000072
-	lda #$DE
+	lda #bankbyte(LDE88B1)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -2907,11 +2913,11 @@ L8DDB4D:
 	sta $00
 	jsr L8DE4D6
 	sep #$20
-	lda #$38
+	lda #lobyte(LDE8C38)
 	sta.l $000071
-	lda #$8C
+	lda #hibyte(LDE8C38)
 	sta.l $000072
-	lda #$DE
+	lda #bankbyte(LDE8C38)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -2925,11 +2931,11 @@ L8DDB4D:
 	sta $00
 	jsr L8DE4D6
 	sep #$20
-	lda #$49
+	lda #lobyte(LDDE449)
 	sta.l $000071
-	lda #$E4
+	lda #hibyte(LDDE449)
 	sta.l $000072
-	lda #$DD
+	lda #bankbyte(LDDE449)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -2950,11 +2956,11 @@ L8DDB4D:
 	jsl L8DE355
 	jsl L8DE38A
 	sep #$20
-	lda #$6E
+	lda #lobyte(LDE926E)
 	sta.l $000071
-	lda #$92
+	lda #hibyte(LDE926E)
 	sta.l $000072
-	lda #$DE
+	lda #bankbyte(LDE926E)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -2964,11 +2970,11 @@ L8DDB4D:
 	rep #$20
 	jsl L8DE421
 	sep #$20
-	lda #$B6
+	lda #lobyte(LDDE5B6)
 	sta.l $000071
-	lda #$E5
+	lda #hibyte(LDDE5B6)
 	sta.l $000072
-	lda #$DD
+	lda #bankbyte(LDDE5B6)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -3335,11 +3341,11 @@ L8DE1ED:
 	jsl L808838
 	rep #$30
 	sep #$20
-	lda #$8E
+	lda #lobyte(LDEA88E)
 	sta.l $000071
-	lda #$A8
+	lda #hibyte(LDEA88E)
 	sta.l $000072
-	lda #$DE
+	lda #bankbyte(LDEA88E)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -3353,11 +3359,11 @@ L8DE1ED:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$3A
+	lda #lobyte(LDEE93A)
 	sta.l $000071
-	lda #$E9
+	lda #hibyte(LDEE93A)
 	sta.l $000072
-	lda #$DE
+	lda #bankbyte(LDEE93A)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -3371,11 +3377,11 @@ L8DE1ED:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$7B
+	lda #lobyte(LDEFF7B)
 	sta.l $000071
-	lda #$FF
+	lda #hibyte(LDEFF7B)
 	sta.l $000072
-	lda #$DE
+	lda #bankbyte(LDEFF7B)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -4059,11 +4065,11 @@ L8DE83E:
 	bne L8DE83E
 	rep #$30
 	sep #$20
-	lda #$84
+	lda #lobyte(LDF8084)
 	sta.l $000071
-	lda #$80
+	lda #hibyte(LDF8084)
 	sta.l $000072
-	lda #$DF
+	lda #bankbyte(LDF8084)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -4077,11 +4083,11 @@ L8DE83E:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$73
+	lda #lobyte(LDF9673)
 	sta.l $000071
-	lda #$96
+	lda #hibyte(LDF9673)
 	sta.l $000072
-	lda #$DF
+	lda #bankbyte(LDF9673)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -4095,11 +4101,11 @@ L8DE83E:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$B9
+	lda #lobyte(LDFA9B9)
 	sta.l $000071
-	lda #$A9
+	lda #hibyte(LDFA9B9)
 	sta.l $000072
-	lda #$DF
+	lda #bankbyte(LDFA9B9)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -4113,11 +4119,11 @@ L8DE83E:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$60
+	lda #lobyte(LDFDF60)
 	sta.l $000071
-	lda #$DF
+	lda #hibyte(LDFDF60)
 	sta.l $000072
-	lda #$DF
+	lda #bankbyte(LDFDF60)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -4131,11 +4137,11 @@ L8DE83E:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$7B
+	lda #lobyte(LDFE17B)
 	sta.l $000071
-	lda #$E1
+	lda #hibyte(LDFE17B)
 	sta.l $000072
-	lda #$DF
+	lda #bankbyte(LDFE17B)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -4149,11 +4155,11 @@ L8DE83E:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$87
+	lda #lobyte(LDFE387)
 	sta.l $000071
-	lda #$E3
+	lda #hibyte(LDFE387)
 	sta.l $000072
-	lda #$DF
+	lda #bankbyte(LDFE387)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -4167,11 +4173,11 @@ L8DE83E:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$19
+	lda #lobyte(LDFE619)
 	sta.l $000071
-	lda #$E6
+	lda #hibyte(LDFE619)
 	sta.l $000072
-	lda #$DF
+	lda #bankbyte(LDFE619)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -4185,11 +4191,11 @@ L8DE83E:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$A9
+	lda #lobyte(LDFE8A9)
 	sta.l $000071
-	lda #$E8
+	lda #hibyte(LDFE8A9)
 	sta.l $000072
-	lda #$DF
+	lda #bankbyte(LDFE8A9)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -5079,11 +5085,11 @@ L8DF11B:
 	php
 	rep #$30
 	sep #$20
-	lda #$59
+	lda #lobyte(LDE9359)
 	sta.l $000071
-	lda #$93
+	lda #hibyte(LDE9359)
 	sta.l $000072
-	lda #$DE
+	lda #bankbyte(LDE9359)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -5097,11 +5103,11 @@ L8DF11B:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$8E
+	lda #lobyte(LDEA88E)
 	sta.l $000071
-	lda #$A8
+	lda #hibyte(LDEA88E)
 	sta.l $000072
-	lda #$DE
+	lda #bankbyte(LDEA88E)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -5115,11 +5121,11 @@ L8DF11B:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$44
+	lda #lobyte(LDEF044)
 	sta.l $000071
-	lda #$F0
+	lda #hibyte(LDEF044)
 	sta.l $000072
-	lda #$DE
+	lda #bankbyte(LDEF044)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -5133,11 +5139,11 @@ L8DF11B:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$FF
+	lda #lobyte(LDEF6FF)
 	sta.l $000071
-	lda #$F6
+	lda #hibyte(LDEF6FF)
 	sta.l $000072
-	lda #$DE
+	lda #bankbyte(LDEF6FF)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -5151,11 +5157,11 @@ L8DF11B:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$0C
+	lda #lobyte(LDFEA0C)
 	sta.l $000071
-	lda #$EA
+	lda #hibyte(LDFEA0C)
 	sta.l $000072
-	lda #$DF
+	lda #bankbyte(LDFEA0C)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -5169,11 +5175,11 @@ L8DF11B:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$85
+	lda #lobyte(LDEA685)
 	sta.l $000071
-	lda #$A6
+	lda #hibyte(LDEA685)
 	sta.l $000072
-	lda #$DE
+	lda #bankbyte(LDEA685)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -5187,11 +5193,11 @@ L8DF11B:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$3A
+	lda #lobyte(LDEE93A)
 	sta.l $000071
-	lda #$E9
+	lda #hibyte(LDEE93A)
 	sta.l $000072
-	lda #$DE
+	lda #bankbyte(LDEE93A)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -5205,11 +5211,11 @@ L8DF11B:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$7B
+	lda #lobyte(LDEF67B)
 	sta.l $000071
-	lda #$F6
+	lda #hibyte(LDEF67B)
 	sta.l $000072
-	lda #$DE
+	lda #bankbyte(LDEF67B)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -5223,11 +5229,11 @@ L8DF11B:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$7B
+	lda #lobyte(LDEFF7B)
 	sta.l $000071
-	lda #$FF
+	lda #hibyte(LDEFF7B)
 	sta.l $000072
-	lda #$DE
+	lda #bankbyte(LDEFF7B)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -5381,11 +5387,11 @@ L8DF438:
 	php
 	rep #$30
 	sep #$20
-	lda #$59
+	lda #lobyte(LDE9359)
 	sta.l $000071
-	lda #$93
+	lda #hibyte(LDE9359)
 	sta.l $000072
-	lda #$DE
+	lda #bankbyte(LDE9359)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -5399,11 +5405,11 @@ L8DF438:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$8E
+	lda #lobyte(LDEA88E)
 	sta.l $000071
-	lda #$A8
+	lda #hibyte(LDEA88E)
 	sta.l $000072
-	lda #$DE
+	lda #bankbyte(LDEA88E)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -5417,11 +5423,11 @@ L8DF438:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$44
+	lda #lobyte(LDEF044)
 	sta.l $000071
-	lda #$F0
+	lda #hibyte(LDEF044)
 	sta.l $000072
-	lda #$DE
+	lda #bankbyte(LDEF044)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -5435,11 +5441,11 @@ L8DF438:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$FF
+	lda #lobyte(LDEF6FF)
 	sta.l $000071
-	lda #$F6
+	lda #hibyte(LDEF6FF)
 	sta.l $000072
-	lda #$DE
+	lda #bankbyte(LDEF6FF)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -5453,11 +5459,11 @@ L8DF438:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$0C
+	lda #lobyte(LDFEA0C)
 	sta.l $000071
-	lda #$EA
+	lda #hibyte(LDFEA0C)
 	sta.l $000072
-	lda #$DF
+	lda #bankbyte(LDFEA0C)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -5471,11 +5477,11 @@ L8DF438:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$85
+	lda #lobyte(LDEA685)
 	sta.l $000071
-	lda #$A6
+	lda #hibyte(LDEA685)
 	sta.l $000072
-	lda #$DE
+	lda #bankbyte(LDEA685)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -5489,11 +5495,11 @@ L8DF438:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$3A
+	lda #lobyte(LDEE93A)
 	sta.l $000071
-	lda #$E9
+	lda #hibyte(LDEE93A)
 	sta.l $000072
-	lda #$DE
+	lda #bankbyte(LDEE93A)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -5507,11 +5513,11 @@ L8DF438:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$7B
+	lda #lobyte(LDEF67B)
 	sta.l $000071
-	lda #$F6
+	lda #hibyte(LDEF67B)
 	sta.l $000072
-	lda #$DE
+	lda #bankbyte(LDEF67B)
 	sta.l $000073
 	lda #$00
 	sta.l $000076
@@ -5525,11 +5531,11 @@ L8DF438:
 	sta $00
 	jsl L808EAD
 	sep #$20
-	lda #$7B
+	lda #lobyte(LDEFF7B)
 	sta.l $000071
-	lda #$FF
+	lda #hibyte(LDEFF7B)
 	sta.l $000072
-	lda #$DE
+	lda #bankbyte(LDEFF7B)
 	sta.l $000073
 	lda #$00
 	sta.l $000076

@@ -4,15 +4,25 @@
 .SECTION "Bank95" FORCE
 
 .INCBIN "2F7F7B.bin" SKIP 133
+LDF8084:
 .INCBIN "2F8084.bin" ; Marth kills Medeus?
+LDF9673:
 .INCBIN "2F9673.bin" ; Spears and Flags
+LDFA9B9:
 .INCBIN "2FA9B9.bin" ; Book 2 intro cutscene images
+LDFDF60:
 .INCBIN "2FDF60.bin"
+LDFE17B:
 .INCBIN "2FE17B.bin"
+LDFE387:
 .INCBIN "2FE387.bin"
+LDFE619:
 .INCBIN "2FE619.bin"
+LDFE8A9:
 .INCBIN "2FE8A9.bin"
+LDFE930: ; missing
 .INCBIN "2FE930.bin"
+LDFEA0C:
 .INCBIN "2FEA0C.bin"
 
 .ENDS
