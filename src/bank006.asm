@@ -2775,10 +2775,10 @@ L8694C8:
 	dey
 	bne L8694C8
 	sep #$20
-	lda #$CA
+	lda #bankbyte(LCA9EC0)
 	sta $73
 	rep #$20
-	lda #$9EC0
+	lda #LCA9EC0
 	sta $71
 	lda #$1800
 	sta $76
@@ -9093,10 +9093,10 @@ L86C3FE:
 
 L86C40E:
 	sep #$20
-	lda #$CA
+	lda #bankbyte(LCA9CB8)
 	sta $73
 	rep #$20
-	lda #$9CB8
+	lda #LCA9CB8
 	sta $71
 	lda #$2100
 	sta $76
@@ -14331,10 +14331,10 @@ DMA_DATA DecompressionLocation $0400 $80 $4B00
 
 L86EDBE:
 	sep #$20
-	lda #$CA
+	lda #bankbyte(LCA96FA)
 	sta $73
 	rep #$20
-	lda #$96FA
+	lda #LCA96FA
 	sta $71
 	jsr L86F7E7
 	rts
@@ -14350,10 +14350,10 @@ L86EDDA:
 
 L86EDDB:
 	sep #$20
-	lda #$CA
+	lda #bankbyte(LCA9888)
 	sta $73
 	rep #$20
-	lda #$9888
+	lda #LCA9888
 	sta $71
 	rts
 

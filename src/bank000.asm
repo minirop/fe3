@@ -2360,7 +2360,7 @@ L8090FA:
 	lda #$007f
 	ldx #$67dc
 	ldy #$1b00
-	mvn $7f, $00
+	mvn $7f00
 	plb
 	sep #$30
 L809116:

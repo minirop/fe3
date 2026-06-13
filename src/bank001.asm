@@ -3567,7 +3567,7 @@ L819E9E:
 	and #$00FF
 	cmp #$0002
 	beq L819EE0
-	lda #$9ED0
+	lda #L819ED0
 	jmp L81D7F2
 
 L819ECF:
@@ -4946,7 +4946,7 @@ L81AA56:
 	rep #$20
 	jsl L8087EA
 	pea $AA55
-	lda #$AA66
+	lda #L81AA66
 	jmp L81D7F2
 
 L81AA65:
@@ -5645,7 +5645,7 @@ L81B088:
 	stx $52
 	jsl L809374
 	pea $B08C
-	lda #$B0A4
+	lda #L81B0A4
 	jmp L81D7F2
 
 L81B0A3:
@@ -5978,7 +5978,7 @@ L81B282:
 	rep #$20
 	jsl L8087EA
 	pea $B314
-	lda #$B325
+	lda #L81B325
 	jmp L81D7F2
 
 L81B324:
@@ -6046,7 +6046,7 @@ L81B370:
 
 L81B399:
 	rep #$20
-	lda #$B3A2
+	lda #L81B3A2
 	jmp L81D7F2
 
 L81B3A1:
@@ -6338,7 +6338,7 @@ L81B5FD:
 
 L81B615:
 	rep #$20
-	lda #$B61E
+	lda #L81B61E
 	jmp L81D7F2
 
 L81B61D:
@@ -7011,7 +7011,7 @@ L81BB48:
 
 L81BB8A:
 	rep #$20
-	lda #$bb93
+	lda #L81BB93
 	jmp L81D7F2
 
 L81BB92:
@@ -7163,7 +7163,7 @@ L81BC7E:
 
 L81BCC4:
 	rep #$20
-	lda #$BCCD
+	lda #L81BCCD
 	jmp L81D7F2
 
 L81BCCC:
@@ -7540,7 +7540,7 @@ L81BF8A:
 
 L81C00B:
 	rep #$20
-	lda #$C014
+	lda #L81C014
 	jmp L81D7F2
 
 L81C013:
@@ -7954,7 +7954,7 @@ L81C348:
 
 L81C399:
 	rep #$20
-	lda #$C3A2
+	lda #L81C3A2
 	jmp L81D7F2
 
 L81C3A1:
