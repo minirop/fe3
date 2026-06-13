@@ -2565,7 +2565,7 @@ L869329:
 	lda #$0001
 	sta $101C
 	jsr L869067
-	lda #$89FE
+	lda #$89FE ; $7E89FE
 	jsr L8693DA
 	rts
 
@@ -2590,7 +2590,7 @@ L869353:
 	and #$00FF
 	sec
 	sbc #$002D
-	lda #$98FE
+	lda #$98FE ; $7E98FE
 	jsr L8693CE
 	rts
 
@@ -2614,7 +2614,7 @@ L86937F:
 	and #$00FF
 	sec
 	sbc #$002D
-	lda #$ACFE
+	lda #$ACFE ; $7EACFE
 	jsr L8693CE
 	rts
 
@@ -2625,7 +2625,7 @@ L86939C:
 	lda #$0001
 	sta $101C
 	jsr L869039
-	lda #$ACFE
+	lda #$ACFE ; $7EACFE
 	jsr L8693DA
 	rts
 
@@ -2636,7 +2636,7 @@ L8693B5:
 	lda #$0001
 	sta $101C
 	jsr L869039
-	lda #$89FE
+	lda #$89FE ; $7E89FE
 	jsr L8693DA
 	rts
 
@@ -11158,20 +11158,53 @@ L86D42F:
 L86D43E:
 DMA_DATA DecompressionLocation $0100 $80 $7000
 
-L86E548:
-.db $A5
-.db $A0 $29 $F9 $00 $85 $A0 $A9 $07
-.db $00 $85 $85 $A9 $00 $38 $A2 $00
-.db $00 $A0 $20 $00 $9F $00 $30 $7E
-.db $E8 $E8 $88 $D0 $F7 $1A $E0 $00
-.db $04 $90 $EE $A9 $00 $86 $85 $01
-.db $A9 $7A $D4 $85 $00 $22 $AD $8E
-.db $80 $60 $01 $E3 $9D $95 $08 $00
-.db $18 $A9 $00 $00 $A2 $FE $40 $A0
-.db $00 $01 $22 $7B $8C $80 $4C $2F
-.db $D4 $E2 $20 $A9 $10 $85 $A0 $AD
-.db $02 $10 $29 $DF $8D $02 $10 $A9
-.db $01 $85 $85 $C2 $20 $60
+L86D447:
+	lda $A0
+	and #$00F9
+	sta $A0
+	lda #$0007
+	sta $85
+	lda #$3800
+	ldx #$0000
+L86D459:
+	ldy #$0020
+L86D45C:
+	sta $7E3000,X
+	inx
+	inx
+	dey
+	bne L86D45C
+	ina
+	cpx #$0400
+	bcc L86D459
+	lda #bank100(L86D47A)
+	sta $01
+	lda #L86D47A
+	sta $00
+	jsl L808EAD
+	rts
+
+L86D47A:
+DMA_DATA L959DE3 $0008 $18
+
+L86D481:
+	lda #$0000
+	ldx #$40FE
+	ldy #$0100
+	jsl L808C7B
+	jmp L86D42F
+
+L86D491:
+	sep #$20
+	lda #$10
+	sta $A0
+	lda $1002
+	and #$DF
+	sta $1002
+	lda #$01
+	sta $85
+	rep #$20
+	rts
 
 L86D4A6:
 	lda $1003
