@@ -9648,14 +9648,14 @@ L81D174:
 	sta $01
 	lda #L81D1A8
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	bra L81D1A5
 L81D197:
 	lda #bank100(L81D1AF)
 	sta $01
 	lda #L81D1AF
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 L81D1A5:
 	pla
 	plp
@@ -9810,7 +9810,7 @@ L81D289:
 	sta $01
 	lda #$0741
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	pla
 	sta $01
 	pla
@@ -10306,7 +10306,7 @@ L81D6C2:
 	sta $01
 	lda #L81D6D5
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	plp
 	rts
 
@@ -10805,7 +10805,7 @@ L81DA10:
 	sta $01
 	lda #L81D6D5
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 L81DA5D:
 	jsl L8087EA
 	dec $0B9E
@@ -10821,7 +10821,7 @@ L81DA5D:
 	sta $01
 	lda #L81D6D5
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	jsl L8087EA
 	plp
 	rtl

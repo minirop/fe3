@@ -820,7 +820,7 @@ L96945F:
 	sta $01
 	lda #L969486
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	jsl L808826
 	jsl L8088A0
 	jsl L969F4A
@@ -854,7 +854,7 @@ L9694B7:
 	sta $01
 	lda #L9694DE
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	jsl L808826
 	jsl L8088A0
 	jsl L969F4A
@@ -979,7 +979,7 @@ L9695C8:
 	sta $02
 	lda #$12E2
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	inc $12E0
 	lda $12E0
 	cmp #$0025
@@ -1056,7 +1056,7 @@ L9696D7:
 	sta $01
 	lda #L969717
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	bra L969715
 
 L9696E7:
@@ -1064,7 +1064,7 @@ L9696E7:
 	sta $01
 	lda #L969720
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	bra L969715
 
 L9696F7:
@@ -1072,7 +1072,7 @@ L9696F7:
 	sta $01
 	lda #L969729
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	bra L969715
 
 L969707:
@@ -1080,7 +1080,7 @@ L969707:
 	sta $01
 	lda #L969732
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 L969715:
 	plp
 	rts
@@ -1287,7 +1287,7 @@ L969916:
 	sta $02
 	lda.w L96990A,X
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	plp
 	rts
 
@@ -1652,7 +1652,7 @@ L969BB6:
 	sta $01
 	lda #L969DB4
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	sep #$20
 	lda #lobyte(LCDBAF7)
 	sta.l $000071
@@ -1670,7 +1670,7 @@ L969BB6:
 	sta $01
 	lda #L969DBD
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	sep #$20
 	lda #lobyte(LCDA163)
 	sta.l $000071
@@ -1688,7 +1688,7 @@ L969BB6:
 	sta $01
 	lda #L969DC6
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	sep #$20
 	lda #lobyte(LCDBEFF)
 	sta.l $000071
@@ -1706,7 +1706,7 @@ L969BB6:
 	sta $01
 	lda #L969DCF
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	sep #$20
 	lda #$00
 	sta $2116
@@ -1880,7 +1880,7 @@ L969E0F:
 	sta $01
 	lda #L969E5E
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	plp
 	rts
 
@@ -2696,7 +2696,7 @@ L96AD53:
 	sta $01
 	lda #L96ADD4
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	bra L96AD51
 
 L96AD63:
@@ -2704,7 +2704,7 @@ L96AD63:
 	sta $01
 	lda #L96ADDD
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	bra L96AD51
 
 L96AD73:
@@ -2712,7 +2712,7 @@ L96AD73:
 	sta $01
 	lda #L96ADE6
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	bra L96AD51
 
 L96AD83:
@@ -2720,7 +2720,7 @@ L96AD83:
 	sta $01
 	lda #L96ADEF
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	bra L96AD51
 
 L96AD93:
@@ -2728,7 +2728,7 @@ L96AD93:
 	sta $01
 	lda #L96ADF8
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	bra L96AD51
 
 L96ADA3:
@@ -2736,7 +2736,7 @@ L96ADA3:
 	sta $01
 	lda #L96AE01
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	bra L96AD51
 
 L96ADB3:
@@ -2744,7 +2744,7 @@ L96ADB3:
 	sta $01
 	lda #L96AE0A
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	bra L96AD51
 
 L96ADC3:
@@ -2752,7 +2752,7 @@ L96ADC3:
 	sta $01
 	lda #L96AE13
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	jmp L96AD51
 
 L96ADD4:
@@ -2799,7 +2799,7 @@ L96AE4C:
 	sta $01
 	lda #L96AECC
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	bra L96AECA
 
 L96AE5C:
@@ -2807,7 +2807,7 @@ L96AE5C:
 	sta $01
 	lda #L96AED5
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	bra L96AECA
 
 L96AE6C:
@@ -2815,7 +2815,7 @@ L96AE6C:
 	sta $01
 	lda #L96AEDE
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	bra L96AECA
 
 L96AE7C:
@@ -2823,7 +2823,7 @@ L96AE7C:
 	sta $01
 	lda #L96AEE7
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	bra L96AECA
 
 L96AE8C:
@@ -2831,7 +2831,7 @@ L96AE8C:
 	sta $01
 	lda #L96AEF0
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	bra L96AECA
 
 L96AE9C:
@@ -2839,7 +2839,7 @@ L96AE9C:
 	sta $01
 	lda #L96AEF9
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	bra L96AECA
 
 L96AEAC:
@@ -2847,7 +2847,7 @@ L96AEAC:
 	sta $01
 	lda #L96AF02
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	bra L96AECA
 
 L96AEBC:
@@ -2855,7 +2855,7 @@ L96AEBC:
 	sta $01
 	lda #L96AF0B
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 L96AECA:
 	plp
 	rts
@@ -3401,7 +3401,7 @@ L96B2BA:
 	sta $01
 	lda #L96B3B5
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	sep #$20
 	lda #lobyte(LCEDFAB)
 	sta.l $000071
@@ -3419,7 +3419,7 @@ L96B2BA:
 	sta $01
 	lda #L96B3BE
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	sep #$20
 	lda #lobyte(LCEE218)
 	sta.l $000071
@@ -3437,7 +3437,7 @@ L96B2BA:
 	sta $01
 	lda #L96B3C7
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	sep #$20
 	lda #lobyte(LCEEACE)
 	sta.l $000071
@@ -3455,7 +3455,7 @@ L96B2BA:
 	sta $01
 	lda #L96B3D0
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	sep #$20
 	lda #lobyte(LCEE8C3)
 	sta.l $000071
@@ -3501,7 +3501,7 @@ L96B3D7:
 	sta $01
 	lda #L96B478
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	sep #$20
 	lda #lobyte(LCF958E)
 	sta.l $000071
@@ -3519,7 +3519,7 @@ L96B3D7:
 	sta $01
 	lda #L96B481
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	sep #$20
 	lda #lobyte(LCF99DA)
 	sta.l $000071
@@ -3537,7 +3537,7 @@ L96B3D7:
 	sta $01
 	lda #L96B48A
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	plp
 	rts
 
@@ -5807,7 +5807,7 @@ L96D888:
 	sta $01
 	lda #L96D930
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	jsl L808826
 	jsl L8088A0
 	lda #$001E
@@ -5874,7 +5874,7 @@ L96D937:
 	sta $01
 	lda #L96DA09
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	jsl L808826
 	jsl L8088A0
 	lda #$20F0
@@ -5936,7 +5936,7 @@ L96DA18:
 	sta $01
 	lda #L96DA9E
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	lda #L96D860
 	sta $00
 	jsr L96E449
@@ -5950,7 +5950,7 @@ L96DA63:
 	sta $01
 	lda #L96DA9E
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	jsl L8087EA
 	jsl L87B932
 	lda $0F05
@@ -6004,7 +6004,7 @@ L96DAE1:
 	sta $01
 	lda #L96DB1A
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	jsl L808826
 	jsl L8088A0
 	jsl L969F4A
@@ -6059,7 +6059,7 @@ L96DB23:
 	sta $01
 	lda #L96DD2F
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	lda #L96D846
 	sta $00
 	jsr L96E449
@@ -6095,7 +6095,7 @@ L96DB90:
 	sta $01
 	lda #L96DD18
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	sep #$20
 	lda #lobyte(LCFF824)
 	sta.l $000071
@@ -6113,12 +6113,12 @@ L96DB90:
 	sta $01
 	lda #L96DD21
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	lda #bank100(L96DD2F)
 	sta $01
 	lda #L96DD2F
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	jsl L808826
 	jsl L8088A0
 	stz $1226
@@ -6212,7 +6212,7 @@ L96DCBE:
 	sta $01
 	lda #L96DD28
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	jsl L808826
 	jsl L8088A0
 	lda $1226
@@ -6266,7 +6266,7 @@ L96DD60:
 	sta $01
 	lda #L96DDA4
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	jsl L808826
 	jsl L8088A0
 	jsl L969F4A
@@ -6354,7 +6354,7 @@ L96DE28:
 	sta $01
 	lda #L96DE6B
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	jsl L808826
 	jsl L8088A0
 	jsl L969F4A
@@ -6418,7 +6418,7 @@ L96DED2:
 	sta $01
 	lda #L96DF36
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	jsr L96E10F
 	jsr L96E405
 	jsl L808826
@@ -6431,7 +6431,7 @@ L96DEF8:
 	sta $01
 	lda #L96DF36
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	jsl L8087EA
 	jsl L87B932
 	lda $0F05
@@ -6816,7 +6816,7 @@ L96E1D1:
 	sta $01
 	lda #L96E22C
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	plp
 	rts
 
@@ -6854,7 +6854,7 @@ L96E273:
 	sta $01
 	lda #L96E314
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	sep #$20
 	lda #lobyte(LCFF923)
 	sta.l $000071
@@ -6872,7 +6872,7 @@ L96E273:
 	sta $01
 	lda #L96E31D
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	sep #$20
 	lda #lobyte(LCFFB95)
 	sta.l $000071
@@ -6890,7 +6890,7 @@ L96E273:
 	sta $01
 	lda #L96E326
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	plp
 	rts
 
@@ -6923,7 +6923,7 @@ L96E32D:
 	sta $01
 	lda #L96E376
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	jsl L808826
 	jsl L8088A0
 	plp
@@ -6952,7 +6952,7 @@ L96E37F:
 	sta $01
 	lda #L96E3B8
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	plp
 	rts
 
@@ -7322,7 +7322,10 @@ L96E6BB:
 .db $01 $00 $0A $00 $01 $00 $0A $00
 .db $01 $00 $0A $00 $01 $00 $0A $00
 .db $01 $00 $0A $00 $01 $00 $0A $00
-.db $01 $00 $0A $00 $00 $00 $0F $0E
+.db $01 $00 $0A $00 $00
+
+L96EB75:
+.db $00 $0F $0E
 .db $20 $09 $0E $00 $00 $00 $0F $0A
 .db $14 $0F $43 $02 $05 $43 $03 $0F
 .db $0E $14 $09 $0E $15 $05 $04 $00
@@ -7682,7 +7685,7 @@ L96EEFD:
 	sta $01
 	lda #L96F049
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	lda #L96C9D7
 	sta $00
 	jsr L96F774
@@ -7947,7 +7950,7 @@ L96F180:
 	sta $01
 	lda #$12E2
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 L96F1B4:
 	plp
 	rts
@@ -8001,7 +8004,7 @@ L96F1EA:
 	sta $01
 	lda #L96F325
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	sep #$20
 	lda #lobyte(LCFBE27)
 	sta.l $000071
@@ -8019,7 +8022,7 @@ L96F1EA:
 	sta $01
 	lda #L96F32E
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	sep #$20
 	lda #lobyte(LCFE6B2)
 	sta.l $000071
@@ -8037,7 +8040,7 @@ L96F1EA:
 	sta $01
 	lda #L96F337
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	sep #$20
 	lda #lobyte(LCFE765)
 	sta.l $000071
@@ -8055,7 +8058,7 @@ L96F1EA:
 	sta $01
 	lda #L96F340
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	sep #$20
 	lda #lobyte(LCFF1E0)
 	sta.l $000071
@@ -8073,7 +8076,7 @@ L96F1EA:
 	sta $01
 	lda #L96F349
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	jsl L8DE421
 	jsl L8DE441
 	jsl L8DE355
@@ -8156,7 +8159,7 @@ L96F38D:
 	sta $01
 	lda #L96F59A
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	sep #$20
 	lda #lobyte(LCEA4DE)
 	sta.l $000071
@@ -8174,7 +8177,7 @@ L96F38D:
 	sta $01
 	lda #L96F5A3
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	sep #$20
 	lda #lobyte(LCEA608)
 	sta.l $000071
@@ -8192,7 +8195,7 @@ L96F38D:
 	sta $01
 	lda #L96F5AC
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	sep #$20
 	lda #lobyte(LCEA730)
 	sta.l $000071
@@ -8210,7 +8213,7 @@ L96F38D:
 	sta $01
 	lda #L96F5B5
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	sep #$20
 	lda #lobyte(LCEA85A)
 	sta.l $000071
@@ -8228,7 +8231,7 @@ L96F38D:
 	sta $01
 	lda #L96F5BE
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	sep #$20
 	lda #lobyte(LCEA983)
 	sta.l $000071
@@ -8246,7 +8249,7 @@ L96F38D:
 	sta $01
 	lda #L96F5C7
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	sep #$20
 	lda #lobyte(LCEAAAD)
 	sta.l $000071
@@ -8264,7 +8267,7 @@ L96F38D:
 	sta $01
 	lda #L96F5D0
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	sep #$20
 	lda #lobyte(LCEABD6)
 	sta.l $000071
@@ -8282,7 +8285,7 @@ L96F38D:
 	sta $01
 	lda #L96F5D9
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	sep #$20
 	lda #lobyte(LCEAD00)
 	sta.l $000071
@@ -8300,7 +8303,7 @@ L96F38D:
 	sta $01
 	lda #L96F5E2
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	sep #$20
 	lda #lobyte(LCEAE29)
 	sta.l $000071
@@ -8318,7 +8321,7 @@ L96F38D:
 	sta $01
 	lda #L96F5EB
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	plp
 	rts
 
@@ -8385,7 +8388,7 @@ L96F639:
 	sta $01
 	lda #L96F6B9
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	bra L96F6B7
 
 L96F649:
@@ -8393,7 +8396,7 @@ L96F649:
 	sta $01
 	lda #L96F6C2
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	bra L96F6B7
 
 L96F659:
@@ -8401,7 +8404,7 @@ L96F659:
 	sta $01
 	lda #L96F6CB
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	bra L96F6B7
 
 L96F669:
@@ -8409,7 +8412,7 @@ L96F669:
 	sta $01
 	lda #L96F6D4
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	bra L96F6B7
 
 L96F679:
@@ -8417,7 +8420,7 @@ L96F679:
 	sta $01
 	lda #L96F6DD
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	bra L96F6B7
 
 L96F689:
@@ -8425,7 +8428,7 @@ L96F689:
 	sta $01
 	lda #L96F6E6
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	bra L96F6B7
 
 L96F699:
@@ -8433,7 +8436,7 @@ L96F699:
 	sta $01
 	lda #L96F6EF
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	bra L96F6B7
 
 L96F6A9:
@@ -8441,7 +8444,7 @@ L96F6A9:
 	sta $01
 	lda #L96F6F8
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 L96F6B7:
 	plp
 	rts
@@ -8470,7 +8473,7 @@ L96F701:
 	sta $01
 	lda #L96F714
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	plp
 	rts
 
@@ -8676,7 +8679,7 @@ L96F943:
 	sta $01
 	lda #L96F9E4
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	sep #$20
 	lda #lobyte(LCFF2E7)
 	sta.l $000071
@@ -8694,7 +8697,7 @@ L96F943:
 	sta $01
 	lda #L96F9ED
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	sep #$20
 	lda #lobyte(LCFF37D)
 	sta.l $000071
@@ -8712,7 +8715,7 @@ L96F943:
 	sta $01
 	lda #L96F9F6
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	plp
 	rts
 
@@ -8748,7 +8751,7 @@ L96F9FD:
 	sta $01
 	lda #L96FA50
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	lda #$EB7D
 	sta $00
 	jsr L96FAB4
@@ -8786,8 +8789,8 @@ L96FA59:
 	sta $01
 	lda #L96FAAB
 	sta $00
-	jsl L808EAD
-	lda #$EB75
+	jsl L_DMA_SEND_DATA
+	lda #L96EB75
 	sta $00
 	jsr L96FAB4
 	lda #L968051
@@ -8826,7 +8829,7 @@ L96FAE7:
 	sta $01
 	lda #L96FB09
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	jsl L808826
 	jsl L8088A0
 	lda #$0078

@@ -1936,7 +1936,7 @@ L808E4D:
 	sta $01
 	lda #L808E64
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	plb
 	plp
 	rtl
@@ -1954,7 +1954,7 @@ L808E6D:
 	sta $01
 	lda #L808E84
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	plb
 	plp
 	rtl
@@ -1972,7 +1972,7 @@ L808E8D:
 	sta $01
 	lda #L808EA4
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	plb
 	plp
 	rtl
@@ -1980,7 +1980,7 @@ L808E8D:
 L808EA4:
 DMA_DATA $7E3000 $0800 $80 $4800
 
-L808EAD:
+L_DMA_SEND_DATA:
 	php
 	rep #$30
 	ldx $0200
@@ -4725,7 +4725,7 @@ L80A300:
 	lda #$0741
 	sta $00
 	sep #$20
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 L80A336:
 	plp
 	rtl
@@ -4752,7 +4752,7 @@ L80A338:
 	lda #$0741
 	sta $00
 	sep #$20
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 L80A36E:
 	plp
 	rtl
@@ -5124,17 +5124,17 @@ L80A61A:
 	sta $01
 	lda #L80A686
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	lda #bank100(L80A67D)
 	sta $01
 	lda #L80A67D
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	lda #bank100(L80A674)
 	sta $01
 	lda #L80A674
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	plb
 	plp
 	rtl

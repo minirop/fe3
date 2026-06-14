@@ -307,12 +307,12 @@ L8384CC:
 	sta $01
 	lda #L83F1A3
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	lda #bank100(L83F19A)
 	sta $01
 	lda #L83F19A
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	lda #$0000
 	ldy #$0800
 	ldx #$0000
@@ -466,12 +466,12 @@ L8386C0:
 	sta $01
 	lda #L83F1A3
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	lda #bank100(L83F19A)
 	sta $01
 	lda #L83F19A
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	jsl L93E453
 	lda $0860
 	and #$00FF
@@ -621,12 +621,12 @@ L838820:
 	sta $01
 	lda #L83883F
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	lda #bank100(L838848)
 	sta $01
 	lda #L838848
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	plp
 	rtl
 
@@ -770,7 +770,7 @@ L838952:
 	sta $01
 	lda #L83897A
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	jsl L93E007
 	rtl
 
@@ -873,7 +873,7 @@ L8389FD:
 	sta $01
 	lda #$0741
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	rtl
 
 L838A73:
@@ -881,17 +881,17 @@ L838A73:
 	sta $01
 	lda #L838AD6
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	lda #bank100(L838ADF)
 	sta $01
 	lda #L838ADF
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	lda #bank100(L838AE8)
 	sta $01
 	lda #L838AE8
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	lda #$2700
 	sta $15
 	lda $0A9B
@@ -1552,7 +1552,7 @@ L838FC0:
 	sta $01
 	lda #L83F19A
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	sep #$20
 	lda $0A9F
 	ina
@@ -2059,7 +2059,7 @@ L8393FA:
 	sta $01
 	lda #L839599
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	lda $0aab
 	and #$00ff
 	bne L83942D
@@ -2108,7 +2108,7 @@ L83947F:
 	sta $01
 	lda #L838848
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	sep #$20
 	lda $0ac8
 	beq L83949F
@@ -2362,7 +2362,7 @@ L839705:
 	sta $01
 	lda #L839599
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 L83971E:
 	sep #$20
 	lda #$0b
@@ -3030,7 +3030,7 @@ L839CD2:
 	sta $01
 	lda #L838848
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	jsl L82D291
 	sep #$20
 	stz $08f8
@@ -3349,7 +3349,7 @@ L839F7B:
 	sta $01
 	lda #L83F19A
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	bra L839F8F
 L839F8F:
 	sep #$20
@@ -4668,7 +4668,7 @@ L83AA80:
 	sta $01
 	lda #L83F19A
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	sep #$20
 	lda $08d5
 	sta $08f0
@@ -7722,7 +7722,7 @@ L83C1EA:
 	sta $01
 	lda #L839599
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	lda $08F2
 	and #$00FF
 	cmp #$00FF
@@ -7889,7 +7889,7 @@ L83C3C0:
 	sta $01
 	lda #L838848
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	lda $08ED
 	jsl L83D912
 	lda.l ActiveUnit.XPosition
@@ -13536,13 +13536,13 @@ L83F142:
 	sta $01
 	lda #L83F1A3
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	jsl L8087EA
 	lda #bank100(L83F19A)
 	sta $01
 	lda #L83F19A
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	sep #$20
 	lda $a0
 	ora #$07

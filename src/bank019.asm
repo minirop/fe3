@@ -3758,13 +3758,13 @@ L93CD86:
 	sta $01
 	lda #L93D51C
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	jsl L8087EA
 	lda #bank100(L93D525)
 	sta $01
 	lda #L93D525
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	sep #$20
 	lda #$49
 	sta $80
@@ -3891,7 +3891,7 @@ L93CE92:
 	lda #L83F1A3
 	sta $00
 	sep #$20
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	jsl L8087EA
 	rep #$20
 	lda #bank100(L83F19A)
@@ -3899,7 +3899,7 @@ L93CE92:
 	lda #L83F19A
 	sta $00
 	sep #$20
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	lda $A0
 	ora #$04
 	sta $A0
@@ -3944,12 +3944,12 @@ L93CF44:
 	sta $01
 	lda #L83F1A3
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	lda #bank100(L83F19A)
 	sta $01
 	lda #L83F19A
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	jsl L83AF3F
 	lda $08ED
 	and #$00FF
@@ -4434,13 +4434,13 @@ L93D32F:
 	sta $01
 	lda #L93D51C
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	jsl L8087EA
 	lda #bank100(L93D525)
 	sta $01
 	lda #L93D525
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	sep #$20
 	lda #$49
 	sta $80
@@ -4521,7 +4521,7 @@ L93D3BC:
 	lda #L83F1A3
 	sta $00
 	sep #$20
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	jsl L8087EA
 	rep #$20
 	lda #bank100(L83F19A)
@@ -4529,7 +4529,7 @@ L93D3BC:
 	lda #L83F19A
 	sta $00
 	sep #$20
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	lda $A0
 	ora #$04
 	sta $A0
@@ -4769,7 +4769,7 @@ L93D68A:
 	sta $01
 	lda #L838848
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	plp
 	rtl
 
@@ -5951,7 +5951,7 @@ L93DF96:
 	sta $01
 	lda #L839599
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	plp
 	rtl
 
@@ -6005,7 +6005,7 @@ L93E007:
 	sta $01
 	lda #L838996
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	bra L93E030
 
 L93E022:
@@ -6013,7 +6013,7 @@ L93E022:
 	sta $01
 	lda #L83898F
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 L93E030:
 	plp
 	rtl
@@ -6338,7 +6338,7 @@ L93E2C5:
 	sta $01
 	lda #L93E2D6
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	plp
 	rts
 
@@ -6850,7 +6850,7 @@ L93E664:
 	sta $01
 	lda #$0741
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	lda $17
 	adc #$1800
 	sta $17
@@ -6863,7 +6863,7 @@ L93E664:
 	sta $01
 	lda #$0741
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	lda $17
 	adc #$1800
 	sta $17
@@ -6876,7 +6876,7 @@ L93E664:
 	sta $01
 	lda #$0741
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	rtl
 
 L93E6F1:

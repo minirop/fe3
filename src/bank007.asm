@@ -208,7 +208,7 @@ L878194:
 	lda #L82A0AD
 	sta $00
 	sep #$20
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	jsl L8087EA
 	lda #$00
 	sta $0FA8
@@ -294,7 +294,7 @@ L878245:
 	lda #L838848
 	sta $00
 	sep #$20
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 L878264:
 	lda #$ff
 	sta $0fa8
@@ -404,12 +404,12 @@ L87833A:
 	sta $01
 	lda #L878424
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	lda #bank100(L838848)
 	sta $01
 	lda #L838848
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	lda #bank100(DIALOGUES_POINTER_TABLE)
 	sta $01
 	ldy #$0001
@@ -449,13 +449,13 @@ L87838A:
 	sta $01
 	lda #L878412
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	jsl L8087EA
 	lda #bank100(L87841B)
 	sta $01
 	lda #L87841B
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	jsl L8087EA
 	ldy #$0020
 	ldx #$0000
@@ -471,7 +471,7 @@ L8783E1:
 	sta $01
 	lda #L878424
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	sep #$20
 	lda $0F65
 	sta $074C
@@ -680,7 +680,7 @@ L8785A5:
 	sta $01
 	lda #L82A0AD
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	jsl L8087EA
 	inc $0fa2
 	inc $0fa2
@@ -1403,13 +1403,13 @@ L878B86:
 	sta $01
 	lda #L878412
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	jsl L8087EA
 	lda #bank100(L87841B)
 	sta $01
 	lda #L87841B
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	jsl L83F312
 	inc $0FA2
 	inc $0FA2
@@ -4331,13 +4331,13 @@ L87A492:
 	sta $01
 	lda #L878412
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	jsl L8087EA
 	lda #bank100(L87841B)
 	sta $01
 	lda #L87841B
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	plp
 	rts
 
@@ -5827,7 +5827,7 @@ L87B0E5:
 	sta $01
 	lda #L87B0F8
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	plp
 	rtl
 
@@ -6257,7 +6257,7 @@ L87B468:
 	sta $01
 	lda #$0F5B
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	plp
 	rtl
 
@@ -7128,7 +7128,7 @@ L87C0E6:
 	sta $01
 	lda #$0017
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	plx
 	ply
 	tya
@@ -7166,7 +7166,7 @@ L87C0E6:
 	sta $01
 	lda #$0017
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 L87C16E:
 	rts
 
@@ -7694,7 +7694,7 @@ L87C7FF:
 	sta $01
 	lda #$001D
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	rts
 
 L87C826:
@@ -8797,7 +8797,7 @@ L87CFD2:
 	sta $01
 	lda #L87B0F8
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	jsl L809374
 	ldx $0F00
 	lda $0F20,X
@@ -8915,7 +8915,7 @@ L87D0D8:
 	sta $01
 	lda #L81D6D5
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	jsl L8087EA
 	inc $0F02
 	clc
@@ -9068,7 +9068,7 @@ L87D233:
 	sta $01
 	lda #L81D6D5
 	sta $00
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	jsl L81E475
 	jsl L809374
 	inc $0F02
@@ -9324,7 +9324,7 @@ L87D48D:
 	lda #L81D6D5
 	sta $00
 	sep #$20
-	jsl L808EAD
+	jsl L_DMA_SEND_DATA
 	jsl L809374
 L87D4BC:
 	rep #$20
