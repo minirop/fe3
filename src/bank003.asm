@@ -640,7 +640,7 @@ L838851:
 	sta $00
 	sep #$20
 	lda $07D0
-	jsl L80A89D
+	jsl L_TIMES_THREE
 	lda #bankbyte(TABLE_89CA4E)
 	sta $02
 	rep #$20
@@ -656,7 +656,7 @@ L838851:
 	sta $00
 	sep #$20
 	lda $07D0
-	jsl L80A89D
+	jsl L_TIMES_THREE
 	lda #bankbyte(TABLE_89C9EB)
 	sta $02
 	rep #$20
@@ -790,11 +790,11 @@ L838996:
 DMA_DATA L95F860 $0020 $70
 
 L83899D: ; load_map?
-	lda.w #UNKNOWN_CHAPTERS_POINTER_DATA
+	lda #UNKNOWN_CHAPTERS_POINTER_DATA
 	sta $00
 	sep #$20
 	lda $07CF
-	jsl L80A89D
+	jsl L_TIMES_THREE
 	lda #bankbyte(UNKNOWN_CHAPTERS_POINTER_DATA)
 	sta $02
 	rep #$20
@@ -811,7 +811,7 @@ L83899D: ; load_map?
 	sta $00
 	sep #$20
 	lda $07CF
-	jsl L80A89D
+	jsl L_TIMES_THREE
 	lda #bankbyte(SOME_POINTERS_TABLE)
 	sta $02
 	rep #$20
@@ -840,7 +840,7 @@ L8389FD:
 	sta $00
 	sep #$20
 	lda $07CF
-	jsl L80A89D
+	jsl L_TIMES_THREE
 	lda #bankbyte(CHAPTERS_TILESETS_POINTER_DATA)
 	sta $02
 	rep #$20
@@ -9761,7 +9761,7 @@ L83D409:
 	sta $00
 	pla
 	pha
-	jsl L80A89D
+	jsl L_TIMES_THREE
 	lda [$00]
 	sta $00
 	lda [$00],Y
@@ -12473,7 +12473,7 @@ L83E956:
 	sta $00
 	lda.l ActiveUnit.MountedClassID
 	and #$00ff
-	jsl L80A89D
+	jsl L_TIMES_THREE
 	lda [$00]
 	sta $00
 	lda [$00],Y
@@ -12529,7 +12529,7 @@ L83E9CE:
 	lda #L88B383
 	sta $00
 	pla
-	jsl L80A89D
+	jsl L_TIMES_THREE
 	lda [$00]
 	sta $00
 	lda [$00],Y
@@ -13636,7 +13636,7 @@ L83F20C:
 	lda #L89CBA0
 	sta $00
 	pla
-	jsl L80A89D
+	jsl L_TIMES_THREE
 	lda [$00]
 	pha
 	inc $00
@@ -14144,7 +14144,7 @@ L83F63C:
 	sta $00
 	lda $07d0
 	and #$00ff
-	jsl L80A89D
+	jsl L_TIMES_THREE
 	lda [$00]
 	sta $00
 	lda $7f2800,X
@@ -14367,7 +14367,7 @@ L83F7D5:
 	sta $00
 	lda $07d0
 	and #$00ff
-	jsl L80A89D
+	jsl L_TIMES_THREE
 	lda [$00]
 	sta $00
 	pla
@@ -15017,7 +15017,7 @@ L83FCF7:
 	pla
 	xba
 	and #$00FF
-	jsl L80A89D
+	jsl L_TIMES_THREE
 	lda [$00]
 	sta $00
 	pla

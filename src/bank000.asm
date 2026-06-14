@@ -441,7 +441,7 @@ L808318:
 	rep #$20
 	lda $0469
 	clc
-	adc.w #$0006
+	adc #$0006
 	sta $0469
 	plb
 	plp
@@ -5457,7 +5457,7 @@ L80A899:
 	clc
 	rtl
 
-L80A89D:
+L_TIMES_THREE:
 	php
 	rep #$20
 	and #$00FF

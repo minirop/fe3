@@ -286,7 +286,7 @@ L82824D:
 	sta $00
 	lda.l ActiveUnit.AI2
 	and #$00FF
-	jsl L80A89D
+	jsl L_TIMES_THREE
 	lda [$00]
 	sta $00
 	lda.l (ActiveUnit.AI2 + 1)
@@ -721,7 +721,7 @@ L828596:
 	sta $00
 	lda.l ActiveUnit.AI1
 	and #$00FF
-	jsl L80A89D
+	jsl L_TIMES_THREE
 	lda [$00]
 	sta $00
 	lda.l (ActiveUnit.AI1 + 1)
@@ -1154,7 +1154,7 @@ L82896A:
 	pla
 	xba
 	and #$00FF
-	jsl L80A89D
+	jsl L_TIMES_THREE
 	lda [$00]
 	sta $00
 	pla
@@ -1511,7 +1511,7 @@ L828C63:
 	sta $00
 	lda.l ActiveUnit.AI2
 	and #$00FF
-	jsl L80A89D
+	jsl L_TIMES_THREE
 	lda [$00]
 	sta $00
 	lda.l (ActiveUnit.AI2 + 1)
