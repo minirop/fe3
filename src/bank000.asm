@@ -7673,7 +7673,6 @@ L80B8B0:
 	cmp #$802D
 	bcc L80B90D
 	iny
-; L80802F is in the middle of an instrucion
 	cmp #$802F
 	bcc L80B90D
 	brl L80B923
