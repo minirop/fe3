@@ -12094,7 +12094,7 @@ L83E64C:
 	lda #L8C9AD0
 	sta $03
 	bra L83E65B
-	brl L83E6E6
+	brl L83E6E6 ; useless?
 L83E65B:
 	sep #$20
 	lda [$03]
