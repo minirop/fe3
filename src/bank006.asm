@@ -2700,7 +2700,7 @@ L869437:
 L869438:
 	sep #$20
 	lda #$00
-	sta $2121
+	sta.w CGADD
 	lda #$00
 	sta $2122
 	sta $2122
@@ -9129,7 +9129,7 @@ L86C425:
 	rep #$20
 	sep #$20
 	lda #$B0
-	sta $2121
+	sta.w CGADD
 	rep #$20
 	sep #$20
 	lda #$82
@@ -9153,7 +9153,7 @@ L86C425:
 	rep #$20
 	sep #$20
 	lda #$F0
-	sta $2121
+	sta.w CGADD
 	rep #$20
 	sep #$20
 	lda #$82
@@ -10712,9 +10712,9 @@ L86D101:
 	plb
 	rep #$20
 	lda $10A0
-	cmp #$C4AE
+	cmp #L95C4AE
 	beq L86D12A
-	cmp #$CD18
+	cmp #L95CD18
 	bne L86D12D
 L86D12A:
 	jmp L86D1A2
@@ -10831,9 +10831,9 @@ L86D1D3:
 	plb
 	rep #$20
 	lda $10A0
-	cmp #$C4AE
+	cmp #L95C4AE
 	beq L86D1E9
-	cmp #$CD18
+	cmp #L95CD18
 	bne L86D1F8
 L86D1E9:
 	lda #$0100
@@ -11967,7 +11967,7 @@ L86D9F6:
 L86DA04:
 	sep #$20
 	lda #$80
-	sta $2121
+	sta.w CGADD
 	rep #$20
 	sep #$20
 	lda #$82
@@ -11998,7 +11998,7 @@ L86DA04:
 	bne L86DA95
 	sep #$20
 	lda #$20
-	sta $2121
+	sta.w CGADD
 	rep #$20
 	sep #$20
 	lda #$82
@@ -12028,7 +12028,7 @@ L86DA04:
 L86DA95:
 	sep #$20
 	lda #$C0
-	sta $2121
+	sta.w CGADD
 	rep #$20
 	sep #$20
 	lda #$82
@@ -12208,7 +12208,7 @@ L86DBC8:
 L86DBD7:
 	sep #$20
 	lda #$20
-	sta $2121
+	sta.w CGADD
 	lda #$82
 	sta.w DMAP0
 	lda #$3B
@@ -15515,11 +15515,11 @@ L86F5C0:
 	sta $2126
 	lda $100B
 	sta $2127
-	stz $2121
+	stz.w CGADD
 	stz $2122
 	stz $2122
 	lda #$20
-	sta $2121
+	sta.w CGADD
 	ldx #$0000
 L86F60C:
 	lda $1C00,X
@@ -15679,7 +15679,7 @@ L86F729:
 	bit #$01
 	bne L86F75A
 	lda #$10
-	sta $2121
+	sta.w CGADD
 L86F737:
 	ldx #$0000
 L86F73A:
@@ -15689,7 +15689,7 @@ L86F73A:
 	cpx #$0018
 	bcc L86F73A
 	lda #$20
-	sta $2121
+	sta.w CGADD
 	ldx #$0000
 L86F74E:
 	lda $213B

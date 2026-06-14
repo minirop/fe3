@@ -1501,40 +1501,41 @@ L828C37:
 	bra L828C32
 
 L828C63:
+.ACCU 16
 	lda $08ED
-	and.w #$00FF
+	and #$00FF
 	jsl L83D912
-	lda.w #$8800
+	lda #bank100(AI_2_POINTERS_TABLE)
 	sta $01
-	lda.w #$C5E1
+	lda #AI_2_POINTERS_TABLE
 	sta $00
 	lda.l ActiveUnit.AI2
-	and.w #$00FF
+	and #$00FF
 	jsl L80A89D
 	lda [$00]
 	sta $00
 	lda.l (ActiveUnit.AI2 + 1)
-	and.w #$00FF
+	and #$00FF
 	tay
 	lda [$00],Y
-	and.w #$00FF
-	cmp.w #$00FF
+	and #$00FF
+	cmp #$00FF
 	beq L828CCC
 	sta $15
 	iny
 	lda [$00],Y
-	and.w #$00FF
+	and #$00FF
 	sta $0C80
 	iny
 	lda [$00],Y
-	and.w #$00FF
+	and #$00FF
 	sta $0C83
 	iny
 	lda [$00],Y
-	and.w #$00FF
+	and #$00FF
 	sta $0C86
 	lda $15
-	and.w #$00FF
+	and #$00FF
 	asl
 	tax
 	jsr (SOME_AI_2_TABLE_OF_DATA,X)

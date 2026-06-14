@@ -406,7 +406,8 @@ L808308:
 L808311:
 	txa
 	clc
-	adc.w #$aa06
+	adc #$06
+	tax
 	bra L8082C3
 L808318:
 	php
@@ -1205,7 +1206,7 @@ L80895C:
 	lda $0145,Y
 	sta.w DAS1H
 	lda $0146,Y
-	sta $2121
+	sta.w CGADD
 	stz.w DMAP1
 	lda #$22
 	sta.w BBAD1
@@ -1309,7 +1310,7 @@ L808A32:
 	sta.w BBAD1
 	lda ($00),Y
 	iny
-	sta $2121
+	sta.w CGADD
 	bra L808A89
 L808A6D:
 	lda #$01
@@ -3241,13 +3242,13 @@ L80979A:
 	rts
 
 L8097D6:
-	lda #$9AC9
+	lda #L809AC9
 	sta.l $0004C0,X
 	rts
 
 L8097DE:
 	pha
-	lda #$9ACA
+	lda #L809ACA
 	sta.l $0004C0,X
 	pla
 	dea
@@ -3427,9 +3428,9 @@ L80995A:
 	sta $01
 	lda.l $0004C0,X
 	sta $00
-	cmp #$9AC9
+	cmp #L809AC9
 	beq L80997B
-	cmp #$9ACA
+	cmp #L809ACA
 	bne L809978
 	sep #$20
 	lda #$80
@@ -5516,7 +5517,7 @@ L80A907:
 L80A911:
 	sep #$20
 	lda #$0D
-	sta $2121
+	sta.w CGADD
 	lda $0752
 	sta $2122
 	lda $0753
@@ -5601,7 +5602,7 @@ L80A9B4:
 	lda $075A
 	sta $4F
 	lda #$37
-	sta $2121
+	sta.w CGADD
 	lda [$4D]
 	sta $2122
 	ldy #$01
@@ -7672,6 +7673,7 @@ L80B8B0:
 	cmp #$802D
 	bcc L80B90D
 	iny
+; L80802F is in the middle of an instrucion
 	cmp #$802F
 	bcc L80B90D
 	brl L80B923

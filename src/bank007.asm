@@ -8563,32 +8563,33 @@ L87CE2C:
 	rts
 
 COMMANDS_80_JUMP_TABLE:
-	.dw SCRIPT_COMMAND_80
-	.dw SCRIPT_COMMAND_81
-	.dw SCRIPT_COMMAND_82
-	.dw SCRIPT_COMMAND_83
-	.dw SHOW_PORTRAIT_CMD
-	.dw CLOSE_FRAME_CMD
-	.dw SCRIPT_COMMAND_86
-	.dw SCRIPT_COMMAND_87
-	.dw START_DIALOGUE_CMD
-	.dw PLAY_SONG_CMD
-	.dw WAIT_FOR_A_CMD
-	.dw SCRIPT_COMMAND_8B
-	.dw SCRIPT_COMMAND_8C
-	.dw SCRIPT_COMMAND_8D
-	.dw SCRIPT_COMMAND_8E
-	.dw SCRIPT_COMMAND_8F
-	.dw SCRIPT_COMMAND_90
-	.dw SCRIPT_COMMAND_91
-	.dw SWITCH_FRAME_CMD
-	.dw SCRIPT_COMMAND_93
-	.dw SCRIPT_COMMAND_94
-	.dw SCRIPT_COMMAND_95
+.dw SCRIPT_COMMAND_80
+.dw SCRIPT_COMMAND_81
+.dw SCRIPT_COMMAND_82
+.dw SCRIPT_COMMAND_83
+.dw SHOW_PORTRAIT_CMD
+.dw CLOSE_FRAME_CMD
+.dw SCRIPT_COMMAND_86
+.dw SCRIPT_COMMAND_87
+.dw START_DIALOGUE_CMD
+.dw PLAY_SONG_CMD
+.dw WAIT_FOR_A_CMD
+.dw SCRIPT_COMMAND_8B
+.dw SCRIPT_COMMAND_8C
+.dw SCRIPT_COMMAND_8D
+.dw SCRIPT_COMMAND_8E
+.dw SCRIPT_COMMAND_8F
+.dw SCRIPT_COMMAND_90
+.dw SCRIPT_COMMAND_91
+.dw SWITCH_FRAME_CMD
+.dw SCRIPT_COMMAND_93
+.dw SCRIPT_COMMAND_94
+.dw SCRIPT_COMMAND_95
 
 SCRIPT_COMMAND_95:
+.ACCU 16
 	jsl L8087EA
-	lda.w #$0000
+	lda #$0000
 	sta $0125
 	sta $0127
 	inc $0F02
@@ -8618,9 +8619,9 @@ L87CE8E:
 	sta $00
 	lda $0F03
 	sta $01
-	ldy.w #$0001
+	ldy #$0001
 	lda [$00],Y
-	and.w #$00FF
+	and #$00FF
 	ora #$1100
 	sta.l WRMPYA
 	nop
@@ -8647,19 +8648,19 @@ L87CEC2:
 
 SCRIPT_COMMAND_90:
 	lda $0F05
-	ora.w #$0010
+	ora #$0010
 	sta $0F05
 	inc $0F02
 	clc
 	rts
 
 SCRIPT_COMMAND_91:
-	lda.w #$0010
+	lda #$0010
 	eor #$FFFF
 	and $0F05
 	sta $0F05
-	ldx.w #$0000
-	ldy.w #$0028
+	ldx #$0000
+	ldy #$0028
 	jsl L87A98D
 	inc $0F02
 	clc
@@ -8687,14 +8688,15 @@ L87CF0C:
 SCRIPT_COMMAND_8D:
 	sep #$20
 	lda [$00],Y
-	jsl L87A8F4
+	jsl $87A8F4
 	pha
-	lda.w #$EB00
-	ldy.w #$0002
+	lda #$00
+	xba
+	ldy #$0002
 	lda [$00],Y
 	tax
 	pla
-	jsl L87B19A
+	jsl $87B19A
 	rep #$20
 	inc $0F02
 	inc $0F02
@@ -8707,8 +8709,9 @@ SCRIPT_COMMAND_8E:
 	lda [$00],Y
 	jsl L87A8F4
 	pha
-	lda.w #$EB00
-	ldy.w #$0002
+	lda #$00
+	xba
+	ldy #$0002
 	lda [$00],Y
 	tax
 	pla
@@ -8721,12 +8724,13 @@ SCRIPT_COMMAND_8E:
 	rts
 
 SCRIPT_COMMAND_8B:
+.ACCU 16
 	inc $0F02
 	lda $0F03
 	sta $0F47
 	lda $0F02
 	sta $0F46
-	lda.w #$8E00
+	lda #$8E00
 	sta $01
 	lda $0F49
 	asl
@@ -8753,7 +8757,7 @@ SCRIPT_COMMAND_8C:
 
 SCRIPT_COMMAND_94:
 	jsr L87D3A5
-	ldy.w #$0001
+	ldy #$0001
 	lda [$00],Y
 	sta $0F8F
 	inc $0F02
@@ -8762,7 +8766,7 @@ SCRIPT_COMMAND_94:
 	bra L87CFC5
 
 WAIT_FOR_A_CMD:
-	lda.w #$FFFF
+	lda #$FFFF
 	sta $0F8F
 	inc $0F02
 	bra L87CFC5
