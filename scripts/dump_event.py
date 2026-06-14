@@ -97,13 +97,21 @@ while not stop:
 			print(f"EV_COMMAND_18 ${rom[address]:02X} ${rom[address+1]:02X} ${rom[address+2]:02X} ${rom[address+3]:02X} ${rom[address+4]:02X}")
 			address += 5
 		case 0x1A:
-			raise NotImplementedError(f"${opcode:X}")
+			print(f"EV_COMMAND_1A ${rom[address]:02X} ${rom[address+1]:02X}")
+			address += 2
 		case 0x1B:
 			print(f"EV_COMMAND_1B ${rom[address]:02X} ${rom[address+1]:02X}")
 			address += 2
 		case 0x1C:
-			print(f"EV_COMMAND_1C ${rom[address]:02X} ${rom[address + 1]:02X} ${rom[address + 2]:02X}")
-			address += 3
+			if rom[address + 1] == 0x01:
+				print(f"EV_COMMAND_1C ${rom[address]:02X} ${rom[address + 1]:02X} ${rom[address + 2]:02X}")
+				address += 3
+			else:
+				print(f"EV_COMMAND_1C_2 ${rom[address]:02X} ${rom[address + 1]:02X}")
+				address += 2
+		case 0x1D:
+			print(f"EV_COMMAND_1D ${rom[address]:02X} ${rom[address+1]:02X}")
+			address += 2
 		case 0x21:
 			print(f"EV_COMMAND_21 ${rom[address]:02X} ${rom[address+1]:02X} ${rom[address+2]:02X} ${rom[address+3]:02X} ${rom[address+4]:02X}")
 			address += 5

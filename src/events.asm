@@ -121,14 +121,24 @@ COST(\1)
 .db $16 \1 \2 $FF $00
 .ENDM
 
-; to investigate
-; seems it only has 4 parameters
 .MACRO EV_COMMAND_18
 .db $18 \1 \2 \3 \4 \5
 .ENDM
 
+.MACRO EV_COMMAND_1A
+.db $1A \1 \2
+.ENDM
+
+.MACRO EV_COMMAND_1B
+.db $1B \1 \2
+.ENDM
+
 .MACRO EV_COMMAND_1C
 .db $1C \1 \2 \3
+.ENDM
+
+.MACRO EV_COMMAND_1C_2
+.db $1C \1 \2
 .ENDM
 
 .MACRO EV_COMMAND_1D

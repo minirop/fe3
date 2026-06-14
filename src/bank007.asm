@@ -4129,11 +4129,11 @@ L87A30C:
 	clc
 	adc $0B70
 	sta.l ActiveUnit.Level
-	lda #$58
+	lda #NAME_OPPONENT
 	sta.l ActiveUnit.NameID
-	lda #$45
+	lda #UNIT_ENEMY_45
 	sta.l ActiveUnit.UnitID
-	lda #$74
+	lda #PORTRAIT_GUARD_ID
 	sta.l ActiveUnit.PortraitID
 	jsl L83DD66
 	lda.l ActiveUnit.Level
