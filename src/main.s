@@ -36,9 +36,12 @@
 /* 15 */ TransformTimer db ; UnitWasSelected on prep screen?
 /* 16 */ NameID db
 /* 17 */ PortraitID db
-/* 18 */ AI1 dw
-/* 1A */ AI2 dw
-/* 1C */ AI3 dw
+/* 18 */ AI1 db
+/* 19 */ AI1_index db
+/* 1A */ AI2 db
+/* 1B */ AI2_index db
+/* 1C */ AI3 db
+/* 1D */ AI3_index db
 /* 1E */ Money dw
 /* 20 */ Weapons .dsb 4
 /* 20 */ Weapon1 db

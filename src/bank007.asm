@@ -3255,7 +3255,7 @@ L879C15:
 	lda [$0F],Y
 	and #$00FF
 	xba
-	sta.l (ActiveUnit.AI2 + 1)
+	sta.l ActiveUnit.AI2_index
 	pla
 	jsl L83D969
 	rts

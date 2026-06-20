@@ -6972,9 +6972,9 @@ L93E7AD:
 	sta.l ActiveUnit.EXP
 	sta.l ActiveUnit.YPosition
 	sta.l ActiveUnit.AI1
-	sta.l (ActiveUnit.AI1 + 1)
+	sta.l ActiveUnit.AI1_index
 	sta.l ActiveUnit.AI2
-	sta.l (ActiveUnit.AI2 + 1)
+	sta.l ActiveUnit.AI2_index
 	sta.l ActiveUnit.AI3
 	lda #$FF
 	sta.l ActiveUnit.MountedClassID

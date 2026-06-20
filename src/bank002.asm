@@ -289,7 +289,7 @@ L82824D:
 	jsl L_TIMES_THREE
 	lda [$00]
 	sta $00
-	lda.l (ActiveUnit.AI2 + 1)
+	lda.l ActiveUnit.AI2_index
 	and #$00FF
 	tay
 	lda [$00],Y
@@ -724,7 +724,7 @@ L828596:
 	jsl L_TIMES_THREE
 	lda [$00]
 	sta $00
-	lda.l (ActiveUnit.AI1 + 1)
+	lda.l ActiveUnit.AI1_index
 	and #$00FF
 	tay
 	lda [$00],Y
@@ -904,12 +904,12 @@ L828711:
 	and #$00FF
 	jsl L83D912
 	sep #$20
-	lda.l (ActiveUnit.AI1 + 1)
+	lda.l ActiveUnit.AI1_index
 	ina
 	ina
 	ina
 	ina
-	sta.l (ActiveUnit.AI1 + 1)
+	sta.l ActiveUnit.AI1_index
 	rep #$20
 	lda $08ED
 	and #$00FF
@@ -1053,10 +1053,10 @@ L82887B:
 	and #$00FF
 	jsl L83D912
 	sep #$20
-	lda.l (ActiveUnit.AI1 + 1)
+	lda.l ActiveUnit.AI1_index
 	ina
 	ina
-	sta.l (ActiveUnit.AI1 + 1)
+	sta.l ActiveUnit.AI1_index
 	rep #$20
 	lda $08ED
 	and #$00FF
@@ -1514,7 +1514,7 @@ L828C63:
 	jsl L_TIMES_THREE
 	lda [$00]
 	sta $00
-	lda.l (ActiveUnit.AI2 + 1)
+	lda.l ActiveUnit.AI2_index
 	and #$00FF
 	tay
 	lda [$00],Y
@@ -1586,9 +1586,9 @@ L828D0B:
 	lda #$0D
 	sta $08F0
 L828D18:
-	lda.l (ActiveUnit.AI2 + 1)
+	lda.l ActiveUnit.AI2_index
 	ina
-	sta.l (ActiveUnit.AI2 + 1)
+	sta.l ActiveUnit.AI2_index
 L828D21:
 	rep #$20
 	lda $08ED
@@ -1692,11 +1692,11 @@ L828E12:
 	and #$00FF
 	jsl L83D912
 	sep #$20
-	lda.l (ActiveUnit.AI2 + 1)
+	lda.l ActiveUnit.AI2_index
 	ina
 	ina
 	ina
-	sta.l (ActiveUnit.AI2 + 1)
+	sta.l ActiveUnit.AI2_index
 	rep #$20
 	lda $08ED
 	and #$FF
@@ -1920,7 +1920,7 @@ L829013:
 	lda $08ED
 	and #$00FF
 	jsl L83D912
-	lda.l (ActiveUnit.AI2 + 1)
+	lda.l ActiveUnit.AI2_index
 	and #$00FF
 	sec
 	sbc $0C80
@@ -1928,7 +1928,7 @@ L829013:
 	lda #$0000
 L82902D:
 	and #$00FF
-	sta.l (ActiveUnit.AI2 + 1)
+	sta.l ActiveUnit.AI2_index
 	lda $08ED
 	and #$00FF
 	jsl L83D969
@@ -1949,12 +1949,12 @@ L829040:
 	cmp.l ActiveUnit.YPosition
 	bne L82907D
 	sep #$20
-	lda.l (ActiveUnit.AI2 + 1)
+	lda.l ActiveUnit.AI2_index
 	ina
 	ina
 	ina
 	ina
-	sta.l (ActiveUnit.AI2 + 1)
+	sta.l ActiveUnit.AI2_index
 	rep #$20
 	lda $08ED
 	jsl L83D969
@@ -1977,11 +1977,11 @@ L829096:
 	jsl L93D52E
 	bcc L8290BA
 	sep #$20
-	lda.l (ActiveUnit.AI2 + 1)
+	lda.l ActiveUnit.AI2_index
 	ina
 	ina
 	ina
-	sta.l (ActiveUnit.AI2 + 1)
+	sta.l ActiveUnit.AI2_index
 	rep #$20
 	lda $08ED
 	and #$00FF
@@ -2080,11 +2080,11 @@ L829186:
 	and #$00FF
 	jsl L83D912
 	sep #$20
-	lda.l (ActiveUnit.AI2 + 1)
+	lda.l ActiveUnit.AI2_index
 	ina
 	ina
 	ina
-	sta.l (ActiveUnit.AI2 + 1)
+	sta.l ActiveUnit.AI2_index
 	rep #$20
 	lda $08ED
 	and #$00FF
@@ -2157,11 +2157,11 @@ L829248:
 	and #$00FF
 	jsl L83D912
 	sep #$20
-	lda.l (ActiveUnit.AI2 + 1)
+	lda.l ActiveUnit.AI2_index
 	ina
 	ina
 	ina
-	sta.l (ActiveUnit.AI2 + 1)
+	sta.l ActiveUnit.AI2_index
 	rep #$20
 	lda $08ED
 	and #$00FF
@@ -2184,12 +2184,12 @@ L82926D:
 	lda.w #$8D18
 	beq L82929D
 	stz $0C99
-	lda.l (ActiveUnit.AI2 + 1)
+	lda.l ActiveUnit.AI2_index
 	ina
 L82929D:
 	ina
 	ina
-	sta.l (ActiveUnit.AI2 + 1)
+	sta.l ActiveUnit.AI2_index
 	rep #$20
 	lda $08ED
 	and #$00FF
@@ -6456,7 +6456,7 @@ L82BA77:
 	and #$00FF
 	cmp #$00FF
 	beq L82BAE9
-	lda.l (ActiveUnit.AI3 + 1)
+	lda.l ActiveUnit.AI3_index
 	and #$00FF
 	bne L82BAA8
 	lda $0D96
@@ -6700,7 +6700,7 @@ L82BC2A:
 	and #$00FF
 	cmp #$00FF
 	beq L82BCA6
-	lda.l (ActiveUnit.AI3 + 1)
+	lda.l ActiveUnit.AI3_index
 	and #$00FF
 	bne L82BC5B
 	sep #$20
