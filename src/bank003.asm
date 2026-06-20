@@ -807,12 +807,12 @@ L83899D: ; load_map?
 	lda [$00]
 	clc
 	sta $0755
-	lda.w #SOME_POINTERS_TABLE
+	lda.w #META_TILES
 	sta $00
 	sep #$20
 	lda $07CF
 	jsl L_TIMES_THREE
-	lda #bankbyte(SOME_POINTERS_TABLE)
+	lda #bankbyte(META_TILES)
 	sta $02
 	rep #$20
 	inc $00
