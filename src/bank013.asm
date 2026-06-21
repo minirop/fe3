@@ -4045,11 +4045,11 @@ L8DE826:
 	php
 	sep #$20
 	lda #$00
-	sta $2116
+	sta.w VMADDL
 	lda #$68
-	sta $2117
+	sta.w VMADDH
 	lda #$80
-	sta $2115
+	sta.w VMAIN
 	ldx #$0000
 	ldy #$0800
 L8DE83E:

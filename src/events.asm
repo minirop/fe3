@@ -28,7 +28,8 @@
 .db $05 \1
 .ENDM
 
-; unclear
+; explosion for Lorenz's suicide
+; unknown, X, Y
 .MACRO EV_EXPLOSION
 .db $06 \1 \2 \3
 .ENDM
@@ -197,7 +198,6 @@ COST(\1)
 .db $2D
 .ENDM
 
-; guess
 .MACRO EV_COMMAND_2E
 .db $2E \1
 .ENDM
@@ -209,7 +209,6 @@ COST(\1)
 
 .DEFINE MOV_LAND_OR_WATER $01
 .DEFINE MOV_LAND_ONLY $02
-
 
 .DEFINE MOV_RIGHT $00
 .DEFINE MOV_LEFT $01

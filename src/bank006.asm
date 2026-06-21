@@ -1245,7 +1245,7 @@ L86892C:
 	sta $85
 	stz $91
 	stz $93
-	stz $2115
+	stz.w VMAIN
 	lda #$00
 	sta $87
 	lda #$00
@@ -9105,8 +9105,8 @@ L86C40E:
 
 L86C425:
 	lda #$2800
-	sta $2116
-	lda $2139
+	sta.w VMADDL
+	lda.w VMDATALREAD
 	sep #$20
 	lda #$81
 	sta.w DMAP0
@@ -9228,7 +9228,7 @@ L86C543:
 	lda #$00
 	bpl L86C4D4
 	asl $21,X
-	lda $2139
+	lda.w VMDATALREAD
 	sep #$20
 	lda #$81
 	sta.w DMAP0
@@ -13036,7 +13036,7 @@ L86E203:
 	lda #$E0
 	sta $A6
 	lda #$80
-	sta $2115
+	sta.w VMAIN
 	lda #$08
 	sta $7B
 	lda #$78
@@ -14004,7 +14004,7 @@ L86EAC8:
 	lda $09
 	sec
 	sbc #$0100
-	sta $2116
+	sta.w VMADDL
 	pha
 	sep #$20
 	lda #$09
@@ -14029,7 +14029,7 @@ L86EAC8:
 	pla
 	clc
 	adc $06
-	sta $2116
+	sta.w VMADDL
 	sep #$20
 	lda #$09
 	sta.w DMAP0
@@ -14056,7 +14056,7 @@ L86EB3C:
 	lda $09
 	sec
 	sbc #$0200
-	sta $2116
+	sta.w VMADDL
 	sep #$20
 	lda #$09
 	sta.w DMAP0
@@ -14083,7 +14083,7 @@ L86EB78:
 	lda $09
 	sec
 	sbc #$0200
-	sta $2116
+	sta.w VMADDL
 	pha
 	sep #$20
 	lda #$09
@@ -14108,7 +14108,7 @@ L86EB78:
 	pla
 	clc
 	adc $06
-	sta $2116
+	sta.w VMADDL
 	sep #$20
 	lda #$09
 	sta.w DMAP0
@@ -14135,7 +14135,7 @@ L86EBEB:
 	lda $09
 	sec
 	sbc #$0300
-	sta $2116
+	sta.w VMADDL
 	pha
 	sep #$20
 	lda #$09
@@ -14160,7 +14160,7 @@ L86EBEB:
 	pla
 	clc
 	adc $06
-	sta $2116
+	sta.w VMADDL
 	sep #$20
 	lda #$09
 	sta.w DMAP0

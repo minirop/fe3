@@ -1709,11 +1709,11 @@ L969BB6:
 	jsl L_DMA_SEND_DATA
 	sep #$20
 	lda #$00
-	sta $2116
+	sta.w VMADDL
 	lda #$74
-	sta $2117
+	sta.w VMADDH
 	lda #$80
-	sta $2115
+	sta.w VMAIN
 	ldy #$0400
 	lda #$00
 L969C9F:
@@ -1722,11 +1722,11 @@ L969C9F:
 	dey
 	bne L969C9F
 	lda #$00
-	sta $2116
+	sta.w VMADDL
 	lda #$78
-	sta $2117
+	sta.w VMADDH
 	lda #$80
-	sta $2115
+	sta.w VMAIN
 	ldx #$0000
 	ldy #$0800
 L969CBD:
@@ -1831,11 +1831,11 @@ L969DD8:
 	rep #$10
 	sep #$20
 	lda #$00
-	sta $2116
+	sta.w VMADDL
 	lda #$74
-	sta $2117
+	sta.w VMADDH
 	lda #$80
-	sta $2115
+	sta.w VMAIN
 	ldy #$0400
 	lda #$00
 L969DF1:
@@ -1844,11 +1844,11 @@ L969DF1:
 	dey
 	bne L969DF1
 	lda #$00
-	sta $2116
+	sta.w VMADDL
 	lda #$78
-	sta $2117
+	sta.w VMADDH
 	lda #$80
-	sta $2115
+	sta.w VMAIN
 	ldx #$0000
 	ldy #$0800
 L969E0F:
@@ -3360,11 +3360,11 @@ L96B287:
 	rep #$10
 	sep #$20
 	lda #$00
-	sta $2116
+	sta.w VMADDL
 	lda #$48
-	sta $2117
+	sta.w VMADDH
 	lda #$80
-	sta $2115
+	sta.w VMAIN
 	ldx #$0000
 	ldy #$0800
 L96B2A1:

@@ -2992,7 +2992,6 @@ L8BC4BC:
 
 .INCLUDE "receive_deposit_throw_away.gen.asm"
 
-; TODO
 L8BC4DC:
 .dw L_DEBUG_NOTICE
 .dw L_DEBUG_OPTIONS

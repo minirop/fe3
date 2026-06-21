@@ -1229,11 +1229,11 @@ L808995:
 	lda $0145,Y
 	sta.w DAS1H
 	lda $0146,Y
-	sta $2115
+	sta.w VMAIN
 	lda $0147,Y
-	sta $2116
+	sta.w VMADDL
 	lda $0148,Y
-	sta $2117
+	sta.w VMADDH
 	lda #$01
 	sta.w DMAP1
 	lda #$18
@@ -1258,18 +1258,17 @@ L8089DC:
 	lda $0145,Y
 	sta.w DAS1H
 	lda $0146,Y
-	sta $2115
+	sta.w VMAIN
 	lda $0147,Y
-	sta $2116
+	sta.w VMADDL
 	lda $0148,Y
-	sta $2117
+	sta.w VMADDH
 	lda #$81
 	sta.w DMAP1
 	lda #$39
 	sta.w BBAD1
-	; bug?
-	lda $2139
-	lda $213a
+	lda.w VMDATALREAD
+	lda.w VMDATAHREAD
 	lda #$02
 	sta.w MDMAEN
 	tya
@@ -1319,13 +1318,13 @@ L808A6D:
 	sta.w BBAD1
 	lda ($00),Y
 	iny
-	sta $2115
+	sta.w VMAIN
 	lda ($00),Y
 	iny
-	sta $2116
+	sta.w VMADDL
 	lda ($00),Y
 	iny
-	sta $2117
+	sta.w VMADDH
 L808A89:
 	lda #$02
 	sta.w MDMAEN
@@ -1356,12 +1355,12 @@ L808AAE:
 	lda ($00),Y
 	iny
 	iny
-	sta $2116
+	sta.w VMADDL
 	lda #$0000
 	sep #$20
 	lda ($00),Y
 	iny
-	sta $2115
+	sta.w VMAIN
 	lda $15
 	and #$7f
 	tax
@@ -5571,11 +5570,11 @@ L80A957:
 	lda #$08
 	sta.w DAS2H
 	lda #$80
-	sta $2115
+	sta.w VMAIN
 	lda #$00
-	sta $2116
+	sta.w VMADDL
 	lda #$1C
-	sta $2117
+	sta.w VMADDH
 	lda #$01
 	sta.w DMAP2
 	lda #$18

@@ -5104,6 +5104,7 @@ L87AADF:
 	inc $00
 	inc $00
 	bra L87AAB6
+
 L87AAF2:
 	sep #$20
 	ldy #$0001
@@ -5111,11 +5112,13 @@ L87AAF2:
 	jsl L87A8F4
 	bcc L87AB01
 	bra L87AAD9
+
 L87AB01:
 	rep #$20
 	inc $00
 	inc $00
 	brl L87AAB6
+
 L87AB0A:
 	sep #$20
 	ldy #$0001
@@ -5128,6 +5131,7 @@ L87AB0A:
 	bcc L87AB31
 L87AB22:
 	brl L87AAD9
+
 L87AB25:
 	jsl L81D86F
 	lda.l ActiveUnit.HasMoved
@@ -5138,6 +5142,7 @@ L87AB31:
 	inc $00
 	inc $00
 	brl L87AAB6
+
 L87AB3A:
 	sep #$20
 	lda $08ED
@@ -5158,11 +5163,13 @@ L87AB57:
 	dex
 	bpl L87AB57
 	brl L87AAD9
+
 L87AB65:
 	rep #$20
 	inc $00
 	inc $00
 	brl L87AAB6
+
 L87AB6E:
 	sep #$20
 	lda $02
@@ -5181,11 +5188,13 @@ L87AB6E:
 	lda $0ABA
 	bne L87AB92
 	brl L87AAD9
+
 L87AB92:
 	rep #$20
 	inc $00
 	inc $00
 	brl L87AAB6
+
 L87AB9B:
 	sep #$20
 	ldy #$0001
@@ -5194,11 +5203,13 @@ L87AB9B:
 	cmp $07DF
 	bcc L87ABAB
 	brl L87AAD9
+
 L87ABAB:
 	rep #$20
 	inc $00
 	inc $00
 	brl L87AAB6
+
 L87ABB4:
 	php
 	sep #$20
@@ -5216,6 +5227,7 @@ L87ABB4:
 	lda.l (ITEMS_DATA + 8),X
 	sta $16
 	bra L87ABD9
+
 L87ABD4:
 	php
 	rep #$20
