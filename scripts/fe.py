@@ -99,5 +99,7 @@ def prg_to_cpu(addr):
 	bank = (prg_bank * 2) + 0x80
 	if addr > 0x8000:
 		bank += 1
+	else:
+		addr += 0x8000
 	addr += bank << 16
 	return addr

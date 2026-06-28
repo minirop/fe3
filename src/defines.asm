@@ -228,3 +228,5 @@
 .MACRO OFFSET
 .dw \2 - \1
 .ENDM
+
+.STRINGMAPTABLE script_jp "jp.tbl"

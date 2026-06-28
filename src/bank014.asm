@@ -402,438 +402,572 @@ L8E865E:
 .dw L8E8AE7
 
 L8E877A:
-.db $6F $79 $5D $00 $83
+.STRINGMAP script_jp, "マルス"
+.db $00 $83
 
 L8E877F:
-.db $5C $B9 $88 $00 $83
+.STRINGMAP script_jp, "シーダ"
+.db $00 $83
 
 L8E8784:
-.db $84 $9A $52 $7E $7D $00 $83
+.STRINGMAP script_jp, "ジェイガン"
+.db $00 $83
 
 L8E878B:
-.db $56 $52 $7D $00 $83
+.STRINGMAP script_jp, "カイン"
+.db $00 $83
 
 L8E8790:
-.db $51 $90 $79 $00 $83
+.STRINGMAP script_jp, "アベル"
+.db $00 $83
 
 L8E8795:
-.db $8C $B9 $7E $00 $83
+.STRINGMAP script_jp, "ドーガ"
+.db $00 $83
 
 L8E879A:
-.db $82 $B9 $8C $7D $00 $83
+.STRINGMAP script_jp, "ゴードン"
+.db $00 $83
 
 L8E87A0:
-.db $78 $56 $B9 $8C $00 $83
+.STRINGMAP script_jp, "リカード"
+.db $00 $83
 
 L8E87A6:
-.db $78 $6C $00 $83
+.STRINGMAP script_jp, "リフ"
+.db $00 $83
 
 L8E87AA:
-.db $5B $84 $00 $83
+.STRINGMAP script_jp, "サジ"
+.db $00 $83
 
 L8E87AE:
-.db $6F $84 $00 $83
+.STRINGMAP script_jp, "マジ"
+.db $00 $83
 
 L8E87B2:
-.db $8D $B9 $62 $00 $83
+.STRINGMAP script_jp, "バーツ"
+.db $00 $83
 
 L8E87B7:
-.db $56 $5C $71 $00 $83
+.STRINGMAP script_jp, "カシム"
+.db $00 $83
 
 L8E87BC:
-.db $55 $80 $6F $00 $83
+.STRINGMAP script_jp, "オグマ"
+.db $00 $83
 
 L8E87C1:
-.db $88 $7B $5D $00 $83
+.STRINGMAP script_jp, "ダロス"
+.db $00 $83
 
 L8E87C6:
-.db $84 $9E $78 $51 $7D $00 $83
+.STRINGMAP script_jp, "ジュリアン"
+.db $00 $83
 
 L8E87CD:
-.db $7A $65 $00 $83
+.STRINGMAP script_jp, "レナ"
+.db $00 $83
 
 L8E87D1:
-.db $6F $78 $58 $00 $83
+.STRINGMAP script_jp, "マリク"
+.db $00 $83
 
 L8E87D6:
-.db $65 $8D $B9 $79 $00 $83
+.STRINGMAP script_jp, "ナバール"
+.db $00 $83
 
 L8E87DC:
-.db $6A $B9 $8B $98 $7D $00 $83
+.STRINGMAP script_jp, "ハーディン"
+.db $00 $83
 
 L8E87E3:
-.db $53 $79 $6C $00 $83
+.STRINGMAP script_jp, "ウルフ"
+.db $00 $83
 
 L8E87E8:
-.db $83 $7E $7B $00 $83
+.STRINGMAP script_jp, "ザガロ"
+.db $00 $83
 
 L8E87ED:
-.db $7B $5C $9A $00 $83
+.STRINGMAP script_jp, "ロシェ"
+.db $00 $83
 
 L8E87F2:
-.db $8E $77 $58 $00 $83
+.STRINGMAP script_jp, "ビラク"
+.db $00 $83
 
 L8E87F7:
-.db $8D $67 $64 $99 $00 $83
+.STRINGMAP script_jp, "バヌトゥ"
+.db $00 $83
 
 L8E87FD:
-.db $5C $B9 $83 $B9 $00 $83
+.STRINGMAP script_jp, "シーザー"
+.db $00 $83
 
 L8E8803:
-.db $77 $8B $52 $00 $83
+.STRINGMAP script_jp, "ラデイ"
+.db $00 $83
 
 L8E8808:
-.db $70 $8B $98 $51 $00 $83
+.STRINGMAP script_jp, "ミディア"
+.db $00 $83
 
 L8E880E:
-.db $56 $61 $9E $51 $00 $83
+.STRINGMAP script_jp, "カチュア"
+.db $00 $83
 
 L8E8814:
-.db $6F $78 $51 $00 $83
+.STRINGMAP script_jp, "マリア"
+.db $00 $83
 
 L8E8819:
-.db $70 $68 $79 $8D $00 $83
+.STRINGMAP script_jp, "ミネルバ"
+.db $00 $83
 
 L8E881F:
-.db $78 $7D $88 $00 $83
+.STRINGMAP script_jp, "リンダ"
+.db $00 $83
 
 L8E8824:
-.db $84 $9F $79 $84 $9E $00 $83
+.STRINGMAP script_jp, "ジョルジュ"
+.db $00 $83
 
 L8E882B:
-.db $64 $71 $5D $00 $83
+.STRINGMAP script_jp, "トムス"
+.db $00 $83
 
 L8E8830:
-.db $70 $5C $9A $77 $7D $00 $83
+.STRINGMAP script_jp, "ミシェラン"
+.db $00 $83
 
 L8E8837:
-.db $64 $B9 $6F $5D $00 $83
+.STRINGMAP script_jp, "トーマス"
+.db $00 $83
 
 L8E883D:
-.db $91 $51 $00 $83
+.STRINGMAP script_jp, "ボア"
+.db $00 $83
 
 L8E8841:
-.db $51 $77 $7D $00 $83
+.STRINGMAP script_jp, "アラン"
+.db $00 $83
 
 L8E8846:
-.db $5B $71 $5F $7D $00 $83
+.STRINGMAP script_jp, "サムソン"
+.db $00 $83
 
 L8E884C:
-.db $90 $9D $58 $00 $83
+.STRINGMAP script_jp, "ベック"
+.db $00 $83
 
 L8E8851:
-.db $61 $9A $52 $66 $B9 $00 $83
+.STRINGMAP script_jp, "チェイニー"
+.db $00 $83
 
 L8E8858:
-.db $53 $9A $7D $8B $79 $00 $83
+.STRINGMAP script_jp, "ウェンデル"
+.db $00 $83
 
 L8E885F:
-.db $54 $5D $64 $00 $83
+.STRINGMAP script_jp, "エスト"
+.db $00 $83
 
 L8E8864:
-.db $51 $5D $64 $78 $51 $00 $83
+.STRINGMAP script_jp, "アストリア"
+.db $00 $83
 
 L8E886B:
-.db $6F $61 $5D $00 $83
+.STRINGMAP script_jp, "マチス"
+.db $00 $83
 
 L8E8870:
-.db $7B $84 $9C $B9 $00 $83
+.STRINGMAP script_jp, "ロジャー"
+.db $00 $83
 
 L8E8876:
-.db $84 $9A $52 $58 $00 $83
+.STRINGMAP script_jp, "ジェイク"
+.db $00 $83
 
 L8E887C:
-.db $92 $55 $77 $00 $83
+.STRINGMAP script_jp, "パオラ"
+.db $00 $83
 
 L8E8881:
-.db $61 $57 $00 $83
+.STRINGMAP script_jp, "チキ"
+.db $00 $83
 
 L8E8885:
-.db $7B $7A $7D $5D $00 $83
+.STRINGMAP script_jp, "ロレンス"
+.db $00 $83
 
 L8E888B:
-.db $54 $78 $5D $00 $83
+.STRINGMAP script_jp, "エリス"
+.db $00 $83
 
 L8E8890:
-.db $7E $64 $B9 $00 $83
+.STRINGMAP script_jp, "ガトー"
+.db $00 $83
 
 L8E8895:
-.db $7E $83 $9D $58 $00 $83
+.STRINGMAP script_jp, "ガザック"
+.db $00 $83
 
 L8E889B:
-.db $7C $52 $77 $B9 $00 $83
+.STRINGMAP script_jp, "ワイラー"
+.db $00 $83
 
 L8E88A1:
-.db $80 $79 $66 $51 $1D $02 $00 $83
+.STRINGMAP script_jp, "グルニアへい"
+.db $00 $83
 
 L8E88A9:
-.db $82 $72 $5D $00 $83
+.STRINGMAP script_jp, "ゴメス"
+.db $00 $83
 
 L8E88AE:
-.db $7E $79 $88 $1D $02 $00 $83
+.STRINGMAP script_jp, "ガルダへい"
+.db $00 $83
 
 L8E88B5:
-.db $5B $71 $5C $51 $7D $00 $83
+.STRINGMAP script_jp, "サムシアン"
+.db $00 $83
 
 L8E88BC:
-.db $71 $77 $58 $00 $83
+.STRINGMAP script_jp, "ムラク"
+.db $00 $83
 
 L8E88C1:
-.db $6A $B9 $6F $52 $7D $00 $83
+.STRINGMAP script_jp, "ハーマイン"
+.db $00 $83
 
 L8E88C8:
-.db $6F $78 $55 $68 $5D $00 $83
+.STRINGMAP script_jp, "マリオネス"
+.db $00 $83
 
 L8E88CF:
-.db $90 $7D $5F $7D $00 $83
+.STRINGMAP script_jp, "ベンソン"
+.db $00 $83
 
 L8E88D5:
-.db $56 $65 $78 $5D $00 $83
+.STRINGMAP script_jp, "カナリス"
+.db $00 $83
 
 L8E88DB:
-.db $6F $67 $B9 $00 $83
+.STRINGMAP script_jp, "マヌー"
+.db $00 $83
 
 L8E88E0:
-.db $84 $9E $B9 $5A $6C $00 $83
+.STRINGMAP script_jp, "ジューコフ"
+.db $00 $83
 
 L8E88E7:
-.db $5C $9F $B9 $86 $7D $00 $83
+.STRINGMAP script_jp, "ショーゼン"
+.db $00 $83
 
 L8E88EE:
-.db $6B $71 $77 $B9 $00 $83
+.STRINGMAP script_jp, "ヒムラー"
+.db $00 $83
 
 L8E88F4:
-.db $7F $7E $9D $5C $9E $00 $83
+.STRINGMAP script_jp, "ギガッシュ"
+.db $00 $83
 
 L8E88FB:
-.db $84 $55 $79 $00 $83
+.STRINGMAP script_jp, "ジオル"
+.db $00 $83
 
 L8E8900:
-.db $91 $B9 $86 $7D $00 $83
+.STRINGMAP script_jp, "ボーゼン"
+.db $00 $83
 
 L8E8906:
-.db $6E $79 $5D $60 $9D $64 $00 $83
+.STRINGMAP script_jp, "ホルスタット"
+.db $00 $83
 
 L8E890E:
-.db $5D $60 $B9 $7B $7D $00 $83
+.STRINGMAP script_jp, "スターロン"
+.db $00 $83
 
 L8E8915:
-.db $6A $52 $6F $7D $00 $83
+.STRINGMAP script_jp, "ハイマン"
+.db $00 $83
 
 L8E891B:
-.db $86 $71 $5E $79 $00 $83
+.STRINGMAP script_jp, "ゼムセル"
+.db $00 $83
 
 L8E8921:
-.db $55 $B9 $88 $52 $7D $00 $83
+.STRINGMAP script_jp, "オーダイン"
+.db $00 $83
 
 L8E8928:
-.db $56 $70 $9E $00 $83
+.STRINGMAP script_jp, "カミュ"
+.db $00 $83
 
 L8E892D:
-.db $70 $5C $9A $52 $79 $00 $83
+.STRINGMAP script_jp, "ミシェイル"
+.db $00 $83
 
 L8E8934:
-.db $73 $B9 $86 $5D $00 $83
+.STRINGMAP script_jp, "モーゼス"
+.db $00 $83
 
 L8E893A:
-.db $7E $B9 $68 $6C $00 $83
+.STRINGMAP script_jp, "ガーネフ"
+.db $00 $83
 
 L8E8940:
-.db $72 $8B $98 $53 $5D $00 $83
+.STRINGMAP script_jp, "メディウス"
+.db $00 $83
 
 L8E8947:
-.db $8C $79 $B9 $51 $1D $02 $00 $83
+.STRINGMAP script_jp, "ドルーアへい"
+.db $00 $83
 
 L8E894F:
-.db $80 $77 $1D $02 $00 $83
+.STRINGMAP script_jp, "グラへい"
+.db $00 $83
 
 L8E8955:
-.db $95 $77 $63 $98 $1D $02 $00 $83
+.STRINGMAP script_jp, "ペラティへい"
+.db $00 $83
 
 L8E895D:
-.db $56 $5C $70 $51 $1D $02 $00 $83
+.STRINGMAP script_jp, "カシミアへい"
+.db $00 $83
 
 L8E8965:
-.db $08 $2B $07 $0C $39 $2E $00 $83
+.STRINGMAP script_jp, "くろきしだん"
+.db $00 $83
 
 L8E896D:
-.db $56 $88 $52 $7D $6F $B9 $84 $00
-.db $83
+.STRINGMAP script_jp, "カダインマージ"
+.db $00 $83
 
 L8E8976:
-.db $13 $12 $07 $0C $39 $2E $00 $83
+.STRINGMAP script_jp, "てつきしだん"
+.db $00 $83
 
 L8E897E:
-.db $28 $4F $03 $07 $0C $39 $2E $00
-.db $83
+.STRINGMAP script_jp, "りゅうきしだん"
+.db $00 $83
 
 L8E8987:
-.db $13 $07 $00 $83
+.STRINGMAP script_jp, "てき"
+.db $00 $83
 
 L8E898B:
-.db $6F $59 $8C $66 $51 $1D $02 $00
-.db $83
+.STRINGMAP script_jp, "マケドニアへい"
+.db $00 $83
 
 L8E8994:
-.db $13 $2E $1F $07 $0C $39 $2E $00
-.db $83
+.STRINGMAP script_jp, "てんまきしだん"
+.db $00 $83
 
 L8E899D:
-.db $15 $27 $36 $23 $19 $00 $83
+.STRINGMAP script_jp, "ならずもの"
+.db $00 $83
 
 L8E89A4:
-.db $77 $B9 $6F $7D $1D $02 $00 $83
+.STRINGMAP script_jp, "ラーマンへい"
+.db $00 $83
 
 L8E89AC:
-.db $88 $B9 $58 $6F $B9 $84 $00 $83
+.STRINGMAP script_jp, "ダークマージ"
+.db $00 $83
 
 L8E89B4:
-.db $0F $03 $1D $02 $39 $2E $00 $83
+.STRINGMAP script_jp, "そうへいだん"
+.db $00 $83
 
 L8E89BC:
-.db $33 $2B $12 $07 $00 $83
+.STRINGMAP script_jp, "ごろつき"
+.db $00 $83
 
 L8E89C2:
-.db $7E $B9 $68 $6C $00 $83
+.STRINGMAP script_jp, "ガーネフ"
+.db $00 $83
 
 L8E89C8:
-.db $5E $5C $79 $00 $83
+.STRINGMAP script_jp, "セシル"
+.db $00 $83
 
 L8E89CD:
-.db $79 $B9 $58 $00 $83
+.STRINGMAP script_jp, "ルーク"
+.db $00 $83
 
 L8E89D2:
-.db $7B $8B $98 $00 $83
+.STRINGMAP script_jp, "ロディ"
+.db $00 $83
 
 L8E89D7:
-.db $77 $52 $51 $7D $00 $83
+.STRINGMAP script_jp, "ライアン"
+.db $00 $83
 
 L8E89DD:
-.db $53 $9B $7A $7D $00 $83
+.STRINGMAP script_jp, "ウォレン"
+.db $00 $83
 
 L8E89E3:
-.db $30 $25 $03 $DD $00 $83
+.STRINGMAP script_jp, "ぎゆう兵"
+.db $00 $83
 
 L8E89E9:
-.db $79 $B9 $72 $79 $00 $83
+.STRINGMAP script_jp, "ルーメル"
+.db $00 $83
 
 L8E89EF:
-.db $78 $9E $9D $59 $00 $83
+.STRINGMAP script_jp, "リュッケ"
+.db $00 $83
 
 L8E89F5:
-.db $75 $70 $65 $00 $83
+.STRINGMAP script_jp, "ユミナ"
+.db $00 $83
 
 L8E89FA:
-.db $75 $90 $7B $00 $83
+.STRINGMAP script_jp, "ユベロ"
+.db $00 $83
 
 L8E89FF:
-.db $5C $78 $53 $5D $00 $83
+.STRINGMAP script_jp, "シリウス"
+.db $00 $83
 
 L8E8A05:
-.db $7E $52 $79 $00 $83
+.STRINGMAP script_jp, "ガイル"
+.db $00 $83
 
 L8E8A0A:
-.db $8D $52 $57 $7D $80 $00 $83
+.STRINGMAP script_jp, "バイキング"
+.db $00 $83
 
 L8E8A11:
-.db $6F $78 $B9 $5C $51 $00 $83
+.STRINGMAP script_jp, "マリーシア"
+.db $00 $83
 
 L8E8A18:
-.db $64 $77 $B9 $5D $00 $83
+.STRINGMAP script_jp, "トラース"
+.db $00 $83
 
 L8E8A1E:
-.db $5B $71 $64 $B9 $00 $83
+.STRINGMAP script_jp, "サムトー"
+.db $00 $83
 
 L8E8A24:
-.db $77 $7D $80 $00 $83
+.STRINGMAP script_jp, "ラング"
+.db $00 $83
 
 L8E8A29:
-.db $6C $98 $B9 $65 $00 $83
+.STRINGMAP script_jp, "フィーナ"
+.db $00 $83
 
 L8E8A2F:
-.db $88 $B9 $79 $00 $83
+.STRINGMAP script_jp, "ダール"
+.db $00 $83
 
 L8E8A34:
-.db $77 $B9 $6F $7D $5C $B9 $6C $00
-.db $83
+.STRINGMAP script_jp, "ラーマンシーフ"
+.db $00 $83
 
 L8E8A3D:
-.db $76 $B9 $8B $79 $00 $83
+.STRINGMAP script_jp, "ヨーデル"
+.db $00 $83
 
 L8E8A43:
-.db $54 $79 $7A $B9 $7D $00 $83
+.STRINGMAP script_jp, "エルレーン"
+.db $00 $83
 
 L8E8A4A:
-.db $1A $31 $2A $1B $28 $4F $03 $00
-.db $83
+.STRINGMAP script_jp, "はぐれひりゅう"
+.db $00 $83
 
 L8E8A53:
-.db $0D $15 $19 $40 $38 $08 $00 $83
+.STRINGMAP script_jp, "すなのぶぞく"
+.db $00 $83
 
 L8E8A5B:
-.db $07 $50 $03 $0E $2E $0C $00 $83
+.STRINGMAP script_jp, "きょうせんし"
+.db $00 $83
 
 L8E8A63:
-.db $0B $2E $38 $08 $00 $83
+.STRINGMAP script_jp, "さんぞく"
+.db $00 $83
 
 L8E8A69:
-.db $14 $03 $38 $08 $00 $83
+.STRINGMAP script_jp, "とうぞく"
+.db $00 $83
 
 L8E8A6F:
-.db $06 $28 $4F $03 $00 $83
+.STRINGMAP script_jp, "かりゅう"
+.db $00 $83
 
 L8E8A75:
-.db $1B $50 $03 $28 $4F $03 $00 $83
+.STRINGMAP script_jp, "ひょうりゅう"
+.db $00 $83
 
 L8E8A7D:
-.db $0A $05 $28 $19 $40 $38 $08 $00
-.db $83
+.STRINGMAP script_jp, "こおりのぶぞく"
+.db $00 $83
 
 L8E8A86:
-.db $54 $52 $90 $79 $00 $83
+.STRINGMAP script_jp, "エイベル"
+.db $00 $83
 
 L8E8A8C:
-.db $5C $B9 $6F $00 $83
+.STRINGMAP script_jp, "シーマ"
+.db $00 $83
 
 L8E8A91:
-.db $11 $28 $4F $03 $00 $83
+.STRINGMAP script_jp, "ちりゅう"
+.db $00 $83
 
 L8E8A97:
-.db $24 $20 $19 $0C $0B $02 $00 $83
+.STRINGMAP script_jp, "やみのしさい"
+.db $00 $83
 
 L8E8A9F:
-.db $53 $98 $7B $B9 $00 $83
+.STRINGMAP script_jp, "ウィロー"
+.db $00 $83
 
 L8E8AA5:
-.db $51 $56 $68 $52 $51 $DD $00 $83
+.STRINGMAP script_jp, "アカネイア兵"
+.db $00 $83
 
 L8E8AAD:
-.db $55 $7A $79 $51 $7D $DD $00 $83
+.STRINGMAP script_jp, "オレルアン兵"
+.db $00 $83
 
 L8E8AB5:
-.db $66 $B9 $65 $00 $83
+.STRINGMAP script_jp, "ニーナ"
+.db $00 $83
 
 L8E8ABA:
-.db $56 $88 $52 $7D $26 $03 $DD $00
-.db $83
+.STRINGMAP script_jp, "カダインよう兵"
+.db $00 $83
 
 L8E8AC3:
-.db $1B $19 $40 $38 $08 $00 $83
+.STRINGMAP script_jp, "ひのぶぞく"
+.db $00 $83
 
 L8E8ACA:
-.db $24 $1F $19 $40 $38 $08 $00 $83
+.STRINGMAP script_jp, "やまのぶぞく"
+.db $00 $83
 
 L8E8AD2:
-.db $68 $B9 $78 $7D $80 $00 $83
+.STRINGMAP script_jp, "ネーリング"
+.db $00 $83
 
 L8E8AD9:
-.db $24 $20 $19 $40 $38 $08 $00 $83
+.STRINGMAP script_jp, "やみのぶぞく"
+.db $00 $83
 
 L8E8AE1:
-.db $1F $28 $4F $03 $00 $83
+.STRINGMAP script_jp, "まりゅう"
+.db $00 $83
 
 L8E8AE7:
-.db $0C $2E $04 $02 $10 $02 $00 $83
+.STRINGMAP script_jp, "しんえいたい"
+.db $00 $83
 
 L8E8AEF:
 .dw L8E8B49
@@ -883,130 +1017,164 @@ L8E8AEF:
 .dw L8E8C46
 
 L8E8B49:
-.db $7B $B9 $8C $00 $83
+.STRINGMAP script_jp, "ロード"
+.db $00 $83
 
 L8E8B4E:
-.db $F7 $DE $00 $83
+.STRINGMAP script_jp, "戦士"
+.db $00 $83
 
 L8E8B52:
-.db $5F $79 $84 $9C $B9 $00 $83
+.STRINGMAP script_jp, "ソルジャー"
+.db $00 $83
 
 L8E8B59:
-.db $5F $5C $51 $79 $65 $52 $64 $00
-.db $83
+.STRINGMAP script_jp, "ソシアルナイト"
+.db $00 $83
 
 L8E8B62:
-.db $92 $77 $8B $98 $7D $00 $83
+.STRINGMAP script_jp, "パラディン"
+.db $00 $83
 
 L8E8B69:
-.db $65 $52 $64 $00 $83
+.STRINGMAP script_jp, "ナイト"
+.db $00 $83
 
 L8E8B6E:
-.db $51 $B9 $6F $B9 $65 $52 $64 $00
-.db $83
+.STRINGMAP script_jp, "アーマーナイト"
+.db $00 $83
 
 L8E8B77:
-.db $84 $9A $68 $77 $79 $00 $83
+.STRINGMAP script_jp, "ジェネラル"
+.db $00 $83
 
 L8E8B7E:
-.db $95 $7E $5B $5D $65 $52 $64 $00
-.db $83
+.STRINGMAP script_jp, "ペガサスナイト"
+.db $00 $83
 
 L8E8B87:
-.db $8C $77 $82 $7D $65 $52 $64 $00
-.db $83
+.STRINGMAP script_jp, "ドラゴンナイト"
+.db $00 $83
 
 L8E8B90:
-.db $6A $7D $60 $B9 $00 $83
+.STRINGMAP script_jp, "ハンター"
+.db $00 $83
 
 L8E8B96:
-.db $5D $65 $52 $92 $B9 $00 $83
+.STRINGMAP script_jp, "スナイパー"
+.db $00 $83
 
 L8E8B9D:
-.db $51 $B9 $61 $9C $B9 $00 $83
+.STRINGMAP script_jp, "アーチャー"
+.db $00 $83
 
 L8E8BA4:
-.db $6E $B9 $5D $72 $7D $00 $83
+.STRINGMAP script_jp, "ホースメン"
+.db $00 $83
 
 L8E8BAB:
-.db $6F $71 $58 $B9 $64 $00 $83
+.STRINGMAP script_jp, "マムクート"
+.db $00 $83
 
 L8E8BB2:
-.db $E6 $CC $00 $83
+.STRINGMAP script_jp, "火竜"
+.db $00 $83
 
 L8E8BB6:
-.db $00 $12 $5E $00 $11 $DD $00 $83
+.STRINGMAP script_jp, "XつセXち兵"
+.db $00 $83
 
 L8E8BBE:
-.db $BA $BB $00 $83
+.STRINGMAP script_jp, "勇者"
+.db $00 $83
 
 L8E8BC2:
-.db $00 $12 $CA $00 $11 $AD $00 $83
+.STRINGMAP script_jp, "Xつ備Xち賊"
+.db $00 $83
 
 L8E8BCA:
-.db $5A $6F $7D $8C $00 $83
+.STRINGMAP script_jp, "コマンド"
+.db $00 $83
 
 L8E8BD0:
-.db $00 $13 $D9 $00 $11 $28 $F2 $00
-.db $83
+.STRINGMAP script_jp, "Xて系Xちり子"
+.db $00 $83
 
 L8E8BD9:
-.db $5C $5D $60 $B9 $00 $83
+.STRINGMAP script_jp, "シスター"
+.db $00 $83
 
 L8E8BDF:
-.db $CB $D6 $DE $00 $83
+.STRINGMAP script_jp, "魔道士"
+.db $00 $83
 
 L8E8BE4:
-.db $00 $12 $BB $BC $00 $83
+.STRINGMAP script_jp, "Xつ者？"
+.db $00 $83
 
 L8E8BEA:
-.db $00 $11 $FB $AD $00 $83
+.STRINGMAP script_jp, "Xち山賊"
+.db $00 $83
 
 L8E8BF0:
-.db $ED $AD $00 $83
+.STRINGMAP script_jp, "海賊"
+.db $00 $83
 
 L8E8BF4:
-.db $00 $13 $B8 $00 $12 $A9 $00 $83
+.STRINGMAP script_jp, "Xて寺Xつ9"
+.db $00 $83
 
 L8E8BFC:
-.db $00 $11 $8D $B9 $5B $B9 $56 $B9
+.STRINGMAP script_jp, "Xちバーサーカー"
 .db $00 $83
 
 L8E8C06:
-.db $88 $B9 $58 $65 $52 $64 $00 $83
+.STRINGMAP script_jp, "ダークナイト"
+.db $00 $83
 
 L8E8C0E:
-.db $88 $B9 $58 $6F $B9 $84 $00 $83
+.STRINGMAP script_jp, "ダークマージ"
+.db $00 $83
 
 L8E8C16:
-.db $5C $9E $B9 $60 $B9 $00 $83
+.STRINGMAP script_jp, "シューター"
+.db $00 $83
 
 L8E8C1D:
-.db $B5 $B6 $00 $83
+.STRINGMAP script_jp, "皇帝"
+.db $00 $83
 
 L8E8C21:
-.db $7E $B9 $8B $98 $51 $7D $00 $83
+.STRINGMAP script_jp, "ガーディアン"
+.db $00 $83
 
 L8E8C29:
-.db $00 $12 $F1 $00 $11 $CC $00 $83
+.STRINGMAP script_jp, "Xつ王Xち竜"
+.db $00 $83
 
 L8E8C31:
-.db $CB $CC $00 $83
+.STRINGMAP script_jp, "魔竜"
+.db $00 $83
 
 L8E8C35:
-.db $E7 $CC $00 $83
+.STRINGMAP script_jp, "飛竜"
+.db $00 $83
 
 L8E8C39:
-.db $E8 $CC $00 $83
+.STRINGMAP script_jp, "地竜"
+.db $00 $83
 
 L8E8C3D:
-.db $E9 $EA $CC $00 $83
+.STRINGMAP script_jp, "暗黒竜"
+.db $00 $83
 
 L8E8C42:
-.db $AA $CC $00 $83
+.STRINGMAP script_jp, "神竜"
+.db $00 $83
 
 L8E8C46:
-.db $CB $CC $00 $83
+.STRINGMAP script_jp, "魔竜"
+.db $00 $83
 
 L8E8C4A:
 .dw L8E8D48
@@ -1138,428 +1306,512 @@ L8E8C4A:
 .dw L8E9134
 
 L8E8D48:
-.db $13 $12 $19 $12 $29 $30 $00 $83
+.STRINGMAP script_jp, "てつのつるぎ"
+.db $00 $83
 
 L8E8D50:
-.db $1A $2F $18 $19 $12 $29 $30 $00
-.db $83
+.STRINGMAP script_jp, "はがねのつるぎ"
+.db $00 $83
 
 L8E8D59:
-.db $30 $2E $19 $12 $29 $30 $00 $83
+.STRINGMAP script_jp, "ぎんのつるぎ"
+.db $00 $83
 
 L8E8D61:
-.db $7A $52 $93 $51 $00 $83
+.STRINGMAP script_jp, "レイピア"
+.db $00 $83
 
 L8E8D67:
-.db $57 $79 $5F $B9 $8C $00 $83
+.STRINGMAP script_jp, "キルソード"
+.db $00 $83
 
 L8E8D6E:
-.db $8B $8E $79 $5F $B9 $8C $00 $83
+.STRINGMAP script_jp, "デビルソード"
+.db $00 $83
 
 L8E8D76:
-.db $0A $2C $2A $10 $12 $29 $30 $00
-.db $83
+.STRINGMAP script_jp, "こわれたつるぎ"
+.db $00 $83
 
 L8E8D7F:
-.db $6F $5D $60 $B9 $5F $B9 $8C $00
-.db $83
+.STRINGMAP script_jp, "マスターソード"
+.db $00 $83
 
 L8E8D88:
-.db $7A $8B $98 $5F $B9 $8C $00 $83
+.STRINGMAP script_jp, "レディソード"
+.db $00 $83
 
 L8E8D90:
-.db $5B $7D $88 $B9 $5F $B9 $8C $00
-.db $83
+.STRINGMAP script_jp, "サンダーソード"
+.db $00 $83
 
 L8E8D99:
-.db $72 $78 $58 $79 $5F $B9 $8C $00
-.db $83
+.STRINGMAP script_jp, "メリクルソード"
+.db $00 $83
 
 L8E8DA2:
-.db $6C $97 $79 $5C $55 $7D $00 $83
+.STRINGMAP script_jp, "ファルシオン"
+.db $00 $83
 
 L8E8DAA:
-.db $51 $B9 $6F $B9 $57 $77 $B9 $00
-.db $83
+.STRINGMAP script_jp, "アーマーキラー"
+.db $00 $83
 
 L8E8DB3:
-.db $8C $77 $82 $7D $57 $77 $B9 $00
-.db $83
+.STRINGMAP script_jp, "ドラゴンキラー"
+.db $00 $83
 
 L8E8DBC:
-.db $5F $B9 $8C $57 $77 $B9 $00 $83
+.STRINGMAP script_jp, "ソードキラー"
+.db $00 $83
 
 L8E8DC4:
-.db $13 $12 $19 $24 $28 $00 $83
+.STRINGMAP script_jp, "てつのやり"
+.db $00 $83
 
 L8E8DCB:
-.db $1A $2F $18 $19 $24 $28 $00 $83
+.STRINGMAP script_jp, "はがねのやり"
+.db $00 $83
 
 L8E8DD3:
-.db $30 $2E $19 $24 $28 $00 $83
+.STRINGMAP script_jp, "ぎんのやり"
+.db $00 $83
 
 L8E8DDA:
-.db $65 $52 $64 $57 $77 $B9 $00 $83
+.STRINGMAP script_jp, "ナイトキラー"
+.db $00 $83
 
 L8E8DE2:
-.db $13 $24 $28 $00 $83
+.STRINGMAP script_jp, "てやり"
+.db $00 $83
 
 L8E8DE7:
-.db $0A $2C $2A $10 $24 $28 $00 $83
+.STRINGMAP script_jp, "こわれたやり"
+.db $00 $83
 
 L8E8DEF:
-.db $57 $77 $B9 $77 $7D $5D $00 $83
+.STRINGMAP script_jp, "キラーランス"
+.db $00 $83
 
 L8E8DF7:
-.db $1E $0F $20 $19 $24 $28 $00 $83
+.STRINGMAP script_jp, "ほそみのやり"
+.db $00 $83
 
 L8E8DFF:
-.db $80 $77 $8B $98 $53 $5D $00 $83
+.STRINGMAP script_jp, "グラディウス"
+.db $00 $83
 
 L8E8E07:
-.db $13 $12 $19 $25 $20 $00 $83
+.STRINGMAP script_jp, "てつのゆみ"
+.db $00 $83
 
 L8E8E0E:
-.db $0A $2C $2A $10 $25 $20 $00 $83
+.STRINGMAP script_jp, "こわれたゆみ"
+.db $00 $83
 
 L8E8E16:
-.db $1A $2F $18 $19 $25 $20 $00 $83
+.STRINGMAP script_jp, "はがねのゆみ"
+.db $00 $83
 
 L8E8E1E:
-.db $30 $2E $19 $25 $20 $00 $83
+.STRINGMAP script_jp, "ぎんのゆみ"
+.db $00 $83
 
 L8E8E25:
-.db $57 $77 $B9 $91 $53 $00 $83
+.STRINGMAP script_jp, "キラーボウ"
+.db $00 $83
 
 L8E8E2C:
-.db $92 $79 $63 $98 $51 $00 $83
+.STRINGMAP script_jp, "パルティア"
+.db $00 $83
 
 L8E8E33:
-.db $13 $12 $19 $05 $19 $00 $83
+.STRINGMAP script_jp, "てつのおの"
+.db $00 $83
 
 L8E8E3A:
-.db $1A $2F $18 $19 $05 $19 $00 $83
+.STRINGMAP script_jp, "はがねのおの"
+.db $00 $83
 
 L8E8E42:
-.db $13 $05 $19 $00 $83
+.STRINGMAP script_jp, "ておの"
+.db $00 $83
 
 L8E8E47:
-.db $30 $2E $19 $05 $19 $00 $83
+.STRINGMAP script_jp, "ぎんのおの"
+.db $00 $83
 
 L8E8E4E:
-.db $8B $8E $79 $51 $58 $5D $00 $83
+.STRINGMAP script_jp, "デビルアクス"
+.db $00 $83
 
 L8E8E56:
-.db $0A $2C $2A $10 $05 $19 $00 $83
+.STRINGMAP script_jp, "こわれたおの"
+.db $00 $83
 
 L8E8E5E:
-.db $5B $7D $88 $B9 $91 $79 $64 $00
-.db $83
+.STRINGMAP script_jp, "サンダーボルト"
+.db $00 $83
 
 L8E8E67:
-.db $58 $52 $7D $58 $7A $52 $7D $00
-.db $83
+.STRINGMAP script_jp, "クインクレイン"
+.db $00 $83
 
 L8E8E70:
-.db $5D $64 $B9 $7D $6D $9D $84 $00
-.db $83
+.STRINGMAP script_jp, "ストーンヘッジ"
+.db $00 $83
 
 L8E8E79:
-.db $6C $97 $52 $51 $B9 $7E $7D $00
-.db $83
+.STRINGMAP script_jp, "ファイアーガン"
+.db $00 $83
 
 L8E8E82:
-.db $54 $7A $6C $97 $7D $64 $00 $83
+.STRINGMAP script_jp, "エレファント"
+.db $00 $83
 
 L8E8E8A:
-.db $1B $19 $8F $7A $5D $00 $83
+.STRINGMAP script_jp, "ひのブレス"
+.db $00 $83
 
 L8E8E91:
-.db $0A $05 $28 $19 $8F $7A $5D $00
-.db $83
+.STRINGMAP script_jp, "こおりのブレス"
+.db $00 $83
 
 L8E8E9A:
-.db $24 $20 $19 $8F $7A $5D $00 $83
+.STRINGMAP script_jp, "やみのブレス"
+.db $00 $83
 
 L8E8EA2:
-.db $07 $28 $19 $8F $7A $5D $00 $83
+.STRINGMAP script_jp, "きりのブレス"
+.db $00 $83
 
 L8E8EAA:
-.db $6C $97 $52 $51 $B9 $19 $D7 $00
-.db $83
+.STRINGMAP script_jp, "ファイアーの書"
+.db $00 $83
 
 L8E8EB3:
-.db $5B $7D $88 $B9 $19 $D7 $00 $83
+.STRINGMAP script_jp, "サンダーの書"
+.db $00 $83
 
 L8E8EBB:
-.db $8F $78 $83 $B9 $19 $D7 $00 $83
+.STRINGMAP script_jp, "ブリザーの書"
+.db $00 $83
 
 L8E8EC3:
-.db $5C $9A $52 $8D $B9 $19 $D7 $00
-.db $83
+.STRINGMAP script_jp, "シェイバーの書"
+.db $00 $83
 
 L8E8ECC:
-.db $54 $79 $6C $97 $52 $51 $B9 $00
-.db $83
+.STRINGMAP script_jp, "エルファイアー"
+.db $00 $83
 
 L8E8ED5:
-.db $64 $7B $7D $19 $D7 $00 $83
+.STRINGMAP script_jp, "トロンの書"
+.db $00 $83
 
 L8E8EDC:
-.db $91 $79 $7E $69 $7D $19 $D7 $00
-.db $83
+.STRINGMAP script_jp, "ボルガノンの書"
+.db $00 $83
 
 L8E8EE5:
-.db $54 $58 $5D $56 $78 $8D $B9 $00
-.db $83
+.STRINGMAP script_jp, "エクスカリバー"
+.db $00 $83
 
 L8E8EEE:
-.db $55 $B9 $77 $19 $D7 $00 $83
+.STRINGMAP script_jp, "オーラの書"
+.db $00 $83
 
 L8E8EF5:
-.db $5D $60 $B9 $77 $52 $64 $00 $83
+.STRINGMAP script_jp, "スターライト"
+.db $00 $83
 
 L8E8EFD:
-.db $6F $6C $B9 $19 $D7 $00 $83
+.STRINGMAP script_jp, "マフーの書"
+.db $00 $83
 
 L8E8F04:
-.db $8C $99 $77 $B9 $71 $19 $D7 $00
-.db $83
+.STRINGMAP script_jp, "ドゥラームの書"
+.db $00 $83
 
 L8E8F0D:
-.db $78 $83 $52 $51 $19 $D7 $00 $83
+.STRINGMAP script_jp, "リザイアの書"
+.db $00 $83
 
 L8E8F15:
-.db $72 $63 $98 $55 $19 $D7 $00 $83
+.STRINGMAP script_jp, "メティオの書"
+.db $00 $83
 
 L8E8F1D:
-.db $53 $9B $B9 $71 $19 $D7 $00 $83
+.STRINGMAP script_jp, "ウォームの書"
+.db $00 $83
 
 L8E8F25:
-.db $1C $03 $02 $2E $19 $10 $13 $00
-.db $83
+.STRINGMAP script_jp, "ふういんのたて"
+.db $00 $83
 
 L8E8F2E:
-.db $24 $20 $19 $55 $B9 $8F $00 $83
+.STRINGMAP script_jp, "やみのオーブ"
+.db $00 $83
 
 L8E8F36:
-.db $54 $71 $8F $7A $71 $00 $83
+.STRINGMAP script_jp, "エムブレム"
+.db $00 $83
 
 L8E8F3D:
-.db $77 $52 $8F $19 $D8 $00 $83
+.STRINGMAP script_jp, "ライブの杖"
+.db $00 $83
 
 L8E8F44:
-.db $78 $56 $8D $B9 $19 $D8 $00 $83
+.STRINGMAP script_jp, "リカバーの杖"
+.db $00 $83
 
 L8E8F4C:
-.db $78 $8F $7B $B9 $19 $D8 $00 $83
+.STRINGMAP script_jp, "リブローの杖"
+.db $00 $83
 
 L8E8F54:
-.db $78 $77 $52 $8F $19 $D8 $00 $83
+.STRINGMAP script_jp, "リライブの杖"
+.db $00 $83
 
 L8E8F5C:
-.db $7C $B9 $94 $19 $D8 $00 $83
+.STRINGMAP script_jp, "ワープの杖"
+.db $00 $83
 
 L8E8F63:
-.db $DA $5C $B9 $79 $8C $19 $D8 $00
-.db $83
+.STRINGMAP script_jp, "Ｍシールドの杖"
+.db $00 $83
 
 L8E8F6C:
-.db $6A $6F $B9 $7D $19 $D8 $00 $83
+.STRINGMAP script_jp, "ハマーンの杖"
+.db $00 $83
 
 L8E8F74:
-.db $78 $83 $B9 $8F $19 $D8 $00 $83
+.STRINGMAP script_jp, "リザーブの杖"
+.db $00 $83
 
 L8E8F7C:
-.db $5B $52 $7A $5D $19 $D8 $00 $83
+.STRINGMAP script_jp, "サイレスの杖"
+.db $00 $83
 
 L8E8F84:
-.db $7A $5D $57 $9E $B9 $19 $D8 $00
-.db $83
+.STRINGMAP script_jp, "レスキューの杖"
+.db $00 $83
 
 L8E8F8D:
-.db $55 $B9 $71 $19 $D8 $00 $83
+.STRINGMAP script_jp, "オームの杖"
+.db $00 $83
 
 L8E8F94:
-.db $51 $7D $7B $9D $58 $19 $D8 $00
-.db $83
+.STRINGMAP script_jp, "アンロックの杖"
+.db $00 $83
 
 L8E8F9D:
-.db $5C $B9 $6C $19 $D8 $00 $83
+.STRINGMAP script_jp, "シーフの杖"
+.db $00 $83
 
 L8E8FA4:
-.db $53 $9B $9D $61 $19 $D8 $00 $83
+.STRINGMAP script_jp, "ウォッチの杖"
+.db $00 $83
 
 L8E8FAC:
-.db $51 $81 $52 $7D $19 $D8 $00 $83
+.STRINGMAP script_jp, "アゲインの杖"
+.db $00 $83
 
 L8E8FB4:
-.db $06 $28 $4F $03 $CD $00 $83
+.STRINGMAP script_jp, "かりゅう石"
+.db $00 $83
 
 L8E8FBB:
-.db $55 $B9 $71 $19 $D8 $00 $83
+.STRINGMAP script_jp, "オームの杖"
+.db $00 $83
 
 L8E8FC2:
-.db $1B $50 $03 $28 $4F $03 $CD $00
-.db $83
+.STRINGMAP script_jp, "ひょうりゅう石"
+.db $00 $83
 
 L8E8FCB:
-.db $1B $28 $4F $03 $CD $00 $83
+.STRINGMAP script_jp, "ひりゅう石"
+.db $00 $83
 
 L8E8FD2:
-.db $11 $28 $4F $03 $CD $00 $83
+.STRINGMAP script_jp, "ちりゅう石"
+.db $00 $83
 
 L8E8FD9:
-.db $1A $08 $28 $4F $03 $CD $00 $83
+.STRINGMAP script_jp, "はくりゅう石"
+.db $00 $83
 
 L8E8FE1:
-.db $0C $2E $28 $4F $03 $CD $00 $83
+.STRINGMAP script_jp, "しんりゅう石"
+.db $00 $83
 
 L8E8FE9:
-.db $1F $28 $4F $03 $CD $00 $83
+.STRINGMAP script_jp, "まりゅう石"
+.db $00 $83
 
 L8E8FF0:
-.db $07 $36 $31 $0D $28 $00 $83
+.STRINGMAP script_jp, "きずぐすり"
+.db $00 $83
 
 L8E8FF7:
-.db $14 $3F $27 $19 $06 $30 $00 $83
+.STRINGMAP script_jp, "とびらのかぎ"
+.db $00 $83
 
 L8E8FFF:
-.db $30 $2E $19 $06 $30 $00 $83
+.STRINGMAP script_jp, "ぎんのかぎ"
+.db $00 $83
 
 L8E9006:
-.db $1A $18 $3E $0C $19 $06 $30 $00
-.db $83
+.STRINGMAP script_jp, "はねばしのかぎ"
+.db $00 $83
 
 L8E900F:
-.db $10 $06 $27 $19 $06 $30 $00 $83
+.STRINGMAP script_jp, "たからのかぎ"
+.db $00 $83
 
 L8E9017:
-.db $92 $7C $B9 $78 $7D $80 $00 $83
+.STRINGMAP script_jp, "パワーリング"
+.db $00 $83
 
 L8E901F:
-.db $28 $4F $03 $19 $10 $13 $00 $83
+.STRINGMAP script_jp, "りゅうのたて"
+.db $00 $83
 
 L8E9027:
-.db $1B $3C $2E $19 $0C $50 $00 $83
+.STRINGMAP script_jp, "ひでんのしょ"
+.db $00 $83
 
 L8E902F:
-.db $5D $93 $B9 $8C $78 $7D $80 $00
-.db $83
+.STRINGMAP script_jp, "スピードリング"
+.db $00 $83
 
 L8E9038:
-.db $1F $26 $09 $00 $83
+.STRINGMAP script_jp, "まよけ"
+.db $00 $83
 
 L8E903D:
-.db $13 $2E $0C $19 $0A $2B $23 $00
-.db $83
+.STRINGMAP script_jp, "てんしのころも"
+.db $00 $83
 
 L8E9046:
-.db $22 $2F $20 $38 $03 $00 $83
+.STRINGMAP script_jp, "めがみぞう"
+.db $00 $83
 
 L8E904D:
-.db $6F $66 $9E $51 $79 $00 $83
+.STRINGMAP script_jp, "マニュアル"
+.db $00 $83
 
 L8E9054:
-.db $8F $B9 $62 $00 $83
+.STRINGMAP script_jp, "ブーツ"
+.db $00 $83
 
 L8E9059:
-.db $0E $02 $0D $02 $00 $83
+.STRINGMAP script_jp, "せいすい"
+.db $00 $83
 
 L8E905F:
-.db $07 $0C $08 $2E $0C $50 $03 $00
-.db $83
+.STRINGMAP script_jp, "きしくんしょう"
+.db $00 $83
 
 L8E9068:
-.db $25 $03 $0C $4D $01 $06 $0C $00
-.db $83
+.STRINGMAP script_jp, "ゆうしゃあかし"
+.db $00 $83
 
 L8E9071:
-.db $0C $0B $02 $19 $25 $3F $2C $00
-.db $83
+.STRINGMAP script_jp, "しさいのゆびわ"
+.db $00 $83
 
 L8E907A:
-.db $1B $28 $4F $03 $19 $21 $11 $00
-.db $83
+.STRINGMAP script_jp, "ひりゅうのむち"
+.db $00 $83
 
 L8E9083:
-.db $55 $78 $55 $7D $19 $24 $00 $83
+.STRINGMAP script_jp, "オリオンのや"
+.db $00 $83
 
 L8E908B:
-.db $39 $02 $11 $19 $55 $B9 $8F $00
-.db $83
+.STRINGMAP script_jp, "だいちのオーブ"
+.db $00 $83
 
 L8E9094:
-.db $39 $02 $11 $19 $55 $B9 $8F $00
-.db $83
+.STRINGMAP script_jp, "だいちのオーブ"
+.db $00 $83
 
 L8E909D:
-.db $02 $19 $11 $19 $55 $B9 $8F $00
-.db $83
+.STRINGMAP script_jp, "いのちのオーブ"
+.db $00 $83
 
 L8E90A6:
-.db $51 $52 $55 $63 $19 $10 $13 $00
-.db $83
+.STRINGMAP script_jp, "アイオテのたて"
+.db $00 $83
 
 L8E90AF:
-.db $DB $19 $51 $58 $54 $78 $51 $00
-.db $83
+.STRINGMAP script_jp, "星のアクエリア"
+.db $00 $83
 
 L8E90B8:
-.db $DB $19 $93 $5D $59 $5D $00 $83
+.STRINGMAP script_jp, "星のピスケス"
+.db $00 $83
 
 L8E90C0:
-.db $DB $19 $51 $78 $54 $5D $00 $83
+.STRINGMAP script_jp, "星のアリエス"
+.db $00 $83
 
 L8E90C8:
-.db $DB $19 $60 $53 $79 $5D $00 $83
+.STRINGMAP script_jp, "星のタウルス"
+.db $00 $83
 
 L8E90D0:
-.db $DB $19 $84 $9A $70 $66 $00 $83
+.STRINGMAP script_jp, "星のジェミニ"
+.db $00 $83
 
 L8E90D8:
-.db $DB $19 $57 $9C $7D $5B $B9 $00
-.db $83
+.STRINGMAP script_jp, "星のキャンサー"
+.db $00 $83
 
 L8E90E1:
-.db $DB $19 $7A $55 $00 $83
+.STRINGMAP script_jp, "星のレオ"
+.db $00 $83
 
 L8E90E7:
-.db $DB $19 $8D $79 $82 $00 $83
+.STRINGMAP script_jp, "星のバルゴ"
+.db $00 $83
 
 L8E90EE:
-.db $DB $19 $78 $8F $77 $00 $83
+.STRINGMAP script_jp, "星のリブラ"
+.db $00 $83
 
 L8E90F5:
-.db $DB $19 $5D $5A $B9 $93 $55 $00
-.db $83
+.STRINGMAP script_jp, "星のスコーピオ"
+.db $00 $83
 
 L8E90FE:
-.db $DB $19 $5B $84 $60 $78 $5D $00
-.db $83
+.STRINGMAP script_jp, "星のサジタリス"
+.db $00 $83
 
 L8E9107:
-.db $DB $19 $56 $94 $5A $B9 $7D $00
-.db $83
+.STRINGMAP script_jp, "星のカプコーン"
+.db $00 $83
 
 L8E9110:
-.db $55 $B9 $71 $19 $06 $09 $27 $00
-.db $83
+.STRINGMAP script_jp, "オームのかけら"
+.db $00 $83
 
 L8E9119:
-.db $5C $79 $8D $B9 $56 $B9 $8C $00
-.db $83
+.STRINGMAP script_jp, "シルバーカード"
+.db $00 $83
 
 L8E9122:
-.db $72 $7D $8D $B9 $56 $B9 $8C $00
-.db $83
+.STRINGMAP script_jp, "メンバーカード"
+.db $00 $83
 
 L8E912B:
-.db $1B $06 $28 $19 $55 $B9 $8F $00
-.db $83
+.STRINGMAP script_jp, "ひかりのオーブ"
+.db $00 $83
 
 L8E9134:
-.db $1E $0C $19 $55 $B9 $8F $00 $83
+.STRINGMAP script_jp, "ほしのオーブ"
+.db $00 $83
 
 L8E913C:
 .dw L8E914A
