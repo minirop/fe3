@@ -11783,12 +11783,15 @@ L86D86C:
 	bra L86D898
 
 L86D881:
+.ACCU 8
 	lda $7A
-	and #$85F0
-	ora $A5,X
-	ply
-	and #$F00F
-	ora ($3A,X)
+	and #$F0
+	sta $15
+	lda $7A
+	and #$0F
+	beq L86D88E
+	dea
+L86D88E:
 	sta $1050
 	ora $15
 	sta $7A

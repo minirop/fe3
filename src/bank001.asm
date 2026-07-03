@@ -2873,6 +2873,7 @@ L819818:
 .dw L81981A
 
 L81981A:
+.INDEX 16
 	sep #$20
 	jsl L80954E
 	jsl L8087EA
@@ -2891,7 +2892,6 @@ L81983A:
 	sbc $0860
 	cmp #$08
 	bcs L81984C
-.INDEX 16 ; unsure why I need that
 	ldx #$0217
 	bra L81984F
 L81984C:

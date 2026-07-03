@@ -6799,9 +6799,12 @@ L82BCF0:
 	rts
 
 L82BCF7:
-	ror $28C5
-	dec $FF
-	ldy.w L82BF96,X ; ???
+.dw L82C56E
+.dw L82C628
+.dw L82BCFF
+.dw L82BF96
+
+L82BCFF:
 	php
 	ldy #$0000
 	lda $0D86
